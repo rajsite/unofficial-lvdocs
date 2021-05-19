@@ -23,5 +23,25 @@ jobs:
     - name: Upload binaries
       uses: actions/upload-artifact@v2
       with:
-        name: npm package
+        name: npmpackage
         path: ./unofficial-lvdocs-*.tgz
+
+  deploy:
+      needs: build
+      if: github.ref == 'refs/heads/main'
+      runs-on: ubuntu-18.04
+      steps:
+      - name: Setup ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.6'
+      - name: Setup pages deploy
+        run: gem install dpl
+      - name: Download GitHub Pages Output
+        uses: actions/download-artifact@v2
+        with:
+          name: npmpackage
+      - name: Extract GitHub Pages Output
+        run: tar zxvf unofficial-lvdocs-*.tgz
+      - name: Deploy to GitHub Pages
+        run: dpl --verbose --provider=pages --repo=rajsite/unofficial-lvdocs --local_dir=package/dist --skip_cleanup --name=rajsite --email=rajsite@users.noreply.github.com --github-token=${{ secrets.GHPAGES_TOKEN }}
