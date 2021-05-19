@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "source/index.js",
+    "build": "npm run extract && npm run patch",
     "clean": "rimraf dist",
-    "extract": "glob-exec --foreach \"./original/*.chm\" -- \"\\\"C:\\Program Files\\7-Zip\\7z.exe\\\" x {{file}} -odist\\extracted\\{{file.name}}\""
+    "extract": "glob-exec --foreach \"./original/*.chm\" -- \"\\\"C:\\Program Files\\7-Zip\\7z.exe\\\" x {{file}} -odist\\{{file.name}}\"",
+    "patch": "node source/index.js"
   },
   "dependencies": {
     "glob-exec": "^0.1.1",
+    "replace-in-file": "^6.2.0",
     "rimraf": "^3.0.2"
   }
 }
