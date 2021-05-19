@@ -1,0 +1,14 @@
+{
+  "name": "unofficial-lvdocs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "source/index.js",
+    "clean": "rimraf dist",
+    "extract": "glob-exec --foreach \"./original/*.chm\" -- \"\\\"C:\\Program Files\\7-Zip\\7z.exe\\\" x {{file}} -odist\\extracted\\{{file.name}}\""
+  },
+  "dependencies": {
+    "glob-exec": "^0.1.1",
+    "rimraf": "^3.0.2"
+  }
+}
