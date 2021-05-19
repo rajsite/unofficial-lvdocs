@@ -1,0 +1,27 @@
+name: Unofficial LV Docs CI
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v1
+      with:
+        submodules: true
+    - name: Install dependencies
+      run: |
+        npm ci
+    - name: Build
+      run: |
+        npm run build
+        npm pack
+    - name: Upload binaries
+      uses: actions/upload-artifact@v2
+      with:
+        name: npm package
+        path: ./unofficial-lvdocs-*.tgz

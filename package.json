@@ -3,13 +3,18 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "npm run extract && npm run patch",
+    "build": "npm run extract && npm run patch && npm run docs",
     "clean": "rimraf dist",
     "extract": "glob-exec --foreach \"./original/*.chm\" -- \"\\\"C:\\Program Files\\7-Zip\\7z.exe\\\" x {{file}} -odist\\{{file.name}}\"",
-    "patch": "node source/index.js"
+    "patch": "node source/index.js",
+    "docs": "ncp root dist"
   },
+  "files": [
+    "dist/*"
+  ],
   "dependencies": {
     "glob-exec": "^0.1.1",
+    "ncp": "^2.0.0",
     "replace-in-file": "^6.2.0",
     "rimraf": "^3.0.2"
   }
