@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Source Control Toolbar Buttons</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+</head><body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Source Control Toolbar Buttons</h1>
+
+<p class="Body">The <strong>Source Control</strong> toolbar provides quick access to the following source control operations within a LabVIEW project. The source control status of the files you select in the <strong>Project Explorer</strong> window determines whether the buttons appear enabled or disabled. If you select multiple files, buttons may appear enabled that reflect the status of one file but not another.</p>
+<table class="Borderless">
+<tr><td><img src="noloc_env_ckout_btn.gif"></td>
+<td><strong>Check Out</strong>&#8212;<!-- start parent = ../lvconcepts/Organizing_and_Managing_a_Project.xml/SCC_Operations.html JK --><a href="../lvhowto/Checking_Out_Files.html">Checks out the selected file from source control</a>. If you try to edit a file in source control that you did not check out, LabVIEW prompts you to check out the file if you <a href="../lvhowto/Configuring_SCC.html">configured source control</a> to enable the prompt.<!-- end parent = SCC_Operations.html JK --> This button is enabled when you select a file in source control that you have not checked out.</td></tr>
+<tr><td><img src="noloc_env_unckout_btn.gif"></td>
+<td><strong>Undo Check Out</strong>&#8212;<!-- start parent = ../lvconcepts/Organizing_and_Managing_a_Project.xml/SCC_Operations.html JK --><a href="../lvhowto/Undo_Check_Out.html">Cancels a previous check-out operation</a> and restores the contents of the selected file to the previous version. Any changes you made to the file are lost.<!-- end parent = SCC_Operations.html JK --> This button is enabled when you select a file in source control that you have checked out.</td></tr>
+<tr><td><img src="noloc_env_ckin_btn.gif"></td>
+<td><strong>Check In</strong>&#8212;<!-- start parent = File_Ops_BltIn_Sys.html JK --><a href="../lvhowto/Checking_In_Files.html">Checks the selected file into source control</a>. The version of the file in source control is updated to reflect the changes you made.<!-- end parent = SCC_Operations.html JK --> This button is enabled when you select a file in source control that you have checked out.</td></tr>
+<tr><td><img src="noloc_env_addscc_btn.gif"></td>
+<td><strong>Add to Source Control</strong>&#8212;<!-- start parent = File_Ops_BltIn_Sys.html JK --><a href="../lvhowto/Adding_to_SCC.html">Adds the selected file to source control</a>. LabVIEW prompts you to add any dependent files, such as subVIs, to source control if you configured source control to enable the prompt.<!-- end parent = SCC_Operations.html JK --> This button is enabled when you select a file that is not in source control.<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;This operation is available after you save a file.</td></tr></table></td></tr>
+</table>
+
+</body>
+</html>

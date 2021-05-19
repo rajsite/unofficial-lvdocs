@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4200Estructureshlp -->
+
+<title>Checking Boolean Values on Each Iteration</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Checking Boolean Values on Each Iteration
+</h1>
+<p class="Body">If you want the loop to check the value of a terminal on each iteration, place the terminal inside the loop.</p>
+<p class="Body">Complete the following steps to cause the loop to check the value of a Boolean terminal every iteration.</p>
+<ol><li>Place a Boolean control on the front panel.</li><li>Place the Boolean terminal inside the loop on the block diagram.</li>
+<li>Wire the Boolean terminal to the conditional terminal of the loop.
+<table class="Borderless">
+<tr><td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;You can stop the While Loop by changing the value of the front panel control to FALSE, as shown in the following block diagram.<br><br><img src="noloc_bd_termin.gif"> </td></tr></table></li></ol>
+
+
+<p class="Body">If you wire the conditional terminal of a While Loop set to <strong>Continue if True</strong> to a Boolean terminal set to TRUE and placed outside the loop, you cause an infinite loop, as shown in the following block diagram.</p>
+<p class="Anchor"><img src="noloc_bd_terminout.gif"></p>
+<p class="Body">You also cause an infinite loop if you wire the conditional terminal of a While Loop set to <strong>Stop if True</strong> to a Boolean terminal set to FALSE and placed outside the loop.</p>
+<p class="Body">To stop an infinite loop, you must abort the VI by clicking the <strong>Abort</strong> button on the toolbar. Changing the value of the control does not stop the infinite loop because the value is not propagated until the loop stops and you run the VI again.</p>
+
+
+
+
+</body>
+</html>

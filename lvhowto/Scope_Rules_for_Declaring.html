@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name:  -->
+
+<title>Scope Rules for Declaring Variables in Formula Nodes</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Scope Rules for Declaring Variables in Formula Nodes
+</h1>
+<p class="Body">Formula Nodes use the same scope rules for declaring variables as C.
+</p>
+<ul>
+
+<li>All variables you declare in bracketed blocks are only accessible within the bracketed block.
+</li>
+<li>All input terminals are considered variables at the outermost block (not enclosed in brackets), and cannot be declared again in the outermost block.
+</li>
+<li>LabVIEW tries to match variables you declare at the outermost block (not enclosed in brackets) to output terminals with the same name.
+</li>
+<li>You can declare output terminals that have no corresponding input terminal and are not declared at the outermost block.
+</li>
+</ul>
+<p class="Body">Use the correct Formula Node syntax when declaring variables.
+</p>
+
+<!-- begin parent: ../lvconcepts/Formulas_and_Equations.xml --><table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;You can use Formula Node most effectively if you are familiar with the C programming language. <em>LabVIEW Help</em> assumes you are familiar with C and does not contain any topics related to programming in C. Refer to <em>The C Programming Language</em> by Brian W. Kernighan and Dennis M. Ritchie or <em>Teach Yourself C</em> by Herbert Schildt for more information.</td>
+</tr>
+</table><!-- end parent: ../lvconcepts/Formulas_and_Equations.xml -->
+
+<h3>Related Information</h3>
+<p><a href="../lvhowto/Formula_Node_Syntax.html">Formula Node Syntax</a></p>
+
+</body>
+</html>

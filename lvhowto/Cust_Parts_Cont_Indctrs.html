@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+
+<title>Customizing Controls and Indicators that are Parts of Controls and Indicators</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Customizing Controls and Indicators that are Parts of Controls and Indicators
+</h1>
+<p class="Body">A control or indicator can include other controls or indicators as parts. In this topic, controls and indicators used as parts of other controls and indicators are referred to as component controls and indicators. For example, a slide control uses a digital numeric control for a digital display, making the digital numeric control a component control. You can find out if part of a control or indicator is a component control or indicator by trying to move the part around the front panel. You can move a component control or indicator independently of the parent control or indicator.</p>
+
+
+<p class="Body">Often, component controls or indicators also are made up of parts. When you edit the original control or indicator in the <a href="../lvconcepts/Custom_Cont_Ind_Type.html#Using_the_Control_Editor_Window">Control Editor</a> window, the component control or indicator behaves as a single part. That is, you cannot change or move individual parts of the component control or indicator. However, you can customize the component control or indicator by displaying a second Control Editor window that contains only the component control or indicator. You do not have to place the original Control Editor window in customize mode to display a second Control Editor window unless you are unable to select the component control or indicator in edit mode.</p>
+
+<p class="Body">Complete the following steps to customize a component control or indicator.</p>
+<ol><li>In the front panel window, right-click a control or indicator that you want to customize and select <strong>Advanced&#0187;Customize</strong> from the shortcut menu to display the Control Editor window.</li>
+<li>Right-click the component control or indicator in the Control Editor window and select <strong>Advanced&#0187;Customize</strong> from the shortcut menu to display another Control Editor window that contains only the component control or indicator.</li>
+<li>Click the <strong>Change to Customize Mode</strong> button to place the new Control Editor window in customize mode.</li>
+<li>Make the changes you want to the individual parts of the component control or indicator. You can change the size, color, and relative position of the elements of a control or indicator and import images into the control or indicator.</li>
+<li>Select <strong>File&#0187;Apply Changes</strong> to apply the changes to the component control or indicator in the original Control Editor window. The <strong>Apply Changes</strong> menu item is available only after you make changes to the original component control or indicator. If you make changes to a component control or indicator and try to close the Control Editor window without selecting <strong>File&#0187;Apply Changes</strong>, LabVIEW displays a message asking if you want to replace the original component control or indicator with the custom component control or indicator.</li></ol>
+
+<p class="Body">You can nest Control Editor windows indefinitely. However, most controls or indicators use other controls or indicators as parts only at the top level. An exception is the graph, which uses complicated controls as parts that in turn use other controls as parts.</p>
+<h2>Component Parts Visible in the Front Panel Window</h2>
+<p class="Body">If a component control or indicator is visible in the front panel window, you can display a Control Editor window that contains only the component control or indicator directly from the front panel window.</p>
+<p class="Body">Complete the following steps to customize a component control or indicator directly from the front panel window.</p>
+<ol><li>Right-click the component control or indicator you want to customize and select <strong>Advanced&#0187;Customize</strong> from the shortcut menu to display a Control Editor window that contains only the component control or indicator.<br><br>
+You also can use the Positioning tool to select the component control or indicator you want to customize and then select <strong>Edit&#0187;Customize Control</strong> to display the Control Editor window.</li>
+<li>Make the changes you want to the component control or indicator. You can change the size, color, and relative position of the elements of a control or indicator and import images into the control or indicator.</li>
+<li>Select <strong>File&#0187;Apply Changes</strong> to apply the changes to the component control or indicator. The <strong>Apply Changes</strong> menu item is available only after you make changes to the original component control or indicator. If you make changes to a component control or indicator and try to close the Control Editor window without selecting <strong>File&#0187;Apply Changes</strong>, LabVIEW displays a message asking if you want to replace the original component control or indicator with the custom component control or indicator.</li></ol>
+
+
+
+</body>
+</html>

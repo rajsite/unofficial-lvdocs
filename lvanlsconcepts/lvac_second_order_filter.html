@@ -1,0 +1,81 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Second-Order Filtering</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-8AAED1E8-A72D-4F5D-B69C-3785FD067C19" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Second-Order Filtering</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 For lowpass and highpass filters, which have a single cut-off frequency, you can design second-order filter stages directly.
+            The resulting IIR lowpass or highpass filter contains cascaded second-order filters. 
+            	 
+         </p> 
+         	 
+         <p>Each second-order filter stage has the following characteristics: 
+            	 
+         </p> 
+         	 <a name="GUID-8AAED1E8-A72D-4F5D-B69C-3785FD067C19__UL_7B6A0EA3005B408698562CDE4EA97779" shape="rect">
+            <!-- --></a><ul id="GUID-8AAED1E8-A72D-4F5D-B69C-3785FD067C19__UL_7B6A0EA3005B408698562CDE4EA97779">
+            <li><a name="GUID-8AAED1E8-A72D-4F5D-B69C-3785FD067C19__LI_4EDA2B3B647743B282EAEDC47D7FAE9A" shape="rect">
+                  <!-- --></a><em>k</em> = 1, 2, ..., <em>N</em><sub><em>s</em></sub>, where <em>k</em> is the second-order filter stage number and <em>N</em><sub><em>s</em></sub> is the total number of second-order filter stages. 
+               		
+            </li>
+            <li><a name="GUID-8AAED1E8-A72D-4F5D-B69C-3785FD067C19__LI_8DBE592B44074213829F6C3A2540373B" shape="rect">
+                  <!-- --></a>Each second-order filter stage has two reverse coefficients, (<em>a</em><sub>1<em>k</em></sub>, <em>a</em><sub>2<em>k</em></sub>). 
+               		
+            </li>
+            <li><a name="GUID-8AAED1E8-A72D-4F5D-B69C-3785FD067C19__LI_51C5D41A80D54666916C915C946B2B8D" shape="rect">
+                  <!-- --></a>The total number of reverse coefficients equals 2<em>N</em><sub><em>s</em></sub>. 
+               		
+            </li>
+            <li><a name="GUID-8AAED1E8-A72D-4F5D-B69C-3785FD067C19__LI_14268F0B86514F369FA589D280C01E0E" shape="rect">
+                  <!-- --></a>Each second-order filter stage has three forward coefficients, (<em>b</em><sub>0<em>k</em></sub>, <em>b</em><sub>1<em>k</em></sub>, <em>b</em><sub>2<em>k</em></sub>). 
+               		
+            </li>
+            <li><a name="GUID-8AAED1E8-A72D-4F5D-B69C-3785FD067C19__LI_B2F98DC937A84BEA9953AF2B8FA59459" shape="rect">
+                  <!-- --></a>The total number of forward coefficients equals 3<em>N</em><sub><em>s</em></sub>. 
+               		
+            </li>
+         </ul> 
+         	 
+         <p>For example, an IIR filter with two second-order filter stages must have a total of four reverse coefficients and six forward
+            coefficients, as shown in the following equations. 
+            	 
+         </p> 
+         	 
+         <p>Total number of reverse coefficients = 2<em>N</em><sub><em>s</em></sub> = 2 × 2 = 4 
+            	 
+         </p> 
+         	 
+         <p>Reverse Coefficients = {<em>a</em><sub>1</sub><sub>1</sub>, <em>a</em><sub>2</sub><sub>1</sub>, <em>a</em><sub>1</sub><sub>2</sub>, <em>a</em><sub>2</sub><sub>2</sub>} 
+            	 
+         </p> 
+         	 
+         <p>Total number of forward coefficients = 3<em>N</em><sub><em>s</em></sub> = 3 × 2 = 6 
+            	 
+         </p> 
+         	 
+         <p>Forward Coefficients = {<em>b</em><sub>0</sub><sub>1</sub>, <em>b</em><sub>1</sub><sub>1</sub>, <em>b</em><sub>2</sub><sub>1</sub>, <em>b</em><sub>0</sub><sub>2</sub>, <em>b</em><sub>1</sub><sub>2</sub>, <em>b</em><sub>2</sub><sub>2</sub>} 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="lvac_cascade_iir.html" shape="rect">Cascade Form IIR Filtering</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 1100Enumericcihlp -->
+
+<title>Changing Format and Precision of Numeric Controls and Indicators</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Changing Format and Precision of Numeric Controls and Indicators
+</h1>
+<p class="Body"><!-- begin parent: ../lvconcepts/Building_the_Front_Panel.xml-->By default, LabVIEW displays and stores numbers like a calculator. A numeric control or indicator displays up to six digits before automatically switching to exponential notation. You can configure the number of digits for the control or indicator, digital displays, and tip strips that LabVIEW displays before switching to exponential notation in the <a href="../lvpage/pp_Display_Format_DB.html">Display Format</a> page of the <strong>Numeric Properties</strong> dialog box.<!-- end parent: ../lvconcepts/Building_the_Front_Panel.xml-->
+</p>
+<p class="Body">Complete the following steps to change the format and precision of a numeric object.
+</p>
+<ol>
+<li>Right-click the numeric object and select <strong>Display Format</strong> from the shortcut menu to display the <a href="../lvpage/pp_Display_Format_DB.html">Display Format</a> page of the <strong>Numeric Properties</strong> dialog box.</li>
+<li>Select a format from the <strong>Type</strong> listbox. If the <a href="Changing_Numeric_Represent.html">representation</a> of the numeric object is floating-point, you cannot display the number as hexadecimal, octal, or binary.
+</li>
+<li>Use the <strong>Digits</strong> and <strong>Precision Type</strong> options to change the precision of the number, if necessary. <!-- begin parent: ../lvconcepts/Building_the_Front_Panel.xml-->The precision you select affects only the display of the value. The internal accuracy still depends on the representation.<!-- end parent: ../lvconcepts/Building_the_Front_Panel.xml-->
+</li></ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;<!-- begin parent: Changing_Format_of_Graphs.html -->Select <strong>Advanced editing mode</strong> to display the text options that let you <a href="Using_Format_Strings.html">enter format strings</a> directly.<!-- end parent: Changing_Format_of_Graphs.html--> Enter format strings to customize the numeric precision of the control.</td></tr>
+</table>
+<ol start="4"><li>To change the format and precision of the digital display, select <strong>Digital Display</strong> from the <strong>Apply to</strong> pull-down menu and repeat steps 2 and 3. <!--begin_child id = Changing_Format_and_Prec.html tag="tipstrip_formtprec"-->The tip strip uses the same format and precision as the digital display of the control. If the control has more than one digital display, the tip strip uses the format and precision of the digital display that corresponds to the currently active needle or slider.<!--end_child id = Changing_Format_and_Prec.html tag="tipstrip_formtprec"--> The <strong>Apply to</strong> pull-down menu appears only for items that include a digital display.</li>
+<li>Click the <strong>OK</strong> button.
+</li>
+</ol>
+<p class="Body">You also can use the <a href="../lvprop/Digital_p.html">Digital</a> properties to configure format and precision programmatically.</p>
+
+
+</body>
+</html>

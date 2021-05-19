@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<script type="text/javascript" src="pdf.js"></script>
+<title>Tutorial: Adding an Object to a VI Using VI Scripting</title>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<LINK rel="StyleSheet" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+	
+<h1>Tutorial: Adding an Object to a VI Using VI Scripting</h1>
+<p class="Body">You can add objects to the front panel and block diagram of VIs using VI Scripting. This tutorial adds an object to the block diagram. Complete the following steps to add an object to a VI using VI Scripting.</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;<ul><li>This topic assumes familiarity with the <a href="../lvconcepts/scripting_property_method.html">VI Scripting</a> introduction.</li> <li>You must <a href="enabling_vi_scripting.html">enable VI Scripting</a> to display the VI Scripting VI and functions and use the associated properties and methods.</li></ul>
+</td>
+</tr>
+</table>
+
+<ol>
+<li>Complete the <a href="opening_vi_using_scripting.html">previous exercise</a> if you have not already completed it. If the untitled VI you created in the previous exercise is still open, close the VI.
+</li>
+<li>Remove the wires from the <a href="../glang/Close_LV_Object_Reference.html">Close Reference</a> function and move the function to the right to make room on the block diagram.</li>
+<li>Add the <a href="../lvscript/VI_Block_Diagram_Window058Origin.html">Block Diagram Window: Origin</a> property to the Property Node and create a constant with <strong>Horizontal</strong> and <strong>Vertical</strong> input values of <span class="Monospace">0</span>. <br><br>This configuration sets the horizontal and vertical coordinates in the upper left-hand corner of the block diagram. Later in the exercise, you set the location of a For Loop so it also appears in the upper left-hand corner.</li>
+<li>Add the <a href="../glang/New_VI_Object.html">New VI Object</a> function to the right of the Property Node.
+<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object4908);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> 
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object4908);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li>
+<li>Wire the <strong>reference out</strong> output of the Property Node to the <strong>owner refnum</strong> input of the New VI Object function.</li>
+<li>Right-click the <strong>vi object class</strong> input of the New VI Object function and select <strong>Create&#0187;Constant</strong> from the shortcut menu to create a class specifier constant.</li>
+<li>Click the class specifier constant and select <strong>Generic&#0187;GObject&#0187;Node&#0187;Structure&#0187;Loop&#0187;ForLoop</strong> from the shortcut menu.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;In this exercise, you add a For Loop to the block diagram. However, with knowledge of the <a href="../lvconcepts/anatomy.html">appropriate references</a>, you can add and manipulate any front panel or block diagram object.</td>
+</tr>
+</table>
+</li>
+<li>Right-click the <strong>style</strong> input of the New VI Object function, select <strong>Create&#0187;Constant</strong> from the shortcut menu, and select <strong>For Loop</strong> from the pull-down menu of the constant.</li>
+<li>Right-click the <strong>location</strong> input of the New VI Object function, select <strong>Create&#0187;Constant</strong> from the shortcut menu, and enter <span class="Monospace">0</span> as the value for the <strong>Horizontal</strong> and <strong>Vertical</strong> inputs. <br><br>This step specifies the coordinates of the location on the block diagram where you want the new object to appear.</li>
+<li>Right-click the <strong>bounds</strong> input of the New VI Object function, select <strong>Create&#0187;Constant</strong> from the shortcut menu, and enter <span class="Monospace">200</span> and <span class="Monospace">100</span> for the <strong>Width</strong> and <strong>Height</strong> inputs, respectively.<br><br>This step specifies the size of the For Loop.</li>
+<li>Add another <a href="../glang/Close_LV_Object_Reference.html">Close Reference</a> function to the right of the existing Close Reference function. Closing both the reference to the VI and the reference to the For Loop ensures no memory leaks. Because the VI is the containing object of the For Loop, make sure to close the reference to the VI after you close the reference to the For Loop.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object709);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> 
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object709);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN>
+</li>
+<li>Complete all wiring to match the following block diagram.<br><br>
+<img src="loc_bd_add_object_scripting.gif">
+</li>
+<li><a href="Saving_Individual_VI_Files.html">Save the VI</a>.</li>
+<li><a href="Running_VIs.html">Run the VI</a>.</li>
+</ol>
+<p class="Body">LabVIEW creates and opens untitled front panel and block diagram windows. The block diagram contains a For Loop in the upper left-hand corner.</p>
+<h2>Additional Options for Creating Object References</h2>
+<p class="Body">Consider the following additional options to create references to objects:</p>
+<ul>
+<li>Add a custom object to the front panel or block diagram by wiring a path for the custom object to the New VI Object function, or use the <a href="../lvscript/VI_Create_from_Reference.html">Create from Reference</a> method.</li>
+<li><!--needs a better home-->Use the <a href="../glang/To_More_Specific_Class.html">To More Specific Class</a> function to convert a generic object reference to a more specific reference, like a control. You then can use the properties of the more specific reference type.</li>
+</ul>
+
+<p class="Body">To continue this tutorial, continue to the <a href="scripting_repositioning.html">Tutorial: Repositioning an Object in a VI Using VI Scripting</a> topic.</p>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Importing a Web Service as a Library of VIs</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+
+<body bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+			<h1>Importing a Web Service as a Library of VIs</h1>
+			<p class="Body">Use the <a href="../lvdialog/import_web_service_wizard.html">Import Web Service</a> wizard to create or update wrapper VIs based on the methods in a Web service. <!--start parent  = concepts  tag="wsdldef"-->You must provide a valid URL to a Web Service Description Language (WSDL), and the WSDL must validate correctly with ASP.NET. WSDL is an XML-formatted language used to describe a Web service and its functionality. </p>
+						<table class="Borderless"><tr><td class="Icon"><img src="note.gif" alt="Note"></td><td><strong>Note</strong>&#160;&#160;
+			<ul>
+			<li>You must have the .NET Framework 4.0 installed to use the Import Web Service wizard.</li>
+			<li>If you change the URL for the Web Service you want to import, you must complete the following steps to regenerate the VIs for the Web Service.</li>
+			</ul></td></tr></table><!--end parent  = concepts  tag="wsdldef"-->
+			
+<p class="Body">Complete the following steps to create or update a library of VIs based on methods in a Web service. </p>
+<ol>
+<li>Select <strong>Tools&#0187;Import&#0187;Web Service</strong> to launch the Import Web Service wizard.</li>
+<li>Enter the URL to the WSDL for the Web service you want to import.</li>
+<li>Click the <strong>Next</strong> button to display the next page of the wizard.</li>
+<li>(Optional) Enter the authentication or proxy information.</li>
+<li>Click the <strong>Next</strong> button to display the next page of the wizard.</li>
+<li>Enter the name of the project library (<span class="Monospace">.lvlib</span>) file you want to create.</li>
+<li>Enter the destination directory, which is the location to which you want to save the project library (<span class="Monospace">.lvlib</span>) file. You also can browse to navigate to and select a folder. </li>
+<li>Click the <strong>Next</strong> button to display the next page of the wizard. </li>
+<li>Select the methods to import. For each method you select, LabVIEW creates a VI with parallel functionality. </li>
+<li>Click the <strong>Next</strong> button to display the <strong>Summary</strong> page of the wizard. Use this page to review the Web service information you have specified before LabVIEW creates the wrapper VIs. You can use the <strong>Back</strong> button to make any changes. </li>
+<li>Click the <strong>Generate</strong> button when you are ready to import the Web service methods and generate wrapper VIs for them. The <strong>Completed</strong> page appears when generation is complete. </li><li>Select the appropriate options if you want to open the imported project library file or view the report upon closing the wizard. </li>
+<li>Click the <strong>Finish</strong> button to close the wizard and optionally open the specified files. </li>
+</ol>
+
+
+</body>
+</html>

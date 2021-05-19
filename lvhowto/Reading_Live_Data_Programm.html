@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 6100Ecommhlp -->
+
+<title>Reading Live Data Programmatically</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Reading Live Data Programmatically</h1>
+
+<p class="Body">Read live <a href="../lvconcepts/Using_DataSocket_Technology.html#Data_Formats_Supported_by_the_DataSocket_VI_and_Functions">data</a> from a data connection to manipulate the data before you add it to the front panel or pass the data to a VI or function on the block diagram.</p>
+<p class="Body"><span class="Platform">(Real-Time, Windows)</span> National Instruments recommends that you <a href="../lvconcepts/SV_Using_Nodes.html">use a Shared Variable node</a> to read live data on a block diagram.</p>
+
+<p class="Body">Complete the following steps to read live data programmatically.</p>
+
+<ol>
+<li>Add the <a href="../lvcomm/DataSocket_Read.html">DataSocket Read</a> function to the block diagram.<br><br><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object556);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object556);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Find</SPAN><br><br></li>
+<li>Specify a <span class="Monospace">psp </span> <a href="../lvconcepts/Using_DataSocket_Technology.html#Specifying_a_URL">URL</a> in the <strong>connection in</strong> input of the DataSocket Read function or wire a <a href="../lvhowto/I_O_Controls.html">shared variable control</a> to the <strong>connection in</strong> input.</li>
+<li>Wire a control or constant to the <strong>type</strong> input of the DataSocket Read function. The data type of the control or constant must match the data type of the data you expect to read. The default data type is the variant data type. If you are unsure of the data type of the data you expect to read or if another application is generating the data, use the variant data type. You can <a href="ConvertingVariantDatatoLV.html">convert variant data</a> to data that LabVIEW can manipulate.</li>
+<li>Run the VI or continually run the VI for live data updates.</li>
+</ol>
+
+
+
+</body>
+</html>

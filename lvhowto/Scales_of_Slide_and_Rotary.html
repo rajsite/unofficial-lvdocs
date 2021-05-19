@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 1100Enumericcihlp -->
+
+<title>Scaling Slide and Rotary Controls and Indicators</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Scaling Slide and Rotary Controls and Indicators
+</h1>
+<p class="Body">You can change the <a href="Changing_Scale_Limits.html">scale limits</a>, use <a href="Adding_Text_Labels_to_Num.html">text labels</a>, adjust scale markers, and select linear or logarithmic spacing for numeric objects with a scale.
+</p>
+<p class="Body">Complete the following steps to customize the scale of a slide or rotary object.
+</p>
+<ol>
+<li>Right-click the slide or rotary object.
+</li>
+<li>Select <strong>Scale</strong> from the shortcut menu and select from the following items:
+<ul>
+<li><strong>Marker Spacing</strong>&#8212;Use this option to select uniform or arbitrary scale markers. By default, scale markers are uniform, or evenly spaced. <!--begin child: ../lvhelp/Scales_of_Slide_and_Rotary.html--> By selecting arbitrary marker spacing, you can indicate specific inner markers for a scale. <a href="Selecting_Non_Uniform_Scal.html">Arbitrary marker spacing</a> is useful for marking a few specific points on a slide or rotary control, such as a set point or threshold.<!--end child: ../lvhelp/Scales_of_Slide_and_Rotary.html-->
+</li>
+<!--begin parent: ../lvhelp/Configuring_the_X_and_Y_Sc.html-->
+<li><strong>Add Marker</strong>&#8212;<a href="Adding_Markers_Graphs.html">Adds a marker</a> to the scale. This option is not available if <strong>Marker Spacing</strong> is <strong>Uniform</strong>.
+</li>
+<li><strong>Delete Marker</strong>&#8212;<a href="Adding_Markers_Graphs.html">Deletes a marker</a> from the scale. This option is not available if <strong>Marker Spacing</strong> is <strong>Uniform</strong>, and if the scale contains only the two end markers.
+</li>
+<!-- end parent: ../lvhelp/Configuring_the_X_and_Y_Sc.html-->
+<li><strong>Display Format</strong>&#8212;Displays the <a href="../lvpage/pp_Display_Format_DB.html">Display Format</a> page of the <strong>Slide Properties</strong> dialog box. You can change the <a href="Changing_Format_and_Prec.html">format and precision</a> of numeric objects with a scale just as you do for digital objects.
+</li>
+<li><strong>Style</strong>&#8212;Use this palette to select the style of the scale display. You can display a scale with or without tick marks, with or without scale values, or you can hide the scale altogether.
+</li>
+<li><strong>Mapping</strong>&#8212;Use this option to select linear or logarithmic scale spacing. If you select logarithmic spacing, and the low scale limit is less than or equal to 0, the limit automatically becomes a positive number, and LabVIEW recalculates the value of the other markers accordingly. Keep in mind that scale options, including the mapping functions, are independent of the slide data range values, which you change using the <strong>Data Entry</strong> shortcut menu item. If you want to limit the data to logarithmic values, change the <a href="Changing_Data_Ranges_of_Nu.html">data range</a> to eliminate values less than or equal to 0.
+</li>
+</ul>
+</li>
+</ol>
+
+
+
+</body>
+</html>

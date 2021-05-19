@@ -1,0 +1,177 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Conjugate Gradient Search Methods</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-0D623F12-F852-43B8-AFDD-1DE4E1B6C222" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Conjugate Gradient Search Methods</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 
+            		 At an <em>N</em>-dimensional point <em>P</em>, the conjugate gradient search methods calculate the function <em>f</em>(<em>P</em>) and the gradient &#8711;<em>f</em>(<em>p</em>). &#8711;<em>f</em>(<em>p</em>) is the vector of first partial derivatives. The conjugate gradient search method attempts to find <em>f</em>(<em>x</em>) by searching a gradient conjugate to the previous gradient and conjugating to all previous gradients, as much as possible.
+            
+            	 
+         </p> 
+         	 
+         <p>The Fletcher-Reeves method and the Polak-Ribiere method are the two most common conjugate gradient search methods. The following
+            theorems serve as the basis for each method. 
+            	 
+         </p> 
+         	 
+         <p>Theorem A has the following conditions: 
+            	 
+         </p> 
+         	 <a name="GUID-0D623F12-F852-43B8-AFDD-1DE4E1B6C222__UL_C78AD1C350A244C09930D912F1251BB2" shape="rect">
+            <!-- --></a><ul id="GUID-0D623F12-F852-43B8-AFDD-1DE4E1B6C222__UL_C78AD1C350A244C09930D912F1251BB2">
+            <li><a name="GUID-0D623F12-F852-43B8-AFDD-1DE4E1B6C222__LI_938174A463D4449E91438348898C9302" shape="rect">
+                  <!-- --></a> <em>A</em> is a symmetric, positive-definite, <em>n</em> × <em>n</em> matrix. 
+               		
+            </li>
+            <li><a name="GUID-0D623F12-F852-43B8-AFDD-1DE4E1B6C222__LI_16F1DA47098D4E698906EED0D8D742D2" shape="rect">
+                  <!-- --></a> <em>g</em><sub>0</sub> is an arbitrary vector. 
+               		
+            </li>
+            <li><a name="GUID-0D623F12-F852-43B8-AFDD-1DE4E1B6C222__LI_0A705BD7F33840A3B94168857E86283E" shape="rect">
+                  <!-- --></a> <em>h</em><sub>0</sub> = <em>g</em><sub>0</sub>. 
+               		
+            </li>
+            <li><a name="GUID-0D623F12-F852-43B8-AFDD-1DE4E1B6C222__LI_FD8AA4B2441F4A968826D7B394EC5643" shape="rect">
+                  <!-- --></a>The following equations define the two sequences of vectors for <em>i</em> = 0, 1, 2, …. 
+               		  
+               <p><em>g</em><sub><em>i</em> +1</sub> = <em>g</em><sub><em>i</em></sub> - &#955;<sub><em>i</em></sub><em>A</em><em>h</em><sub><em>i</em></sub> 
+                  		  
+               </p>
+               		  
+               <p><em>h</em><sub><em>i</em> + 1</sub> = <em>g</em><sub><em>i</em> + 1</sub> + &#947;<sub><em>i</em></sub><em>h</em><sub><em>i</em></sub>
+                  		  
+               </p> 
+               		  
+               <div class="p">where the chosen values for &#955;<sub><em>i</em></sub> and &#947;<sub><em>i</em></sub> make <em>g</em><sub><em>i</em> + 1</sub><em>g</em><sub><em>i</em></sub> = 0 and <em>h</em><sub><em>i</em> + 1</sub><em>A</em><em>h</em><sub><em>i</em></sub> = 0, as shown in the following equations. 
+                  <div class="fignone">
+                     <div class="mathml-block"><span><img src="./p2Flvac_conj_gradient_search.xml_d11860e192.png"></span></div>
+                  </div> 
+                  <div class="fignone">
+                     <div class="mathml-block"><span><img src="./p2Flvac_conj_gradient_search.xml_d11860e245.png"></span></div>
+                  </div> 
+                  		  
+               </div> 
+               		  
+               <p>If the denominators equal zero, take &#955;<sub><em>i</em></sub> = 0, &#947;<sub><em>i</em></sub> = 0. 
+                  		  
+               </p> 
+               		
+            </li>
+            <li><a name="GUID-0D623F12-F852-43B8-AFDD-1DE4E1B6C222__LI_256CFDB6BCE9434F996C1851C5DBA3D8" shape="rect">
+                  <!-- --></a>The following equations are true for all <em>i</em> &#8800; <em>j</em>. 
+               		  
+               <p><em>g</em><sub><em>i</em></sub><em>g</em><sub><em>j</em></sub> = 0
+                  		  
+               </p>
+               		  
+               <p><em>h</em><sub><em>i</em></sub><em>A</em><em>h</em><sub><em>j</em></sub> = 0
+                  		  
+               </p>
+               		
+            </li>
+         </ul> 
+         	 
+         <p>The elements in the sequence that the equation <em>g</em><sub><em>i</em> +1</sub> = <em>g</em><sub><em>i</em></sub> - &#955;<sub><em>i</em></sub><em>A</em><em>h</em><sub><em>i</em></sub> produces are mutually orthogonal. The elements in the sequence that the equation <em>h</em><sub><em>i</em> + 1</sub> = <em>g</em><sub><em>i</em> + 1</sub> + &#947;<sub><em>i</em></sub><em>h</em><sub><em>i</em></sub> produces are mutually conjugate. 
+            	 
+         </p> 
+         	 
+         <p>Because the equation <em>g</em><sub><em>i</em></sub><em>g</em><sub><em>j</em></sub> = 0 is true, you can rewrite the equations <span class="mathml-inline"><span><img src="./p2Flvac_conj_gradient_search.xml_d11860e407.png"></span></span> and <span class="mathml-inline"><span><img src="./p2Flvac_conj_gradient_search.xml_d11860e459.png"></span></span> as the following equations. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./p2Flvac_conj_gradient_search.xml_d11860e507.png"></span></div>
+         </div>
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./p2Flvac_conj_gradient_search.xml_d11860e622.png"></span></div>
+         </div> 
+         	 
+         <p>Theorem B defines a method for constructing the vector from the equation <em>g</em><sub><em>i</em> +1</sub> = <em>g</em><sub><em>i</em></sub> - &#955;<sub><em>i</em></sub><em>A</em><em>h</em><sub><em>i</em></sub> when the Hessian matrix <em>A</em> is unknown: 
+            	 
+         </p> 
+         	 <a name="GUID-0D623F12-F852-43B8-AFDD-1DE4E1B6C222__UL_577964C5CAF242FCAAAFF3B120515847" shape="rect">
+            <!-- --></a><ul id="GUID-0D623F12-F852-43B8-AFDD-1DE4E1B6C222__UL_577964C5CAF242FCAAAFF3B120515847">
+            <li><a name="GUID-0D623F12-F852-43B8-AFDD-1DE4E1B6C222__LI_BF5F304B9F734BE5A371828CBFDC249A" shape="rect">
+                  <!-- --></a> <em>g</em><sub><em>i</em></sub> is the vector sequence defined by the equation <em>g</em><sub><em>i</em> +1</sub> = <em>g</em><sub><em>i</em></sub> - &#955;<sub><em>i</em></sub><em>A</em><em>h</em><sub><em>i</em></sub>. 
+               		
+            </li>
+            <li><a name="GUID-0D623F12-F852-43B8-AFDD-1DE4E1B6C222__LI_7F229A7F45A04E63824BB2C8F1BFBCC0" shape="rect">
+                  <!-- --></a> <em>h</em><sub><em>i</em></sub> is the vector sequence defined by the equation <em>h</em><sub><em>i</em> + 1</sub> = <em>g</em><sub><em>i</em> + 1</sub> + &#947;<sub><em>i</em></sub><em>h</em><sub><em>i</em></sub>. 
+               		
+            </li>
+            <li><a name="GUID-0D623F12-F852-43B8-AFDD-1DE4E1B6C222__LI_3969AE34B4104146AC3A278121882BF8" shape="rect">
+                  <!-- --></a>Approximate <em>f</em> as the quadratic form given by the following relationship. 
+               <div class="fignone">
+                  <div class="mathml-block"><span><img src="./p2Flvac_conj_gradient_search.xml_d11860e780.png"></span></div>
+               </div> 
+               		
+            </li>
+            <li><a name="GUID-0D623F12-F852-43B8-AFDD-1DE4E1B6C222__LI_5FCC5C51DF61444CB9BFE23C3A9D9E07" shape="rect">
+                  <!-- --></a> <em>g</em><sub><em>i</em></sub> = -&#8711;<em>f</em>(<em>P</em><sub><em>i</em></sub>) for some point <em>P</em><sub><em>i</em></sub>. 
+               		
+            </li>
+            <li><a name="GUID-0D623F12-F852-43B8-AFDD-1DE4E1B6C222__LI_A8FC1F2CE75E4F9F8EFDF605AD41F7C2" shape="rect">
+                  <!-- --></a>Proceed from <em>P</em><sub><em>i</em></sub> in the direction <em>h</em><sub><em>i</em></sub> to the local minimum of <em>f</em> at point <em>P</em><sub><em>i</em>+1</sub>. 
+               		
+            </li>
+            <li><a name="GUID-0D623F12-F852-43B8-AFDD-1DE4E1B6C222__LI_1079858227DF4E9EB7A9BE9339D3C253" shape="rect">
+                  <!-- --></a> Set the value for <em>g</em><sub><em>i</em>+1</sub> according to the equation <em>g</em><sub><em>i</em> + 1</sub> = -&#8711;<em>f</em>(<em>P</em><sub><em>i</em> + 1</sub>).
+               		
+            </li>
+         </ul> 
+         	 
+         <p>The vector <em>g</em><sub><em>i</em>+1</sub> that the previous equation yields is the same as the vector that the equation <em>g</em><sub><em>i</em> +1</sub> = <em>g</em><sub><em>i</em></sub> - &#955;<sub><em>i</em></sub><em>A</em><em>h</em><sub><em>i</em></sub> yields when the Hessian matrix <em>A</em> is known. Therefore, you can optimize <em>f</em> without having knowledge of Hessian matrix <em>A</em> and without the computational resources to calculate and store the Hessian matrix <em>A</em>. You construct the direction sequence <em>h</em><sub><em>i</em></sub> with line minimization of the gradient vector and the latest vector in the <em>g</em> sequence. 
+            	 
+         </p> 
+         	 
+         <p> 
+            		 
+            		 Both the Fletcher-Reeves method and the Polak-Ribiere method use Theorem A and Theorem B. However, the Fletcher-Reeves
+            method uses the first term from the equation <span class="mathml-inline"><span><img src="./p2Flvac_conj_gradient_search.xml_d11860e976.png"></span></span> for &#947;<sub><em>i</em></sub>, as shown in the following equation. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./p2Flvac_conj_gradient_search.xml_d11860e1097.png"></span></div>
+         </div> 
+         	 
+         <p>The Polak-Ribiere method uses the second term from the equation <span class="mathml-inline"><span><img src="./p2Flvac_conj_gradient_search.xml_d11860e1155.png"></span></span> for &#947;<sub><em>i</em></sub>, as shown in the following equation. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./p2Flvac_conj_gradient_search.xml_d11860e1276.png"></span></div>
+         </div> 
+         	 
+         <p>The previous two equations are equal for functions with exact quadratic forms. However, most functions in practical applications
+            do not have exact quadratic forms. Therefore, after you find the minimum for the quadratic form, you might need another set
+            of iterations to find the actual minimum. 
+            	 
+         </p> 
+         	 
+         <p>When the Polak-Ribiere method reaches the minimum for the quadratic form, it resets the direction <em>h</em> along the local gradient, essentially starting the conjugate-gradient process again. Therefore, the Polak-Ribiere method
+            can make the transition to additional iterations more efficiently than the Fletcher-Reeves method. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Nonlinear_Programming.html" shape="rect">Nonlinear Programming</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

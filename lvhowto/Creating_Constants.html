@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 2400Econstantshlp -->
+
+<title>Creating and Editing User-Defined Constants</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Creating and Editing User-Defined Constants</h1>
+<p class="Body"><!-- Begin parent: 2400Econstants -->Constants are terminals on the block diagram that supply fixed data values to the block diagram. Universal constants are constants with fixed values, such as pi (<img src="pi.gif">) and infinity (<img src="infty.gif">). User-defined constants are constants you define and edit before you run a VI.<!-- End parent: 2400Econstants --></p>
+
+<p class="Body">Complete the following steps to create a user-defined constant.</p>
+
+<ol>
+<li>Right-click an input terminal of a VI or function and select <strong>Create&#0187;Constant</strong> from the shortcut menu. LabVIEW creates a constant of the default data type of the input terminal and highlights the value.</li>
+<li>Type the value you want to assign to the constant and press the &lt;Enter&gt; key. 
+You also can press the up and down arrow keys to assign a value to the constant. LabVIEW resizes the constant to fit its contents. <!-- Begin parent: 2000Elabelinghlp -->You can resize a string constant the same way you <a href="Resizing_Labels.html">resize a label</a>.<!-- End parent: 2000Elabelinghlp --></li>
+<li><!-- Begin parent: 2400Econstants -->Use the Operating or Labeling tool to click the constant and edit its value. If <a href="Selecting_a_Tool.html">automatic tool selection is enabled</a>, double-click the constant to switch to the Labeling tool and edit the value.<!-- End parent: 2400Econstants --></li>
+</ol>
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&#160;&#160;LabVIEW uses <a href="../lvconcepts/Block_Diagram_Objects.html#ConstantFolding">constant folding</a> to optimize the performance of VIs. You can display constant folding on the block diagram by selecting  <strong>Tools&raquo;Options</strong>, selecting  <strong>Block Diagram</strong> from the  <strong>Category</strong> list, and placing a checkmark in the  <strong>Show hash marks for constant folded and loop invariant wires</strong> checkbox.</td></tr></table>
+
+<p class="Body">You also can create a constant in the following ways:</p>
+<ul>
+<li><a href="Searching_for_Controls_VIs.html">Search</a> for a constant or select it on the <strong>Functions</strong> palette and add it to the block diagram. <!-- Begin parent: 2400Econstants -->Most constants are located at the bottom or top of their palettes.<!-- End parent: 2400Econstants --></li>
+<li>Search the <em>LabVIEW Help</em> for a constant and click the <strong>Add to the block diagram</strong> button to place the constant on the cursor so you can add it to the block diagram. Click the <strong>Find on the palette</strong> button to highlight the constant on the <strong>Functions</strong> palette.</li>
+<li>Drag a front panel control to the block diagram. <!-- Begin parent: 2400Econstants -->LabVIEW creates a constant with the value of the front panel control at the time you dragged it to the block diagram. The value of a refnum constant is <span class="Monospace">Not A Refnum</span>. The control remains on the front panel. Changing the value of the front panel control does not affect the constant value on the block diagram and vice versa.<!-- End parent: 2400Econstants --></li>
+</ul>
+
+
+
+</body>
+</html>

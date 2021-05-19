@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+<title>Handling Run-Time Shortcut Menu Selections</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Handling Run-Time Shortcut Menu Selections</h1>
+
+<p class="Body">After you customize a run-time shortcut menu <a href="Customizing_Shortcut_Menus_Statically.html">statically</a> or <a href="Customizing_Shortcut_Menus_Programm.html">programmatically</a>, you must configure an Event structure to handle each menu item in the custom menu.</p>
+
+<p class="Body">Complete the following steps to handle menu items you created in a custom menu.</p>
+
+<ol><li>Add an <a href="../glang/Event_Structure.html">Event structure</a> to the block diagram.
+				<br><br><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object1217);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Add</SPAN>  
+					<SPAN title=" Find on the palette "><a href="javascript:findObject(object1217);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Find</SPAN>
+	<br><br></li>
+
+<li>Right-click the Event structure and select <strong>Edit Events Handled by This Case</strong> from the shortcut menu. </li>
+
+<li>In the <a href="../lvdialog/Edit_Events_Dialog_Box.html">Edit Events</a> dialog box, select a control or pane from the <strong>Event Sources</strong> list and select <strong>Shortcut Menu Selection (User)</strong> from the <strong>Events</strong> list.</li>
+
+<li>Click the <strong>OK</strong> button to close the  dialog box.</li>
+
+<li>Add a <a href="../glang/While_Loop.html">While Loop</a> to the block diagram around the Event structure.
+				<br><br><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object762);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Add</SPAN>  
+					<SPAN title=" Find on the palette "><a href="javascript:findObject(object762);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Find</SPAN>
+	<br><br></li>
+	
+<li>Add a <a href="../glang/Case_Structure.html">Case structure</a> inside the Shortcut Menu Selection (User) case of the Event structure.
+				<br><br><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object757);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Add</SPAN>  
+					<SPAN title=" Find on the palette "><a href="javascript:findObject(object757);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Find</SPAN>
+	<br><br></li>
+	
+<li>Wire the <strong>ItemTag</strong> event data field to the selector terminal on the border of the Case structure.</li>
+
+<li>Enter the tag name of the shortcut menu item in the <a href="../lvhowto/case_selector_values.html">case selector label</a>.</li>
+
+<li><a href="Adding_Subdiagrams.html">Create a case</a> for each shortcut menu item you created. For example, if you have a <strong>Help</strong> item, you can use the <a href="../glang/Control_Online_Help.html">Control Online Help</a> function to open a help file when a user selected <strong>Help</strong> from the shortcut menu.</li></ol>
+
+
+
+
+
+
+</body>
+</html>

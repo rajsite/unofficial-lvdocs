@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Mass Compiling VIs</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Mass Compiling VIs</h1>
+<p class="Body">When you mass compile VIs, LabVIEW verifies the existence of any subVIs and relinks the subVIs to the main VI. Relinking subVIs to the main VI decreases loading time because LabVIEW does not have to search for those VIs. LabVIEW also updates VIs to the version of LabVIEW you use. LabVIEW detects and reports corrupted VIs, which LabVIEW cannot load. If LabVIEW locates corrupted VIs, you can restore them from a backup.</p>
+<p class="Body">Certain circumstances, such as upgrading a VI to a newer version of LabVIEW, require LabVIEW to recompile a VI when the VI first loads. LabVIEW continues to recompile the VI each time the VI loads until you save the VI. If you expect LabVIEW to recompile many VIs on load, you might want to compile and save all the VIs at the same time to avoid these tasks at a later time. When you simultaneously compile and save a collection of VIs, you are mass compiling the VIs.</p>
+
+<p class="Body">Complete the following steps to mass compile a directory of VIs or an LLB.</p>
+
+<ol><li>Select <strong>Tools&#0187;Advanced&#0187;Mass Compile</strong> to display the <a href="../lvdialog/Mass_Compile_DB.html">Mass Compile</a> dialog box.</li>
+
+<li>Navigate to the directory of VIs or LLB you want to compile.
+
+<ul>
+<li>Navigate into a folder and click the <strong>Current Folder</strong> button to update all the VIs and LLBs in that folder.</li>
+<li>Select a <span class="Monospace">.llb</span> file to update all the VIs in that LLB. Select the open folder icon labeled VI with a single period to the right and click the <strong>Select</strong> button.</li></ul></li>
+<li>(Optional) Place a checkmark in the <strong>Log Results</strong> checkbox and select the desired location to store a log of the mass compile operation.</li>
+<li>(Optional) Place a checkmark in the <strong>Cache VIs</strong> checkbox and enter the number of VIs you want LabVIEW to store in memory.
+<table class="Borderless">
+<tr><td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;Caching VIs can significantly decrease the execution time of a mass compile because LabVIEW does not have to load cached VIs when you compile a top-level VI. However, VI caching consumes more system memory. If you mass compile a folder that contains VIs with the same name in different subfolders and the VIs do not belong to a library, VI caching may cause <a href="../lvconcepts/Avoiding_Incorrect_Dependencies.html">cross-linking</a>.</td></tr></table></li>
+<li>Click the <strong>Mass Compile</strong> button to mass compile the VIs.
+<table class="Borderless">
+<tr><td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If you <a href="../lvhowto/mass_compile_errors_warnings.html">receive messages</a> under the <strong>Status</strong> tab, open the VI listed. If the VI has an error, fix the error in the VI before trying to mass compile again.</td></tr></table></li>
+<li>Click the <strong>Done</strong> button to return to LabVIEW.</li>
+</ol>
+
+<p class="Body">When you mass compile VIs, the <strong>Status</strong> tab of the Mass Compile dialog box displays a log of <a href="../lvhowto/mass_compile_errors_warnings.html">warning messages</a> for the mass compile operation. For example, the log can report corrupted VIs and VIs that were loaded from the search directories instead of the path specified in the calling VI. You can mass compile to detect unexpected behavior in VIs you compile, such as VIs that break or load from unexpected locations.</p>
+
+<p class="Body">You also can use the <a href="../lvprop/App_Mass_Compile.html">Mass Compile</a> method or the <a href="../lvconcepts/cli_predefined_operations.html#MassCompile"><span class="DNL">MassCompile</span></a> command line operation to load and compile VIs in a directory programmatically. </p>
+
+<h2>Mass Compile Operation Order</h2>
+<p class="Body">LabVIEW mass compiles only VIs last saved in a previous version of LabVIEW and VIs with unsaved changes that would result in a recompile when you open them. When LabVIEW mass compiles a directory of VIs, it processes files in the following order at each level of the directory hierarchy:</p>
+
+<ul>
+<li>LabVIEW project files&#8212;When LabVIEW encounters a project, LabVIEW processes the project file, then all files owned by the project in the order they appear in the project tree of the <strong>Project Explorer</strong> window. Project- and target-specific settings defined by the project such as <a href="../lvhowto/Creating_Cond_Disable_Struc.html">conditional disable symbols</a> can affect how the files are compiled, such as by specifying the platforms or processor LabVIEW uses to execute the VI.</li>
+<li>Files within subdirectories&#8212;LabVIEW processes subdirectories one by one in alphabetical order. For example, if a directory contains folders <span class="Monospace">B</span> and <span class="Monospace">F</span>, LabVIEW processes the files in <span class="Monospace">B</span> in alphabetical order, then the files in <span class="Monospace">F</span> in alphabetical order.</li>
+<li>Any remaining files at that level of the directory, in alphabetical order</li>
+</ul>
+
+</body>
+</html>

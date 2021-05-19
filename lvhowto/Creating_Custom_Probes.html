@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 3500Edebugginghlp -->
+
+<title>Creating Custom Probes</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Creating Custom Probes
+</h1>
+<p class="Body"><!--Begin parent: ../lvconcepts/Building_the_Block_Diagram.xml-->Create a probe when you want to have more control over how LabVIEW probes the data that flow through a wire.<!--End parent: ../lvconcepts/Building_the_Block_Diagram.xml--> When you create a new probe, the data type of the probe matches the data type of the wire you right-click. Refer to the <a href="CavtsRcmdCstPrbs.html">caveats and recommendations</a> before you begin creating custom probes.
+</p>
+<p class="Body">Complete the following steps to create a custom probe.
+</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;If you are creating a custom probe for a LabVIEW <a href="../lvconcepts/Creating_Classes.html">class</a> or <a href="../lvconcepts/lv_interfaces.html">interface</a> data type, some of the steps listed below may vary depending upon whether you are creating a custom probe that is a member VI of the class or interface or a custom probe that is not a member VI of the class or interface. The changes are noted where appropriate below. A custom probe that is a member VI of a class is a member probe and has the ability to access the private data of the class directly. Member probes can display any aspect of the private class data. A non-member custom probe may only display information accessible via the public interface of the class.</td></tr></table>
+<ol>
+<li>Right-click a wire and select <strong>Custom Probe&#0187;New</strong> from the shortcut menu to display the <a href="../lvdialog/Cust_Probes_Wiz_DB.html">Create New Probe</a> dialog box.</li>
+<li>Select whether to create a new probe or to create a probe based on an existing probe.
+<ul>
+<li>Select <strong>Create a probe from an existing probe</strong> to create a probe based on an existing probe. <!--Begin child: lvdialog.chm,Create_New_Probe_DB.html-->Existing probes can be the probes LabVIEW supplies or other probes you created using the <strong>Create New Probe</strong> dialog box.<!--End child: lvdialog.chm,Create_New_Probe_DB.html-->
+<ol>
+<li>Click the <strong>Next</strong> button and select an existing probe on which you want to base the new probe. LabVIEW displays all <a href="Using_Supplied_Probe.html">supplied probes</a> in the <span class="Monospace">labview\vi.lib\_probes</span> directory and any custom probes available.</li>
+<li>Click the <strong>Next</strong> button.</li>
+<li>Enter the filename, window title and shortcut menu name, and directory where you want to save the probe. If you do not specify a directory, LabVIEW stores custom probes in the <span class="Monospace">Probes</span> subdirectory of the <a href="Select_Default_Data_Fold.html">default data directory</a>. If you want a custom probe to be the default probe for a particular data type, save the probe in the <span class="Monospace">labview\user.lib\_probes\default</span> directory. Do not save probes as existing files in the <span class="Monospace">labview\vi.lib\_probes</span> directory because LabVIEW overwrites the existing files when you uninstall or reinstall.</li>
+<li>Click the <strong>Save</strong> button. LabVIEW opens a probe that matches the existing probe you selected.</li>
+</ol>
+</li>
+</ul>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;If you are creating a non-member probe for a LabVIEW class or interface, follow the instructions above. If you are creating a member probe for a LabVIEW class or interface, you can save the custom probe in the subdirectory where you save the other member VIs of the class or interface to ensure that the class or interface items remain together for easy distribution.</td></tr></table>
+<ul>
+<li>Select <strong>Create a new probe</strong> to create a new probe.
+<ol>
+<li>Click the <strong>Next</strong> button.</li>
+<li>Enter the filename, window title and shortcut menu name, and directory where you want to save the probe.</li>
+
+<li>Click the <strong>Save</strong> button. LabVIEW opens a probe that contains a control that is the data type of the wire you right-clicked and a Boolean indicator that acts like a conditional breakpoint. The probe also contains the <strong>To Probe String</strong> function and a string indicator you can use to configure the value LabVIEW displays in the <strong>Value</strong> column of the <a href="../lvdialog/probe_watchwindow.html">Probe Watch Window</a>. Do not delete the control or indicators or change the connector pane because doing so breaks the probe.</li> 
+<li>(Optional) Wire any data type to the <strong>data value</strong> input of the To Probe String function to see the data as a string in the <strong>Value</strong> column of the <strong>Probe Watch Window</strong>. The function breaks down the data and converts it into a string that the <strong>Value String</strong> indicator can display in the <strong>Value</strong> column. The To Probe String function also compresses and trims the data to fit the available space. Use this function to extract relevant information from complex data types.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;LabVIEW automatically wires the control to the To Probe String function. You can remove the To Probe String function to specify the string you want LabVIEW to display in the <strong>Value</strong> column.</td>
+</tr>
+</table>
+</li>
+<li>(Optional) Specify the string you want LabVIEW to display in the <strong>Value</strong> column of the <strong>Probe Watch Window</strong> by wiring that string to the <strong>Value String</strong> indicator, as shown in the following block diagram.
+
+<p><img src="loc_bd_custprobe_valuestring.gif"></p>
+
+The previous figure shows a custom probe of a wire that contains numeric data. You can use a <a href="../lvconcepts/case_structures_concepts.html">Case Structure</a> to tell LabVIEW to display <span class="Monospace-Bold">Greater than five</span> or <span class="Monospace-Bold">Less than five</span> rather than the default, which is to display the data that passes through the wire.
+</li>
+
+<li>When you finish customizing the probe, save and close it. <!--Begin parent: 3500debugging/hlp-->If you want to edit that probe, you must open it from the directory where you saved it.<!--End parent: 3500debugging/hlp--></li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;If you are creating a probe for a LabVIEW class or interface data type, the <strong>Create New Probe</strong> dialog box does not make the new probe a member of the LabVIEW class or interface by default. If you want the probe to be a member probe of the class or interface, you should <a href="../lvhowto/adding_items_class.html">add the member probe to the class or interface</a>.</td></tr></table>
+
+<p class="Body">To use the probe you created, right-click the wire again and select <strong>Probe</strong> from the shortcut menu. After you create a probe, <!--Begin parent:  ../lvconcepts/Building_the_Block_Diagram.xml-->that probe becomes the default probe for that data type, and LabVIEW loads that probe when you right-click the wire and select <strong>Probe</strong> from the shortcut menu.<!--End parent: ../lvconcepts/Building_the_Block_Diagram.xml--> To change the default probe for a data type, right-click a wire of that data type, select <strong>Custom Probe</strong> from the shortcut menu, and select a supplied, custom, or generic probe from the shortcut menu.
+</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;If you create a probe for a LabVIEW class or interface and then move the LabVIEW class or interface to a different machine or you reinstall LabVIEW on the current machine, the default probe that users of the class or interface can use is the generic probe. A custom probe is not the default probe for any data type until you use it on the machine. However, if you create a member probe you can use the <a href="../lvdialog/C_Library_Props_DB.html">Class/Interface Properties</a> dialog box to <a href="../lvhowto/Custom_Probe_Classes.html">set the custom probe as the initial default probe for the class or interface</a>. Now when you distribute the class or interface to a new machine, the default probe the user of the class or interface can use is the custom probe rather than the generic probe.</td></tr></table>
+<p class="Body">To edit an existing probe, open the probe VI or use the <strong>Create New Probe</strong> dialog box to create a new probe based on the existing probe.
+</p>
+
+
+
+</body>
+</html>

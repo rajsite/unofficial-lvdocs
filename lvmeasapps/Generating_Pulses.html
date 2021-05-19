@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Generating Pulses</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css"><script src="common.js" type="text/javascript"></script></head>
+<body>
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Generating Pulses</h1>
+        
+       <p class="Body">A pulse is a rapid change in the amplitude of a signal from its idle value to an active value for a short period of time. Pulses can have high or low idle states. A pulse with a low idle state starts at the low value (typically zero), pulses high, and returns to low. A pulse with a high idle state starts high, pulses to low, and returns to high. </p>
+<p class="Anchor"><img src="loc_eps_HighLow.gif" alt=""></p>
+<p class="Body">A pulse train is more than one pulse. You can use a pulse or pulse train as a clock signal, a gate, or a trigger for a measurement or a pulse generation. You can use a single pulse of known duration to determine an unknown signal frequency or to trigger an analog acquisition. You can use a pulse train of known frequency to determine an unknown pulse width.</p>
+<p class="Body">Each pulse or pulse train consists of three parts:</p>
+<ul>
+<li><strong>High Time</strong>�The amount of time the pulse is at a high level.</li>
+<li><strong>Low Time</strong>�The amount of time the pulse is at a low level.</li>
+<li><strong>Initial Delay</strong>�The amount of time the output remains at the idle state before generating the pulse. The idle state always replaces high time or low time for the first pulse of a generation, depending on the idle state.</li>
+</ul>
+<p class="Body">The pairing of high time and low time pair is a <em>pulse specification</em>.</p>
+<p class="Body">The period of the pulse is the sum of the high time and the low time.  The frequency is the reciprocal of the period, 1/period.</p>
+<p class="Body">The following illustration shows the parts of a pulse.</p>
+<p class="Anchor"><img src="loc_eps_PartsSinglePulse.gif" alt=""></p>
+<p class="Body">The following illustration shows the parts of a pulse train.</p>
+<p class="Anchor"><img src="loc_eps_partsPulseTrain.gif" alt=""></p>
+
+<p class="Body">Before you generate a pulse, you need to determine if you want to output the pulse or pulse train in terms of frequency, time, or number of ticks of the counter timebase. For frequency, you need to determine the <a href="../measfunds/dutycycle.html">duty cycle</a>. For time, you specify the high time and the low time. Use the number of ticks if you are using a counter timebase with an unknown rate. When you configure a pulse generation, the output appears at the counter output terminal.</p>
+        
+        
+    <div id="exlinks">
+<h2>Examples</h2>
+<p class="Body">Refer to the following VIs for examples of performing this measurement. You must have a driver installed to find examples for that driver.</p>
+      <h3>NI-DAQmx</h3>
+<p class="Body">You can use the DAQmx - Data Acquisition VIs to perform this measurement. Find related examples:</p>
+<p class="Body"><a href="javascript:findExamples('1918');"><img src="find.gif" border="0"></a>�Counter - Continuous Output</p>
+<p class="Body">You also can use the DAQ Assistant Express VI to perform this measurement.</p>
+<p class="Body"><img style="cursor:pointer" src="add.gif" border="0" onclick="placeObject('DAQ%20Assistant');">�Add�
+         <img style="cursor:pointer" src="find.gif" border="0" onclick="findObject('DAQ%20Assistant');">�Find</p>
+      <h3>FieldPoint</h3>
+<p class="Body">You can use the FieldPoint VIs to perform this measurement. Find related examples:</p>
+<p class="Body"><a href="javascript:findExamples('3790');"><img src="find.gif" border="0"></a>�Advanced FieldPoint</p>
+    </div>
+</body>
+</html>

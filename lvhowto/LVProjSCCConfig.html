@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+<title>Configuring Source Control for LabVIEW Projects</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+
+<h1>Configuring Source Control for LabVIEW Projects</h1>
+
+<p class="Body">Before you configure source control settings for a <a href="../lvconcepts/Using_LabVIEW_Projects.html">LabVIEW project</a>, you must <a href="../lvhowto/Configuring_SCC.html">configure LabVIEW to use source control</a>.  LabVIEW projects use the source control configuration you specify for the LabVIEW environment by default.</p> 
+					
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif" /></td><td><strong>Note</strong>��Source control is available only with the Professional Development System.</td></tr></table>
+
+<p class="Body">Complete the following steps to configure source control settings for an individual LabVIEW project.</p>
+
+<ol><li><a href="../lvhowto/Configuring_SCC.html">Configure LabVIEW to use source control</a> if you have not already done so.</li>
+<li>From the <a href="../lvconcepts/Using_LabVIEW_Projects.html">Project Explorer</a> window, select <strong>Project�Properties</strong> or right-click the project root and select <strong>Properties</strong> from the shortcut menu to display the <a href="../lvdialog/Project_Properties.html">Project Properties</a> dialog box.</li>
+<li>Select <strong>Source Control</strong> from the <strong>Category</strong> list to display the <a href="../lvdialog/Proj_SCC_Properties.html">Source Control</a> page.</li>
+<li>Select one of the following options:
+<ul>
+<li><strong>Use environment source control settings</strong>&#8212;Uses the source control settings you configure for the LabVIEW environment for the LabVIEW project. This is the default setting.</li>
+<li><strong>Use project-specific source control settings</strong>&#8212;Specifies a different source control project than the one specified by the LabVIEW environment source control settings to use with the LabVIEW project. Click the <strong>Change</strong> button to display a configuration dialog box from which you can specify a source control project. The dialog box that appears is specific to the source control provider you use.</li>
+<li><strong>Do not use source control for this project</strong>&#8212;Disables source control for the LabVIEW project, regardless of the source control settings you configure for the LabVIEW environment.</li></ul>
+</li>
+<li>Click the <strong>OK</strong> button to apply the source control configuration to the LabVIEW project.</li></ol>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif" /></td><td><strong>Note</strong>��You cannot change the source control provider from a LabVIEW project. Source control settings on LabVIEW projects must match the provider you specify for the LabVIEW environment. If you change the source control provider for the LabVIEW environment, any LabVIEW project with configuration settings specific to a different source control provider acts as if source control is not enabled, and a warning appears in the <strong>Source Control Properties</strong> page. Use the <a href="../lvdialog/Source_Control_Options.html">Source Control</a> page of the <a href="../lvdialog/Options_Dialog_Box.html">Options</a> dialog box to change the source control provider for the LabVIEW environment. In LabVIEW, you can use only one source control provider at a time.</td></tr></table>
+
+
+
+</body>
+</html>

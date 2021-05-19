@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4210Eeventshlp -->
+
+<title>Configuring Events Handled by the Event Structure</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Configuring Events Handled by the Event Structure</h1>
+
+<p class="Body">Before you configure events for the Event structure to handle, review the <a href="CaveatsRecmndtnsEvnts.html">caveats and recommendations for using events</a> in LabVIEW.</p>
+
+<p class="Body">Complete the following steps to configure an Event structure case to handle an event.</p>
+
+<ol>
+<li>(Optional) If you want to configure the Event structure to handle a user event, a Boolean control within a radio buttons control, or a user interface event that is generated based on a reference to an application, VI, or control, you first must <a href="Dynamic_Register_Event.html">dynamically register that event</a>.</li>
+
+<li>Right-click the border of the Event structure and select <strong>Edit Events Handled by This Case</strong> from the shortcut menu to display the <a href="../lvdialog/Edit_Events_Dialog_Box.html">Edit Events</a> dialog box to edit the current case. You also can select <strong>Add Event Case</strong> from the shortcut menu to <a href="AddDupEventCase.html">create a new case</a>.</li>
+
+<li>Specify an event source in the <strong>Event Sources</strong> pane.</li>
+
+<li>Select the event you want to configure for the event source, such as Key Down, Timeout, or Value Change, from the <strong>Events</strong> list. When you select a dynamic event source from the <strong>Event Sources</strong> list, the <strong>Events</strong> list displays that event. This is the same event you selected when you <a href="Dynamic_Register_Event.html">registered the event</a>. If you registered for events dynamically and wired <strong>event reg refnum out</strong> to the dynamic event terminal, the sources appear in the <strong>Dynamic</strong> section.</li>
+
+<li>If you want to add additional events for the current case to handle, click the blue plus button <img src="noloc_env_bluplus.gif"> and repeat steps 3 and 4 to specify each additional event. The <strong>Event Specifiers</strong> section at the top of the dialog box lists all the events for the case to handle. When you click an item in this list, the <strong>Event Sources</strong> section updates to highlight the event source you selected. You can repeat steps 3 and 4 to redefine each event or click the red <span class="MONOSPACE">X</SPAN> button <img src="noloc_env_redx.gif"> to remove the selected event.</li>
+
+<li>Click the <strong>OK</strong> button to save the configuration and close the dialog box. The event cases you configured appear as selection options in the event selector label at the top of the event structure and the Event Data node displays the data common to all events handled in that case.</li>
+
+<li>(Optional) You can use a <a href="../lvprop/App_Timeout.html">Timeout</a> event to configure an Event Structure to wait a specified amount of time for an event to occur. <!--begin child: ../lvprop/App_Timeout.html-->Wire a value to the Timeout terminal at the top left of the Event structure to specify the number of milliseconds the Event structure should wait for an event to occur before generating a Timeout event.<!--end child: ../lvprop/App_Timeout.html--> The default value for the Timeout terminal is <span class="monospace">&#8211;1</span>, which specifies to wait indefinitely for an event to occur.</li>
+
+<li>Repeat steps 1 through 6 for each event case you want to configure.</li>
+</ol>
+
+<p class="Body">Refer to the following VIs for examples of using events:</p>
+<ul>
+<li><span class="Monospace">labview\examples\Dialog and User Interface\Events\Events.lvproj</span><br><br>
+<a href="javascript:openProj('examples%5C%5CDialog%20and%20User%20Interface%5C%5CEvents%5C%5CEvents.lvproj');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open examples&nbsp;<a href="javascript:findExamples(3758);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</li>
+<li><span class="Monospace">labview\examples\Structures\Event Structure\Event Structure.lvproj</span><br><br>
+<a href="javascript:openProj('examples%5C%5CStructures%5C%5CEvent%20Structure%5C%5CEvent%20Structure.lvproj');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open examples&nbsp;<a href="javascript:findExamples(3758);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</li>
+</ul>
+
+
+</body>
+</html>

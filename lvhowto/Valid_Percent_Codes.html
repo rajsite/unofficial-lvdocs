@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 1100Enumericcihlp -->
+
+<title>Valid Format Specifiers for Numeric Data Types</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Valid Format Specifiers for Numeric Data Types</h1>
+<p class="Body">The following table shows which format specifiers are valid for each data type. If a cell contains X, the format is invalid for that data type. If the cell contains <img src="checkmark.gif">, the format is valid for that data type. If the data type changes and the current format is not allowed with the new data type or if the cell is labeled <img src="checkmark.gif">-+, LabVIEW changes the format to the default format for that data type. For example, setting the format of a double-precision, floating-point data type to absolute time is valid, but when you change the double-precision, floating-point data type to a long signed integer data type, the format changes to decimal format.
+</p>
+<table class="Bordered">
+<tr><th class="Bordered">Format Specifier</th>
+<th class="Bordered">T<br></th>
+<th class="Bordered">t<br></th>
+<th class="Bordered">x<br></th>
+<th class="Bordered">o<br></th>
+<th class="Bordered">b<br></th>
+<th class="Bordered">d<br></th>
+<th class="Bordered">u<br></th>
+<th class="Bordered">f<br></th>
+<th class="Bordered">e<br></th>
+<th class="Bordered">g<br></th>
+<th class="Bordered">p<br></th>
+<th class="Bordered">#<br></th>
+<th class="Bordered">^<br></th></tr>
+
+<tr>
+<th class="Bordered">Data Types<br></th>
+<th class="Bordered">Absolute Time<br></th>
+<th class="Bordered">Relative Time<br></th>
+<th class="Bordered">Hexadecimal<br></th>
+<th class="Bordered">Octal<br></th>
+<th class="Bordered">Binary<br></th>
+<th class="Bordered">Signed<br></th>
+<th class="Bordered">Unsigned<br></th>
+<th class="Bordered">Floating-<br>Point<br></th>
+<th class="Bordered">Scientific<br>Notation<br></th>
+<th class="Bordered">Scientific Notation or<br>Floating-Point,<br>Based on<br>
+Exponent<br></th>
+<th class="Bordered">SI Prefix<br></th>
+<th class="Bordered">Auto<br>Precision<br>(Remove<br>Trailing 0s)<br></th>
+<th class="Bordered">Engineering<br>Notation<br></th></tr>
+
+<tr>
+<td class="Bordered">Time Stamp</td>
+<td class="Bordered"><img src="checkmark.gif"></td>
+<td class="Bordered">X</td>
+<td class="Bordered">X</td>
+<td class="Bordered">X</td>
+<td class="Bordered">X</td>
+<td class="Bordered">X</td>
+<td class="Bordered">X</td>
+<td class="Bordered">X</td>
+<td class="Bordered">X</td>
+<td class="Bordered">X</td>
+<td class="Bordered">X</td>
+<td class="Bordered">X</td>
+<td class="Bordered">X</td></tr>
+
+<tr>
+<td class="Bordered">Complex types (CXT, CDB, CSG)</td>
+<td class="Bordered">X</td>
+<td class="Bordered">X</td>
+<td class="Bordered">X</td>
+<td class="Bordered">X</td>
+<td class="Bordered">X</td>
+<td class="Bordered"><img src="checkmark.gif">-+</td>
+<td class="Bordered"><img src="checkmark.gif">-+</td>
+<td class="Bordered"><img src="checkmark.gif"></td>
+<td class="Bordered"><img src="checkmark.gif"></td>
+<td class="Bordered"><img src="checkmark.gif"></td>
+<td class="Bordered"><img src="checkmark.gif"></td>
+<td class="Bordered"><img src="checkmark.gif"></td>
+<td class="Bordered"><img src="checkmark.gif"></td></tr>
+
+<tr>
+<td class="Bordered">Real floating-point types (EXT, DBL, SGL)</td>
+<td class="Bordered"><img src="checkmark.gif">-+</td>
+<td class="Bordered"><img src="checkmark.gif">-+</td>
+<td class="Bordered">X</td>
+<td class="Bordered">X</td>
+<td class="Bordered">X</td>
+<td class="Bordered"><img src="checkmark.gif"></td>
+<td class="Bordered"><img src="checkmark.gif">-+</td>
+<td class="Bordered"><img src="checkmark.gif">-+</td>
+<td class="Bordered"><img src="checkmark.gif"></td>
+<td class="Bordered"><img src="checkmark.gif"></td>
+<td class="Bordered"><img src="checkmark.gif"></td>
+<td class="Bordered"><img src="checkmark.gif"></td>
+<td class="Bordered"><img src="checkmark.gif"></td></tr>
+
+<tr>
+<td class="Bordered">Integer types (U64, I64, U32, I32, U16, I16, U8, I8)</td>
+<td class="Bordered"><img src="checkmark.gif">-+</td>
+<td class="Bordered"><img src="checkmark.gif">-+</td>
+<td class="Bordered"><img src="checkmark.gif"></td>
+<td class="Bordered"><img src="checkmark.gif"></td>
+<td class="Bordered"><img src="checkmark.gif"></td>
+<td class="Bordered"><img src="checkmark.gif"></td>
+<td class="Bordered"><img src="checkmark.gif"></td>
+<td class="Bordered"><img src="checkmark.gif">-+</td>
+<td class="Bordered"><img src="checkmark.gif">-+</td>
+<td class="Bordered"><img src="checkmark.gif">-+</td>
+<td class="Bordered"><img src="checkmark.gif">-+</td>
+<td class="Bordered"><img src="checkmark.gif">-+</td>
+<td class="Bordered"><img src="checkmark.gif">-+</td></tr>
+<tr>
+<td class="Bordered">Fixed-point type (FXP)</td>
+<td class="Bordered">X</td>
+<td class="Bordered">X</td>
+<td class="Bordered"><img src="checkmark.gif"></td>
+<td class="Bordered"><img src="checkmark.gif"></td>
+<td class="Bordered"><img src="checkmark.gif"></td>
+<td class="Bordered"><img src="checkmark.gif"></td>
+<td class="Bordered"><img src="checkmark.gif"></td>
+<td class="Bordered"><img src="checkmark.gif"></td>
+<td class="Bordered"><img src="checkmark.gif"></td>
+<td class="Bordered"><img src="checkmark.gif"></td>
+<td class="Bordered"><img src="checkmark.gif"></td>
+<td class="Bordered"><img src="checkmark.gif"></td>
+<td class="Bordered"><img src="checkmark.gif"></td></tr>
+</table>
+
+
+
+</body>
+</html>

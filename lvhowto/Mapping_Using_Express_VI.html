@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+
+<title>Mapping Data Using the Sensor Mapping Express VI</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Mapping Data Using the Sensor Mapping Express VI</h1>
+					<p class="Body">Map real-world data onto a 3D model using free sensors and DAQmx channels. Use the <a href="../lvpict/Sensor_Mapping.html">Sensor Mapping</a> Express VI to wire an array of data values that represent sensors you configure in the <a href="../lvpict/Sensor_Mapping.html">Configure Sensors</a> dialog box. You can configure sensors to represent DAQmx channels or create free sensors to represent data you wire to the Express VI. Refer to the <em>NI-DAQmx Help</em> for more information about using DAQmx channels.</p> 
+					<p class="Body">Complete the following steps to use the Sensor Mapping Express VI to map real-world data onto a 3D model.</p>
+					<ol><li>Add the Sensor Mapping Express VI to the block diagram.
+						<br><br><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object4079);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Add</SPAN>
+		<SPAN title=" Find on the palette "><a href="javascript:findObject(object4079);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Find</SPAN><br><br></li><li>Click the <strong>Load Model</strong> button in the <strong>Configure Sensors</strong> dialog box to display a file dialog box. 
+							<ol><li>Navigate to the 3D model you want to load.</li><li>Click the <strong>OK</strong> button to select the model and close the file dialog box. LabVIEW displays the path to the 3D model in the <strong>Model Path</strong> field.</li></ol>
+					<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;LabVIEW supports the Virtual Reality Modeling Language (VRML) and stereolithography (STL) file formats for 3D models.</td></tr></table>
+					</li><li>(Optional) Select a DAQmx task from the <strong>DAQmx Task Name</strong> pull-down menu. LabVIEW populates the <strong>Channels List</strong> with the channels for the DAQmx task.
+					<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;The <strong>DAQmx Task Name</strong> option does not appear unless you install NI-DAQmx.</td></tr></table>
+					</li><li>Drag the channels from the list onto the 3D model to add sensors. When you create sensors from a DAQ channel, the sensor represents the channel name, not the channel data. You also can right-click anywhere on the model to add free sensors. The sensors you add to the 3D model affect the color of the 3D model at the sensor point according to the data value the sensor represents.</li><li>(Optional) Change the draw style of the 3D model by configuring the <strong>Draw Style</strong> option. Use this option to ensure accurate placement of the sensors by viewing the points, lines, and vertices of the model.</li><li>(Optional) Resize the sensors on the model by increasing or decreasing the <strong>Sensor Size</strong> option. Use this option to ensure accurate placement of the sensors.</li><li>Right-click the <strong>Color Ramp</strong> control and use the shortcut menu items to customize the appearance, size, colors, and number of colors. You also can configure the minimum and maximum value ranges for incoming data using the  control. Highlight the color map minimum or maximum value, type a new value and press the &lt;Enter&gt; key to change the value range. After you set the value range, click the top and bottom out-of-range colors to configure the colors to indicate if a value is outside of the value range you set.</li><li>Click the <strong>OK</strong> button to save the configuration and close the dialog box.</li><li><a href="../lvhowto/Creating_Array_Controls.html">Create an array of data values</a> and wire the array to the <strong>Sensor Values</strong> input of the Express VI. The array positions correspond with the order of the sensors you configure in the <strong>Configure Sensors</strong> dialog box.
+					<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;If the array you wire contains fewer values than the amount of sensors you add to the model, LabVIEW maps the extra sensors to the top out-of-range color.</td></tr></table>
+					</li><li>Add a 3D picture control to the front panel window.
+						<br><br><SPAN title=" Add to the front panel window "><a href="javascript:placeObjectFP(control73);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Add</SPAN>
+		<SPAN title=" Find on the palette "><a href="javascript:findObjectFP(control73);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Find</SPAN><br><br></li>
+        <li>On the block diagram, wire the <strong>Scene Ref Out</strong> output of the Sensor Mapping Express VI to the 3D picture control terminal.</li><li>Right-click the 3D picture control terminal and select <strong>Create&#0187;Invoke Node&#0187;AutoFocus</strong> to create an Invoke Node. Add the node to the right of the 3D picture control terminal. The <a href="../lvprop/SceneGraphDisp_AutoFocus.html">AutoFocus</a> method ensures the camera automatically positions itself according to the 3D model.</li><li>Wire all <a href="../lvhowto/Setting_Up_Error_I_O_in_VI.html">error in and error out terminals</a> on the block diagram.</li><li>Run the VI. LabVIEW displays the 3D model with the sensor data in the 3D picture control.</li></ol>
+					<p class="Body">In the <strong>Configure Sensors</strong> dialog box, you can hold down the &lt;Shift&gt; key while clicking and dragging the model to zoom in and out. Press the &lt;Ctrl&gt; key while clicking and dragging the model to pan the display. <span class="Platform">(macOS)</span> &lt;Command-Shift&gt;-click. <span class="Platform">(Linux)</span> &lt;Alt-Shift&gt;-click.</p>
+					<p class="Body">To delete sensors, select a sensor in the <strong>Channels List</strong> and click the <strong>Delete Sensor</strong> button to remove the sensor from the model and the <strong>Channels List</strong>. If the sensor is a DAQmx channel, LabVIEW removes the sensor from the model but not from the <strong>Channels List</strong>.</p>
+
+
+
+</body>
+</html>

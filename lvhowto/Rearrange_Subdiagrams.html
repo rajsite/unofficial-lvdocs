@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4200Estructureshlp -->
+
+<title>Rearranging Subdiagrams</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Rearranging Subdiagrams</h1>
+
+
+
+<p class="Body">Complete the following steps to rearrange <a href="../lvconcepts/case_sequence_inplace_disable.html">subdiagrams</a> for most structures:</p>
+<ol>
+<li>Right-click the structure border and select <strong>Rearrange Cases</strong> or <strong>Rearrange Subdiagrams</strong> from the shortcut menu to display the <a href="../lvdialog/Rearrange_Cases_Dialog_Box.html">Rearrange Cases</a> dialog box.</li>
+<li>Select a case or subdiagram in the <strong>Case List</strong> and drag it to a new location. A horizontal line appears to indicate where to insert the case or subdiagram in the list. You also can click the <strong>Sort</strong> button to rearrange the cases or subdiagrams alphabetically.</li>
+<li>Click the <strong>OK</strong> button.</li>
+</ol>
+<p>For Case structures, you also can rearrange the cases by <a href="Swap_Subdiagram_With_Case.html">swapping</a> or <a href="Shift_Subdiagram_To_Case_E.html">shifting</a> the cases.</p>
+<p>To rearrange the frames in a <a href="../glang/Flat_Sequence.html">Stacked Sequence</a> structure, right-click the structure border, select <strong>Make This Frame</strong>, and select a new frame number from the shortcut menu.</p>
+<p class="Body">Consider the following issues when you rearrange the subdiagrams of a structure:</p>
+<ul>
+<li>You can rearrange the cases in a <a href="../glang/Case_Structure.html">Case</a> structure with three or more cases. You can rearrange the cases in an <a href="../glang/Event_Structure.html">Event</a> structure with two or more cases. You can rearrange the subdiagrams in a <a href="../lvconcepts/Cond_Diagram_Disable.html">disable structure</a> with two or more subdiagrams.</li>
+<li><!-- Begin parent: lvhelp Rearrange_Subdiagrams.html -->When you rearrange the subdiagrams in a <a href="../glang/Conditional_Disable_Structure.html">Conditional Disable</a> structure, multiple subdiagrams can be TRUE, but LabVIEW compiles and executes only the first subdiagram that is TRUE.<!-- End parent: lvhelp Rearrange_Subdiagrams.html --></li>
+<li>
+<p>Rearranging the subdiagrams in a <a href="../glang/type_specialization_structure.html">Type Specialization</a> structure affects the subdiagram labels and how the VI runs. This is because the Type Specialization structure attempts to compile each subdiagram in order and declines subdiagrams with syntax errors. It accepts the first subdiagram with no syntax error and ignores the remaining subdiagrams.</p>
+<p>In the following example, the Type Specialization structure has subdiagrams A, B, C, and D. It accepts subdiagram C and ignores subdiagram D. If you switch subdiagrams C and D, the indexes of subdiagrams C and D get switched. The structure accepts subdiagram D and ignores subdiagram C because the structure compiles subdiagram D with no error before attempting to compile subdiagram C.</p>
+<img src="loc_bd_tss_rearranging.gif">
+</li>
+</ul>
+</body>
+</html>

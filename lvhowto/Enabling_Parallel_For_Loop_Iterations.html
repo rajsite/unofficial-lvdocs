@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4200Estructureshlp -->
+
+<title>Enabling Parallel For Loop Iterations</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Enabling Parallel For Loop Iterations
+</h1>
+<p class="Body">You can improve For Loop execution speed by enabling parallel For Loop iterations. Complete the following steps to enable parallel iterations:
+</p>
+
+<ol>
+<li>Right-click the For Loop and select <strong>Configure Iteration Parallelism</strong>. LabVIEW displays the <a href="../lvdialog/For_Loop_Iteration_DB.html">For Loop Iteration Parallelism</a> dialog box.</li>
+<li>Place a checkmark in the <strong>Enable loop iteration parallelism</strong> checkbox.</li>
+<li>Set the <strong>Number of generated parallel loop instances</strong> to the maximum number of logical processors you expect any computer running the VI to ever contain. For example, if you are developing an application for use on computers with a maximum of eight processors, set the number to eight.</li>
+<li>Click the <strong>OK</strong> button. The parallel instances (<strong>P</strong>) terminal appears below the count (<strong>N</strong>) terminal of the configured For Loop. You do not need to wire a value to the parallel instances terminal to enable parallel iterations. However, you can use the terminal to <a href="Configuring_Parallel_For_Loop_Iterations.html">tweak the performance</a> of a parallel For Loop.</li>
+</ol>
+<p class="Body">After you enable parallel iterations, <a href="Verifying_Parallel_For_Loop_Iterations.html">verify</a> that a For Loop can run with parallel iterations.</p>
+
+
+
+
+</body>
+</html>

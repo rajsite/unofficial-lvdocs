@@ -1,0 +1,117 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Solutions of Systems of Linear Equations</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-391A4A4A-8B0C-494B-9F10-A982DD461205" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Solutions of Systems of Linear Equations</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 In matrix-vector notation, a system of linear equations has the form <em>A</em><em>x</em> = <em>b</em>, where <em>A</em> is an <em>n</em> � <em>n</em> matrix and <em>b</em> is a given <em>n</em>-vector. The aim is to determine <em>x</em>, the unknown solution <em>n</em>-vector. Whether matrix <em>A</em> is singular or nonsingular determines if such a solution exists and if it is unique. 
+            	 
+         </p> 
+         	 
+         <p>A matrix is singular if it has any one of the following equivalent properties: 
+            	 
+         </p> 
+         	 <a name="GUID-391A4A4A-8B0C-494B-9F10-A982DD461205__UL_6DDB2702BFB64A7BAF1E1527B3E6C51C" shape="rect">
+            <!-- --></a><ul id="GUID-391A4A4A-8B0C-494B-9F10-A982DD461205__UL_6DDB2702BFB64A7BAF1E1527B3E6C51C">
+            <li><a name="GUID-391A4A4A-8B0C-494B-9F10-A982DD461205__LI_22648008739C40D999BF3CC8F9EE07BF" shape="rect">
+                  <!-- --></a>The inverse of the matrix does not exist. 
+               		
+            </li>
+            <li><a name="GUID-391A4A4A-8B0C-494B-9F10-A982DD461205__LI_C7F6653B00D1402F81CF47F180AAC173" shape="rect">
+                  <!-- --></a>The determinant of the matrix is zero. 
+               		
+            </li>
+            <li><a name="GUID-391A4A4A-8B0C-494B-9F10-A982DD461205__LI_60E018160D7F464C9DB31824F76B8563" shape="rect">
+                  <!-- --></a>The rows or columns of <em>A</em> are linearly dependent. 
+               		
+            </li>
+            <li><a name="GUID-391A4A4A-8B0C-494B-9F10-A982DD461205__LI_7E1243E0694042729A86C17D1499F9D6" shape="rect">
+                  <!-- --></a><em>A</em><em>z</em> = <em>0</em> for some vector <em>z</em> &#8800; 0. 
+               		
+            </li>
+         </ul> 
+         	 
+         <p>Otherwise, the matrix is nonsingular. If the matrix is nonsingular, its inverse <em>A</em><sup>-1</sup> exists, and the system <em>A</em><em>x</em> = <em>b</em> has a unique solution, <em>x</em> = <em>A</em><sup>-1</sup><em>b</em>, regardless of the value for <em>b</em>. 
+            	 
+         </p> 
+         	 
+         <p>On the other hand, if the matrix is singular, the number of solutions is determined by the right-hand-side vector <em>b</em>. If <em>A</em> is singular and <em>A</em><em>x</em> = <em>b</em>, <em>A</em>(<em>x</em> + &#945;<em>z</em>) = <em>b</em> for any scalar &#945;, where the vector <em>z</em> is as in the previous definition. Thus, if a singular system has a solution, the solution cannot be unique. 
+            	 
+         </p> 
+         	 
+         <p>Explicitly computing the inverse of a matrix is prone to numerical inaccuracies. Therefore, you should not solve a linear
+            system of equations by multiplying the inverse of the matrix <em>A</em> by the known right-hand-side vector. The general strategy to solve such a system of equations is to transform the original
+            system into one whose solution is the same as that of the original system but is easier to compute. One way to do so is to
+            use the Gaussian Elimination technique. The Gaussian Elimination technique has three basic steps. First, express the matrix
+            <em>A</em> as a product 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./mp2Flvac_solutions_linear_eq.xml_d23985e157.png"></span></div>
+         </div> 
+         	 
+         <p>where <em>L</em> is a unit lower triangular matrix and <em>U</em> is an upper triangular matrix. Such a factorization is LU factorization. Given this, the linear system <em>A</em><em>x</em> = <em>b</em> can be expressed as <em>L</em><em>U</em><em>x</em> = <em>b</em>. Such a system then can be solved by first solving the lower triangular system <em>L</em><em>y</em> = <em>b</em> for <em>y</em> by forward-substitution. This is the second step in the Gaussian Elimination technique. For example, if 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./mp2Flvac_solutions_linear_eq.xml_d23985e209.png"></span></div>
+         </div> 
+         	 
+         <p>then 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./mp2Flvac_solutions_linear_eq.xml_d23985e297.png"></span></div>
+         </div> 
+         	 
+         <p>The first element of <em>y</em> can be determined easily due to the lower triangular nature of the matrix <em>L</em>. Then you can use this value to compute the remaining elements of the unknown vector sequentially�hence the name forward-substitution.
+            The final step involves solving the upper triangular system <em>U</em><em>x</em> = <em>y</em> by back-substitution. For example, if 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./mp2Flvac_solutions_linear_eq.xml_d23985e355.png"></span></div>
+         </div> 
+         	 
+         <p>then 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./mp2Flvac_solutions_linear_eq.xml_d23985e443.png"></span></div>
+         </div> 
+         	 
+         <p>In this case, this last element of <em>x</em> can be determined easily and then used to determine the other elements sequentially�hence the name back-substitution. Because
+            a non-square matrix is necessarily singular, the system of equations must have either no solution or a non-unique solution.
+            In such a situation, you usually find a unique solution <em>x</em> that satisfies the linear system in an approximate sense. 
+            	 
+         </p> 
+         	 
+         <p>It is important to identify the input matrix properly, as it helps avoid unnecessary computations, which in turn helps to
+            minimize numerical inaccuracies. The four possible matrix types are general matrices, positive definite matrices, and lower
+            and upper triangular matrices. A real matrix <em>A</em> is positive definite only if it is symmetric, and the quadratic form <em>x</em><sup><em>T</em></sup><em>A</em><em>x</em> is positive for any nonzero vectors <em>x</em>.
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="MtxInv_Solve_Lin_Eq_Systems.html" shape="rect">Solving Systems of Linear Equations</a></div>
+         </div>
+         <div class="relinfo"><strong>Related information</strong><br clear="none"><div><a href="../gmath/Linear_Algebra_VIs.html" shape="rect">Linear Algebra VIs</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

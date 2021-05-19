@@ -1,0 +1,73 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Events Stage of the Train Wheel PtByPt VI</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-17A03EB9-71E1-4D3C-8FC7-70B09536FD43" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Events Stage of the Train Wheel PtByPt VI</h1> 
+      
+      <div> 
+         	 
+         <p>After the Analysis stage identifies maximum and minimum values, the Events stage detects when these values cross a threshold
+            setting. 
+            	 
+         </p> 
+         	 
+         <p>The <span>Train Wheel PtByPt VI</span> logs every wheel and every train that it detects. Two <span>Boolean Crossing PtByPt VIs</span> perform the following tasks: 
+            	 
+         </p> 
+         	 <a name="GUID-17A03EB9-71E1-4D3C-8FC7-70B09536FD43__UL_310AFB84C9164A08B1CBC321A9EB0EBC" shape="rect">
+            <!-- --></a><ul id="GUID-17A03EB9-71E1-4D3C-8FC7-70B09536FD43__UL_310AFB84C9164A08B1CBC321A9EB0EBC">
+            <li><a name="GUID-17A03EB9-71E1-4D3C-8FC7-70B09536FD43__LI_376F65E96C86459C880EB3B9311A0C38" shape="rect">
+                  <!-- --></a>Generate an event each time the <span>Array Max &amp; Min PtByPt VIs</span> detect the transition point in the signal that indicates the end of a wheel. 
+               		
+            </li>
+            <li><a name="GUID-17A03EB9-71E1-4D3C-8FC7-70B09536FD43__LI_08955543E7C5467CBAE52A66BFC07883" shape="rect">
+                  <!-- --></a>Generate an event every time the <span>Array Max &amp; Min PtByPt VIs</span> detect the transition point in the signal that indicates the end of a train. 
+               		
+            </li>
+         </ul> 
+         	 
+         <p>The <span>Boolean Crossing PtByPt VIs</span> respond to transitions. When the amplitude of a single wheel waveform falls below the <span>threshold</span> setting, the end of the wheel has arrived at the strain gauge. For the <span>Train Wheel PtByPt VI</span>, 3 is a good <span>threshold</span> setting to identify the end of a wheel. When the signal strength falls below the <span>threshold</span> setting, the <span>Boolean Crossing PtByPt VIs</span> recognize a transition event and pass that event to a report. 
+            	 
+         </p> 
+         	 
+         <p>Analysis of the high-frequency signal identifies which wheels, if any, might be defective. When the <span>Train Wheel PtByPt VI</span> encounters a potentially defective wheel, the VI passes the information directly to the report at the moment the end-of-wheel
+            event is detected. 
+            	 
+         </p> 
+         	 
+         <p>In the <span>Train Wheel PtByPt VI</span>, the <span>Boolean Crossing PtByPt VIs</span> use the following parameters: 
+            	 
+         </p> 
+         	 <a name="GUID-17A03EB9-71E1-4D3C-8FC7-70B09536FD43__UL_809FAC494D2040F5B60FE7249150B521" shape="rect">
+            <!-- --></a><ul id="GUID-17A03EB9-71E1-4D3C-8FC7-70B09536FD43__UL_809FAC494D2040F5B60FE7249150B521">
+            <li><a name="GUID-17A03EB9-71E1-4D3C-8FC7-70B09536FD43__LI_B9DD481D45F6438A8D2D5EA8C0BB7C57" shape="rect">
+                  <!-- --></a><span> initialize</span> resets the VI for a new session of continuous data acquisition. 
+               		
+            </li>
+            <li><a name="GUID-17A03EB9-71E1-4D3C-8FC7-70B09536FD43__LI_BF5055005C02408C9894297A027F5B5B" shape="rect">
+                  <!-- --></a> <span>direction</span> specifies the kind of Boolean crossing. 
+               		
+            </li>
+         </ul> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="lvac_analysis_stages_ptbyptvi.html" shape="rect">Analysis Stages of the Train Wheel PtByPt VI</a></div>
+         </div>
+         <div class="relinfo"><strong>Related information</strong><br clear="none"><div><a href="../ptbypt/Boolean_Crossing_PtByPt.html" shape="rect">Boolean Crossing PtByPt VI</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

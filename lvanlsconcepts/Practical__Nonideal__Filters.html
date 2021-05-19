@@ -1,0 +1,111 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Practical Filters</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-218EA20E-EC41-458A-89C1-CA0F3D788972" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Practical Filters</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 Ideally, a filter has a unit gain (0 dB) in the passband and a gain of zero (-&#8734; dB) in the stopband. However, real filters
+            cannot fulfill all the criteria of an ideal filter. In practice, a finite transition band always exists between the passband
+            and the stopband. In the transition band, the gain of the filter changes gradually from one (0 dB) in the passband to zero
+            (-&#8734; dB) in the stopband. Practical filters might have passband ripple, and the stopband attenuation of the filter cannot be
+            infinite. 
+            	 
+         </p> 
+         	 
+         <p>For most digital filters, you typically design the digital filter response in the frequency domain. The frequency response
+            specification for the digital filter typically includes the target magnitude response, phase response, and the allowable deviation
+            for each. The following figure illustrates the magnitude frequency response of a lowpass filter, which allows low frequencies
+            to pass and attenuates high frequencies. 
+            	 
+         </p> 
+         	 <a name="GUID-218EA20E-EC41-458A-89C1-CA0F3D788972__IMAGE_258ADEBFFE0842E2A3190378580187EA" shape="rect">
+            <!-- --></a><img id="GUID-218EA20E-EC41-458A-89C1-CA0F3D788972__IMAGE_258ADEBFFE0842E2A3190378580187EA" src="GUID-E97BC693-905A-440B-A3B1-022918D39ED4-help-web.png"> 
+         	 
+         <p>The frequency range from the passband edge frequency to the stopband edge frequency is the transition band, which has a frequency
+            response that is unspecified. The filter passband and stopband can contain oscillations, which are known as ripples. A typical
+            example of a ripple appears in the circle of the previous figure. <em>&#948;</em><sub><em>p</em></sub> indicates the magnitude of the passband ripple, which equals the maximum deviation from the unity. <em>&#948;</em><sub><em>s</em></sub> indicates the magnitude response of the stopband ripple, which equals the maximum deviation from zero. 
+            	 
+         </p> 
+         	 
+         <p>Notice the transition band between the passband and stopband frequencies. In an ideal design, a digital filter has a target
+            gain in the passband and a zero gain (-&#8734; dB) in the stopband. In a real implementation, a finite transition region between
+            the passband and the stopband, which is known as the transition band, always exists. The gain of the filter in the transition
+            band is unspecified. The gain usually changes gradually through the transition band from 1 (0 dB) in the passband to 0 (-&#8734;
+            dB) in the stopband. 
+            	 
+         </p> 
+         	 
+         <p>You can measure the passband ripple and stopband ripple in decibels, as shown in the following equations: 
+            	 
+         </p> 
+         	 
+         <p>passband ripple = -20log<sub>10</sub>(1 - <em>&#948;</em><sub><em>p</em></sub>) 
+            	 
+         </p> 
+         	 
+         <p>stopband ripple = -20log<sub>10</sub>(<em>&#948;</em><sub><em>s</em></sub>) 
+            	 
+         </p> 
+         	 
+         <p>Based on the two previous equations, you can convert the passband ripple to or from the decibel representation. For example,
+            if passband ripple equals 0.01 dB, that is, 0.01 = -20log<sub>10</sub>(1 - <em>&#948;</em><sub><em>p</em></sub>), then <em>&#948;</em><sub><em>p</em></sub> = 0.00115. Similarly, if stopband ripple equals 60 dB, that is 60 = -20log<sub>10</sub>(<em>&#948;</em><sub><em>s</em></sub>), then <em>&#948;</em><sub><em>s</em></sub> = 0.001. 
+            	 
+         </p> 
+         	 
+         <p>The following figure illustrates the magnitude frequency responses of a highpass filter, which passes high frequencies and
+            attenuates low frequencies. 
+            	 
+         </p> 
+         	 <a name="GUID-218EA20E-EC41-458A-89C1-CA0F3D788972__IMAGE_F639E1904CF44E1397799D0F0F457A57" shape="rect">
+            <!-- --></a><img id="GUID-218EA20E-EC41-458A-89C1-CA0F3D788972__IMAGE_F639E1904CF44E1397799D0F0F457A57" src="GUID-8D40326C-5C40-4FB3-AA58-CEB5C79BF548-help-web.png"> 
+         	 
+         <p>The following figure illustrates the magnitude frequency responses of a bandpass filter, which passes a certain band of frequencies
+            and attenuates lower and higher frequencies. 
+            	 
+         </p><a name="GUID-218EA20E-EC41-458A-89C1-CA0F3D788972__IMAGE_A8DBBD2B47BB4245A5B440D8A46E5CFC" shape="rect">
+            <!-- --></a><img id="GUID-218EA20E-EC41-458A-89C1-CA0F3D788972__IMAGE_A8DBBD2B47BB4245A5B440D8A46E5CFC" src="GUID-A3FF24B0-9BD5-4E63-A583-E260A597F8F0-help-web.png"> 
+         	 
+         <p>In the previous figure, stopband edge frequency 1 indicates the maximum frequency of the lower frequency range that you want
+            to attenuate, and stopband edge frequency 2 indicates the minimum frequency of the higher frequency range that you want to
+            attenuate. The frequency range between passband edge frequency 1 and 2 indicates the range of frequencies that can pass through
+            the filter. 
+            	 
+         </p> 
+         	 
+         <p>The following figure illustrates the magnitude frequency response of a bandstop filter, which attenuates a certain band of
+            frequencies and passes all frequencies not within the band. 
+            	 
+         </p> 
+         	 <a name="GUID-218EA20E-EC41-458A-89C1-CA0F3D788972__IMAGE_3784683B4FC74D0F817CC3E3BEFD03DD" shape="rect">
+            <!-- --></a><img id="GUID-218EA20E-EC41-458A-89C1-CA0F3D788972__IMAGE_3784683B4FC74D0F817CC3E3BEFD03DD" src="GUID-E5F0AF14-3F00-42B4-AD11-F45995112A7E-help-web.png"> 
+         	 
+         <p>In the previous figure, passband edge frequency 1 indicates the maximum frequency of the lower frequency range that can pass
+            through the filter, and passband edge frequency 2 indicates the minimum frequency of the higher frequency range that can pass
+            through the filter. The frequency range between stopband edge frequency 1 and 2 indicates the range of frequencies that you
+            want to attenuate. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Digital_Filtering.html" shape="rect">Digital Filtering</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Designing Narrowband FIR Filters</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-682F00CF-2BDE-46EC-B5D8-9843B6986D7F" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Designing Narrowband FIR Filters</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 Using conventional techniques to design FIR filters with especially narrow bandwidths can result in long filter lengths.
+            FIR filters with long filter lengths often require long design and implementation times and are susceptible to numerical inaccuracy.
+            In some cases, conventional filter design techniques, such as the Parks-McClellan algorithm, might not produce an acceptable
+            narrow bandwidth FIR filter. 
+            	 
+         </p> 
+         	 
+         <p>The interpolated finite impulse response (IFIR) filter design technique offers an efficient algorithm for designing narrowband
+            FIR filters. Using the IFIR technique produces narrowband filters that require fewer coefficients and computations than filters
+            you design by directly applying the Parks-McClellan algorithm. 
+            	 
+         </p> 
+         	 
+         <p>The following figure shows an example of the filter response from zero to the Nyquist frequency. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-682F00CF-2BDE-46EC-B5D8-9843B6986D7F__IMAGE_D12083FB2A374A7BB0C847174899945D" shape="rect">
+            <!-- --></a><img id="GUID-682F00CF-2BDE-46EC-B5D8-9843B6986D7F__IMAGE_D12083FB2A374A7BB0C847174899945D" src="GUID-1E169238-B7BB-43FB-8A97-1E8BEC603786-help-web.png"><br clear="none"> 
+         	 
+         <p>In the previous figure, the narrow passband centers around 1 kHz. The narrow passband center at 1 kHz is the response of the
+            filter specified by the controls in the previous figure. 
+            	 
+         </p> 
+         	 
+         <p>The following figure shows the filter response in detail. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-682F00CF-2BDE-46EC-B5D8-9843B6986D7F__IMAGE_ADF3156051CC46EAA40923364F1BCDE3" shape="rect">
+            <!-- --></a><img id="GUID-682F00CF-2BDE-46EC-B5D8-9843B6986D7F__IMAGE_ADF3156051CC46EAA40923364F1BCDE3" src="GUID-7FF4A9A9-CF5B-409D-852F-894384788B09-help-web.png"><br clear="none"> 
+         	 
+         <p>In the previous figure, the narrow passband clearly centers around 1 kHz and the attenuation of the signal at 60 dB below
+            the passband. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="lvac_design_fir_filters.html" shape="rect">Designing FIR Filters</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,71 @@
+
+<html xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<head>
+<!-- Sitemap 1.0 -->
+</head>
+<body>
+<UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="LabVIEW Help"><param name="Local" value="lvupgrade_boilerplate.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="LabVIEW 2020 Features and Changes"><param name="Local" value="LabVIEW_Features.html#GUID-EF1264F4-82BB-4EB6-9915-0428F1E1E1C2"></OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Improving Code Flexibility Using LabVIEW Interfaces"><param name="Local" value="LabVIEW_Features.html#GUID-439BBB9C-616A-4D9A-B571-2E1E377D0F41"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="LabVIEW Web Services Enhancements"><param name="Local" value="LabVIEW_Features.html#GUID-CD44B3B0-19B8-4C90-902F-57658C937D5E"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Application Builder Enhancements"><param name="Local" value="LabVIEW_Features.html#GUID-6BA6F3BE-448C-45D6-954D-B1FF4CAFB79B"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Environment Enhancements"><param name="Local" value="LabVIEW_Features.html#GUID-576DD0C1-2D2F-495B-A603-680D52034CF1"></OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Dialog Box Enhancements"><param name="Local" value="LabVIEW_Features.html#GUID-5B34A087-2D2F-4E93-89CF-686565F170E9"></OBJECT>
+</LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Enhancements to the Import Shared Library Wizard"><param name="Local" value="LabVIEW_Features.html#GUID-366CC1F8-C806-4408-B777-CCB605560A67"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Block Diagram Enhancements"><param name="Local" value="LabVIEW_Features.html#GUID-D61B8A05-0C28-47E6-8126-96FF6171AECC"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="New and Changed VIs and Functions"><param name="Local" value="LabVIEW_Features.html#GUID-BDE7B90F-B15D-4F8D-BE62-014B2B8ACD73"></OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="New VIs and Functions"><param name="Local" value="LabVIEW_Features.html#GUID-A068C12B-E5FF-4B7E-A1E2-6CAE5D0AD1A7"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Changed VIs and Functions"><param name="Local" value="LabVIEW_Features.html#GUID-413FE0D9-1FAB-41E2-997B-202B78BF538B"></OBJECT>
+</LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="New and Changed Properties, Methods, and Events"><param name="Local" value="LabVIEW_Features.html#GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE"></OBJECT>
+</LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Features and Changes in Previous Versions of LabVIEW"><param name="Local" value="old_features_changes.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Upgrading to LabVIEW 2020"><param name="Local" value="upgrade_overview.html#GUID-13C409A7-848E-4D11-82E2-9B24F87B8AD8"></OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Overview of the Recommended Upgrade Process"><param name="Local" value="upgrade_overview.html#GUID-E15A0E3F-47FF-48C2-8873-1C4B64A6396F"></OBJECT>
+</LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="1. Back Up Your VIs and Machine Configuration"><param name="Local" value="upgrade_backup.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="2. Test and Record the Existing Behavior of Your VIs"><param name="Local" value="upgrade_characterize.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="3. Install LabVIEW, Add-Ons, and Device Drivers"><param name="Local" value="upgrade_prepare.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="4. Convert Your VIs and Address Behavior Changes"><param name="Local" value="upgrade_mass.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Upgrade and Compatibility Issues"><param name="Local" value="Upgrade_Issues.html#GUID-3AE67D93-D8A0-4027-9489-4AF5581831AA"></OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Upgrading from LabVIEW 2016"><param name="Local" value="Upgrade_Issues.html#GUID-3844A8B5-11F5-46DB-BE9C-D1A4A9DA142A"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Upgrading from LabVIEW 2017"><param name="Local" value="Upgrade_Issues.html#GUID-556C4224-5CED-4B02-90D9-7E7497AEF4B1"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Upgrading from LabVIEW 2018"><param name="Local" value="Upgrade_Issues.html#GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Upgrading from LabVIEW 2019"><param name="Local" value="Upgrade_Issues.html#GUID-31F4647D-7384-4CD0-881F-75A1DA11D7CB"></OBJECT>
+</LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Troubleshooting Common Upgrade Issues"><param name="Local" value="upgrade_troubleshooting.html"></OBJECT>
+</LI></UL>
+</body>
+</html>

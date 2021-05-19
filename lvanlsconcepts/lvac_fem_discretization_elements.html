@@ -1,0 +1,57 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Discretization and Elements</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-C5A76986-BEBE-4072-90B8-F5D192329406" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Discretization and Elements</h1> 
+      
+      <div> 
+         	 
+         <p>The first step in the finite element method is to separate the domain into discrete elements. The union of these elements
+            covers the whole domain. The elements interconnect at discrete grid points where you want to solve the PDE numerically. The
+            grid points of an element do not lie in the interior or on the edge of another element. 
+            	 
+         </p> 
+         	 
+         <p>One common element in 3D space is the tetrahedral element. 
+            	 
+         </p> 
+         	 
+         <p>Two common elements in 2D space are the triangle and rectangle. The following figure shows triangulation on an L-shaped domain.
+            
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-C5A76986-BEBE-4072-90B8-F5D192329406__IMAGE_D62F866DD0204EC097879C404573339F" shape="rect">
+            <!-- --></a><img id="GUID-C5A76986-BEBE-4072-90B8-F5D192329406__IMAGE_D62F866DD0204EC097879C404573339F" src="GUID-57CE4DAA-0364-486F-99F5-48FE037FABE4-help-web.png"><br clear="none"> 
+         	 
+         <table>
+            <tr>
+               <td><img alt="Note" src="note.gif"></td>
+               <td><a name="GUID-C5A76986-BEBE-4072-90B8-F5D192329406__GUID-81DE99F1-C4FB-4F82-AE58-BF63D46C212F" shape="rect">
+                     <!-- --></a><span class="notetitle">Note&nbsp;&nbsp;</span> The domain does not distribute the grid points uniformly, which gives the elements flexibility. In the area where the unknown
+                  function varies rapidly, you can have small elements. The smoother parts of the unknown function have an associated grid with
+                  large elements. To adopt this flexibility, you must have prior knowledge of the unknown function. Otherwise, use a set of
+                  uniformly distributed grid points. 
+                  	 
+               </td>
+            </tr>
+         </table> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="lvac_finite_element_method.html" shape="rect">The Finite Element Method</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

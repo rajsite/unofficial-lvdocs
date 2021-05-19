@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4200Estructureshlp -->
+
+<title>Resetting the Input Value on a Feedback Node Each Time a Loop Executes</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Resetting the Input Value on a Feedback Node Each Time a Loop Executes</h1>
+
+<p>By default, the <a href="../lvconcepts/feedback_node_concepts.html">Feedback Node</a> globally <a href="globally_initialize_feedback.html">initializes when the VI compiles or loads</a>. However, you also can configure the node to initialize on loop execution.</p>
+
+<p class="Body">Complete the following steps to move the initializer terminal to the left edge of a loop, which resets the input value each time a loop executes.</p>
+
+<ol>
+<li>Add a <a href="../glang/Feedback_Node.html">Feedback Node</a> to a loop or to a group of nested loops and structures on the block diagram.</li>
+<li>Right-click the initializer terminal and select <strong>Move Initializer One Loop Out</strong> from the shortcut menu to move the initializer terminal to the next loop out.</li>
+<li>Wire an input value from outside the loop to the initializer terminal.</li>
+</ol>
+						
+<p class="Body">After you move the initializer terminal to the left edge of a loop, you can move the initializer terminal back to its original location inside the loop by right-clicking the initializer terminal and selecting <strong>Globally Initialize&#0187;Initialize On Compile Or Load</strong> from the shortcut menu. Select <strong>Move Initializer One Loop In</strong> to move the initializer to the next loop in.</p>
+
+<p class="Body">If you move the initializer terminal to the edge of the outermost loop, select <strong>Move Initializer One Loop In</strong> to move the initializer terminal to the next loop in.</p>
+
+<p class="Body">If you configure the Feedback Node to initialize when a loop executes, the Feedback Node initializes before the first iteration of every loop execution. The initializer terminal changes to the <img src="noloc_bd_initializerterminal.gif"> icon, which changes color depending on the data type you wire to the terminal, as shown on the loop in the following figure.</p>
+					<img src="loc_bd_lastloop.gif">
+
+					<p>In the previous block diagram, although the Feedback Node is in the <a href="../glang/For_Loop.html">For Loop</a>, the initializer terminal is on the edge of the outermost <a href="../glang/While_Loop.html">While Loop</a>. Thus, the Feedback Node initializes to the input value <span class="Monospace">2</span> every time the While Loop executes, whereas the outcome of the <a href="../glang/Increment.html">Increment</a> function builds on previous values for each For Loop execution. Separating the Feedback Node and initializer is useful in nested <a href="../glang/Case_Structure.html">Case structures</a> when you want the Feedback Node to execute only in certain cases.</p>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> <head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4210Eevents -->
+
+<title>Characteristics of LabVIEW-Built .NET Interop Assemblies</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+
+
+<h1>Characteristics of LabVIEW-Built .NET Interop Assemblies</h1>
+			<h2>Calling a .NET Interop Assembly from Another Program</h2>
+				<p class="Body">After you build a .NET interop assembly, you can call the assembly from other programs that support .NET. However, ensure that the computer on which the other program runs meets the following requirements and recommendations:</p>
+				<ul><li>The LabVIEW Run-Time Engine must be installed on any computer on which users run the .NET interop assembly. You can distribute the LabVIEW Run-Time Engine with the .NET interop assembly. <span class="Platform">(Windows)</span> You also can include the LabVIEW Run-Time Engine in an installer. </li><li>National Instruments recommends that the target computer for the .NET interop assembly have the same or later version of the .NET Framework installed as the version that LabVIEW used to build the application. </li><li>To call the .NET interop assembly outside of the LabVIEW development environment, you must reference <span class="Monospace">NationalInstruments.LabVIEW.Interop.dll</span> in the Microsoft Visual Studio project. The LabVIEW Run-Time Engine automatically installs this DLL to the <span class="Monospace">National Instruments\Shared\LabVIEW Run-Time</span> directory. Optionally, you can manually install <span class="Monospace">NationalInstruments.LabVIEW.Interop.dll</span> to the Global Assembly Cache (GAC). If you want to install this DLL to the GAC, you must sign the .NET assembly with a <a href="../lvdialog/Advanced_NET_Page.html">strong name key file</a>.</li>
+<li>When you create a debuggable .NET interop assembly, LabVIEW places a configuration (ini) file in the same directory as the assembly. If you want to debug the assembly in other programs, you must distribute the <span class="Monospace">.ini</span> file with the assembly.</li></ul>
+		<h2>LabVIEW Data Types in .NET Interop Assemblies</h2>
+		  <p class="Body">When you build a .NET interop assembly, LabVIEW directly translates simple data types such as numerics, booleans, strings, and arrays of simple data types to the corresponding .NET data type. However, LabVIEW-specific data types, such as clusters, waveforms, complex numbers, refnums, and LabVIEW classes, require LabVIEW to define new .NET data types in the generated assembly.</p>
+		  <p class="Body">One way to determine how LabVIEW converts its own data types to .NET data types is to build the .NET interop assembly and then view the manifest of the assembly in a .NET programming environment such as Microsoft Visual Studio. You can also use the MSIL Disassembler tool available on the <a href="javascript:WWW(WWW_MSDN)">Microsoft Developer Network (MSDN)</a> to view the generated assembly. However, the following sections explain some basic details about how LabVIEW converts clusters, enumeration type controls, and LabVIEW classes to .NET data types.</p>
+			<h3>Clusters and Enumerations</h3>
+			<p class="Body">LabVIEW converts clusters and enumerations to .NET structures whose elements correspond to the elements of the cluster or enumeration. LabVIEW uses the following rules to name the .NET structure that corresponds to a cluster or enumeration:</p>
+			<ul><li>Clusters and enumerations defined as type definitions or strict type definitions&#8212;LabVIEW uses the label of the type definition or strict type definition as the name of the .NET structure </li><li>All other clusters and enumerations&#8212;LabVIEW names the .NET structure LVCluster_# or LVEnum_# </li></ul>
+			<h3>LabVIEW Classes</h3>
+				<p class="Body">You can export the member VIs of a LabVIEW class. In LabVIEW, these VIs require the owning LabVIEW class as an input. Therefore, when you export these VIs to a .NET interop assembly, LabVIEW must create an equivalent .NET class definition in the assembly. The .NET class definition contains a static method for each member VI. Each of these static methods requires an instance of the newly defined .NET class as a parameter. LabVIEW does not export the private data of the owning LabVIEW class.</p>
+				<p class="Body">LabVIEW also exports the inheritance structure of LabVIEW classes whose method VIs you export. The generated .NET classes have the same inheritance structure.</p>
+			<h3>LabVIEW Errors</h3>
+			 <p class="Body">When LabVIEW generates a .NET method for a VI, LabVIEW does not export the <strong>error in</strong> and <strong>error out</strong> clusters as parameters of the new method. Instead, the new method throws a .NET exception if an error occurs while the method is executing. This exception contains the same information as the error cluster.</p>
+
+
+</body>
+</html>

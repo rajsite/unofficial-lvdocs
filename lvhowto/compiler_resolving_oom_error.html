@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+<title>Resolving Out of Memory Errors When Compiling a VI</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<!-- maybe this belongs in lverror?-->
+<h1>Resolving Out of Memory Errors When Compiling a VI</h1>
+<p>The LabVIEW compiler can run out of memory when it tries to compile large or complex VIs. Choose one of the following solutions to correct this problem.</p>
+
+<table class="Bordered">
+	<tr><th class="Bordered">Possible Cause</th><th class="Bordered">Solution</th></tr>
+	<tr><td class="Bordered">The complexity of a VI falls below the threshold at which the compiler begins limiting compiler optimizations to preserve memory and facilitate editor responsiveness.</td>
+		<td class="Bordered">Lower the complexity threshold to <a href="../lvhowto/compiler_limiting_optimizations.html">prioritize editor responsiveness over execution speed</a> for the relevant VIs.</td></tr>
+	<tr><td class="Bordered">A VI is too complex to compile even though the compiler is limiting optimizations.</td>
+		<td class="Bordered">
+			<ul>
+				<li>(Recommended) Reduce the complexity of the VI by dividing the VI into subVIs.</li>
+				<li><a href="../lvhowto/enable_lrg_ad_aware.html">Enable LabVIEW to use more memory.</a></li>
+			</ul></td></tr>
+</table>
+
+<!--<h2>Resolving Out of Memory Errors when Building Applications</h2>
+<p>The NI LabVIEW Application Builder runs out of memory for the same reasons as described in the previous table. However, you might have more difficulty determining which VI is causing the error. </p>-->
+
+
+</body>
+</html>

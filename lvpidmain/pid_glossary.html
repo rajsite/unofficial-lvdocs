@@ -1,0 +1,467 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html xmlns:ni="http://natinst.com/Translate">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<link media="print" rel="STYLESHEET" type="text/css" href="print.css"><script src="common.js" type="text/javascript"></script><script src="jquery-1.7.2.min.js" type="text/javascript"></script><script src="cssframes.js" type="text/javascript"></script><script src="dynamicjumps.js" type="text/javascript"></script><title>PID and Fuzzy Logic Glossary </title>
+</head><body><noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript><!-- start_section -->
+<div id="styleDivTitle">
+<h1>PID and Fuzzy Logic Glossary </h1>
+<p class="Body"><BUTTON onClick="window.location='#A'"><span class="glossButton">A</span></BUTTON><BUTTON onClick="window.location='#B'"><span class="glossButton">B</span></BUTTON><BUTTON onClick="window.location='#C'"><span class="glossButton">C</span></BUTTON><BUTTON onClick="window.location='#D'"><span class="glossButton">D</span></BUTTON><BUTTON onClick="window.location='#E'"><span class="glossButton">E</span></BUTTON><BUTTON onClick="window.location='#F'"><span class="glossButton">F</span></BUTTON><BUTTON onClick="window.location='#G'"><span class="glossButton">G</span></BUTTON><BUTTON onClick="window.location='#I'"><span class="glossButton">I</span></BUTTON><BUTTON onClick="window.location='#K'"><span class="glossButton">K</span></BUTTON><BUTTON onClick="window.location='#L'"><span class="glossButton">L</span></BUTTON><BUTTON onClick="window.location='#M'"><span class="glossButton">M</span></BUTTON><BUTTON onClick="window.location='#N'"><span class="glossButton">N</span></BUTTON><BUTTON onClick="window.location='#O'"><span class="glossButton">O</span></BUTTON><BUTTON onClick="window.location='#P'"><span class="glossButton">P</span></BUTTON><BUTTON onClick="window.location='#Q'"><span class="glossButton">Q</span></BUTTON><BUTTON onClick="window.location='#R'"><span class="glossButton">R</span></BUTTON><BUTTON onClick="window.location='#S'"><span class="glossButton">S</span></BUTTON><BUTTON onClick="window.location='#T'"><span class="glossButton">T</span></BUTTON><BUTTON onClick="window.location='#W'"><span class="glossButton">W</span></BUTTON></p>
+</div>
+<div id="styleDivScrolling"><!-- start_section --><!--file_name:pid_glossary.html:file_name--><!--keywords:glossary :keywords--><!--START CONTENT--><!-- START DOCUMENTATION TO COPY --><p class="Body"><a href="../lvconcepts/glossary.html">LabVIEW Glossary</a></p>
+<table class="Borderless">
+<tr>
+<td colspan="2">
+<h2><a name="A"></a>A</h2>
+</td>
+</tr>
+<tr>
+<td><a name="algorithm"></a>algorithm</td>
+<td>A prescribed set of well-defined rules or processes for the solution of a problem in a finite number of steps.<br></td>
+</tr>
+<tr>
+<td><a name="antecedent"></a>antecedent</td>
+<td>The IF portion of a rule in a <a href="../lvpidmain/pid_glossary.html#fuzzsys">fuzzy system</a>.<br></td>
+</tr>
+<tr>
+<td><a name="anteconnect"></a>antecedent connective</td>
+<td>An operator that specifies how to calculate the truth value of an aggregated rule antecedent.<br></td>
+</tr>
+<tr>
+<td><a name="arwind"></a>anti-reset windup</td>
+<td>A method that prevents the integral term of the PID algorithm from moving too far beyond saturation when an error persists.<br></td>
+</tr>
+<tr>
+<td><a name="autotuning"></a>autotuning</td>
+<td>Automatically testing a process under control to determine the controller gains that will provide the best controller performance.<br></td>
+</tr>
+<tr>
+<td><a name="autowiz"></a>Autotuning Wizard</td>
+<td>An automated graphical user interface provided in the <a href="../lvpid/PID_with_Autotuning.html">PID Autotuning</a> VI. The Autotuning Wizard gathers some information about the desired control from the user and then steps through the <a href="../lvpidmain/tuning_pid.html">PID autotuning</a> process.<br></td>
+</tr>
+<tr>
+<td colspan="2">
+<h2><a name="B"></a>B</h2>
+</td>
+</tr>
+<tr>
+<td><a name="bias"></a>bias</td>
+<td>The offset added to a <a href="../lvpidmain/pid_glossary.html#manipvar">controller output (manipulate variable)</a>.<br></td>
+</tr>
+<tr>
+<td><a name="boolset"></a>Boolean set theory</td>
+<td>Traditional set theory based on strict membership or non-membership of elements to a set. Examples are TRUE or FALSE, ON or OFF, 1 or 0, and so on.<br></td>
+</tr>
+<tr>
+<td><a name="bumpless"></a>bumpless transfer</td>
+<td>A process in which the next output always increments from the current output, regardless of the current controller output value; therefore, transfer from automatic to manual control is always bumpless.<br></td>
+</tr>
+<tr>
+<td colspan="2">
+<h2><a name="C"></a>C</h2>
+</td>
+</tr>
+<tr>
+<td><a name="casccont"></a>cascade control</td>
+<td>Control in which the output of one <a href="../lvpidmain/pid_glossary.html#controller">controller</a> is the <a href="../lvpidmain/pid_glossary.html#setpoint">setpoint</a> for another controller.<br></td>
+</tr>
+<tr>
+<td><a name="coa"></a>Center of Area (CoA)</td>
+<td>Method of <a href="../lvpidmain/pid_glossary.html#defuzzification">defuzzification</a> in which the crisp output is determined by the geometrical center of area of the composite output <a href="../lvpidmain/pid_glossary.html#memfunc">membership functions</a> within the range of the output linguistic variable. Also known as Center of Gravity (CoG).<br></td>
+</tr>
+<tr>
+<td><a name="com"></a>Center of Maximum (CoM)</td>
+<td>Method of <a href="../lvpidmain/pid_glossary.html#defuzzification">defuzzification</a> in which the crisp output is determined by a weighted average of the typical values of each output <a href="../lvpidmain/pid_glossary.html#memfunc">membership function</a>. This method is equivalent to the Center of Area method using <a href="../lvpidmain/pid_glossary.html#singleton">singleton</a> sets.<br></td>
+</tr>
+<tr>
+<td><a name="cos"></a>Center of Sums (CoS)</td>
+<td>Method of <a href="../lvpidmain/pid_glossary.html#defuzzification">defuzzification</a> in which the crisp output is determined by a weighted average of the center of area of each output <a href="../lvpidmain/pid_glossary.html#memfunc">membership function</a>.<br></td>
+</tr>
+<tr>
+<td><a name="closloop"></a>closed loop</td>
+<td>A signal path which includes a forward path, a feedback path, and a summing point and which forms a closed circuit. Also called a feedback loop.<br></td>
+</tr>
+<tr>
+<td><a name="consequent"></a>consequent</td>
+<td>The THEN portion of a rule in a <a href="../lvpidmain/pid_glossary.html#fuzzsys">fuzzy system</a>.<br></td>
+</tr>
+<tr>
+<td><a name="controller"></a>controller</td>
+<td>Hardware and/or software used to maintain parameters of a physical process at desired values.<br></td>
+</tr>
+<tr>
+<td><a name="controller output"></a>controller output</td>
+<td>See <a href="../lvpidmain/pid_glossary.html#manipvar">manipulated variable</a>.<br></td>
+</tr>
+<tr>
+<td><a name="crispval"></a>crisp value</td>
+<td>A finite single value such as a measured physical quantity, for example, <em>x</em> = 5.3 m.<br></td>
+</tr>
+<tr>
+<td><a name="cyctime"></a>cycle time</td>
+<td>The time between samples in a discrete digital control system.<br></td>
+</tr>
+<tr>
+<td colspan="2">
+<h2><a name="D"></a>D</h2>
+</td>
+</tr>
+<tr>
+<td><a name="damping"></a>damping</td>
+<td>The progressive reduction or suppression of oscillation in a device or system.<br></td>
+</tr>
+<tr>
+<td><a name="deadtime"></a>deadtime (T<sub>d</sub>)</td>
+<td>The interval of time, expressed in minutes, between initiation of an input change or stimulus and the start of the resulting observable response.<br></td>
+</tr>
+<tr>
+<td><a name="defuzzification"></a>defuzzification</td>
+<td>The process of converting the <a href="../lvpidmain/pid_glossary.html#degreemem">degrees of membership</a> of output <a href="../lvpidmain/pid_glossary.html#lingvar">linguistic variables</a> within their <a href="../lvpidmain/pid_glossary.html#linterm">linguistic terms</a> into crisp numerical values.<br></td>
+</tr>
+<tr>
+<td><a name="degreemem"></a>degree of membership</td>
+<td>A value that represents the degree of partial membership of a linguistic variable within a linguistic term. This value can range from 0 to 1.<br></td>
+</tr>
+<tr>
+<td><a name="degreesup"></a>degree of support</td>
+<td>A weighting value, ranging from 0 to 1, that is applied to each rule in the rule base of a <a href="../lvpidmain/pid_glossary.html#fuzzcontrol">fuzzy controller</a>. This weighting value represents the relative significance of each <a href="../lvpidmain/pid_glossary.html#rule">rule</a> and allows for fine-tuning of the <a href="../lvpidmain/pid_glossary.html#rulebase">rule base</a>.<br></td>
+</tr>
+<tr>
+<td><a name="derivact"></a>derivative (control) action</td>
+<td>Control response to the time rate of change of a variable. Also called rate action.<br></td>
+</tr>
+<tr>
+<td><a name="derivkick"></a>derivative kick</td>
+<td>A sudden change in PID controller output resulting from <a href="../lvpidmain/pid_glossary.html#derivact">derivative action</a> applied to the error signal after a change in <a href="../lvpidmain/pid_glossary.html#setpoint">setpoint</a> value. Derivative kick is normally avoided in PID control by applying derivative action only to the process variable and not to the error signal.<br></td>
+</tr>
+<tr>
+<td><a name="deviation"></a>deviation</td>
+<td>Any departure from a desired value or expected value or pattern.<br></td>
+</tr>
+<tr>
+<td><a name="dsloop"></a>downstream loop</td>
+<td>In a cascade, the controller whose <a href="../lvpidmain/pid_glossary.html#setpoint">setpoint</a> is provided by another controller.<br></td>
+</tr>
+<tr>
+<td colspan="2">
+<h2><a name="E"></a>E</h2>
+</td>
+</tr>
+<tr>
+<td><a name="egu"></a>EGU</td>
+<td>Engineering units. Also abbreviated EU.<br></td>
+</tr>
+<tr>
+<td><a name="expert"></a>expert</td>
+<td>A human operator of a system or process that has acquired knowledge related to controlling the process through experience.<br></td>
+</tr>
+<tr>
+<td colspan="2">
+<h2><a name="F"></a>F</h2>
+</td>
+</tr>
+<tr>
+<td><a name="fc"></a>FC</td>
+<td>Flow controller.<br></td>
+</tr>
+<tr>
+<td><a name="feedcont"></a>feedback control</td>
+<td>Control in which a measured variable is compared to its desired value to produce an actuating error signal that is acted upon in such a way as to reduce the magnitude of the error.<br></td>
+</tr>
+<tr>
+<td><a name="feedloop"></a>feedback loop</td>
+<td>See <a href="../lvpidmain/pid_glossary.html#closloop">closed loop</a>.<br></td>
+</tr>
+<tr>
+<td><a name="fuzzification"></a>fuzzification</td>
+<td>The process of associating <a href="../lvpidmain/pid_glossary.html#crispval">crisp input values</a> with the linguistic terms of corresponding input linguistic variables..<br></td>
+</tr>
+<tr>
+<td><a name="fuzzcontrol"></a>fuzzy controller</td>
+<td>A <a href="../lvpidmain/pid_glossary.html#controller">controller</a> that uses defined rules to control a <a href="../lvpidmain/pid_glossary.html#fuzzsys">fuzzy system</a> based on the current values of input linguistic variables.<br></td>
+</tr>
+<tr>
+<td><a name="fuzzlog"></a>fuzzy logic</td>
+<td>An extension of traditional Boolean set theory that allows for partial membership in a set.<br></td>
+</tr>
+<tr>
+<td><a name="fuzzsys"></a>fuzzy system</td>
+<td>A system of input and output variables associated using <a href="../lvpidmain/pid_glossary.html#fuzzlog">fuzzy logic</a>.<br></td>
+</tr>
+<tr>
+<td colspan="2">
+<h2><a name="G"></a>G</h2>
+</td>
+</tr>
+<tr>
+<td><a name="gain"></a>gain</td>
+<td>For a linear system or element, the ratio of the magnitude, or amplitude, of a steady-state sinusoidal output relative to the causal input; the length of a phasor from the origin to a point of the transfer locus in a complex plane. Also called the magnitude ratio.<br></td>
+</tr>
+<tr>
+<td><a name="gainsched"></a>gain scheduling</td>
+<td>The process of applying different controller gains for different regions of operation of a controller. Gain scheduling is most often used in controlling nonlinear physical processes.<br></td>
+</tr>
+<tr>
+<td colspan="2">
+<h2><a name="I"></a>I</h2>
+</td>
+</tr>
+<tr>
+<td><a name="impmeth"></a>implication method</td>
+<td>A mathematical method for scaling the <a href="../lvpidmain/pid_glossary.html#memfunc">membership functions</a> of an output linguistic variable based on the rule weight before performing <a href="../lvpidmain/pid_glossary.html#defuzzification">defuzzification</a>.<br></td>
+</tr>
+<tr>
+<td><a name="intact"></a>integral (control) action</td>
+<td>Control action in which the output is proportional to the time integral of the input. That is, the rate of change of output is proportional to the input.<br></td>
+</tr>
+<tr>
+<td><a name="isa"></a>ISA</td>
+<td>Instrument Society of America. The organization that sets standards for process control instrumentation in the United States.<br></td>
+</tr>
+<tr>
+<td colspan="2">
+<h2><a name="K"></a>K</h2>
+</td>
+</tr>
+<tr>
+<td><a name="kay"></a>K</td>
+<td>Process gain. See also <a href="../lvpidmain/pid_glossary.html#procgain">process gain (K)</a>.<br></td>
+</tr>
+<tr>
+<td><a name="kc"></a>K<sub>c</sub></td>
+<td>Controller gain.<br></td>
+</tr>
+<tr>
+<td colspan="2">
+<h2><a name="L"></a>L</h2>
+</td>
+</tr>
+<tr>
+<td><a name="lag"></a>lag</td>
+<td>A lowpass filter or integrating response with respect to time.<br></td>
+</tr>
+<tr>
+<td><a name="linfac"></a>linearity factor</td>
+<td>A value ranging from 0 to 1, used to specify the linearity of a calculation. A value of 1 indicates a linear operation. A value of 0.1 indicates a squared nonlinear operation.<br></td>
+</tr>
+<tr>
+<td><a name="linterm"></a>linguistic term</td>
+<td>A word or set of words that represents categories for the values of a linguistic variable. A linguistic term is defined quantitatively by the corresponding <a href="../lvpidmain/pid_glossary.html#memfunc">membership function</a>.<br></td>
+</tr>
+<tr>
+<td><a name="lingvar"></a>linguistic variable</td>
+<td>A word or set of words that represents an input variable or output variable of a <a href="../lvpidmain/pid_glossary.html#fuzzsys">fuzzy system</a>.<br></td>
+</tr>
+<tr>
+<td><a name="loaddist"></a>load disturbance</td>
+<td>The ability of a <a href="../lvpidmain/pid_glossary.html#controller">controller</a> to compensate for changes in physical parameters of a controlled process while the <a href="../lvpidmain/pid_glossary.html#setpoint">setpoint</a> value remains constant.<br></td>
+</tr>
+<tr>
+<td><a name="loopcyctime"></a>loop cycle time</td>
+<td>Time interval between calls to a control algorithm.<br></td>
+</tr>
+<tr>
+<td colspan="2">
+<h2><a name="M"></a>M</h2>
+</td>
+</tr>
+<tr>
+<td><a name="magrat"></a>magnitude ratio</td>
+<td>See <a href="../lvpidmain/pid_glossary.html#gain">gain</a>.<br></td>
+</tr>
+<tr>
+<td><a name="manipvar"></a>manipulated variable</td>
+<td>A quantity or condition that is varied as a function of the actuating error signal so as to change the value of the directly controlled variable. Also called controller output.<br></td>
+</tr>
+<tr>
+<td><a name="mom"></a>Mean of Maximum (MoM)</td>
+<td>Method of <a href="../lvpidmain/pid_glossary.html#defuzzification">defuzzification</a> in which the crisp output is determined by selecting a value corresponding to the maximum degree of membership of the composite output <a href="../lvpidmain/pid_glossary.html#memfunc">membership function</a>. If there are multiple maximums, the mean of the corresponding values is selected.<br></td>
+</tr>
+<tr>
+<td><a name="memfunc"></a>membership function</td>
+<td>A numerical function that quantitatively defines the <a href="../lvpidmain/pid_glossary.html#degreemem">degrees of membership</a> of a <a href="../lvpidmain/pid_glossary.html#lingvar">linguistic variable</a> within a <a href="../lvpidmain/pid_glossary.html#linterm">linguistic term</a>.<br></td>
+</tr>
+<tr>
+<td><a name="mcoa"></a>modified Center of Area (mCoA)</td>
+<td>Method of <a href="../lvpidmain/pid_glossary.html#defuzzification">defuzzification</a> in which the crisp output is determined by the geometrical center of area of the composite output <a href="../lvpidmain/pid_glossary.html#memfunc">membership functions</a>. Unlike the <a href="../lvpidmain/pid_glossary.html#coa">Center of Area</a> method, this method allows the crisp output to realize the full range of the output variable.<br></td>
+</tr>
+<tr>
+<td colspan="2">
+<h2><a name="N"></a>N</h2>
+</td>
+</tr>
+<tr>
+<td><a name="noise"></a>noise</td>
+<td>In process instrumentation, an unwanted component of a signal or variable. Noise may be expressed in units of the output or in percent of output span.<br></td>
+</tr>
+<tr>
+<td colspan="2">
+<h2><a name="O"></a>O</h2>
+</td>
+</tr>
+<tr>
+<td><a name="outlim"></a>output limiting</td>
+<td>Preventing a <a href="../lvpidmain/pid_glossary.html#manipvar">controller output (manipulated variable)</a> from traveling beyond a desired maximum range.<br></td>
+</tr>
+<tr>
+<td><a name="overshoot"></a>overshoot</td>
+<td>The maximum excursion beyond the final steady-state value of output as the result of an input change. Also called transient overshoot.<br></td>
+</tr>
+<tr>
+<td colspan="2">
+<h2><a name="P"></a>P</h2>
+</td>
+</tr>
+<tr>
+<td><a name="pea"></a>P</td>
+<td>Proportional.<br></td>
+</tr>
+<tr>
+<td><a name="pcont"></a>P controller</td>
+<td>A <a href="../lvpidmain/pid_glossary.html#controller">controller</a> which produces proportional control action only; that is, a controller that has only a simple gain response.<br></td>
+</tr>
+<tr>
+<td><a name="partmem"></a>partial membership</td>
+<td>In <a href="../lvpidmain/pid_glossary.html#fuzzlog">fuzzy logic</a>, a condition in which the value of a member partially fulfills the requirements of the <a href="../lvpidmain/pid_glossary.html#memfunc">membership function</a> of a set.<br></td>
+</tr>
+<tr>
+<td><a name="pc"></a>PC</td>
+<td>Pressure controller.<br></td>
+</tr>
+<tr>
+<td><a name="pd"></a>PD</td>
+<td>Proportional, derivative.<br></td>
+</tr>
+<tr>
+<td><a name="pdcont"></a>PD controller</td>
+<td>A <a href="../lvpidmain/pid_glossary.html#controller">controller</a> that produces proportional plus <a href="../lvpidmain/pid_glossary.html#derivact">derivative (rate)</a> control action.<br></td>
+</tr>
+<tr>
+<td><a name="pi"></a>PI</td>
+<td>Proportional, integral.<br></td>
+</tr>
+<tr>
+<td><a name="picont"></a>PI controller</td>
+<td>A <a href="../lvpidmain/pid_glossary.html#controller">controller</a> that produces proportional plus <a href="../lvpidmain/pid_glossary.html#intact">integral (reset)</a> control action.<br></td>
+</tr>
+<tr>
+<td><a name="pid"></a>PID</td>
+<td>Proportional, integral, derivative.<br></td>
+</tr>
+<tr>
+<td><a name="pidcont"></a>PID control</td>
+<td>A common control strategy in which a process variable is measured and compared to a desired set point to determine an error signal. A proportional gain (P) is applied to the error signal, an integral gain (I) is applied to the integral of the error signal, and a derivative gain (D) is applied to the derivative of the error signal. The controller output is a linear combination of the three resulting values.<br></td>
+</tr>
+<tr>
+<td><a name="pidcontrlr"></a>PID controller</td>
+<td>A <a href="../lvpidmain/pid_glossary.html#controller">controller</a> that produces <a href="../lvpidmain/pid_glossary.html#propact">proportional</a> plus <a href="../lvpidmain/pid_glossary.html#intact">integral (reset)</a> plus <a href="../lvpidmain/pid_glossary.html#derivact">derivative (rate)</a> control action.<br></td>
+</tr>
+<tr>
+<td><a name="procgain"></a>process gain (K)</td>
+<td>For a linear process, the ratio of the magnitudes of the measured process response to that of the <a href="../lvpidmain/pid_glossary.html#manipvar">manipulated variable</a>.<br></td>
+</tr>
+<tr>
+<td><a name="procvar"></a>process variable (PV)</td>
+<td>The measured variable (such as pressure or temperature) in a process to be controlled.<br></td>
+</tr>
+<tr>
+<td><a name="propact"></a>proportional action</td>
+<td>Control response in which the output is proportional to the input.<br></td>
+</tr>
+<tr>
+<td><a name="propband"></a>proportional band (PB)</td>
+<td>The change in input required to produce a full range change in output due to proportional control action. PB = 100 /<em>K<sub>c</sub></em>.<br></td>
+</tr>
+<tr>
+<td colspan="2">
+<h2><a name="Q"></a>Q</h2>
+</td>
+</tr>
+<tr>
+<td><a name="quartdec"></a>quarter-decay ratio</td>
+<td>A response in which the amplitude of each oscillation is one-quarter that of the previous oscillation.<br></td>
+</tr>
+<tr>
+<td colspan="2">
+<h2><a name="R"></a>R</h2>
+</td>
+</tr>
+<tr>
+<td><a name="ramp"></a>ramp</td>
+<td>The total (transient plus steady-state) time response resulting from a sudden increase in the rate of change from zero to some finite value of the input stimulus. Also called ramp response.<br></td>
+</tr>
+<tr>
+<td><a name="rateaction"></a>rate action</td>
+<td>Control response to the time rate of change of a variable. Also called derivative control action.<br></td>
+</tr>
+<tr>
+<td><a name="reset"></a>reset rate</td>
+<td>Of proportional plus integral or proportional plus integral plus derivative control action devices: for a step input, the ratio of the initial rate of change of output due to integral control action to the change in steady-state output due to proportional control action.<br><br>Of integral control action devices: for a step input, the ratio of the initial rate of change of output to the input change. Also called integral action rate.<br></td>
+</tr>
+<tr>
+<td><a name="rule"></a>rule</td>
+<td>A linguistic representation of the relationships between input and output <a href="../lvpidmain/pid_glossary.html#lingvar">linguistic variables</a> based on their <a href="../lvpidmain/pid_glossary.html#linterm">linguistic terms</a>.<br></td>
+</tr>
+<tr>
+<td><a name="rulebase"></a>rule base</td>
+<td>The set of rules for a <a href="../lvpidmain/pid_glossary.html#fuzzsys">fuzzy system</a>.<br></td>
+</tr>
+<tr>
+<td colspan="2">
+<h2><a name="S"></a>S</h2>
+</td>
+</tr>
+<tr>
+<td><a name="selcont"></a>selector control</td>
+<td>The use of multiple <a href="../lvpidmain/pid_glossary.html#controller">controllers</a> and/or multiple <a href="../lvpidmain/pid_glossary.html#procvar">process variables</a> in which the connections may change dynamically depending on process conditions.<br></td>
+</tr>
+<tr>
+<td><a name="setpoint"></a>setpoint (SP)</td>
+<td>An input variable which sets the desired value of the controlled <a href="../lvpidmain/pid_glossary.html#procvar">process variable</a>.<br></td>
+</tr>
+<tr>
+<td><a name="singleton"></a>singleton</td>
+<td>A normalized <a href="../lvpidmain/pid_glossary.html#memfunc">membership function</a> with an infinitely small width. A singleton is used to model a <a href="../lvpidmain/pid_glossary.html#crispval">crisp value</a> with a fuzzy set.<br></td>
+</tr>
+<tr>
+<td><a name="sp"></a>SP</td>
+<td>See <a href="../lvpidmain/pid_glossary.html#setpoint">setpoint</a>.<br></td>
+</tr>
+<tr>
+<td><a name="span"></a>span</td>
+<td>The algebraic difference between the upper and lower range values.<br></td>
+</tr>
+<tr>
+<td><a name="stochuncert"></a>stochastic uncertainty</td>
+<td>The degree of uncertainty of the occurrence of a given future nondeterministic event.<br></td>
+</tr>
+<tr>
+<td colspan="2">
+<h2><a name="T"></a>T</h2>
+</td>
+</tr>
+<tr>
+<td><a name="timeconst"></a>time constant (T)</td>
+<td>In process instrumentation, the value T (in minutes) in an exponential response term, A exp (�t/T), or in one of the transform factors, such as 1 + sT.<br></td>
+</tr>
+<tr>
+<td><a name="transover"></a>transient overshoot</td>
+<td>See <a href="../lvpidmain/pid_glossary.html#overshoot">overshoot</a>.<br></td>
+</tr>
+<tr>
+<td><a name="trapint"></a>trapezoidal integration</td>
+<td>A numerical of integration in which the current value and the previous value are used to calculate the addition of the current value to the integral value.<br></td>
+</tr>
+<tr>
+<td colspan="2">
+<h2><a name="W"></a>W</h2>
+</td>
+</tr>
+<tr>
+<td><a name="windarea"></a>windup area</td>
+<td>The time during which the controller output is saturated at the maximum or minimum value. The integral action of a simple <a href="../lvpidmain/pid_glossary.html#pidcontrlr">PID controller</a> continues to increase (wind up) while the controller is in the windup area.<br></td>
+</tr>
+</table><!-- END DOCUMENTATION TO COPY --><!--END CONTENT--><!-- end_section --><!--end_topic--></div></body></html>

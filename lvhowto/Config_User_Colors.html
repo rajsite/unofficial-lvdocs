@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+
+<title>Configuring User-Defined Colors</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+
+<h1>Configuring User-Defined Colors</h1>
+<p class="Body">Color the front panel background and objects with the user-defined colors in the <a href="Coloring_Objects_and_Backg.html">color picker</a> to maintain a consistent color scheme across the VIs in an application.</p>
+<p class="Body">You can change the color associated with a user-defined color name, and you can define new colors to display in the color picker. However, if you change the color associated with a user-defined color name, LabVIEW does not apply that change to any objects on the <strong>Controls</strong> palette. For example, if you change the LED On color to a bright blue instead of the default bright green and you add an LED control to the front panel, the On color of the control is the default bright green.</p>
+<p class="Body">Complete the following steps to change the user-defined colors that appear in the color picker or to define new colors to display in the color picker.</p>
+<ol>
+<li>Select <strong>Tools&#0187;Options</strong> to display the <a href="../lvdialog/Options_Dialog_Box.html">Options</a> dialog box.</li>
+<li>Select <a href="../lvdialog/Miscellaneous_Options.html">Environment</a> from the <strong>Category</strong> list.</li>
+<li>In the <strong>Colors</strong> section, remove the checkmark from the <strong>Use default colors</strong> checkbox to change any of the colors associated with the color names listed under the checkbox. Click the color box next to the color name to display the color picker and select a new color.</li>
+<li>Click the <strong>Custom Colors</strong> button to display the <a href="../lvdialog/User_Colors_Dialog_Box.html">User Colors</a> dialog box.</li>
+<li>Configure the user-defined colors in any of the following ways:
+<ul>
+<li>To define a new color, enter a name in an empty color name text box and click the color box next to the new name to select a color to associate with that name. You must name user-defined colors to display them in the color picker.</li>
+<li>To change the color associated with a color name, click the color box next to the color name to display the color picker and select a new color.</li>
+<li>To remove a user-defined color from the color picker, delete the color name.</li>
+<li>To restore the default user-defined colors, delete the color names from every text box in the dialog box.</li>
+</ul>
+</li>
+<li>Click the <strong>OK</strong> button twice to save the changes.</li>
+</ol>
+
+<h2>Viewing System Colors</h2>
+<p><!--begin parent: ../lvconcepts/Designing_User_Interfaces.html-->The system colors vary across computers, so any VI that uses system colors reflects the specific system colors of the current computer. The system colors define the appearance of <strong>Panel &amp; Object</strong>, <strong>Window</strong>, and <strong>Highlight</strong>, as well as the color of the text that appears on top of these system colors. <!--end parent: ../lvconcepts/Designing_User_Interfaces.html--></p>
+<p>To view the available system colors:</p>
+<ol>
+<li>Select <strong>Tools&#0187;Options</strong> to display the <a href="../lvdialog/Options_Dialog_Box.html">Options</a> dialog box.</li>
+<li>Select <a href="../lvdialog/Miscellaneous_Options.html">Environment</a> from the <strong>Category</strong> list.</li>
+<li>In the <strong>Colors</strong> section, remove the checkmark from the <strong>Use default colors</strong> checkbox.</li>
+<li>Click one of the color boxes to display the color picker. You can view the available system colors in the lower right corner of the color picker.</li>
+</ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="tip.gif"></td>
+<td>
+<strong>Tip</strong>&nbsp;&nbsp;To change the system colors that appear in the color picker, use the color utility on the operating system of the computer.</td></tr></table>
+<p>Refer to <a href="javascript:WWW(WWW_SysColors)">ni.com</a> for more information about system colors.</p>
+</body>
+</html>

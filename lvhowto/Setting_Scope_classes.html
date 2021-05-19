@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+
+<title>Setting the Access Scope of Member VIs</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Setting the Access Scope of Member VIs</h1>
+<p class="Body">You can set the access scope of a member VI to control user access to the member VI. Complete the following steps to set the access scope of a member VI.</p>
+<ol><li>In the <strong>Project Explorer</strong> window, right-click the project item for the class or interface whose member VI access you want to change and select <strong>Properties</strong> from the shortcut menu. The <a href="../lvdialog/C_Library_Props_DB.html">Class/Interface Properties</a> dialog box appears.</li>
+<li>Select <strong>Item Settings</strong> from the <strong>Category</strong> list.</li>
+<li>To customize the access scope of items in the LabVIEW class or interface, select an item from the <strong>Contents</strong> list on the <a href="../lvdialog/C_Item_Lib_Page.html">Item Settings</a> page.</li>
+<li>In the <strong>Access Scope</strong> section, select from the following options:
+						<ul><li> <strong>Public</strong>�<!--start parent  = ../lvconcepts/creating_classes.html  tag="public_scope"-->Any VI can call the member VI as a subVI.<!--end parent  = ../lvconcepts/creating_classes.html  tag="public_scope"--> </li>
+<li><strong>Community</strong>�<!--start parent  = ../lvconcepts/creating_classes.html  tag="community_scope"-->Only VIs that are friend of the class or interface, members of the class or interface, or members of a friended library can call the member VI. Community member VIs display a dark blue key glyph in the <strong>Project Explorer</strong> window.<!--end parent  = ../lvconcepts/creating_classes.html  tag="community_scope"--></li>
+<li> <strong>Protected</strong>�<!--start parent  = ../lvconcepts/creating_classes.html  tag="protected_scope"-->Only VIs within the same or a descendant class or interface can call the member VI. Protected member VIs display a dark yellow key glyph in the <strong>Project Explorer</strong> window.<!--end parent  = ../lvconcepts/creating_classes.html  tag="protected_scope"--></li>
+<li> <strong>Private</strong>�<!--start parent  = ../lvconcepts/creating_classes.html  tag="private_scope"-->Only VIs within the same class or interface can call the member VI. Private member VIs display a red key glyph in the <strong>Project Explorer</strong> window.<!--end parent  = ../lvconcepts/creating_classes.html  tag="private_scope"--></li>
+<li><!-- begin parent lvconcepts::/creating_classes.html--><strong>Not specified</strong>&#8212;This option appears only when you select a folder. The folder does not have access items specified. Access is public.<!-- end parent lvconcepts::/creating_classes.html--></li> 
+</ul>							
+						</li>
+						<li>Repeat steps 3 and 4 for all items for which you want to change the access scope.</li><li>Click the <strong>OK</strong> button to close the <strong>Class/Interface Properties</strong> dialog box.</li></ol>
+
+
+</body>
+</html>

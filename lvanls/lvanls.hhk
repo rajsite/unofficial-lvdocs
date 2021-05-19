@@ -1,0 +1,807 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD>
+<BODY>
+<OBJECT type="text/site properties">
+	<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AC & DC Estimator">
+		<param name="Local" value="AC_and_DC_Estimator.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Advanced FIR Filtering VIs">
+		<param name="Local" value="Advanced_FIR_Filtering.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Advanced IIR Filtering VIs">
+		<param name="Local" value="Advanced_IIR_Filtering.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Amplitude and Phase Spectrum">
+		<param name="Local" value="Amp_and_Phase_Spectrum.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Arbitrary Wave">
+		<param name="Local" value="Arbitrary_Wave.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Auto Power Spectrum">
+		<param name="Local" value="Auto_Power_Spectrum.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AutoCorrelation">
+		<param name="Local" value="AutoCorrelation.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AutoCorrelation Matrix">
+		<param name="Local" value="autocorl_matrix.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Bartlett Window (Triangle Window)">
+		<param name="Local" value="Triangle_Window.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Bernoulli Noise">
+		<param name="Local" value="Bernoulli_Noise.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Bessel Coefficients">
+		<param name="Local" value="Bessel_Coefficients.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Bessel Filter">
+		<param name="Local" value="Bessel_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Binary MLS">
+		<param name="Local" value="Binary_MLS.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Binomial Noise">
+		<param name="Local" value="Binomial_Noise.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Blackman Window">
+		<param name="Local" value="Blackman_Window.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Blackman-Harris Window">
+		<param name="Local" value="Blackman_Harris_Window.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Blackman-Nuttall Window">
+		<param name="Local" value="Blackman_Nuttall_Window.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Bohman Window">
+		<param name="Local" value="bohman.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Buneman Frequency Estimator">
+		<param name="Local" value="Bun_Frequency_Estimator.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Butterworth Coefficients">
+		<param name="Local" value="Butterworth_Coefficients.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Butterworth Filter">
+		<param name="Local" value="Butterworth_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Butterworth Order Estimation">
+		<param name="Local" value="butterworth_order_est.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Cascade To Direct Coefficients">
+		<param name="Local" value="Casc_Direct_Coefficients.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Chebyshev Coefficients">
+		<param name="Local" value="Chebyshev_Coefficients.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Inv Chebyshev Coefficients">
+			<param name="Local" value="Inv_Chebyshev_Coefficients.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Chebyshev Filter">
+		<param name="Local" value="Chebyshev_Filter.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Inverse Chebyshev Filter">
+			<param name="Local" value="Inverse_Chebyshev_Filter.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Chebyshev Order Estimation">
+		<param name="Local" value="cheby_order_est.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Chebyshev Window">
+		<param name="Local" value="Chebyshev_Window.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Chirp Pattern">
+		<param name="Local" value="Chirp_Pattern.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Chirp Z Transform">
+		<param name="Local" value="Chirp_Z_Transform.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="complex FFT">
+		<param name="Local" value="FFT.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Inverse FFT">
+			<param name="Local" value="Inverse_FFT.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Convolution">
+		<param name="Local" value="Convolution.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Cosine Tapered Window">
+		<param name="Local" value="Cosine_Tapered_Window.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Cross Power">
+		<param name="Local" value="Cross_Power.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Cross Power Spectrum">
+		<param name="Local" value="Cross_Power_Spectrum.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CrossCorrelation">
+		<param name="Local" value="CrossCorrelation.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DCT">
+		<param name="Local" value="DCT.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Inverse DCT">
+			<param name="Local" value="Inverse_DCT.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Decimate (continuous)">
+		<param name="Local" value="decimatecont.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Decimate (single shot)">
+		<param name="Local" value="Decimate.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Deconvolution">
+		<param name="Local" value="Deconvolution.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Digital Reversed Order">
+		<param name="Local" value="digital_reversed_order.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Dolph-Chebyshev Window (Chebyshev Window)">
+		<param name="Local" value="Chebyshev_Window.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DST">
+		<param name="Local" value="DST.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Inverse DST">
+			<param name="Local" value="Inverse_DST.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Elliptic Coefficients">
+		<param name="Local" value="Elliptic_Coefficients.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Elliptic Filter">
+		<param name="Local" value="Elliptic_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Elliptic Order Estimation">
+		<param name="Local" value="elliptic_order_est.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Equi-Ripple BandPass">
+		<param name="Local" value="Equi_Ripple_BandPass.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Equi-Ripple BandStop">
+		<param name="Local" value="Equi_Ripple_BandStop.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Equi-Ripple HighPass">
+		<param name="Local" value="Equi_Ripple_HighPass.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Equi-Ripple LowPass">
+		<param name="Local" value="Equi_Ripple_LowPass.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Exact Blackman Window">
+		<param name="Local" value="Exact_Blackman_Window.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Exponential Window">
+		<param name="Local" value="Exponential_Window.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="fast Fourier transform (FFT)">
+		<param name="Local" value="FFT.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="(see also FFT)">
+			<param name="See Also" value="FFT">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Fast Hilbert Transform">
+		<param name="Local" value="Fast_Hilbert_Transform.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Inverse Fast Hilbert Transform">
+			<param name="Local" value="I_Fast_Hilbert_Transform.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FFT">
+		<param name="Local" value="FFT.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Inverse FFT">
+			<param name="Local" value="Inverse_FFT.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Signal Processing VIs">
+			<param name="Local" value="Signal_Processing_VIs.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FHT">
+		<param name="Local" value="FHT.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Inverse FHT">
+			<param name="Local" value="Inverse_FHT.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Filters VIs">
+		<param name="Local" value="Filter_VIs.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FIR Filter">
+		<param name="Local" value="FIRfilter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FIR Filter with I.C.">
+		<param name="Local" value="ffic.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FIR Narrowband Coefficients">
+		<param name="Local" value="FIR_Narrow_Coefficients.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FIR Narrowband Filter">
+		<param name="Local" value="FIR_Narrowband_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FIR Windowed Coefficients">
+		<param name="Local" value="FIR_Windowed_Coefficients.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FIR Windowed Filter">
+		<param name="Local" value="FIR_Windowed_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Flat Top Window">
+		<param name="Local" value="Flat_Top_Window.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Force Window">
+		<param name="Local" value="Force_Window.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Gamma Noise">
+		<param name="Local" value="Gamma_Noise.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Gaussian Modulated Sine Pattern">
+		<param name="Local" value="gmsp.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Gaussian Monopulse">
+		<param name="Local" value="gmon.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Gaussian White Noise">
+		<param name="Local" value="Gaussian_White_Noise.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Gaussian Window">
+		<param name="Local" value="Gaussian_Window.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="General Cosine Window">
+		<param name="Local" value="General_Cosine_Window.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Hamming Window">
+		<param name="Local" value="Hamming_Window.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Hanning Window">
+		<param name="Local" value="Hanning_Window.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="IIR Cascade Filter">
+		<param name="Local" value="IIR_Cascade_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="IIR Cascade Filter with I.C.">
+		<param name="Local" value="IIR_Cascade_Filter_with_IC.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="IIR Filter">
+		<param name="Local" value="IIR_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="IIR Filter with I.C.">
+		<param name="Local" value="IIR_Filter_with_IC.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Impulse Pattern">
+		<param name="Local" value="Impulse_Pattern.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Inv Chebyshev Coefficients">
+		<param name="Local" value="Inv_Chebyshev_Coefficients.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Chebyshev Coefficients">
+			<param name="Local" value="Chebyshev_Coefficients.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Inverse Chebyshev Filter">
+		<param name="Local" value="Inverse_Chebyshev_Filter.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Chebyshev Filter">
+			<param name="Local" value="Chebyshev_Filter.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Inverse Chebyshev Order Estimation">
+		<param name="Local" value="inverse_cheby_est.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Inverse Chirp Z Transform">
+		<param name="Local" value="Inv_ChirpZ_Trans.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Inverse DCT">
+		<param name="Local" value="Inverse_DCT.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Inverse DST">
+		<param name="Local" value="Inverse_DST.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Inverse f Filter">
+		<param name="Local" value="Inv_f_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Inverse f Filter Coefficients">
+		<param name="Local" value="Inverse_f_Filter_Coeffs.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Inverse Fast Hilbert Transform">
+		<param name="Local" value="I_Fast_Hilbert_Transform.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Fast Hilbert Transform">
+			<param name="Local" value="Fast_Hilbert_Transform.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Inverse FFT">
+		<param name="Local" value="Inverse_FFT.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="FFT">
+			<param name="Local" value="FFT.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Inverse FHT">
+		<param name="Local" value="Inverse_FHT.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="FHT">
+			<param name="Local" value="FHT.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Kaiser-Bessel Window">
+		<param name="Local" value="Kaiser_Bessel_Window.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Laplace Transform Real">
+		<param name="Local" value="Laplace_Transform_Real.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Mathematical Morphological Filter">
+		<param name="Local" value="math_morph_filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Median Filter">
+		<param name="Local" value="Median_Filter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Modified Bartlett-Hanning Window">
+		<param name="Local" value="modbhw.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Normalize">
+		<param name="Local" value="Normalize.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Parks-McClellan">
+		<param name="Local" value="Parks_McClellan.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Parzen Window">
+		<param name="Local" value="parzen.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Peak Detector">
+		<param name="Local" value="Peak_Detector.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Periodic Random Noise">
+		<param name="Local" value="Periodic_Random_Noise.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Periodic Sinc Pattern">
+		<param name="Local" value="psp.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Point By Point VIs">
+		<param name="See Also" value="Point By Point VIs">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error checking">
+			<param name="Local" value="Initializing_Point_By_Point_VIs.html#Error_Checking_and_Initialization">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="initializing">
+			<param name="Local" value="Initializing_Point_By_Point_VIs.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="purpose of initializing">
+			<param name="Local" value="Initializing_Point_By_Point_VIs.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="characteristic inputs and outputs">
+			<param name="Local" value="Using_the_Point_By_Point_VIs.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Poisson Noise">
+		<param name="Local" value="Poisson_Noise.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Power & Frequency Estimate">
+		<param name="Local" value="Power_Frequency_Estimate.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Power Spectrum">
+		<param name="Local" value="Power_Spectrum_Sxx.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PRBS">
+		<param name="See Also" value="PRBS">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Binary MLS">
+			<param name="Local" value="Binary_MLS.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="pseudo-random binary sequence">
+		<param name="See Also" value="pseudo-random binary sequence">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Binary MLS">
+			<param name="Local" value="Binary_MLS.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Pulse Pattern">
+		<param name="Local" value="Pulse_Pattern.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Pulse Train">
+		<param name="Local" value="pulsetrain.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Quasi Random">
+		<param name="Local" value="quasi_random.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Quick Scale">
+		<param name="Local" value="Quick_Scale.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Ramp Pattern">
+		<param name="Local" value="Ramp_Pattern.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Rational Resample">
+		<param name="Local" value="rrsam.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="real FFT">
+		<param name="Local" value="FFT.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Inverse FFT">
+			<param name="Local" value="Inverse_FFT.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Resample (constant to constant)">
+		<param name="Local" value="resample_constant_constant.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Resample (constant to variable)">
+		<param name="Local" value="resample_constant_variable.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Riffle">
+		<param name="Local" value="Riffle.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Savitzky-Golay Filter">
+		<param name="Local" value="sgfil.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Savitzky-Golay Filter Coefficients">
+		<param name="Local" value="sgfilcoef.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Sawtooth Wave">
+		<param name="Local" value="Sawtooth_Wave.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Scale">
+		<param name="Local" value="Scale.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Scaled Time Domain Window">
+		<param name="Local" value="Scaled_Time_Domain_Window.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Short-Time Fourier Transform (STFT) Spectrogram">
+		<param name="Local" value="STFT_Spectrogram_Core.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="signal analysis">
+		<param name="See Also" value="signal analysis">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Signal Processing VIs">
+			<param name="Local" value="Signal_Processing_VIs.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Signal Generation VIs">
+		<param name="Local" value="Signal_Generation_VIs.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Signal Generator by Duration">
+		<param name="Local" value="Signal_Generator_Duration.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="signal measurement">
+		<param name="Local" value="Signal_Processing_VIs.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Signal Operation VIs">
+		<param name="Local" value="Signal_Operation_VIs.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Signal Processing VIs">
+		<param name="Local" value="Signal_Processing_VIs.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Sinc Pattern">
+		<param name="Local" value="Sinc_Pattern.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Sine Pattern">
+		<param name="Local" value="Sine_Pattern.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Sine Wave">
+		<param name="Local" value="Sine_Wave.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Smoothing Filter Coefficients">
+		<param name="Local" value="Smoothing_Filter_Coeffs.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="smoothing windows">
+		<param name="See Also" value="smoothing windows">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="(see Windows VIs)">
+			<param name="See Also" value="Windows VIs">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Spectral Analysis VIs">
+		<param name="Local" value="Spectral_Analysis_VIs.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Spectrum Unit Conversion">
+		<param name="Local" value="Spectrum_Unit_Conversion.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Square Wave">
+		<param name="Local" value="Square_Wave.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="STFT Spectrograms">
+		<param name="Local" value="STFT_Spectrogram_Core.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Symmetric Window">
+		<param name="Local" value="Symmetric_Window.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Threshold Detector">
+		<param name="Local" value="Threshold_Peak_Detector.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Tones and Noise">
+		<param name="Local" value="tones_and_noise.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Transforms VIs">
+		<param name="Local" value="Transforms_VIs.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Triangle Pattern">
+		<param name="Local" value="tripat.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Triangle Wave">
+		<param name="Local" value="Triangle_Wave.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Triangle Window">
+		<param name="Local" value="Triangle_Window.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Unevenly Sampled Signal Spectrum">
+		<param name="Local" value="UnSampled_Signal_Spectrum.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Uniform White Noise">
+		<param name="Local" value="Uniform_White_Noise.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Unit Vector">
+		<param name="Local" value="Unit_Vector.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="units">
+		<param name="See Also" value="units">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="for FFT-based VIs">
+			<param name="Local" value="FFTBasedVIUnits.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Unwrap Phase">
+		<param name="Local" value="Unwrap_Phase.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Upsample">
+		<param name="Local" value="upsample.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Walsh Hadamard">
+		<param name="Local" value="Walsh_Hadamard.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Walsh Hadamard Inverse">
+		<param name="Local" value="Walsh_Hadamard_Inverse.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Wavelet Transform Daubechies4">
+		<param name="Local" value="Wavelet_Transform_Daub.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Wavelet Transform Daubechies4 Inverse">
+		<param name="Local" value="Wave_Trans_Daub4_Inverse.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Welch Window">
+		<param name="Local" value="welch.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Window Properties">
+		<param name="Local" value="Window_Properties_VI.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Windows VIs">
+		<param name="Local" value="Window_VIs.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="WVD Spectrogram">
+		<param name="Local" value="WVD_Spectrogram.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Y[i]=Clip{X[i]}">
+		<param name="Local" value="Y_i_eq_Clip_Xi.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Y[i]=X[i-n]">
+		<param name="Local" value="Yi_eq_Xi_minus_n.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Z-Transform Delay Node">
+		<param name="See Also" value="Z-Transform Delay Node">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="(see also Feedback Node)">
+			<param name="Local" value="z_transform_delaynode.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Zero Padder">
+		<param name="Local" value="Zero_Padder.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Zero Phase Filter">
+		<param name="Local" value="Zero_Phase_Filter.html">
+		</OBJECT>
+
+</UL>
+</BODY>
+</HTML>

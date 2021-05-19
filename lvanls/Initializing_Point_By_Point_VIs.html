@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+<title>Initializing the Point By Point VIs</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Initializing the Point By Point VIs</h1>
+
+<p class="Body">
+Using the <strong>initialize</strong> parameter, you can reset the internal state of Point By Point VIs without interrupting the continuous flow of data or computation. You can reset a VI in response to events such as the following:</p>
+<ul>
+<li>A user changing the value of a parameter</li>
+<li>The application generating a specific event or reaching a threshold</li>
+</ul>
+<p class="Body">For example, the <a href="../ptbypt/Value_Has_Changed_PtByPt.html">Value Has Changed PtByPt</a> VI can respond to change events such as the following:</p>
+<ul>
+<li>Receiving the input data</li>
+<li>Detecting the change</li>
+<li>Generating a Boolean TRUE value that triggers initialization in another VI</li>
+<li>Transferring the input data to another VI for processing</li>
+</ul>
+
+<p class="Body">The following block diagram shows the Value Has Changed PtByPt VI triggering initialization in another VI and transferring data to that VI. In this case, the input data is a parameter value for the target VI.</p>
+
+<p class="Anchor"><img src="loc_bd_valchgwires.gif"></p>
+
+<p class="Body">Many point-by-point applications do not require use of the <strong>initialize</strong> parameter because initialization occurs automatically whenever an operator quits an application and then starts again.</p>
+
+<a name="Error_Checking_and_Initialization"></a><h3>Error Checking and Initialization</h3>
+ 
+<p class="Body">Error codes usually identify invalid parameters and settings. For higher-level error checking, configure the program to monitor and respond to irregularities in data acquisition or in computation. For example, you create a form of error checking when you range check data.</p>
+
+<p class="Body">A Point By Point VI generates an error code once at the initial call to the VI or at the first call to the VI after you initialize an application. Because Point By Point VIs generate error codes only once, they can perform optimally in a real-time, deterministic application.</p>
+
+<p class="Body">The Point By Point VIs generate an error code to inform you of any invalid parameters or settings when they detect an error during the first call. In subsequent calls, the Point By Point VIs set the error code to zero and continue running, generating no error codes. You can program an application to take one of the following actions in response to the first error:</p>
+<ul>
+<li>Report the error and continue running.</li>
+<li>Report the error and stop.</li>
+<li>Ignore the error and continue running. This is the default behavior.</li>
+</ul>
+
+<p class="Body">You can use the Value Has Changed PtByPt VI to <a href="../ptbypt/Value_Has_Changed_PtByPt.html#details">build a point-by-point error checking mechanism</a> for Point by Point VIs that have an <strong>error</strong> parameter.</p>
+
+
+
+</body>
+</html>

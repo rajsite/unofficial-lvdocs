@@ -1,0 +1,291 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name:  -->
+
+<title>Formula Node Syntax</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+<style type="text/css">
+<!-- /* Use the Bright-Red format with the Monospace-Bold format to denote terminals in this topic only. */
+.Bright-Red { color: #FF0000 } -->
+</style>
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Formula Node Syntax
+</h1>
+<p class="Body">The Formula Node syntax is similar to the syntax used in text-based programming languages. Remember to end assignments with a semicolon (;) as in C. Use <a href="Scope_Rules_for_Declaring.html">scope rules</a> to declare variables in Formula Nodes. Also, keep in mind the <a href="../lvhowto/Formula_Node_and_Express.html">allowed functions</a> and the <a href="../lvhowto/Precedence_of_Operators_in.html">allowed operators and their precedence</a> in the Formula Node.</p>
+
+<!-- begin parent: ../lvconcepts/Formulas_and_Equations.xml --><table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;You can use Formula Node most effectively if you are familiar with the C programming language. <em>LabVIEW Help</em> assumes you are familiar with C and does not contain any topics related to programming in C. Refer to <em>The C Programming Language</em> by Brian W. Kernighan and Dennis M. Ritchie or <em>Teach Yourself C</em> by Herbert Schildt for more information.</td>
+</tr>
+</table><!-- end parent: ../lvconcepts/Formulas_and_Equations.xml -->
+
+<p class="Body">The Formula Node syntax is summarized below using Backus-Naur Form (BNF notation). The summary includes non-terminal symbols: compound-statement, identifier, conditional-expression, number, array-size, floating-point-type, integer-type, left-hand-side, assignment-operator, and function. Symbols in red bold monospace are terminal symbols given exactly as they should be reproduced. The symbol # denotes any number of the term following it.
+</p>
+
+<p class="Body">statement-list:</p>
+<p class="Indent1">statement <span class="Monospace-Bold"><span class="Bright-Red">;</span></span><br>
+statement <span class="Monospace-Bold"><span class="Bright-Red">;</span></span> statement-list</p>
+
+<p class="Body">statement:</p>
+<p class="Indent1">
+assignment<br>
+compound-statement<br>
+control-statement<br>
+conditional-statement<br>
+iterative-statement<br>
+switch-statement<br>
+variable-declaration
+</p>
+
+<p class="Body">assignment:</p>
+<p class="Indent1">expression<br>
+left-hand-side assignment-operator assignment</p>
+
+<p class="Body">expression:</p>
+<p class="Indent1">expression binary-operator expression<br>
+unary-operator expression<br>
+expression unary-operator<br>
+expression <span class="Monospace-Bold"><span class="Bright-Red">?</span></span> expression <span class="Monospace-Bold"><span class="Bright-Red">:</span></span> expression<br>
+<span class="Monospace-Bold"><span class="Bright-Red">(</span></span> expression <span class="Monospace-Bold"><span class="Bright-Red">)</span></span><br>
+identifier<br>
+constant<br>
+function-name <span class="Monospace-Bold"><span class="Bright-Red">(</span></span> argument-list <span class="Monospace-Bold"><span class="Bright-Red">)</span></span></p>
+
+<p class="Body">left-hand-side:</p>
+<p class="Indent1">identifier<br>
+identifier array-subscription</p>
+
+<p class="Body">array-subscription:</p>
+<p class="Indent1"><span class="Monospace-Bold"><span class="Bright-Red">[</span></span>assignment<span class="Monospace-Bold"><span class="Bright-Red">]</span></span><br>
+<span class="Monospace-Bold"><span class="Bright-Red">[</span></span>assignment<span class="Monospace-Bold"><span class="Bright-Red">]</span></span> array-subscription</p>
+
+<p class="Body">assignment-operator: <em>one of</em></p>
+<p class="Indent1"><span class="Monospace-Bold"><span class="Bright-Red">=  += &#8211;=  *=  /=  &gt;&gt;=  &lt;&lt;=  &amp;=  ^= &#124;= %= **=</span></span></p>
+
+
+<p class="Body">binary-operator: <em>one of</em></p>
+<p class="Indent1"><span class="Monospace-Bold"><span class="Bright-Red">+  &#8211;  *  /  ^  !=  ==  &gt;  &lt;  &gt;=  &lt;=  &amp;&amp;  &#124;&#124;  &amp;  &#124; % **</span></span></p>
+
+<p class="Body">unary-operator: <em>one of</em></p>
+<p class="Indent1"><span class="Monospace-Bold"><span class="Bright-Red">+  &#8211;  ! ++ &#8211;&#8211; &#126;</span></span></p>
+
+<p class="Body">argument-list:</p>
+<p class="Indent1">expression<br>
+expression <span class="Monospace-Bold"><span class="Bright-Red">,</span></span> argument-list</p>
+
+<p class="Body">constant:</p>
+<p class="Indent1"><span class="Monospace-Bold"><span class="Bright-Red">pi</span></span><br>
+number</p>
+
+<p class="Body">compound-statement:</p>
+<p class="Indent1"><span class="Monospace-Bold"><span class="Bright-Red">{</span></span> statement-list <span class="Monospace-Bold"><span class="Bright-Red">}</span></span></p>
+
+<p class="Body">The following table provides the Formula Node syntax for control, conditional, iterative, and switch statements.</p>
+<table class="Bordered">
+<tr><th class="Bordered Left-Align">Statement Type</th><th class="Bordered Left-Align">Construct</th><th class="Bordered Left-Align">Grammar</th><th class="Bordered Left-Align">Description/Example</th></tr>
+
+<tr><td class="Bordered" rowspan="2">Control Statement</td><td class="Bordered">Break Statement</td><td class="Bordered"><span class="Monospace-Bold"><span class="Bright-Red"><span class="DNL">break</span></span></span></td>
+<td class="Bordered">Use the <span class="Monospace">break</span> keyword to exit the nearest Do, For, or While Loop or switch statement in the Formula Node.</td></tr>
+<tr><td class="Bordered">Continue Statement</td><td class="Bordered"><span class="Monospace-Bold"><span class="Bright-Red"><span class="DNL">continue</span></span></span></td><td class="Bordered">Use the <span class="Monospace">continue</span> keyword to transfer control to the next iteration of the nearest Do, For, or While Loop in the Formula Node.</td>
+</tr>
+
+<tr><td class="Bordered" rowspan="3">Conditional Statement</td><td class="Bordered"></td><td class="Bordered">conditional-statement:<br>
+&nbsp;&nbsp;&nbsp;if-statement<br>
+&nbsp;&nbsp;&nbsp;if-else-statement<br><br></td>
+<td class="Bordered" rowspan="3"><span class="Monospace">if (y==x &amp;&amp; a[2][3]&lt;a[0][1]) {</span>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Monospace">int32 temp;</span>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Monospace">temp = a[2][3];</span>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Monospace">a[2][3] = y;</span>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Monospace">y=temp;</span>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Monospace">}</span>
+<br>
+<span class="Monospace">else </span>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Monospace">x=y;</span>
+<br></td></tr>
+
+<tr><td class="Bordered">If Statement</td><td class="Bordered">if-statement:<br>
+&nbsp;&nbsp;&nbsp;<span class="Monospace-Bold"><span class="Bright-Red">if</span></span> <span class="Monospace-Bold"><span class="Bright-Red">(</span></span> assignment <span class="Monospace-Bold"><span class="Bright-Red">)</span></span> statement<br><br></td></tr>
+
+<tr><td class="Bordered">If-Else Statement</td><td class="Bordered">if-else-statement:<br>
+&nbsp;&nbsp;&nbsp;if-statement <span class="Monospace-Bold"><span class="Bright-Red">else</span></span> statement</td></tr>
+
+<tr><td class="Bordered" rowspan="4">Iterative Statement</td><td class="Bordered"></td><td class="Bordered">iterative-statement:<br>
+&nbsp;&nbsp;&nbsp;do-statement<br>
+&nbsp;&nbsp;&nbsp;for-statement<br>
+&nbsp;&nbsp;&nbsp;while-statement</td>
+<td class="Bordered"></td></tr>
+
+<tr><td class="Bordered">Do Loops</td><td class="Bordered"><span class="Monospace-Bold"><span class="Bright-Red">do</span></span> statement <span class="Monospace-Bold"><span class="Bright-Red">while</span></span> <span class="Monospace-Bold"><span class="Bright-Red">(</span></span> assignment <span class="Monospace-Bold"><span class="Bright-Red">)</span></span></td>
+<td class="Bordered"><span class="Monospace">do {</span>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Monospace">int32 temp;</span>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Monospace">temp = --a[2]+y;</span>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Monospace">y=y-1;</span>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Monospace">}</span>
+<br>
+<span class="Monospace">while (y!=x &amp;&amp; a[2]&gt;=a[0]);</span></td></tr>
+
+<tr><td class="Bordered">For Loops</td><td class="Bordered"><span class="Monospace-Bold"><span class="Bright-Red">for</span></span> <span class="Monospace-Bold"><span class="Bright-Red">(</span></span>  [assignment]  <span class="Monospace-Bold"><span class="Bright-Red">;</span></span> [assignment] <span class="Monospace-Bold"><span class="Bright-Red">;</span></span> [assignment] <span class="Monospace-Bold"><span class="Bright-Red">)</span></span> statement</td>
+<td class="Bordered"><span class="Monospace">for (y=5; y&lt;x; y*=2) {</span>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Monospace">int32 temp;</span>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Monospace">temp = --a[2]+y;</span>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Monospace">x-=temp;</span>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Monospace">}</span></td></tr>
+
+<tr><td class="Bordered">While Loops</td><td class="Bordered"><span class="Monospace-Bold"><span class="Bright-Red">while</span></span> <span class="Monospace-Bold"><span class="Bright-Red">(</span></span> assignment <span class="Monospace-Bold"><span class="Bright-Red">)</span></span> statement</td>
+<td class="Bordered"><span class="Monospace">while (y!=x &amp;&amp; a[2]&gt;=a[0]) {</span>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Monospace">int32 temp;</span>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Monospace">temp = --a[2]+y;</span>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Monospace">y=y-1;</span>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Monospace">}</span></td></tr>
+
+<tr><td class="Bordered" rowspan="3">Switch Statement</td><td class="Bordered"></td><td class="Bordered"><span class="Monospace-Bold"><span class="Bright-Red">switch</span></span> <span class="Monospace-Bold"><span class="Bright-Red">(</span></span> assignment <span class="Monospace-Bold"><span class="Bright-Red">) {</span></span> case-statement-list <span class="Monospace-Bold"><span class="Bright-Red">}</span></span></td>
+<td class="Bordered" rowspan="3"><span class="Monospace">switch(month){</span>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Monospace">case 2: days = evenyear? 29: 28; break;</span>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Monospace">case 4:case 6:case9: days = 30; break;</span>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Monospace">default: days =  31; break;</span>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Monospace">}</span>
+</td></tr>
+<tr><td class="Bordered">Case Statement List</td><td class="Bordered">case-statement-list:<br>
+&nbsp;&nbsp;&nbsp;case-statement
+<br>
+&nbsp;&nbsp;&nbsp;case-statement-list case-statement</td></tr>
+<tr><td class="Bordered">Case Statement</td><td class="Bordered">case-statement:<br>&nbsp;&nbsp;&nbsp;<span class="Monospace-Bold"><span class="Bright-Red">case</span></span> number <span class="Monospace-Bold"><span class="Bright-Red">:</span></span> statement-list<br>&nbsp;&nbsp;&nbsp;<span class="Monospace-Bold"><span class="Bright-Red">default :</span></span> statement-list</td></tr>
+</table>
+
+<p class="Body">variable-declaration:</p>
+<p class="Indent1">type-specifier identifier<br> 
+type-specifier identifier array-index-list<br>
+type-spec identifier <span class="Monospace-Bold"><span class="Bright-Red">=</span></span> assignment</p>
+
+<p class="Body">array-index-list:</p>
+<p class="Indent1"><span class="Monospace-Bold"><span class="Bright-Red">[</span></span>integer-constant<span class="Monospace-Bold"><span class="Bright-Red">]</span></span><br>
+<span class="Monospace-Bold"><span class="Bright-Red">[</span></span>integer-constant<span class="Monospace-Bold"><span class="Bright-Red">]</span></span>array-index-list</p>
+
+<p class="Body">type-specifier:</p>
+<p class="Indent1">floating-point-type<br>
+integer-type</p>
+
+<p class="Body">floating-point-type:</p>
+<p class="Indent1"><span class="Monospace-Bold"><span class="Bright-Red">float<br>
+float32<br>
+float64</span></span></p>
+
+<p class="Body">integer-type:</p>
+<p class="Indent1"><span class="Monospace-Bold"><span class="Bright-Red">int<br>
+int8<br>
+int16<br>
+int32<br>
+uInt8<br>
+uInt16<br>
+uInt32</span></span></p>
+
+<p class="Body">non-digit: <em>one of</em></p>
+<p class="Indent1"><span class="Monospace-Bold"><span class="Bright-Red">&#95;  a&#126;z A&#126;Z</span></span></p>
+
+<p class="Body">digit: <em>one of</em></p>
+<p class="Indent1"><span class="Monospace-Bold"><span class="Bright-Red">0 1 2 3 4 5 6 7 8 9</span></span></p>
+
+<p class="Body">nonzero-digit: <em>one of</em></p>
+<p class="Indent1"><span class="Monospace-Bold"><span class="Bright-Red">1 2 3 4 5 6 7 8 9</span></span></p>
+
+<p class="Body">binary-digit: <em>one of</em></p>
+<p class="Indent1"><span class="Monospace-Bold"><span class="Bright-Red">0 1 </span></span></p>
+
+<p class="Body">octal-digit: <em>one of</em></p>
+<p class="Indent1"><span class="Monospace-Bold"><span class="Bright-Red">0 1 2 3 4 5 6 7</span></span></p>
+
+<p class="Body">hex-digit: <em>one of</em></p>
+<p class="Indent1"><span class="Monospace-Bold"><span class="Bright-Red">0 1 2 3 4 5 6 7 8 9 a b c d e f A B C D E F</span></span></p>
+
+<p class="Body">identifier:</p>
+<p class="Indent1">non-digit [non-first-character]</p>
+
+<p class="Body">non-first-character:</p>
+<p class="Indent1">non-digit [non-first-character]<br>
+digit [non-first-character]</p>
+
+<p class="Body">number:</p>
+<p class="Indent1">integer-constant<br>
+float-constant</p>
+
+<p class="Body">integer-constant:</p>
+<p class="Indent1">decimal-constant<br>
+binary-constant<br>
+octal-constant<br>
+hex-constant</p>
+
+<p class="Body">decimal-constant:</p>
+<p class="Indent1">nonzero-digit #digit</p>
+
+<p class="Body">binary-constant:</p>
+<p class="Indent1"><span class="Monospace-Bold"><span class="Bright-Red">0b</span></span> #binary-digit<br>
+<span class="Monospace-Bold"><span class="Bright-Red">0B</span></span> #binary-digit</p>
+
+<p class="Body">octal-constant:</p>
+<p class="Indent1"><span class="Monospace-Bold"><span class="Bright-Red">0</span></span> #octal-digit</p>
+
+<p class="Body">hex-constant:</p>
+<p class="Indent1"><span class="Monospace-Bold"><span class="Bright-Red">0x</span></span> #hex-digit<br>
+<span class="Monospace-Bold"><span class="Bright-Red">0X</span></span> #hex-digit</p>
+
+<p class="Body">float-constant:</p>
+<p class="Indent1">fraction exponent-part<br>
+decimal-constant exponent-part</p>
+
+<p class="Body">fraction:</p>
+<p class="Indent1">#digit <span class="Monospace-Bold"><span class="Bright-Red">.</span></span> digit #digit</p>
+
+<p class="Body">exponent-part:</p>
+<p class="Indent1"><span class="Monospace-Bold"><span class="Bright-Red">e</span></span> [sign] #digit<br>
+<span class="Monospace-Bold"><span class="Bright-Red">E</span></span> [sign] #digit</p>
+
+<p class="Body">sign: <em>one of</em></p>
+<p class="Indent1"><span class="Monospace-Bold"><span class="Bright-Red">+ -</span></span></p>
+
+<p class="Body">comment: </p>
+<p class="Indent1"><span class="Monospace-Bold"><span class="Bright-Red">//</span></span>comment<br>
+<span class="Monospace-Bold"><span class="Bright-Red">/*</span></span> comment <span class="Monospace-Bold"><span class="Bright-Red">*/</span></span></p>
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<title>DataSocket Properties</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>DataSocket Properties</h1>
+<p class="Body">Use these properties to <a href="../lvconcepts/Using_DataSocket_Technology.html#Specifying_a_URL">specify</a> the client-side <a href="../lvconcepts/Buffering_Data.html">buffer size</a> for a <a href="../lvconcepts/Using_DataSocket_Technology.html">data connection</a>, verify the status of a data connection, and read a <a href="../lvconcepts/Using_DataSocket_Technology.html#Specifying_a_URL">URL</a>.</p>
+<table class="Bordered">
+<tr><th class="Bordered Left-Align">Property</th><th class="Bordered Left-Align">Description</th></tr>
+<tr><td class="Bordered">Buffer Maximum Bytes</td><td class="Bordered">Gets or sets the maximum bytes in the client-side buffer associated with a data connection. <a href="DS_Buff_Max_Bytes.html">Details</a></td></tr>
+<tr><td class="Bordered">Buffer Maximum Packets</td><td class="Bordered">Gets or sets the maximum packets in the client-side buffer associated with a data connection. <a href="DS_Buff_Max_Packets.html">Details</a></td></tr>
+<tr><td class="Bordered">Buffer Utilization (Bytes)</td><td class="Bordered">Returns the client-side buffer utilization (current bytes/max bytes) of a data connection. <a href="DS_Buff_Util_Bytes.html">Details</a></td></tr>
+<tr><td class="Bordered">Buffer Utilization (Packets)</td><td class="Bordered">Returns the client-side buffer utilization (current packets/max packets) of a data connection. <a href="DS_Buff_Util_Packets.html">Details</a></td></tr>
+<tr><td class="Bordered">Connection Status</td><td class="Bordered">Returns a cluster that contains the status and error code of a data connection. The connection status can be <span class="Monospace-Bold">Invalid</span>, <span class="Monospace-Bold">Unconnected</span>, <span class="Monospace-Bold">ConnectionActive</span>, <span class="Monospace-Bold">ConnectionIdle</span>, <span class="Monospace-Bold">ConnectionError</span>, or <span class="Monospace-Bold">Connecting</span>. If the status is <span class="Monospace-Bold">ConnectionError</span>, this property also returns the error code. <a href="DS_Connect_Status.html">Details</a></td></tr>
+<tr><td class="Bordered">URL</td><td class="Bordered">Returns the URL for a data connection. <a href="DS_URL.html">Details</a></td></tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4800Egraphchartoptionshlp -->
+
+<title>Adding Cursors to Graphs</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Adding Cursors to Graphs
+</h1>
+<p class="Body">Complete the following steps to add a <a href="../lvconcepts/Customizing_Graphs_and_Charts.html#Using_Graph_Cursors">cursor</a> to a <a href="../lvconcepts/Types_of_Graphs_and_Charts.html">graph</a>.</p>
+<ol>
+<li>Right-click the graph and select <strong>Visible Items&#0187;Cursor Legend</strong> from the shortcut menu.</li>
+<li>Right-click anywhere in the cursor legend, select <strong>Create Cursor</strong>, and select a cursor mode from the shortcut menu. <!--start parent  = lvconcepts  tag="cursor_mode_list_intro"-->The cursor position is defined by the cursor mode. The cursor includes the following modes:<!--end parent  = lvconcepts  tag="cursor_mode_list_intro"-->
+<ul>
+<li><strong>Free</strong>&#8212;<!--start parent  = lvconcepts  tag="cursor_mode_free"-->Moves the cursor freely within the plot area, regardless of plot positions.<!--end parent  = lvconcepts  tag="cursor_mode_free"--></li>
+<li><strong>Single-Plot</strong>&#8212;<!--start parent  = lvconcepts  tag="cursor_mode_single_plot"-->Positions the cursor only on the plot that is associated with the cursor. You can move the cursor along the associated plot. <!--begin_child id = lvhowto tag="snap_to"-->Right-click the cursor legend row and select <strong>Snap To</strong> from the shortcut menu to associate one or all plots with the cursor.<!--end_child id = lvhowto tag="snap_to"--><!--end parent  = lvconcepts  tag="cursor_mode_single_plot"--></li>
+<li><strong>Multi-Plot</strong>&#8212;<!--start parent  = lvconcepts  tag="cursor_mode_multi_plot"-->Positions the cursor only on a specific data point in the plot area. <!--begin_child id = lvhowto tag="multi_plot_values"-->The multi-plot cursor reports values at the specified x-value for all of the plots with which the cursor is associated.<!--end_child id = lvhowto tag="multi_plot_values"--> You can position the cursor on any plot in the plot area. <!--start parent  = lvconcepts  tag="snap_to"-->Right-click the cursor legend row and select <strong>Snap To</strong> from the shortcut menu to associate one or all plots with the cursor.<!--end parent  = lvconcepts  tag="snap_to"--> This mode is only valid for mixed signal graphs.<!--end parent  = lvconcepts  tag="cursor_mode_multi_plot"--></li>
+</ul>
+</li>
+</ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;<!--begin_child id = upnotes tag="change_mode_note"--><!--begin_child id = lvconcepts tag="change_mode_note"-->You cannot change the mode of a cursor after you create it. You must <a href="Deleting_Graph_Cursors.html">delete the cursor</a> and create another cursor.<!--end_child id = upnotes tag="change_mode_note"--><!--end_child id = lvconcepts tag="change_mode_note"--></td></tr></table>
+<ol start="3">
+<li>Click anywhere in the cursor legend row to select the cursor. Use the Operating tool or the Labeling tool to enter names and coordinates in the cursor legend.</li>
+<li>Right-click the cursor legend row and select from the following options from the shortcut menu to customize the cursor:
+<ul>
+<li><strong>Watch</strong>&#8212;When the cursor mode is <strong>Multi-Plot</strong>, associates one or more specified plots or all plots with the cursor. <!--start parent  = lvconcepts  tag="multi_plot_values"-->The multi-plot cursor reports values at the specified x-value for all of the plots with which the cursor is associated.<!--end parent  = lvconcepts  tag="multi_plot_values"-->
+<p class="Body">If you initially select individual plots to watch and then select <strong>Watch&#0187;All Plots</strong> instead, the cursor begins to report values for all plots. If you then deselect <strong>All Plots</strong>, the cursor reports values for the plots you initially selected.</p></li>
+<li><strong>Snap To</strong>&#8212;Locks the cursor to a plot. When the cursor mode is <strong>Single-Plot</strong>, you can snap the cursor to one or all plots. When the cursor mode is <strong>Multi-Plot</strong>, <strong>Snap To</strong> only affects how the cursor moves along the x-axis. 
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If no data exists in the plot area, the cursor snaps to only  <strong>All Plots</strong> or the first plot listed in the plot legend. You must have data for more than one plot to snap a cursor to plots other than <strong>All Plots</strong> or the first plot in the plot legend. For example, you must have three data sets in the plot area before you can snap a cursor to the third plot.</td>
+</tr>
+</table></li>
+
+<li><strong>X Scale</strong>&#8212;Sets the x-scale of the cursor. This option is valid only if the cursor mode is <strong>Free</strong>.</li>
+<li><strong>Y Scale</strong>&#8212;Sets the y-scale of the cursor. This option is valid only if the cursor mode is <strong>Free</strong>.</li>
+<li><strong>Attributes</strong>&#8212;Customizes the appearance of each cursor. <strong>Attributes</strong> includes the following options:
+<ul>
+<li><strong>Color</strong>&#8212;Displays the <a href="Coloring_Objects_and_Backg.html">color picker</a> so you can select the color of the cursor.</li>
+<li><strong>Cursor Style</strong>&#8212;Provides various cursor styles.</li>
+<li><strong>Point Style</strong>&#8212;Provides various point styles for the intersection of the cursor.</li>
+<li><strong>Line Style</strong>&#8212;Provides various solid and dotted line styles.</li>
+<li><strong>Line Width</strong>&#8212;Provides various line widths.</li>
+<li><strong>Show Name</strong>&#8212;Displays the name of the cursor on the graph. Use the Positioning tool to move the name in relation to the cursor.</li>
+<li><strong>Allow Drag</strong>&#8212;Allows the mouse to drag the cursor.</li>
+</ul></li>
+<li><strong>Bring to Center</strong>&#8212;Centers the cursor on the graph without changing the x- and y-scales. When the cursor mode is <strong>Single-Plot</strong> or <strong>Multi-Plot</strong>, this option centers the cursor on the plot on which the cursor is currently positioned and updates the cursor coordinates in the cursor legend. When the cursor mode is <strong>Free</strong>, this option centers the cursor in the plot area and updates the cursor coordinates in the cursor legend.</li>
+<li><strong>Go to Cursor</strong>&#8212;Changes the x- and y-scales to show the cursor at the center of the graph.</li>
+</ul>
+</li>
+</ol>
+<p class="Body">You also can use the <a href="../lvprop/Cursor_p.html">Cursor</a> properties to customize a cursor programmatically.</p>
+
+
+</body>
+</html>

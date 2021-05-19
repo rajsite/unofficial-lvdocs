@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+	
+	<title>Checking out Files from Source Control</title>
+	<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+	
+
+
+</head>
+
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Checking out Files from Source Control</h1>
+
+<p class="Body">You should check out a file from source control when you want to make changes to the file. If you try to edit a file in source control that you did not check out, LabVIEW prompts you to check out the file if you  <a href="Configuring_SCC.html">configured source control</a> to enable prompts.</p>
+<p class="Body"> To check files out from source control, LabVIEW must be <a href="../lvhowto/Configuring_SCC.html">configured to use source control</a>.</p>
+<table class="Borderless"><tr><td class="Icon"><img src="caution.gif"></td>
+<td><span class="Dark-Red"><strong>Caution</strong>&nbsp;&nbsp;If you modify a local file before you check out the file from source control, the version of the file on the local directory is different than the version in source control. Depending on the source control provider, you might lose the changes in the local file when you check out the file from source control. Refer to the source control provider documentation for more information about the effects of checking out files.</span></td></tr>
+</table>
+<p class="Body">Complete the following steps to use LabVIEW to check out a file.
+</p>
+<ol>
+<li>If you are working in a LabVIEW project, right-click the folder or files you want to check out and select <strong>Check Out</strong> from the shortcut menu. You also can click the <strong>Check Out</strong> button on the <a href="../glang/Source_Control_Toolbar.html">Source Control toolbar</a> or select <strong>Tools&#0187;Source Control&#0187;Check Out</strong>.
+<br><br>
+If you are working on individual VIs outside a project, open the VI you want to check out. Select <strong>Tools&#0187;Source Control&#0187;Check Out</strong>.
+</li>
+<li>If you are working in a project, notice that a red checkmark <img src="noloc_env_scc_chkdout_o.gif"> appears on the file icon to show the file is checked out of source control.
+</li></ol>
+<p class="Body">In general, avoid checking out files for long periods of time. Make incremental changes to files when possible. When you check in a file, make sure you have tested it thoroughly. If you need to modify other files before you can check in a specific file, check out the other files, make the changes, and test them before checking in any of the files.
+</p>
+<p class="Body">If you need to make several changes to a file, consider checking in the file after you complete one modification and then checking out the file again to start the next modification. Other users can access your changes and you have a checkpoint you can return to if you later decide that subsequent changes were incorrect.
+</p>
+
+
+
+</body>
+</html>

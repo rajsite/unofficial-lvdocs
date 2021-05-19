@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script type="text/javascript">var noFeedbackLink = true;</script>
+<script src="common.js" type="text/javascript"></script>
+<title>Configuring Web Services Security when Using the NI Web Server (Windows)</title>
+</head>
+<body>
+	
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Configuring Web Services Security when Using the NI Web Server (Windows)</h1>
+
+<p class="Body"><strong>Parent Topic: </strong> <a href="../lvconcepts/ws_web_server.html">Hosting Web Services</a></p>
+	
+<p>You can use HTTPS and privilege-based authorization to establish secure communication between Web clients and LabVIEW Web services.</p>
+	
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;In this topic, you configure the security settings for the NI Web Server. If you use the Application Web Server to host Web services, refer to <a href="../lvhowto/security_ws.html">Configuring Web Services Security when Using the Application Web Server</a> for detailed instructions.</td>
+</tr>
+</table>
+
+<p>Complete the following procedures to establish the different methods of Web services security:</p>
+	<ul>
+		<li><a href="#https">Enabling HTTPS on the NI Web Server</a></li>
+		<li><a href="#privileges">Assigning User Roles and Privileges</a></li>
+	</ul>
+
+<a name="https"></a><h2>Enabling HTTPS on the NI Web Server</h2>
+<p>You can enable Secure Sockets Layer (SSL) encryption on the NI Web Server for Web services. Use SSL encryption to create secure, encrypted connections when sending data between clients and the web server.</p>
+<p>Complete the following steps to enable HTTPS connections:
+</p>
+<ol>
+	<li>Launch NI Web Server Configuration using the following steps:
+	<ol>
+		<li>In the <strong>Project Explorer</strong> window, select <strong>Tools&#0187;Options</strong> to display the <a href="../lvdialog/Options_Dialog_Box.html">Options</a> dialog box.</li>
+		<li>On the <strong>Web Server</strong> page, click <strong>Configure NI Web Server</strong>.</li></ol>
+	</li>
+	<li>On the <strong>HTTPS</strong> tab in NI Web Server Configuration, choose one of the <strong>HTTPS settings</strong>. Refer to <a href="javascript:WWW(WWW_NIWSConfig)">Choosing an HTTPS Setting</a> in the <em>NI Web Server Manual</em> for more information about each HTTPS setting.</li>
+	<li>Follow the instructions to generate a self-signed certificate or to install a certificate from a certification authority.</li>
+	<li>Configure the <strong>Server HTTPS port</strong> number.</li>
+	<li>Click <strong>Apply and Restart</strong>. The NI Web Server uses HTTPS to communicate with clients after it restarts.</li>
+</ol>
+	
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;LabVIEW automatically updates the <a href="../lvdialog/ws_http_method_url_db.html">HTTP Method URL</a> according to the changes in the settings for HTTP connection and port of the NI Web Server.</td>
+</tr>
+</table>	
+	
+<a name="privileges"></a><h2>Assigning User Roles and Privileges</h2>
+
+<p>You can define user roles and assign different privileges to each role so that you can control each client's access to each HTTP Method VI and NI Web Server applications.</p>
+	
+<h3>Defining User Roles and Privileges for NI Web Server Application</h3>
+<p>Refer to <a href="javascript:WWW(WWW_NIWSConfig)">Defining User Roles and Privileges</a> in the <em>NI Web Server Manual</em> for information on defining user roles and assign privileges for NI Web Server applications in NI Web Server Configuration.</p>
+
+<h3>Assigning User Roles and Privileges to LabVIEW Web Services</h3>
+<p>Complete the following steps in LabVIEW to configure an HTTP Method VI to accept only requests from Web clients with valid privileges:</p>
+<ol>
+	<li>Right-click the Web service project item <img src="noloc_env_ws_node.gif"> in the project tree and select�<strong>Properties</strong>�to display the�<a href="../lvdialog/ws_node_prop_db.html">Web Service Properties</a>�dialog box.</li>
+	<li>On the <a href="../lvdialog/ws_niws_priv_page.html">NI Web Server Privileges</a> page, customize and enter a name for the new privilege under the <strong>Privilege</strong> column to create a privilege.</li>
+	<li>Under the <strong>Role</strong> column, select a user role or enter a customized role that you create in NI Web Server Configuration to assign the privilege to the user role you specify. For example, you can assign <span class="monospace">writedata</span> privilege to only admin user role.</li>
+	<li>On the�<a href="../lvdialog/ws_http_method_page.html">HTTP Method VI Settings</a>�page, select a VI from the�<strong>Web Service VI</strong>�table and click the�<strong>NI Web Server</strong> tab in <strong>Web Service VI Properties</strong>.</li>
+	<li>Select a privilege from the <strong>Required Privilege</strong> pull-down menu. </li>
+	<li>Click <strong>OK</strong> to apply the changes.</li>
+</ol>
+
+<h3>Accessing HTTP Method VIs with Privileges</h3>
+<p>A Web client must provide a valid username and password whenever the client submits an HTTP request for a VI protected by privileges. Refer to <a href="javascript:WWW(WWW_NIWSConfig)">Choosing an Authentication Setting</a> in the <em>NI Web Server Manual</em> and configure settings on the <strong>Authentication</strong> tab in NI Web Server Configuration to group users into different roles.</p>
+
+</body>
+</html>

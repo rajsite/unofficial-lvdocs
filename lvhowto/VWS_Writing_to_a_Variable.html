@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Writing to a Variable</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Writing to a Variable</h1>
+
+<p class="Body"><strong>Required permission: </strong><span class="DNL">VariableWrite</span></p>
+<p class="Body">To modify the variable value, issue a PUT request to the variable with a request body that uses the following data format:</p>
+    <pre><span class="DNL">{
+    "Value" : "[new value]"
+}</span></pre>
+  
+<p class="Body">For example, to modify the value of <span class="Monospace">ni.var.psp://localhost/hvac/t01</span>, use the following URI:</p>
+
+    <p class="Body"><span class="Monospace">PUT http://my_server:3580/nivariable/VariableValues('ni.var.psp://localhost/hvac/t01')/Value</span></p>
+	
+	<table class="Borderless">
+	<tr>
+	<td class="Icon"><img src="note.gif"></td>
+	<td>
+	<strong>Note</strong>&nbsp;&nbsp;The <span class="Monospace">Value</span> property of a variable must be a serialized string value, even if the variable is <span class="Monospace">string</span> type or another type. When writing to a <span class="Monospace">string</span> type variable, use the following format: <span class="Monospace">"\"test\""</span></td></tr></table>
+
+    <p class="Body">An empty response body with a header status code of <span class="Monospace-bold">204</span> indicates that the modification was a success.  If the PUT request data is invalid or the variable is not writable, a <span class="Monospace-bold">500 Internal Error</span> code
+    or a <span class="Monospace-bold">400 Bad Request</span> code will be returned.  
+    In the case of an error, the response body contains the standard OData error object
+    serialized to the format specified in the request.</p>
+	
+</body>
+</html>

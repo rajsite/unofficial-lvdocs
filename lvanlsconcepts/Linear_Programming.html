@@ -1,0 +1,111 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Linear Programming</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-FA48F604-2E16-4EDA-B6A5-AA9E225E99D8" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Linear Programming</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 Linear programming problems have the following characteristics: 
+            	 
+         </p> 
+         	 <a name="GUID-FA48F604-2E16-4EDA-B6A5-AA9E225E99D8__UL_9CB2FEBBC8F244258D2E0B9C2D5B34E8" shape="rect">
+            <!-- --></a><ul id="GUID-FA48F604-2E16-4EDA-B6A5-AA9E225E99D8__UL_9CB2FEBBC8F244258D2E0B9C2D5B34E8">
+            <li><a name="GUID-FA48F604-2E16-4EDA-B6A5-AA9E225E99D8__LI_D3782FB33E204EEBB99ABF27EC37AF84" shape="rect">
+                  <!-- --></a>Linear objective function 
+               		
+            </li>
+            <li><a name="GUID-FA48F604-2E16-4EDA-B6A5-AA9E225E99D8__LI_3CD1BF2E4E6141159C7AE80461114F50" shape="rect">
+                  <!-- --></a>Solution set <em>X</em> with a polyhedron shape defined by linear inequality constraints 
+               		
+            </li>
+            <li><a name="GUID-FA48F604-2E16-4EDA-B6A5-AA9E225E99D8__LI_64FA23C49BFB4283B7C1B201A2CEA592" shape="rect">
+                  <!-- --></a>Continuous <em>f</em>(<em>x</em>) 
+               		
+            </li>
+            <li><a name="GUID-FA48F604-2E16-4EDA-B6A5-AA9E225E99D8__LI_4E990AB7E6A04185B1D6DE5B8971EAAB" shape="rect">
+                  <!-- --></a>Partially combinatorial structure 
+               		
+            </li>
+         </ul> 
+         	 
+         <p>Solving linear programming problems involves finding the optimal value of <em>f</em>(<em>x</em>) where <em>f</em>(<em>x</em>) is a linear combination of variables, as shown in the following equation. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./set2Ftemp2FLinear_Programming.xml_d4405e64.png"></span></div>
+         </div> 
+         	 
+         <p>The value of <em>f</em>(<em>x</em>) in the previous equation can have the following constraints: 
+            	 
+         </p> 
+         	 <a name="GUID-FA48F604-2E16-4EDA-B6A5-AA9E225E99D8__UL_6F18CDB4B63445DB9A53CE1E80CF171D" shape="rect">
+            <!-- --></a><ul id="GUID-FA48F604-2E16-4EDA-B6A5-AA9E225E99D8__UL_6F18CDB4B63445DB9A53CE1E80CF171D">
+            <li><a name="GUID-FA48F604-2E16-4EDA-B6A5-AA9E225E99D8__LI_4F11C18A5BE34FC796F80BB16B501F5E" shape="rect">
+                  <!-- --></a>Primary constraints of <em>x</em><sub><em>i</em></sub> &#8805; 0, …, <em>x</em><sub><em>n</em></sub> &#8805; 0 
+               		
+            </li>
+            <li><a name="GUID-FA48F604-2E16-4EDA-B6A5-AA9E225E99D8__LI_81B69D6574F24A629979800BF0A5E7FD" shape="rect">
+                  <!-- --></a>Additional constraints of <em>M</em> = <em>m</em><sub>1</sub> + <em>m</em><sub>2</sub> + <em>m</em><sub>3</sub> 
+               		
+            </li>
+            <li><a name="GUID-FA48F604-2E16-4EDA-B6A5-AA9E225E99D8__LI_5C65B86653894092A45F1E3639C394C3" shape="rect">
+                  <!-- --></a> <em>m</em><sub>1</sub> of the following form <em>a</em><sub><em>i</em></sub><sub>1</sub><em>x</em><sub>1</sub> + … + <em>a</em><sub><em>i</em></sub><sub><em>n</em></sub><em>x</em><sub><em>n</em></sub> &#8804; <em>b</em><sub><em>i</em></sub>, (<em>b</em><sub><em>i</em></sub> &#8805; 0 ), <em>i</em> = 1, …, <em>m</em><sub>1</sub> 
+               		
+            </li>
+            <li><a name="GUID-FA48F604-2E16-4EDA-B6A5-AA9E225E99D8__LI_4C110CD1B9DB4AD09B2954EE7AEF04B4" shape="rect">
+                  <!-- --></a> <em>m</em><sub>2</sub> of the following form <em>a</em><sub><em>j</em></sub><sub>1</sub><em>x</em><sub>1</sub> + … + <em>a</em><sub><em>j</em></sub><sub><em>n</em></sub><em>x</em><sub><em>n</em></sub> &#8805; <em>b</em><sub><em>j</em></sub>, (<em>b</em><sub><em>j</em></sub> &#8805; 0 ), <em>j</em> = <em>m</em><sub>1</sub> + 1, …, <em>m</em><sub>1</sub> + <em>m</em><sub>2</sub> 
+               		
+            </li>
+            <li><a name="GUID-FA48F604-2E16-4EDA-B6A5-AA9E225E99D8__LI_F236B716B2AB4FA2B60AA0A2798A2D53" shape="rect">
+                  <!-- --></a> <em>m</em><sub>3</sub> of the following form <em>a</em><sub><em>k</em></sub><sub>1</sub><em>x</em><sub>1</sub> + … + <em>a</em><sub><em>k</em></sub><sub><em>n</em></sub><em>x</em><sub><em>n</em></sub> = <em>b</em><sub><em>k</em></sub>, (<em>b</em><sub><em>k</em></sub> &#8805; 0 ), <em>k</em> = <em>m</em><sub>1</sub> + <em>m</em><sub>2</sub> + 1, …, <em>M</em> 
+               		
+            </li>
+         </ul> 
+         	 
+         <p>Any vector <em>x</em> that satisfies all the constraints on the value of <em>f</em>(<em>x</em>) constitutes a feasible answer to the linear programming problem. The vector yielding the best result for <em>f</em>(<em>x</em>) is the optimal solution. 
+            	 
+         </p> 
+         	 
+         <p>The following relationship represents the standard form of the linear programming problem. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./set2Ftemp2FLinear_Programming.xml_d4405e370.png"></span></div>
+         </div> 
+         	 
+         <p>where <em>x</em> is the real vector of unknowns, <em>c</em> is the real cost vector, and <em>A</em> is the real constraint matrix of size <em>m</em> x <em>n</em>. At least one member of solution set <em>X</em> is at a vertex of the polyhedron that describes <em>X</em>. 
+            	 
+         </p> 
+         	 
+         <div class="section"><a name="GUID-FA48F604-2E16-4EDA-B6A5-AA9E225E99D8__SECTION_178F649D09CF4A9AB372866DB4BD0349" shape="rect">
+               <!-- --></a> 
+            	 
+         </div> 
+         	 
+         <div class="section"><a name="GUID-FA48F604-2E16-4EDA-B6A5-AA9E225E99D8__SECTION_55F5CBB1645240548CD67AA3025CFE79" shape="rect">
+               <!-- --></a> 
+            	 
+         </div> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Optimization.html" shape="rect">Optimization</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

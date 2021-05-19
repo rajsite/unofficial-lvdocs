@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Creating a Variable Group</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Creating a Variable Group</h1>
+
+<p class="Body"><strong>Required permission: </strong><span class="DNL">VariableCreateDeleteGroup</span></p>
+    <p class="Body">A <span class="Monospace">VariableValueGroup</span> references a customized list of variable values.  You can read the values of these variables using a single request.  You can also use the 
+       <span class="Monospace">$deltatoken</span> feature to get only updated values for the
+       variables.</p>
+
+    <p class="Body">To use a variable group, you must first create the group.  For example, <span class="Monospace">POST http://my_server:3580/nivariable/VariableValueGroups</span></p>
+    
+
+    <p class="Body">POST JSON data:</p>
+    
+	<pre><span class="DNL">
+HTTP Header -
+    Content-Type : application/json
+
+HTTP Body -
+{
+    <strong>"VariableValues"</strong>: [
+        { "__metadata" : {<strong>"uri"</strong>: "http://my_server:3580/nivariable/VariableValues('ni.var.psp&#58;&#47;&#47;localhost/process1/variable1')"} },
+        { "__metadata" : {<strong>"uri"</strong>: "http://my_server:3580/nivariable/VariableValues('ni.var.psp&#58;&#47;&#47;localhost/process2/variable2')"} }
+    ]
+}</span></pre>
+ 
+    <p class="Body">POST XML data:</p>
+    
+	<pre><span class="DNL">
+HTTP Header -
+    Content-Type : application/xml
+
+HTTP Body -
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;entry xmlns:d="http://my_server:3580/nivariable/"
+       xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+       xmlns="http://www.w3.org/2005/Atom"&gt;
+  &lt;title type="text"&gt;&lt;/title&gt;
+  &lt;updated&gt;2010-02-27T21:36:47Z&lt;/updated&gt;
+  &lt;author&gt;
+    &lt;name /&gt;
+  &lt;/author&gt;
+  &lt;category term="nivariable.VariableValueGroup"
+      scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" /&gt;
+  &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/VariableValues"
+        href="VariableValues('ni.var.psp:&#47;&#47;localhost/process1/variable1')"/&gt;
+  &lt;link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/VariableValues"
+        href="VariableValues('ni.var.psp:&#47;&#47;localhost/process1/variable2')"/&gt;
+  &lt;content type="application/xml"&gt;
+    &lt;m:properties&gt;
+        &lt;d:Timeout&gt;15000&lt;/d:Timeout&gt;
+    &lt;/m:properties&gt;
+  &lt;/content&gt;
+&lt;/entry&gt;</span></pre>
+    <table class="Borderless">
+	<tr>
+	<td class="Icon"><img src="note.gif"></td>
+	<td>
+	<strong>Note</strong>&nbsp;&nbsp;You do not need to include required properties when creating resources for <span class="Monospace">VariableValueGroups</span>. The ID property of a <span class="Monospace">VariableValueGroup</span> is normally a required property, and resources created in OData must include 
+       required properties. However, there is no way to determine which IDs are available to use. If your OData client requires a value for the <span class="Monospace">Id</span> property in order to send a request, you can assign a random value. The variable Web service replaces the user-supplied <span class="Monospace">Id</span> property value with a unique value.</td></tr></table>
+	
+    <p class="Body">If the <span class="Monospace">VariableValueGroup</span> is created, the server returns a <span class="Monospace-bold">201</span> response and adds a <span class="Monospace">Location</span> header indicating the 
+    newly created resource's URI.  The response body contains the ID of the newly created group.</p>
+
+    <p class="Body">If the <span class="Monospace">VariableValueGroup</span> is not created, the server returns one of the following responses:</p>
+		<ul>
+			<li><span class="Monospace-bold">500 Internal Server Error</span> - The error occurred on the server side.</li>
+			<li><span class="Monospace-bold">400 Bad Request</span> - The requested POST data is invalid.</li>
+		</ul>
+	<p class="Body">The response body uses the standard OData error object to indicate the reason of failure.</p>
+
+
+</body>
+</html>

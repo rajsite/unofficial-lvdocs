@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4500Earrayclustershlp -->
+
+<title>Changing Array Default Values</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Changing Array Default Values</h1>
+
+<p class="Body">Complete the following steps to manipulate the default values of an array.</p>
+<ol>
+<li><a href="Creating_Array_Controls.html">Create</a> a 1D array shell in the front panel window.</li>
+<li>Add a digital numeric control to the array shell in the front panel window.<br><br>
+<SPAN title=" Add to the front panel window "><a href="javascript:placeObjectFP(control1);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObjectFP(control1);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li>
+<li><a href="Resizing_Arrays.html">Resize</a> the array shell to show at least six elements.</li>
+<li>Set the value of the third element of the array to <span class="Monospace">1.0</span>. LabVIEW sets the values for the first two elements to <span class="Monospace">0.0</span>, which is the initial scalar default for the array.</li>
+<li>Right-click the third element of the array and select <strong>Data Operations&#0187;Make Current Value Default</strong> from the shortcut menu to set the scalar default value of the third element to <span class="Monospace">1.0</span>, whereas it was originally <span class="Monospace">0.0</span>. Right-click the element itself, not the array index display or array shell.</li>
+<li>Set the value of the sixth element of the array to <span class="Monospace">2.0</span>. LabVIEW makes the fourth and fifth elements part of the array and sets their values to <span class="Monospace">1.0</span>, which you set as the new scalar default for the array in step 5. LabVIEW does not change the values of the first two elements because they were added to the array when the scalar default value was still <span class="Monospace">0.0</span>. When you add an element to an array by entering its value, LabVIEW sets the values of the elements between the current end of the array and the element you added to the scalar default.</li>
+<li>Right-click the array index display or shell border and select <strong>Data Operations&#0187;Make Current Value Default</strong> from the shortcut menu to set the default value for the entire array. LabVIEW sets the current values in each element as the default value for those elements. For example, <span class="Monospace">2.0</span> is now the default value for the sixth element.</li>
+<li>Right-click the first element of the array and select <strong>Data Operations&#0187;Reinitialize to Default Value</strong> from the shortcut menu to change the value of the first element from <span class="Monospace">0.0</span> to <span class="Monospace">1.0</span>, which is the scalar default value of the entire array.</li>
+<li>Right-click the array index display or shell border and select <strong>Data Operations&#0187;Reinitialize to Default Value</strong> from the shortcut menu. Notice that the value of the first element returns to <span class="Monospace">0.0</span>, which was the value of this element when you set the default value of the entire array.</li>
+</ol>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;In practice, you rarely need to change the scalar default. Typically you set or restore default values for the entire array. </td></tr></table>
+
+
+
+
+</body>
+</html>

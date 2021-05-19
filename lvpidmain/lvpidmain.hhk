@@ -1,0 +1,1043 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD>
+<BODY>
+<OBJECT type="text/site properties">
+	<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="antecedent connectives">
+		<param name="Local" value="antec_connect.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="anti-windup">
+		<param name="Local" value="pid_vi_algs.html#outlimit">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="autotuning PID controllers">
+		<param name="Local" value="tuning_pid.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Chien-Hrones-Reswick method">
+			<param name="Local" value="chienforms.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Cohen-Coon method">
+			<param name="Local" value="cohencoonforms.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Internal Model Control method">
+			<param name="Local" value="imcforms.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="PID Relay technique">
+			<param name="Local" value="pidrelay_alg.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Relay Feedback technique">
+			<param name="Local" value="pidrelayfeed_alg.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Step Closed Loop technique">
+			<param name="Local" value="pidclosloop_alg.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Step Open Loop technique">
+			<param name="Local" value="pidsol_alg.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Ziegler-Nichols method">
+			<param name="Local" value="ziegnichforms.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="autotuning previously implemented controllers programmatically">
+			<param name="Local" value="twosteptuning.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="implementing and autotuning programmatically">
+			<param name="Local" value="onesteptuning.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="interactively">
+			<param name="Local" value="pid_autowiz.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="logging PID parameters after autotuning">
+			<param name="Local" value="datalog_params.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="methods for testing PID parameters">
+			<param name="Local" value="autotun_methods.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="online techniques">
+			<param name="Local" value="autotun_techniques.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="updating PID parameters after autotuning">
+			<param name="Local" value="update_autotun_params.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="using the Autotuning Wizard">
+			<param name="Local" value="pid_autowiz.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Autotuning Wizard">
+		<param name="Local" value="pid_autowiz.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Chien-Hrones-Reswick autotuning method">
+		<param name="Local" value="chienforms.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Cohen-Coon autotuning method">
+		<param name="Local" value="cohencoonforms.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="consequent implication methods">
+		<param name="Local" value="conseq_implication.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="control output rate limiting">
+		<param name="Local" value="cntrl_out_limit.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="controller action (PID and Fuzzy Logic)">
+		<param name="Local" value="pid_algs.html#contact">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="controller output">
+		<param name="Local" value="pid_vi_algs.html#contout">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="limiting">
+			<param name="Local" value="pid_vi_algs.html#outlimit">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="defuzzification ">
+		<param name="Local" value="fuzzy_controllers.html#defuzz">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="defuzzification methods">
+		<param name="Local" value="defuzz_methods.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Center of Area (CoA)">
+			<param name="Local" value="center_of_area.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Center of Gravity (CoG)">
+			<param name="Local" value="center_of_area.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Center of Maximum (CoM)">
+			<param name="Local" value="center_of_max.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Center of Sums (CoS)">
+			<param name="Local" value="center_of_sums.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Mean of Maximum (MoM)">
+			<param name="Local" value="mean_of_max.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="comparing defuzzification methods">
+			<param name="Local" value="select_defuzz.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="modified Center of Area (mCoA)">
+			<param name="Local" value="modcenter_of_area.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="modified Center of Gravity (mCoG)">
+			<param name="Local" value="modcenter_of_area.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="selecting a defuzzification method">
+			<param name="Local" value="select_defuzz.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="degrees of support">
+		<param name="Local" value="degree_support.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="derivative action">
+		<param name="Local" value="pid_algs.html#derivact">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="PID VI implementation">
+			<param name="Local" value="pid_vi_algs.html#der">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="derivative kick">
+		<param name="Local" value="pid_vi_algs.html#der">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="error calculation">
+		<param name="Local" value="pid_algs.html#errorcalc">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="advanced error calculation algorithm">
+			<param name="Local" value="pid_adv_alg.html#errorcalc">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="standard error calculation algorithm">
+			<param name="Local" value="pid_vi_algs.html#errorcalc">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="error-squared PID">
+		<param name="Local" value="pid_adv_alg.html#errorcalc">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="fault protection">
+		<param name="Local" value="fault_protection.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="filtering control inputs">
+		<param name="Local" value="filter_control_inputs.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="fuzzification">
+		<param name="Local" value="fuzzy_controllers.html#fuzzification">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="fuzzy controllers">
+		<param name="See Also" value="fuzzy controllers">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="I/O characteristics">
+			<param name="Local" value="fuzzy_io.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="closed-loop control structures">
+			<param name="Local" value="fuzzy_closed.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="different overlapping degrees of membership functions for output terms">
+			<param name="Local" value="io_diffover.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="dual-input">
+			<param name="Local" value="io_dualin.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="fully overlapping input terms">
+			<param name="Local" value="io_fullover.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="fuzzification">
+			<param name="Local" value="fuzzy_controllers.html#fuzzification">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="fuzzy-PI controllers">
+			<param name="Local" value="fuzzy_pi.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="implementing a linguistic control strategy">
+			<param name="Local" value="fuzzy_controllers.html#lingcntrl">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="non-overlapping input terms">
+			<param name="Local" value="io_nonover.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="partially overlapping input terms">
+			<param name="Local" value="io_partialover.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="reproducing a given I/O characteristic">
+			<param name="Local" value="io_givenchar.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="singletons as output terms with fully overlapping input terms">
+			<param name="Local" value="io_singlefull.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="undefined input term intervals">
+			<param name="Local" value="io_undef.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="using the mean of maximum defuzzification method">
+			<param name="Local" value="io_meanmax.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="using with PID controllers">
+			<param name="Local" value="fuzzy_pid.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="wide and small membership functions for output terms">
+			<param name="Local" value="io_widesmall.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="fuzzy controllers (PID and Fuzzy Logic)">
+		<param name="See Also" value="fuzzy controllers (PID and Fuzzy Logic)">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="defuzzification">
+			<param name="Local" value="fuzzy_controllers.html#defuzz">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="fuzzy logic">
+		<param name="See Also" value="fuzzy logic">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="overview">
+			<param name="Local" value="fuzzy_main.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Fuzzy Logic VIs">
+		<param name="See Also" value="Fuzzy Logic VIs">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tutorial">
+			<param name="Local" value="fuzzyvi_tut_home.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tutorial 1: observing the fuzzy system">
+			<param name="Local" value="fuzzyvi_tut_one.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tutorial 2: loading the fuzzy system">
+			<param name="Local" value="fuzzyvi_tut_two.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tutorial 3: modifying a linguistic variable">
+			<param name="Local" value="fuzzyvi_tut_three.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tutorial 4: modifying membership functions">
+			<param name="Local" value="fuzzyvi_tut_four.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tutorial 5: modifying a rule">
+			<param name="Local" value="fuzzyvi_tut_five.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tutorial 6: creating antecedents">
+			<param name="Local" value="fuzzyvi_tut_six.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tutorial 7: creating consequents">
+			<param name="Local" value="fuzzyvi_tut_seven.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tutorial 8: combining the antecedents and consequents for a rule">
+			<param name="Local" value="fuzzyvi_tut_eight.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tutorial 9: saving the fuzzy system">
+			<param name="Local" value="fuzzyvi_tut_nine.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="fuzzy system design">
+		<param name="Local" value="fuzzy_sys_design.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="creating a rule base">
+			<param name="Local" value="creating_rulebase.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="creating linguistic variables">
+			<param name="Local" value="creating_lingvars.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="creating membership functions">
+			<param name="Local" value="creating_memfuncs.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Fuzzy System Designer">
+		<param name="See Also" value="Fuzzy System Designer">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tutorial">
+			<param name="Local" value="fsd_tut_home.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tutorial 1: creating input linguistic variables">
+			<param name="Local" value="fsd_tut_one.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tutorial 2: creating output linguistic variables">
+			<param name="Local" value="fsd_tut_two.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tutorial 3: creating a rule base with pre-generated rules">
+			<param name="Local" value="fsd_tut_three.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tutorial 4: modifying pre-generated rules">
+			<param name="Local" value="fsd_tut_four.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tutorial 5: specifying a defuzzification method">
+			<param name="Local" value="fsd_tut_five.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tutorial 6: testing the fuzzy system">
+			<param name="Local" value="fsd_tut_six.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tutorial 7: controlling the fuzzy system">
+			<param name="Local" value="fsd_tut_seven.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="fuzzy systems">
+		<param name="See Also" value="fuzzy systems">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="defuzzification methods">
+			<param name="Local" value="defuzz_methods.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="design overview">
+			<param name="Local" value="fuzzy_sys_design.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="linguistic terms">
+			<param name="Local" value="fuzzy_systems.html#memfuncs">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="linguistic variables">
+			<param name="Local" value="fuzzy_systems.html#lingvars">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="membership functions">
+			<param name="Local" value="fuzzy_systems.html#memfuncs">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="overview">
+			<param name="Local" value="fuzzy_systems.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="rules">
+			<param name="Local" value="fuzzy_systems.html#rules">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tutorial: using the Fuzzy Logic VIs">
+			<param name="Local" value="fuzzyvi_tut_home.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tutorial: using the Fuzzy System Designer">
+			<param name="Local" value="fsd_tut_home.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="gain scheduling">
+		<param name="Local" value="gain_schedule.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="glossary">
+		<param name="See Also" value="glossary">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="PID and Fuzzy Logic">
+			<param name="Local" value="pid_glossary.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="I/O">
+		<param name="See Also" value="I/O">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="characteristics of fuzzy controllers">
+			<param name="Local" value="fuzzy_io.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="IMC autotuning method">
+		<param name="Local" value="imcforms.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="implication methods">
+		<param name="Local" value="conseq_implication.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="integral action">
+		<param name="Local" value="pid_algs.html#intact">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="PID VI implementation">
+			<param name="Local" value="pid_vi_algs.html#trapint">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="integrator anti-windup">
+		<param name="Local" value="pid_vi_algs.html#outlimit">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Internal Model Control autotuning method">
+		<param name="Local" value="imcforms.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="lead/lag">
+		<param name="Local" value="lead_lag.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="linguistic terms">
+		<param name="Local" value="fuzzy_systems.html#memfuncs">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="linguistic variables">
+		<param name="Local" value="fuzzy_systems.html#lingvars">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="creating linguistic variables">
+			<param name="Local" value="creating_lingvars.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="membership functions">
+		<param name="Local" value="fuzzy_systems.html#memfuncs">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="creating membership functions">
+			<param name="Local" value="creating_memfuncs.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Minimum consequent implication method">
+		<param name="Local" value="conseq_implication.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="multi-loop control">
+		<param name="Local" value="multiloop_control.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="offline autotuning">
+		<param name="See Also" value="offline autotuning">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Chien-Hrones-Reswick method">
+			<param name="Local" value="chienforms.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Cohen-Coon method">
+			<param name="Local" value="cohencoonforms.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="online autotuning techniques">
+		<param name="Local" value="autotun_techniques.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Internal Model Control method">
+			<param name="Local" value="imcforms.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="PID Relay">
+			<param name="Local" value="pidrelay_alg.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Relay Feedback">
+			<param name="Local" value="pidrelayfeed_alg.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Step Closed Loop">
+			<param name="Local" value="pidclosloop_alg.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Step Open Loop">
+			<param name="Local" value="pidsol_alg.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Ziegler-Nichols method">
+			<param name="Local" value="ziegnichforms.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="output limiting">
+		<param name="Local" value="pid_vi_algs.html#outlimit">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID Advanced">
+		<param name="See Also" value="PID Advanced">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error calculation algorithm">
+			<param name="Local" value="pid_adv_alg.html#errorcalc">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID algorithm">
+		<param name="See Also" value="PID algorithm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="advanced PID algorithm">
+			<param name="Local" value="pid_adv_alg.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="advanced error calculation">
+			<param name="Local" value="pid_adv_alg.html#errorcalc">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="controller output">
+			<param name="Local" value="pid_vi_algs.html#contout">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error calculation">
+			<param name="Local" value="pid_vi_algs.html#errorcalc">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="implementing with PID VIs">
+			<param name="Local" value="pid_vi_algs.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="nonlinear error calculation">
+			<param name="Local" value="pid_adv_alg.html#errorcalc">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="output limiting">
+			<param name="Local" value="pid_vi_algs.html#outlimit">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="practical model">
+			<param name="Local" value="pid_vi_algs.html#outlimit">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="proportional action">
+			<param name="Local" value="pid_vi_algs.html#propact">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="trapezoidal integration">
+			<param name="Local" value="pid_vi_algs.html#trapint">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID algorithms">
+		<param name="Local" value="pid_algs.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID and Fuzzy Logic">
+		<param name="Local" value="pid_main.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Autotuning Wizard">
+			<param name="Local" value="pid_autowiz.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="PID overview">
+			<param name="Local" value="pid_overview.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="advanced error calculation algorithm">
+			<param name="Local" value="pid_adv_alg.html#errorcalc">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="autotuning PID controllers">
+			<param name="Local" value="tuning_pid.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="converting between percentage and engineering units">
+			<param name="Local" value="percent_to_eng.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error calculation algorithm">
+			<param name="Local" value="pid_vi_algs.html#errorcalc">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="fault protection">
+			<param name="Local" value="fault_protection.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="filtering control inputs">
+			<param name="Local" value="filter_control_inputs.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="fuzzy controllers">
+			<param name="Local" value="fuzzy_controllers.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="fuzzy system design">
+			<param name="Local" value="fuzzy_sys_design.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="gain scheduling">
+			<param name="Local" value="gain_schedule.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="lead/lag">
+			<param name="Local" value="lead_lag.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="limiting control output rate">
+			<param name="Local" value="cntrl_out_limit.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="multi-loop control">
+			<param name="Local" value="multiloop_control.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="nonlinear error calculation algorithm">
+			<param name="Local" value="pid_adv_alg.html#errorcalc">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="related documentation">
+			<param name="Local" value="pid_related_docs.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setpoint profile generation">
+			<param name="Local" value="setpoint_ramp_gen.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tutorial: using the Fuzzy System Designer">
+			<param name="Local" value="fsd_tut_home.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="using PID on FPGA">
+			<param name="Local" value="pid_on_fpga.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="using the PID VIs">
+			<param name="Local" value="using_pid_vis.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID Autotuning Wizard">
+		<param name="Local" value="pid_autowiz.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID control">
+		<param name="See Also" value="PID control">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="advanced error calculation algorithm">
+			<param name="Local" value="pid_adv_alg.html#errorcalc">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="algorithms">
+			<param name="Local" value="pid_algs.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="anti-windup">
+			<param name="Local" value="pid_vi_algs.html#outlimit">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="controller output algorithm">
+			<param name="Local" value="pid_vi_algs.html#contout">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="designing a control strategy">
+			<param name="Local" value="cntrl_strat_des.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="fault protection">
+			<param name="Local" value="fault_protection.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="filtering control inputs">
+			<param name="Local" value="filter_control_inputs.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="gain scheduling">
+			<param name="Local" value="gain_schedule.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="integrator anti-windup">
+			<param name="Local" value="pid_vi_algs.html#outlimit">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="lead/lag">
+			<param name="Local" value="lead_lag.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="limiting output rate">
+			<param name="Local" value="cntrl_out_limit.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="multi-loop">
+			<param name="Local" value="multiloop_control.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="nonlinear error calculation algorithm">
+			<param name="Local" value="pid_adv_alg.html#errorcalc">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="output limiting">
+			<param name="Local" value="pid_vi_algs.html#outlimit">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="output rate limiting">
+			<param name="Local" value="cntrl_out_limit.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="overview">
+			<param name="Local" value="pid_overview.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setpoint profile generation">
+			<param name="Local" value="setpoint_ramp_gen.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setting timing">
+			<param name="Local" value="cntrl_strat_des.html#settime">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="standard error calculation algorithm">
+			<param name="Local" value="pid_vi_algs.html#errorcalc">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID Control Input Filter">
+		<param name="See Also" value="PID Control Input Filter">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="filtering control inputs">
+			<param name="Local" value="filter_control_inputs.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID controllers">
+		<param name="See Also" value="PID controllers">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="academic">
+			<param name="Local" value="pid_topo.html#academic">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="autotuning interactively">
+			<param name="Local" value="pid_autowiz.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="autotuning programmatically">
+			<param name="Local" value="twosteptuning.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="forms">
+			<param name="Local" value="pid_topo.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="implementing and autotuning programmatically">
+			<param name="Local" value="onesteptuning.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="online autotuning techniques">
+			<param name="Local" value="autotun_techniques.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="parallel">
+			<param name="Local" value="pid_topo.html#parallel">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="series">
+			<param name="Local" value="pid_topo.html#series">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="topologies">
+			<param name="Local" value="pid_topo.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID Relay autotuning">
+		<param name="Local" value="pidrelay_alg.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID Setpoint Profile">
+		<param name="See Also" value="PID Setpoint Profile">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="setpoint profile generation">
+			<param name="Local" value="setpoint_ramp_gen.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID topologies">
+		<param name="Local" value="pid_topo.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID VIs">
+		<param name="See Also" value="PID VIs">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="converting between percentage and engineering units">
+			<param name="Local" value="percent_to_eng.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="fault protection">
+			<param name="Local" value="fault_protection.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="multi-loop control">
+			<param name="Local" value="multiloop_control.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="using the PID VIs">
+			<param name="Local" value="using_pid_vis.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Product consequent implication method">
+		<param name="Local" value="conseq_implication.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="proportional action">
+		<param name="Local" value="pid_algs.html#propact">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="PID VI implementation">
+			<param name="Local" value="pid_vi_algs.html#propact">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="related documentation">
+		<param name="See Also" value="related documentation">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="PID and Fuzzy Logic">
+			<param name="Local" value="pid_related_docs.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Relay Feedback autotuning">
+		<param name="Local" value="pidrelayfeed_alg.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="rule base">
+		<param name="See Also" value="rule base">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="PID and Fuzzy Logic">
+			<param name="Local" value="fuzzy_systems.html#rules">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="complete rule bases">
+			<param name="Local" value="complete_rulebase.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="creating a rule base">
+			<param name="Local" value="creating_rulebase.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="specifying a consequent implication method">
+			<param name="Local" value="conseq_implication.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="specifying an antecedent connective">
+			<param name="Local" value="antec_connect.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="specifying degrees of support">
+			<param name="Local" value="degree_support.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="rules">
+		<param name="See Also" value="rules">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="complete rule bases">
+			<param name="Local" value="complete_rulebase.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="creating a rule base">
+			<param name="Local" value="creating_rulebase.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="fuzzy systems">
+			<param name="Local" value="fuzzy_systems.html#rules">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="specifying a consequent implication method">
+			<param name="Local" value="conseq_implication.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="specifying an antecedent connective">
+			<param name="Local" value="antec_connect.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="specifying degrees of support">
+			<param name="Local" value="degree_support.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="setpoint profile generation">
+		<param name="Local" value="setpoint_ramp_gen.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="setpoint ramp generation">
+		<param name="Local" value="setpoint_ramp_gen.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Step Closed Loop autotuning">
+		<param name="Local" value="pidclosloop_alg.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Step Open Loop autotuning">
+		<param name="Local" value="pidsol_alg.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="trapezoidal integration">
+		<param name="Local" value="pid_vi_algs.html#trapint">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="tutorial">
+		<param name="See Also" value="tutorial">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="modifying a fuzzy system with the Fuzzy Logic VIs">
+			<param name="Local" value="fuzzyvi_tut_home.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="using the Fuzzy System Designer">
+			<param name="Local" value="fsd_tut_home.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="tutorial: using the Fuzzy Logic VIs">
+		<param name="Local" value="fuzzyvi_tut_home.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Ziegler-Nichols autotuning method">
+		<param name="Local" value="ziegnichforms.html">
+		</OBJECT>
+
+</UL>
+</BODY>
+</HTML>

@@ -1,0 +1,80 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Gradient Search Methods</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-4B345C7E-02D4-4FDB-AA74-B3160BE3E4A8" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Gradient Search Methods</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 Gradient search methods determine a search direction by using information about the slope of <em>f</em>(<em>x</em>). The search direction points toward the most probable location of the minimum. After the gradient search method establishes
+            the search direction, it uses iterative descent to move toward the minimum. 
+            	 
+         </p> 
+         	 
+         <p>The iterative descent process starts at a point <em>x</em><sub>0</sub>, which is an estimate of the best starting point, and successively produces vectors <em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>, …, so <em>f</em> decreases with each iteration, as shown in the following relationship. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./t2Ftemp2Flvac_gradient_search.xml_d16147e50.png"></span></div>
+         </div> 
+         	 
+         <p>for <em>k</em> = 0, 1, … 
+            	 
+         </p> 
+         	 
+         <p>where <em>k</em> is the iteration number, <em>f</em>(<em>x</em><sub><em>k</em> + 1</sub>) is the objective function value at iteration <em>k</em> + 1, and <em>f</em>(<em>x</em><sub><em>k</em></sub>) is the objective function value at iteration <em>k</em>. 
+            	 
+         </p> 
+         	 
+         <p>Successively decreasing <em>f</em> improves the current estimate of the solution. The iterative descent process attempts to decrease <em>f</em> to its minimum. 
+            	 
+         </p> 
+         	 
+         <p>The following equations and relationships provide a general definition of the gradient search method of solving nonlinear
+            programming problems. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./t2Ftemp2Flvac_gradient_search.xml_d16147e138.png"></span></div>
+         </div> 
+         	 
+         <p>for <em>k</em> = 0, 1, … 
+            	 
+         </p> 
+         	 
+         <p>where <em>d</em><sub><em>k</em></sub> is the search direction and &#945;<sub><em>k</em></sub> is the step size. 
+            	 
+         </p> 
+         	 
+         <p>In the previous equation, if the gradient of the objective function &#8711;<em>f</em>(<em>x</em><sub><em>k</em></sub>) &#8800; 0 the gradient search method needs a positive value for &#945;<sub><em>k</em></sub> and a value for <em>d</em><sub><em>k</em></sub> that fulfills the following relationship. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./t2Ftemp2Flvac_gradient_search.xml_d16147e221.png"></span></div>
+         </div> 
+         	 
+         <p>Iterations of gradient search methods continue until <em>x</em><sub><em>k</em> + 1</sub> = <em>x</em><sub><em>k</em></sub>. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Nonlinear_Programming.html" shape="rect">Nonlinear Programming</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

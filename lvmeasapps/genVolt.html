@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Generating Voltage</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css"><script src="common.js" type="text/javascript"></script></head>
+<body>
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Generating Voltage</h1>
+        
+        
+<p class="Body">You can generate single sample DC signals or time-varying multiple sample signals.</p>
+
+<h2>Single Samples�Including Steady Signals</h2>
+
+<p class="Body">Use single samples if the signal level is more important than the generation rate. For instance, generate one sample at a time if you need to generate a constant, or DC, signal. You can use <a href="../mxcncpts/hardwresoftwretiming.html">software or hardware timing</a> if the device supports hardware timing to control when the device generates a signal. </p>
+
+<h2>Time-Varying Multiple Samples</h2>
+
+<p class="Body">Use multiple samples if the generation rate is just as important as the signal level, as in an AC sine wave. Function generators are a common type of device that you can program to produce certain types of waveforms, such as sine, triangle, and square waves.  You also can use a DAQ device as a function generator.  You do this by generating one cycle of a sine wave, such as with the Sine Generation VI in LabVIEW, storing one cycle of sine wave data in a waveform, and programming the device to generate the values continuously from the waveform one point at a time at a specified rate. </p>
+
+<p class="Body">Also called buffered analog output, generating multiple samples involves the following steps: </p>
+<ol>
+<li>Your application writes multiple samples into a buffer.</li>
+
+<li>All the samples in the buffer are then sent to your device according to the timing you specify. You can use software or hardware timing (if your device supports hardware timing) to control when your device generates a signal. </li>
+</ol>
+
+        
+        
+        
+        <h2>Connecting Analog Output Signals</h2>
+<p class="Body">Signal connections vary depending on the device, connector block, and signal conditioning module. For E Series devices, the analog output signals are AO0, AO1, and AO GND. AO0 is the voltage output signal for analog output channel 0. AO1 is the voltage output signal for analog output channel 1. AO GND is the ground reference signal for both analog output channels and the external reference signal. The following illustration shows how to make analog output connections for an NI device. </p>
+
+<p class="Anchor"><img src="loc_eps_aoConnections.gif" alt=""></p>
+            
+            <h3>Analog Output Connections</h3>
+
+<p class="Body">Refer to the device documentation for information about specific terminals. </p>
+        
+        
+    <div id="exlinks">
+<h2>Examples</h2>
+<p class="Body">Refer to the following VIs for examples of performing this measurement. You must have a driver installed to find examples for that driver.</p>
+      <h3>NI-DAQmx</h3>
+<p class="Body">You can use the DAQmx - Data Acquisition VIs to perform this measurement. Find related examples:</p>
+<p class="Body"><a href="javascript:findExamples('1916');"><img src="find.gif" border="0"></a>�Voltage - On Demand Output</p>
+<p class="Body">You also can use the DAQ Assistant Express VI to perform this measurement.</p>
+<p class="Body"><img style="cursor:pointer" src="add.gif" border="0" onclick="placeObject('DAQ%20Assistant');">�Add�
+         <img style="cursor:pointer" src="find.gif" border="0" onclick="findObject('DAQ%20Assistant');">�Find</p>
+      <h3>FieldPoint</h3>
+<p class="Body">You can use the FieldPoint VIs to perform this measurement. Find related examples:</p>
+<p class="Body"><a href="javascript:findExamples('3786');"><img src="find.gif" border="0"></a>�Getting Started</p>
+<p class="Body"><a href="javascript:findExamples('3034');"><img src="find.gif" border="0"></a>�Analyzing and Processing Signals</p>
+<p class="Body"><a href="javascript:findExamples('3748');"><img src="find.gif" border="0"></a>�Signal and Noise Generation</p>
+      <h3>NI-FGEN</h3>
+<p class="Body">You can use the NI-FGEN VIs to perform this measurement. Find related examples:</p>
+<p class="Body"><a href="javascript:findExamples('4597');"><img src="find.gif" border="0"></a>�Arbitrary Waveform Generation</p>
+<p class="Body"><a href="javascript:findExamples('4596');"><img src="find.gif" border="0"></a>�Standard Function Generation</p>
+<p class="Body">You also can use the NI-FGEN Express (Arb) VI to perform this measurement.</p>
+<p class="Body"><img style="cursor:pointer" src="add.gif" border="0" onclick="placeObject('NI-FGEN%20Express%20(Arb)');">�Add�
+         <img style="cursor:pointer" src="find.gif" border="0" onclick="findObject('NI-FGEN%20Express%20(Arb)');">�Find</p>
+<p class="Body">You also can use the NI-FGEN Express (Standard Functions) VI to perform this measurement.</p>
+<p class="Body"><img style="cursor:pointer" src="add.gif" border="0" onclick="placeObject('NI-FGEN%20Express%20(Standard%20Functions)');">�Add�
+         <img style="cursor:pointer" src="find.gif" border="0" onclick="findObject('NI-FGEN%20Express%20(Standard%20Functions)');">�Find</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>FMakePath (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>FMakePath (LabVIEW Manager Function)</h1>
+<p class="Code">Path FMakePath(path, type, [volume, directory, directory, ..., name,] NULL);</p>
+<p class="Body">The brackets indicate that the <strong>volume</strong>, <strong>directory</strong>, and <strong>name</strong> parameters are optional.</p>
+<h2>Purpose</h2>
+<p class="Body">Creates a new path. If <strong>path</strong> is <span class="Monospace">NULL</span>, this function allocates and returns a new path. Otherwise, <strong>path</strong> is set to the new path, and this function returns <strong>path</strong>. If an error occurs or <strong>path</strong> is not specified correctly, the function returns <span class="Monospace">NULL</span>.</p>
+<p class="Body">When you finish using a path, dispose of it using <a href="fdestroypath.html">FDestroyPath</a>.</p>
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>path</strong></td>
+<td class="Bordered"><span class="Monospace">Path</span></td>
+ <td class="Bordered">Parameter in which <span class="Monospace">FMakePath</span> returns the new path if <strong>path</strong> is not <span class="Monospace">NULL</span>.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>type</strong></td>
+<td class="Bordered"><span class="Monospace">int32</span></td>
+ <td class="Bordered">Type of path you want to create. If&nbsp;<span class="Monospace">fAbsPath</span>, the new path is absolute. If&nbsp;<span class="Monospace">fRelPath</span>, the new path is relative.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>volume</strong></td>
+<td class="Bordered"><span class="Monospace">PStr</span></td>
+ <td class="Bordered">(Optional) Pascal string containing a legal volume name. An empty string indicates to go up a level in the path hierarchy. Use this parameter only for absolute paths on Mac OS X or Windows.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>directory</strong></td>
+<td class="Bordered"><span class="Monospace">PStr</span></td>
+ <td class="Bordered">(Optional) Pascal string containing a legal directory name. An empty string indicates to go up a level in the path hierarchy.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>name</strong></td>
+<td class="Bordered"><span class="Monospace">PStr</span></td>
+ <td class="Bordered">(Optional) File or directory name. An empty string indicates to go up a level in the path hierarchy.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>NULL</strong></td>
+<td class="Bordered"><span class="Monospace">PStr</span></td>
+ <td class="Bordered">Marker indicating the end of the path.</td></tr>
+</table>
+<h2>Return Value</h2>
+<p class="Body">The resulting path. If you specified <strong>path</strong>, the return value is the same as <strong>path</strong>. If an error occurs, this function returns <span class="Monospace">NULL</span>.</p>
+
+</body>
+</HTML>

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>TimeCString (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>TimeCString (LabVIEW Manager Function)</h1>
+<p class="Code">CStr TimeCString(secs, fmt);</p>
+<h2>Purpose</h2>
+<p class="Body">Returns a pointer to a string representing the time of day corresponding to <em>t</em> seconds after 12:00 a.m., Friday, January 1, 1904, Universal Time [01-01-1904 00:00:00]. Date formats vary with your system configuration.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;This function was formerly called <span class="Monospace">TimeString</span>.</td></tr></table>
+
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>secs</strong></td>
+ <td class="Bordered"><span class="Monospace">uInt32</span></td>
+ <td class="Bordered">Seconds since 12:00 a.m., Friday, January 1, 1904, Universal Time [01-01-1904 00:00:00].</td></tr>
+ <tr>
+ <td class="Bordered"><strong>fmt</strong></td>
+ <td class="Bordered"><span class="Monospace">int32</span></td>
+ <td class="Bordered">Indicates the format of the returned time string, using the following values:
+ <UL>
+ <LI><span class="Monospace">0</span>&#8212;<span class="Monospace-Italic">hh</span><span class="Monospace">:</span><span class="Monospace-Italic">mm</span> format, where <span class="Monospace-Italic">hh</span> is the hour (<span class="Monospace">0</span>&nbsp;through <span class="Monospace">23</span>, with <span class="Monospace">0</span> as midnight), and the <span class="Monospace-Italic">mm</span> is the minute (<span class="Monospace">0</span> through <span class="Monospace">59</span>).</LI>
+ <LI><span class="Monospace">1</span>&#8212;<span class="Monospace-Italic">hh</span><span class="Monospace">:</span><span class="Monospace-Italic">mm</span><span class="Monospace">:</span><span class="Monospace-Italic">ss</span> format, where <span class="Monospace-Italic">hh</span> is&nbsp;the hour, <span class="Monospace-Italic">mm</span> is the minute (<span class="Monospace">0</span>&nbsp;through <span class="Monospace">59</span>), and <span class="Monospace-Italic">ss</span> is the second (<span class="Monospace">0</span>&nbsp;through <span class="Monospace">59</span>).</LI>
+ </UL></td></tr>
+</table>
+
+<h2>Return Value</h2>
+<p class="Body">The time as a C string.</p>
+
+</body>
+</HTML>

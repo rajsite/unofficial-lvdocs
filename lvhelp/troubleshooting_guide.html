@@ -1,0 +1,314 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<title>LabVIEW Installation Troubleshooting Guide</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<h1>LabVIEW Installation Troubleshooting Guide</h1>
+<h2>All Platforms</h2>
+	<ul>
+		<li><a href="#appBuilder">Installing the NI LabVIEW Application Builder</a></li>
+		<li><a href="#upgrade">Installing LabVIEW 2020 on a computer that already has a previous version of LabVIEW</a></li>
+		<li><a href="#missingModules">Locating missing module or toolkit functionality</a></li>
+		<li><a href="#missingFunctionality">Resolving VI behaviors that changed since a previous version of LabVIEW</a></li>
+		<li><a href="#oldVIs">Determining why LabVIEW 2020 cannot open VIs from a previous version of LabVIEW</a></li>
+		<li><a href="#LVversion">Determining Which Versions of NI Software Are Installed</a></li>
+		<li><a href="#restore">Restoring VIs to a Previous Version of LabVIEW</a></li>
+		<li><a href="#uninstall">Uninstalling LabVIEW</a></li>
+	</ul>
+
+<h2>Windows</h2>
+	<ul>
+		<li><a href="#platformDVDs">Verifying that a module or toolkit is on the LabVIEW Platform media</a></li>
+		<li><a href="#driverDVD">Locating device drivers not included on the LabVIEW Platform media</a></li>
+		<li><a href="#nonplatformToolkits">Installing modules and toolkits not included on the LabVIEW Platform media</a></li>
+		<li><a href="#missingDriversWindows">Locating missing subVIs, palettes, and Property Nodes</a></li>
+	</ul>
+
+<h2>macOS</h2>
+	<ul>
+		<li><a href="#nidaqmxmac">Using NI-DAQmx with LabVIEW</a></li>
+		<li><a href="#missingDriversMac">Locating missing subVIs, palettes, and Property Nodes</a></li>
+	</ul>
+
+<h2>Linux</h2>
+	<ul>
+		<li><a href="#mounting">Mounting the installation media</a></li>
+		<li><a href="#nidaqmxlinux">Using NI-DAQmx with LabVIEW</a></li>
+		<li><a href="#launchErrors">Diagnosing common LabVIEW launch errors</a></li>
+		<li><a href="#missingDriversLinux">Locating missing subVIs, palettes, and Property Nodes</a></li>
+	</ul>
+<h2><a href="#moreHelp">Still need more help?</a></h2>
+<hr>
+<a name="appBuilder"></a>
+<h2>Installing the NI LabVIEW Application Builder (All Platforms)</h2>
+<table><tr><td></td><td>
+<p>The instructions for installing the Application Builder depend on which package of LabVIEW you purchased.</p>
+<ul>
+	<li><strong>LabVIEW Professional Development System</strong>&#8212;The LabVIEW Professional Development System includes and automatically installs the Application Builder. Therefore, you do not install the Application Builder separately. <strong>(Windows)</strong> During installation, the serial number for LabVIEW also activates the Application Builder. 					
+	</li>
+	<li><strong>LabVIEW Full Development System or Base Development System</strong>&#8212;If you also purchased the Application Builder, you receive a separate package for it. 				
+		<ul>
+			<li><strong>(Windows)</strong> Install LabVIEW from the LabVIEW Platform media. During installation, you must enter a serial number for the Application Builder. Locate this serial number on the <em>Certificate of Ownership</em> in the LabVIEW Add-On Software package. If you do not activate the Application Builder during installation, it runs in evaluation mode. You can activate the Application Builder after installing LabVIEW from the <strong>License Status</strong> window that appears when you launch LabVIEW.</li>
+			<li><strong>(macOS and Linux)</strong> After you finish installing LabVIEW, insert the installation media for the Application Builder.</li>
+		</ul></li>
+		
+</ul>
+</td></tr></table>
+
+
+<a name="upgrade"></a>
+<h2>Installing LabVIEW 2020 on a Computer That Already Has a Previous Version of LabVIEW (All Platforms)</h2>
+<table><tr><td></td><td>
+<p>Installing LabVIEW 2020 does not overwrite previous versions of LabVIEW that are installed on a computer because each version of LabVIEW resides in a separate directory. To use files from the <span class="Monospace">user.lib</span> directory of a previous version of LabVIEW, copy those files into the <span class="Monospace">user.lib</span> directory of LabVIEW 2020.</p>
+
+<p>For detailed recommendations about upgrading VIs and projects from a previous version of LabVIEW, refer to the <a href="javascript:AcrobatLink('../manuals/LV_Upgrade_Notes.pdf');">LabVIEW Upgrade Notes</a>.</p>
+</td></tr></table>
+
+
+
+
+
+<a name="missingModules"></a>
+<h2>Locating Missing Module or Toolkit Functionality (All Platforms)</h2>
+<table><tr><td></td><td>
+<p>To use a module or toolkit with LabVIEW 2020, you must install a version of the module or toolkit that is compatible with LabVIEW 2020. Otherwise, the VIs, project items, dialog boxes, and other features associated with the module or toolkit do not appear in LabVIEW.</p>
+<p>Complete the following steps to locate and install missing modules and toolkits:</p>
+<p><strong>(Windows)</strong></p>
+<ol><li>Locate and install the module or toolkit.
+	<ul>
+		<li><strong>Modules and toolkits that ship on the LabVIEW Platform media</strong>&mdash;Insert the LabVIEW Platform media and enter the serial number of the module or toolkit. To determine if a module or toolkit <a href="#platformDVDs">ships on the LabVIEW Platform media</a>, refer to the <em>LabVIEW Platform Readme</em>.</li>
+		<li><strong>All other LabVIEW modules and toolkits</strong>&mdash;Follow the <a href="#nonplatformToolkits">instructions for add-ons not included on the LabVIEW Platform media</a>.</li>
+		<li><strong>Third-party add-ons</strong>&mdash;From the <strong>Getting Started</strong> window of LabVIEW, select <strong>Find Drivers and Add-ons&#0187;Find LabVIEW Add-ons</strong> to access the latest versions of third-party add-ons.</li></ul></li>
+	<li>Modify the device drivers. If you install LabVIEW or an add-on after installing device drivers, LabVIEW cannot recognize the device drivers.</li>
+</ol>
+<p><strong>(macOS and Linux)</strong></p>
+<p>Install a version of the module or toolkit that is compatible with LabVIEW 2020. You can obtain a compatible version of the module or toolkit from the following locations:</p>
+<ul>
+	<li><strong>For NI add-ons</strong>&mdash;Download the latest version of the add-on from <a href="javascript:WWW(WWW_NICOMDOWNLOADS)">ni.com/downloads</a>.</li>
+	<li><strong>For third-party add-ons</strong>&mdash;Download the latest version of the add-on from the <a href="javascript:WWW(WWW_LVToolsNetwork)">LabVIEW Tools Network</a> at <span class="Monospace">ni.com</span>.</li>
+</ul> 
+<p>For installation instructions, refer to the readme file on the installation media of the module or toolkit.</p>
+
+</td></tr></table>
+
+<a name="missingFunctionality"></a>
+<h2>Resolving VI Behaviors That Changed Since a Previous Version of LabVIEW (All Platforms)</h2>
+<table><tr><td></td><td>
+<p>To identify the parts of a VI that cause it to behave differently in LabVIEW 2020 than in the version of LabVIEW in which it was created, refer to the <em>Upgrade and Compatibility Issues</em> section of the <a href="javascript:AcrobatLink('../manuals/LV_Upgrade_Notes.pdf');">LabVIEW Upgrade Notes</a>. Review the section for each LabVIEW version since the version in which the VI was created.</p>
+</td></tr></table>
+
+<a name="oldVIs"></a>
+<h2>Determining Why LabVIEW 2020 Cannot Open VIs from a Previous Version of LabVIEW (All Platforms)</h2>
+<table><tr><td></td><td>
+<p>If you are upgrading a VI from LabVIEW 5.1 or earlier, you cannot open the VI in LabVIEW 2020. To upgrade a VI from one of these versions of LabVIEW, you must first upgrade to an intermediate version of LabVIEW or use the LabVIEW Conversion Package. Refer to the <a href="javascript:WWW(WWW_UPConversion)">How to Upgrade or Revert a VI to a Different Version of LabVIEW</a> support document at <span class="Monospace">ni.com</span> for more information about upgrading from your specific legacy version of LabVIEW.</p>
+</td></tr></table>
+
+<a name="LVversion"></a>
+<h2>Determining Which Versions of NI Software Are Installed</h2>
+<table><tr><td></td><td>
+<p>Use the Measurement &amp; Automation Explorer or the system tools available on your machine to <a href="javascript:WWW(WWW_Findsoftware)">determine which versions of NI software you have installed</a>, including modules, toolkits, and drivers.</p>
+</td></tr></table>
+
+
+<a name="restore"></a>
+<h2>Restoring VIs to a Previous Version of LabVIEW</h2>
+<table><tr><td></td><td>
+<p>After you save a VI in a new version of LabVIEW, you cannot automatically load it in an earlier version of LabVIEW. To allow the VI to run in the previous version, open the VI and select <strong>File&#0187;Save for Previous Version</strong>. Refer to the <a href="javascript:WWW(WWW_VIPREVVERSION)">NI website</a> for more information about loading VIs in a previous version of LabVIEW.</p>
+ <p>If your computer does not have enough memory to convert all the VIs at once, convert the VIs in stages. Examine the hierarchy of VIs you want to convert and begin by loading and saving subVIs in the lower levels of the hierarchy. Then progress gradually to the higher levels of the hierarchy. Open and convert the top-level VI last. You also can select <strong>Tools&#0187;Advanced&#0187;Mass Compile</strong> to convert a directory of VIs. However, mass compiling converts VIs in a directory or LLB in a set order. Refer to the <a href="../lvhowto/mass_compiling_vis.html">Mass Compiling VIs</a> topic for a description of the order in which LabVIEW processes files when you mass compile. If the conversion process encounters a high-level VI first, mass compiling requires approximately the same amount of memory as if you opened the high-level VI first.</p>
+</td></tr></table>
+
+
+<a name="uninstall"></a>
+<h2>Uninstalling LabVIEW (All Platforms)</h2>
+<table><tr><td></td><td>
+<p>When troubleshooting a persistent installation issue, you might choose to uninstall LabVIEW and other NI software to retry installation on a clean machine.</p>
+<p><strong>(Windows)</strong></p>
+<ol>
+	<li>Create a system configuration report in Measurement &amp; Automation Explorer (MAX), which is a hardware configuration program that is installed when you install LabVIEW. The system configuration report records the state of your system before you erase all information about your NI software installations. If you eventually need to file a service request at <a href="javascript:WWW(WWW_NICOMASK)">ni.com/ask</a>, the support engineer who addresses your request may need this information.
+		<ol>
+			<li>Open MAX.</li>
+			<li>Select <strong>File&#0187;Export</strong> and create a report for your entire system.</li>
+			<li>Refer to the <a href="javascript:WWW(WWW_CONFIGMAX)">KnowledgeBase</a> at <span class="Monospace">ni.com</span> for more detailed instructions about creating MAX system configuration reports.</li>
+		</ol>
+	</li>
+	<li>Save the system configuration report and all VIs to an external location, such as a USB or network drive.</li>
+	<li>Turn off the computer and remove or unplug all NI hardware.</li>
+	<li>Turn on the computer.</li>
+	<li>Uninstall LabVIEW 2020 by navigating to <strong>Uninstall a program</strong> in the Control Panel and selecting <strong>National Instruments Software</strong>. Select and uninstall LabVIEW, modules, toolkits, and device drivers.</li>
+	<li>Restart the computer.</li>
+</ol>
+<p><strong>(macOS)</strong></p>
+<ol>
+	<li>Save any files that you modified or added to the <span class="Monospace">LabVIEW 2020</span> directory in another location.</li>
+	<li>Uninstall LabVIEW 2020 by double-clicking the <span class="Monospace">Uninstall.command</span> shell script file located in the <span class="Monospace">LabVIEW 2020</span> directory or on the installation media.</li>
+</ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If you moved the <span class="Monospace">LabVIEW 2020</span> directory after installing LabVIEW, LabVIEW does not uninstall and remove the <span class="Monospace">LabVIEW 2020</span> directory unless you move the directory back to the default location.</td>
+</tr>
+</table>
+
+<p><strong>(Linux)</strong></p>
+<p>Run the <span class="Monospace">UNINSTALL</span> script from the mounted installation media. This script is available only on the installation media.</p>
+
+</td></tr></table>
+
+		
+<a name="platformDVDs"></a>
+<h2>Verifying That a Module or Toolkit Is on the LabVIEW Platform Media (Windows)</h2>
+<table><tr><td></td><td>
+<p>Refer to the <em>LabVIEW Platform Readme</em> on the LabVIEW Platform media. This document includes a list of all the modules and toolkits that ship on the LabVIEW Platform media.</p>
+</td></tr></table>
+
+<a name="driverDVD"></a>
+<h2>Locating Device Drivers Not Included on the LabVIEW Platform Media (Windows)</h2>
+<table><tr><td></td><td>
+<p>The LabVIEW Platform media contains LabVIEW 2020 device drivers for most NI hardware devices. If you cannot locate a particular driver on the <strong>Features</strong> screen of the installer, install the driver from one of the following locations:</p>
+<ul>
+		<li><strong>For NI devices</strong>&#8212;Use the driver media packaged with the device or download the latest version of the driver from <a href="javascript:WWW(WWW_NIDRIVERS)">ni.com/drivers</a>.</li>
+		<li><strong>For third-party devices</strong>&mdash;Search for and download drivers for third-party instruments on the <a href="javascript:WWW(WWW_IDNET)">Instrument Driver Network</a> at <span class="Monospace">ni.com</span>.</li>
+
+</ul>
+
+</td></tr></table>
+
+
+<a name="nonplatformToolkits"></a>
+<h2>Installing Modules and Toolkits Not Included on the LabVIEW Platform Media (Windows)</h2>
+<table><tr><td></td><td>
+<p>Some LabVIEW modules and toolkits ship separately from the LabVIEW Platform media. Complete the following steps to install these non-platform add-ons:</p>
+<ol>
+<li>Install LabVIEW 2020.</li>
+<li>Refer to the readme files on the <a href="javascript:WWW(WWW_ADDONCOMPATIBILITY)">LabVIEW Module and Toolkit Compatibility Information</a> page to verify that the add-on is compatible with LabVIEW 2020.</li>
+<li>Insert the installation media for the add-on and follow the onscreen installation instructions.</li>
+<li>For more information about the add-on, refer to the readme file on the installation media for the add-on.</li>
+</ol>
+</td></tr></table>
+
+
+<a name="missingDriversWindows"></a>
+<h2>Locating Missing SubVIs, Palettes, and Property Nodes (Windows)</h2>
+<table><tr><td></td><td>
+<p>LabVIEW may not be able to locate certain subVIs, palettes, or Property Nodes for the following reasons:</p>
+<ul><li><strong>You did not install the LabVIEW 2020 versions of the drivers used by your VIs.</strong> To communicate with hardware devices, LabVIEW 2020 requires that the LabVIEW 2020 versions of the related device drivers be installed. If you do not update your drivers to run with LabVIEW 2020, the associated driver VIs, palettes, and Property Nodes are not available, making it impossible for LabVIEW to communicate with the device. To correct this problem, reinstall the related drivers from one of the following sources:
+	<ul>
+		<li><strong>For most NI devices</strong>&mdash;Use the LabVIEW Platform media.</li>
+		<li><strong>For NI devices not included on the LabVIEW Platform media</strong>&#8212;Use the driver media packaged with the device or download the latest version of the driver from <a href="javascript:WWW(WWW_NIDRIVERS)">ni.com/drivers</a>.</li>
+		<li><strong>For third-party devices</strong>&mdash;Search for and download drivers for third-party instruments on the <a href="javascript:WWW(WWW_IDNET)">Instrument Driver Network</a> at <span class="Monospace">ni.com</span>.</li>
+	</ul></li>
+	<li><strong>You installed a module or toolkit after you installed the drivers used by your VIs.</strong> If you install an add-on, such as LabVIEW FPGA or the LabVIEW Real-Time Module, after installing device drivers, you must modify the device drivers in order for the module to recognize them and their associated VIs. Complete the following steps to modify device drivers:
+	<ol>
+		<li>Navigate to the Programs applet in the Control Panel.</li>
+		<li>Select <strong>National Instruments Software</strong> from the list of programs.</li>
+		<li>Select each device driver and click <strong>Modify</strong>.</li>
+	</ol></li>
+	<li><strong>Your VIs require files from the <span class="Monospace">user.lib</span> directory of a previous version of LabVIEW.</strong> If you created custom VIs in a previous version of LabVIEW, you must copy those VIs to the <span class="Monospace">user.lib</span> directory of LabVIEW 2020 to continue using them as subVIs.</li>
+</ul>
+</td></tr></table>
+
+
+
+
+
+<a name="nidaqmxmac"></a>
+<h2>Using NI-DAQmx with LabVIEW (macOS)</h2>
+<table><tr><td></td><td>
+<p>NI-DAQmx Base is the only version of NI-DAQmx available for LabVIEW 2020 on macOS. To use NI-DAQmx Base for LabVIEW 2020 on macOS, complete the following steps:</p>
+<ol>
+	<li>Verify that NI-DAQmx Base supports your device by referring to the <a href="javascript:WWW(WWW_DAQSUPPORT)">NI-DAQmx and NI-DAQ Driver Support</a> page at <span class="Monospace">ni.com</span>.</li>
+	<li>Download <a href="javascript:WWW(WWW_DAQMXBASE)">NI-DAQmx Base Software</a> from <span class="Monospace">ni.com</span>.</li>
+</ol>
+</td></tr></table>
+
+<a name="missingDriversMac"></a>
+<h2>Locating Missing SubVIs, Palettes, and Property Nodes (macOS)</h2>
+<table><tr><td></td><td>
+<p>LabVIEW may not be able to locate certain subVIs, palettes, or Property Nodes for the following reasons:</p>
+<ul><li><strong>You did not install the LabVIEW 2020 versions of the drivers used by your VIs.</strong> To communicate with hardware devices, LabVIEW 2020 requires that the LabVIEW 2020 versions of the related device drivers be installed. If you do not update your drivers to run with LabVIEW 2020, the associated driver VIs, palettes, and Property Nodes are not available, making it impossible for LabVIEW to communicate with the device. To correct this problem, reinstall the related drivers from one of the following sources:
+	<ul>		
+		<li><strong>For the latest version of the driver for any NI device</strong>&#8212;Download the latest version of the driver from <a href="javascript:WWW(WWW_NIDRIVERS)">ni.com/drivers</a>.</li>
+		<li><strong>For NI-DAQmx Base</strong>&mdash;Download the <a href="javascript:WWW(WWW_DAQMXBASE)">NI-DAQmx Base Software</a> at <span class="Monospace">ni.com</span>.</li>
+		<li><strong>For third-party devices</strong>&mdash;Search for and download drivers for third-party instruments on the <a href="javascript:WWW(WWW_IDNET)">Instrument Driver Network</a> at <span class="Monospace">ni.com</span>.</li>
+	</ul></li>
+	<li><strong>Your VIs require files from the <span class="Monospace">user.lib</span> directory of a previous version of LabVIEW.</strong> If you created custom VIs in a previous version of LabVIEW, you must copy those VIs to the <span class="Monospace">user.lib</span> directory of LabVIEW 2020 to continue using them as subVIs.</li>
+</ul>
+</td></tr></table>
+
+
+
+<a name="mounting"></a>
+<h2>Mounting the Installation Media (Linux)</h2>
+<table><tr><td></td><td>
+<p>Complete the following steps to mount the LabVIEW 2020 installation media:</p>
+<ol>
+<li>Log into the system as <span class="Monospace">root</span>.</li>
+<li>Insert the LabVIEW 2020 installation media.</li>
+<li>If the media does not mount automatically, use <span class="Monospace">mount /mnt/cdrom</span> to mount the media.</li>
+<li>To change the current directory to the mounted media, enter the following command:<br>
+<span class="Monospace">cd /mnt/cdrom</span></li>
+</ol>
+</td></tr></table>
+
+
+<a name="nidaqmxlinux"></a>
+<h2>Using NI-DAQmx with LabVIEW (Linux)</h2>
+<table><tr><td></td><td>
+<p>NI-DAQmx Base is the only version of NI-DAQmx available for LabVIEW 2020 on Linux. To use NI-DAQmx Base for LabVIEW 2020 on Linux, complete the following steps:</p>
+<ol>
+	<li>Verify that NI-DAQmx Base supports your device by referring to the <a href="javascript:WWW(WWW_DAQSUPPORT)">NI-DAQmx and NI-DAQ Driver Support</a> page on <span class="Monospace">ni.com</span>.</li>
+	<li>Download <a href="javascript:WWW(WWW_DAQMXBASE)">NI-DAQmx Base Software</a> from <span class="Monospace">ni.com</span>.</li>
+</ol>
+</td></tr></table>
+
+
+<a name="launchErrors"></a>
+<h2>Diagnosing Common LabVIEW Launch Errors (Linux)</h2>
+<table><tr><td></td><td>
+<table class="Bordered"><tr class="Bordered"><th class="Bordered">Error</th><th class="Bordered">Possible Cause and Solution</th></tr>
+	<tr><td class="Bordered"><span class="Monospace">Xlib: connection to :0.0 refused by server</span></td><td class="Bordered" rowspan="3"><strong>Possible Cause</strong>&#8212;You are trying to run LabVIEW as a user who does not have permission to open a window on the display server. You typically receive these errors after you run the <span class="Monospace">su</span> command to temporarily become a different user, such as <span class="Monospace">root</span> (superuser).<br><br>
+<strong>Solution</strong>&#8212;Exit the <span class="Monospace">su</span> command and launch LabVIEW as the login user or use the <span class="Monospace">xhost</span> or <span class="Monospace">xauth</span> commands to grant permission to open a window on the display server.</td></tr>
+	<tr><td class="Bordered"><span class="Monospace">client is not authorized to connect to server</span></td></tr>
+	<tr><td class="Bordered"><span class="Monospace">internal error during connection authorization check</span></td></tr>
+</table>
+<p><strong>Launch errors on 64-bit systems</strong>&#8212;If LabVIEW fails to launch on a 64-bit Linux system, verify that you have installed the 32-bit compatibility libraries for your distribution.</p>
+</td></tr></table>
+
+
+<a name="missingDriversLinux"></a>
+<h2>Locating Missing SubVIs, Palettes, and Property Nodes (Linux)</h2>
+<table><tr><td></td><td>
+<p>LabVIEW may not be able to locate certain subVIs, palettes, or Property Nodes for the following reasons:</p>
+<ul><li><strong>You did not install the LabVIEW 2020 versions of the drivers.</strong> In order to communicate with hardware devices, LabVIEW 2020 requires that the LabVIEW 2020 versions of the related device drivers be installed. If you do not update your drivers to run with LabVIEW 2020, the associated driver VIs, palettes, and Property Nodes are not available, making it impossible for LabVIEW to communicate with the device. To correct this problem, reinstall the related drivers from one of the following sources:
+	<ul>
+		<li><strong>For NI-VISA drivers</strong>&mdash;Download the latest version of the driver from <a href="javascript:WWW(WWW_LINUXDRIVERS)">ni.com/linuxdrivers</a>.</li>
+		<li><strong>For other NI devices</strong>&#8212;Use the driver media packaged with the device or download the latest version of the driver from <a href="javascript:WWW(WWW_NIDRIVERS)">ni.com/drivers</a>.</li>
+		<li><strong>For NI-DAQmx Base</strong>&mdash;Download the <a href="javascript:WWW(WWW_DAQMXBASE)">NI-DAQmx Base Software</a> at <span class="Monospace">ni.com</span>.</li>
+		<li><strong>For third-party devices</strong>&mdash;Search for and download drivers for third-party instruments on the <a href="javascript:WWW(WWW_IDNET)">Instrument Driver Network</a> at <span class="Monospace">ni.com</span>.</li>
+	</ul></li>
+	<li><strong>Your VIs require files from the <span class="Monospace">user.lib</span> directory of a previous version of LabVIEW.</strong> If you created custom VIs in a previous version of LabVIEW, you must copy those VIs to the <span class="Monospace">user.lib</span> directory of LabVIEW 2020 to continue using them as subVIs.</li>
+</ul>
+</td></tr></table>
+
+
+
+<a name="moreHelp"></a>
+<h2>Still need more help? (All Platforms)</h2>
+<table><tr><td></td><td>
+<p>Refer to the following resources for additional help troubleshooting your LabVIEW installation:</p>
+<ul>
+	<li><a href="javascript:WWW(WWW_NIGETTINGSTARTED)">ni.com/gettingstarted</a>&#8212;Provides more detailed installation and configuration instructions for a subset of NI products.</li>
+	<li><a href="javascript:WWW(WWW_SUPPORT)">ni.com/support</a>&#8212;Highlights various support resources, including live access to support engineers if you have a current service contract.</li>
+</ul>
+</td></tr></table>
+
+
+
+</body>
+</html>

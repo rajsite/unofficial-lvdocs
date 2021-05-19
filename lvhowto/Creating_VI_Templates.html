@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+
+<title>Creating Template VIs</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Creating Template VIs</h1>
+
+<p class="Body"><!-- begin parent: lvconcepts/Creating_VIs_and_SubVIs.xml-->You can create custom template VIs to avoid adding the same components to the block diagram or the front panel each time you want to perform a similar operation.<!-- end parent: lvconcepts/Creating_VIs_and_SubVIs.xml--></p>
+
+<p class="Body">Complete the following steps to create a new template based on an existing VI template.
+</p>
+<ol>
+<li>Select <strong>File&#0187;New</strong> to display the <a href="../lvdialog/New_Dialog_Box.html">New</a> dialog box.</li>
+<li>From the <strong>Create New</strong> list, select a template VI from the From Template directory similar to the one you want to create.</li>
+<li>Click the <strong>OK</strong> button. The front panel and block diagram of the template VI appear.
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;When you create a VI from a template, LabVIEW does not apply the options you select for new VIs in the <a href="../lvdialog/Options_Dialog_Box.html">Options</a> dialog box.</td>
+</tr>
+</table></li>
+
+<li>Edit the VI.
+<table class="Borderless"><tr><td class="Icon"><img src="tip.gif"></td><td>
+<strong>Tip</strong>&nbsp;&nbsp;<!--begin parent: lvconcepts/Creating_VIs_and_SubVIs.xml-->You can add templates as subVIs to a template VI. To add a template as a subVI, open the VI template and drag the VI icon in the upper right corner of the front panel or block diagram window to the block diagram of the top-level template VI. When you create a VI from a template that contains template subVIs and save the VI, LabVIEW prompts you to save each template subVI as a VI.<!--end parent: lvconcepts/Creating_VIs_and_SubVIs.xml--></td></tr></table></li></ol>
+<ol start="5"><li>Save the VI as a template.</li></ol>
+<ol class="List-abc" start="1" style="margin-left: 36.00pt"><li>Select <strong>File&#0187;Save As</strong> to display a file dialog box.
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;If you have already saved the template VI, selecting <strong>File&#0187;Save As</strong> displays the <a href="../lvdialog/Save_As.html">Save As</a> dialog box instead. Select the <strong>Copy</strong> and <strong>Substitute copy for original</strong> options and click the <strong>Continue</strong> button to display the file dialog box.</td></tr></table></li>
+
+<li>(Optional) Navigate to the <span class="Monospace">labview\templates</span> directory if you want the template VI to appear in the <a href="../lvdialog/New_Dialog_Box.html">New</a> dialog box with the template VIs LabVIEW installs. To set the block diagram preview, save an image of the block diagram as a <span class="Monospace">.png</span> file in the <span class="Monospace">labview\templates</span> directory. Append <span class="Monospace">d</span> to the name of the VI to create the <span class="Monospace">.png</span> filename. For example, if you want to create the block diagram preview of <span class="Monospace">Test.vi</span>, save an image of the block diagram as <span class="Monospace">Testd.png</span> in the <span class="Monospace">labview\templates</span> directory. This block diagram preview and the <a href="CreatingEditing_VI_Desc.html">VI description</a> appear in the <strong>Description</strong> section when the VI template is selected in the <strong>Create New</strong> list.
+
+<table class="Borderless"><tr><td class="Icon"><img src="caution.gif"></td><td><span class="Dark-Red"><strong>Caution</strong>&nbsp;&nbsp;
+Do <strong>not</strong> save your own VIs and other files in <a href="Saving_Changes_Shipping_VIs.html">.llb files installed with LabVIEW</a>.
+</span></td></tr></table></li>
+
+<li><span class="Platform">(Windows)</span> Select <strong>Template VIs</strong> from the <strong>Save as type</strong> pull-down menu. <span class="Platform">(macOS and Linux)</span> Include the template VI file extension (<span class="Monospace">.vit</span>).</li>
+<li>Enter the name of the template VI and click the <strong>OK</strong> button.</li></ol>
+
+<p class="Body">You also can change the <span class="Monospace">.vi</span> extension to a <span class="Monospace">.vit</span> extension in the file system to convert an existing VI to a template VI.</p>
+
+
+
+</body>
+</html>

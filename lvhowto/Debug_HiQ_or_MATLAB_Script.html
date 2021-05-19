@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 6400Eformula/hlp-->
+
+<title>Debugging Scripts</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Debugging Scripts</h1>
+
+<p class="Body">Use <a href="../lvhowto/Script_Nodes.html">script nodes</a> to execute math scripts in LabVIEW. LabVIEW provides a script node called the MATLAB&#0174; script node, that facilitates the processing of your scripts written in the MATLAB language syntax.</p>
+
+<p class="Body">To make debugging a script easier, use the following programming techniques:</p>
+<ul>
+<!-- begin Parent: suggestions6400Eformula_UM -->
+<li>Write the script and run it in the native program for testing and debugging purposes before you import it into LabVIEW.</li>
+<li><a href="Cnfig_Datatype_of_Terminal.html">Verify data types</a>. When you create a new input or output, make sure that the data type of the terminal is correct. Also, create controls and indicators for inputs and outputs so you can monitor what values are being passed between LabVIEW and the script server engine. This allows you to pinpoint where a script node calculates a value incorrectly, if necessary.</li>
+<li>Take advantage of the error-checking parameters for debugging information. Create an indicator for the <strong>error out</strong> terminal on a <a href="../gmath/matlab_script_node.html">MATLAB script</a> node <span class="checkFile lvtextmathmain">or a <span class="Platform">(MathScript RT Module)</span> <a href="../gmath/MathScript_Node.html">MathScript Node</a></span> before you run any VI so you can view the generated error information at run time.</li>
+<!-- end Parent: suggestions6400Eformula_UM-->
+</ul>
+
+<p class="checkFile lvtextmathmain Body"><span class="Platform">(MathScript RT Module)</span> You also can use the <a href="../gmath/MathScript_Node.html">MathScript Node</a> with the <a href="../lvtextmathmain/LabVIEW_MathScript.html">LabVIEW MathScript</a> <a href="../lvtextmathmain/MathScript_Syntax.html">syntax</a>. Use additional techniques to <a href="../lvtextmathmain/ms_debugging.html">debug a script</a> in a MathScript Node.</p>
+
+</body>
+</html>

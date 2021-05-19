@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+<title>Setting Expand/Contract Symbols in Tree Controls</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Setting Expand/Contract Symbols in Tree Controls</h1>
+
+<p class="Body">Complete the following steps to set the type of symbol to display next to each item that has other items indented under it.  You can use the expand/contract symbols to <a href="Open_Close_Tree_Items.html">open and close parent items</a> in the tree.</p>
+<ol>
+<li>Right-click a tree control.</li>
+<li>Select <strong>Expand/Contract Symbol Type</strong> and select one of the following items from the shortcut menu:
+<ul>
+<li><strong>None</strong>&#8212;Displays no symbols.
+</li>
+<li><strong>LabVIEW</strong>&#8212;Displays platform-independent triangle symbols.
+</li>
+<li><strong>Mac OS</strong>&#8212;Displays macOS-style triangle symbols.
+</li>
+<li><strong>Windows</strong>&#8212;Displays Windows-style plus and minus symbols.
+</li>
+<li><strong>Default</strong>&#8212;Displays the default symbols for the operating system.
+</li>
+</ul>
+</li>
+</ol>
+<p class="Body">You also can use the <a href="../lvprop/TreeCtrl_TwistyType.html">Expand/Contract Symbol:Symbol Type</a> property to set programmatically the type of symbol to display next to each parent item.</p>
+<p class="Body">Right-click a tree control and select <strong>Expand/Contract Symbol Type&#0187;Show at Indent Level 0</strong> from the shortcut menu to show or hide the expand/contract symbols for items at the highest level of the hierarchy. If you remove the checkmark next to this option, you can still expand or collapse an item at indent level 0 by double-clicking the item. To disable the double-clicking functionality, wire a True constant to the <strong>Discard?</strong> parameter of the <a href="../lvprop/TreeControl_Item_Close2.html">Item Close?</a> event.</p>
+<p class="Body">You also can use the <a href="../lvprop/TreeCtrl_Flush_Left_Margin.html">Expand/Contract Symbol:Show Symbol at Root</a> property to show or hide the symbols programmatically.</p>
+
+
+</body>
+</html>

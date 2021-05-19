@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4210Eeventshlp -->
+
+<title>Dynamically Registering for Events</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<!-- WARNING: This topic has a redirect to it in lvhelp. If you want to delete this file or move it to another CHM, you must update that redirect. -->
+
+<h1>Dynamically Registering for Events</h1>
+
+<p class="Body"> <a href="../lvconcepts/Using_Events_in_LabVIEW.html#Dynamic_Event_Registration">Dynamic event registration</a> allows you to use VI Server references, such as <a href="../lvprop/Application_e.html">Application</a>, <a href="../lvprop/VI_e.html">VI</a>, or <a href="../lvprop/Control_e.html">Control</a>, to specify at run time the objects for which you want LabVIEW to generate events. </p> 
+
+<a name="toUse"></a><h2>What to Use</h2>
+<p>Use the following block diagram objects to dynamically register events.</p>
+
+<table class="Usage">
+	<col class="Object">
+	<col class="Spacer">
+	<col class="Object">
+	<col class="Spacer">
+	<col class="Object">
+	<col class="Spacer">
+	<col class="Object">
+	
+	
+	
+	<tr>
+		
+		<td><a href="../glang/Register_Events.html">Register For Events</a></td>
+		<td></td>
+		<td><a href="../glang/While_Loop.html">While Loop</a></td>
+		<td></td>
+		<td><a href="../glang/Event_Structure.html">Event Structure</a></td>
+		<td></td>
+		<td><a href="../glang/Unregister_Events.html">Unregister For Events</a></td>
+		
+	</tr>
+	
+	<tr>
+	
+	<td><img src="loc_icon_register_event.gif"></td>
+	<td></td>
+	<td><img src="noloc_icon_wileloop.gif"></td>
+	<td></td>
+	<td><img src="loc_icon_event_struct.gif"></td>
+	<td></td>
+	<td><img src="noloc_icon_unregister_event.gif"></td>
+	
+
+	</tr>
+	
+		<tr>
+		
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object1907);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object1907);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object762);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object762);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object1217);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object1217);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object1908);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object1908);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+	
+	</tr>
+</table>
+<h2>What to Do</h2>
+<p class="Body">Create the following block diagram to dynamically register the <a href="../lvprop/VI_Mouse_Enter.html">Mouse Enter</a> and <a href="../lvprop/Ctrl_Mouse_Leave.html">Mouse Leave</a> events on a string control.</p>
+
+  
+<img src="loc_bd_dynamiceventex.gif">
+<p>The following list describes important details about the previous diagram.</p>
+<table>
+			
+ 
+					
+<tr>
+	<td>
+		<img src="noloc_eps_callout_1.gif"></td><td>Obtain <a href="../lvconcepts/Building_VI_Server_Applications.html#Application_and_VI_References">VI Server</a> references to the objects for which you want LabVIEW to generate events. To obtain a control reference constant, like the string control constant from the previous illustration, use a Property Node to query the VI for its controls or right-click the control and select <strong>Create�Reference</strong> from the shortcut menu.
+</td></tr>
+ 
+ 
+<tr>
+	<td>
+		<img src="noloc_eps_callout_2.gif"></td><td>Use the Register For Events function to dynamically register for events. You can register for multiple events for a single reference by resizing this function and selecting another event. Click the down arrow on the event source input and select the event you want LabVIEW to generate for the reference, such as the Mouse Enter and Mouse Leave events shown in the previous illustration. After registration, LabVIEW queues events as they occur until an Event structure executes to handle the events. 
+ </td></tr></table>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="tip.gif" alt="Tip"></td>
+<td><strong>Tip</strong>&nbsp;&nbsp;You can view the registered events in the <strong>Context Help</strong> window when you hover over the event registration refnum.</td></tr></table>
+<table class="Borderless">
+
+
+
+
+<tr>
+	<td>
+		<img src="noloc_eps_callout_3.gif"></td><td>Right-click the <a href="../glang/Event_Structure.html#Event_Label">event selector label</a> to display the <strong>Edit Events</strong> dialog box. Use the dialog box to <a href="../lvhowto/CfgEvents.html">configure an Event structure</a> to handle a dynamically registered event. The <strong>Event Sources</strong> section of the dialog box contains a <strong>Dynamic</strong> subheading that lists each dynamically registered event source. After you select the events you want the Event structure to handle, design the case to handle the event data.</td></tr>
+
+
+		
+
+ <tr>
+	<td>
+		<img src="noloc_eps_callout_4.gif"></td><td>Use the Unregister For Events function to stop event generation. When the Unregister For Events function executes, LabVIEW unregisters all events the event registration refnum specifies, destroys the event queue associated with the event registration refnum, and discards any events that remain in the queue. 
+ </td></tr></table>
+		
+<h2>Caveats and Recommendations for Dynamically Registering Events</h2>
+<ul>
+<li>Wire the <strong>event registration refnum</strong> input of the Register For Events function only when you want to <a href="../lvhowto/Dynamic_Modifying_Reg.html">modify an existing registration</a>.</li>
+<li>Wire each Event structure that handles dynamic events to a unique Register For Events function.  Branching the event registration refnum wire of a Register For Events function allows multiple Event structures to pull events from one queue, resulting in a race condition that may cause unpredictable behavior.</li>
+<li><!--Begin parent: lvhelp.chm,CfgEvents.html -->Before you configure events for the Event structure to handle, review the <a href="CaveatsRecmndtnsEvnts.html">caveats and recommendations for using events</a> in LabVIEW.<!--End parent: lvhelp.chm,CfgEvents.html -->
+</li>
+</ul>
+
+
+<h2>Examples</h2>
+<p class="Body">Refer to the <span class="Monospace">labview\examples\Dialog and User Interface\Events\Events.lvproj</span> for examples of dynamically registering events.
+</p>
+<p class="Body"><a href="javascript:openProj('examples%5C%5CDialog%20and%20User%20Interface%5C%5CEvents%5C%5CEvents.lvproj');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open examples&nbsp;<a href="javascript:findExamples(3758);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</p>
+
+
+</body>
+</html>

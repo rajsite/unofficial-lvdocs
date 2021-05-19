@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+
+<title>Setting Undo</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Setting Undo
+</h1>
+<p class="Body">Complete the following steps to set the number of actions you can undo or redo.
+</p>
+<ol>
+
+<li>Select <strong>Tools&#0187;Options</strong> to display the <a href="../lvdialog/Options_Dialog_Box.html">Options</a> dialog box.
+</li>
+<li>Select <a href="../lvdialog/Miscellaneous_Options.html">Environment</a> from the <strong>Category</strong> list.
+</li>
+<li>Enter a number into the <strong>Maximum undo steps per VI</strong> text box. <!-- Begin parent: ../lvdialog/Miscellaneous_Options.html -->The maximum number you can enter is <span class="Monospace">99</span>. The minimum number you can enter is <span class="Monospace">1</span>.<!-- End parent: ../lvdialog/Miscellaneous_Options.html -->
+</li>
+<li>Click the <strong>OK</strong> button.</li>
+</ol>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;Each VI records its own undo instances. Therefore, the number you enter for <strong>Maximum undo steps per VI</strong> pertains to each VI. Setting this number low can conserve memory resources.</td></tr></table>
+
+
+
+<p class="Body">In some instances, LabVIEW deletes all undo information. VI callers automatically update when the VI changes its front panel. LabVIEW deletes all undo information in caller VIs when you make the following changes:
+</p>
+<ul>
+
+<li><a href="Selecting_a_Connector_Pane.html">Change a VI connector pane pattern</a> or change the data type of a control.
+</li>
+<li>Change the appearance of a strict data type, change the data type or strictness, or change a type definition of a custom control. 
+</li>
+<li>Change the data type or name of a control in a global VI or add or remove a control to a global VI.
+</li>
+</ul>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;<span class="Platform">(MathScript RT Module)</span> If a VI contains a <a href="../gmath/MathScript_Node.html">MathScript Node</a>, LabVIEW also deletes all undo information when you save or run the VI.</td>
+</tr>
+</table>
+
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>PostLVUserEvent (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>PostLVUserEvent (LabVIEW Manager Function)</h1>
+<p class="Code">MgErr PostLVUserEvent(LVUserEventRef ref, void *data);</p>
+<h2>Purpose</h2>
+<p class="Body">Posts the given user event. The event and associated data are queued for all event structures registered for the event.</p>
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>ref</strong></td>
+<td class="Bordered"><span class="Monospace">LVUserEventRef</span></td>
+ <td class="Bordered">Event refnum for the event for which you want to post data.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>data</strong></td>
+ <td class="Bordered"><span class="Monospace">void*</span></td>
+ <td class="Bordered">Address of the data to post. The data must match the type used to create the user event.</td></tr>
+</table>
+<h2>Return Value</h2>
+<p class="Body"><span class="Monospace">MgErr</span>, which can contain the following errors. If you receive errors from <a href="LabVIEW_Manager_Functions.html">LabVIEW Manager functions</a>, most error names correspond to LabVIEW error codes.</p>
+<table class="Bordered">
+<tr><th class="Bordered Left-Align">Value</th>
+<th class="Bordered Left-Align">Corresponding Error Code or Description</th></tr>
+<tr><td class="Bordered"><span class="Monospace">noErr</span></td><td class="Bordered">No error.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">mgArgErr</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">1</a> or not a valid user event.</td></tr>
+</table>
+
+</body>
+</HTML>

@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 3500Edebugginghlp -->
+
+<title>Distributing Custom Error Codes in Text Files</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Distributing Custom Error Codes in Text Files</h1>
+
+<p class="Body">If a VI that you want to distribute as part of a stand-alone application or shared library uses custom <a href="Def_Custom_Error_Text.html">error codes in XML-based text files</a>, you must distribute those files with the application or shared library so the error handling VIs can use them.</p>
+<p class="Body">If you want to include custom error codes, add the error code files to the <strong>Always Included</strong> listbox on the <a href="../lvdialog/Source_Files_Tab.html">Source Files</a> page of the <a href="../lvdialog/Build_App_or_DLL_DB.html">Application Properties</a> dialog box or the <a href="../lvdialog/Source_Files_DLL_Page.html">Source Files</a> page of the <a href="../lvdialog/DLL_Settings_DB.html">Shared Library Properties</a> dialog box.</p>
+<p class="Body">You also can include LabVIEW error codes. From the <a href="../lvdialog/App_Settings_Tab.html">Advanced</a> page of the <strong>Application Properties</strong> dialog box, place a checkmark in the <strong>Copy error code files</strong> checkbox to include LabVIEW error code files in the application. From the <a href="../lvdialog/Advanced_DLL_Page.html">Advanced</a> page of the <strong>Shared Library Properties</strong> dialog box, place a checkmark in the <strong>Copy error code files</strong> checkbox to include LabVIEW error code files in the shared library.</p>
+<p class="Body">If you use the Application Builder to create an installer, you can place a checkmark in the <strong>Install custom error code files</strong> checkbox on the <a href="../lvdialog/Adv_Installer_Settings_DB.html">Advanced</a> page of the <a href="../lvdialog/Installer_Tab_Windows.html">Installer Properties</a> dialog box to include LabVIEW error code files. The installer build includes all error code files from <span class="Monospace">labview\project\errors</span> and <span class="Monospace">labview\user.lib\errors</span> and installs them in the <span class="Monospace">Shared\LabVIEW Run-Time\x.x\errors</span> directory, where <span class="Monospace">x.x</span> is the version of LabVIEW.</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;You must manually create an <span class="Monospace">errors</span> folder in the <span class="Monospace">labview\user.lib</span> directory to organize your error code files.
+</td>
+</tr>
+</table>
+
+
+
+</body>
+</html>

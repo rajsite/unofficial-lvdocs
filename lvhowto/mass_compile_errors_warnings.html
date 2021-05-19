@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+<title>Common Mass Compile Status Messages</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Common Mass Compile Status Messages</h1>
+
+<p>You may receive one or more of the following common mass compile messages under the <strong>Status</strong> tab of the <a href="../lvdialog/Mass_Compile_DB.html">Mass Compile</a> dialog box.</p>
+
+<table class="Borderless">
+<tr><td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If you receive a message not listed in the following table, open the VI listed. If the VI has an error, fix the error in the VI before trying to mass compile again.</td></tr></table>
+
+<table class="Bordered">
+<tr>
+<th class="Bordered">Message</th>
+<th class="Bordered">Description</th>
+</tr>
+<tr>
+<td class="Bordered">&#35;&#35;&#35;<span class="DNL">Bad VI</span>: "<span class="Monospace-Italic">filename of VI</span>" <span class="DNL">Path</span>="<span class="Monospace-Italic">path to VI</span>"</td>
+<td class="Bordered">The specified VI is a non-executable VI that LabVIEW cannot mass compile. Open the VI and check for errors.</td>
+</tr>
+<tr>
+<td class="Bordered"><span class="DNL">Failed to load</span> (<span class="Monospace-Italic">path to VI</span>)</td>
+<td class="Bordered">LabVIEW cannot find the VI in the specified directory or search directories because the VI is not in memory. Find the specified VI and make sure it is not corrupt or does not have errors.</td>
+</tr>
+<tr>
+<td class="Bordered"><span class="DNL">Search failed to find</span> "<span class="Monospace-Italic">filename of VI</span>" <span class="DNL">previously from</span> "<span class="Monospace-Italic">path to VI</span>"</td>
+<td class="Bordered">LabVIEW cannot find the VI in the specified directory or search directories at the specified location. Find the specified item and move it into either a search directory or the expected location.</td>
+</tr>
+<tr>
+<td class="Bordered"><span class="DNL">Could not load</span> (<span class="Monospace-Italic">path to VI</span>) <span class="DNL">because</span> (<span class="Monospace-Italic">path to VI</span>) <span class="DNL">in memory</span></td>
+<td class="Bordered">LabVIEW found the VI in the specified directory but cannot load the VI because a VI of the same name is already loaded in memory. Compare the two items, and confirm that the correct version is in the calling VI.</td>
+</tr>
+<tr>
+<td class="Bordered"><span class="DNL">The</span> <span class="Monospace-Italic">filename of VI</span> <span class="DNL">expected to be at</span> "<span class="Monospace-Italic">path to VI</span>" <span class="DNL">was loaded from</span> "<span class="Monospace-Italic">path to VI</span>"</td>
+<td class="Bordered">The VI was not found at the path specified in the calling VI, so LabVIEW loaded an item with the same name from the search directories. Check that the VI specifies the caller and the directory paths correctly and check that the loaded VI is the same as the caller specified VI. If the VIs are not the same, add the correct subVI to the calling VI.</td>
+</tr>
+<tr>
+<td class="Bordered"><span class="DNL">The project at</span> <span class="Monospace-Italic">path to project</span> <span class="DNL">could not be compiled because it is already open. Close the project, then try compiling again.</span></td>
+<td class="Bordered">LabVIEW cannot compile the project because it is already open. Close the project before you compile.</td>
+</tr>
+<tr>
+<td class="Bordered"><span class="DNL">Skipping project already in memory</span>: <span class="Monospace-Italic">path to project</span></td>
+<td class="Bordered">LabVIEW found a VI with the same path that has already been loaded in memory. As a result, LabVIEW is not mass-compiling the VI.</td>
+</tr>
+<tr>
+<td class="Bordered"><span class="DNL">CompileFile: error</span> <span class="Monospace-Italic">number</span> <span class="DNL">at</span> <span class="Monospace-Italic">path to VI</span></td>
+<td class="Bordered">This error returns a specified <a href="../lverror/Error_Code_Ranges.html">error code</a> that you can search for more information.</td>
+</tr>
+<tr>
+<td class="Bordered"><span class="DNL">CompileFile: skipping</span> <span class="Monospace-Italic">path to VI</span></td>
+<td class="Bordered">LabVIEW cannot not compile the VI for one of a few reasons. The VI could be a template VI or have template controls. The file at the path could have a file type different from what the extension of the path suggests. The VI also might not compile because LabVIEW cannot find or open the VI or the VI is corrupt.</td>
+</tr>
+<tr>
+<td class="Bordered"><span class="DNL">CompileFile: user cancelled at</span> <span class="Monospace-Italic">path to VI</span></td>
+<td class="Bordered">The VI did not compile because you cancelled loading the VI.</td>
+</tr>
+</table>
+
+</body>
+</html>

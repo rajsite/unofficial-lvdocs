@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<!-- Original filename: 4200Estructureshlp.txt -->
+<title>Customizing Conditions for Conditional Disable Structures</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Customizing Conditions for Conditional Disable Structures</h1>
+
+<p class="Body">If you are using a <a href="../lvconcepts/Cond_Diagram_Disable.html#Conditional_Disable_Structure">Conditional Disable</a> structure in a <a href="../lvconcepts/Using_LabVIEW_Projects.html">LabVIEW project</a>, you can define custom conditional disable symbols in LabVIEW. Conditional disable symbols consist of a symbol name and a symbol value. Comparing the symbol name and the symbol value creates a condition that must be TRUE for LabVIEW to compile and execute the subdiagram.</p>
+
+<p class="Body">Complete the following steps to customize conditions by creating conditional disable symbols.</p>
+
+<ol>
+<li>Select <strong>Project&#0187;Properties</strong> to display the <a href="../lvdialog/Project_Properties.html">Project Properties</a> dialog box.</li>
+<li>Select <strong>Conditional Disable Symbols</strong> from the <strong>Category</strong> list to display the <a href="../lvdialog/Conditional_Disable_Project.html">Conditional Disable Symbols</a> page.</li>
+<li>Enter a name for the symbol you want to create in the <strong>New Symbol</strong> text box. You might choose names for the symbols to indicate the function they perform. The name of the symbol is case sensitive.</li>
+<li>Enter the value you want the symbol to represent in the <strong>New Value</strong> text box.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;Values are case-sensitive strings, which means that LabVIEW handles numerical values you enter as strings rather than numbers. For example, if you define the value of a custom symbol as <span class="Monospace">0.0</span> and then configure the condition to <span class="Monospace">0</span> in the <a href="../lvdialog/Configure_Condition_DB.html">Configure Condition</a> dialog box, that condition evaluates to false. 
+</td>
+</tr>
+</table></li>
+<li>Click the <strong>Add</strong> button to add the new symbol to the conditional disable symbols list.</li>
+<li>Click the <strong>OK</strong> button to close the <strong>Conditional Disable Symbols</strong> page. You now can <a href="../lvhowto/Creating_Cond_Disable_Struc.html">use the symbols</a> you just defined in the Conditional Disable structure.</li>
+</ol>
+
+<p class="Body">You also can create conditional disable symbols on a target level in the appropriate <strong>Target Properties</strong> dialog box. For example, if you are using an FPGA target, you can create the conditional disable symbol in the <strong>FPGA Target Properties</strong> dialog box.</p>
+
+<p class="Body">If the same symbol is defined on both a project level and a target level in the same project, the Conditional Disable structure recognizes only the symbol defined for the target.</p>
+
+</body>
+</html>

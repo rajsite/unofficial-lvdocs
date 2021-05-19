@@ -1,0 +1,93 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Echo Detection and Hilbert Transform</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-1846CEF8-CA53-4812-A50D-2C4D67BE5F0C" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Echo Detection and Hilbert Transform</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		Echo detection using Hilbert transforms is a common measurement for the analysis of modulation systems. 
+            	 
+         </p> 
+         	 
+         <p>The following equation describes a time-domain signal. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./workset2Ftemp2FEcho_Detection.xml_d2189e26.png"></span></div>
+         </div> 
+         	 
+         <p>where <em>A</em> is the amplitude, <em>f</em><sub>0</sub> is the natural resonant frequency, and <em>T</em> is the time decay constant. 
+            	 
+         </p> 
+         	 
+         <p>The following equation yields the Hilbert transform of the time-domain signal. 
+            	 
+         </p>
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./workset2Ftemp2FEcho_Detection.xml_d2189e101.png"></span></div>
+         </div> 
+         	 
+         <p>The following equation yields the natural logarithm of the magnitude of the analytic signal <em>x</em><sub><em>A</em></sub>(<em>t</em>). 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./workset2Ftemp2FEcho_Detection.xml_d2189e180.png"></span></div>
+         </div> 
+         	 
+         <p>The result from the previous equation has the form of a line with slope <em>m</em> = -1/&#964;. Therefore, you can extract the time constant of the system by graphing ln|<em>x</em><sub><em>A</em></sub>(<em>t</em>)|. 
+            	 
+         </p> 
+         	 
+         <p>The following figure shows a time-domain signal containing an echo signal. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-1846CEF8-CA53-4812-A50D-2C4D67BE5F0C__IMAGE_6F1A8EE22E96490AA1D663583D227A9B" shape="rect">
+            <!-- --></a><img id="GUID-1846CEF8-CA53-4812-A50D-2C4D67BE5F0C__IMAGE_6F1A8EE22E96490AA1D663583D227A9B" src="GUID-5C2B54D9-D8FB-4355-A1FA-DB77614DDBFD-help-web.png"><br clear="none"> 
+         	 
+         <p>The following conditions make the echo signal difficult to locate in the previous figure: 
+            	 
+         </p> 
+         	 <a name="GUID-1846CEF8-CA53-4812-A50D-2C4D67BE5F0C__UL_AB3B7C1629CF45ADB6B80A46CD9A220F" shape="rect">
+            <!-- --></a><ul id="GUID-1846CEF8-CA53-4812-A50D-2C4D67BE5F0C__UL_AB3B7C1629CF45ADB6B80A46CD9A220F">
+            <li><a name="GUID-1846CEF8-CA53-4812-A50D-2C4D67BE5F0C__LI_F1960373AED04A13922137FF032BAFD0" shape="rect">
+                  <!-- --></a>The time delay between the source and the echo signal is short relative to the time decay constant of the system. 
+               		
+            </li>
+            <li><a name="GUID-1846CEF8-CA53-4812-A50D-2C4D67BE5F0C__LI_7CDF25EF42DC4417B303CB626C488629" shape="rect">
+                  <!-- --></a>The echo amplitude is small compared to the source. 
+               		
+            </li>
+         </ul> 
+         	 
+         <p>You can make the echo signal visible by plotting the magnitude of <em>x</em><sub><em>A</em></sub>(<em>t</em>) on a logarithmic scale, as shown on the following figure. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-1846CEF8-CA53-4812-A50D-2C4D67BE5F0C__IMAGE_2F01C7E958B244A3A29FA6926AE5C6A5" shape="rect">
+            <!-- --></a><img id="GUID-1846CEF8-CA53-4812-A50D-2C4D67BE5F0C__IMAGE_2F01C7E958B244A3A29FA6926AE5C6A5" src="GUID-5A4517C2-3898-4012-8802-A0F54AFA71FC-help-web.png"><br clear="none"> 
+         	 
+         <p>In the previous figure, the discontinuity is plainly visible and indicates the location of the time delay of the echo. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="lvac_hilbert_transform.html" shape="rect">Hilbert Transform</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

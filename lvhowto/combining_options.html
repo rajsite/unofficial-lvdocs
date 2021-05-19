@@ -1,0 +1,81 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+<!-- Unit name: 6000Eviserverhlp -->
+
+<title>Combining Option Flags into a Single Option Value</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Combining Option Flags into a Single Option Value</h1>
+<p class="Body">The <strong>options</strong> input of the <a href="../glang/Open_VI_Reference.html">Open VI Reference</a> function accepts a combination of option flags that each specify a particular characteristic or behavior of the reference output. Each option flag is represented by a unique hexadecimal number. Because the option flags have a numeric representation, you can combine several option flags into one number to specify multiple characteristics for the returned VI reference.</p>
+
+<p>To combine multiple option flags into one value for the <strong>options</strong> input of the Open VI Reference function, create the following block diagram using your desired option flags. Refer to the procedure for details.</p>
+<img src="loc_bd_combining_options.gif"/>
+<p>Complete the following steps to combine multiple option flags into one value for the options input.</p>
+<ol>
+<li>Determine which characteristics you want to assign to the reference output of the Open VI Reference function.
+<table class="Bordered">
+	<tr><td class="Bordered">Option flag</td>
+			<td class="Bordered">Description</td></tr>
+	<tr><td class="Bordered">0x01</td>
+			<td class="Bordered">Record modifications</td></tr>
+	<tr><td class="Bordered">0x02</td>
+			<td class="Bordered">Open templates for editing</td></tr>
+	<tr><td class="Bordered">0x04</td>
+			<td class="Bordered">Prompt user to save changes</td></tr>
+	<tr><td class="Bordered">0x08</td>
+			<td class="Bordered">Prepare for reentrant run</td></tr>
+	<tr><td class="Bordered">0x10</td>
+			<td class="Bordered">Prompt to find missing subVIs</td></tr>
+	<tr><td class="Bordered">0x20</td>
+			<td class="Bordered">Hide loading dialog box</td></tr>
+	<tr><td class="Bordered">0x40</td>
+			<td class="Bordered">Enable simultaneous calls on reentrant VIs</td></tr>
+	<tr><td class="Bordered">0x80</td>
+			<td class="Bordered">Prepare for call-and-forget</td></tr>
+	<tr><td class="Bordered">0x100</td>
+			<td class="Bordered">Prepare for call-and-collect</td></tr>		
+</table>
+Refer to the <a href="../glang/Open_VI_Reference.html#options">complete options table</a> for more details about specific option flags.
+</li>
+<li>Add one <a href="../glang/Numeric_Constant.html">Numeric Constant</a> to the block diagram for each desired characteristic.
+<table class="Borderless"><tr>
+<td><a href="javascript:placeObject(object233);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add to the block diagram.</td>
+<td><a href="javascript:findObject(object233);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find on the palette.</td>
+</tr></table>
+</li>
+<li>Right-click each Numeric Constant and select <strong>Visible Items&#0187;Radix</strong> from the shortcut menu.</li>
+<li>Click the radix and select <strong>Hex</strong> from the shortcut menu.</li>
+<li>Set the value of each Numeric Constant to the option flag that corresponds to a desired characteristic.</li>
+<li>Add a <a href="../glang/Compound_Arithmetic.html">Compound Arithmetic</a> function to the block diagram.
+<table class="Borderless"><tr>
+<td><a href="javascript:placeObject(object94);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add to the block diagram.</td>
+<td><a href="javascript:findObject(object94);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find on the palette.</td>
+</tr></table>
+</li>
+
+<li>Set the arithmetic mode to <strong>OR</strong> by right-clicking the node and selecting <strong>Change Mode&#0187;OR</strong> from the shortcut menu.</li>
+<li>Expand the Compound Arithmetic function to display enough input terminals for each option flag by clicking and dragging one of the resizing handles.</li>
+<li>Wire each Numeric Constant to an input terminal of the Compound Arithmetic function.</li>
+<li>Wire the output of the Compound Arithmetic function to the <strong>options</strong> input of the Open VI Reference function.</li>
+</ol>
+
+
+
+</body>
+</html>

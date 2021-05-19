@@ -1,0 +1,194 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<title>Formula Node and Expression Node Functions</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Formula Node and Expression Node Functions</h1>
+<p class="Body">The following list contains the names of the <a href="../glang/Formula_Node.html">Formula Node</a> and <a href="../gmath/Expression_Node.html">Expression Node</a> functions, and their descriptions. Except for the binary functions, you also can use these functions with the <a href="../gmath/Advanced_Formula_VIs.html">Formula VIs</a> and the <a href="../gmath/Nonlinear_Curve_Fit.html">Nonlinear Curve Fit</a> VI. All function names must be lowercase. You also can use <a href="Precedence_of_Operators_in.html">operators</a> and the <span class="Monospace">pi</span> constant in Formula and Expression Nodes.</p>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;Formula Node and Expression Node functions might not return the same value as functions with the same name in Microsoft Excel, the MATLAB&#0174; software, or other text-based math environments.</td></tr></table>
+
+<!-- begin parent: ../lvconcepts/Formulas_and_Equations.xml -->
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;You can use Formula Node most effectively if you are familiar with the C programming language. <em>LabVIEW Help</em> assumes you are familiar with C and does not contain any topics related to programming in C. Refer to <em>The C Programming Language</em> by Brian W. Kernighan and Dennis M. Ritchie or <em>Teach Yourself C</em> by Herbert Schildt for more information.</td>
+</tr>
+</table><!-- end parent: ../lvconcepts/Formulas_and_Equations.xml -->
+
+<br><br>
+
+<table class="Bordered"><tr><th class="Bordered Left-Align">Function</th>
+<th class="Bordered Left-Align">Corresponding LabVIEW Function</th>
+<th class="Bordered Left-Align">Description</th></tr>
+
+<tr><td class="Bordered">abs(<em>x</em>)</td>
+<td class="Bordered"><a href="../glang/Absolute_Value.html">Absolute Value</a></td>
+<td class="Bordered">Returns the absolute value of <em>x</em>.</td></tr>
+
+<tr><td class="Bordered">acos(<em>x</em>)</td>
+<td class="Bordered"><a href="../glang/Inverse_Cosine.html">Inverse Cosine</a></td> 
+<td class="Bordered">Computes the inverse cosine of <em>x</em> in radians.</td></tr>
+
+<tr><td class="Bordered">acosh(<em>x</em>)</td>
+<td class="Bordered"><a href="../gmath/Inverse_Hyperbolic_Cosine.html">Inverse Hyperbolic Cosine</a></td> 
+<td class="Bordered">Computes the inverse hyperbolic cosine of <em>x</em>.</td></tr>
+
+<tr><td class="Bordered">asin(<em>x</em>)</td>
+<td class="Bordered"><a href="../glang/Inverse_Sine.html">Inverse Sine</a></td> 
+<td class="Bordered">Computes the inverse sine of <em>x</em> in radians.</td></tr>
+
+<tr><td class="Bordered">asinh(<em>x</em>)</td>
+<td class="Bordered"><a href="../gmath/Inverse_Hyperbolic_Sine.html">Inverse Hyperbolic Sine</a></td> 
+<td class="Bordered">Computes the inverse hyperbolic sine of <em>x</em>.</td></tr>
+
+<tr><td class="Bordered">atan(<em>x</em>)</td>
+<td class="Bordered"><a href="../glang/Inverse_Tangent.html">Inverse Tangent</a></td> 
+<td class="Bordered">Computes the inverse tangent of <em>x</em> in radians.</td></tr>
+
+<tr><td class="Bordered">atan2(<em>y</em>,<em>x</em>)</td>
+<td class="Bordered"><a href="../glang/Inverse_Tangent_2_Input.html">Inverse Tangent (2 Input)</a></td> 
+<td class="Bordered">Computes the arctangent of <em>y</em>/<em>x</em> in radians.</td></tr>
+
+<tr><td class="Bordered">atanh(<em>x</em>)</td>
+<td class="Bordered"><a href="../gmath/Inverse_Hyperbolic_Tangent.html">Inverse Hyperbolic Tangent</a></td> 
+<td class="Bordered">Computes the inverse hyperbolic tangent of <em>x</em>.</td></tr>
+
+<tr><td class="Bordered">ceil(<em>x</em>)</td>
+<td class="Bordered"><a href="../glang/Round_To_posInfinity.html">Round Toward +Infinity</a></td> 
+<td class="Bordered">Rounds <em>x</em> to the next higher integer (smallest integer <img src="geq.gif"> <em>x</em>).</td></tr>
+
+<tr><td class="Bordered">cos(<em>x</em>)</td>
+<td class="Bordered"><a href="../glang/Cosine.html">Cosine</a></td> 
+<td class="Bordered">Computes the cosine of <em>x</em>, where <em>x</em> is in radians.</td></tr>
+
+<tr><td class="Bordered">cosh(<em>x</em>)</td>
+<td class="Bordered"><a href="../gmath/Hyperbolic_Cosine.html">Hyperbolic Cosine</a></td> 
+<td class="Bordered">Computes the hyperbolic cosine of <em>x</em>.</td></tr>
+
+<tr><td class="Bordered">cot(<em>x</em>)</td>
+<td class="Bordered"><a href="../glang/Cotangent.html">Cotangent</a></td> 
+<td class="Bordered">Computes the cotangent of <em>x</em> (1/tan(<em>x</em>)), where <em>x</em> is in radians.</td></tr>
+
+<tr><td class="Bordered">csc(<em>x</em>)</td>
+<td class="Bordered"><a href="../glang/Cosecant.html">Cosecant</a></td> 
+<td class="Bordered">Computes the cosecant of <em>x</em> (1/sin(<em>x</em>)), where <em>x</em> is in radians.</td></tr>
+
+<tr><td class="Bordered">exp(<em>x</em>)</td>
+<td class="Bordered"><a href="../glang/Exponential.html">Exponential</a></td> 
+<td class="Bordered">Computes the value of <em>e</em> raised to the <em>x</em> power.</td></tr>
+
+<tr><td class="Bordered">expm1(<em>x</em>)</td>
+<td class="Bordered"><a href="../glang/Exponential_Arg_minus_1.html">Exponential (Arg) &#8211; 1</a></td> 
+<td class="Bordered">Computes one less than the value of <em>e</em> raised to the <em>x</em> power ((<em>e</em>^<em>x</em>) &#8211; 1).</td></tr>
+
+<tr><td class="Bordered">floor(<em>x</em>)</td>
+<td class="Bordered"><a href="../glang/Round_To_negInfinity.html">Round To &#8211;Infinity</a></td> 
+<td class="Bordered">Truncates <em>x</em> to the next lower integer (largest integer <img src="leq.gif"> <em>x</em>).</td></tr>
+
+<tr><td class="Bordered">getexp(<em>x</em>)</td>
+<td class="Bordered"><a href="../glang/Mantissa_and_Exponent.html">Mantissa &amp; Exponent</a> </td>
+<td class="Bordered">Returns the exponent of <em>x</em>.</td></tr>
+
+<tr><td class="Bordered">getman(<em>x</em>)</td>
+<td class="Bordered"><a href="../glang/Mantissa_and_Exponent.html">Mantissa &amp; Exponent</a> </td>
+<td class="Bordered">Returns the mantissa of <em>x</em>.</td></tr>
+
+<tr><td class="Bordered">int(<em>x</em>)</td>
+<td class="Bordered"><a href="../glang/Round_To_Nearest.html">Round To Nearest</a> </td>
+<td class="Bordered">Rounds <em>x</em> to the nearest integer.</td></tr>
+
+<tr><td class="Bordered">intrz(<em>x</em>)</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">Rounds <em>x</em> to the nearest integer between <em>x</em> and zero.</td></tr>
+
+<tr><td class="Bordered">ln(<em>x</em>)</td>
+<td class="Bordered"><a href="../glang/Natural_Logarithm.html">Natural Logarithm</a></td> 
+<td class="Bordered">Computes the natural logarithm of <em>x</em> (to the base of <em>e</em>).</td></tr>
+
+<tr><td class="Bordered">lnp1(<em>x</em>)</td>
+<td class="Bordered"><a href="../glang/Natural_Logarithm_Arg_1.html">Natural Logarithm (Arg +1)</a></td>
+<td class="Bordered">Computes the natural logarithm of (<em>x</em> + 1).</td></tr>
+
+<tr><td class="Bordered">log(<em>x</em>)</td>
+<td class="Bordered"><a href="../glang/Logarithm_Base_10.html">Logarithm Base 10</a></td> 
+<td class="Bordered">Computes the logarithm of <em>x</em> (to the base of 10).</td></tr>
+
+<tr><td class="Bordered">log2(<em>x</em>)</td>
+<td class="Bordered"><a href="../glang/Logarithm_Base_2.html">Logarithm Base 2</a></td> 
+<td class="Bordered">Computes the logarithm of <em>x</em> (to the base of 2).</td></tr>
+
+<tr><td class="Bordered">max(<em>x</em>,<em>y</em>)</td>
+<td class="Bordered"><a href="../glang/Max_and_Min.html">Max &amp; Min</a></td> 
+<td class="Bordered">Compares <em>x</em> and <em>y</em> and returns the larger value.</td></tr>
+
+<tr><td class="Bordered">min(<em>x</em>,<em>y</em>)</td>
+<td class="Bordered"><a href="../glang/Max_and_Min.html">Max &amp; Min</a></td> 
+<td class="Bordered">Compares <em>x</em> and <em>y</em> and returns the smaller value.</td></tr>
+
+<tr><td class="Bordered">mod(<em>x</em>,<em>y</em>)</td>
+<td class="Bordered"><a href="../glang/Quotient_and_Remainder.html">Quotient &amp; Remainder</a></td> 
+<td class="Bordered">Computes the remainder of <em>x</em>/<em>y</em>, when the quotient is rounded toward &#8211;Infinity.</td></tr>
+
+<tr><td class="Bordered">pow(<em>x</em>,<em>y</em>)</td>
+<td class="Bordered"><a href="../glang/Power_Of_X.html">Power of X</a></td> 
+<td class="Bordered">Computes <em>x</em> raised to the <em>y</em> power.</td></tr>
+
+<tr><td class="Bordered">rand( )</td>
+<td class="Bordered"><a href="../glang/Random_Number_0_1.html">Random Number (0 &#8211; 1)</a></td> 
+<td class="Bordered">Produces a floating-point number between 0 and 1 exclusively.</td></tr>
+
+<tr><td class="Bordered">rem(<em>x</em>,<em>y</em>)</td>
+<td class="Bordered"><a href="../glang/Quotient_and_Remainder.html">Quotient &amp; Remainder</a></td> 
+<td class="Bordered">Computes the remainder of <em>x</em>/<em>y</em>, when the quotient is rounded toward &#8211;Infinity.</td></tr>
+
+<tr><td class="Bordered">sec(<em>x</em>)</td>
+<td class="Bordered"><a href="../glang/Secant.html">Secant</a></td> 
+<td class="Bordered">Computes the secant of <em>x</em>, where <em>x</em> is in radians (1/cos(<em>x</em>)).</td></tr>
+
+<tr><td class="Bordered">sign(<em>x</em>)</td>
+<td class="Bordered"><a href="../glang/Sign.html">Sign</a></td> 
+<td class="Bordered">Returns 1 if <em>x</em> is greater than 0, returns 0 if <em>x</em> is equal to 0, and returns &#8211;1 if <em>x</em> is less than 0.</td></tr>
+
+<tr><td class="Bordered">sin(<em>x</em>)</td>
+<td class="Bordered"><a href="../glang/Sine.html">Sine</a></td> 
+<td class="Bordered">Computes the sine of <em>x</em>, where <em>x</em> is in radians.</td></tr>
+
+<tr><td class="Bordered">sinc(<em>x</em>)</td>
+<td class="Bordered"><a href="../glang/Sinc.html">Sinc</a></td> 
+<td class="Bordered">Computes the sine of <em>x</em> divided by <em>x</em> (sin(<em>x</em>)/<em>x</em>), where <em>x</em> is in radians.</td></tr>
+
+<tr><td class="Bordered">sinh(<em>x</em>)</td>
+<td class="Bordered"><a href="../gmath/Hyperbolic_Sine.html">Hyperbolic Sine</a></td> 
+<td class="Bordered">Computes the hyperbolic sine of <em>x</em>.</td></tr>
+
+<tr><td class="Bordered">sizeOfDim(<em>ary</em>,<em>di</em>)</td>
+<td class="Bordered">&#8212;</td> 
+<td class="Bordered">Returns the size of the dimension <em>di</em> specified for the array <em>ary</em>.</td></tr>
+
+<tr><td class="Bordered">sqrt(<em>x</em>)</td>
+<td class="Bordered"><a href="../glang/Square_Root.html">Square Root</a></td> 
+<td class="Bordered">Computes the square root of <em>x</em>.</td></tr>
+
+<tr><td class="Bordered">tan(<em>x</em>)</td>
+<td class="Bordered"><a href="../glang/Tangent.html">Tangent</a></td> 
+<td class="Bordered">Computes the tangent of <em>x</em>, where <em>x</em> is in radians.</td></tr>
+
+<tr><td class="Bordered">tanh(<em>x</em>)</td>
+<td class="Bordered"><a href="../gmath/Hyperbolic_Tangent.html">Hyperbolic Tangent</a></td> 
+<td class="Bordered">Computes the hyperbolic tangent of <em>x</em>.</td></tr></table>
+
+
+
+</body>
+</html>

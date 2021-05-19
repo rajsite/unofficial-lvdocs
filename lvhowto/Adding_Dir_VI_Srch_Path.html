@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+
+<title>Adding a Directory to VI Search Path</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Adding a Directory to VI Search Path
+</h1>
+<p class="Body">LabVIEW first searches for a VI in memory. If the VI is in memory, LabVIEW opens that version. If the VI is not in memory, LabVIEW uses the VI search path to locate the VI. If LabVIEW cannot find the VI, you can select a VI of any name from the file dialog box. LabVIEW replaces all instances of the missing VI with the VI that you select. If you want to open a different version of a VI already in memory, the versions must have different names.
+</p>
+<p class="Body">Complete the following steps to add a new directory to the VI search path.
+</p>
+<ol>
+
+<li>Select <strong>Tools&#0187;Options</strong> to display the <a href="../lvdialog/Options_Dialog_Box.html">Options</a> dialog box.
+</li>
+<li>Select <a href="../lvdialog/Path_Options.html">Paths</a> from the <strong>Category</strong> list.
+</li>
+<li>Select <strong>VI Search Path</strong> from the <strong>Path Chooser</strong> pull-down menu.
+</li>
+<li>Remove the checkmark from the <strong>Use default</strong> checkbox.
+</li>
+<li>Use the <strong>Browse</strong> button, which displays a file dialog box, or the pull-down menu to the right of the <strong>Browse</strong> button, which contains a list of paths, to navigate to the directory that the LabVIEW development environment searches.
+</li>
+<li>Click the <strong>Select Folder</strong> button to select the directory.</li>
+<li>After you select the directory, LabVIEW inserts the path in the text box to the right of the <strong>Browse</strong> button. You can edit the path in this text box. When you select a path, LabVIEW normally searches that directory but not its subdirectories. You can make the search hierarchical by appending an asterisk (*) to the new path item. For example, enter <span class="Monospace">LabVIEW/*</span>, <span class="Monospace">LabVIEW\*</span>, or <span class="Monospace">LabVIEW:*</span> to search <span class="Monospace">LabVIEW</span> and its subdirectories.
+</li>
+<li>Use the <strong>Insert Before</strong>, <strong>Insert After</strong>, or <strong>Replace</strong> buttons to add and move directories in the <strong>Path List</strong>. Click the <strong>Remove</strong> button to place the removed path in the text box in case you decide to re-insert it elsewhere in the list.
+</li>
+<li>Click the <strong>OK</strong> button when you finish adding a new directory to the search path. Changes to the VI search path take effect when you restart LabVIEW.
+</li>
+</ol>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4210Eeventshlp -->
+
+<title>Prompting Users with Dialog Boxes in a Mouse Down? Event Case</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Prompting Users with Dialog Boxes in a Mouse Down? Event Case
+</h1>
+<p class="Body">Event cases that prompt users with a dialog box can cause unexpected behavior in the VI. For example, if you use a <a href="../lvprop/Ctrl_Mouse_DownQ.html">Mouse Down?</a> event with a numeric control and configure the event case to prompt you with a dialog box, the Event structure responds when you click the numeric control, including the increment or decrement arrows, and displays a dialog box. Because the dialog box appears while you still have the mouse button depressed, the dialog box retains focus when you release the mouse button, and the numeric control never receives notification of the change in the state of the mouse button because the dialog box receives the notification instead. After you close the dialog box, the numeric control resumes responding to the previous Mouse Down? event and can continue to increment or decrement the control indefinitely, even though you are no longer pressing the mouse button.
+</p>
+<p class="Body">To avoid this problem, National Instruments recommends that you do not use dialog boxes inside event cases that handle the Mouse Down? event. Instead, invoke the dialog box inside the Mouse Up event case or outside the Event structure.
+</p>
+
+
+
+</body>
+</html>

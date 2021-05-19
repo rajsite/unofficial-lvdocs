@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Synchronizing Time for Networked Computers</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Synchronizing Time for Networked Computers</h1>
+
+<p class="Body">Complete the following steps to set time synchronization.</p>
+<ol>
+<li>Select <strong>View&#0187;Configure Time Servers</strong> to display the <a href="conf_tmsvr.html">Shared Variable Engine Time Server Configuration</a> dialog box.</li>
+<li>Notice the <strong>Time server search order</strong> list. Any computer that is running the time synchronization service can serve as a time server or a time client. The primary time server is the first computer listed in the <strong>Time Server Search Order</strong> list. If no computer is set as a primary time server, the computer synchronizes to itself.</li>
+<li>To add a computer to the <strong>Time server search order</strong> list, click the <strong>Add</strong> button to display the <a href="select_comp_DB.html">Select Computer</a> dialog box.</li> 
+<li>If you know the name of the computer you want to add, you can type the name into the <strong>Host</strong> text box. If you do not know the exact name of the computer, you can browse for the computer using the network tree in the <strong>Machines</strong> list.<br><br>
+To remove a computer from the <strong>Time server search order</strong> list, select the computer name and click the <strong>Remove</strong> button.</li>
+<li>To change the order in which computers search for a time synchronization server, select the computer name and click the <strong>Up</strong> or <strong>Down</strong> button.</li>
+<li>Use <strong>Sleep time (seconds)</strong> to set how long each computer waits between each synchronization. Set the primary time synchronization server sleep time to 60 seconds.<br><br>
+If the primary server is off-line for some reason, a computer scheduled to synchronize automatically seeks out the second computer on the synchronization server list. At the time of the next synchronization, the computer first looks for the primary server before seeking a secondary synchronization server.</li>
+
+<li>Click the <strong>OK</strong> button.</li>
+<li>Repeat steps 4 through 7 for all computers on the network that you want to synchronize to make sure that the order of search for time servers is the same for all the computers, including the primary time synchronization server.
+</li>
+</ol>
+
+</body>
+</html>

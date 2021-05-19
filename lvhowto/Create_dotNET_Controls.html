@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Creating .NET Controls in a .NET Container</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Creating .NET Controls in a .NET Container</h1>
+
+<p class="Body">Complete the following steps to create a .NET control in a .NET container.</p>
+
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;
+<!--start parent  = ../lvconcepts/Using__NET_with_LabVIEW.html  tag="project_note"-->
+Creating and communicating with .NET objects in LabVIEW requires the <a href="../lvconcepts/net_defaults.html#compatible">.NET CLR 4.0</a> that installs with LabVIEW. You must use a <a href="../lvhowto/configuring_clr_version.html">.NET 2.0 configuration file</a> if you want to load .NET 2.0 mixed-mode assemblies. Refer to the <a href="../lvconcepts/net_defaults.html">requirements for using .NET with LabVIEW</a> for more information about .NET restrictions in LabVIEW. 
+<br>
+<br>National Instruments strongly recommends that you use .NET objects only in <a href="../lvconcepts/Using_LabVIEW_Projects.html">LabVIEW projects</a>.
+<!--end parent  = ../lvconcepts/Using__NET_with_LabVIEW.html  tag="project_note"-->
+</td></tr></table>
+<ol>
+<li>Add a .NET container to the front panel window.
+<br>
+<br>
+<SPAN title=" Add to the front panel window "><a href="javascript:placeObjectFP(control47);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Add</SPAN>  <SPAN title=" Find on the palette "><a href="javascript:findObjectFP(control47);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Find</SPAN><br><br></li>
+<li>Right-click the front panel window .NET container and select <strong>Insert .NET Control</strong> from the shortcut menu to display the <a href="../lvdialog/Select_dotNET_Control_DB.html">Select .NET Control</a> dialog box.</li>
+<li><!--begin_child id = Creating_dotNET_Subpalette.html tag="select_assembly"--><!--begin_child id = ../lvhowto/Create_NET_Object.html tag="select_assembly"-->Select an assembly from the <strong>Assembly</strong> pull-down menu. You also can click the <strong>Browse</strong> button to access private assemblies. .NET assemblies are <span class="Monospace">.dll</span> file types. After you select a private assembly, the assembly appears in the <strong>Assembly</strong> pull-down menu the next time you launch this dialog box.<!--end_child id = Creating_dotNET_Subpalette.html tag="select_assembly"--><!--end_child id = ../lvhowto/Create_NET_Object.html tag="select_assembly"--></li>
+</ol>
+
+<!--begin_child id = ../lvhowto/Creating_dotNET_Subpalette.html tag="private_assembly_note"--><!--begin_child id = ../lvhowto/Create_NET_Object.html tag="private_assembly_note"-->
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;If you move a VI that uses a private assembly to a different folder or machine, you either must move the associated private .NET assembly files to <a href="../lvconcepts/Using__NET_with_LabVIEW.html">a subdirectory that LabVIEW can search</a>, or you must save the files in the Global Assembly Cache (GAC). If you build a VI that uses a private assembly into a shared library or stand-alone application, LabVIEW copies the associated private .NET assembly files to the <span class="Monospace">data</span> subdirectory in the same directory as the library or application.</td></tr></table><!--end_child id = ../lvhowto/Creating_dotNET_Subpalette.html tag="private_assembly_note"--><!--end_child id = ../lvhowto/Create_NET_Object.html tag="private_assembly_note"-->
+
+<ol start="4">
+<li>Select a .NET control from the <strong>Controls</strong> list and click the <strong>OK</strong> button. The .NET control appears in the front panel window .NET container.</li>
+<li><!--begin_child id = beta tag="manipulate"--><!--begin_child id = upnote tag="manipulate"-->On the block diagram, wire the .NET control to a <a href="../glang/Property_Node.html">Property Node</a>, <a href="../glang/Invoke_Node.html">Invoke Node</a>, or <a href="../lvcomm/Reg_Event_CallBack.html">Register Event Callback</a> node to set properties, invoke methods, or handle events for the control.<!--end_child id = beta tag="manipulate"--><!--end_child id = upnote tag="manipulate"--></li>
+</ol>
+
+<p class="Body">Do not use the <a href="../glang/Close_LV_Object_Reference.html">Close Reference</a> function to close the reference to a .NET control. By leaving the reference open, you ensure that the control displays correctly until you close the VI. LabVIEW automatically closes the reference when you close the VI. This recommendation differs from how you manage a reference to a <a href="../lvhowto/Create_NET_Object.html">block diagram .NET object</a>.</p>
+
+<!--start parent: ../lvcomm/Constructor_Node.html-->
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="tip.gif" alt="Tip"></td>
+<td><strong>Tip</strong>&nbsp;&nbsp;If you encounter problems loading a particular assembly or accessing objects in an assembly, <a href="../lvhowto/debugging_assembly_calls.html">debug the assembly call</a> or use the <a href="../lvdialog/assemblies_in_memory.html">.NET Assemblies in Memory</a> dialog box to verify that the correct version of the assembly is in memory.</td>
+</tr>
+</table>
+<!--end parent: ../lvcomm/Constructor_Node.html-->
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;<!--begin parent  = ../lvconcepts/Using__NET_with_LabVIEW.html  tag="execution_system"-->.NET controls automatically use the <a href="../lvconcepts/Multitasking_in_LabVIEW.html#Using_Execution_Systems_in_Multithreaded_Applications">user interface execution system</a>.<!--end parent  = ../lvconcepts/Using__NET_with_LabVIEW.html  tag="execution_system"--></td></tr></table>
+
+<p class="Body">You also can <a href="../lvhowto/Creating_dotNET_Subpalette.html">add .NET controls to the Controls palette</a> for later use.</p>
+
+
+
+</body>
+</html>

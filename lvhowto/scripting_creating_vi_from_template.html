@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<link rel="STYLESHEET" type="text/css" href="expandable_tree.css"><script src="common.js" type="text/javascript"></script><script src="dynamicjumps.js" type="text/javascript"></script><script src="expandable_tree.js" type="text/javascript"></script><title>Creating a New VI from a Template Using VI Scripting</title>
+</head>
+<body>
+<h1>Creating a New VI from a Template Using VI Scripting</h1>
+<p><strong>Requires:</strong> <a href="enabling_vi_scripting.html">VI Scripting</a></p>
+<p>Although you can programmatically create complex VIs one object at a time by using the <a href="../glang/New_VI_Object.html">New VI Object</a> function and the <a href="../lvscript/Terminal_Connect_Wire.html">Terminal:Connect Wire</a> method, that approach requires complex and expansive scripting code that is time-consuming to write and difficult to read. It is often easier to write a template VI that closely approximates the VI you want to create. You then can use VI Scripting to create a copy of the template VI and edit small parts of the copied code to achieve your scripting goals.</p>
+<p class="Body"></p>
+
+<a name="whatYouNeed"></a><h2>What to Use</h2>
+<p>This VI Scripting task requires the following objects:</p>
+<table class="Usage">
+	<col class="Object"/>
+	<col class="Spacer"/>
+	<col class="Object"/>
+	<tr><td><a href="../glang/New_VI.html">New VI</a></td>
+		<td></td>
+		<td><a href="../glang/Close_LV_Object_Reference.html">Close Reference</a></td>
+	</tr>
+	<tr>
+		<td><img src="noloc_bd_new_vi.gif"></td>
+		<td></td>
+		<td><img src="noloc_bd_CloseReference.gif"></td>
+	</tr>
+	<tr>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object4907);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN></td><td> 
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object4907);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td><td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object709);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object709);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+	</tr>
+</table>
+
+
+
+	
+<a name="how"></a><h2>What to Do</h2>
+
+<p><strong>Before you start:</strong> Open the Creating New VI From Template VI in the <span class="Monospace">labview\examples\Application Control\VI Scripting\Creating VIs</span> directory for an example that illustrates each step of the following procedure.</p>
+<a href="javascript:openVI('examples%5C%5CApplication%20Control%5C%5CVI%20Scripting%5C%5CCreating%20VIs%5C%5CCreating%20New%20VI%20From%20Template.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open Example
+<p>Expand the procedure for more information about this specific example.</p>
+
+
+<input type="button" onclick="openAll()" value="Expand All"><input type="button" onclick="closeAll()" value="Collapse All">
+
+
+<ol>
+	<li>Design a template VI that approximates the form of the desired target VI as closely as possible.
+		<p>Include the following components in the template design:</p>
+		<ul>
+			<li>All objects that you do not want to create programmatically one at a time</li>
+			<li>All connections that you do not want to create programmatically from scratch</li>
+			<li>Placeholder objects for objects that you want to specify at run time. Placeholder objects allow you data to wire the terminals of the placeholder in the template rather than programmatically creating those connections from scratch in the scripting VI.</li>
+			<li>Visible labels on all objects that you want to be able to locate or modify with the scripting VI</li>
+			<!--<li>Labelled landmark objects from which you can navigate to objects that you cannot label</li>-->
+		</ul>
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the template illustrates a design that includes an array input, a numeric output, a Placeholder subVI, and the wiring required to connect these objects required. At run time, a scripting VI can replace the Placeholder subVI with a subVI that performs the user-specified computation.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;The placeholder subVI purposely has an identical connector pane pattern to both of the possible replacement subVIs. Matching connector pane patterns enables the scripting VI to easily replace the placeholder subVI without rewiring its terminals. If the placeholder object in a template VI has a different connector pane than the replacement object, LabVIEW might not wire data to the replacement object as desired.</td>
+</tr>
+</table>
+</div>
+	</li>
+	<li>Use a <a href="../glang/New_VI.html">New VI</a> function to create a copy of the template VI by wiring the path to the template VI to the function.
+		<p>You can use a path control, a path constant, or the <a href="../lvprop/VI_VI_Path.html">VI:VI Path</a> property of a reference to your template VI to specify the path of the template VI.</p>
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the VI:VI Path property provides the path to the template VI.</p></div>
+	</li>
+	<li><a href="scripting_obtaining_object_references.html">Obtain references to the objects that you want to modify</a> in the template VI. The most common way to obtain a reference to an object in a template VI is to use the <a href="../glang/Open_VI_Object_Reference.html">Open VI Object Reference</a> function.
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the scripting VI must replace the Placeholder subVI with a subVI that performs the operation that the user of the scripting VI specifies at run time. Because the Placeholder subVI has a unique label, the Open VI Object Reference function can obtain a reference to that subVI.</p></div>
+	</li>
+	<li>Inspect or modify the referenced objects to achieve your scripting goal.
+		<p>Refer to the <a href="../lvhowto/scripting_quick_reference.html">list of common scripting tasks</a> for more information about ways to edit a VI using VI Scripting.</p>
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the scripting VI uses the <a href="../lvscript/GObject_Replace.html">Replace</a> method to replace the Placeholder subVI with a subVI capable of performing the user-specified computation task. Based on the value of the <strong>Operation</strong> radio button at run time, a Case structure selects whether to replace the placeholder subVI with an addition subVI or a multiplication subVI.</p></div>
+	</li>
+	<li>Use the <a href="../glang/Close_LV_Object_Reference.html">Close Reference</a> function to close each open object reference when you are finished using it.
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the scripting VI closes the reference to the replacement subVI as well as the reference to the target VI. However, the scripting VI does not close the reference to the original placeholder subVI because the Replace method invalidates that reference.</p></div>
+	</li>
+</ol>
+
+<a name="bestpractices"></a><h2>Caveats and Recommendations</h2>
+<ul>
+	<li><strong>Create an intermediate subVI that gathers and returns the desired references</strong>&#8212;For VI scripting applications that make many modifications to a template, you can clarify your code by separating the code that gathers references into a subVI. To create a separate subVI that returns the references you want to modify, perform steps 2-4 in a new subVI rather than in your top-level scripting VI. Then the top-level scripting VI can call the new subVI and make modifications with the returned references.</li>
+<!--	<li><strong>Specify the path to the template with the VI:VI Path property.</strong> ???same for replace?</li>-->
+	<li><strong>Close all references that you open</strong>&#8212;An excessive number of open references negatively impacts the performance of a VI.  Read about <a href="../lvhowto/scripting_closing_references.html">closing VI and object references</a> for more performance details.</li>
+</ul>
+
+<a name="examples"></a><h2>Additional Examples</h2>
+<p class="Body">Refer to the Creating New VI From Scratch VI in the <span class="Monospace">labview\examples\Application Control\VI Scripting\Creating VIs</span> directory for an example of creating a new VI one object at a time. Notice the complexity of this example and the number of references required to complete the task without using a template.</p>
+<p class="Body"><a href="javascript:openVI('examples%5C%5CApplication%20Control%5C%5CVI%20Scripting%5C%5CCreating%20VIs%5C%5CCreating%20New%20VI%20From%20Scratch.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(1443);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</p>
+
+
+
+</body>
+</html>
+

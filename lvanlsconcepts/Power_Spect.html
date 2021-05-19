@@ -1,0 +1,90 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Power Spectrum</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-697233F3-4BC2-449F-8B13-EBEFDA8565A8" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Power Spectrum</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 The discrete Fourier transform (DFT) or fast Fourier transform (FFT) of a real signal is a complex number, having a real
+            and an imaginary part. You can obtain the power in each frequency component represented by the DFT or FFT by squaring the
+            magnitude of that frequency component. Thus, the power in the <em>k</em>th frequency component—that is, the <em>k</em>th element of the DFT or FFT—is given by the following equation. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./US2Fworkset2Ftemp2FPower_Spect.xml_d5821e26.png"></span></div>
+         </div> 
+         	 
+         <p>where |<em>X</em>[<em>k</em>]| is the magnitude of the frequency component. 
+            	 
+         </p> 
+         	 
+         <p>The power spectrum returns an array that contains the two-sided power spectrum of a time-domain signal and that shows the
+            power in each of the frequency components. You can use the following equation to compute the two-sided power spectrum from
+            the FFT. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./US2Fworkset2Ftemp2FPower_Spect.xml_d5821e66.png"></span></div>
+         </div> 
+         	 
+         <p>where FFT*(A) denotes the complex conjugate of FFT(A). The complex conjugate of FFT(A) results from negating the imaginary
+            part of FFT(A). 
+            	 
+         </p> 
+         	 
+         <p>The values of the elements in the power spectrum array are proportional to the magnitude squared of each frequency component
+            making up the time-domain signal. Because the DFT or FFT of a real signal is symmetric, the power at a positive frequency
+            of <em>k</em> &#916;<em>f</em> is the same as the power at the corresponding negative frequency of -<em>k</em> &#916;<em>f</em>, excluding DC and Nyquist components. The total power in the DC component is |<em>X</em>[0]|<sup>2</sup>. The total power in the Nyquist component is |<em>X</em>[<em>N</em>/2]|<sup>2</sup>. 
+            	 
+         </p> 
+         	 
+         <p>A plot of the two-sided power spectrum shows negative and positive frequency components at a height given by the following
+            relationship: 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./US2Fworkset2Ftemp2FPower_Spect.xml_d5821e158.png"></span></div>
+         </div> 
+         	 
+         <p>where <em>a</em><sub><em>k</em></sub> is the peak amplitude of the sinusoidal component at frequency <em>k</em>. The DC component has a height of <em>A</em><sub>0</sub><sup>2</sup> where <em>A</em><sub>0</sub> is the amplitude of the DC component in the signal. 
+            	 
+         </p> 
+         	 
+         <p>The following figure shows the power spectrum result from a time-domain signal that consists of a 3 V<sub>rms</sub> sine wave at 128 Hz, a 3 V<sub>rms</sub> sine wave at 256 Hz, and a DC component of 2 VDC. A 3 V<sub>rms</sub> sine wave has a peak voltage of <span class="mathml-inline"><span><img src="./US2Fworkset2Ftemp2FPower_Spect.xml_d5821e217.png"></span></span> or about 4.2426 V. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-697233F3-4BC2-449F-8B13-EBEFDA8565A8__IMAGE_761A6393383D43E893F177C90569781C" shape="rect">
+            <!-- --></a><div class="imageleft"><img id="GUID-697233F3-4BC2-449F-8B13-EBEFDA8565A8__IMAGE_761A6393383D43E893F177C90569781C" src="GUID-F1B1B40A-E795-4A64-94A3-5D0E3EB7D2FE-help-web.png"></div><br clear="none"> 
+         	 
+         <div class="p"> The power spectrum is computed from the basic FFT function, as defined by the equation 
+            <div class="fignone">
+               <div class="mathml-block"><span><img src="./US2Fworkset2Ftemp2FPower_Spect.xml_d5821e236.png"></span></div>
+            </div> 
+            	 
+         </div> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="FrequencyAnalysis.html" shape="rect">Frequency Analysis</a></div>
+         </div>
+         <div class="relinfo relconcepts"><strong>Related concepts</strong><br clear="none"><div><a href="FFT_Fundamentals.html" shape="rect">FFT Fundamentals</a></div>
+            <div><a href="Discrete_Fourier_Transform.html" shape="rect">Discrete Fourier Transform (DFT)</a></div>
+            <div><a href="lvac_Magnitude_and_Phase_Information.html" shape="rect">Magnitude and Phase Information</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

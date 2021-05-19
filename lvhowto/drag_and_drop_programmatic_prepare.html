@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Step 2: Prepare the VI to Detect When the User Causes Drag-and-Drop Events to Occur</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Step 2: Prepare the VI to Detect When the User Causes Drag-and-Drop Events to Occur</h1>
+<p class="Body">When the user tries to drag and drop data between controls, he or she causes particular events to occur. To allow the user to successfully copy or move data from the drag source to the drop target, you must configure the relevant events to interpret user actions as drag-and-drop behavior.</p>
+<h2>What to Use</h2>
+<p class="Body">Use the following block diagram objects to prepare the VI to detect when the user causes drag-and-drop events to occur:</p>
+<table class="Usage">
+	<col class="Object"> 
+	<col class="Spacer"> 
+	<col class="Object"> 
+	<col class="Spacer">
+	<col class="Object"> 
+		<tr>
+			<td><a href="../glang/Event_Structure.html">Event Structure</a></td>
+			<td></td>
+			<td><a href="../glang/While_Loop.html">While Loop</a></td>
+			<td></td>
+			<td><a href="../lvconcepts/shift_registers_concepts.html">Shift Registers</a></td>
+		</tr>
+		<tr>
+			<td><img src="loc_bd_eventstructure.gif"></td>
+			<td></td>
+			<td><img src="noloc_bd_whileloop.gif"></td>
+			<td></td>
+			<td><br><br><br><br><br><img src="noloc_bd_shiftregs.gif"></td>
+		</tr>
+		<tr>
+			<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object1217);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object1217);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+			</td>
+			<td></td>
+			<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object762);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object762);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+			</td>
+			<td></td>
+			<td><a href="Creating_Shift_Registers.html">Create</a></td>
+		</tr>
+	</table>
+	<h2>What to Do</h2>
+<p class="Body">Create the following block diagram to prepare the VI to detect when the user causes drag-and-drop events to occur.</p>
+<img src="loc_bd_dragdropprepare.gif">
+<p class="Body">The following list describes important details about the previous block diagram:</p>
+<table>
+	<tr>
+		<td><img src="noloc_eps_callout_1.gif"></td>
+		<td>Use the Event structure to detect when events relevant to the drag-and-drop operation occur. <a href="CfgEvents.html">Add the following events</a> to the Event structure:
+			<ul>
+				<li>"Drag Source": <a href="../lvprop/Control_Mouse_Down.html">Mouse Down</a>&#8212;Detects when the cursor is within the bounds of the drag source and the user presses the mouse button.</li>
+				<li>"Pane": <a href="../lvprop/Pane_Mouse_Up.html">Mouse Up</a>&#8212;Detects when the user releases the mouse button within the bounds of the pane.</li>
+				<li>"Drag Source": <a href="../lvprop/Ctrl_Mouse_Leave.html">Mouse Leave</a>&#8212;Detects when the user moves the cursor outside the bounds of the drag source.</li>
+				<li>"Drop Target": <a href="../lvprop/Control_Drag_Enter.html">Drag Enter</a>&#8212;Detects when the user moves the cursor within the bounds of the drop target.</li>
+				<li>"Drop Target": <a href="../lvprop/Control_Drop.html">Drop</a>&#8212;Detects when the user releases the mouse button within the bounds of the drop target.</li>
+			</ul>
+	<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;The controls in the events above are labeled <span class="Monospace">Drag Source</span> and <span class="Monospace">Drop Target</span>. To implement drag-and-drop behavior, set the desired drag source to be the event source for the Mouse Down and Mouse Leave events, and set the desired drop target to be the event source for the Drag Enter and Drop events.</td>
+</tr>
+</table>
+	</td></tr>
+<tr>
+		<td><img src="noloc_eps_callout_2.gif"></td>
+		<td>The shift register tracks whether to start the drag-and-drop operation when the mouse leaves the bounds of the drag source. The Mouse Down event provides a TRUE value to the shift register, which allows the drag source to provide the drag data during the Mouse Leave event only if the Mouse Down event occurred.</td>
+	</tr>
+</table>
+
+<p class="Body">After you prepare the VI to detect when the user causes drag-and-drop events to occur, <a href="drag_and_drop_programmatic_detect.html">detect when the user aborts a drag-and-drop operation</a>.</p>
+
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<link rel="STYLESHEET" type="text/css" href="expandable_tree.css"><script src="common.js" type="text/javascript"></script><script src="dynamicjumps.js" type="text/javascript"></script><script src="expandable_tree.js" type="text/javascript"></script><title>Obtaining References to Objects in a Known Target VI Using VI Scripting</title>
+</head>
+<body>
+<h1>Obtaining References to Objects in a Known Target VI Using VI Scripting</h1>
+<p><strong>Requires:</strong> <a href="enabling_vi_scripting.html">VI Scripting</a></p>
+<p>When you create a new VI from a template, you usually want to make small modifications to the code that LabVIEW copied from the template into the new VI. To make these modifications, you must obtain references to the objects in the new VI that you want to inspect or modify. After you obtain these object references, you can wire them to <a href="../glang/Property_Node.html">Property Nodes</a> or <a href="../glang/Invoke_Node.html">Invoke Nodes</a> to get or set information about the referenced objects. The easiest way to obtain references to objects in the new VI is to use the Open VI Object Reference function. However, to use this function, the desired objects in the new VI must have unique labels. If the desired objects do not have unique labels, you must use a different, more complex procedure to <a href="../lvhowto/scripting_obtaining_unknown_references.html">obtain references for these unlabeled or unknown objects</a>.</p>
+<p class="Body"></p>
+
+<a name="whatYouNeed"></a><h2>What to Use</h2>
+<p>This VI Scripting task requires the following objects:</p>
+<table class="Usage">
+	<col class="Object"/>
+	<col class="Spacer"/>
+	<col class="Object"/>
+	<col class="Spacer"/>
+	<col class="Object"/>
+	<tr><td><a href="../glang/Open_VI_Object_Reference.html">Open VI Object Reference</a></td>
+		<td></td>
+		<td><a href="../glang/Class_Specifier_Constant.html">Class Specifier Constant</a></td>
+		<td></td>
+		<td><a href="../glang/Close_LV_Object_Reference.html">Close Reference</a></td>
+	</tr>
+	<tr><td><img src="noloc_bd_OpenVIObjectReference.gif"></td>
+		<td></td>
+		<td><img src="loc_bd_ClassSpecifierConstant.gif"></td>
+		<td></td>
+		<td><img src="noloc_bd_CloseReference.gif"></td>
+	</tr>
+	<tr>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object4909);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN></td><td> 
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object4909);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object749);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN></td><td> 
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object749);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object709);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN></td><td> 
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object709);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+	</tr>
+</table>
+
+
+<a name="how"></a><h2>What to Do</h2>
+
+<p><strong>Before you start: </strong>Open the Obtaining Known Object Reference VI in the <span class="Monospace">labview\examples\Application Control\VI Scripting\Finding and Modifying Objects</span> directory for an example that illustrates each step of the following procedure.</p>
+<a href="javascript:openVI('examples%5C%5CApplication%20Control%5C%5CVI%20Scripting%5C%5CFinding%20and%20Modifying%20Objects%5C%5CObtaining%20Known%20Object%20Reference.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open Example
+<p>Expand the procedure for more information about this specific example.</p>
+
+
+<input type="button" onclick="openAll()" value="Expand All"><input type="button" onclick="closeAll()" value="Collapse All">
+
+<ol><li><a href="../lvhowto/scripting_obtaining_vi_reference.html">Obtain a reference to the target VI</a> that contains the object with which you want to interact.</li>
+	<li><p>Determine the identifying information of the object whose reference you want to obtain.</p>
+		<ol><li>Class type&#8212;Every front panel or block diagram object that you can use with VI Scripting is a member of a <a href="../lvprop/propmeth_class_hierarchy.html">VI Server class</a>, so the reference for a given object is of a corresponding class. Refer to the <a href="../lvconcepts/anatomy.html">anatomies of VIs</a> to determine the class name of the object you want to access. Use the <a href="../glang/Class_Specifier_Constant.html">Class Specifier Constant</a> to indicate the class of object for the Open VI Object Reference function. 
+
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the <strong>Edit Me</strong> control is a member of the Numeric class.</p></div></li>
+			<li>Owner&#8212;<!-- Begin parent: ../lvhowto/scripting_adding_objects.html-->Every object on both the front panel and the block diagram has an owner. In the simplest case, the owner of an object is either the front panel or the block diagram of a VI. However, if an object resides within a substructure such as a loop, a Case structure, a sequence structure, or a cluster, that substructure owns the object.<!-- End parent: ../lvhowto/scripting_adding_objects.html-->  
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the <strong>Edit Me</strong> control resides on the front panel of the target VI, so the front panel of the target VI owns the control. Thus, the scripting VI uses the <a href="../lvprop/VI_FP.html">VI:Front Panel</a> property to obtain the reference to the front panel of the target VI.</p>
+			<table class="Borderless">
+			<tr>
+				<td class="Icon"><img src="note.gif"></td>
+				<td><strong>Note</strong> The Control and ControlTerminal classes are often confused. A ControlTerminal object is the block diagram representation for the corresponding front panel Control object. Thus, the front panel of the target VI owns the <strong>Edit Me</strong> Control object, and the block diagram of the target VI owns the associated <strong>Edit Me</strong> ControlTerminal object. You can change the numeric representation of a Control object but not of a ControlTerminal object.</td>
+			</tr>
+			</table></div></li>
+			<li>Label&#8212;This is the name assigned to the desired object in the target VI.  
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the label of the control to change is <strong>Edit Me</strong>.</p></div></li></ol>
+	</li>
+	<li>Use an <a href="../glang/Open_VI_Object_Reference.html">Open VI Object Reference</a> function to obtain a reference to the desired object by wiring the identifying information from step 2 to the function.
+</li>
+	<li>Get or set information about the referenced object by wiring the <strong>object refnum</strong> output of the Open VI Object Reference function to a <a href="../glang/Property_Node.html">Property Node</a> or an <a href="../glang/Invoke_Node.html">Invoke Node</a>.
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the scripting VI uses the <a href="../lvscript/Numeric_Representation.html">Numeric:Representation</a> property to set the numeric representation of the <strong>Edit Me</strong> control.</p></div></li>
+	<li>Use the <a href="../glang/Close_LV_Object_Reference.html">Close Reference</a> function to close each open object reference when you are finished using it.
+</li>
+</ol>
+
+<a name="special_circumstances"></a><h2>Caveats and Recommendations</h2>
+<ul><li><strong>Display block diagram labels at least once</strong>&#8212;The Open VI Object Reference function cannot locate objects whose labels have never been displayed. Because block diagram objects do not display a label by default, you must manually display the label for any block diagram object that you intend to find using the Open VI Object Reference function.  To display the label of an object when the label is invisible, right-click the object and select <strong>Visible Items&#0187;Label</strong>. After you display the label at least once, the Open VI Object Reference function can find the associated object even if you make the label invisible again.</li>
+	<li><strong>Create unique labels</strong>&#8212;LabVIEW does not enforce unique labels for objects on the block diagram.  By default, most objects that are members of the same class have the same label. For example, if you add two For Loops to a block diagram, each one has a label of <strong>For Loop</strong>. If you use the Open VI Object Reference function on an object that shares a label with another object, LabVIEW returns a reference to the first object that it finds. Assigning unique labels to each object ensures that LabVIEW returns the desired reference.</li>
+	<li><strong>Close all references that you open</strong>&#8212;An excessive number of open references negatively impacts the performance of a VI.  Read about <a href="../lvhowto/scripting_closing_references.html">closing VI and object references</a> for more performance details.</li></ul>
+
+<a name="examples"></a><h2>Additional Examples</h2>
+<p class="Body">Refer to the Creating New VI From Template VI in the <span class="Monospace">labview\examples\Application Control\VI Scripting\Creating VIs</span> directory for an example of obtaining references in a known VI.</p>
+<p class="Body"><a href="javascript:openVI('examples%5C%5CApplication%20Control%5C%5CVI%20Scripting%5C%5CCreating%20VIs%5C%5CCreating%20New%20VI%20From%20Template.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(1443);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</p>
+
+
+</body>
+</html>

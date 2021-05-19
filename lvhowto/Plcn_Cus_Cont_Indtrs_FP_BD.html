@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+
+<title>Adding Custom Controls and Indicators to Front Panels and Block Diagrams</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<!--begin child: custcont.pdf--><h1>Adding Custom Controls and Indicators to Front Panels and Block Diagrams
+</h1>
+<p class="Body">You can add <a href="../lvconcepts/Custom_Cont_Ind_Type.html">custom controls and indicators</a> to front panels and block diagrams by dragging them from the <a href="../lvconcepts/Custom_Cont_Ind_Type.html#Using_the_Control_Editor_Window">Control Editor</a> window or by selecting them from the <strong>Controls</strong> palette or the <strong>Functions</strong> palette. Adding a custom control or indicator to a block diagram creates a constant with the same data type as the custom control or indicator. You also can <a href="Creating_and_Editing_a_Pal.html">add custom controls and indicators to the Controls and Functions palettes</a>.</p>
+
+<p class="Body">Complete the following steps to select a custom control or indicator and add it to a front panel or block diagram from the <strong>Controls</strong> or <strong>Functions</strong> palette.</p>
+<ol><li>Click the <strong>Select a Control</strong> icon on the <strong>Controls</strong> palette or the <strong>Select a VI</strong> icon or text on the <strong>Functions</strong> palette to display a file dialog box.</li>
+<li>Navigate to the custom control or indicator you want to place.</li>
+<li>In the file dialog box, double-click the custom control or indicator or click the <strong>OK</strong> button to place the control or indicator on the cursor.</li>
+<li>Add the custom control or indicator to the front panel or block diagram.</li>
+<li>Save the VI with the custom control or indicator in place.</li></ol><!--end child: custcont.pdf-->
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;<!--begin child: custcont.pdf-->When you add a custom control or indicator to a VI, no connection exists between the custom control or indicator you saved and the instance of the custom control or indicator in the VI. Each instance of a custom control or indicator is a separate, independent copy. Therefore, changes you make to a custom control or indicator file do not affect VIs already using that custom control or indicator. If you want to link instances of a custom control or indicator to the custom control or indicator file, save the custom control or indicator as a <a href="Creating_Type_Defs.html">type definition or a strict type definition</a>. All instances of a type definition or a strict type definition link to the original file from which you created them.<br><br>
+When you save a custom control or indicator as a type definition or strict type definition, any data type changes you make to the type definition or strict type definition affect all instances of the type definition or strict type definition in all the VIs that use it. Also, cosmetic changes you make to a strict type definition affect all instances of the strict type definition.<!--end child: custcont.pdf--></td></tr></table>
+
+
+
+</body>
+</html>

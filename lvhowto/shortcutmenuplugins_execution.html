@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+<script src="dynamicjumps.js" type="text/javascript"></script>
+
+<title>Part 3: Executing Shortcut Menu Plug-Ins</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Part 3: Executing Shortcut Menu Plug-Ins</h1>
+<p class="Body">Use VI scripting to define actions that LabVIEW performs when you select a custom item from the shortcut menu.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;Generate the files you need to create a shortcut menu plug-in by running the following utility VI: <span class="Monospace">labview\resource\plugins\PopupMenus\Create Shortcut Menu Plug-In From Template.vi</span></td>
+</tr>
+</table>
+
+<ol>
+<li>Open the plug-in execution VI (<span class="Monospace">Execute</span> <span class="Monospace-Italic">x</span><span class="Monospace">.vi</span>, where <em>x</em> is the name of the plug-in) that the utility VI generates.</li>
+<li>On the block diagram, use VI scripting to modify the behavior of objects the plug-in affects. Add a Property Node or Invoke Node to access and modify the properties and methods of objects using a VI Server reference.</li>
+<li>(Optional) Add additional VIs to the LLB of the shortcut menu plug-in as needed to modify the behavior of the objects.<br>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;To avoid name conflicts, National Instruments recommends prefixing the filename of any additional VIs and subVIs with the name of the plug-in or using a project library. For example, name subVIs as <span class="Monospace-Italic">x</span>_<span class="Monospace-Italic">subVI</span><span class="Monospace">.vi</span> or save additional VIs and subVIs in the project library <span class="Monospace-Italic">x</span><span class="Monospace">.lvlib</span>, where <em>x</em> is the name of the plug-in.</td>
+</tr>
+</table>
+</li>
+<li>Select <strong>File&#0187;Save</strong> to save changes. Restart LabVIEW for changes to take effect.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="tip.gif" alt="Tip"></td>
+<td><strong>Tip</strong>&nbsp;&nbsp;To reload plug-ins without restarting LabVIEW, create an empty VI, add the Invoke Node to the block diagram, configure the Invoke Node for the Menus:Refresh method, and run the VI. This method is also useful if you write an installer for your plug-ins. You can run the method as part of the installation process. If you use the JKI VI Package Manager (VIPM) software to distribute your plug-ins, add the Menus:Refresh method to the post-installation VI.</td>
+</tr>
+</table></li>
+</ol>
+
+<a name="protecting"></a><h2>Protecting Transactions When LabVIEW Executes Shortcut Menu Plug-Ins</h2>
+
+<p>To protect VI scripting operations when the plug-in execution VI runs, LabVIEW calls the Set Busy VI to disable the mouse. After the plug-in execution VI runs, LabVIEW calls the Unset Busy VI to enable the mouse.</p> 
+
+<p>You can instruct LabVIEW to automatically wrap your scripting operations in an undoable transaction by using the <strong>Transaction Control?</strong> of the build VI (<span class="Monospace-Italic">x</span><span class="Monospace">.vi</span>, where <em>x</em> is the name of the plug-in). Alternatively, you can instruct LabVIEW not to control transactions in the build VI so that you manage your own transactions in the plug-in execution VI. If LabVIEW automatically creates the transaction, configure the <strong>Fail Transaction?</strong> output of the plug-in execution VI to return TRUE if this VI does not run successfully.</p>
+
+<table class="Borderless-Wide">
+<tr>
+<td align="left"><img style="display:inline" src="previous_arrow.gif"><a href="shortcutmenuplugins_build.html">Part 2: Building the Shortcut Menu Using Plug-Ins</a></td>
+<td align="right"><img style="display:inline" src="next_arrow.gif"><a href="shortcutmenuplugins_intro.html">Understanding Shortcut Menu Plug-Ins</a></td>
+</tr>
+</table>
+
+<h3>Related Information</h3>
+<p><a href="../lvhowto/scripting_howto_intro.html">VI Scripting</a></p>
+<p><a href="../lvprop/propmeth_class_hierarchy.html">VI Server Class Hierarchy</a></p>
+<p><a href="../lvprop/Application_Menus058Refresh.html">Menus:Refresh Method</a></p>
+<p><a href="shortcutmenuplugins_troubleshoot.html">Troubleshooting Shortcut Menu Plug-Ins</a></p>
+<p><a href="shortcutmenuplugins_tips.html">Tips and Tricks for Creating Shortcut Menu Plug-Ins</a></p>
+
+</body>
+</html>

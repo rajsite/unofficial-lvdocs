@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 1800Erefnumcihlp -->
+
+<title>Debugging Calls to .NET Assemblies</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+				<h1>Debugging Calls to .NET Assemblies</h1>
+				<p class="Body"><!-- start_child = Upgrade Notes; lvupgrade.chm; -->.NET objects can exhibit unexpected behavior when LabVIEW has a different version of the assembly in memory than the version you want to use.<!-- end_child = Upgrade Notes; lvupgrade.chm; --> To diagnose many of these .NET assembly conflicts, use the <a href="../lvdialog/assemblies_in_memory.html">.NET Assemblies in Memory</a> dialog box. Because this dialog box displays identifying information for the assemblies in memory, it allows you to verify if LabVIEW loaded the correct version of an assembly.</p>
+				<p class="Body">Complete the following steps to debug a call to a .NET assembly.</p>
+				<ol><li>Determine the name, version number, and location on disk of the assembly you want LabVIEW to load. Ensure that the assembly is located within the <a href="../lvconcepts/net_defaults.html#search">search path that LabVIEW uses to locate assemblies</a>.</li><li>Select  <strong>View�.NET Assemblies in Memory</strong> to display the <a href="../lvdialog/assemblies_in_memory.html">.NET Assemblies in Memory</a> dialog box.</li><li>In the dialog box, locate the name of the assembly that you are trying to load.</li><li>Identify discrepancies between the assembly information in the dialog box and the identifying information of the desired assembly from step 1. If there are no discrepancies but LabVIEW does not reflect your most recent changes to the assembly, you might need to <a href="../lvhowto/loading_changed_assemblies.html">force LabVIEW to load the updated assembly</a>.</li><li>Choose one of the following procedures for replacing the assembly in memory with the desired assembly.
+						<ul><li>Move the loaded assembly out of the <a href="../lvconcepts/net_defaults.html#search">assembly search path</a>. This action forces LabVIEW to search for a different version of the same assembly.</li><li>Create a project configuration file to <a href="../lvhowto/net_specifying_assembly_version.html">force LabVIEW to load the desired version of the assembly</a>.</li></ul>
+					</li><li>Close and reopen the projects that call the assembly. This action forces LabVIEW to unload the incorrect version of the assembly from memory and then to load the correct version.
+						<table class="Borderless"><tr><td class="Icon"><img src="note.gif" /></td><td><strong>Note</strong>��If the VI that loaded the incorrect assembly is not part of a project, you must restart LabVIEW to clear the incorrect assembly from memory. NI strongly recommends that you use .NET objects only in <a href="../lvconcepts/Using_LabVIEW_Projects.html">LabVIEW projects</a>.</td></tr></table>
+					</li></ol>
+</body>
+</html>

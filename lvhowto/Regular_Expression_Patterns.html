@@ -1,0 +1,186 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<title>Special Characters for Match Regular Expression and Search and Replace String</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Special Characters for Match Regular Expression and Search and Replace String</h1>
+
+<p class="Body">Regular expressions require specific combinations of characters for pattern matching. Use regular expressions to match or locate a portion or subset of a string. For example, you can use regular expressions to match a variable in a string of code or a specific value in a report.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;The Match Regular Expression and Search and Replace String functions do not support null characters in strings. Also, a regular expression can return a successful match of an empty string. If a regular expression does not return a successful match, the <strong>offset past match</strong> will return &#8211;1.</td>
+</tr>
+</table>
+
+<!--start parent  = lvconcepts::/Searching_Strings.html  tag="PCRE_note"-->
+<p>Regular expression support is provided by the PCRE library package. Refer to the <span class="Monospace">&lt;National Instruments&gt;\_Legal Information</span> directory for more information about the license under which the PCRE library package is redistributed.</p>
+
+<p>Refer to the Perl 5 Regular Expression documentation at <span class="Monospace">www.pcre.org</span> for more information about Perl Compatible Regular Expressions.</p>
+<!--end parent  = lvconcepts::/Searching_Strings.html  tag="PCRE_note"-->
+
+<h2><a name="Regular_Expression"></a>Special Characters for Regular Expression and Search String Inputs</h2>
+<p>Use the special characters in the following table in the <strong>regular expression</strong> input of the Match Regular Expression function and the <strong>search string</strong> input of the Search and Replace String function. To use special characters with the Search and Replace String function, right-click the function and select <strong>Regular Expression</strong> from the shortcut menu.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;The following special characters are compatible only with the Match Regular Expression and Search and Replace String functions. The Match Pattern function uses a more limited set of regular expressions but performs more quickly than the Match Regular Expression function. Refer to the <em>Special Characters for Match Pattern</em> topic for more information about regular expressions for the Match Pattern function.</td>
+</tr>
+</table>
+
+<table class="Bordered"><tr><th class="Bordered">Special Character</th><th class="Bordered">Description</th><th class="Bordered">Example(s)</th></tr>
+
+<tr><td class="Bordered"><span class="Monospace">.</span><br>(period)</td>
+<td class="Bordered">Matches any single character except a newline character. Within square brackets, <span class="Monospace">.</span> is literal.</td>
+<td class="Bordered">Input String: <span class="Monospace">Welcome to LabVIEW.</span><br>Regular Expression: <span class="Monospace">t....</span><br>Match: <span class="Monospace">to La</span>
+<br><br>
+If you input <span class="Monospace">[z.]</span> as the regular expression, the period is literal and the expression matches either <span class="Monospace">.</span> or <span class="Monospace">z</span>. In this example, <span class="Monospace">[z.]</span> returns <span class="Monospace">.</span> as the match.</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">*</span></td>
+<td class="Bordered">Marks the single preceding character, character group, or character class as one that can appear zero or more times in the input. Because an asterisk can match a pattern that appears zero times, regular expressions that include an asterisk can return an empty string if the whole pattern is marked with an asterisk. This quantifier matches as many characters as possible by default.</td>
+<td class="Bordered">Input String: <span class="Monospace">Hello LabVIEW!</span><br>Regular Expression: <span class="Monospace">el*</span><br>Match: <span class="Monospace">ell</span>
+<br><br>Expressions such as <span class="Monospace">w*</span> or <span class="Monospace">(welcome)*</span> match an empty string if the function finds no other matches.</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">+</span></td>
+<td class="Bordered">Marks the single preceding character, character group, or character class as one that can appear one or more times in the input. This quantifier matches as many characters as possible by default.</td>
+<td class="Bordered">Input String: <span class="Monospace">Hello LabVIEW!</span><br>Regular Expression: <span class="Monospace">el+</span><br>Match: <span class="Monospace">ell</span></td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">?</span></td>
+<td class="Bordered">Marks the single preceding character, character group, or character class as one that can appear zero or one time in the input. This quantifier matches as many characters as possible by default.
+<br><br>When used immediately after a quantifier, <span class="Monospace">?</span> modifies the quantifier to match as few times as possible. Modifiable quantifiers include <span class="Monospace">*</span>, <span class="Monospace">+</span>, and <span class="Monospace">{}</span>.</td>
+<td class="Bordered">Input String: <span class="Monospace">Hello LabVIEW!</span><br>Regular Expression: <span class="Monospace">el?</span><br>Match: <span class="Monospace">el</span>
+<br><br>Input String: <span class="Monospace">&lt;ul&gt;&lt;li&gt;Hello&lt;/li&gt;&lt;li&gt;LabVIEW&lt;/li&gt;&lt;/ul&gt;</span><br>Regular Expression: <span class="Monospace">&lt;li&gt;.+?&lt;/li&gt;</span><br>Match: <span class="Monospace">&lt;li&gt;Hello&lt;/li&gt;</span>
+<br><br>In the second example, if you remove <span class="Monospace">?</span> from the regular expression, the new match becomes <span class="Monospace">&lt;li&gt;Hello&lt;/li&gt;&lt;li&gt;LabVIEW&lt;/li&gt;</span> because <span class="Monospace">+</span> matches as many characters as possible unless you include <span class="Monospace">?</span> immediately after <span class="Monospace">+</span>. You can use this regular expression to match any string within &lt;li&gt;&lt;/li&gt; tags.</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">{n,N}</span></td>
+<td class="Bordered">Marks the single preceding character, character group, or character class as one that can appear the number of times you specify, where n is the minimum and N is the maximum. You also can specify a single number. If you specify a range, this quantifier matches as many times as possible.</td>
+<td class="Bordered">Input String: <span class="Monospace">&lt;ul&gt;&lt;li&gt;Hello&lt;/li&gt;&lt;li&gt;Lab&lt;/li&gt;&lt;li&gt;VIEW&lt;/li&gt;&lt;li&gt;!&lt;/li&gt;&lt;/ul&gt;</span><br>Regular Expression: <span class="Monospace">(&lt;li&gt;.+?&lt;/li&gt;){2}</span><br>Match: <span class="Monospace">&lt;li&gt;Hello&lt;/li&gt;&lt;li&gt;Lab&lt;/li&gt;</span>
+<br><br>Input String: <span class="Monospace">&lt;ul&gt;&lt;li&gt;Hello&lt;/li&gt;&lt;li&gt;Lab&lt;/li&gt;&lt;li&gt;VIEW&lt;/li&gt;&lt;li&gt;!&lt;/li&gt;&lt;/ul&gt;</span><br>Regular Expression: <span class="Monospace">(&lt;li&gt;.+?&lt;/li&gt;){1,3}</span><br>Match: <span class="Monospace">&lt;li&gt;Hello&lt;/li&gt;&lt;li&gt;Lab&lt;/li&gt;&lt;li&gt;VIEW&lt;/li&gt;</span>
+<br><br>In the second example, the minimum match limit is one and the maximum is three. Because the regular expression matches as many times as possible within the limit you specify, the regular expression returns three matches.</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">[]</span></td>
+<td class="Bordered">Creates a character class, which allows you to match any one of a set of characters that you specify. For example, <span class="Monospace">[abc]</span> matches <span class="Monospace">a</span>, <span class="Monospace">b</span>, or <span class="Monospace">c</span>. 
+<br><br>You can use <span class="Monospace">-</span> to specify a range of characters. For example, <span class="Monospace">[a-z]</span> matches any single lowercase letter. 
+<br><br>The Match Regular Expression and Search and Replace String functions interpret special characters inside square brackets literally, with the exception of <span class="Monospace">^</span>, <span class="Monospace">-</span>, and <span class="Monospace">\</span>.</td>
+<td class="Bordered">Input String: <span class="Monospace">version=14.0.1</span><br>Regular Expression: <span class="Monospace">[0-9]+(\.[0-9]+)*</span><br>Match: <span class="Monospace">14.0.1</span>
+<br><br>
+The expression <span class="Monospace">[0-9]</span> matches any digit. The plus sign matches the previous character class, <span class="Monospace">[0-9]</span>, one or more times but as many times as possible. The parentheses create a character group, which creates a submatch of the <span class="Monospace">.</span> character and all following digits. The expression <span class="Monospace">\.</span> matches a literal <span class="Monospace">.</span> character. The plus sign matches the previous character class, <span class="Monospace">[0-9]</span>, one or more times but matches as many times as possible. The asterisk matches the previous character group, <span class="Monospace">(\.[0-9]+)</span>, zero or more times, so the regular expression still matches integers if there is no <span class="Monospace">.</span> character. You can use this regular expression to match any integer, decimal number, version number, IPv4 address, or other number sequence separated by <span class="Monospace">.</span> characters.</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">( )</span></td>
+<td class="Bordered">Creates a character group, which allows you to match an entire set of characters that you specify. A quantifier that immediately follows a character group quantifies the entire group. 
+<br><br>Parentheses also create submatches where each individual character group returns a submatch. If you nest a character group within another character group, the regular expression creates a submatch for the outer group before the inner group. Expand the Match Regular Expression function node to access submatch outputs. 
+<br><br>You also can refer back to submatches later in an expression using backreferences. Refer to the <em>Backreferences</em> section below for more information about using backreferences in regular expressions.</td>
+<td class="Bordered">Input String: <span class="Monospace">Hello LabVIEW!</span><br>Regular Expression: <span class="Monospace">(el.)..(L..)</span><br>Match: <span class="Monospace">ello Lab</span><br>Submatch 1: <span class="Monospace">ell</span><br>Submatch 2: <span class="Monospace">Lab</span>
+<br><br>Input String: <span class="Monospace">Hello LabVIEW!</span><br>Regular Expression: <span class="Monospace">(.(el.).).(L..)</span><br>Match: <span class="Monospace">Hello Lab</span><br>Submatch 1: <span class="Monospace">Hello</span><br>Submatch 2: <span class="Monospace">ell</span><br>Submatch 3: <span class="Monospace">Lab</span></td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">|</span></td>
+<td class="Bordered">Separates alternate possible matches. This character is useful when you want to match any of a number of character groups. A regular expression that contains <span class="Monospace">(|)</span> returns the first match that the function finds in the input string regardless of the order of your possible matches. For example, both regular expressions <span class="Monospace">dog|cat</span> and <span class="Monospace">cat|dog</span> match <span class="Monospace">dog</span> in <span class="Monospace">the dog chased the cat</span>.</td>
+<td class="Bordered">Input String: <span class="Monospace">value=FALSE total=12.34 token=TRUE</span><br>Regular Expression: <span class="Monospace">(value|token)=(TRUE|FALSE)</span><br>Match: <span class="Monospace">value=FALSE</span><br>Submatch 1: <span class="Monospace">value</span><br>Submatch 2: <span class="Monospace">FALSE</span>
+<br><br>The regular expression returns the first possible match in the input string. If <span class="Monospace">token=TRUE</span> appeared before <span class="Monospace">value=FALSE</span> in the input string, the regular expression would match <span class="Monospace">token=TRUE</span> instead.</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">^</span></td>
+<td class="Bordered">Anchors a match to the beginning of a string when used as the first character of a pattern.
+<br><br>If you set the <strong>multiline?</strong> input to TRUE on the Match Regular Expression or Search and Replace String functions, <span class="Monospace">^</span> matches the beginning of any line within the string using the line endings of the current platform.
+<br><br>You also can match any character not in a given character class by adding <span class="Monospace">^</span> to the beginning of a character class. For example, <span class="Monospace">[^0-9]</span> matches any character that is not a digit. <span class="Monospace">[^a-zA-Z0-9]</span> matches any character that is not a lowercase or uppercase letter and also not a digit.</td>
+<td class="Bordered">Input String: <span class="Monospace">Hello LabVIEW!</span><br>Regular Expression: <span class="Monospace">^[^ ]+</span><br>Match: <span class="Monospace">Hello</span>
+<br><br>The regular expression matches as many characters as possible&mdash;other than a space character&mdash;from the beginning of the input string. You can use this regular expression to isolate the first word, numeral, or other character combination of a string.
+<br><br>Input String: <span class="Monospace">Hello<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LabVIEW</span><br>Regular Expression: <span class="Monospace">^LabVIEW</span><br>Match: <span class="Monospace">LabVIEW</span>
+<br><br>The regular expression matches <span class="Monospace">LabVIEW</span> only if you set <strong>multiline?</strong> to TRUE.</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">$</span></td>
+<td class="Bordered">Anchors a match at the end of a string when used as the last character of a pattern.
+<br><br>If you set the <strong>multiline?</strong> input to TRUE on the Match Regular Expression or Search and Replace String functions, <span class="Monospace">$</span> matches the end of any line within the string using the line endings of the current platform.</td>
+<td class="Bordered">Input String: <span class="Monospace">Hello LabVIEW!</span><br>Regular Expression: <span class="Monospace">[^ ]+$</span><br>Match: <span class="Monospace">LabVIEW!</span>
+<br><br>The regular expression matches as many characters as possible&mdash;other than a space character&mdash;from the end of the input string. You can use this regular expression to isolate the last word, numeral, or other character combination of a string.
+<br><br>Input String: <span class="Monospace">Hello<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LabVIEW</span><br>Regular Expression: <span class="Monospace">Hello$</span><br>Match: <span class="Monospace">Hello</span>
+<br><br>The regular expression matches <span class="Monospace">Hello</span> only if you set <strong>multiline?</strong> to TRUE.</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">\</span></td>
+<td class="Bordered">Cancels the special meaning of any special character in this list that immediately follows the backslash and instead matches the literal character.<br><br>The following escaped expressions have special meanings:
+		
+<ul><li><span class="Monospace">\b</span> - Represents a word boundary. A word boundary is a character that is not a word character adjacent to a character that is a word character and vice versa. A word character is an alphanumeric character or an underscore (_). For example, <span class="Monospace">\bhat</span> matches <span class="Monospace">hat</span> in <span class="Monospace">hatchet</span> but not in <span class="Monospace">that</span>. <span class="Monospace">hat\b</span> matches <span class="Monospace">hat</span> in <span class="Monospace">that</span> but not in <span class="Monospace">hatchet</span>. <span class="Monospace">\bhat\b</span> matches <span class="Monospace">hat</span> in <span class="Monospace">hat</span> but not in <span class="Monospace">that</span> or <span class="Monospace">hatchet</span>.</li>
+<li><span class="Monospace">\c</span> - Matches any control or non-printing character; includes any code point in the character set that does not represent a written symbol</li>
+<li><span class="Monospace">\w</span> - Matches any word character; equivalent to <span class="Monospace">[a-zA-Z0-9_]</span></li>
+<li><span class="Monospace">\W</span> - Matches any non-word character; equivalent to <span class="Monospace">[^a-zA-Z0-9_]</span></li>
+<li><span class="Monospace">\d</span> - Matches any digit character; equivalent to <span class="Monospace">[0-9]</span></li>
+<li><span class="Monospace">\D</span> - Matches any non-digit character; equivalent to <span class="Monospace">[^0-9]</span></li>
+<li><span class="Monospace">\N</span> - Matches a previous submatch within the same regular expression where <span class="Monospace">N</span> is a digit; refer to the <em>Backreferences</em> section below for more information about using <span class="Monospace">\N</span></li>
+<li><span class="Monospace">\s</span> - Matches any white space character; includes space, newline, tab, carriage return, and so on</li>
+<li><span class="Monospace">\S</span> - Matches any non-white space character</li>
+<li><span class="Monospace">\n</span> - Matches a newline character</li>
+<li><span class="Monospace">\t</span> - Matches a tab character</li>
+<li><span class="Monospace">\r</span> - Matches a carriage return character</li>
+<li><span class="Monospace">\f</span> - Matches a formfeed character</li>
+<li><span class="Monospace">\031</span> - Matches an octal character (<span class="Monospace">31</span> octal in this case)</li>
+<li><span class="Monospace">\x3F</span> - Matches a hexadecimal character (<span class="Monospace">3F</span> hexadecimal in this case)</li></ul></td>
+<td class="Bordered">Input String: <span class="Monospace">total=$12.34</span><br>
+Regular Expression: <span class="Monospace">\$\d+(\.\d{2})?</span><br>Match: <span class="Monospace">$12.34</span>
+<br><br>The expression <span class="Monospace">\$</span> matches a literal dollar sign because the backslash cancels the special meaning. The expression <span class="Monospace">\d+</span> matches as many digits as possible and must match at least one digit. The expression <span class="Monospace">(\.\d{2})?</span> matches <span class="Monospace">.</span> and two digits, but <span class="Monospace">?</span> makes this portion of the regular expression optional to match. You can use this regular expression to match dollar values that use a <span class="Monospace">.</span> character as a decimal separator. Locales that use a different character as a decimal separator must adapt the regular expression.
+<br><br>Input String: <span class="Monospace">NEWtoken=FALSE token=TRUE checkFile=TRUE total=12.34</span><br>Regular Expression: <span class="Monospace">\btoken=\w+\s\b\S*</span><br>Match: <span class="Monospace">token=TRUE checkFile=TRUE</span>
+<br><br>The regular expression does not match <span class="Monospace">token=FALSE</span> in <span class="Monospace">NEWtoken=FALSE</span> because <span class="Monospace">\b</span> makes the regular expression match <span class="Monospace">token=</span> only at the beginning of a word. The expression <span class="Monospace">\w+</span> matches as many word characters as possible and must match at least one. In this example, <span class="Monospace">\w+</span> matches <span class="Monospace">TRUE</span>. The expression <span class="Monospace">\s</span> matches a space character. The expression <span class="Monospace">\b\S*</span> matches all non-white space characters that begin a word until the function finds another white space character. In this example, <span class="Monospace">\b\S*</span> matches <span class="Monospace">checkFile=TRUE</span>.
+<br><br>Input String: <span class="Monospace">Welcome<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;&nbsp;&nbsp;LabVIEW!</span><br>Regular Expression: <span class="Monospace">come\n\S*\t\w*\x21</span><br>Match: <span class="Monospace">come<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;&nbsp;&nbsp;LabVIEW!</span>
+<br><br>The expression <span class="Monospace">come\n</span> matches the literal letters followed by a newline character. The expression <span class="Monospace">\S*</span> matches as many non-white space characters as possible, which is the word <span class="Monospace">to</span> in this case. The expression <span class="Monospace">\t</span> matches the tab in between <span class="Monospace">to</span> and <span class="Monospace">LabVIEW!</span>. The expression <span class="Monospace">\w*</span> matches as many word characters as possible, which is <span class="Monospace">LabVIEW</span> in this case. The expression <span class="Monospace">\x21</span> matches the exclamation point because 21 is the hexadecimal code for an exclamation point.</td></tr></table>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="tip.gif"></td>
+<td><strong>Tip</strong>&nbsp;&nbsp;To anchor a match at the beginning and end of a string, use <span class="Monospace">^</span> as the first character in a pattern and <span class="Monospace">$</span> as the last character of a pattern. For example, <span class="Monospace">^LabVIEW$</span> matches <span class="Monospace">LabVIEW</span> in <span class="Monospace">LabVIEW</span> but not in <span class="Monospace">LabVIEW!</span> or <span class="Monospace">Hello LabVIEW</span>. Anchoring the match at the beginning and end of the string requires the whole string to match.</td>
+</tr>
+</table>
+
+<h2><a name="Replace_String"></a>Special Characters for Replace String Input</h2>
+<p>Use the following special characters in the <strong>replace string</strong> input of the Search and Replace String function.</p>
+<table class="Bordered">
+
+<tr><th class="Bordered">Special Character</th>
+<th class="Bordered">Description</th>
+<th class="Bordered" width="460">Example(s)</th></tr>
+<tr><td class="Bordered"><span class="Monospace">$n</span>&nbsp; or &nbsp;<span class="Monospace">${n}</span></td>
+<td class="Bordered">Inserts a string you specify before or after the submatch you specify. Refer to the <em>Backreferences</em> section below for more information about using backreferences in the <strong>replace string</strong> input of the Search and Replace String function.
+<br><br>Use <span class="Monospace">${n}</span> if you have more than nine submatches in a regular expression and want to refer to a submatch after the ninth. <span class="Monospace">$12 </span> inserts only the first submatch because the function reads only the first digit that immediately follows <span class="Monospace">$</span>. However, <span class="Monospace">${12}</span> inserts the twelfth submatch.</td>
+<td class="Bordered"><strong>input string</strong>: <span class="Monospace">Welcome LabVIEW</span><br><strong>search string</strong>: <span class="Monospace">(LabVIEW)</span><br><strong>replace string</strong>: <span class="Monospace">to $1!</span><br><br><strong>result string</strong>: <span class="Monospace">Welcome to LabVIEW!</span>
+<br><br><br><strong>input string</strong>: <span class="Monospace">Welcome to the LabVIEW Help!</span><br><strong>search string</strong>: <span class="Monospace">We(l)(co(m)e)( )(to)( )t(he) (Lab)(VIE(W)) He(lp)(!)</span><br><strong>replace string</strong>: <span class="Monospace">$7${11}ful${12}</span><br><br><strong>result string</strong>: <span class="Monospace">helpful!</span></td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">\$n</span></td>
+<td class="Bordered">Cancels the interpretation of any special character you use in the replace string.</td>
+<td><strong>input string</strong>: <span class="Monospace">total=123 per day</span><br>
+<strong>search string</strong>: <span class="Monospace">(\d+)(per \w*)?</span><br><strong>replace string</strong>: <span class="Monospace">\$$1$2</span><br><br><strong>result string</strong>: <span class="Monospace">total=$123 per day</span>
+<br><br>
+As in this example, use <span class="Monospace">\$</span> to insert the literal character <span class="Monospace">$</span>.
+<br><br>Use <span class="Monospace">\\</span> to indicate a literal backslash.</td></tr></table>
+
+<h2><a name="backreferences"></a>Backreferences</h2>
+
+<p>Use backreferences to refer to previous submatches within the same regular expression. You can use backreferences to create a submatch using a character group in one part of an expression and then match that exact submatch in a later part of the expression.</p>
+<p>To specify a back reference in the <strong>regular expression</strong> input of the Match Regular Expression function or the <strong>search string</strong> input of the Search and Replace String function, use <span class="Monospace">\1</span> to refer to the first submatch, <span class="Monospace">\2</span> to refer to the second, and so on. For example, consider the following regular expression:</p>
+<p><span class="Monospace">(["*$])(\w+)\1\2\1</span></p>
+<p>The first character group contains a character class that matches <span class="Monospace">"</span>, <span class="Monospace">*</span>, or <span class="Monospace">$</span>. The second character group matches one or more word characters. The first backreference, <span class="Monospace">\1</span>, matches the same submatch as the first character group, <span class="Monospace">(["*$])</span>. The second backreference, <span class="Monospace">\2</span>, matches the same submatch as the second character group, <span class="Monospace">(\w+)</span>. The third backreference, <span class="Monospace">\1</span>, is identical to the first backreference and matches the same submatch as the first character group.</p>
+<p>This example matches strings such as <span class="Monospace">"foo"foo"</span>, <span class="Monospace">*bar*bar*</span>, and <span class="Monospace">$baz$baz$</span>, but does not match strings such as <span class="Monospace">"foo$foo"</span> or <span class="Monospace">"foo*bar"</span>.</p>
+
+<h3>Backreferences in Replace String</h3>
+
+<p>When you use the Search and Replace String function in <strong>Regular Expression</strong> mode, you can specify a backreference in the <strong>replace string</strong> input that refers to submatches in the <strong>search string</strong> input. Use <span class="Monospace">$1</span> to refer to the first submatch, <span class="Monospace">$2</span> to refer to the second submatch, and so on. You can use these special characters only in the <strong>replace string</strong> input of the Search and Replace String function. Use these special characters to insert a string you specify before or after the submatch you specify. Consider the following example:</p>
+<p><strong>input string</strong>: <span class="Monospace">$value "TRUE"TRUE" *NULL</span><br><strong>search string</strong>: <span class="Monospace">(["*$])(\w+)\1\2\1</span><br><strong>replace string</strong>: <span class="Monospace">$1$2value$1</span><br><br><strong>result string</strong>: <span class="Monospace">$value "TRUEvalue" *NULL</span></p>
+<p>In this example, the <span class="Monospace">$1</span> backreferences in <strong>replace string</strong> refer to the first submatch in <strong>search string</strong>. Likewise, the <span class="Monospace">$2</span> backreference refers to the second submatch in <strong>search string</strong>.</p>
+
+<h3>Related Information</h3>
+<p><a href="../glang/Match_Regular_Expression.html">Match Regular Expression Function</a></p>
+<p><a href="../glang/Search_and_Replace_String.html">Search and Replace String Function</a></p>
+<p><a href="../lvhowto/SpecialCharforMatchPatt.html">Special Characters for Match Pattern</a></p>
+<p><a href="../glang/Match_Pattern.html">Match Pattern Function</a></p>
+<p><a href="javascript:WWW(WWW_PCRERegExp)">PCRE Website</a></p>
+
+</body>
+</html>

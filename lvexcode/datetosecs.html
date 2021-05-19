@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>DateToSecs (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>DateToSecs (LabVIEW Manager Function)</h1>
+<p class="Code">uint32 DateToSecs(dateRecordP);</p>
+<h2>Purpose</h2>
+<p class="Body">Converts from a time described using the <span class="Monospace">DateRec</span> data structure to the number of seconds since 12:00 a.m., Friday, January 1, 1904, Universal Time [01-01-1904 00:00:00].</p>
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>dateRecordP</strong></td>
+ <td class="Bordered"><span class="Monospace">DateRec&nbsp;*</span></td>
+ <td class="Bordered">Pointer to a <span class="Monospace">DateRec</span> structure. <span class="Monospace">DateToSecs</span> stores the converted date in the fields of the date structure referred to by <strong>dateRecordP</strong>. This parameter is a <a href="../lvexcodeconcepts/LabVIEW_Manager_Routines.html#Pointers_as_Parameters">pointer</a>.</td></tr>
+</table>
+<h2>Return Value</h2>
+<p class="Body">The corresponding number of seconds since 12:00 a.m., Friday, January 1, 1904, Universal Time [01-01-1904 00:00:00].</p>
+
+</body>
+</HTML>

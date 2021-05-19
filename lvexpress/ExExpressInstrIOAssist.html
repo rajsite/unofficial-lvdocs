@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<title>Instrument I/O Assistant (Windows)</TITLE>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+</head>
+<body bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<H1>Instrument I/O Assistant (Windows)</H1>
+
+<p class="body"><!-- Express VI Description and Supplemental Info --><!-- Begin child: ../lvmeasconcepts/Using_LV_to_Control_Inst.html,  ../lvmeasconcepts/What_is_a_LV_Inst_Drv.html-->Launches the Instrument I/O Assistant, which you can use to communicate with message-based instruments and graphically parse the response<!-- End child: ../lvmeasconcepts/Using_LV_to_Control_Inst.html,  ../lvmeasconcepts/What_is_a_LV_Inst_Drv.html-->. The Instrument I/O Assistant organizes instrument communication into ordered steps. You can use the Instrument I/O Assistant to send a query to an instrument to verify communication with that instrument. For example, you can communicate with an instrument that uses a serial, Ethernet, or GPIB interface.</p> 
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;Refer to the <em>Instrument I/O Assistant Help</em> for more information about communicating with an instrument. The <em>Instrument I/O Assistant Help</em> appears in a pane within the Instrument I/O Assistant. Before you begin using the Instrument I/O Assistant, make sure you <a href="../lvmeasconcepts/Using_LV_to_Control_Inst.html">choose the appropriate method of instrument control</a>.</td>
+</tr>
+</table>
+
+
+<p class="body">To validate communication, use a Query and Parse step and send an identification command to the instrument:  <span class="Monospace">*IDN?</span> for most instruments. If the instrument responds, you have established communication with the instrument. If the instrument returns a timeout error, ensure that the instrument is properly connected to the computer, powered on, and properly configured.</p>
+
+
+<table class="Borderless">
+<tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;You must have the Instrument I/O Assistant installed to use the Instrument I/O Assistant Express VI. You install the Instrument I/O Assistant from the National Instruments Device Drivers DVD.</td></tr></table>
+
+
+</body>
+</HTML>
+
+

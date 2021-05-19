@@ -1,0 +1,64 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Overview of the LabVIEW Point-By-Point Solution</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-ED5FBFEA-A90F-4F00-BB86-48B06BB0B13C" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Overview of the LabVIEW Point-By-Point Solution</h1> 
+      
+      <div> 
+         	 
+         <p>As well as <span>Point By Point VIs</span>, the <span>Train Wheel PtByPt VI</span> requires standard LabVIEW programming objects, such as Case structures, While Loops, numeric controls, and numeric operators.
+            
+            	 
+         </p> 
+         	 
+         <p>The data the <span>Train Wheel PtByPt VI</span> acquires flows continuously through a While Loop. The process carried out by the <span>Train Wheel PtByPt VI</span> inside the While Loop consists of five analysis stages that occur sequentially. The following list reflects the order in
+            which the five analysis stages occur, briefly describes what occurs in each stage, and corresponds to the labeled portions
+            of the previous block diagram. 
+            	 
+         </p> 
+         	 <a name="GUID-ED5FBFEA-A90F-4F00-BB86-48B06BB0B13C__GUID-F0FE582C-E8E0-4D9C-8D8A-B70732FC110A" shape="rect">
+            <!-- --></a><ol id="GUID-ED5FBFEA-A90F-4F00-BB86-48B06BB0B13C__GUID-F0FE582C-E8E0-4D9C-8D8A-B70732FC110A">
+            <li><a name="GUID-ED5FBFEA-A90F-4F00-BB86-48B06BB0B13C__LI_B8462CA234E843A1983B5A15EE2814FE" shape="rect">
+                  <!-- --></a>In the data acquisition stage (DAQ), waveform data flows into the While Loop. 
+               		
+            </li>
+            <li><a name="GUID-ED5FBFEA-A90F-4F00-BB86-48B06BB0B13C__LI_D82D672B77FA4829867779AA6701B1BB" shape="rect">
+                  <!-- --></a>In the Filter stage, separation of low- and high-frequency components of the waveform occurs. 
+               		
+            </li>
+            <li><a name="GUID-ED5FBFEA-A90F-4F00-BB86-48B06BB0B13C__LI_844A09BE811C48F6BD7FA150F4CB6B97" shape="rect">
+                  <!-- --></a>In the Analysis stage, detection of the train, wheel, and energy level of the waveform for each wheel occurs. 
+               		
+            </li>
+            <li><a name="GUID-ED5FBFEA-A90F-4F00-BB86-48B06BB0B13C__LI_0B804A76DBEE454ABFC7E20905BD6359" shape="rect">
+                  <!-- --></a>In the Events stage, responses to signal transitions of trains and wheels occurs. 
+               		
+            </li>
+            <li><a name="GUID-ED5FBFEA-A90F-4F00-BB86-48B06BB0B13C__LI_F79FBD8212F14F39B7C18779230102EE" shape="rect">
+                  <!-- --></a>In the Report stage, the logging of trains, wheels, and trains that might have defective wheels occurs. 
+               		
+            </li>
+         </ol> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Case_Study_PtByPt_Analysis.html" shape="rect">Case Study of Point-By-Point Analysis</a></div>
+         </div>
+         <div class="relinfo"><strong>Related information</strong><br clear="none"><div><a href="../glang/While_Loop.html" shape="rect">While Loop</a></div>
+            <div><a href="../glang/Case_Structure.html" shape="rect">Case Structure</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

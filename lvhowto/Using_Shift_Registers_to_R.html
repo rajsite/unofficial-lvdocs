@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4200Estructureshlp -->
+
+<title>Passing Multiple Values to the Next Loop Iteration</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Passing Multiple Values to the Next Loop Iteration</h1>
+
+<p class="Body">You can create stacked shift register terminals on the left side of a loop to remember multiple previous iterations and carry those values to the next iterations. This technique is useful for averaging data points.</p>
+
+<p class="Body">Complete the following steps to configure a <a href="../lvconcepts/shift_registers_concepts.html">shift register</a> to carry over more than one previous value to the next iteration.</p>
+
+<ol>
+<li><a href="Creating_Shift_Registers.html">Create a shift register</a>.</li>
+<li>Right-click the left or right shift register terminal.</li>
+<li>Select <strong>Add Element</strong> from the shortcut menu to create an additional terminal on the left side of the loop.</li>
+</ol>
+
+
+				<p>Stacked shift registers can occur only on the left side of the loop because the right terminal transfers the data generated from only the current iteration to the next iteration, as shown in the following block diagram.</p>
+				<p><img src="loc_bd_stackedshiftregisters.gif"></p>
+                <table class="Bordered">
+                <tr><th class="Bordered" rowspan="2">Iteration</th><th class="Bordered" colspan="3">End Value</th></tr>
+				<tr><th class="Bordered">Top Left Shift Register</th><th class="Bordered">Bottom Left Shift Register</th><th class="Bordered">Right Shift Register</th></tr>
+                <tr><td class="Bordered">0</td><td class="Bordered">0</td><td class="Bordered">1</td><td class="Bordered">1</td></tr>
+				<tr><td class="Bordered">1</td><td class="Bordered">1</td><td class="Bordered">0</td><td class="Bordered">1</td></tr>
+				<tr><td class="Bordered">2</td><td class="Bordered">1</td><td class="Bordered">1</td><td class="Bordered">2</td></tr>
+				<tr><td class="Bordered">3</td><td class="Bordered">2</td><td class="Bordered">1</td><td class="Bordered">3</td></tr>
+				<tr><td class="Bordered">4</td><td class="Bordered">3</td><td class="Bordered">2</td><td class="Bordered">5</td></tr>
+</table>
+<p>If you add another element to the left terminal in the previous block diagram, values from the last two iterations carry over to the next iteration, with the most recent iteration value stored in the top shift register. The bottom terminal stores the data passed to it from the previous iteration.</p>
+
+
+</body>
+</html>

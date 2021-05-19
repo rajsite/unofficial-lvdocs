@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name:  -->
+
+<title>Array Manipulation in Formula Nodes</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Array Manipulation in Formula Nodes
+</h1>
+<p class="Body">Input arrays and input-output arrays take their type from the array to which they are wired. These arrays do not require you to declare them inside the Formula Node. However, you must declare local arrays and output arrays in the Formula Node.
+</p>
+<p class="Body">Arrays are zero-based, as they are in C. Unlike C, LabVIEW treats an assignment to an array element that is out of range as a non-operation, and no assignment occurs. Also unlike C, if you make a reference to an array element that is out of range, LabVIEW returns a value of zero. You must declare array outputs in the Formula Node unless they correspond to an array input, in which case the two terminals must share a name.
+</p>
+<p class="Body">If an input terminal is an array, you can use the following functions to determine the shape of the array.
+</p>
+<p class="Indent1"><span class="Monospace">numDim = numberOfDims(inputArr);</span>
+</p>
+<p class="Indent1"><span class="Monospace">firstrowsize = sizeOfDim(inputtArr, 0);</span>
+</p>
+<h2>Array Manipulation Example
+</h2>
+<p class="Body">Take a typical array declaration, such as
+</p>
+<p class="Indent1"><span class="Monospace">int16 a[4][7]</span>
+</p>
+<p class="Body">After declaring such an array, you can make assignments, such as
+</p>
+<p class="Indent1"><span class="Monospace">a[3][2]=455;</span>
+</p>
+<p class="Body">You also can use array elements in expressions, such as
+</p>
+<p class="Indent1"><span class="Monospace">a[0][5]=a[1][6]*3+a[5][0];</span>
+</p>
+
+
+
+
+</body>
+</html>

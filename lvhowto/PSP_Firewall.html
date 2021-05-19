@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Configuring Firewalls and Network Address Translating Routers for Shared Variables</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Configuring Firewalls and Network Address Translating Routers for Shared Variables</h1>
+<p class="Body">You must configure firewalls and Network Address Translating (NAT) routers if you want to transmit network-published <a href="../lvconcepts/NI_PSP.html">shared variables</a> through them. If you do not correctly configure the firewall or router, network-published shared variables might not work.</p>
+
+<p class="Body">Network-published shared variable servers use the TCP port 2343 and the UDP port 2343, in addition to one TCP port for each application that you run.  The <a href="../lvconcepts/NI_PSP.html">NI Publish-Subscribe Protocol (NI-PSP)</a> protocol begins looking for available TCP ports at port 59110 and increments upward until it finds an available port. The number of available ports you need to configure depends on the number of applications you run. You manually can <a href="../lvhowto/CreatEditLogosXT.html">configure the range of TCP ports the NI-PSP protocol uses</a> by creating a <span class="monospace">LogosXT.ini</span> file and entering new values in the <span class="monospace">LogosXT_BasePort</span> and <span class="monospace">LogosXT_NumPortsToCheck</span> parameters. <span class="Platform">(Phar Lap ETS, VxWorks)</span> For Phar Lap ETS and VxWorks targets, configure the range of TCP ports in the <span class="monospace">ni-rt.ini</span> configuration file.</p>
+
+<p class="Body">If possible, use TCP for transmitting network-published shared variables.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;<strong>(Optional)</strong> You can still use UDP ports for the network-published shared variables servers. In addition to the required UDP port 2343, the servers use a range of UDP ports beginning with port 6000. The number of ports above 6000 that the network-published shared variable servers use depends on the number of servers running on the computer. Network-published shared variable clients use a range of UDP ports beginning with port 5000. The number of ports above 5000 that the network-published shared variable clients use depends on the number of client applications running on the computer. To find out the number of ports the server or client uses, first use <a href="../lvconcepts/Using_LabVIEW_with_TCP_IP_and_UDP.html">TCP</a> without the firewall configured to find out how many ports you need. </td></tr></table>
+		
+<p class="Body">Complete the following steps to allow clients outside a firewall to connect to a server inside the firewall. The exact steps for configuring the firewall depend on the specific firewall you use. Refer to the documentation for the firewall for specific instructions about opening ports.</p>
+					
+<ol>
+	<li>Open TCP port 2343 and UDP port 2343 for incoming packets, allowing server-discovery broadcasts.</li>
+	<li>Starting at TCP port 59110, open one TCP port for each application you run.</li>
+	<li><strong>(Optional)</strong> Open the UDP port range from 6000 to 6010 for incoming packets.</li>
+</ol>
+					
+	<p class="Body">You also can allow clients inside a firewall to connect to a server outside the firewall. Some firewalls automatically transmit incoming packets without any configuration. <strong>(Optional)</strong> If the firewall does not open the ports automatically, open the UDP port range from 5000 to 5010 for incoming packets.</p>
+					
+	<p class="Body">Complete the following steps to allow clients outside a NAT router to connect to a server inside the router. The exact steps for configuring the router depend on the specific router you use. Refer to the documentation for the router for specific instructions about forwarding ports. Only one computer inside the router can function as a server.</p>
+					
+	<ol>
+		<li>Forward TCP port 2343 and UDP port 2343 to the computer running the server.</li>
+		<li>Starting at TCP port 59110, forward one TCP port for each application you run.</li>
+		<li><strong><strong>(Optional)</strong></strong> Forward the UDP port range from 6000 to 6010 to the computer running the server.</li>
+	</ol>
+					
+<p class="Body"> You also can allow clients inside a NAT router to connect to a server outside the router. Some routers automatically forward ports without any configuration. <strong>(Optional)</strong> If the router does not forward the ports automatically, forward the UDP port range from 5000 to 5010  to the computer running the client.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+	<strong>Note</strong>&nbsp;&nbsp;If you deploy a network variable to a Windows machine with the Windows firewall enabled, you must add <span class="Monospace">\National Instruments\Shared\Tagger\tagsrv.exe</span> and <span class="Platform">(Windows 32-bit)</span><span class="Monospace">\windows\system32\lkads.exe</span> or <span class="Platform">(Windows 64-bit)</span><span class="Monospace">\windows\SysWOW64\lkads.exe</span> to the Windows firewall exception list in order to read or write to the variable hosted on the machine.</td></tr></table>
+
+
+</body>
+</html>

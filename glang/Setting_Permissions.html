@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Original filename: 09fileio.txt -->
+
+<title>Setting Permissions</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+</head><body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <A href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Setting Permissions</h1>
+
+<p class="Body">The <a href="Set_Permissions.html">Set Permissions</a> function includes a <strong>permissions</strong> input that allows you to control access to files and directories that you create. To define the permissions you want to set, you can wire the <strong>permissions</strong> output of the <a href="Access_Rights.html">Get Permissions</a> function to the <strong>permissions</strong> input of the Set Permissions function, or you can wire a constant or a control.</p>
+
+<p class="Body">The following illustration shows the format of the <strong>permissions</strong> parameter.</p>
+
+<p class="Anchor"><IMG src="loc_eps_bitperm.gif"></p>
+
+<p class="Body">The 9 bits that the <strong>permissions</strong> parameter uses are divided into three sets: user, group, and others. Each set is divided into three permission categories: read, write, and execute. Read determines if members of a set can read a file or directory. Write determines if members of a set can write data to a file or directory. Execute determines if members of a set can execute the file. A 1 in the bit grants permission.</p>
+
+<p class="Body">For example, the following illustration shows how to grant a user permission to read from, write to, and execute a file, and deny permission from the other two sets.</p>
+
+<p class="Anchor"><IMG src="loc_eps_bitperms.gif"></p>
+
+<p class="Body">This structure is based on the Linux permission bits that govern read, write, and execute permissions for users, groups, and others.</p>
+
+<p class="Body"><span class="Platform">(Windows)</span> Use of the <strong>permissions</strong> parameter is very limited on non-Linux operating systems. You can use <strong>permissions</strong> to change only write permissions for users (bit 7); the operating system ignores all other changes to the bits. Wire the binary value <span class="Monospace">0</span> to <strong>permissions</strong> to deny user write permissions. The operating system grants read and write permissions by default when you create any new file or directory but does not allow you to change read permissions or set permissions for groups or others. Execute permissions do not apply to non-Linux operating systems. Therefore, wiring <span class="Monospace">0</span> to <strong>permissions</strong> modifies only user write permissions for the new file or directory. <span class="Platform">(Windows)</span> The operating system also ignores <strong>permissions</strong> when creating new directories. You can use <strong>permissions</strong> only when creating a new file.</p>
+
+<p class="Body"><span class="Platform">(macOS)</span> The read, write, and execute categories correspond to the See Files, Make Changes, and See Folders access rights, respectively.</p>
+
+<p class="Body">You can enter the value for <strong>permissions</strong> in any numeric format. For example, you can <a href="../lvhowto/Changing_Format_and_Prec.html">change the numeric format</a> to octal format to shorten the binary number with which you set the file or directory permissions. Octal format shortens each three-bit group within the parameter to a single octal value. <span class="Platform">(Windows)</span> For example, to make a file writable, enter the octal value <span class="Monospace">200</span>, which corresponds to the binary representation <span class="Monospace">10000000</span>. <span class="Platform">(Linux)</span> To grant users read, write, and execute permissions, enter the octal value <span class="Monospace">700</span>, which corresponds to the binary value <span class="Monospace">111000000</span>.</p>
+
+</body>
+</html>

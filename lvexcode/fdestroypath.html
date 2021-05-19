@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>FDestroyPath (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>FDestroyPath (LabVIEW Manager Function)</h1>
+<p class="Code">void FDestroyPath(&amp;pp);</p>
+<h2>Purpose</h2>
+<p class="Body">Release the memory of an allocated path and <span class="Monospace">NULL</span> the path pointer.</p>
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>pp</strong></td>
+ <td class="Bordered"><span class="Monospace">Path*</span></td>
+ <td class="Bordered">A pointer to the path you want to deallocate.</td></tr>
+</table>
+<h2>Return Value</h2>
+<p class="Body">None.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;This function replaces the older <span class="Monospace">FDisposePath</span> function. The older function is still available, but its use is discouraged. By passing a pointer to the path instead of the path directly, the <span class="Monospace">FDestroyPath</span> function can properly <span class="Monospace">NULL</span> out the path, thus preventing double deallocation errors. The new function also can handle <span class="Monospace">NULL</span> paths, eliminating the need to check for <span class="Monospace">NULL</span> prior to calling <span class="Monospace">FDisposePath</span>. A typical use of the new function is illustrated by the following text:<BR>
+
+<p class="Code"><BR>Path p;<BR>p = FNotAPath(NULL);<BR>// insert code here that uses the path<BR>FDestroyPath(&amp;p);<BR>// p == NULL at this point</p></td></tr></table>
+
+</body>
+</HTML>

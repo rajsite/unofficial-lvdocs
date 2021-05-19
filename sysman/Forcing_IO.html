@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Forcing I/O Variable Values (NI Scan Engine)</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Forcing I/O Variable Values (NI Scan Engine)</h1>
+
+<p class="Body">You can use an <a href="iov_probe.html">I/O variable probe</a> to force I/O variable values. Forcing an I/O variable causes the input or output and all associated aliases of the variable to assume the forced value until you unforce the value. If an input from hardware returns an error, and the associated I/O variable is forced, System Manager does not display the error. However, if the error results in a <a href="../lvioscanhelp/faults.html">fault</a>, LabVIEW registers the fault. If an output returns an error, System Manager displays the error.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;If you link several I/O variables in a chain of aliases and force one of the I/O variables in the chain, the forced value applies to all I/O variables in the chain.</td></tr></table>
+
+<h2 id="enabling">Enabling I/O Variable Forcing</h2>
+
+<p class="Body">Complete the following steps to enable and disable I/O variable forcing on a target with the <a href="../lvioscanhelp/scan_engine.html">NI Scan Engine</a> installed.</p>
+
+<ol>
+<li>Click a scan-enabled target in the system tree to display a target probe in the <strong>Auto View</strong>. You also can right-click a target and select <strong>Probe</strong> to display a target probe in a separate window.</li>
+<li>The <a href="scan_engine_probe.html">Scan Engine</a> page of a real-time target probe displays the <strong>Forcing Enabled</strong> LED indicator, which indicates whether I/O variable forcing is enabled on the controller.</li>
+<li>Use the <strong>Enable Forcing</strong> button to enable forcing. Use the <strong>Disable Forcing</strong> button to disable forcing and unforce all forced I/O variable values. Use the <strong>Clear Forcing</strong> button to clear forcing on all I/O variables.</li>
+</ol>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;If you disable forcing and then enable forcing again, all previously-forced I/O variables return to their last forced value, unless you have cleared those values using the <strong>Clear Forcing</strong> button.</td></tr></table>
+
+<h2 id="forcing">Forcing I/O Variable Values</h2>
+
+<p class="Body">Complete the following steps to force and unforce I/O variable values.</p>
+
+<ol>
+<li>Click an I/O variable in the system tree to display an I/O variable probe in the <strong>Auto View</strong> or right-click an I/O variable and select <strong>Probe</strong> to display an I/O variable probe in a separate window.</li>
+<li>In the <strong>New Value</strong> section of the I/O variable probe, enter or select the new value for the I/O variable.</li>
+<li>Click the <strong>Force</strong> button to force the I/O variable to the value you specified.</li>
+<li>Click the <strong>Unforce</strong> button to unforce the I/O variable value.</li>
+</ol>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;Individual I/O variable forcing applies only if forcing is enabled on the target. Use the <strong>Enable Forcing</strong> and <strong>Disable Forcing</strong> buttons to enable and disable forcing on the target.</td></tr></table>
+
+<h2 id="batch">Batch Forcing I/O Variable Values</h2>
+
+<p class="Body">Complete the following steps to perform batch forcing on a set of I/O variables.</p>
+
+<ol>
+<li>Disable forcing on the target.</li>
+<li>Force each I/O variable to the desired value.</li>
+<li>Enable forcing on the target.</li>
+</ol>
+
+</body>
+</html>

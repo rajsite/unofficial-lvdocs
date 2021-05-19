@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4200Estructureshlp -->
+
+<title>Replacing Shift Registers with a Feedback Node</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Replacing Shift Registers with a Feedback Node</h1>
+<p class="Body">Complete the following steps to replace <a href="../lvconcepts/shift_registers_feedback_node.html">shift registers</a> with a <a href="../glang/Feedback_Node.html">Feedback Node</a>.
+</p>
+<ol>
+<li>Right-click the shift register.
+</li>
+<li>Select <strong>Replace with Feedback Node</strong> from the shortcut menu.
+</li>
+</ol>
+
+<h2>Replacing a Feedback Node with Shift Registers</h2>
+<p class="Body">Complete the following steps to replace a Feedback Node with shift registers.
+</p>
+<ol>
+<li>Right-click the Feedback Node.
+</li>
+<li>Select <strong>Replace with Shift Register</strong> from the shortcut menu.
+</li>
+</ol> 
+<p>If you do not move the <a href="../lvconcepts/Block_Diagram_Feedback.html#Initializer_Terminals">initializer terminal</a> to the edge of a loop before replacing the Feedback Node with shift registers, LabVIEW places the shift registers on the edges of the loop that previously contained the node, as shown in the following block diagrams.</p>
+<table class="Borderless"><tr><td><img src="loc_bd_feedbackloop.gif"></td><td><img src="loc_bd_srloop.gif"></td></tr></table>
+<p>If you <a href="../lvhowto/Initialize_the_Feedback_N.html">move the initializer terminal</a> to the edge of a loop before you replace the Feedback Node with shift registers, LabVIEW places the shift registers on the edges of that loop, as shown in the following block diagrams.</p>
+<table class="Borderless"><tr><td><img src="loc_bd_feedbacknest.gif"></td><td><img src="loc_bd_srnest.gif"></td></tr></table>
+</body>
+</html>

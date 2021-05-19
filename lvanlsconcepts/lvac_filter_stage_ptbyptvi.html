@@ -1,0 +1,66 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Filter Stage of the Train Wheel PtByPt VI</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-1ACE9AF6-7A4A-4B3A-8719-576058546D9E" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Filter Stage of the Train Wheel PtByPt VI</h1> 
+      
+      <div> 
+         	 
+         <p>The <span>Train Wheel PtByPt VI</span> must filter low- and high-frequency components of the train wheel waveform. Two <span>Butterworth Filter PtByPt VIs</span> perform the following tasks: 
+            	 
+         </p> 
+         	 <a name="GUID-1ACE9AF6-7A4A-4B3A-8719-576058546D9E__UL_46BE6B1633F74652BBCD5442327DA826" shape="rect">
+            <!-- --></a><ul id="GUID-1ACE9AF6-7A4A-4B3A-8719-576058546D9E__UL_46BE6B1633F74652BBCD5442327DA826">
+            <li><a name="GUID-1ACE9AF6-7A4A-4B3A-8719-576058546D9E__LI_737F067CFAE64AC6892AADBD0E2E439F" shape="rect">
+                  <!-- --></a>Extract the low-frequency components of the waveform. 
+               		
+            </li>
+            <li><a name="GUID-1ACE9AF6-7A4A-4B3A-8719-576058546D9E__LI_C7D0886D4A99416197FE6F4B52C9EA8F" shape="rect">
+                  <!-- --></a>Extract the high-frequency components of the waveform. 
+               		
+            </li>
+         </ul> 
+         	 
+         <p>In the <span>Train Wheel PtByPt VI</span>, the <span>Butterworth Filter PtByPt VIs</span> use the following parameters: 
+            	 
+         </p> 
+         	 <a name="GUID-1ACE9AF6-7A4A-4B3A-8719-576058546D9E__UL_54AA81F50C8748FCBD16C32BDD13B4C7" shape="rect">
+            <!-- --></a><ul id="GUID-1ACE9AF6-7A4A-4B3A-8719-576058546D9E__UL_54AA81F50C8748FCBD16C32BDD13B4C7">
+            <li><a name="GUID-1ACE9AF6-7A4A-4B3A-8719-576058546D9E__LI_D8E6EF38065840C997390CBD708877F5" shape="rect">
+                  <!-- --></a> <span>order</span> specifies the amount of the waveform data that the VI filters at a given time and is the filter resolution. 2 is acceptable
+               for the <span>Train Wheel PtByPt VI</span>. 
+               		
+            </li>
+            <li><a name="GUID-1ACE9AF6-7A4A-4B3A-8719-576058546D9E__LI_1124BCE872B74F3CA212558CCDD65651" shape="rect">
+                  <!-- --></a> <span>fl</span> specifies the low cut-off frequency, which is the minimum signal strength that identifies the departure of a train wheel
+               from the strain gauge. 0.01 is acceptable for the <span>Train Wheel PtByPt VI</span>. 
+               		
+            </li>
+            <li><a name="GUID-1ACE9AF6-7A4A-4B3A-8719-576058546D9E__LI_9314359CC27042239FDB127C1BFB9D36" shape="rect">
+                  <!-- --></a> <span>fh</span> specifies the high cut-off frequency, which is the minimum signal strength that identifies the end of high-frequency waveform
+               information. 0.25 is acceptable for the <span>Train Wheel PtByPt VI</span>. 
+               		
+            </li>
+         </ul> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="lvac_analysis_stages_ptbyptvi.html" shape="rect">Analysis Stages of the Train Wheel PtByPt VI</a></div>
+         </div>
+         <div class="relinfo"><strong>Related information</strong><br clear="none"><div><a href="../ptbypt/Butterworth_Filter_PtByPt.html" shape="rect">Butterworth Filter PtByPt VI</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

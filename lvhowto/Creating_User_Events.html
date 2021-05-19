@@ -1,0 +1,163 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4210Eevents -->
+
+<title>Creating Custom Events</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Creating Custom Events</h1>
+<p class="Body">You can create and name custom events, called user events, to carry data that you define. User events allow different parts of an application to <a href="../lvconcepts/Event_Driven_Programming.html">communicate asynchronously</a>. Unlike <a href="../lvconcepts/What_Are_Events.html#User_Interface_Events">user interface events</a>, which require direct user interaction with front panel objects, user events allow you to create an application that responds to <em>programmatic</em> changes on objects. You can handle both user interface events and programmatically generated user events in the same Event structure.</p>
+
+<a name="toUse"></a><h2>What to Use</h2>
+<p>Use the following block diagram objects to create a user event.</p>
+<table class="Usage">
+	<col class="Object">
+	<col class="Spacer">
+	<col class="Object">
+	<col class="Spacer">
+	<col class="Object">
+	<col class="Spacer">
+	<col class="Object">
+	<col class="Spacer">
+	<col class="Object">
+	<col class="Spacer">
+	<col class="Object">
+	
+	<tr><td><a href="../glang/Create_User_Event.html">Create User Event</a></td>
+		<td></td>
+		<td><a href="../glang/Register_Events.html">Register For Events</a></td>
+		<td></td>
+		<td><a href="../glang/Event_Structure.html">Event Structure</a></td>
+		<td></td>
+		<td><a href="../glang/Generate_User_Event.html">Generate User Event</a></td>
+		<td></td>
+		<td><a href="../glang/Unregister_Events.html">Unregister For Events</a></td>
+		<td></td>
+		<td><a href="../glang/Destroy_User_Event.html">Destroy User Event</a></td>
+		<td></td>
+		
+		
+	</tr>
+	
+	<tr><td><img src="noloc_icon_create_event.gif"></td>
+	<td></td>
+	<td><img src="loc_icon_register_event.gif"></td>
+	<td></td>
+	<td><img src="loc_icon_event_struct.gif"></td>
+	<td></td>
+	<td><img src="noloc_icon_gen_user_event.gif"></td>
+	<td></td>
+	<td><img src="noloc_icon_unregister_event.gif"></td>
+	<td></td>
+	<td><img src="noloc_icon_destroy_user_event.gif"></td>
+	<td></td></tr>
+	
+		<tr><td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object1909);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object1909);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object1907);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object1907);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object1217);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object1217);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object1910);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object1910);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object1908);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object1908);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object1911);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object1911);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		
+	</tr>
+</table>
+<h2>What to Do</h2>
+<p class="Body">Create the following block diagram to build a user event that programmatically carries data you define.</p>
+  
+<img src="loc_bd_userdefeventex.gif">
+<p>The following list describes important details about the previous diagram.</p>
+<table>
+			
+
+					
+<tr>
+	<td>
+		<img src="noloc_eps_callout_1.gif"></td><td>To define a user event, wire a block diagram object to the Create User Event function. The input for the Create User Event function is an individual element or a cluster whose name becomes the name of the user event and whose data type defines the data type for the event. Furthermore, LabVIEW uses <a href="../lvhowto/Owned_Labels.html">owned labels</a> to identify the data the user event carries, so label the input data&#8212;or each element of the input data&#8212;with a descriptive owned label. You must provide a label on the input data for the user event to appear in the <a href="../glang/Event_Structure.html#Event_Node">Event Data Node</a> of an Event structure. In the previous block diagram, the name of the user event is <span class="Monospace">My User Event</span>, and the name of the event data item is <span class="Monospace">string</span>.</td></tr>
+
+
+<tr>
+	<td>
+		<img src="noloc_eps_callout_2.gif"></td><td>The <strong>user event out</strong> output of the Create User Event function is a strictly typed refnum that carries the name and data type of the user event. Use this refnum as a reference to the event name and data type when registering for events and generating a user event.</td></tr>						
+<tr>
+	<td>
+		<img src="noloc_eps_callout_3.gif"></td><td>Use the Register For Events function to <a href="../lvconcepts/Using_Events_in_LabVIEW.html#Dynamic_Event_Registration">dynamically register</a> the user event. You can wire a combination of user events and user interface events to the Register For Events function. </td></tr>
+
+
+<tr>
+	<td>
+		<img src="noloc_eps_callout_4.gif"></td> <td>Wire the <strong>event registration refnum</strong> output of the Register For Events function to the <a href="../glang/Event_Structure.html#Event_Reg_Term">dynamic event terminal</a> on the left side of the Event structure. To display the dynamic event terminal, right-click the Event structure and select <strong>Show Dynamic Event Terminals</strong>. The user event data items appear in the Event Data Node on the left border of the Event structure.</td></tr>
+<tr>
+	<td>
+		<img src="noloc_eps_callout_5.gif"></td><td>To add more data items to the Event Data Node, vertically resize the node. Use the Event Data Node to access any <a href="../glang/Event_Structure.html#Event_Element">event data element</a> associated with a particular event. </td></tr>
+			
+
+			
+
+<tr>
+	<td>
+		<img src="noloc_eps_callout_6.gif"></td><td>Use the <a href="../lvdialog/Edit_Events_Dialog_Box.html">Edit Events</a> dialog box to configure a case in the Event structure to handle the event. The name of the user event appears under the <strong>Dynamic</strong> subheading in the <strong>Event Sources</strong> section of the dialog box.</td></tr>
+<tr><td>
+		<img src="noloc_eps_callout_7.gif"></td><td>Use the Generate User Event function to deliver the user event and associated data to other parts of an application through an Event structure configured to handle the event. The Generate User Event function accepts a user event refnum and a value for the event data. The data value must match the data type of the user event. </td></tr></table>
+					
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If the user event is not registered, the Generate User Event function has no effect. If the user event is registered but no Event structure is waiting on it, LabVIEW queues the user event and data until an Event structure executes to handle the event.</td></tr></table>
+					
+<table class="Borderless">
+<tr>
+	<td>
+		<img src="noloc_eps_callout_8.gif"></td><td>Use the Unregister For Events function and the Destroy User Event function to release the associated events and the user event reference. LabVIEW unregisters all events and destroys existing user events automatically when the top-level VI finishes running. However, to conserve memory resources, National Instruments recommends that you unregister and destroy user events explicitly, especially in an application that runs for a long period of time.
+ </td></tr></table>
+ <h2>Caveats and Recommendations</h2>
+ <ul>
+ <li>You cannot register for a user event statically.</li>
+ <li>You can register for the same user event multiple times by using separate Register For Event functions. In this situation, each queue associated with an event registration refnum receives a copy of the user event and associated event data each time the Generate User Event function executes.</li>
+ <li>User events are <a href="../lvconcepts/Notify_and_Filter_Events.html">notify events</a> and can share the same event case of an Event structure as user interface events or other user events.</li>
+ <li>To simulate user interaction with a front panel, you can create a user event that has event data items with the same names and data types as an existing user interface event. For example, you can create a user event called <span class="Monospace">MyValChg</span> by using a cluster of two Boolean fields named <span class="Monospace">OldVal</span> and <span class="Monospace">NewVal</span>, which are the same event data items the <a href="../lvprop/Ctrl_Value_Changed.html">Value Change</a> user interface event associates with a Boolean control. You can share the same Event structure case for the simulated <span class="Monospace">MyValChg</span> user event and a real Boolean Value Change event. The Event structure executes the event case if a Generate User Event function generates the user event or if a user changes the value of the control.</li>
+
+</ul>
+<h2>Examples</h2>
+<p class="Body">Refer to the <span class="Monospace">labview\examples\Dialog and User Interface\Events\Events.lvproj</span> for examples of dynamically registering events.</p>
+<p class="Body">
+<a href="javascript:openProj('examples%5C%5CDialog%20and%20User%20Interface%5C%5CEvents%5C%5CEvents.lvproj');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(3758);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Find related examples</p>
+<p class="Body">Refer to the User Event Generation VI in the <span class="Monospace">labview\examples\Dialog and User Interface\Events</span> directory for an example of using user events.</p> 
+<p class="Body"><a href="javascript:openVI('examples%5C%5CDialog%20and%20User%20Interface%5C%5CEvents%5C%5CUser%20Event%20Generation.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(3758);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</p>
+<br><br><br><p><a href="../lvconcepts/Data_Comm.html"><img class="center" src="back_arrow.gif" border="0"></a><a href="../lvconcepts/Data_Comm.html"><em>Data Communication Methods</em> Home</a></p>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Adding Files to Source Control</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Adding Files to Source Control</h1>
+
+<p class="Body">You can add folders, individual VIs, or any supported files in a LabVIEW project to source control. When you <a href="Configuring_SCC.html">configure LabVIEW to work with a source control provider</a>, you can configure LabVIEW to prompt you to add files to source control when you add files to a project.
+</p>
+<p class="Body">After a file is in source control, you can perform source control operations on the file in LabVIEW.
+</p>
+<p class="Body">Complete the following steps to add files in LabVIEW to source control.
+</p>
+<ol>
+<li>Save the files in the local directory that corresponds to the source control provider directory where you want to store the files. You cannot add new VIs or LabVIEW project libraries to source control until you save and name them.
+</li>
+<li>Select <strong>Tools&#0187;Source Control&#0187;Add to Source Control</strong> to display the <a href="../lvdialog/Source_Control_Ops_DB.html">Source Control Operations</a> dialog box. You also can click the <strong>Add to Source Control</strong> button on the <a href="../glang/Source_Control_Toolbar.html">Source Control toolbar</a>.
+<br><br>
+From within a project, right-click the folder or files you want to add and select <strong>Add to Source Control</strong> from the shortcut menu.
+</li>
+<li>The <strong>Files</strong> tree contains the names and paths of all files to add to source control. Remove the checkmark from the checkbox next to the name of any file you do not want to add to source control.
+</li>
+<li>Click the <strong>OK</strong> button. LabVIEW adds the file to source control. If you are working in a project, a white square <img src="noloc_env_scc_inscc_o.gif"> appears on the file icon to show the file is in source control. 
+</li></ol>
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If you are using Perforce, LabVIEW adds the file or files to the default changelist. You must use Perforce to perform any advanced changelist actions, such as creating new changelists, or to navigate between changelists.</td></tr>
+</table>
+<p class="Body">After a file is in source control, you can <a href="Checking_Out_Files.html">check out files</a>, <a href="Checking_In_Files.html">check in files</a> you edited, and <a href="Getting_the_Latest_Version.html">get the latest version</a> of a file in source control.
+</p>
+
+
+
+</body>
+</html>

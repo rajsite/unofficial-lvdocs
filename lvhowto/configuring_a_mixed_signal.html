@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Customizing a Plot on a Mixed Signal Graph Using the Plot Legend</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Customizing a Plot on a Mixed Signal Graph Using the Plot Legend</h1>
+	<h2>Customizing Digital Data Plots</h2>
+		<p class="Body">You can specify how numbers and digital lines appear on a mixed signal graph by customizing each line or bus. To customize a digital line or bus on a graph, right-click a line or bus glyph in the plot legend and select from the following options on the shortcut menu:</p>
+		<ul><li><strong>Plot Visible</strong>&#8212;Sets whether to display the plot on the graph or chart.</li><li><strong>Color</strong>&#8212;Displays the color picker so you can select the color of the plot.</li><li><strong>Label Format</strong>&#8212;Sets the format of the numbers in a bus. You can display numbers in <strong>Hexadecimal</strong>, <strong>Decimal</strong>, <strong>Octal</strong>, <strong>Binary</strong>, or <strong>Fixed Point</strong> formats, or you can select a format of <strong>None</strong>, which removes the labels from a line or bus. You also can select <strong>Configure Fixed Point</strong> to display the <a href="../lvdialog/Configure_FXP_DB.html">Configure Fixed Point</a> dialog box, which allows you to configure <strong>Fixed Point</strong> label format options.</li></ul>
+			<table class="Borderless"><tr><td class="Icon"><img src="note.gif" /></td><td><strong>Note</strong>��LabVIEW displays the plot label only if there is enough room in the digital graph plot.</td></tr></table>
+		<ul><li><strong>Transition Type</strong>&#8212;Sets how LabVIEW distinguishes differing values in the plot. This setting affects only plots with more than one bit. You can select a square edge or sloped edge. Use the square edge to show simple state changes. Use the sloped edge to emphasize jitter or settling time between states.</li><li><strong>Transition Location</strong>&#8212;Sets whether to display high-to-low transitions at the previous point, in between points, or at the new point on the x-axis. The default displays high-to-low transitions at the new point on the x-axis.</li><li><strong>Line Style</strong>&#8212;Sets whether LabVIEW uses a thin or thick line in the plot to distinguish high or low values or to offset a particular plot line. Select the left-most option to keep the default line thickness.</li><li><strong>X Scale</strong>&#8212;Sets the variable to associate with the x-axis.</li><li><strong>Y Scale</strong>&#8212;Sets the variable to associate with the y-axis.</li></ul>
+		<p class="Body">You also can use the Plot properties to customize how a digital data plot appears in the plot area programmatically.</p>
+		
+		<p class="Body"><strong>Related information</strong>
+		<br /><a href="../lvprop/Plot_p.html">Plot Properties</a>
+		<br /><a href="../lvdialog/Configure_FXP_DB.html">Configure Fixed Point Dialog Box</a>
+		<br /><a href="../lvhowto/Adding_Plot_to_MxSig.html">Adding Plot Areas to a Mixed Signal Graph</a>
+		<br /><a href="../lvhowto/Graph_Mixed_Signal_Graph.html">Graphing Multiple Data Types on a Mixed Signal Graph</a>
+		<br /><a href="../lvhowto/Configuring_a_Digital_Wave.html">Customizing a Digital Waveform Plot Using the Plot Legend</a>
+		</p>
+		
+	<h2>Customizing Analog Data Plots</h2>
+		<p class="Body">You can specify how numbers and analog plots appear on a mixed signal graph by customizing each plot. To customize an analog plot on a mixed signal graph, right-click a glyph in the plot legend and select one of the following options from the shortcut menu:</p>
+		<ul><li><strong>Plot Visible</strong>&#8212;Sets whether to display the plot on the graph or chart.</li><li><strong>Common Plots</strong>&#8212;Sets the plot type. You can select a line, scatter, line and symbol, fill, comb, or bar plot type.</li><li><strong>Color</strong>&#8212;Displays the color picker so you can select the color of the plot.</li><li><strong>Line Style</strong>&#8212;Sets the line style of the selected plot line. You can select from solid and dashed line styles.</li><li><strong>Line Width</strong>&#8212;Sets the thickness of the selected plot line.</li><li><strong>Anti-Aliased</strong>&#8212;Sets whether to use anti-aliasing. Select this item to make line plots appear smoother. Anti-aliasing can be computation intensive and can slow performance.</li><li><strong>Bar Plots</strong>&#8212;Sets whether and how LabVIEW displays bar plots.</li><li><strong>Fill Base Line</strong>&#8212;Sets options for filling in space above or below the plot with the same color as the plot. If the graph or chart has multiple plots, you can select a second plot at the bottom of the shortcut menu to fill the space below the plot up to the first plot.</li><li><strong>Interpolation</strong>&#8212;Sets interpolation options, including plotting only data points.</li><li><strong>Point Style</strong>&#8212;Sets point styles for the data points of the selected plot line.</li></ul>
+			<table class="Borderless"><tr><td class="Icon"><img src="note.gif" /></td><td><strong>Note</strong>��To change the size of the data points, you must use the <strong>Line Width</strong> shortcut menu option to change the line width for the plot.</td></tr></table>
+		<ul><li><strong>X Scale</strong>&#8212;Sets the variable to associate with the x-axis.</li><li><strong>Y Scale</strong>&#8212;Sets the variable to associate with the y-axis.</li></ul>
+		<p class="Body">You also can use the Plot properties to customize how an analog data plot appears in the plot area programmatically.</p>
+		
+		<p class="Body"><strong>Related information</strong>
+		<br /><a href="../lvprop/Plot_p.html">Plot Properties</a>
+		<br /><a href="../lvhowto/Adding_Plot_to_MxSig.html">Adding Plot Areas to a Mixed Signal Graph</a>
+		<br /><a href="../lvhowto/Graph_Mixed_Signal_Graph.html">Graphing Multiple Data Types on a Mixed Signal Graph</a>
+		<br /><a href="../lvhowto/PL_Customizing.html">Customizing an Analog Plot Using the Plot Legend</a>
+		</p>
+
+</body>
+</html>

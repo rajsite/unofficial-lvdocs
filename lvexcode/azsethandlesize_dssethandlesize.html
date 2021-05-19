@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>DSSetHandleSize (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>DSSetHandleSize (LabVIEW Manager Function)</h1>
+<p class="Code">MgErr DSSetHandleSize(h, size);</p>
+<h2>Purpose</h2>
+<p class="Body">Changes the size of the block of memory referenced by the specified handle.</p>
+<p class="Body">To use this function to resize an array handle, you must calculate how many bytes the resized array requires. Many platforms have memory alignment requirements that make it difficult to determine the correct size for the resulting array. Learn about <a href="../lvconcepts/How_LabVIEW_Stores_Data_in_Memory.html">how LabVIEW stores data in memory</a> to calculate the size and alignment of array elements, especially for arbitrary data types such as <a href="../lvconcepts/How_LabVIEW_Stores_Data_in_Memory.html#Clusters">clusters</a>.</p>
+
+<p>To resize a handle for a numeric array, use the <a href="numericarrayresize.html">NumericArrayResize</a> manager function instead of <span class="Monospace">DSSetHandleSize</span>.</p>
+
+<p>Do not use this function on a locked handle.</p>
+
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>h</strong></td>
+<td class="Bordered"><span class="Monospace">UHandle</span></td>
+ <td class="Bordered">Handle you want to resize.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>size</strong></td>
+<td class="Bordered"><span class="Monospace">size_t</span></td>
+ <td class="Bordered">New size, in bytes, of the handle.</td></tr>
+</table>
+<h2>Return Value</h2>
+<p class="Body"><span class="Monospace">MgErr</span>, which can contain the following errors. If you receive errors from <a href="LabVIEW_Manager_Functions.html">LabVIEW Manager functions</a>, most error names correspond to LabVIEW error codes.</p>
+<table class="Bordered">
+<tr><th class="Bordered Left-Align">Value</th>
+<th class="Bordered Left-Align">Corresponding Error Code or Description</th></tr>
+<tr><td class="Bordered"><span class="Monospace">noErr</span></td><td class="Bordered">No error.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">mZoneErr</span></td><td class="Bordered">Handle or pointer not in specified zone.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">mFullErr</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">2</a></td></tr></table>
+
+</body>
+</HTML>

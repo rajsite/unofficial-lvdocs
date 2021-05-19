@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<title>Instrument Driver Modification Instructions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+</head>
+
+<body bgcolor="#ffffff">
+<h1>Instrument Driver Modification Instructions</h1>
+
+<p class="body">Follow these instructions after creating an instrument driver using the <a href="../lvdialog/IDproject.html">Create New Instrument Driver Project</a> wizard. Refer to the <a href="javascript:WWW(WWW_AN_DevInstrDriver)">National Instruments Web site</a> for more information about developing LabVIEW plug and play instrument drivers.</p>
+<p class="body">For assistance or feedback during any phase of the development process, please contact <a href="mailto:instrument.drivers@ni.com">instrument.drivers@ni.com</a>.</p>
+
+<h2><a name="general">Modification Instructions</a></h2>
+<ol><li><a href="#Remove_VIs">Remove unsupported VIs</a></li>
+  <li><a href="#Modify_the_common_VIs">Modify common driver VIs</a></li>
+  <li><a href="#Modify_instrument_specific_VIs">Modify instrument-specific VIs</a></li>
+  <li><a href="#Create_new_VIs">Create new instrument-specific VIs</a></li>
+  <li><a href="#examples">Create example VIs</a></li>
+  <li><a href="#Update_VI_tree_VI">Update the VI Tree VI</a></li>
+  <li><a href="#Update_palette_files">Update palette files</a></li>
+  <li><a href="#readme">Update or create a Readme file</a></li>
+  <li><a href="#submit">Submit the completed driver</a> to the Instrument Driver Network at <a href="javascript:WWW(WWW_IDNET)">ni.com/idnet</a>.</li></ol>
+  
+<h2><a name="Remove_VIs"></a>Removing Unsupported VIs</h2>
+<ol><li>Remove any instrument driver VIs in the project that the instrument does not support, including any common VIs such as Self-Test or Reset. You must identify the individual capabilities of your instrument to determine which VIs it supports. For example, the Digital Multimeter template includes VIs for making multipoint measurements.  If you write a driver for a Digital Multimeter that does not support multipoint measurements, delete these VIs from both the driver project and driver directory.</li>
+<li>For each VI you removed, remove subVI calls to that VI from other instrument driver VIs in the project.</li>
+<li>Save the project (<span class="Monospace">.lvproj</span>) and project library (<span class="Monospace">.lvlib</span>) after removing files.</li></ol>
+
+<h2><a name="Modify_the_common_VIs"></a>Modifying Common Driver VIs</h2>
+<ol><li>If you created the driver from a template, each common driver VI includes modification instructions in yellow text boxes on the front panel and/or block diagram. The common driver VIs include: Initialize, Close, Self-Test, Reset, Error Query, Revision Query, and Default Instrument Setup. Read the VI documentation, follow the modification instructions in each VI, and then delete the instructions.</li>
+<li>Follow these additional instructions:
+<ul><li><strong>Initialize VI</strong>&#8212;Switch to the front panel and enter the default address information in the <strong>VISA resource name</strong> control. Refer to the <strong>VISA resource name</strong> control context help for the syntax for the device. Right-click the control and select <strong>Data Operations&raquo;Make Current Value Default</strong> from the shortcut menu. Update the context help of this control to show only information about supported buses for the instrument.<br><br>Modify or remove serial controls in the <strong>Serial Configuration</strong> cluster to match the capabilities of the instrument.
+For example, if an instrument can only have 7 data bits and 1 stop bit, remove the <strong>Data Bits</strong> and <strong>Stop Bits</strong> controls and set these parameters as constants on the block diagram. If an instrument only supports 2 baud rates, remove unsupported rates from the <strong>Baud Rate</strong> control. Set the controls in the <strong>Serial Configuration</strong>
+cluster to the instrument defaults, right-click the controls, and select <strong>Operate&raquo;Make
+Current Values Default</strong> from the shortcut menu.<br><br>You also can use the <strong>Serial Configuration</strong> cluster for other configuration settings such as a non-serial bus like
+TCP/IP. If necessary, update the cluster name and context help to reflect the controls within the cluster.</li>
+<li><strong>Close VI</strong>&#8212;If you need to configure the instrument to a certain state before it can be closed, add the necessary code to the block diagram before the <a href="../lvinstio/VISA_Close.html">VISA Close</a> function.</li>
+<li><strong>Self-Test VI</strong>&#8212;Set the timeout constant on the block diagram to a value large enough for the instrument to finish its self-test. The default is 20,000 milliseconds, or 20 seconds.</li>
+<li><strong>Error Query VI</strong>&#8212;Designed to parse multiple SCPI errors. If the instrument implements error
+checking differently, refer to other instrument drivers, such as the Fluke 45 Multimeter, for alternatives to implement this functionality. The Error Query VI is included as a subVI in all driver VIs except low-level API VIs.  For SCPI compliant instruments, use <span class="Monospace">:SYST:ERR?</span> for the error query command. For non-SCPI compliant instruments, parse the error query response to see if an error occurred. Based on the response, set the Boolean
+status element of the error cluster to the appropriate state. The Boolean should be False if there is no instrument error to report, and True otherwise.</li>
+<li><strong>Revision Query VI</strong>&#8212;Modify the <a href="../glang/Scan_From_String.html">Scan From String</a> function to parse out the firmware query for the instrument.</li>
+</ul></li>
+
+<li>Save the project (<span class="Monospace">.lvproj</span>) and project library (<span class="Monospace">.lvlib</span>) after modifying files.</li></ol>
+  
+<h2><a name="Modify_instrument_specific_VIs"></a>Modifying Instrument-specific VIs</h2>
+<p class="body">Complete the following steps for each remaining VI in the driver.</p>
+<ol><li>Open the VI and edit the front panel by adding, modifying, or removing controls and indicators as needed to perform the operation defined by the VI.</li>
+<li>Update the default values of the controls to match the default values of the instrument. Set the value on each control and then right-click the control and select <strong>Data Operations&#0187;Make Current Value Default</strong> from the shortcut menu.</li>
+<li>Update the control and indicator labels and descriptions to reflect any changes.</li>
+<li>Edit the VI icon as needed.</li>
+<li>If you removed or added controls and indicators, edit the connector pane to match.</li>
+<li>Edit the block diagram by updating the command strings and parsed responses to match instrument functionality.</li>
+<li>Edit the VI documentation as needed. An example of documentation you could enter for the Initialize VI is: <span class="Monospace">This instrument driver supports serial communication. If you encounter problems when using serial communication, try using baud rates less than 19,200 and hardware handshaking</span>.</li>
+<li>If you created the driver from a template, each VI includes modification instructions in yellow text boxes on the front panel and/or block diagram. Read the VI documentation, follow the modification instructions in the VI, and then delete the instructions.</li>
+<li>Save and test the VI.</li>
+<li>Save the project (<span class="Monospace">.lvproj</span>) and project library (<span class="Monospace">.lvlib</span>) after modifying files.</li>
+</ol>
+
+<h2><a name="Create_new_VIs"></a>Creating New Instrument-specific VIs</h2>
+<ol><li>Use the <a href="../lvdialog/ID_VI.html">Instrument Driver VI Wizard</a> to create additional VIs that the instrument supports. If you created a driver from a class template, such as the Digital Multimeter template, the instrument probably supports additional functionality not covered by the class template. You should create additional VIs for each supported feature, using the existing VIs and structure for guidance. For example, oscilloscopes often have many types of triggers but the Oscilloscope template only includes support for edge triggering. If the instrument supports additional types of triggers, add this functionality with additional instrument driver VIs.</li>
+<li>Use polymorphic VIs to group related instrument driver VIs. For example, multiple trigger configuration VIs can be presented with one polymorphic VI.</li>
+<li>Save the project (<span class="Monospace">.lvproj</span>) and project library (<span class="Monospace">.lvlib</span>) after modifying files.</li></ol>
+
+<p class="body">Below are some specific modifications for drivers created from the class templates.</p>
+
+<ul><li><strong>Digital Multimeter</strong>&#8212;The low-level VIs on the Configure and Data palettes allow more control of the DMM. They are not intended for use with the Read (Single Points) and Read (Multiple Points) template VIs, because these VIs already include portions of this functionality. Refer to the Read Triggered Multiple VI for an example of using these low-level VIs.</li>
+<li><strong>Oscilloscope</strong>&#8212;The private Default Instrument Setup.vi should set the oscilloscope in single acquisition mode. This command may be similar to <span class="Monospace">:ACQ:STOPA SEQ;</span>.</li>
+<li><strong>Function Generator</strong>&#8212;If the instrument supports arbitrary waveforms, you must create separate VIs to implement arbitrary waveform support. Do not add arbitrary waveform support to the Configure Standard Waveform.vi.</li></ul>
+<p class="body">If the instrument automatically disables one mode when enabling another mode, you can implicitly enable the status of the modulation and sweep VIs. To do this, remove the <strong>Enable <em>&lt;x&gt;</em> Mode</strong> control and delete the False case from the block diagram.</p>
+
+
+<h2><a name="examples"></a>Creating Example VIs</h2>
+<ol><li>Create two or more example VIs that demonstrate how to use the instrument driver. Examples should help users understand the recommended calling sequence necessary to perform instrument operations. Include an example for each typical use case for the instrument to benefit a wide range of users.</li>
+<li>Include example VIs in the instrument driver project, but not in the project library.</li>
+<li>Select <strong>Tools&#0187;Prepare Example VIs for NI Example Finder</strong> to add an example data file (<span class="Monospace">.bin3</span>) to the <span class="Monospace">examples</span> directory in the instrument driver project.</li></ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;<!-- begin parent ../lvhowto/Prep_VI_for_NI_Example_Finder.html-->LabVIEW reserves the following prefixes and you cannot use them when you name the <span class="Monospace">.bin3</span> file: <span class="Monospace">ms</span>, <span class="Monospace">test</span>, <span class="Monospace">lv</span>, <span class="Monospace">daq</span>, <span class="Monospace">cvi</span>, <span class="Monospace">tree</span>, <span class="Monospace">fr</span>, <span class="Monospace">de</span>, <span class="Monospace">ja</span>, <span class="Monospace">vi</span>, <span class="Monospace">im</span>, <span class="Monospace">dsc</span>, <span class="Monospace">rt</span>, <span class="Monospace">_</span>, <span class="Monospace">ko</span>, <span class="Monospace">zh</span>, <span class="Monospace">it</span>, and <span class="Monospace">es</span>.<!-- end child ../lvhowto/Prep_VI_for_NI_Example_Finder.html--></td>
+</tr>
+</table>
+
+<h2><a name="Update_VI_tree_VI"></a>Updating the VI Tree VI</h2>
+<ol><li>Open the VI Tree VI and update the block diagram to reflect changes to the instrument driver. The VI Tree is not a subVI in an application. It is intended as a quick overview of the hierarchy of the driver VIs.</li>
+<li>Remove any VIs that are not supported by the instrument, including any common VIs such as Self-Test or Reset.</li>
+<li>Add any public VIs that you added to the driver.</li>
+<li>Save and close the VI.</li></ol>
+
+<h2><a name="Update_palette_files"></a>Updating Palette Files</h2>
+<ol><li>After all VIs are complete, update the function palette files (<span class="Monospace">.mnu</span>) to reflect changes to the instrument driver. All public instrument driver VIs should be accessible from the palette file. Do not include example VIs in the palette file.</li>
+<li>Remove links to any VIs you removed from the driver.</li>
+<li>Add palette files for subpalettes as needed to enhance the palette usability for new VIs.  The palette file should match the layout of the VI Tree and the project folder hierarchy.</li>
+</ol>
+
+<h2><a name="readme"></a>Updating or Creating the Readme file</h2>
+<ol><li>Open the Readme.html file in an html editor. The Readme file is an html file that includes a driver overview, requirements for use, supported features, revision history, and other information on using the driver. If you created the driver from a template, the driver includes a Readme.html file with fields that you need to modify denoted in red text. If you created the driver yourself, you need to create the Readme.html file.</li>
+<li>Update the appropriate fields in the Readme file with information specific to the instrument and instrument driver. If you created the driver from a template, update and replace all instances of red text in the file.</li>
+<li>Save the Readme file.</li>
+<li>Update the Readme file with revision history each time you modify the driver.</li></ol>
+
+
+<h2><a name="submit"></a>Submitting the Instrument Driver to the Instrument Driver Network</h2>
+<p class="Body">Whether you are an instrument manufacturer interested in making an instrument driver more accessible or you are an individual wanting to share your driver development efforts with others, consider submitting the driver to the Instrument Driver Network at <a href="javascript:WWW(WWW_IDNET)">ni.com/idnet</a>.</p>
+
+
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 5800Evidocprinthlp -->
+
+<title>Naming Conventions for Image Files that LabVIEW Generates</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Naming Conventions for Image Files that LabVIEW Generates</h1>
+
+<p class="Body">When you <a href="Creating_HTML_Documents_fo.html">generate HTML</a> or <a href="Creating_RTF_based_Documen.html">RTF documentation</a> with external graphics, LabVIEW saves the control and indicator data type terminals and other parts of the VI to image files with consistent names.</p>
+
+<p class="Body">LabVIEW saves controls and indicators using the following information:</p>
+<ul>
+<li>The first letter is a <span class="Monospace">c</span> or an <span class="Monospace">i</span>, depending on if the terminal is a control or an indicator, respectively.</li>
+<li>If the terminal represents an array, the dimension, such as <span class="Monospace">2d</span>, follows the first letter.</li>
+<li>A short name that represents the data type follows the dimension.</li>
+<li>If the data type of the terminal is a LabVIEW class, then the name of the data type includes the full qualified name of the LabVIEW class.</li>
+</ul>
+
+<p class="Body">The following table lists example image filenames for controls and indicators.</p>
+
+<table class="Bordered"><tr><th class="Bordered">Name</th>
+<th class="Bordered">Terminal</th></tr>
+
+<tr><td class="Bordered"><span class="Monospace">ci32.jpg</span></td>
+<td class="Bordered">Control, 32-bit signed integer</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">i2di32.jpg</span></td>
+<td class="Bordered">Indicator, 2D array of 32-bit signed integers</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">c3dstr.jpg</span></td>
+<td class="Bordered">Control, 3D array of strings</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">cLibrary_Child_1lvclass.jpg</span></td>
+<td class="Bordered">Control, Child 1.lvclass in Library.lvlib</td></tr></table>
+
+<p class="Body">When LabVIEW generates image files for other parts of the VI, such as the front panel, LabVIEW includes the full qualified name of the VI in the image filename. For example, if <span class="Monospace">Test.vi</span> is in a library, LabVIEW includes the library in the image filename. Also, if you select the JPEG graphic format to save a VI named <span class="Monospace">Test.vi</span>, LabVIEW saves the graphics as JPEG files.</p>
+
+<p class="Body">The following table lists example image filenames for other VI objects.</p>
+
+<table class="Bordered"><tr><th class="Bordered">VI Elements</th>
+<th class="Bordered">JPEG Filename</th></tr>
+
+<tr><td class="Bordered"><a href="Creating_VI_Icon.html">Icon</a></td>
+<td class="Bordered"><span class="Monospace">Testi.jpg</span></td></tr>
+
+<tr><td class="Bordered"><a href="../lvconcepts/Building_Connector_Pane.html">Connector pane</a></td>
+<td class="Bordered"><span class="Monospace">Testc.jpg</span></td></tr>
+
+<tr><td class="Bordered">Front panel</td>
+<td class="Bordered"><span class="Monospace">Testp.jpg</span></td></tr>
+
+<tr><td class="Bordered">Front panel of a VI inside a library</td>
+<td class="Bordered"><span class="Monospace">Library_lvlib_Parent_lvclass_Testp.jpg</span></td></tr>
+
+<tr><td class="Bordered">Block diagram</td>
+<td class="Bordered"><span class="Monospace">Testd.jpg</span></td></tr>
+
+<tr><td class="Bordered">Block diagram of a VI inside a library</td>
+<td class="Bordered"><span class="Monospace">Library_lvlib_Parent_lvclass_Testd.jpg</span></td></tr>
+
+<tr><td class="Bordered"><a href="../lvdialog/Hierarchy_Window.html">VI Hierarchy</a> window</td>
+<td class="Bordered"><span class="Monospace">Testh.jpg</span></td></tr>
+
+<tr><td class="Bordered">SubVI icons</td>
+<td class="Bordered"><span class="Monospace"><span class="Monospace-Italic">subVI_name</span>i.jpg</span></td></tr>
+
+</table>
+
+
+
+
+</body>
+</html>

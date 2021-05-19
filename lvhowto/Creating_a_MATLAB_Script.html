@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 6400Eformula/hlp -->
+
+<title>Calling the MATLAB&#0174; Software from LabVIEW</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Calling the MATLAB&#0174; Software from LabVIEW</h1>
+
+<p>You must have a licensed copy of the MATLAB&#0174; software version 6.5 or later installed to use MATLAB script nodes because the script nodes invoke the MATLAB software script server to execute scripts written in the MATLAB language syntax. The MATLAB script nodes are available only on Windows.</p>
+
+<p class="Body">Complete the following steps to create and run a VI that uses a script you wrote in the MATLAB language syntax.</p>
+
+<ol><li>Add a <a href="../gmath/matlab_script_node.html">MATLAB script</a> node to the block diagram.
+<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object1396);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object1396);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN><br><br></li></ol>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td>
+<strong>Note</strong>&nbsp;&nbsp;<!--begin child=LV_Fundamentals.pdf, 6400Eformula-->You can create MATLAB script nodes only in the LabVIEW Full and Professional Development Systems. If a VI contains a MATLAB script node, you can run the VI in all LabVIEW packages.<!--end child=LV_Fundamentals.pdf, 6400Eformula--></td></tr></table>
+
+<ol start="2"><li>Use the Operating or Labeling tool to enter the following script in the MATLAB script node:
+<br><br><span class="Monospace">a=rand(50)</span><br><br><span class="Monospace">surf(a)</span><br><br>
+</li>
+
+<li>Add an output to the MATLAB script node and create an indicator for the output.
+<ol class="List-abc"><li>Right-click the right side of the MATLAB script node frame and select <strong>Add Output</strong> from the shortcut menu.</li>
+<li>Enter <span class="Monospace">a</span> in the output terminal to add an output for the <em>a</em> variable in the script.</li>
+
+<li><!--begin child: lvhelp.chm,Creating_Xmath_Script.html-->Verify the data type of the output terminal.<!-- end child: lvhelp.chm,Creating_Xmath_Script.html--> In the MATLAB script node, the default <a href="HiQ_and_MATLAB_Data_Types.html">data type</a> for any new input or output is Real. Right-click the <strong>a</strong> output and select <strong>Choose Data Type&#0187;2-D Array of Real</strong> from the shortcut menu.</li>
+
+<li><!-- begin child: lvhelp.chm,Creating_xmath_script.html-->Right-click the <strong>a</strong> output terminal and select <strong>Create&#0187;Indicator</strong> from the shortcut menu to create a 2D array of numeric indicators labeled <strong>2-D Array of Real</strong>.</li></ol></li>
+
+<li>Right-click the <strong>error out</strong> output terminal and select <strong>Create&#0187;Indicator</strong> from the shortcut menu to create an <strong>error out</strong> indicator labeled <span class="Monospace-Bold">error out</span>.<!-- end child: lvhelp.chm,Creating_xmath_script.html--></li>
+
+<li>Resize the <strong>2-D Array of Real</strong> front panel indicator so you can see the numbers the script generates when the VI runs. </li>
+
+<li>Run the VI. LabVIEW invokes the <a href="ChoosingHiQorMATLABScriptS.html">MATLAB software script server</a>, creates a matrix of random values, displays the matrix in the MATLAB software, plots that information to a graph, and displays the values that make up the matrix in the <strong>2-D Array of Real</strong> front panel indicator. </li>
+
+<li>(Optional) <a href="Debug_HiQ_or_MATLAB_Script.html">Debug</a> your script written in the MATLAB language syntax.</li></ol>
+
+<p class="Body">You can <a href="Adding_Scroll_Bars_to_HiQ.html">display a scroll bar</a> within a MATLAB script node.</p>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;A script inside a MATLAB script node behaves as it does in the MATLAB software environment.</td></tr></table>
+
+
+
+</body>
+</html>

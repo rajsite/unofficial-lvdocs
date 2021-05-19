@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Configuring LabVIEW to Use Source Control</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+		<h1>Configuring LabVIEW to Use Source Control</h1>
+<p class="Body">Before you use source control with LabVIEW, you must configure LabVIEW to work with the third-party source control provider you <a href="../lvconcepts/Using_Source_Code.html">select</a>. Refer to the <a href="javascript:WWW(WWW_SCC_3rdParty)">KnowledgeBase</a> for the most current list of third-party source control providers that work with LabVIEW.
+</p>
+<!--begin_child id=tag="sccpro"-->
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;Source control is available only with the Professional Development System.</td></tr>
+</table><!--end_child id =  tag="sccpro"-->
+<p class="Body">Complete the following steps to configure LabVIEW to work with a source control provider.</p>
+<ol>
+<li>Make sure the computer on which you are running LabVIEW also includes a third-party source control provider, which you should install and configure to meet the requirements of the current software project. Consult your source control administrator for additional assistance.
+</li>
+<li>From a LabVIEW project or a blank VI, select <strong>Tools&#0187;Source Control&#0187;Configure Source Control</strong> to display the <a href="../lvdialog/Source_Control_Options.html">Source Control</a> page of the <a href="../lvdialog/Options_Dialog_Box.html">Options</a> dialog box.
+<br><br>
+You also can select  <strong>Tools&#0187;Options</strong> from the <strong>Getting Started</strong> window to display the <a href="../lvdialog/Options_Dialog_Box.html">Options</a> dialog box, then click the <strong>Source Control</strong> category to display the <a href="../lvdialog/Source_Control_Options.html">Source Control</a> page.
+</li>
+<li>Select the source control provider you want to use with LabVIEW from the  <strong>Source Control Provider Name</strong> pull-down menu. A dialog box from the third-party source control provider appears so you can configure connections, user information, and other settings for LabVIEW files under source control. For example, if you select <strong>Perforce Command Line</strong>, the <a href="../lvdialog/Perforce_Project_Options_DB.html">Perforce Project Options</a> dialog box appears.
+<br><br>
+<span class="Platform">(Windows)</span> LabVIEW scans the Windows registry to determine which source control providers are installed and uses that information to populate the  <strong>Source Control Provider Name</strong> pull-down menu. <br><br>
+<span class="Platform">(macOS and Linux)</span> LabVIEW runs a query of environment variables to determine if Perforce is installed. LabVIEW searches the default environment path before login scripts run. If so, the <strong>Perforce Command Line</strong> option appears in the  <strong>Source Control Provider Name</strong> pull-down menu.
+</li>
+<li>The source control project settings you select in the source control provider dialog box appear in the <strong>Source Control Project</strong> text box. Click the <strong>Change</strong> button to reconfigure the settings. If the provider does not support this functionality, the <strong>Change</strong> button is disabled.</li>
+<li>Click the <strong>Advanced</strong> button to set advanced optional configuration options specific to the source control provider. A dialog box from the source control provider appears. For example, if you are using the Perforce command line interface, the <a href="../lvdialog/Perf_Cfg_Opt_DB.html">Perforce Configuration Options</a> dialog box appears. If the provider does not support this functionality, the  <strong>Advanced</strong> button is disabled.
+</li>
+<li>Set the source control display and prompt options you want. Close the provider dialog box.
+</li>
+<li>Click the <strong>OK</strong> button to save configuration settings and close the <a href="../lvdialog/Options_Dialog_Box.html">Options</a> dialog box.
+</li></ol>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="tip.gif" alt="Tip"></td>
+<td><strong>Tip</strong>&nbsp;&nbsp;<!-- begin parent: ../lvconcepts/SCC_Operations.html-->Consider <a href="../lvconcepts/saving_vis_compiled_code.html">separating compiled code</a> from VIs and other file types that you store in source control. By default, when you edit a VI, LabVIEW automatically recompiles all VIs that call the changed VI, which introduces unsaved changes to the calling VIs. If the calling VIs are stored in source control, you must check them out and then check them back in. However, if you separate compiled code from the VIs within a <a href="../lvhowto/Using_the_VI_Hierarchy_Win.html">VI hierarchy</a>, changes to one VI do not produce unsaved changes elsewhere in the VI hierarchy. This behavior allows you to check out only the VI you want to modify.<!-- end parent: ../lvconcepts/SCC_Operations.html--></td>
+</tr>
+</table>
+
+<p class="Body">After you configure LabVIEW to work with the source control provider, you can <a href="Adding_to_SCC.html">add files to source control</a>,  <a href="Checking_Out_Files.html">check out</a> files, <a href="Checking_In_Files.html">check in</a> edited files, <a href="renaming_files_control.html">rename</a> files and <a href="Getting_the_Latest_Version.html">get the latest version</a> of files in source control within LabVIEW. You also can <a href="LVProjSCCConfig.html">configure source control for individual LabVIEW projects</a>. If you change the provider in the <a href="../lvdialog/Source_Control_Options.html">Source Control</a> page, the change affects all VIs and projects you use in LabVIEW.
+</p>
+<p class="Body">If you want to perform source control operations that are not available in LabVIEW, work directly from the source control provider for those specific functions.
+</p>
+
+
+
+</body>
+</html>

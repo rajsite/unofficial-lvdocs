@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 3500Edebugginghlp -->
+
+<title>Finding Error Code Descriptions</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Finding Error Code Descriptions</h1>
+
+<p class="Body">LabVIEW installs <a href="../lverror/lverror_intro.html">built-in LabVIEW error codes</a> and error codes for related drivers, toolkits, and modules as XML-based text files.</p> 
+<p>You can use the <a href="../glang/General_Error_Handler.html">General Error Handler</a> or <a href="../glang/Simple_Error_Handler.html">Simple Error Handler</a> VIs to obtain a description of these error codes.</p> 
+<ul>
+<li><strong>General Error Handler</strong><br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object551);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object551);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li>
+<li><strong>Simple Error Handler</strong><br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object552);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object552);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li></ul>
+<p class="Body"><!--begin parent=../lverror/lverror_intro.html-->You also can select <strong>Help&#0187;Explain Error</strong> to display an error code description in the <strong>Explain Error</strong> dialog box. Enter the error code number in the <strong>Code</strong> field or, if the error code number is in hexadecimal format, in the <strong>Hex Code</strong> field. Press the &lt;Enter&gt; key or click anywhere in the dialog box to display a description of the error code in the <strong>Explanation</strong> field. This description is the same description that appears in this help file.<!--end parent=../lverror/lverror_intro.html--> You also can <a href="Error_Cluster_Reports.html">generate error cluster reports</a> to obtain descriptions of built-in error codes.</p>
+<p class="Body">If the VIs do not return a description, the error code text files might have been moved, deleted, or corrupted. This problem usually occurs when you use <a href="Def_Cust_Errors.html">user-defined error codes</a>, applications or shared libraries, or drivers released before LabVIEW 6.1.</p>
+
+<h2>Undefined Error Codes</h2>
+<p class="Body">Undefined errors can occur for many possible reasons. The following are some suggestions and ideas for ways to identify and handle undefined errors.</p>
+<ul>
+<li>Undefined errors might occur if a description does not exist for the error code. You can <a href="../lvhowto/Creating_User_Defined_Erro.html">create and define a custom error code</a> yourself. You also can contact National Instruments <a href="../lvhelp/Technical_Support_Resources.html">technical support</a> for assistance with undefined error codes.</li>
+<li>An undefined error might occur if you wire a number that is not an error code to an error code input.</li>
+<li>Undefined error codes might occur because the error relates to a third-party object, such as the operating system or <a href="../lvconcepts/Using_ActiveX_with_LabVIEW.html">ActiveX</a>. For third-party errors, you can search the Web for a description of the undefined error code.  You can search with the numerical error code or for the hexadecimal, or hex, representation of the code. For example, you can search for the error code <span class="Monospace">12341234</span> or for the <a href="../lvhowto/Hex_Display.html">hex display</a> of the code, <span class="Monospace">0xBEEDF00F</span>.</li></ul>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="tip.gif"></td>
+<td>
+<strong>Tip</strong>&nbsp;&nbsp;ActiveX error codes are documented by Microsoft in <span class="Monospace">winerror.h</span>.</td></tr></table> 
+
+<h2>Applications or Shared Libraries</h2>
+<p class="Body">If you are developing an application or shared library, you must <a href="Dist_Error_Code_Files.html">distribute any relevant error code text files</a> with the application or shared library.</p>
+<h2>Legacy or Third-Party Drivers</h2>
+<p class="Body">If you are using a driver that was released before LabVIEW 6.1, the driver installed a version of <span class="Monospace">error.llb</span> that contains all the driver error codes. The driver did not install error code text files to describe the driver error codes.</p>
+<p class="Body">If you installed the legacy driver after installing LabVIEW 6.1, you must replace the driver's version of <span class="Monospace">error.llb</span> with the version of <span class="Monospace">error.llb</span> installed with LabVIEW 6.1 or LabVIEW 7.0.</p>
+
+
+</body>
+</html>

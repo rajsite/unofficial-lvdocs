@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Part 2: Building the Shortcut Menu Using Plug-Ins</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Part 2: Building the Shortcut Menu Using Plug-Ins</h1>
+<p class="Body">You can specify how and when your custom item appears in the shortcut menu of front panel or block diagram objects. You also can create plug-ins that build the shortcut menu in the following ways:</p>
+
+<ul>
+	<li>Add custom items, conditionally, to object types.</li>
+	<li>Toggle transaction behavior of plug-ins.</li>
+	<li>Add multiple custom items.</li>
+	<li>Remove items.</li>
+</ul>
+
+<p>The following figure illustrates the block diagram of the build VI (<span class="Monospace-Italic">x</span><span class="Monospace">.vi</span>, where <em>x</em> is the name of the plug-in) that the Create Shortcut Menu Plug-In From Template VI generates. You modify the block diagram code to build the shortcut menu. Refer to the block diagram comments for tips on modifying the block diagram.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;Generate the files you need to create a shortcut menu plug-in by running the following utility VI: <span class="Monospace">labview\resource\plugins\PopupMenus\Create Shortcut Menu Plug-In From Template.vi</span></td>
+</tr>
+</table>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="caution.gif" alt="Caution"></td>
+<td><span class="Dark-Red"><strong>Caution</strong>&nbsp;&nbsp;Do not modify the controls that are assigned to connector pane terminals. To load and execute plug-ins, LabVIEW requires these predefined control names, types, and terminal positions.</span></td>
+</tr>
+</table>
+
+<img src="loc_bd_shortcutmenuplugins_build.gif">
+
+<p>The default configuration of this VI builds the shortcut menu by adding your custom item before the <strong>Properties</strong> item. The display name of the custom item is the name of this VI without the file extension.</p>
+
+<table class="Borderless-Wide">
+<tr>
+<td><img style="display:inline" src="previous_arrow.gif"><a href="shortcutmenuplugins_typedef.html">Part 1: Specifying the Objects that Shortcut Menu Plug-Ins Affect</a></td>
+<td align="right"><img style="display:inline" src="next_arrow.gif"><a href="shortcutmenuplugins_execution.html">Part 3: Executing Shortcut Menu Plug-Ins</a></td>
+</tr>
+</table>
+
+<h3>Related Information</h3>
+<p><a href="shortcutmenuplugins_lookuptagstypes.html">Identifying Refnum Types and Menu Item Tags of Objects</a></p>
+<p><a href="../lvdialog/Application_Item_Tags_SCMenus.html">Application Item Tags for Shortcut Menus</a></p>
+<p><a href="../glang/Menu_Functions.html">Menu Functions</a></p>
+
+
+
+</body>
+</html>

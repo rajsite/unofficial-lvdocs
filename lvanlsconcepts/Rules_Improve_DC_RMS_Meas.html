@@ -1,0 +1,56 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Rules for Improving DC and RMS Measurements</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-32661D85-3A55-4EAF-8F45-1CD6588EB593" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Rules for Improving DC and RMS Measurements</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 Use the following guidelines when determining a strategy for improving DC and RMS measurements: 
+            	 
+         </p> 
+         	 <a name="GUID-32661D85-3A55-4EAF-8F45-1CD6588EB593__UL_285AD211285B4D8DA86364EA6EC43E7D" shape="rect">
+            <!-- --></a><ul id="GUID-32661D85-3A55-4EAF-8F45-1CD6588EB593__UL_285AD211285B4D8DA86364EA6EC43E7D">
+            <li><a name="GUID-32661D85-3A55-4EAF-8F45-1CD6588EB593__LI_8FD38CA0E7AD41BC96A6E275FCECE45D" shape="rect">
+                  <!-- --></a>If a signal is overlapped with a single tone, longer integration times increase the accuracy of the measurement. If you know
+               the exact frequency of the sine tone, use a measurement time that corresponds to an exact number of sine periods. If you do
+               not know the frequency of the sine tone, apply a window, such as a Hanning window, to reduce significantly the measurement
+               time needed to achieve a specific accuracy. 
+               		
+            </li>
+            <li><a name="GUID-32661D85-3A55-4EAF-8F45-1CD6588EB593__LI_B4FEF9B6D9844796BFAFF29FB2958666" shape="rect">
+                  <!-- --></a>If a signal is overlapped with many independent tones, increasing measurement time increases the accuracy of the measurement.
+               As in the single tone case, using a window significantly reduces the measurement time needed to achieve a specific accuracy.
+               
+               		
+            </li>
+            <li><a name="GUID-32661D85-3A55-4EAF-8F45-1CD6588EB593__LI_71C905DCB4334B40B5E0D20CFED775FC" shape="rect">
+                  <!-- --></a>If a signal is overlapped with noise, do not use a window. In this case, you can increase the accuracy of the measurement
+               by increasing the integration time or by preprocessing or conditioning the noisy signal with a lowpass (or bandstop) filter.
+               
+               		
+            </li>
+         </ul> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="DC_RMS_Measurements.html" shape="rect">DC/RMS Measurements</a></div>
+         </div>
+         <div class="relinfo relconcepts"><strong>Related concepts</strong><br clear="none"><div><a href="lvac_hanning.html" shape="rect">Hanning</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

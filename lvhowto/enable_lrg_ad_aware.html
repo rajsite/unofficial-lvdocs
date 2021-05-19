@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Extending Virtual Memory Usage for 32-bit Windows</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Extending Virtual Memory Usage for 32-bit Windows</h1>					
+<p class="Body">LabVIEW (32-bit) is large address aware, and can take advantage of up to 3 GB of <a href="../lvconcepts/VI_Memory_Usage.html#virtual_memory">virtual memory</a>. LabVIEW (32-bit) can access up to 2 GB of virtual memory by default. To take advantage of additional virtual memory, you must modify the Windows boot configuration settings.</p>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;On 64-bit Windows, LabVIEW (32-bit) can access up to 4 GB of virtual memory by default.</td></tr></table>
+
+<p class="Body">Complete the following steps to modify the Windows boot configuration settings and enable LabVIEW (32-bit) to access up to 3 GB of virtual memory:</p>
+
+<ol>
+<li>Open the command prompt window as an administrator.</li>
+<li>Enter the command <span class="Monospace">bcdedit /enum</span> and press the &lt;Enter&gt; key to show the list of entries in the Boot Configuration Data (BCD) store. These settings control how the OS launches.</li>
+<li>Enter the command <span class="Monospace">bcdedit /set increaseuserva 3072</span> and press the &lt;Enter&gt; key. This command increases the amount of virtual memory that the OS allots to the user to 3072 MB, or 3 GB.</li>
+<li>Restart the system for the changes to the BCD store to take effect.</li></ol>
+					
+<p class="Body">Refer to the Microsoft website at <a href="javascript:WWW(WWW_Microsoft)">www.microsoft.com</a> for more information about the Boot Configuration Data store, <span class="Monospace">boot.ini</span> file, and Physical Address Extension.</p>
+
+</body>
+</html>

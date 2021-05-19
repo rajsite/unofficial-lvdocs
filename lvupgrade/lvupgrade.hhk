@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</head>
+<body>
+<ul>
+<li> <object type="text/sitemap">
+<param name="Name" value="compatibility">
+<param name="See Also" value="compatibility"></object>
+<ul>
+<li> <object type="text/sitemap">
+<param name="Name" value="issues between previous versions of 					LabVIEW">
+<param name="Local" value="Upgrade_Issues.html#GUID-3AE67D93-D8A0-4027-9489-4AF5581831AA">
+</object>
+</li>
+</ul>
+</li>
+<li> <object type="text/sitemap">
+<param name="Name" value="converting">
+<param name="See Also" value="converting"></object>
+<ul>
+<li> <object type="text/sitemap">
+<param name="Name" value="VIs from previous versions of 					LabVIEW">
+<param name="Local" value="upgrade_mass.html#GUID-F9FE2545-2405-4C11-974C-E8DDCB755898">
+</object>
+</li>
+</ul>
+</li>
+<li> <object type="text/sitemap">
+<param name="Name" value="LabVIEW">
+<param name="See Also" value="LabVIEW"></object>
+<ul>
+<li> <object type="text/sitemap">
+<param name="Name" value="features and changes in previous versions">
+<param name="Local" value="old_features_changes.html#GUID-32D5D606-2329-4702-82A2-8F1EBB3A983F">
+</object>
+</li>
+<li> <object type="text/sitemap">
+<param name="Name" value="new features">
+<param name="Local" value="LabVIEW_Features.html#GUID-EF1264F4-82BB-4EB6-9915-0428F1E1E1C2">
+</object>
+</li>
+<li> <object type="text/sitemap">
+<param name="Name" value="upgrading">
+<param name="Local" value="upgrade_overview.html#GUID-13C409A7-848E-4D11-82E2-9B24F87B8AD8">
+</object>
+</li>
+</ul>
+</li>
+<li> <object type="text/sitemap">
+<param name="Name" value="migrating VIs from previous versions 					of LabVIEW">
+<param name="Local" value="upgrade_mass.html#GUID-F9FE2545-2405-4C11-974C-E8DDCB755898">
+</object>
+</li>
+<li> <object type="text/sitemap">
+<param name="Name" value="new features">
+<param name="Local" value="LabVIEW_Features.html#GUID-EF1264F4-82BB-4EB6-9915-0428F1E1E1C2">
+</object>
+</li>
+<li> <object type="text/sitemap">
+<param name="Name" value="upgrading LabVIEW">
+<param name="Local" value="upgrade_overview.html#GUID-13C409A7-848E-4D11-82E2-9B24F87B8AD8">
+</object>
+<ul>
+<li> <object type="text/sitemap">
+<param name="Name" value="backing up VIs and machine 					configuration">
+<param name="Local" value="upgrade_backup.html#GUID-E3D61E31-EA48-4D1A-A5E3-ED193826A473">
+</object>
+</li>
+<li> <object type="text/sitemap">
+<param name="Name" value="converting 						VIs">
+<param name="Local" value="upgrade_mass.html#GUID-F9FE2545-2405-4C11-974C-E8DDCB755898">
+</object>
+</li>
+<li> <object type="text/sitemap">
+<param name="Name" value="installing LabVIEW, add-ons, and device drivers">
+<param name="Local" value="upgrade_prepare.html#GUID-E0251D96-E313-4E4F-994C-91946B86A6D0">
+</object>
+</li>
+<li> <object type="text/sitemap">
+<param name="Name" value="testing existing behavior of 				VIs">
+<param name="Local" value="upgrade_characterize.html#GUID-C93002D1-F129-4EEE-B5A1-4D812264433B">
+</object>
+</li>
+<li> <object type="text/sitemap">
+<param name="Name" value="troubleshooting upgrade process">
+<param name="Local" value="upgrade_troubleshooting.html#GUID-BEBF2238-4DD9-4AA8-BA54-87A51F83C3E5">
+</object>
+</li>
+</ul>
+</li>
+<li> <object type="text/sitemap">
+<param name="Name" value="upgrading VIs">
+<param name="See Also" value="upgrading VIs"></object>
+<ul>
+<li> <object type="text/sitemap">
+<param name="Name" value="converting VIs 						from previous versions of LabVIEW">
+<param name="Local" value="upgrade_mass.html#GUID-F9FE2545-2405-4C11-974C-E8DDCB755898">
+</object>
+</li>
+</ul>
+</li>
+<li> <object type="text/sitemap">
+<param name="Name" value="VIs">
+<param name="See Also" value="VIs"></object>
+<ul>
+<li> <object type="text/sitemap">
+<param name="Name" value="upgrading">
+<param name="Local" value="upgrade_overview.html#GUID-13C409A7-848E-4D11-82E2-9B24F87B8AD8">
+</object>
+</li>
+</ul>
+</li>
+</ul>
+</body>
+</html>

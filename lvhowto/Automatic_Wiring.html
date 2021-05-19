@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 2800Ewiringhlp -->
+
+<title>Automatically Wiring Objects</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Automatically Wiring Objects</h1>
+<!-- begin parent: lvconcepts, Building_the_Block_Diagram.xml -->
+<p class="Body">As you move a selected object close to other objects on the block diagram, LabVIEW draws temporary wires to show you valid connections. When you release the mouse button to add the object to the block diagram, LabVIEW automatically connects the wires. You also can automatically wire objects already on the block diagram. LabVIEW connects the terminals that best match and does not connect the terminals that do not match.</p>
+<!-- end parent: lvconcepts, Building_the_Block_Diagram.xml -->
+
+<!-- begin parent: lvconcepts, Building_the_Block_Diagram.xml; Note: For this topic, replace "copy an object already on the block diagram by pressing the <Ctrl> key and dragging the object." with "clone an object already on the block diagram." because we're already linking to that info here. -->
+<p class="Body">Toggle automatic wiring by pressing the spacebar while you move an object using the Positioning tool. By default, automatic wiring is enabled when you select an object from the <strong>Functions</strong> palette or when you <a href="Copying_and_Pasting_Object.html">clone an object</a> already on the block diagram. Automatic wiring is disabled by default when you use the Positioning tool to move an object already on the block diagram. <!-- end parent: lvconcepts, Building_the_Block_Diagram.xml --> When automatic wiring is enabled, the selected object retains its appearance when you drag it. When automatic wiring is disabled, the selected object appears as a dotted outline when you drag it.</p>
+
+<p class="Body">Complete the following steps to practice wiring objects automatically as you add them to the block diagram.</p>
+<ol>
+<li>If necessary, <a href="Configuring_Auto_Wiring.html">enable automatic wiring</a> and set the maximum and minimum distances for objects to wire automatically.</li>
+<li>Add a numeric control to the front panel window.
+<br><br>
+<SPAN title=" Add to the front panel window "><a href="javascript:placeObjectFP(control1);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObjectFP(control1);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN>
+</li>
+<li>Press the &lt;Ctrl-E&gt; keys to display the block diagram. <span class="Platform">(macOS)</span> Press the &lt;Command-E&gt; keys. <span class="Platform">(Linux)</span> Press the &lt;Alt-E&gt; keys.</li>
+<li>Select the <a href="../glang/Add.html">Add</a> function from the <strong>Functions</strong> palette.
+<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object92);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object92);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN>
+</li>
+<li>Move the left side of the function close to the right side of the numeric control terminal on the block diagram. As you move the function close to the terminal, LabVIEW draws temporary wires to show you valid connections. Make sure the function is within the maximum and minimum distances you set in step 1.</li>
+<li>When a temporary wire appears between the numeric control terminal and the top left terminal of the Add function, click the mouse button to add the function and wire the objects.</li>
+<li>Make sure you wire all required terminals. Otherwise, the VI is <a href="Correcting_Broken_VIs.html">broken</a> and will not run. Use the <strong>Context Help</strong> window to <!-- Begin parent: ../lvconcepts/Building_the_Block_Diagram.xml -->see which terminals a block diagram node requires. The labels of <a href="Specifying_Required_Recomm.html">required terminals</a> appear bold in the <strong>Context Help</strong> window.<!-- End parent: ../lvconcepts/Building_the_Block_Diagram.xml --> </li>
+</ol>
+
+
+
+</body>
+</html>

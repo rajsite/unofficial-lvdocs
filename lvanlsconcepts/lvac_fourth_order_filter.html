@@ -1,0 +1,83 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Fourth-Order Filtering</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-C3428E36-C74F-46F6-B108-70280D956E8D" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Fourth-Order Filtering</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 For bandpass and bandstop filters, which have two cut-off frequencies, fourth-order filter stages are a more direct form
+            of filter design than second-order filter stages. IIR bandpass or bandstop filters resulting from fourth-order filter design
+            contain cascaded fourth-order filters. 
+            	 
+         </p> 
+         	 
+         <p>Each fourth-order filter stage has the following characteristics: 
+            	 
+         </p> 
+         	 <a name="GUID-C3428E36-C74F-46F6-B108-70280D956E8D__UL_358F2FDC48B04FEE9B7F33F2F5A7C0FD" shape="rect">
+            <!-- --></a><ul id="GUID-C3428E36-C74F-46F6-B108-70280D956E8D__UL_358F2FDC48B04FEE9B7F33F2F5A7C0FD">
+            <li><a name="GUID-C3428E36-C74F-46F6-B108-70280D956E8D__LI_09177B4E514047299F264765915C92F7" shape="rect">
+                  <!-- --></a> k = 1, 2, ..., <em>N</em><sub><em>s</em></sub>, where <em>k</em> is the fourth-order filter stage number and <em>N</em><sub><em>s</em></sub> is the total number of fourth-order filter stages. 
+               		
+            </li>
+            <li><a name="GUID-C3428E36-C74F-46F6-B108-70280D956E8D__LI_4C334EBC2AE14952810119332E3D800E" shape="rect">
+                  <!-- --></a><em>N</em><sub><em>s</em></sub> = [(<em>N</em><sub><em>a</em></sub> + 1)/4] 
+               		
+            </li>
+            <li><a name="GUID-C3428E36-C74F-46F6-B108-70280D956E8D__LI_FB58514440334252B9B6B049CB27EA9E" shape="rect">
+                  <!-- --></a>Each fourth-order filter stage has four reverse coefficients, (<em>a</em><sub>1<em>k</em></sub>, <em>a</em><sub>2<em>k</em></sub>, <em>a</em><sub>3<em>k</em></sub>, <em>a</em><sub>4<em>k</em></sub>). 
+               		
+            </li>
+            <li><a name="GUID-C3428E36-C74F-46F6-B108-70280D956E8D__LI_800C083CDB604F7AA3D6ADE72D26FF10" shape="rect">
+                  <!-- --></a>The total number of reverse coefficients equals 4<em>N</em><sub><em>s</em></sub>. 
+               		
+            </li>
+            <li><a name="GUID-C3428E36-C74F-46F6-B108-70280D956E8D__LI_3F5A7C5A9FEF4A66987EC23E6C62173D" shape="rect">
+                  <!-- --></a>Each fourth-order filter stage has five forward coefficients, (<em>b</em><sub>0<em>k</em></sub>, <em>b</em><sub>1<em>k</em></sub>, <em>b</em><sub>2<em>k</em></sub>, <em>b</em><sub>3<em>k</em></sub>, <em>b</em><sub>4<em>k</em></sub>). 
+               		
+            </li>
+            <li><a name="GUID-C3428E36-C74F-46F6-B108-70280D956E8D__LI_771B5D1A1C84492BBD6F0EE8FE96A6AD" shape="rect">
+                  <!-- --></a>The total number of forward coefficients equals 5<em>N</em><sub><em>s</em></sub>. 
+               		
+            </li>
+         </ul> 
+         	 
+         <p>You implement cascade stages in fourth-order filtering in the same manner as in second-order filtering. The following equations
+            show how the filtering operation for fourth-order stages proceeds. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./mp2Flvac_fourth_order_filter.xml_d15610e153.png"></span></div>
+         </div>
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./mp2Flvac_fourth_order_filter.xml_d15610e180.png"></span></div>
+         </div>
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./mp2Flvac_fourth_order_filter.xml_d15610e336.png"></span></div>
+         </div> 
+         	 
+         <p>where  k = 1, 2, ..., <em>N</em><sub><em>s</em></sub>. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="lvac_cascade_iir.html" shape="rect">Cascade Form IIR Filtering</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Original filename: comptool.txt -->
+
+<title>Comparing VI Hierarchies</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+	
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Comparing VI Hierarchies</h1>
+
+<p class="Body">Use the <a href="../lvdialog/Compare_Hierarchies_Dialog.html">Compare VI Hierarchies</a> dialog box, available in the LabVIEW Professional Development System, to compare two hierarchies of VIs. LabVIEW compares any file with the same name in both hierarchies and categorizes them as being the same or different. VIs and subVIs with the same name and path are considered shared VIs. All other VIs are categorized as added or deleted from the first VI hierarchy. After the comparison completes, the <strong>Compare VI Hierarchies</strong> dialog box displays a summary of the differences. The <strong>VIs in Hierarchies</strong> listbox displays the VIs and a symbol that indicates how they are categorized. You can select a set of VIs that have differences and visually compare them using the <a href="Comparing_VIs.html">Compare VIs</a> dialog box.</p>
+
+<p class="Body">Because LabVIEW cannot compare two files with the same name, LabVIEW renames one of the VIs for comparison. The first VI is left as is, and the second VI is moved to the temporary directory and prepended with a <span class="Monospace">cmp.</span> prefix. Because LabVIEW does not rename the subVIs, the renamed VI links to the subVIs loaded by the first VI.</p>
+
+<p class="Body">Complete the following steps to compare two hierarchies of VIs.</p>
+<ol>
+<li>Select <strong>Tools&#0187;Compare&#0187;Compare VI Hierarchies</strong> from the front panel or block diagram menu of a VI to display the <a href="../lvdialog/Compare_Hierarchies_Dialog.html">Compare VI Hierarchies</a> dialog box.</li>
+<li>Click the <strong>Browse Files</strong> buttons to display a file dialog box that you can use to navigate to and select VIs from the file system to compare. Click the <strong>Browse Memory</strong> buttons to display the <a href="../lvdialog/Select_a_VI_DB.html">Select a VI</a> dialog box, which you can use to select a VI from the VIs in memory to compare.</li>
+<li>In the <strong>Compare</strong> section of the <strong>Compare VI Hierarchies</strong> dialog box, place checkmarks in the checkboxes of the <a href="VI_Comparison_Options.html">comparison options</a> you want to include.</li>
+<li>Click the <strong>Compare Hierarchies</strong> button to compare VIs in the hierarchies. The results of the comparison appear in the <strong>VIs in Hierarchies</strong> and <strong>Description</strong> listboxes.</li>
+<li>(Optional) Click <strong>Create Report</strong> to generate a report of the differences between the VI hierarchies. In the <a href="../lvdialog/create_report_db.html">Create Report</a> dialog box, select a report type and specify a path to save the report as a web page (<span class="Monospace">.xml</span>), as a text file (<span class="Monospace">.txt</span>), <span class="Platform">(Windows)</span> or as a Microsoft Word document (<span class="Monospace">.doc</span>).
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp; 
+	<ul>
+    	<li>The path for saving the comparison report must be a local directory instead of a network path.</li>
+        <li>You must have Microsoft Word installed before you create a Microsoft Word report.</li>
+    </ul></td>
+</tr>
+</table>
+</li>
+<li>Click a VI in the <strong>VIs in Hierarchies</strong> listbox to display a description of the hierarchical differences in the <strong>Description</strong> listbox.</li>
+<li>Double-click a VI in the <strong>VIs in Hierarchies</strong> listbox to open the VIs in the two hierarchies and <a href="Showing_Differences.html">view the differences</a>. You also can click the <strong>Show Differences</strong> button.</li>
+<li>Click the <strong>Done</strong> button to close the <strong>Compare VI Hierarchies</strong> dialog box.</li>
+</ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;You can click the <strong>Read Hierarchies</strong> button to categorize the VIs in the hierarchy. VIs that need to be compared are categorized as <span class="Monospace">not compared</span>. You can selectively compare individual VIs by double-clicking an item or clicking the <strong>Show Differences</strong> button.</td>
+</tr>
+</table>
+
+<p class="Body">Press the &lt;Ctrl-.&gt; keys to abort comparisons of large VI hierarchies.
+</p>
+
+
+
+</body>
+</html>

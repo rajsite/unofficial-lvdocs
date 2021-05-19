@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>FDepth (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>FDepth (LabVIEW Manager Function)</h1>
+<p class="Code">int32 FDepth(path);</p>
+<h2>Purpose</h2>
+<p class="Body">Computes the depth, or number of component names, of a path.</p>
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>path</strong></td>
+<td class="Bordered"><span class="Monospace">Path</span></td>
+ <td class="Bordered">Path whose depth you want to determine.</td></tr>
+</table>
+<h2>Return Value</h2>
+<p class="Body"><span class="Monospace">int32</span>, indicating the depth of the path, which can contain the following values.</p>
+<table class="Bordered">
+<tr><th class="Bordered Left-Align">Value</th>
+<th class="Bordered Left-Align">Description</th></tr>
+<tr> <td class="Bordered"><span class="Monospace">&#8211;1</span></td><td class="Bordered">Badly formed path.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">0</span></td><td class="Bordered">Path is the root directory.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">1</span></td><td class="Bordered">Path is in the root directory.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">2</span></td><td class="Bordered">Path is in a subdirectory of the root directory, one level from the root directory.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">n&#8211;1</span></td><td class="Bordered">Path is <em>n</em>&#8211;2 levels from the root directory.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">N</span></td><td class="Bordered">Path is <em>n</em>&#8211;1 levels from the root directory.</td></tr>
+</table>
+
+
+</body>
+</HTML>

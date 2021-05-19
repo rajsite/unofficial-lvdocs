@@ -1,0 +1,49 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Caveats about Converging to an Optimal Solution</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-5A6EB3D2-AE4E-4880-85AA-3AEC51AF6DDF" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Caveats about Converging to an Optimal Solution</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 A global minimum is a value for <em>f</em>(<em>x</em>) that satisfies the relationship described by the following equation. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./mp2Flvac_caveats_converg_opt.xml_d10788e26.png"></span></div>
+         </div> 
+         	 
+         <p>Ideally, iteratively decreasing <em>f</em> converges to a global minimum for <em>f</em>(<em>x</em>). In practice, convergence rarely proceeds to a global minimum for <em>f</em>(<em>x</em>) because of the presence of local minima that are not global. Local minima attract gradient search methods because the form
+            of <em>f</em> near the current iterate and not the global structure of <em>f</em> determines the downhill course the method takes. 
+            	 
+         </p> 
+         	 
+         <p>When a gradient search method begins on or encounters a stationary point, the method stops at the stationary point. Therefore,
+            a gradient search method converges to a stationary point. If <em>f</em> is convex, the stationary point is a global minimum. However, if <em>f</em> is not convex, the stationary point might not be a global minimum. Therefore, if you have little information about the locations
+            of local minima, you might have to start the gradient search method from several starting points. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="lvac_gradient_search.html" shape="rect">Gradient Search Methods</a></div>
+         </div>
+         <div class="relinfo relconcepts"><strong>Related concepts</strong><br clear="none"><div><a href="lvac_global_minimum.html" shape="rect">Global Minimum</a></div>
+            <div><a href="lvac_local_minimum.html" shape="rect">Local Minimum</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

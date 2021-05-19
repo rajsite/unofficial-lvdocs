@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 6200Eactivexhlp -->
+
+<title>Registering and Handling .NET and ActiveX Events</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Registering and Handling .NET and ActiveX Events</h1>
+
+<p class="Body">When handling a .NET or ActiveX event, you must register for the event (see steps 1 through 5) and then create a callback VI to handle that event (see steps 6 and 7).</p> 
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;<!-- Begin parent: ../glang/Unregister_Events.html-->National Instruments recommends that you unregister for events when you no longer need to handle them using the <a href="../glang/Unregister_Events.html">Unregister For Events</a> function. If you do not unregister for events, LabVIEW continues to generate and queue the events as long as the VI runs, even if no Event structure is waiting to handle them, which consumes memory and can hang the VI if you enable front panel locking for the events.<!-- End parent: ../glang/Unregister_Events.html--></td>
+</tr>
+</table>
+<p>Complete the following steps to register and handle .NET and ActiveX events in LabVIEW.</p>
+
+<ol>
+<li>Create a new control in a <a href="../lvhowto/Create_dotNET_Controls.html">.NET container</a> or an <a href="../lvhowto/Creating_New_Controls_in_A.html">ActiveX container</a>. You also can use the <a href="../lvcomm/Constructor_Node.html">Constructor Node</a> to <a href="../lvhowto/Create_NET_Object.html">create a .NET object</a> or use the Automation Refnum to <a href="../lvhowto/Calling_an_ActiveX_Object.html">call an ActiveX object</a> from LabVIEW.</li>
+<li>Add the <a href="../lvcomm/Reg_Event_CallBack.html">Register Event Callback</a> function to the block diagram.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object1699);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object1699);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li>
+<li>Wire the reference or object to the <strong>Event</strong> input of the Register Event Callback function.</li>
+<li>Click the down arrow next to the <strong>Event</strong> input on the Register Event Callback function and select an event from the shortcut menu.</li>
+<li>(Optional) Wire the <!-- begin parent: ../lvconcepts/Windows_Connectivity.xml, begin child: ../lvcomm/Reg_Event_CallBack.html--> data that you want to pass to the callback VI<!-- end parent: ../lvconcepts/Windows_Connectivity.xml, end child: ../lvcomm/Reg_Event_CallBack.html--> to the <strong>User Parameter</strong> input. <!-- begin child: ../lvcomm/Reg_Event_CallBack.html--> You can wire any LabVIEW data type, including a cluster, to this parameter. <!-- end child: ../lvcomm/Reg_Event_CallBack.html--></li>
+<li>Right-click the <strong>VI Ref</strong> input and select <strong>Create Callback VI</strong> from the shortcut menu. LabVIEW creates a VI based on the event you select and the data you wire to the <strong>User Parameter</strong>. LabVIEW wires the callback VI to the <strong>VI Ref</strong> input.</li>
+</ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;<!-- Begin parent: ../lvconcepts/Windows_Connectivity.xml -->You can use an existing VI as a callback VI as long as the connector pane of the VI you intend to use matches the connector pane of the event data. The callback VI must be <a href="../lvconcepts/reentrancy.html">reentrant</a>, and the reference to the callback VI must be strictly typed.<!-- End parent:  ../lvconcepts/Windows_Connectivity.xml --></td></tr>
+</table>
+<ol start="7">
+<li>Open the callback VI and edit the block diagram to handle the event. <!--begin parent=LV_Fundamentals.pdf, Handling ActiveX Events ER-->The callback VI contains the following elements:
+
+<ul>
+	<li><strong>Event Common Data</strong> contains the following elements:
+	<ul class="List-Hyphen">
+		<li><strong>Event Source</strong> is a numeric control that specifies the source of the event, such as LabVIEW, .NET, or ActiveX. A value of 1 indicates an ActiveX event. A value of 2 indicates a .NET event.</li>
+		<li><strong>Event Type</strong> specifies which event occurred. This is an enumerated type for user interface events and a 32-bit unsigned integer type for .NET, ActiveX, and other event sources. For .NET and ActiveX events, the event type represents the method code, or ID, for the event registered.</li>
+		<li><strong>Time Stamp</strong> is the time stamp in milliseconds that specifies when the event was generated.</li>
+	</ul>
+	</li>
+	<li><strong>Control Ref</strong> is a reference to the .NET or ActiveX object or the Automation Refnum on which the event occurred.</li>
+<li><strong>Event Data</strong> is a cluster of the parameters specific to the event the callback VI handles. LabVIEW determines the appropriate <strong>Event Data</strong> when you select an event from the Register Event Callback function. If an event does not have any data associated with it, LabVIEW does not create this control in the callback VI.</li>
+<li><strong>Event Data Out</strong> is a cluster of the modifiable parameters specific to the event the callback VI handles. This element is available only if the event has output parameters.</li>
+	<li>(Optional) <strong>User Parameter</strong> is data that you want to pass to the callback VI when the .NET or ActiveX object generates the event.</li>
+</ul><!--end parent=LV_Fundamentals.pdf, Handling ActiveX Events ER-->
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;LabVIEW does not wire the <strong>Event Data</strong> input to the <strong>Event Data Out</strong> output automatically. Therefore, if you want to pass any part of the <strong>Event Data</strong> input through the callback VI, you must wire the <strong>Event Data</strong> input to the <strong>Event Data Out</strong> output manually.</td>
+</tr>
+</table>
+
+</li>
+</ol>
+
+
+
+</body>
+</html>

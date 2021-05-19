@@ -1,0 +1,28 @@
+<html>
+<head>
+	<script type="text/javascript">
+	<!--
+	function chmredirect()
+	{
+		var path=window.location.hash.substr(1);
+		if (path != '')
+		{
+			location.replace(path);
+		}
+		else 
+		{
+			var p = document.createElement("P");
+			var t = document.createTextNode("No default topic was selected for the CHM.");
+			p.appendChild(t);
+			document.body.appendChild(p);
+		}
+	}
+	-->
+	</script>
+	<noscript>
+		Please enable Javascript to view this file correctly.
+	</noscript>
+	</head>
+		<body onLoad="chmredirect();">
+		</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>BinSearch (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>BinSearch (LabVIEW Manager Function)</h1>
+<p class="Code">int32 BinSearch(arrayp, n, elmtSize, key, compareProcP);</p>
+<h2>Purpose</h2>
+<p class="Body">Searches an array of an arbitrary data type using the binary search algorithm. In addition to passing the array you want to search to this routine, you also pass a comparison procedure that this sort routine then uses to compare elements in the array.</p>
+<p class="Body">The comparison routine should return a number less than zero if <strong>a</strong> is less than <strong>b</strong>, zero if <strong>a</strong> is equal to <strong>b</strong>, and a number greater than zero if <strong>a</strong> is greater than <strong>b</strong>.</p>
+<p class="Body">You should declare the comparison routine to have the following parameters and return type:</p>
+<p class="Code">int32 compareProcP(UPtr a, UPtr b);</p>
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>arrayp</strong></td>
+<td class="Bordered"><span class="Monospace">UPtr</span></td>
+ <td class="Bordered">Pointer to an array of data.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>n</strong></td>
+<td class="Bordered"><span class="Monospace">int32</span></td>
+ <td class="Bordered">Number of elements in the array you want to search.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>elmtSize</strong></td>
+<td class="Bordered"><span class="Monospace">int32</span></td>
+ <td class="Bordered">Size in bytes of an array element.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>key</strong></td>
+<td class="Bordered"><span class="Monospace">UPtr</span></td>
+ <td class="Bordered">Pointer to the data for which you want to search.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>compareProcP</strong></td>
+<td class="Bordered"><span class="Monospace">ProcPtr</span></td>
+ <td class="Bordered">Comparison routine you want <span class="Monospace">BinSearch</span> to use to compare array elements. <span class="Monospace">BinSearch</span> passes this routine the addresses of two elements that it needs to compare.</td></tr>
+</table>
+<h2>Return Value</h2>
+<p class="Body">The position in the array where the data is found, with <span class="Monospace">0</span> being the first element of the array, if it is found. If the data is not found, <span class="Monospace">BinSearch</span> returns <span class="Monospace">&#8211;</span><span class="Monospace">i&#8211;1</span>, where <span class="Monospace">i</span> is the position where <strong>key</strong> should be placed.</p>
+
+</body>
+</HTML>

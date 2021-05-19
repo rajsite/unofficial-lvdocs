@@ -1,0 +1,278 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Point-by-Point Analysis and Array-Based Analysis in LabVIEW</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-C7F9C1E0-77D5-4AFB-B321-441D7DB75D5D" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Point-by-Point Analysis and Array-Based Analysis in <span>LabVIEW</span></h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 The approach used for most point-by-point analysis operations in <span>LabVIEW</span> remains the same as array-based analysis. You can use filters, integration, mean value algorithms, and so on, in the same
+            situations and for the same reasons that you can use these operations in array-based data analysis. In contrast, the computation
+            of zeros in polynomial functions is not relevant to point-by-point analysis, and point-by-point versions of these array-based
+            VIs are not necessary. 
+            	 
+         </p> 
+         	 
+         <p> 
+            		 
+            		 The following table compares array-based <span>LabVIEW</span> analysis to point-by-point analysis. 
+            	 
+         </p> 
+         	 <a name="GUID-C7F9C1E0-77D5-4AFB-B321-441D7DB75D5D__TABLE_41FBD5196DB8469C9C02C4B5CCB5D2CC" shape="rect">
+            <!-- --></a><table class="rowsep colsep frametop framebottom frameleft frameright  " id="GUID-C7F9C1E0-77D5-4AFB-B321-441D7DB75D5D__TABLE_41FBD5196DB8469C9C02C4B5CCB5D2CC">
+            <thead align="left">
+               <tr>
+                  <th colspan="2" align="center">Data Analysis Technology 
+                     				
+                  </th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td align="left" width="48.54368932038835%"> Array-Based Analysis (traditional paradigm) 
+                     				  <a name="GUID-C7F9C1E0-77D5-4AFB-B321-441D7DB75D5D__UL_F6A38B4E03B340A497C975B40AC5E3BB" shape="rect">
+                        <!-- --></a><ul id="GUID-C7F9C1E0-77D5-4AFB-B321-441D7DB75D5D__UL_F6A38B4E03B340A497C975B40AC5E3BB">
+                        <li><a name="GUID-C7F9C1E0-77D5-4AFB-B321-441D7DB75D5D__LI_3C6621CE2E4C4B30986BE69760F755FB" shape="rect">
+                              <!-- --></a>Prepare a buffer unit of data. 
+                           					 
+                        </li>
+                        <li><a name="GUID-C7F9C1E0-77D5-4AFB-B321-441D7DB75D5D__LI_48E4B4A216D6486890943438F1DDF952" shape="rect">
+                              <!-- --></a>Analyze data. 
+                           					 
+                        </li>
+                        <li><a name="GUID-C7F9C1E0-77D5-4AFB-B321-441D7DB75D5D__LI_AEF544B17689415EB806FB9E847B8B4C" shape="rect">
+                              <!-- --></a>Produce a buffer of analyzed data. 
+                           					 
+                        </li>
+                        <li><a name="GUID-C7F9C1E0-77D5-4AFB-B321-441D7DB75D5D__LI_0303BC80A7B045518B120F77639948BF" shape="rect">
+                              <!-- --></a>Generate report. 
+                           					 
+                        </li>
+                     </ul> 
+                     				
+                  </td>
+                  <td align="left" width="51.45631067961165%"> Point-By-Point Analysis (newer paradigm) 
+                     				  <a name="GUID-C7F9C1E0-77D5-4AFB-B321-441D7DB75D5D__UL_423E84A1B88F4AD098AA18DD7FB436E8" shape="rect">
+                        <!-- --></a><ul id="GUID-C7F9C1E0-77D5-4AFB-B321-441D7DB75D5D__UL_423E84A1B88F4AD098AA18DD7FB436E8">
+                        <li><a name="GUID-C7F9C1E0-77D5-4AFB-B321-441D7DB75D5D__LI_0CE6E0AC14B74DF699E8B92B9C5B9EF9" shape="rect">
+                              <!-- --></a>Receive continuous stream of data. 
+                           					 
+                        </li>
+                        <li><a name="GUID-C7F9C1E0-77D5-4AFB-B321-441D7DB75D5D__LI_C3853D3E669948CBA9C6CF3493EFF53B" shape="rect">
+                              <!-- --></a>Filter and analyze data continuously. 
+                           					 
+                        </li>
+                        <li><a name="GUID-C7F9C1E0-77D5-4AFB-B321-441D7DB75D5D__LI_852488F93D9241D5BA739471CD95C169" shape="rect">
+                              <!-- --></a>Generate real-time events and reports continuously. 
+                           					 
+                        </li>
+                     </ul> 
+                     				
+                  </td>
+               </tr>
+            </tbody>
+         </table> 
+         	 
+         <p>The following table presents other comparisons between array-based and point-by-point analysis. 
+            	 
+         </p> 
+         	 <a name="GUID-C7F9C1E0-77D5-4AFB-B321-441D7DB75D5D__TABLE_87C3118BDF984C669805706D2F6C9A0C" shape="rect">
+            <!-- --></a><table class="rowsep colsep frametop framebottom frameleft frameright  " id="GUID-C7F9C1E0-77D5-4AFB-B321-441D7DB75D5D__TABLE_87C3118BDF984C669805706D2F6C9A0C">
+            <thead align="left">
+               <tr>
+                  <th align="center" valign="bottom"> Characteristic 
+                     				
+                  </th>
+                  <th align="center" valign="bottom"> Array-Based Analysis 
+                     				
+                  </th>
+                  <th align="center" valign="bottom"> Data Acquisition and Analysis with <span>Point By Point VIs</span> 
+                     				
+                  </th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td align="left"> Compatibility 
+                     				
+                  </td>
+                  <td align="left"> Limited compatibility with real-time systems 
+                     				
+                  </td>
+                  <td align="left"> Compatible with real-time systems; backward compatible with array-based systems 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Data typing 
+                     				
+                  </td>
+                  <td align="left"> Array-oriented 
+                     				
+                  </td>
+                  <td align="left"> Scalar-oriented 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Interruptions 
+                     				
+                  </td>
+                  <td align="left"> Interruptions critical 
+                     				
+                  </td>
+                  <td align="left"> Interruptions tolerated 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Operation 
+                     				
+                  </td>
+                  <td align="left"> You observe, offline 
+                     				
+                  </td>
+                  <td align="left"> You control, online 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Performance and programming 
+                     				
+                  </td>
+                  <td align="left"> Compensate for startup data loss (4-5 seconds) with complex �state machines� 
+                     				
+                  </td>
+                  <td align="left"> Startup data loss does not occur; initialize the data acquisition system once and run continuously 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Point of view 
+                     				
+                  </td>
+                  <td align="left"> Reflection of a process, like a mirror 
+                     				
+                  </td>
+                  <td align="left"> Direct, natural flow of a process 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Programming 
+                     				
+                  </td>
+                  <td align="left"> Specify a buffer 
+                     				
+                  </td>
+                  <td align="left"> No explicit buffers 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Results 
+                     				
+                  </td>
+                  <td align="left"> Output a report 
+                     				
+                  </td>
+                  <td align="left"> Output a report and an event in real time 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Run-time behavior 
+                     				
+                  </td>
+                  <td align="left"> Delayed processing 
+                     				
+                  </td>
+                  <td align="left"> Real time 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Run-time behavior 
+                     				
+                  </td>
+                  <td align="left"> Stop 
+                     				
+                  </td>
+                  <td align="left"> Continue 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Run-time behavior 
+                     				
+                  </td>
+                  <td align="left"> Wait 
+                     				
+                  </td>
+                  <td align="left"> Now 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Work style 
+                     				
+                  </td>
+                  <td align="left"> Asynchronous 
+                     				
+                  </td>
+                  <td align="left"> Synchronous 
+                     				
+                  </td>
+               </tr>
+            </tbody>
+         </table> 
+         	 
+         <p>When you perform point-by-point analysis, keep in mind the following concepts: 
+            	 
+         </p> 
+         	 
+         <ul>
+            <li><strong>Initialization</strong>�You must initialize the point-by-point analysis application to prevent interference from settings you made in previous sessions
+               of data analysis.
+            </li>
+            <li><strong>Reentrant Execution</strong>�You must enable <span>LabVIEW</span> reentrant execution for point-by-point analysis. Reentrant execution allocates fixed memory to a single analysis process,
+               guaranteeing that two processes that use the same analysis function never interfere with each other. 
+               			 
+               <table>
+                  <tr>
+                     <td><img alt="Note" src="note.gif"></td>
+                     <td><a name="GUID-C7F9C1E0-77D5-4AFB-B321-441D7DB75D5D__GUID-8BD536E3-D134-4D6A-AB94-4F62B9D0B45D" shape="rect">
+                           <!-- --></a><span class="notetitle">Note&nbsp;&nbsp;</span> If you create custom VIs to use in a point-by-point application, be sure to enable reentrant execution. Reentrant execution
+                        is enabled by default in almost all <span>Point By Point VIs</span>. 
+                        			 
+                     </td>
+                  </tr>
+               </table>
+            </li>
+            <li><strong>Deterministic Performance</strong>�Point-by-point analysis is the natural companion to many deterministic systems, because it efficiently integrates with the
+               flow of a real-time data signal.
+            </li>
+         </ul> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Point_By_Point_Analysis.html" shape="rect">Point-By-Point Analysis</a></div>
+         </div>
+         <div class="relinfo"><strong>Related information</strong><br clear="none"><div><a href="../lvconcepts/Suggestions_for_Exec.html#Simultaneously_Calling_SubVIs_from_Multiple_Places" shape="rect">Reentrant Execution</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

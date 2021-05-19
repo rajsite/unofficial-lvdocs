@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Writing to Multiple Variables Simultaneously</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Writing to Multiple Variables Simultaneously</h1>
+
+	<p class="Body"><strong>Required permission: </strong><span class="DNL">VariableWrite</span></p>
+    
+	<p class="Body">Use the following format to update <span class="Monospace">variable1</span> and <span class="Monospace">variable2</span> of <span class="Monospace">process1</span>.</p>
+
+    <p class="Body"><span class="Monospace">POST http://my_server:3580/nivariable/BatchWrite</span></p>
+
+    <p class="Body">POST JSON data</p>
+    
+    <pre><span class="DNL"><span class="Monospace">
+[<br>
+     {<br>
+         <strong>"Url"</strong> : "ni.var.psp://localhost/process1/variable1",<br>
+         <strong>"Value"</strong> : "false"<br>
+     },<br>
+     {<br>
+        <strong>"Url"</strong> : "ni.var.psp://localhost/process1/variable2",<br>
+        <strong>"Value"</strong> : "\"this is a new string value\""<br>
+     }<br>
+]</span></span></pre>
+
+    <p class="Body">POST XML data</p>
+    <pre><span class="DNL"><span class="Monospace">
+	
+&lt;?xml version="1.0" encoding="utf-8"?&gt;<br>
+&lt;BatchWriteArguments&gt;<br>
+    &lt;BatchWriteArgument&gt;<br>
+        &lt;Url&gt;ni.var.psp://localhost/process1/variable1&lt;/Url&gt;<br>
+        &lt;Value&gt;false&lt;/Value&gt;<br>
+    &lt;/BatchWriteArgument&gt;<br>
+    &lt;BatchWriteArgument&gt;<br>
+        &lt;Url&gt;ni.var.psp://localhost/process1/variable2&lt;/Url&gt;<br>
+        &lt;Value&gt;this is a new string value&lt;/Value&gt;<br>
+    &lt;/BatchWriteArgument&gt;<br>
+&lt;/BatchWriteArguments&gt;</span></span></pre>
+
+    <p class="Body">If all variable writes succeed, the server returns the following response with a response body of an empty array:</p>
+    <p class="Body"><span class="Monospace">HTTP/1.1 200 OK</span></p>
+ 	<p class="Body">Response body (JSON)</p>    
+	<pre><span class="DNL">[]</span></pre>
+    
+    <p class="Body">Response body (XML)</p>    
+	<pre><span class="DNL"><span class="Monospace">
+&lt;?xml version="1.0" encoding="utf-8"?&gt;<br>
+&lt;BatchWriteErrors&gt;<br>
+&lt;/BatchWriteErrors&gt;</span></span></pre>
+
+	<p class="Body">If one or more variable writes fail, the response includes error descriptions. For example, if <span class="Monospace">variable2</span> is not writable, the server returns the following:</p>
+	<p class="Body"><span class="Monospace">HTTP/1.1 200 OK</span></p>
+    <p class="Body">Response body (JSON)</p>
+    
+    <pre><span class="DNL"><span class="Monospace">
+[<br>
+    {<br>
+        <strong>"Url"</strong> : "ni.var.psp://localhost/process1/variable2",<br>
+        <strong>"Error"</strong> : {<br>
+                <strong>"code"</strong> : "",<br>
+                <strong>"message"</strong> : {<br>
+                    <strong>"lang"</strong> : "en-us",<br>
+                    <strong>"value"</strong> :  "ni.var.psp://localhost/process1/variable2 is not writable"<br>
+                }<br>
+    }<br>
+]</span></span></pre>
+ 
+    <p class="Body">Response body (XML)</p>
+    <pre><span class="DNL"><span class="Monospace">
+&lt;?xml version="1.0" encoding="utf-8"?&gt;<br>
+&lt;BatchWriteErrors&gt;<br>
+    &lt;BatchWriteError&gt;<br>
+        &lt;Url&gt;&lt;ni.var.psp://localhost/process1/variable2&lt;/Url&gt;<br>
+        &lt;error xmlns="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"&gt;<br>
+            &lt;code&gt;0&lt;/code&gt;<br>
+            &lt;message xml:lang="en-US"&gt;"ni.var.psp://localhost/process1/variable2 is not writable"&lt;/message&gt;<br>
+        &lt;/error&gt;<br>
+    &lt;/BatchWriteError&gt;<br>
+&lt;/BatchWriteErrors&gt;</span></span></pre>
+
+	<table class="Borderless">
+	<tr>
+	<td class="Icon"><img src="note.gif"></td>
+	<td>
+	<strong>Note</strong>&nbsp;&nbsp;Each batch writes to all selected writable variables and returns errors for all failed write attempts. A single failed write attempt does not stop the entire batch write.</td></tr></table>
+
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4200Estructureshlp -->
+
+<title>Entering Values for Each Case Structure Subdiagram</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Entering Values for Each Case Structure Subdiagram</h1>
+
+<p>You can enter a single value or lists and ranges of values in the selector label of a <a href="../lvconcepts/case_structures_concepts.html">Case</a> structure, as shown in the following table.</p>
+
+<table class="Bordered">
+<tr>
+<th class="Bordered">Type of Values</th>
+<th class="Bordered">Description of Type of Values</th>
+</tr>
+<tr>
+<td class="Bordered">Numeric ranges</td>
+<td class="Bordered"><ul><li><strong>Numeric ranges</strong>&#8212;Specify a range as <span class="Monospace">10..20</span>, meaning all numbers from 10 to 20 inclusively.</li>
+<li><strong>Open-ended numeric ranges</strong>&#8212;Specify a range <span class="Monospace">..100</span>, meaning all numbers less than or equal to 100, and <span class="Monospace">100..</span> represents all numbers greater than or equal to 100.</li>
+<li><strong>Lists and ranges</strong>&#8212;Use commas to separate values, for example <span class="Monospace">..5, 6, 7..10, 12, 13, 14</span>. When you enter values that contain overlapping ranges in the same case selector label, the Case structure redisplays the label in a more compact form. The previous example redisplays as <span class="Monospace">..10, 12..14</span>.</li></ul><table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;When the selector terminal is wired to an error cluster, LabVIEW converts numeric values in the selector label to error codes by appending Error to the numeric values or ranges.</td></tr></table></td>
+</tr>
+<tr>
+<td class="Bordered">String ranges</td>
+<td class="Bordered">A range of <span class="Monospace">a..c</span> includes all strings beginning with <span class="Monospace">a</span> or <span class="Monospace">b</span>, but not <span class="Monospace">c</span>. String ranges are case sensitive. For example, a range of <span class="Monospace">A..c</span> behaves differently than <span class="Monospace">a..c</span> because LabVIEW uses <a href="../glang/ASCII_Codes.html">ASCII</a> values to determine a string range.</td>
+</tr>
+<tr>
+<td class="Bordered">Enumerated values</td>
+<td class="Bordered">The values display in quotation marks, for example <span class="Monospace">&quot;red&quot;</span>, <span class="Monospace">&quot;green&quot;</span>, and <span class="Monospace">&quot;blue&quot;</span>. However, you do not need to type the quotation marks when you enter the values unless the string or enumerated value contains a comma or range symbol (<span class="Monospace">&quot;,&quot;</span> or <span class="Monospace">&quot;..&quot;</span>). In a string value, use special <a href="../lvhowto/Backslash_Codes_Display.html">backslash codes</a> for non-alphanumeric characters, such as <span class="Monospace">\r</span> for a carriage return, <span class="Monospace">\n</span> for a line feed, and <span class="Monospace">\t</span> for a tab.</td>
+</tr>
+</table>
+
+<p>If you change the data type of the wire connected to the case selector of a Case structure, the Case structure automatically converts the selector label values to the new data type when possible. If you convert a numeric value, for example <span class="Monospace">19</span>, to a string, the string value is <span class="Monospace">&#8220;19&#8221;</span>. If you convert a string to a numeric value, LabVIEW converts only those string values that represent a number. The other values remain strings. If you convert a number to a Boolean value, LabVIEW converts <span class="Monospace">0</span> to False and <span class="Monospace">1</span> to True, and all other numeric values become strings.</p>
+
+
+			<p>If you enter a selector label value that is not the same type as the object wired to the case selector, the value appears red. This indicates that the VI will not run until you delete or edit the value.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;Because of the possible round-off error inherent in floating-point arithmetic, you cannot use floating-point numbers as selector label values. If you wire a floating-point value to the case selector, LabVIEW rounds the value to the nearest integer. If you type a floating-point value in the selector label, the value appears red to indicate that you must delete or edit the value before the structure can execute. You also cannot use fixed-point numbers as selector label values. If you wire a fixed-point number to the case selector, the VI appears with a broken <strong>Run</strong> button.</td></tr></table>
+
+
+</body>
+</html>

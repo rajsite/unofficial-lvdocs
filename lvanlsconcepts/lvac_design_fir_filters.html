@@ -1,0 +1,74 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Designing FIR Filters</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-FD3638F4-ACE8-468F-A995-DCDDC3F8B93B" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Designing FIR Filters</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 You design FIR filters by approximating the desired frequency response of a discrete-time system. The most common techniques
+            approximate the desired magnitude response while maintaining a linear-phase response. Linear-phase response implies that all
+            frequencies in the system have the same propagation delay. 
+            	 
+         </p> 
+         	 
+         <p>The following figure shows the magnitude and phase responses of a bandpass equiripple FIR filter. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-FD3638F4-ACE8-468F-A995-DCDDC3F8B93B__IMAGE_1E020A5536C2401A8AD8957009031E64" shape="rect">
+            <!-- --></a><img id="GUID-FD3638F4-ACE8-468F-A995-DCDDC3F8B93B__IMAGE_1E020A5536C2401A8AD8957009031E64" src="GUID-978FDE02-51FB-41B0-88CA-09620803FFFD-help-web.png"><br clear="none"> 
+         	 
+         <p>In the previous figure, the discontinuities in the phase response result from the discontinuities introduced when you use
+            the absolute value to compute the magnitude response. However, the phase response is a linear response because all frequencies
+            in the system have the same propagation delay. 
+            	 
+         </p> 
+         	 
+         <p>Because FIR filters have ripple in the magnitude response, designing FIR filters has the following design challenges: 
+            	 
+         </p> 
+         	 <a name="GUID-FD3638F4-ACE8-468F-A995-DCDDC3F8B93B__UL_F9D75CF2B89746FCB12FD6EE363A939B" shape="rect">
+            <!-- --></a><ul id="GUID-FD3638F4-ACE8-468F-A995-DCDDC3F8B93B__UL_F9D75CF2B89746FCB12FD6EE363A939B">
+            <li><a name="GUID-FD3638F4-ACE8-468F-A995-DCDDC3F8B93B__LI_B27B4A7AA9964A4FA4161BFB1EEC9B2C" shape="rect">
+                  <!-- --></a>Designing a filter with a magnitude response as close to the ideal as possible 
+               		
+            </li>
+            <li><a name="GUID-FD3638F4-ACE8-468F-A995-DCDDC3F8B93B__LI_FF68D1189970452D9F2CCDC49DA2191F" shape="rect">
+                  <!-- --></a>Designing a filter that distributes the ripple in a desired fashion 
+               		
+            </li>
+         </ul> 
+         	 
+         <p>For example, a lowpass filter has an ideal characteristic magnitude response. A particular application might allow some ripple
+            in the passband and more ripple in the stopband. The filter design algorithm must balance the relative ripple requirements
+            while producing the sharpest transition band. 
+            	 
+         </p> 
+         	 
+         <p>The most common techniques for designing FIR filters are windowing and the Parks-McClellan algorithm, also known as Remez
+            Exchange. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="FIR_Filters.html" shape="rect">FIR Filters</a></div>
+         </div>
+         <div class="relinfo relconcepts"><strong>Related concepts</strong><br clear="none"><div><a href="Windowing_FA.html" shape="rect">Windowing and FFT</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

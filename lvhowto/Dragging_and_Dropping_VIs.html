@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Dragging and Dropping VIs, Pictures, and Text</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Dragging and Dropping VIs, Pictures, and Text
+</h1>
+<p class="Body"><!--begin parent- ../lvconcepts/Creating_VIs_and_SubVIs.xml-->Click the <a href="../glang/Select_A_VI.html">Select a VI</a> icon or text on the <strong>Functions</strong> palette, navigate to a VI, double-click the VI or drag the VI to the block diagram to create a subVI call to that VI.<!--end parent- ../lvconcepts/Creating_VIs_and_SubVIs.xml--> Use the same technique for <a href="Plcn_Cus_Cont_Indtrs_FP_BD.html">custom controls</a>, type definitions, and <a href="Creating_Global_Variables.html">global variables</a>. You also can drag text and pictures from the Windows Explorer and other applications to copy them to front panels and block diagrams.
+</p>
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;You cannot release the object until LabVIEW highlights the destination. You can press the &lt;Esc&gt; key before you release the mouse button to cancel a drag and drop operation.</td></tr>
+</table>
+<p class="Body">You can perform the following tasks within LabVIEW using the drag and drop capabilities:</p>
+<ul>
+<li>Drag front panel controls and indicators to block diagrams to <a href="Creating_Constants.html">create block diagram constants</a> and vice versa.</li>
+<li>Drag a subVI to a path control or constant to place the full pathname of the subVI in the control or constant.</li>
+<li>Drag a VI icon from the upper-right corner of a front panel or block diagram window to a block diagram to place that VI as a subVI. Press the &lt;Shift&gt; key while dragging to automatically wire the non-default values of the controls as constants for the subVI. If the subVI already appears on the block diagram, press the &lt;Shift&gt; key while dragging onto the existing subVI to update the wired constants. If a control has its default value, LabVIEW discards the constant wired to the subVI. Any inputs not wired to constants are unaffected.</li>
+<li>Drag and drop global variables and custom controls.</li>
+<li>Drag a VI icon into a VI refnum on a front panel control to load VIs into memory dynamically, which is part of the <a href="VI_Server.html">VI Server</a> functionality.</li>
+<li>Drag an object near the boundary of a front panel or block diagram to scroll the window. Press the &lt;Shift&gt; key to increase the speed at which the window scrolls. If you release the mouse button immediately outside the boundary of the window while it scrolls, LabVIEW continues to scroll the window to the position where you released the mouse button and places the object in that position.</li>
+</ul>
+<p class="Body">You can perform the following tasks between LabVIEW and another application using the drag and drop capabilities:
+</p>
+
+<ul>
+<li>Drag a file to a path control or constant to place the full pathname in the control or constant.</li>
+<li>Drag a datalog file to a datalog file refnum to create a cluster that contains the data structure in the datalog file.</li>
+<li><a href="../lvconcepts/Configuring_the_Front_Panel.html#Using_Imported_Graphics">Drag a graphics file</a> to a VI icon, picture ring control, front panel, or block diagram to place the picture in the control, on the front panel or block diagram, or on the VI icon. LabVIEW can import most graphic files that your computer supports.</li>
+<li>Drag a custom control file to the front panel to place the custom control on the front panel.</li>
+<li><span class="Platform">(Windows)</span> You can drag pictures and text from an application into the front panel or block diagram, provided the application supports ActiveX technology. For example, you can drag a bitmap or a section of text from a Microsoft Word document and add it to the front panel or block diagram.</li>
+<li><span class="Platform">(macOS)</span> Drag a text clipping or text selected from any application to place that text in a string control or constant, front panel, block diagram, or label.</li>
+<li><span class="Platform">(macOS)</span> Drag an image clipping or an image selected from another application to place it in a picture ring control, front panel, or block diagram.
+</li>
+</ul>
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;<span class="Platform">(macOS)</span> Your system must have the Drag Manager to drag and drop text and pictures from other applications. Systems 7.5 and later include the Drag Manager. It is available for System 7.0 up to System 7.5 as an extension from Apple Computer.</td></tr>
+</table>
+<p class="Body">Refer to your operating system documentation for more information about drag and drop capabilities.</p>
+
+
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 3500Edebugginghlp -->
+
+<title>Using Supplied Probes</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Using Supplied Probes
+</h1>
+<p class="Body"><!--begin parent: 3500debugging/hlp-->Use supplied probes to display comprehensive information about the data that flows through a wire.<!--end parent: 3500debugging/hlp--> You also can use a supplied probe to respond based on the data that flows through the wire.
+</p>
+<p class="Body">Complete the following steps to use a supplied probe.
+</p>
+<ol>
+<li>Right-click a wire and select <strong>Custom Probe</strong> from the shortcut menu.
+</li>
+<li>Select among the following supplied probes. All supplied probes that match the data type of the wire you right-clicked appear at the top of the shortcut menu.
+<ul>
+<li><strong>.NET Refnum Probe</strong>&#8212;Displays the result of calling the ToString() method on the object represented by the .NET refnum, the type of the object, the hash code of the object, and the hex value of the reference. You can use this probe to set a breakpoint if the value is an invalid refnum.
+</li>
+<li><strong>Analog Waveform Probe (DBL)</strong>&#8212;Displays a graph of the analog data; a table with a time stamp that specifies when the probe received the data, the <span class="Monospace">x</span> value, and the time; and a table that displays the attributes of the waveform data.
+</li>
+<li><strong>Conditional Boolean Probe</strong>&#8212;Displays the Boolean data and allows conditional breakpoints.
+</li>
+<li><strong>Conditional Double Array Probe</strong>&#8212;Monitors an array of double-precision, floating-point numeric controls. The <strong>Data</strong> tab displays the size of the input array. Use the <strong>Conditions</strong> page to set a conditional breakpoint. You can set conditions based on the size of the array or any elements within the array. If you select multiple conditions, LabVIEW executes a breakpoint if any of those conditions are true.
+</li>
+<li><strong>Conditional Double Probe</strong>&#8212;Displays the double-precision, floating-point data and allows conditional breakpoints. If you select multiple conditions, LabVIEW executes a breakpoint if any of those conditions are true.
+</li>
+<li><strong>Conditional Error Probe</strong>&#8212;Displays the error status, code, and description. Allows conditional breakpoints to pause on an error, a warning, or on a particular error code.
+</li>
+
+<li><strong>Conditional Signed8 Probe</strong>&#8212;Displays the 8-bit signed integer data and allows conditional breakpoints.</li>
+<li><strong>Conditional Signed16 Probe</strong>&#8212;Displays the 16-bit signed integer data and allows conditional breakpoints.</li>
+
+
+<li><strong>Conditional Signed32 Array Probe</strong>&#8212;Similar to the Conditional Double Array probe, this probe monitors an array of 32-bit signed integer numeric controls. The <strong>Data</strong> page displays the size of the input array. Use the <strong>Conditions</strong> page to set a conditional breakpoint. You can set conditions based on the size of the array or any elements within the array. If you select multiple conditions, LabVIEW executes a breakpoint if any of those conditions are true.
+</li>
+<li><strong>Conditional Signed32 Probe</strong>&#8212;Displays the 32-bit signed integer data and allows conditional breakpoints.
+</li>
+<li><strong>Conditional Signed64 Array Probe</strong>&#8212;Similar to the Conditional Double Array probe, this probe monitors an array of 64-bit signed integer numeric controls. The <strong>Data</strong> page displays the size of the input array. Use the <strong>Conditions</strong> page to set a conditional breakpoint. You can set conditions based on the size of the array or any elements within the array. If you select multiple conditions, LabVIEW executes a breakpoint if any of those conditions are true.
+</li>
+<li><strong>Conditional Signed64 Probe</strong>&#8212;Displays the 64-bit signed integer data and allows conditional breakpoints.</li>
+<li><strong>Conditional String Probe</strong>&#8212;Displays the string data and allows conditional breakpoints.
+</li>
+
+<li><strong>Conditional Unsigned8 Probe</strong>&#8212;Displays the 8-bit unsigned integer data and allows conditional breakpoints.</li>
+<li><strong>Conditional Unsigned16 Probe</strong>&#8212;Displays the 16-bit unsigned integer data and allows conditional breakpoints.</li>
+
+<li><strong>Conditional Unsigned32 Array Probe</strong>&#8212;Similar to the Conditional Double Array probe, this probe monitors an array of 32-bit unsigned integer numeric controls. The <strong>Data</strong> page displays the size of the input array. Use the <strong>Conditions</strong> page to set a conditional breakpoint. You can set conditions based on the size of the array or any elements within the array. If you select multiple conditions, LabVIEW executes a breakpoint if any of those conditions are true.
+</li>
+<li><strong>Conditional Unsigned32 Probe</strong>&#8212;Displays the 32-bit unsigned integer data and allows conditional breakpoints.
+</li>
+<li><strong>Conditional Unsigned64 Array Probe</strong>&#8212;Similar to the Conditional Double Array probe, this probe monitors an array of 64-bit unsigned integer numeric controls. The <strong>Data</strong> page displays the size of the input array. Use the <strong>Conditions</strong> page to set a conditional breakpoint. You can set conditions based on the size of the array or any elements within the array. If you select multiple conditions, LabVIEW executes a breakpoint if any of those conditions are true.
+</li>
+<li><strong>Conditional Unsigned64 Probe</strong>&#8212;Displays the 64-bit unsigned integer data and allows conditional breakpoints.</li>
+<li><strong>Control Refnum Probe</strong>&#8212;Displays the class name, the control label, the hex value of the reference, the VI name of the owner, and the path of the VI. You can use this probe to pause if the value is an invalid refnum.
+</li>
+<li><strong>Default Picture Probe</strong>&#8212;Displays the picture.
+</li>
+<li><strong>Default Pixmap Probe</strong>&#8212;Displays the pixmap.
+</li>
+<li><strong>Digital Waveform Probe</strong>&#8212;Displays a graph of the digital data; a table with a time stamp that specifies when the probe received the data, the <span class="Monospace">x</span> value, and the time; and a table that displays the attributes of the waveform data.
+</li>
+<li><strong>Dynamic Data Type Probe</strong>&#8212;Displays the attributes for each waveform and graphs the data.
+</li>
+<li><strong>History - Boolean</strong>&#8212;Displays the history of the Boolean data that flowed through the wire.</li>
+<li><strong>History - CDB</strong>&#8212;Displays the history of the complex double-precision, floating-point data that flowed through the wire.</li>
+<li><strong>History - CSG</strong>&#8212;Displays the history of the complex single-precision, floating-point data that flowed through the wire.</li>
+<li><strong>History - CXT</strong>&#8212;Displays the history of the complex extended-precision, floating-point data that flowed through the wire.</li>
+<li><strong>History - DBL</strong>&#8212;Displays the history of the double-precision, floating-point numeric data that flowed through the wire.</li>
+<li><strong>History - EXT</strong>&#8212;Displays the history of the extended-precision, floating-point numeric data that flowed through the wire.</li>
+<li><strong>History - I8</strong>&#8212;Displays the history of the 8-bit signed integer data that flowed through the wire.</li>
+<li><strong>History - I16</strong>&#8212;Displays the history of the 16-bit signed integer data that flowed through the wire.</li>
+<li><strong>History - I32</strong>&#8212;Displays the history of the 32-bit signed integer data that flowed through the wire.</li>
+<li><strong>History - I64</strong>&#8212;Displays the history of the 64-bit signed integer data that flowed through the wire.</li>
+<li><strong>History - Path</strong>&#8212;Displays the history of the path data that flowed through the wire.</li>
+<li><strong>History - SGL</strong>&#8212;Displays the history of the single-precision, floating-point numeric data that flowed through the wire.</li>
+<li><strong>History - String</strong>&#8212;Displays the history of the string data that flowed through the wire.</li>
+<li><strong>History - U8</strong>&#8212;Displays the history of the 8-bit unsigned integer data that flowed through the wire.</li>
+<li><strong>History - U16</strong>&#8212;Displays the history of the 16-bit unsigned integer data that flowed through the wire.</li>
+<li><strong>History - U32</strong>&#8212;Displays the history of the 32-bit unsigned integer data that flowed through the wire.</li>
+<li><strong>History - U64</strong>&#8212;Displays the history of the 64-bit unsigned integer data that flowed through the wire.</li>
+
+<li><strong>Picture Probe</strong>&#8212;Displays the picture and includes the <strong>Height</strong> and <strong>Width</strong> of the image.
+</li>
+<li><strong>Pixmap Probe</strong>&#8212;Displays the picture and includes information about the width, height, and image color depth of the input picture.
+</li>
+<li><strong>Rendezvous Refnum Probe</strong>&#8212;Displays the rendezvous name and size, the number of VIs or functions waiting to acquire the rendezvous, and the hex value of the reference. You can use this probe to set a breakpoint if the value is an invalid refnum.
+</li>
+<li><strong>Semaphore Refnum Probe</strong>&#8212;Displays the semaphore name and size, the number of VIs or functions waiting to acquire the semaphore, and the hex value of the reference. You can use this probe to set a breakpoint if the value is an invalid refnum.
+</li>
+<li><strong>String Notifier Refnum Probe</strong>&#8212;Displays the notifier name, the latest notification, the number of VIs or functions currently waiting on the notifier, and the hex value of the reference. You can use this probe to set a breakpoint if the value is an invalid refnum.
+</li>
+<li><strong>String Queue Refnum Probe</strong>&#8212;Displays the queue name, the elements of the queue, the number of elements in the queue, the number of pending insert items, the number of pending remove items, and the hex value of the reference. You can use this probe to set a breakpoint if the value is an invalid refnum.
+</li>
+<li><strong>Toggle Execution Highlighting</strong>&#8212;Toggles the execution highlighting at the specified point when the VI is running. This probe is not supported on RT targets.
+</li>
+<li><strong>Translucent Boolean Probe</strong>&#8212;Displays the Boolean data on the wire.
+</li>
+<li><strong>VI Refnum (Panel Image) Probe</strong>&#8212;Displays the VI name, the VI path, the VI front panel image, and the hex value of the reference. You can use this probe to set a breakpoint if the value is an invalid refnum. 
+</li>
+<li><strong>VI Refnum Probe</strong>&#8212;Displays the VI name, the VI path, and the hex value of the reference. You can use this probe to set a breakpoint if the value is an invalid refnum.
+</li>
+</ul>
+</li>
+</ol>
+<p class="Body">After you select a probe, <!--Begin parent: ../lvconcepts/Building_the_Block_Diagram.xml-->that probe becomes the default probe for that data type, and LabVIEW loads that probe when you right-click the wire and select <strong>Probe</strong> from the shortcut menu.<!--End parent: ../lvconcepts/Building_the_Block_Diagram.xml-->
+</p>
+<p class="Body">You can <a href="Creating_Custom_Probes.html">create a new probe based on a supplied probe</a> and add it to the <strong>Custom Probe</strong> shortcut menu.
+</p>
+
+
+
+</body>
+</html>

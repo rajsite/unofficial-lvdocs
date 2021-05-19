@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>DSMemStats (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>DSMemStats (LabVIEW Manager Function)</h1>
+<p class="Code">MgErr DSMemStats(MemStatRec *msrp);</p>
+<h2>Purpose</h2>
+<p class="Body">Returns various statistics about the memory in a zone.</p>
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>msrp</strong></td>
+<td class="Bordered"><span class="Monospace">MemStatRec</span></td>
+ <td class="Bordered">Statistics about the zone's free memory in a <span class="Monospace">MemStatRec</span> structure. This parameter is a <a href="../lvexcodeconcepts/LabVIEW_Manager_Routines.html#Pointers_as_Parameters">pointer</a>.</td></tr>
+</table>
+
+<p class="Body">The following code defines the <span class="Monospace">MemStatRec</span> structure:</p>
+<p class="Code">typedef struct {</p>
+<p class="Code1">int32 totFreeSize, maxFreeSize, nFreeBlocks;</p>
+<p class="Code1">int32 totAllocSize, maxAllocSize;</p>
+<p class="Code1">int32 nPointers, nUnlockedHdls, nLockedHdls;</p>
+<p class="Code1">int32 reserved [4];</p>
+<p class="Code">}</p>
+<p class="Body">The free memory in a zone consists of a number of blocks of contiguous memory. In the <span class="Monospace">MemStatRec</span> structure, <strong>totFreeSize</strong> is the sum of the sizes of the contiguous memory blocks. <strong>maxFreeSize</strong> is the largest of the contiguous memory blocks, as returned by <span class="Monospace-Italic">XX</span><span class="Monospace">MaxMem</span>. <strong>nFreeBlocks</strong> is the number of the contiguous memory blocks. </p>
+<p class="Body">Similarly, the allocated memory in a zone consists of a number of blocks of contiguous memory. In the <span class="Monospace">MemStatRec</span> structure, <strong>totAllocSize</strong> is the sum of the sizes of the contiguous memory blocks. <strong>maxAllocSize</strong> is the largest of the contiguous memory blocks. </p>
+<p class="Body">Because there are three different varieties of allocated blocks, the numbers of blocks of each type is returned separately. <strong>nPointers</strong> (<span class="Monospace">int32</span>) is the number of pointers. <strong>nUnlockedHdls</strong> (<span class="Monospace">int32</span>) is the number of unlocked handles. <strong>nLockedHdls</strong> (<span class="Monospace">int32</span>) is the number of locked handles. Add the values of <strong>nPointers</strong>, <strong>nUnlockedHdls</strong>, and <strong>nLockedHdls</strong> together to find the total number of allocated blocks.</p>
+<p class="Body">The four reserved fields are reserved for use by National Instruments.</p>
+<h2>Return Value</h2>
+<p class="Body"><span class="Monospace">MgErr</span>, which can contain the following errors. If you receive errors from <a href="LabVIEW_Manager_Functions.html">LabVIEW Manager functions</a>, most error names correspond to LabVIEW error codes.</p>
+<table class="Bordered">
+<tr><th class="Bordered Left-Align">Value</th>
+<th class="Bordered Left-Align">Corresponding Error Code or Description</th></tr>
+<tr><td class="Bordered"><span class="Monospace">noErr</span></td><td class="Bordered">No error.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">mZoneErr</span></td><td class="Bordered">Handle or pointer not in specified zone.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">mFullErr</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">2</a></td></tr>
+</table>
+
+</body>
+</HTML>

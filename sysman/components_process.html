@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Processes</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Processes</h1>
+
+<p class="Body">Processes are hierarchies of <a href="components_variables.html">shared or network variables</a> and <a href="components_ioserver.html">I/O servers</a>. Processes provide a logical means of organizing data. For example, if multiple, independent applications run on one server, you can create a process for each application. Similarly, if you have a very large application, you might divide the application into discrete subsystems and create a process for each subsystem. In addition to organizing data, you can start and stop each process independently, which allows you to take one subsystem offline while the rest of the application continues to run. When you stop a process, the values of variables in that process become unavailable and do not update.</p>
+
+<p>Use the System Manager to <a href="create_process.html">create processes</a> and start and stop existing processes.
+
+
+<h2>Shortcut Menu</h2>
+<p class="Body">Right-click a process on the <a href="sysman_overview.html">system tree</a> to display the following options.</p>
+
+<ul>
+<li><strong>Watch List</strong>&#8212;Creates a new <a href="using_watchlist.html">Watch List</a> view that displays the information for all variables contained within the process you select.</li>
+
+<li><strong>Probe</strong>&#8212;Displays the <a href="sm_processprobe_db.html">Process Probe</a> view for the selected process.</li>
+
+<li><strong>Add Variable</strong>&#8212;Displays the <a href="sm_sharedvar_props_db.html">Shared Variable Properties</a> dialog box, which you can use to <a href="create_shared_vars.html">create a new variable</a> within the selected process.</li>
+
+<li><strong>Add I/O Server</strong>&#8212;Displays the <a href="sm_createiosvr_db.html">Create New I/O Server</a> dialog box to create an I/O server and add it to the <a href="components_SVE.html">Shared Variable Engine</a>.</li>
+
+<li><strong>Stop Process</strong>&#8212;Stops the selected process in the system tree. When a process stops, the values of variables in that process become unavailable and do not update. You must have sufficient access privileges to stop a process.</li>
+
+<li><strong>Start Process</strong>&#8212;Starts the selected process in the system tree. Processes automatically start when you create them. If you select the <strong>Stop Process</strong> item to stop a process, you can use <strong>Start Process</strong> to restart the process. You must have sufficient access privileges to start a process.</li>
+
+
+
+<li><strong>Remove Process</strong>&#8212;Removes the selected process in the system tree. You must have sufficient access privileges to remove a process.</li>
+</ul>
+
+</body>
+</html>

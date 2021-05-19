@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 6200Eactivexhlp -->
+
+<title>Functionality Not Supported in Viewing and Controlling Remote Front Panels</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Functionality Not Supported in Viewing and Controlling Remote Front Panels</h1>
+
+<p class="Body"><!--begin parent=UM, 6100Ecomm ER-->The following list includes functionality not supported and recommendations to consider when viewing and controlling remote front panels.</p>
+<ul><li>Because of the constraints of a Web browser, user interface applications that attempt to manipulate the dimensions and location of a front panel do not work properly when that front panel is displayed as a part of a Web page. Although the Web Server and the LabVIEW browser plug-in attempt to preserve the fidelity of complex user interface applications&#8212;in particular, those that present dialog boxes and subVI windows&#8212;some applications might not work properly in the context of a Web browser. National Instruments recommends that you do not export these types of applications for use in a Web browser.</li>
+<li>Avoid exporting VIs that have <a href="../glang/While_Loop.html">While Loops</a> but no wait function. These VIs prevent background tasks from performing in a reasonable amount of time, making front panels unresponsive when viewed or controlled remotely.</li>
+<li>Some VIs might not work exactly the same way from a remote computer as they do when run locally. <!--start parent = ../lvconcepts/Viewing_FP_remote.html tag="remote_client_display"-->Embedded .NET and ActiveX controls do not display on a remote client because they draw and operate almost completely independently of LabVIEW.<!--end parent = ../lvconcepts/Viewing_FP_remote.html tag="remote_client_display"--> If a VI presents the standard file dialog box, the controller receives an error because you cannot browse a file system remotely. Also, the browse button of a path control is disabled in remote panels.</li>
+<li>Clients viewing a front panel remotely might see different behavior depending on whether the front panel they are connecting to is from a built application. Specifically, if the front panel is from a built application, any programmatic changes to the front panel made before the client connects to the front panel are not reflected on the client computer. For example, if a <a href="../glang/Property_Node.html">Property Node</a> changes a caption on a control before a client connects to that front panel, the client will see the original caption of the control, not the changed caption.</li>
+<li>Only a controller can remotely view the front panel of a VI dynamically opened and run using the VI Server or the front panel of a subVI configured to display the front panel when called. Clients not controlling the VI cannot view the front panel.</li>
+<li>Block diagrams that achieve certain user interface effects by polling properties of a front panel control might experience decreases in performance when you control the VI from a remote computer. You can improve the performance of these VIs by using the <a href="../glang/Wait_for_Front_Panel_Act.html">Wait for Front Panel Activity</a> function.</li>
+<li>LabVIEW cannot generate a <a href="../lvprop/VI_Panel_CloseQ.html">Panel Close</a> event for a VI being viewed or controlled remotely. If you are viewing or controlling a VI remotely, LabVIEW can generate events only in the Control class, that is not in the Application or VI class.</li>
+<li>If you are remotely viewing or controlling a VI which displays the front panel of a subVI when calling the subVI, avoid manually closing the front panel of the subVI. Otherwise, you might lose control of the VI on both the client computer and the server computer. If you must view the front panel of the subVI when called, configure LabVIEW to <a href="Opening_SubVI_Front_Panels.html">close the subVI after it runs</a>.</li>
+</ul><!--end parent=UM, 6100Ecomm ER-->
+</body>
+</html>

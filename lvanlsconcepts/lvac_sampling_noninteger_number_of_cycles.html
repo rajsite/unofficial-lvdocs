@@ -1,0 +1,82 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Sampling a Noninteger Number of Cycles</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-2D800EB4-C05C-4172-A494-E3189DF3ECD0" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Sampling a Noninteger Number of Cycles</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 Usually, an unknown signal you are measuring is a stationary signal. A stationary signal is present before, during, and
+            after data acquisition. When measuring a stationary signal, you cannot guarantee that you are sampling an integer number of
+            cycles. If the time record contains a noninteger number of cycles, spectral leakage occurs because the noninteger cycle frequency
+            component of the signal does not correspond exactly to one of the spectrum frequency lines. Spectral leakage distorts the
+            measurement in such a way that energy from a given frequency component appears to spread over adjacent frequency lines or
+            bins, resulting in a smeared spectrum. You can use smoothing windows to minimize the effects of performing a fast Fourier
+            transform (FFT) over a noninteger number of cycles. 
+            	 
+         </p> 
+         	 
+         <p>Because of the assumption of periodicity of the waveform, artificial discontinuities between successive periods occur when
+            you sample a noninteger number of cycles. The artificial discontinuities appear as very high frequencies in the spectrum of
+            the signal—frequencies that are not present in the original signal. The high frequencies of the discontinuities can be much
+            higher than the Nyquist frequency and alias somewhere between 0 and <em>f</em><sub><em>s</em></sub>/2. Therefore, spectral leakage occurs. The spectrum you obtain by using the discrete Fourier transform (DFT) or FFT is a
+            smeared version of the spectrum and is not the actual spectrum of the original signal. 
+            	 
+         </p> 
+         	 
+         <p>The following figure shows a sine wave sampled at a noninteger number of cycles and the Fourier transform of the sine wave.
+            
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-2D800EB4-C05C-4172-A494-E3189DF3ECD0__IMAGE_B911CECD05714E11BF07B824CFC4D4A5" shape="rect">
+            <!-- --></a><img id="GUID-2D800EB4-C05C-4172-A494-E3189DF3ECD0__IMAGE_B911CECD05714E11BF07B824CFC4D4A5" src="GUID-38C60082-47BB-46CA-B272-08A45D04B273-help-web.png"><br clear="none"> 
+         	 
+         <p>In the previous figure, Graph 1 consists of 1.25 cycles of the sine wave. In Graph 2, the waveform repeats periodically to
+            fulfill the assumption of periodicity for the Fourier transform. Graph 3 shows the spectral representation of the waveform.
+            The energy is spread, or smeared, over a wide range of frequencies. The energy has leaked out of one of the FFT lines and
+            smeared itself into all the other lines, causing spectral leakage. 
+            	 
+         </p> 
+         	 
+         <p>Spectral leakage occurs because of the finite time record of the input signal. To overcome spectral leakage, you can take
+            an infinite time record, from -infinity to +infinity. With an infinite time record, the FFT calculates one single line at
+            the correct frequency. However, waiting for infinite time is not possible in practice. To overcome the limitations of a finite
+            time record, windowing is used to reduce the spectral leakage. 
+            	 
+         </p> 
+         	 
+         <p>In addition to causing amplitude accuracy errors, spectral leakage can obscure adjacent frequency peaks. The following figure
+            shows the spectrum for two close frequency components when no smoothing window is used and when a Hanning window is used.
+            
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-2D800EB4-C05C-4172-A494-E3189DF3ECD0__IMAGE_1506C3FC54D54BAC90E2B69D80791ED2" shape="rect">
+            <!-- --></a><img id="GUID-2D800EB4-C05C-4172-A494-E3189DF3ECD0__IMAGE_1506C3FC54D54BAC90E2B69D80791ED2" src="GUID-9325F9EA-8877-4F93-BAA8-9629D82CEA85-help-web.png"><br clear="none"> 
+         	 
+         <p>In the previous figure, the second peak stands out more prominently in the windowed signal than it does in the signal with
+            no smoothing window applied. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Spectral_Leakage.html" shape="rect">Spectral Leakage</a></div>
+         </div>
+         <div class="relinfo relconcepts"><strong>Related concepts</strong><br clear="none"><div><a href="lvac_hanning.html" shape="rect">Hanning</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

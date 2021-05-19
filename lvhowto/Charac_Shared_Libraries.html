@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+
+<html> 
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<title>Characteristics of LabVIEW-Built Shared Libraries</title>
+<link rel="stylesheet" type="text/css" href= "minimal.css">
+</head>
+
+<body>
+
+<h1>Characteristics of LabVIEW-Built Shared Libraries</h1>
+		<h2>LVDLLStatus Function</h2>
+		<p class="Body">All DLLs built from LabVIEW, in addition to the functions you export, contain an exported function called <span class="Monospace">LVDLLStatus</span>, with the following prototype:</p> 
+			<br /><br /><span class="Monospace">MgErr LVDLLStatus(CStr errStr, int32 errStrLen, void *module)</span>
+		<p class="Body">The calling program uses this function to verify that the LabVIEW DLL loaded correctly. If an error occurs while loading the DLL, the function returns the error. Pass a string buffer to the <span class="Monospace">errStr</span> parameter to receive additional information about the error. Set the <span class="Monospace">errStrLen</span> parameter to the number of bytes in the string buffer passed as <span class="Monospace">errStr</span>. You can use the module parameter to retrieve the handle to the LabVIEW Run-Time Engine being used by the DLL. Typically, you can leave this parameter as NULL.</p>
+		<p class="Body">The <span class="Monospace">LVDLLStatus</span> function blocks the execution if LabVIEW calls this function while the LabVIEW Run-Time Engine is still loading.</p>
+			<table class="Borderless"><tr><td class="Icon"><img src="note.gif" /></td><td><strong>Note</strong>&nbsp;&nbsp;If you call a LabVIEW-built DLL from within LabVIEW, LabVIEW automatically calls the <span class="Monospace">LVDLLStatus</span> function for you. </td></tr></table>
+       
+        <h2>SetExecuteVIsInPrivateExecutionSystem Function</h2>
+	<p class="Body">All DLLs built from LabVIEW, in addition to the functions you export, contain an exported function called <span class="Monospace">SetExecuteVIsInPrivateExecutionSystem</span>, with the following prototype:</p>
+    <br /><br /><span class="Monospace">Void SetExecuteVIsInPrivateExecutionSystem(Bool32 value)</span>
+	<p class="Body">Use this function to specify whether LabVIEW executes VIs in a multithreaded execution system when you call LabVIEW-built shared libraries to applications in other languages. If you pass 1 to the <span class="Monospace">value</span> parameter, LabVIEW executes VIs in a multithreaded execution system when you call LabVIEW-built shared libraries to applications in other languages. If you call this function, the <span class="Monospace">value</span> parameter of this function overrides the value of the <strong>Execute VIs in private execution system</strong> checkbox in the <a href="../lvdialog/Advanced_DLL_Page.html">Advanced</a> page of the <a href="../lvdialog/DLL_Settings_DB.html">Shared Library Properties</a> Dialog Box.</p>
+    
+    
+	<p><span class="Platform">(macOS)</span> To build part of a shared library in LabVIEW, Application Builder must use gcc, the standard command-line compiler for Unix and macOS operating systems. Use Xcode, the standard development environment for Apple computers, to install gcc. You can download Xcode for free from the Mac App Store.</p>
+
+		<h2>Memory Allocation</h2>
+		<p class="Body">To manage memory allocation for LabVIEW array types exposed as handles, the LabVIEW-built shared library provides <span class="Monospace">Allocate</span>, <span class="Monospace">Deallocate</span>, and <span class="Monospace">Resize</span> functions for each array type exposed as a handle. Open the generated header file to view the function prototypes specific to the generated shared library.</p>
+
+</body>
+</html>

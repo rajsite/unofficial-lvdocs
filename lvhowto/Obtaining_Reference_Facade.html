@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Obtaining a Reference in a Facade VI</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Obtaining a Reference in a Facade VI</h1>
+<p class="Body">Complete the following steps to obtain a reference to the VI that owns a specific XControl.</p>
+
+<ol>
+<li>Double-click the Facade ability in the XControl library to open and edit the <a href="../lvconcepts/Creating_an_XControl_Facade.html">Facade VI</a>.</li>
+<li>Right-click the output of the <strong>Container State</strong> cluster on the block diagram and select <strong>Cluster, Class, &#38; Variant Palette</strong> from the shortcut menu.</li>
+<li>Select the <a href="../glang/Unbundle_By_Name.html">Unbundle by Name</a> function from the palette and wire the function to the <strong>Container State</strong> cluster.</li>
+<li>Right-click the Unbundle by Name function and select <strong>Select Item&#187;Refnum</strong> from the shortcut menu.</li>
+<li>Right-click the <strong>Refnum</strong> and select <strong>Create&#187;Property for Control Class&#187;Owner</strong> from the shortcut menu. Place the Property Node next to the Unbundle by Name function.</li>
+<li>Wire the output of the Unbundle by Name function to the <strong>reference</strong> input of the Property Node.</li>
+<li>Right-click the <strong>Refnum</strong> and select <strong>Create&#187;Property for Control Class&#187;Owning VI</strong> from the shortcut menu to create a second Property Node. Place the Property Node to the right of the <strong>Owner</strong> Property Node you created in step 5.</li>
+<li>Wire the <strong>reference out</strong> output of the <strong>Owner</strong> Property Node to the <strong>reference</strong> input of the <strong>Owning VI</strong> Property Node.</li>
+<li>Run the VI.</li></ol> 
+
+<p class="Body">Refer to the <a href="javascript:WWW(WWW_RefFacadeVI)">KnowledgeBase</a> for more information about obtaining a reference in a Facade VI.</p>
+
+</body>
+</html>

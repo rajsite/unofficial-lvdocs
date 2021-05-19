@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD>
+<BODY>
+<OBJECT type="text/site properties">
+	<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="controls">
+		<param name="See Also" value="controls">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="navigation">
+			<param name="Local" value="tpc_navigation_controls.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="creating">
+		<param name="See Also" value="creating">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="touch panel projects (how-to)">
+			<param name="Local" value="wes_creating_tp_projects.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="data">
+		<param name="See Also" value="data">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="protecting">
+			<param name="Local" value="tpc_write_filters.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="landscape template">
+		<param name="See Also" value="landscape template">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="touch panel target">
+			<param name="Local" value="tpc_templates.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="navigation controls">
+		<param name="Local" value="tpc_navigation_controls.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="portrait template">
+		<param name="See Also" value="portrait template">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="touch panel target">
+			<param name="Local" value="tpc_templates.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="targets">
+		<param name="See Also" value="targets">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="touch panels">
+			<param name="Local" value="tpc_supported_targets.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="templates">
+		<param name="See Also" value="templates">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="touch panel targets">
+			<param name="Local" value="tpc_templates.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="touch panel targets">
+		<param name="See Also" value="touch panel targets">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="creating projects (how-to)">
+			<param name="Local" value="wes_creating_tp_projects.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="templates">
+			<param name="Local" value="tpc_templates.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="touch panels">
+		<param name="See Also" value="touch panels">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="support for">
+			<param name="Local" value="tpc_supported_targets.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Windows Embedded Standard">
+		<param name="See Also" value="Windows Embedded Standard">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="touch panels">
+			<param name="Local" value="tpc_supported_targets.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="write filters">
+		<param name="Local" value="tpc_write_filters.html">
+		</OBJECT>
+
+</UL>
+</BODY>
+</HTML>

@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<script type="text/javascript" src="pdf.js"></script>
+<title>Tutorial: Wiring Objects Using VI Scripting</title>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<LINK rel="StyleSheet" href="minimal.css">
+<script src="common.js" type="text/javascript"></script><script src="expandable_tree.js" type="text/javascript"></script>
+<link rel="STYLESHEET" type="text/css" href="expandable_tree.css"><script src="dynamicjumps.js" type="text/javascript"></script>
+</head>
+<body>
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Tutorial: Wiring Objects Using VI Scripting</h1>
+
+<p class="Body">Use VI Scripting to wire objects on the block diagram programmatically. Most objects you can place on the block diagram are considered nodes. For example, functions, VIs, and structures are nodes. Typically, nodes have multiple terminals to which you can wire. Use the <a href="../lvscript/Node_Connect_Wires.html">Connect Wires</a> method to <a href="#WiringNodes">connect a wire, or wires, to a node</a>. Use the <a href="../lvscript/Terminal_Connect_Wire.html">Connect Wire</a> method to <a href="#WiringObjects">connect a wire to a single terminal</a>.</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;<ul><li>This topic assumes familiarity with the <a href="../lvconcepts/scripting_property_method.html">VI Scripting</a> introduction.</li> <li>You must <a href="enabling_vi_scripting.html">enable VI Scripting</a> to display the VI Scripting VI and functions and use the associated properties and methods.</li></ul>
+</td>
+</tr>
+</table>
+
+<a name="WiringNodes"></a><h2>Wiring Nodes</h2>
+
+<p class="Body">Complete the following steps to wire two Add functions together using VI Scripting.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;Nodes are in the <strong>Generic&#0187;GObject&#0187;Node</strong> class.</td>
+</tr>
+</table>
+
+<ol>
+<li>Complete the <a href="scripting_repositioning.html">previous exercise</a> if you have not already completed it. If the untitled VI you created in the previous exercise is still open, close the VI.</li>
+<li>Delete the Move method and related wires from the block diagram.</li>
+<li>Complete the following steps to place the Add function in the For Loop.
+<ol>
+<li>Enter <span class="Monospace">30</span> and <span class="Monospace">25</span> as the values of the <strong>Horizontal</strong> and <strong>Vertical</strong> inputs, respectively, for the New VI Object function that creates the Add function.</li>
+<li>Remove the wire from the <strong>owner refnum</strong> input of the New VI Object function that creates the Add function, as well as any broken wires.</li>
+<li>Wire the <strong>object refnum</strong> output of the New VI Object function that creates the For Loop to the <strong>owner refnum</strong> input of the New VI Object function that creates the Add function.</li>
+</ol>
+</li>
+<li>Create another Add function inside the For Loop with the values <span class="Monospace">75</span> and <span class="Monospace">25</span> in the <strong>Horizontal</strong> and <strong>Vertical</strong> inputs, respectively. Refer to the block diagram in step 12 for a visual reference.</li>
+<li>Add an <a href="../glang/Invoke_Node.html">Invoke Node</a> to the block diagram to the right of the New VI Object function you added in the previous step.
+<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object727);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> 
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object727);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li>
+<li>Wire the <strong>object refnum</strong> output of the New VI Object function that creates the first Add function to the <strong>reference</strong> input of the Invoke Node.</li>
+<li>Click the Invoke Node and select <strong>Connect Wires</strong> from the shortcut menu.</li>
+<li>Wire the <strong>object refnum</strong> output of the New VI Object function that creates the second Add function to the <strong>Wire Source</strong> input of the Connect Wires method.</li>
+<li>Right-click the <strong>Wiring Specs</strong> input of the Connect Wires method and select <strong>Create&#0187;Constant</strong> from the shortcut menu.</li> 
+<li>Enter the names of the input and output you want to connect with a wire in the <strong>Wiring Specs</strong> constant, in this case <span class="Monospace">x</span> and <span class="Monospace">x+y</span>.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;Alternatively, situations might allow for auto-wiring rather than explicitly specifying the name of the terminals you want to wire. You can set the <strong>Auto Wire?</strong> input to <span class="Monospace">TRUE</span> to allow LabVIEW to wire the source object to a compatible, nearby object automatically.</td>
+</tr>
+</table>
+</li>
+<li>To specify that LabVIEW finds the best path for the wire, right-click the <strong>Auto Route?</strong> input of the Connect Wires method, create a constant, and set the constant to <span class="Monospace">TRUE</span>.</li>
+<li>Close references to the objects and complete all wiring to match the following block diagram.<br><br>
+<img src="loc_bd_wiring_nodes.gif">
+</li>
+<li><a href="Saving_Individual_VI_Files.html">Save the VI</a>.</li>
+<li><a href="Running_VIs.html">Run the VI</a></li>
+</ol>
+<p class="Body">LabVIEW creates and opens untitled front panel and block diagram windows. The block diagram contains a For Loop in the upper left-hand corner and two Add functions in the For Loop. The Add functions are wired together.</p>
+
+
+<a name="WiringObjects"></a><h2>Wiring Objects</h2>
+<p class="Body">This exercise wires a terminal to a node. To wire to a terminal, use the Connect Wire method. Complete the following steps to wire a constant to an Add function using VI Scripting.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;The terminal reference for a numeric constant is in the <strong>Generic&#0187;GObject&#0187;Constant</strong> class.</td>
+</tr>
+</table>
+
+<ol>
+<li>Complete the <a href="#WiringNodes">Wiring Nodes</a> exercise, if you have not already completed it. If the untitled VI you created in the previous exercise is still open, close the VI.</li>
+<li>On the New VI Object function that creates the first Add function, change the <strong>style</strong> input to <strong>Numeric Constant</strong>, change the <strong>vi object class</strong> input to <strong>Constant</strong>, and remove the wires from the <strong>object refnum</strong> and <strong>error out</strong> outputs.</li>
+<li>Add a <a href="../glang/Property_Node.html">Property Node</a> to the block diagram to the right of the <a href="../glang/New_VI_Object.html">New VI Object</a> function that now creates a numeric constant. Refer to the block diagram in step 9 for a visual reference.
+<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object725);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> 
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object725);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li>
+<li>Wire the <strong>object refnum</strong> output of the New VI Object function that creates the numeric constant to the <strong>reference</strong> input of the Property Node.</li>
+<li>Click the Property Node and select <strong>Terminal&#0187;Reference</strong> from the shortcut menu.</li>
+<li>Wire the <strong>Terminal</strong> output of the Property Node to the <strong>reference</strong> input of the existing Invoke Node.</li>
+<li>Click the Invoke Node and select <strong>Connect Wire</strong> from the shortcut menu.</li>
+
+<li>Change the value of the <strong>Wiring Specs</strong> input of the Connect Wire method to the names of the input and output you want to connect with a wire, in this case <span class="Monospace">x</span> and <span class="Monospace">x</span>.</li>
+
+<li>Complete all wiring to match the following block diagram.<br><br>
+<img src="loc_bd_wiring_term.gif">
+</li>
+<li>Save the VI.</li>
+<li>Run the VI</li>
+</ol>
+<p class="Body">LabVIEW creates and opens untitled front panel and block diagram windows. The block diagram contains a For Loop in the upper left-hand corner, and a numeric constant and Add function in the For Loop. The numeric constant and the Add function are wired together.</p>
+
+
+
+
+</body>
+</html>

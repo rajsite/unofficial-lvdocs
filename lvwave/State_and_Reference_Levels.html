@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Original filename: lvwavemaster.txt -->
+
+<title>Reference and State Levels</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+</HEAD>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Reference and State Levels
+</h1>
+
+<p class="Body">Pulse and transition waveform measurements require a means of identifying the position in time of the waveform feature to be measured.  State and reference levels provide a means of accomplishing this identification, resulting in a measurement time interval that you can use as a basis for various time-domain measurements.
+</p>
+<H2>State Levels</H2>
+<p class="Body">Pulses or transitions involve changes in the waveform level between various conditions, or states.  The most common case is a two-state waveform with a high state and a low state.  For example, an ideal digital signal might be defined as in the high state at 5 volts and in the low state at 0 volts.
+</p>
+<H2>Reference Levels</H2>
+<p class="Body">Reference levels allow you to extract information from the waveform by identifying reference level crossings.  Two adjacent waveform samples separated in magnitude by a reference level constitute a reference level crossing. Linear interpolation gives an approximation to the exact time instant of a reference level crossing, as shown in the following illustration.</p>
+
+<p class="Anchor"><img src="loc_eps_reflevels.gif"></p>
+
+<p class="Body">You can specify reference levels as a percentage of the state levels, with the low state and high state corresponding to 0 and 100%, respectively.  The most common low, mid, and high reference levels are 10, 50, and 90%.  The following illustration shows a typical selection of state and reference levels for a pulse waveform.</p>
+
+<p class="Anchor"><img src="loc_eps_typstatref.gif"></p>
+<p class="Body">The histogram method was used to determine the state levels. The histogram method has the advantage of excluding the undershoot and overshoot peaks.</p>
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Tips and Tricks for Creating Shortcut Menu Plug-Ins</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Tips and Tricks for Creating Shortcut Menu Plug-Ins</h1>
+<p>The following list provides additional information about creating and using shortcut menu plug-ins.</p>
+<ul>
+	<li>When you select and right-click multiple front panel or block diagram objects, plug-ins retrieve refnums for all the selected objects. Refnums pass to the <strong>Affected Items</strong> array of plug-ins when they match the <strong>Affected Items</strong> array. Refnums for all other objects pass to the <strong>Remaining Items</strong> array of plug-ins. This functionality allows you to enable plug-ins when multiple selected objects must match <strong>Affected Items</strong> or to enable plug-ins when only some selected objects match <strong>Affected Items</strong>.</li>
+	<li>When you right-click without a selection list, you may still get multiple refnums. For example, right-clicking a terminal generates refnums for the terminal, its node, and the diagram of the node. As with the multiple selection case, you can determine how each plug-in decides to apply its menu items in these cases.</li>	
+	<li>Many plug-ins perform similar functionality. You may find subVIs useful to your plug-ins by browsing the plug-ins that LabVIEW provides. These plug-ins are in the <span class="Monospace">labview\resource\plugins\PopupMenus</span> directories.</li>
+	<li>To share subVIs among multiple plug-ins, you can store the subVIs in a subdirectory that is in the same folder as your LLB.</li>
+	<li>To add a menu separator bar to the shortcut menu, leave the Menu Item Display Name as an empty string in the build VI.</li>
+	<li>To reload plug-ins without restarting LabVIEW, create an empty VI, add the Invoke Node to the block diagram, configure the Invoke Node for the Menus:Refresh method, and run the VI. This method is also useful if you write an installer for your plug-ins. You can run the method as part of the installation process. If you use the JKI VI Package Manager (VIPM) software to distribute your plug-ins, add the Menus:Refresh method to the post-installation VI.</li>
+</ul>
+
+<h3>Related Information</h3>
+<p><a href="shortcutmenuplugins_intro.html">Understanding Shortcut Menu Plug-Ins</a></p>
+<p><a href="shortcutmenuplugins_lookuptagstypes.html">Identifying Refnum Types and Menu Item Tags of Objects</a></p>
+<p><a href="shortcutmenuplugins_troubleshoot.html">Troubleshooting Shortcut Menu Plug-Ins</a></p>
+<p><a href="../lvhelp/vipm.html">Accessing LabVIEW Add-ons with the VI Package Manager (VIPM) Software</a></p>
+<p><a href="../lvprop/Application_Menus058Refresh.html">Menus:Refresh Method</a></p>
+
+</body>
+</html>

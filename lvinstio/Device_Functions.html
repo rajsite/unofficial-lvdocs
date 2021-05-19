@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Original filename: Masterlvinstio.txt -->
+
+
+<title>Device Functions</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Device Functions
+</h1>
+<p class="Body">The <a href="GPIB_Dev_Contr_Func_Descr.html">device functions</a> send configuration information to a specific instrument or device.
+</p>
+<p class="Body"><a href="#go_local">loc&#8212;Go to local</a>
+</p>
+<p class="Body"><a href="#take_offline">off&#8212;Take device offline</a>
+</p>
+<p class="Body"><a href="#pass_control">pct&#8212;Pass control</a>
+</p>
+<p class="Body"><a href="#poll_configure">ppc&#8212;Parallel poll configure</a>
+</p>
+<h2><a name="go_local">loc&#8212;Go to local</a></h2>
+<table class="Borderless"><tr><td><em>syntax</em></td>
+<td><strong>loc</strong> <em>address</em></td></tr></table>
+
+<p class="Body"><strong>loc</strong> temporarily moves devices from a remote program mode to a local mode.
+</p>
+<p class="Body"><em>address</em> is the GPIB address of the device. This argument indicates both primary and secondary addresses if you use the form <em>primary+secondary</em>, where <em>primary</em> and <em>secondary</em> are the decimal values of the primary and secondary addresses. For example, if <em>primary</em> is 2 and <em>secondary</em> is 3, <em>address</em> is 2+3.
+</p>
+<p class="Body"><strong>loc</strong> sends the GTL (Go To Local) message to the GPIB device.
+</p>
+<h2><a name="take_offline">off&#8212;Take device offline</a></h2>
+<table class="Borderless"><tr><td><em>syntax</em></td>
+<td><strong>off</strong> <em>address</em></td></tr></table>
+
+<p class="Body"><strong>off</strong> takes the device at the specified GPIB address offline. This is only needed when sharing a device with another application which is using the NI-488 GPIB Library.
+</p>
+<p class="Body"><em>address</em> is the GPIB address of the device. This argument indicates both primary and secondary addresses if you use the form <em>primary+secondary</em>, where <em>primary</em> and <em>secondary</em> are the decimal values of the primary and secondary addresses. For example, if <em>primary</em> is 2 and <em>secondary</em> is 3, <em>address</em> is 2+3.
+</p>
+<h2><a name="pass_control">pct&#8212;Pass control</a></h2>
+<table class="Borderless"><tr><td><em>syntax</em></td>
+<td><strong>pct</strong> <em>address</em></td></tr></table>
+
+<p class="Body"><strong>pct</strong> passes Controller-In-Charge (CIC) authority to the device at the specified address. The GPIB Controller becomes idle automatically. The function assumes that the device to which <strong>pct</strong> passes control has Controller capability.
+</p>
+<p class="Body"><em>address</em> is the GPIB address of the device. This argument indicates both primary and secondary addresses if you use the form <em>primary+secondary</em>, where <em>primary</em> and <em>secondary</em> are the decimal values of the primary and secondary addresses. For example, if <em>primary</em> is 2 and <em>secondary</em> is 3, <em>address</em> is 2+3.
+</p>
+<p class="Body"><strong>pct</strong> sends the following command sequence:
+</p>
+
+<ol>
+<li>Talk address of the device</li>
+<li>Secondary address of the device, if applicable</li>
+<li>Take Control (TCT)</li></ol>
+
+
+<h2><a name="poll_configure">ppc&#8212;Parallel poll configure</a></h2>
+<table class="Borderless"><tr><td><em>syntax</em></td>
+<td><strong>ppc</strong> <em>byte address</em></td></tr></table>
+
+<p class="Body"><strong>ppc</strong> enables the instrument to respond to parallel polls.
+</p>
+<p class="Body"><em>byte</em> is 0 or a valid parallel poll enable (PPE) command. If <em>byte</em> is 0, the parallel poll disable (PPD) <em>byte</em> 0x70 is sent to disable the device from responding to a parallel poll. Each of the 16 PPE messages selects a GPIB data line (DIO1 through DIO8) and sense (1 or 0) that the device must use when it responds to the Identify (IDY) message during a parallel poll. The device compares the <strong>ist</strong> sense and drives the indicated DIO line TRUE or FALSE.
+</p>
+<p class="Body"><em>address</em> is the GPIB address of the device. This argument indicates both primary and secondary addresses if you use the form <em>primary+secondary</em>, where <em>primary</em> and <em>secondary</em> are the decimal values of the primary and secondary addresses. For example, if <em>primary</em> is 2 and <em>secondary</em> is 3, <em>address</em> is 2+3.
+</p>
+
+
+
+</body>
+</html>

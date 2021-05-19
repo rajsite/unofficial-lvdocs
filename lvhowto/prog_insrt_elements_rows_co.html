@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4500Earrayclustershlp -->
+
+<title>Programmatically Inserting Elements, Rows, Columns, and Pages into Arrays</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Programmatically Inserting Elements, Rows, Columns, and Pages into Arrays
+</h1>
+<p class="Body">You can insert an element, row, column, or page into an array programmatically. What you can insert depends on how many dimensions the array has. For example, you can insert a row or a column into an array of two or more dimensions, but you cannot insert an element. You can insert a page into an array of three or more dimensions, but you cannot insert an element, row, or column. 
+</p>
+<p class="Body">Complete the following steps to insert elements, rows, columns, or pages in an array.
+</p>
+<ol>
+<li>Add an <a href="../glang/Insert_Into_Array.html">Insert Into Array</a> function to the block diagram.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object367);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object367);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN>
+</li>
+<li>Wire an array of any dimension to the <strong>n-dim array</strong> input of the Insert Into Array function. The function automatically resizes based on the dimensions of the array.
+</li>
+<li>Determine which operation you want to perform from the following table and complete the associated steps.
+</li></ol>
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;The <strong>index</strong> input specifies the element, row, column, or page where you want to insert the element or array, with 0 being the first. Elements and arrays are added before the value you wire to <strong>index</strong>. <!-- Begin child: ../lvhowto/prog_delet_elements_rows_col.html-->In the following table, <em>n</em> is the total number of elements, rows, columns, pages, or dimensions in the array.<!-- End child: ../lvhowto/prog_delet_elements_rows_col.html--></td></tr></table>
+<br>
+<table class="Bordered"><tr><th class="Bordered">Array wired to n-dimension array</th>
+<th class="Bordered">Inserting</th>
+<th class="Bordered">Complete these steps.</th></tr>
+
+<tr><td class="Bordered" rowspan="2">1D array</td>
+<td class="Bordered">Element</td>
+<td class="Bordered">Wire a value 0 through <em>n</em> to <strong>index</strong>.<br>
+Wire a value to <strong>new element/subarray</strong>.</td></tr>
+
+<tr>
+<td class="Bordered">1D array to row or column</td>
+<td class="Bordered">Wire a value 0 through <em>n</em> to <strong>index</strong>.<br>
+Wire a 1D array to <strong>new element/subarray</strong>.</td></tr>
+
+<tr><td class="Bordered" rowspan="3">2D array</td>
+<td class="Bordered">Row</td>
+<td class="Bordered">Wire a value 0 through <em>n</em> to <strong>index (row)</strong>.<br>
+Wire a 1D array to <strong>new element/subarray</strong>.</td></tr>
+
+<tr>
+<td class="Bordered">Column</td>
+<td class="Bordered">Wire a value 0 through <em>n</em> to <strong>index (column)</strong>.<br>
+Wire a 1D array to <strong>new element/subarray</strong>.</td></tr>
+
+<tr>
+<td class="Bordered">2D array (rows and columns)</td>
+<td class="Bordered">Wire a value 0 through <em>n</em> to <strong>index (row)</strong> or <strong>index (column)</strong>.<br>
+Wire a 2D array to <strong>new element/sub array</strong>.</td></tr>
+
+<tr><td class="Bordered" rowspan="2">3D through <em>n</em>D array</td>
+<td class="Bordered">Page</td>
+<td class="Bordered">Wire a value 0 through <em>n</em> to <strong>index (page)</strong>.<br>
+Wire a 2D array to <strong>new element/sub array</strong>.</td></tr>
+
+<tr>
+<td class="Bordered">3D array (pages)</td>
+<td class="Bordered">Wire a value 0 through <em>n</em> to <strong>index (page)</strong>.<br>
+Wire a 3D array to <strong>new element/sub array</strong>.</td></tr></table>
+<ol start="4">
+<li><a href="Resizing_Array_Functions.html">Resize</a> the Insert Into Array function to insert another element(s), row(s), column(s), or page(s) in an array and repeat steps 2 and 3.
+</li>
+<li>Run the VI.
+</li>
+</ol>
+<p class="Body">If the dimension size of the array you insert is smaller than the dimension size of the array you wired to the <strong>n-dim array</strong> input of the Insert Into Array function, the function pads the array you insert with default data, such as zeros in the case of an array of numeric values. 
+</p>
+<p class="Body">If the dimension size of the array you insert is larger than the dimension size of the array you wired to the <strong>n-dim array</strong> input of the Insert Into Array function, the function crops the array from the end.
+</p>
+
+
+
+</body>
+</html>

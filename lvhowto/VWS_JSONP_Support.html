@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>JSONP Support</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>JSONP Support</h1>
+
+    <p class="Body">To use JSONP in order to avoid the <a href="javascript:WWW(WWW_SOP)">same-origin policy</a> in most browsers, make any request as normal and add an extra <span id="Monospace">$callback</span> parameter. For example, <span class="Monospace">GET http://my_server:3580/nivariable/VariableObjects('ni.var.psp://localhost')/type?$format=json&amp;$callback=my_callback </span></p>
+
+    <p class="Body">The JSON data is passed as a parameter to a function called <span class="Monospace">my_callback</span>, which you supplied with the <span class="Monospace">$callback</span> parameter.  JSONP support is only valid when JSON format is requested.  JSONP support is ignored if XML format is requested.</p>
+
+    <h2>Waveform Representations</h2>
+    <p class="Body">Waveforms in LabVIEW are clusters of four components:  t0, dt, Y, and attributes.  In JSON, waveforms are represented as the string value of the JSON object representation.  In XML, LabVIEW flattens the values to an XML primitive VI.  The "&lt;" and "&gt;" are escaped with "<span class="DNL">&amp;lt;</span>" and "<span class="DNL">&amp;gt;</span>" and stored as the string value of the Value property.
+    </p>
+
+    <table class="Borderless">
+	<tr>
+	<td class="Icon"><img src="note.gif"></td>
+	<td>
+	<strong>Note</strong>&nbsp;&nbsp;JSON representation always includes a default error constant.</td></tr></table>
+	
+</body>
+</html>

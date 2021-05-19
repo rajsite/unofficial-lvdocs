@@ -1,0 +1,84 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>IIR Filters</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-1198BF63-3765-495D-B2FE-5A3B88F3EC51" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">IIR Filters</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 Infinite impulse response (IIR) filters, also known as recursive filters, operate on current and past input values and
+            current and past output values. The impulse response of an IIR filter is the response of the general IIR filter to an impulse,
+            as the following equations define impulse: 
+            	 
+         </p> 
+         	 
+         <p><em>x</em><sub>0</sub> = 1
+            	 
+         </p> 
+         	 
+         <p><em>x</em><sub><em>i</em></sub> = 0 
+            	 
+         </p> 
+         	 
+         <p>for all <em>i</em> &#8800; 0. 
+            	 
+         </p> 
+         	 
+         <p>Theoretically, the impulse response of an IIR filter never reaches zero and is an infinite response. 
+            	 
+         </p> 
+         	 
+         <p>The following general difference equation characterizes IIR filters. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./US2Fworkset2Ftemp2FIIR_Filters.xml_d3977e51.png"></span></div>
+         </div> 
+         	 
+         <p>where <em>b</em><sub><em>j</em></sub> is the set of forward coefficients, <em>N</em><sub><em>b</em></sub> is the number of forward coefficients, <em>a</em><sub><em>k</em></sub> is the set of reverse coefficients, and <em>N</em><sub><em>a</em></sub> is the number of reverse coefficients. 
+            	 
+         </p> 
+         	 
+         <p>The impulse equations describe a filter with an impulse response of theoretically infinite length for nonzero coefficients.
+            However, in practical filter applications, the impulse response of a stable IIR filter decays to near zero in a finite number
+            of samples. 
+            	 
+         </p> 
+         	 
+         <p>In most IIR filter designs, coefficient <em>a</em><sub>0</sub> is 1. The output sample at the current sample index <em>i</em> is the sum of scaled current and past inputs and scaled past outputs, as shown by the following equation. 
+            	 
+         </p> 
+         <div class="fignone"><a name="GUID-1198BF63-3765-495D-B2FE-5A3B88F3EC51__NOLOC_EQ_IIR_FILTERS_NO_BRACKETS" shape="rect">
+               <!-- --></a><div class="mathml-block"><span><img src="./US2Fworkset2Ftemp2FIIR_Filters.xml_d3977e211.png"></span></div>
+         </div> 
+         	 
+         <p><a name="GUID-1198BF63-3765-495D-B2FE-5A3B88F3EC51__EQ_IIR_FILTERS_NO_BRACKETS_VAR_DEF" shape="rect">
+               <!-- --></a>where <em>x</em><sub><em>i</em></sub> is the current input, <em>x</em><sub><em>i</em> - <em>j</em></sub> is the past inputs, and <em>y</em><sub><em>i</em> - <em>k</em></sub> is the past outputs. 
+            	 
+         </p> 
+         	 
+         <p>IIR filters might have ripple in the passband, the stopband, or both. IIR filters have a nonlinear-phase response. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Comparing_FIR_andIIR_Filters.html" shape="rect">FIR and IIR Filters</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

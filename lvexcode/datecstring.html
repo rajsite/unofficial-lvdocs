@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>DateCString (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>DateCString (LabVIEW Manager Function)</h1>
+<p class="Code">CStr DateCString(secs, fmt);</p>
+<h2>Purpose</h2>
+<p class="Body">Returns a pointer to a string representing the date corresponding to <strong>secs</strong> seconds after 12:00 a.m., Friday, January 1, 1904, Universal Time [01-01-1904 00:00:00]. Date formats vary with your system configuration.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;This function was formerly called <span class="Monospace">DateString</span>.</td></tr></table>
+
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>secs</strong></td>
+ <td class="Bordered"><span class="Monospace">uInt32</span></td>
+ <td class="Bordered">Seconds since 12:00 a.m., Friday, January 1, 1904, Universal Time [01-01-1904 00:00:00].</td></tr>
+ <tr>
+ <td class="Bordered"><strong>fmt</strong></td>
+ <td class="Bordered"><span class="Monospace">int32</span></td>
+ <td class="Bordered">Indicates the format of the returned date string, using the following values:
+ <UL>
+ <li><span class="Monospace">0</span>&#8212;Short date format, <span class="Monospace-Italic">mm</span><span class="Monospace">/</span><span class="Monospace-Italic">dd</span><span class="Monospace">/</span><span class="Monospace-Italic">yy</span>, where <span class="Monospace-Italic">mm</span> is a number between <span class="Monospace">1</span> and <span class="Monospace">12</span> representing the current month, <span class="Monospace-Italic">dd</span> is the current day of the month (<span class="Monospace">1</span> through <span class="Monospace">31</span>), and <span class="Monospace-Italic">yy</span> is the last two digits of the corresponding year. For example, <span class="Monospace">12/31/92</span>.</li>
+ <li><span class="Monospace">1</span>&#8212;Long date format, <span class="Monospace-Italic">dayName</span><span class="Monospace">, </span><span class="Monospace-Italic">MonthName</span><span class="Monospace">, </span><span class="Monospace-Italic">DayOfMonth</span><span class="Monospace">, </span><span class="Monospace-Italic">LongYear</span>. For example, <span class="Monospace">Thursday, December 31,1992</span>.</li>
+ <li><span class="Monospace">2</span>&#8212;Abbreviated date format, <span class="Monospace-Italic">AbbrevDayName</span><span class="Monospace">, </span><span class="Monospace-Italic">AbbrevMonthName</span><span class="Monospace">, </span><span class="Monospace-Italic">DayOfMonth</span><span class="Monospace">, </span><span class="Monospace-Italic">LongYear</span>. For&nbsp;example, <span class="Monospace">Thu, Dec 31,1992</span>.</li>
+ </UL></td></tr>
+</table>
+
+<h2>Return Value</h2>
+<p class="Body">The date as a C string.</p>
+
+</body>
+</HTML>

@@ -1,0 +1,220 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD>
+<BODY>
+   <OBJECT type="text/site properties">
+     <param name="Window Styles" value="0x0225">
+     <param name="comment" value="title:Online Help">
+     <param name="comment" value="base:index.htm">
+   </OBJECT>
+   <UL>
+      <LI><OBJECT type="text/sitemap">
+            <param name="Name" value="Control &amp; Simulation VIs and Functions">
+            <param name="Local" value="Control_Sim_Pal.html">
+            <param name="ImageNumber" value="1">
+          </OBJECT>
+      <UL>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Fuzzy Logic VIs">
+               <param name="Local" value="FuzzyLogicTitle.html">
+             </OBJECT>
+         <UL>
+            <LI><OBJECT type="text/sitemap">
+                  <param name="Name" value="Fuzzy Logic Error Codes">
+                  <param name="Local" value="PIDFuzzy_Error_Codes.html">
+                </OBJECT>
+            <LI><OBJECT type="text/sitemap">
+                  <param name="Name" value="Fuzzy System Parameters">
+                  <param name="Local" value="fuzzy_system_parameters.html">
+                </OBJECT>
+            <LI><OBJECT type="text/sitemap">
+                  <param name="Name" value="FL Fuzzy Controller">
+                  <param name="Local" value="FL_Fuzzy_Controller.html">
+                </OBJECT>
+            <LI><OBJECT type="text/sitemap">
+                  <param name="Name" value="FL Load Fuzzy System">
+                  <param name="Local" value="FL_Load_Fuzzy_System.html">
+                </OBJECT>
+            <LI><OBJECT type="text/sitemap">
+                  <param name="Name" value="FL New Fuzzy System">
+                  <param name="Local" value="FL_New_Fuzzy_System.html">
+                </OBJECT>
+            <LI><OBJECT type="text/sitemap">
+                  <param name="Name" value="FL Save Fuzzy System">
+                  <param name="Local" value="FL_Save_Fuzzy_System.html">
+                </OBJECT>
+            <LI><OBJECT type="text/sitemap">
+                  <param name="Name" value="Membership VIs">
+                  <param name="Local" value="Membership_VIs.html">
+                </OBJECT>
+            <UL>
+               <LI><OBJECT type="text/sitemap">
+                     <param name="Name" value="FL Create Membership Function">
+                     <param name="Local" value="FL_Create_Membership_Function.html">
+                   </OBJECT>
+               <LI><OBJECT type="text/sitemap">
+                     <param name="Name" value="FL Get Membership Function">
+                     <param name="Local" value="FL_Get_Membership_Function.html">
+                   </OBJECT>
+               <LI><OBJECT type="text/sitemap">
+                     <param name="Name" value="FL Get Membership Function Names">
+                     <param name="Local" value="FL_Get_Membership_Function_Names.html">
+                   </OBJECT>
+               <LI><OBJECT type="text/sitemap">
+                     <param name="Name" value="FL Get Number of Membership Functions">
+                     <param name="Local" value="FL_Get_Number_of_Membership_Functions.html">
+                   </OBJECT>
+               <LI><OBJECT type="text/sitemap">
+                     <param name="Name" value="FL Set Membership Function">
+                     <param name="Local" value="FL_Set_Membership_Function.html">
+                   </OBJECT>
+            </UL>
+            <LI><OBJECT type="text/sitemap">
+                  <param name="Name" value="Rules VIs">
+                  <param name="Local" value="Rules_VIs.html">
+                </OBJECT>
+            <UL>
+               <LI><OBJECT type="text/sitemap">
+                     <param name="Name" value="FL Create Antecedent">
+                     <param name="Local" value="FL_Create_Antecedent.html">
+                   </OBJECT>
+               <LI><OBJECT type="text/sitemap">
+                     <param name="Name" value="FL Create Consequent">
+                     <param name="Local" value="FL_Create_Consequent.html">
+                   </OBJECT>
+               <LI><OBJECT type="text/sitemap">
+                     <param name="Name" value="FL Create Rule">
+                     <param name="Local" value="FL_Create_Rule.html">
+                   </OBJECT>
+               <LI><OBJECT type="text/sitemap">
+                     <param name="Name" value="FL Get Number of Rules">
+                     <param name="Local" value="FL_Get_Number_of_Rules.html">
+                   </OBJECT>
+               <LI><OBJECT type="text/sitemap">
+                     <param name="Name" value="FL Get Rule">
+                     <param name="Local" value="FL_Get_Rule.html">
+                   </OBJECT>
+               <LI><OBJECT type="text/sitemap">
+                     <param name="Name" value="FL Get Rules as Text">
+                     <param name="Local" value="FL_Get_Rules_as_Text.html">
+                   </OBJECT>
+               <LI><OBJECT type="text/sitemap">
+                     <param name="Name" value="FL Integrate Rule">
+                     <param name="Local" value="FL_Integrate_Rule.html">
+                   </OBJECT>
+               <LI><OBJECT type="text/sitemap">
+                     <param name="Name" value="FL Set Rule">
+                     <param name="Local" value="FL_Set_Rule.html">
+                   </OBJECT>
+            </UL>
+            <LI><OBJECT type="text/sitemap">
+                  <param name="Name" value="Variables VIs">
+                  <param name="Local" value="Variables_VIs.html">
+                </OBJECT>
+            <UL>
+               <LI><OBJECT type="text/sitemap">
+                     <param name="Name" value="FL Create Variable">
+                     <param name="Local" value="FL_Create_Variable.html">
+                   </OBJECT>
+               <LI><OBJECT type="text/sitemap">
+                     <param name="Name" value="FL Get Number of Variables">
+                     <param name="Local" value="FL_Get_Number_of_Variables.html">
+                   </OBJECT>
+               <LI><OBJECT type="text/sitemap">
+                     <param name="Name" value="FL Get Variable">
+                     <param name="Local" value="FL_Get_Variable.html">
+                   </OBJECT>
+               <LI><OBJECT type="text/sitemap">
+                     <param name="Name" value="FL Get Variable Names">
+                     <param name="Local" value="FL_Get_Variable_Names.html">
+                   </OBJECT>
+               <LI><OBJECT type="text/sitemap">
+                     <param name="Name" value="FL Plot Variable">
+                     <param name="Local" value="FL_Plot_Variable.html">
+                   </OBJECT>
+               <LI><OBJECT type="text/sitemap">
+                     <param name="Name" value="FL Set Variable">
+                     <param name="Local" value="FL_Set_Variable.html">
+                   </OBJECT>
+            </UL>
+         </UL>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="PID VIs">
+               <param name="Local" value="PIDTitle.html">
+             </OBJECT>
+         <UL>
+            <LI><OBJECT type="text/sitemap">
+                  <param name="Name" value="PID">
+                  <param name="Local" value="PID_VI.html">
+                </OBJECT>
+            <LI><OBJECT type="text/sitemap">
+                  <param name="Name" value="PID Advanced">
+                  <param name="Local" value="PIDAdvanced.html">
+                </OBJECT>
+            <LI><OBJECT type="text/sitemap">
+                  <param name="Name" value="PID Advanced Autotuning">
+                  <param name="Local" value="pid_advanced_autotuning.html">
+                </OBJECT>
+            <LI><OBJECT type="text/sitemap">
+                  <param name="Name" value="PID Autotuning">
+                  <param name="Local" value="PID_with_Autotuning.html">
+                </OBJECT>
+            <LI><OBJECT type="text/sitemap">
+                  <param name="Name" value="PID Autotuning (Temperature)">
+                  <param name="Local" value="pid_autotuning_temperature.html">
+                </OBJECT>
+            <LI><OBJECT type="text/sitemap">
+                  <param name="Name" value="PID Autotuning Design">
+                  <param name="Local" value="pid_autotuning_design.html">
+                </OBJECT>
+            <LI><OBJECT type="text/sitemap">
+                  <param name="Name" value="PID Control Input Filter">
+                  <param name="Local" value="PIDConInputFilter.html">
+                </OBJECT>
+            <LI><OBJECT type="text/sitemap">
+                  <param name="Name" value="PID EGU to Percentage">
+                  <param name="Local" value="PIDEGUtoPercent.html">
+                </OBJECT>
+            <LI><OBJECT type="text/sitemap">
+                  <param name="Name" value="PID Gain Schedule">
+                  <param name="Local" value="PIDGainSchedule.html">
+                </OBJECT>
+            <LI><OBJECT type="text/sitemap">
+                  <param name="Name" value="PID Lead-Lag">
+                  <param name="Local" value="PIDLead_Lag.html">
+                </OBJECT>
+            <LI><OBJECT type="text/sitemap">
+                  <param name="Name" value="PID Online Autotuning">
+                  <param name="Local" value="pid_online_autotuning.html">
+                </OBJECT>
+            <LI><OBJECT type="text/sitemap">
+                  <param name="Name" value="PID Output Rate Limiter">
+                  <param name="Local" value="PIDOutRateLimit.html">
+                </OBJECT>
+            <LI><OBJECT type="text/sitemap">
+                  <param name="Name" value="PID Percentage to EGU">
+                  <param name="Local" value="PIDPercenttoEGU.html">
+                </OBJECT>
+            <LI><OBJECT type="text/sitemap">
+                  <param name="Name" value="PID Setpoint Profile">
+                  <param name="Local" value="PID_Setpoint_Profile.html">
+                </OBJECT>
+            <LI><OBJECT type="text/sitemap">
+                  <param name="Name" value="PID Structure Conversion">
+                  <param name="Local" value="pid_structure_conversion.html">
+                </OBJECT>
+         </UL>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="PID Advanced Control Error Codes">
+               <param name="Local" value="PID_Advanced_errors.html">
+             </OBJECT>
+      </UL>
+      <OBJECT type="text/sitemap">
+        <param name="Merge" value="../lvcdsimshrd/lvcdsimshrd.hhc">
+      </OBJECT>
+   </UL>
+</BODY>
+</HTML>

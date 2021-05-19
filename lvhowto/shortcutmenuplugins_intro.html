@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+<script src="dynamicjumps.js" type="text/javascript"></script>
+
+<title>Understanding Shortcut Menu Plug-Ins</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Understanding Shortcut Menu Plug-Ins</h1>
+<p class="Body">You can add custom items to the shortcut menu of front panel and block diagram objects by creating shortcut menu plug-ins. Shortcut menu plug-ins call VIs that you customize using VI scripting. You can create custom items that appear when you right-click the following objects:</p>
+
+<ul>
+	<li>Edit-time front panel objects</li>
+	<li>Edit-time block diagram objects</li>
+	<li>Run-time block diagram objects</li>
+</ul>
+
+<p>Refer to <a href="javascript:WWW(WWW_lvplugins)">ni.com/lvmenus</a> for more information about shortcut menu-plugins and for code examples from the NI Community.</p>
+
+<a name="architecture"></a><h2>Shortcut Menu Plug-In Architecture</h2>
+
+<p>A shortcut menu plug-in must contain the following files, where <em>x</em> is the name of the plug-in.</p>
+<ul>
+	<li><span class="Monospace-Italic">x</span><span class="Monospace">.ctl</span>&#8212;The type definition that specifies the objects that the plug-in affects.</li>
+	<li><span class="Monospace-Italic">x</span><span class="Monospace">.vi</span>&#8212;The build VI that builds the shortcut menu.</li>
+	<li><span class="Monospace">Execute</span> <span class="Monospace-Italic">x</span><span class="Monospace">.vi</span>&#8212;The plug-in execution VI that executes when you select the custom item from the shortcut menu.</li>
+</ul>
+
+<p>You save these files in an LLB with the plug-in name (<span class="Monospace-Italic">x</span><span class="Monospace">.llb</span>). LabVIEW searches and loads plug-ins from LLBs in one of the following directories only. LabVIEW ignores contents of subdirectories when searching for plug-ins.</p>
+<ul>
+	<li><span class="Monospace">&lt;LabVIEW Data&gt;\PopupMenus\edit time panel and diagram</span>&#8212;Contains LLBs of plug-ins that affect edit-time front panel and block diagram objects used by all versions of LabVIEW.</li>
+	<li><span class="Monospace">&lt;LabVIEW Data&gt;\PopupMenus\run time diagram</span>&#8212;Contains LLBs of plug-ins that affect run-time block diagram objects used by all versions of LabVIEW.</li>
+	<li><span class="Monospace">labview\resource\plugins\PopupMenus\edit time panel and diagram</span>&#8212;Contains LLBs of plug-ins that affect edit-time front panel and block diagram objects used by this version of LabVIEW only.</li>
+<li><span class="Monospace">labview\resource\plugins\PopupMenus\run time diagram</span>&#8212;Contains LLBs of plug-ins that affect run-time block diagram objects used by this version of LabVIEW only.</li>
+</ul>
+
+<p>If two LLBs have the same name, the LLB in the <span class="Monospace">labview\resource\plugins\PopupMenus</span> directory takes precedence.</p>
+
+<a name="creating"></a><h2>Creating Shortcut Menu Plug-Ins</h2>
+
+<p>Creating a shortcut menu plug-in consists of the following parts:</p>
+
+<ul>
+<li><a href="shortcutmenuplugins_typedef.html">Part 1</a>: Specifying the objects that the plug-in affects.</li>
+<li><a href="shortcutmenuplugins_build.html">Part 2</a>: Determining how the custom item appears in the shortcut menu.</li>
+<li><a href="shortcutmenuplugins_execution.html">Part 3</a>: Editing how the plug-in executes when you select the custom item.</li>
+</ul>
+
+<p>To begin creating a shortcut menu plug-in, run the following utility VI: <span class="Monospace">labview\resource\plugins\PopupMenus\Create Shortcut Menu Plug-In From Template.vi</span></p>
+
+<p>The utility VI generates the files you need for your plug-in. You customize the files to build the shortcut menu and execute the plug-in.</p> 
+
+<table class="Borderless-Wide">
+<tr>
+<td align="right"><img style="display:inline" src="next_arrow.gif"><a href="shortcutmenuplugins_typedef.html">Part 1: Specifying the Objects that Shortcut Menu Plug-Ins Affect</a></td>
+</tr>
+</table>
+
+<h3>Related Information</h3>
+<p><a href="../lvconcepts/Menus_and_the_Toolbar.html">Menus and Toolbars</a></p>
+
+</body>
+</html>

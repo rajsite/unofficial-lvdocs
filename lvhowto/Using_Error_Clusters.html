@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 3500Edebugginghlp -->
+
+<title>Using Error Clusters</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Using Error Clusters
+</h1>
+<p class="Body">Use the <strong>error in</strong> and <strong>error out</strong> clusters in each VI you use or build to pass the error information through the VI. In most cases, the <strong>source</strong> cluster element also identifies where the error occurred. If <strong>error in</strong> detects an error, the VI returns the error information in <strong>error out</strong> and does not continue to run. <!--begin parent= ../lvconcepts/Building_the_Block_Diagram.xml-->By default, LabVIEW automatically handles any error when a VI runs by suspending execution, highlighting the subVI or function where the error occurred, and displaying an error dialog box.<!--end parent= ../lvconcepts/Building_the_Block_Diagram.xml--> You can <a href="Disabling_Debugging_Tools.html">disable automatic error handling</a>.
+</p>
+<p class="body">Complete the following steps to see an example of how to use the error clusters in a VI.</p>
+<ol>
+<li>Add the <a href="../lvreport/New_Report.html">Create Report</a> VI to the block diagram and double-click it to open it.
+<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object793);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object793);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN>
+</li>
+<li>Select <strong>Window&#0187;Show Block Diagram</strong> to display the block diagram.
+</li>
+<li><a href="../lvdialog/Context_Help_Window.html">Use the Context Help window</a> or the <a href="Searching_in_the_VI_Hierar.html">VI Hierarchy</a> window to locate the Generate Report Create VI.
+</li>
+<li>Double-click the Generate Report Create VI to open it. Notice that the front panel includes the <strong>error in</strong> and <strong>error out</strong> clusters. On the block diagram, these clusters are wired externally to a <a href="../glang/Case_Structure.html">Case structure</a>.
+</li>
+</ol>
+<p class="Body">If an error occurs, the Case structure executes before reaching this VI. The VI does not execute the main code but instead passes the error information straight through the Case structure to the <strong>error out</strong> cluster. If no error occurs, the VI creates a new report.
+</p>
+
+<h2>Related Information</h2>
+<p class="Body"><a href="../lvconcepts/using_standard_error_in.html">Using the Standard Functionality for error in Parameters</a></p>
+<p class="Body"><a href="../lvconcepts/using_standard_error_out.html">Using the Standard Functionality for error out Parameters</a></p>
+<p class="Body"><a href="../glang/Simple_Error_Handler.html">Simple Error Handler VI</a></p>
+<p class="Body"><a href="../glang/General_Error_Handler.html">General Error Handler VI</a></p>
+<p class="Body"><a href="Creating_User_Defined_Erro.html">Defining Custom Error Codes Using the General Error Handler VI</a></p>
+</body>
+</html>

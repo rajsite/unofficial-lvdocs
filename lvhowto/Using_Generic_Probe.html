@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 3500Edebugginghlp -->
+
+<title>Using the Generic Probe</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Using the Generic Probe</h1>
+<p class="Body"><!--Begin parent: ../lvconcepts/Building_the_Block_Diagram.xml-->Use the generic probe to view the data that passes through a wire. The generic probe displays the data. You cannot configure the generic probe to respond to the data. Right-click a wire and select <strong>Custom Probe&#0187;Generic Probe</strong> from the shortcut menu to use the generic probe.<!--End parent: ../lvconcepts/Building_the_Block_Diagram.xml-->
+</p>
+<p class="Body"><!--begin parent: 3500debugging-->You can debug a custom probe similar to a VI. However, a probe cannot probe its own block diagram, nor the block diagram of any of its subVIs. When debugging probes, use the generic probe.<!--end parent: 3500debugging-->
+</p>
+<p class="Body">Use <a href="Using_Supplied_Probe.html">supplied</a> or <a href="Creating_Custom_Probes.html">custom probes</a> to respond to the data that passes through a wire.</p>
+
+<p class="checkFile lvtextmathmain Body"><span class="Platform">(MathScript RT Module)</span> Use a <a href="../lvtextmathmain/probe_ms_node.html">LabVIEW MathScript probe</a> to view the data in a script in a <a href="../gmath/MathScript_Node.html">MathScript Node</a> as a VI runs.</p>
+
+<h2>Using Generic Probes with LabVIEW Classes</h2><p class="Body"><!--begin_child id = ../lvhowto/Using_Generic_Probe.html tag="generic_probes"-->You can use generic probes on LabVIEW class wires. The generic probe on a LabVIEW class wire shows the name of the class at run time, the private class data, and the private class data for all of the parent classes. If you use the generic probe on a locked LabVIEW class, only the name of the class at run time and any unlocked private data within the class hierarchy is visible in the probe.<!--end_child id = ../lvhowto/Using_Generic_Probe.html tag="generic_probes"--></p>
+
+
+
+</body>
+</html>

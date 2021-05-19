@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+<title>Designing a Custom VI Analyzer Test (VI Analyzer Toolkit)</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Designing a Custom VI Analyzer Test (VI Analyzer Toolkit)</h1>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&#160;&#160;The VI Analyzer functionality this topic describes is available only if you install and activate the LabVIEW VI Analyzer Toolkit. Refer to the <a href="javascript:WWW(WWW_Analyzer)">NI website</a> for more information about the VI Analyzer Toolkit.</td>
+</tr>
+</table>
+<p class="Body">Select <strong>Tools&#0187;VI Analyzer&#0187;Create New Test</strong> to display the <span class="DNL"><a href="../lvvianalyzerhelp/test_creator_db.html">VI Analyzer Test Creator</a></span> wizard. Complete each page of the wizard to generate template files for a custom test. A VI Analyzer test consists of an LLB of files that perform the following tasks when you run the test:</p>
+<ul>
+<li><a href="#config">Test Configuration</a>&#8212;A test configuration page, which displays in the <a href="../lvvianalyzerhelp/Select_Tests_DB.html">VI Analyzer - Select Tests</a> dialog box when you select a test to run, allows you to specify values to use in the test. For example, for a test that searches for numeric controls with a particular default value, you can use the configuration page to specify the value for which to search. A VI or <a href="../lvconcepts/Glob_Variables.html#Creating_Global_Variables">global VI</a>, a special VI that defines a <a href="../glang/Global_Variable.html">global variable</a>, serves as the configuration page.
+					<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&#160;&#160;If a configuration page is global VI-based, the LLB contains only a global VI you can use to pass values from the configuration page into the test. If a page is VI-based, the LLB contains a VI for the user interface and a global VI for passing values from the configuration page into the test.</td>
+</tr>
+</table>
+</li>
+<li><a href="#test">Testing</a>&#8212;Block diagram code in the main test VI checks aspects of VIs and returns data about failures. You can also configure the main test VI to highlight VIs and VI objects that cause failures.</li>
+</ul>
+<p class="Body">The VI Analyzer Test Creator wizard saves test LLBs you create in the <span class="Monospace">LabVIEW Data\VI Analyzer Tests</span> directory. <!--begin parent:../lvvianalyzerhelp/test_creator_db.html-->Before you can run the test in the VI Analyzer, you must modify each file in the test LLB.<!--end parent:../lvvianalyzerhelp/test_creator_db.html--> Refer to the following sections of this topic to modify each file so you can run the test. </p>
+
+<a name="config"></a><h2>Creating a Test Configuration Page</h2>
+<p class="Body">In <span class="Monospace-Italic">test</span><span class="Monospace"> Config.vi</span>, add any front panel controls you want to appear on the test configuration page and <a href="../lvhowto/ConfigControlsandIndicator.html">configure the controls</a> if needed. To set a default value for a control, right-click the control and select <strong>Data Operations&#0187;Make Current Value Default</strong> from the shortcut menu. If the configuration page is VI-based, add code to the block diagram that controls the user interface as you interact with it.</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="tip.gif"></td>
+<td><strong>Tip</strong>&#160;&#160;Use the <a href="../lvconcepts/FP_Controls_Indicators.html">system controls and indicators</a> to create a configuration page that changes appearance depending on which platform you run the VI Analyzer.</td>
+</tr>
+</table>
+<p class="Body">After you add controls to the configuration page, delete the existing decoration and text from the front panel. Even if the test does not require configuration values, you still must delete these items.</p>
+
+<p class="Body">To change the test description, revise the description of the <span class="Monospace-Italic">test</span><span class="Monospace"> Config.vi</span>.</p>
+
+<a name="test"></a><h2>Writing the Test</h2>
+<p class="Body">In the main VI in the LLB, complete the following steps to work with the template controls and indicators in the test VI.</p>
+<ol>
+<li>Use the <span class="DNL"><strong>VI Refnum</strong></span> input to obtain a reference to the VI you want to test. Use <a href="../lvprop/lvprop.html">VI server properties and methods</a> to obtain references to objects in the VI. To find all instances of a particular object in a VI, whether on the front panel, block diagram, or in containers such as tab controls, you can use the reference with the <a href="../glang/TRef_Traverse_for_References.html">Traverse for GObjects</a> VI. You must <a href="../lvhowto/enabling_vi_scripting.html">enable VI Scripting</a> before you can use the Traverse for GObjects VI.</li>
+<li>(Optional) In the upper right corner of the configuration page global VI, click and drag the <a href="../lvconcepts/Using_Icons.html">icon</a> to the block diagram of the test VI to create a <a href="../glang/Global_Variable.html">global variable</a> you can use to access values from the configuration page.</li>
+<li>Use the VIAnUtil Build Result Cluster VI to specify a test result message and the <a href="../lvscript/GObject_UID.html">UID</a> property of the object that failed. This utility VI returns the <span class="DNL"><strong>Results Data</strong></span> array.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&#160;&#160;Do not add data to the <span class="DNL"><strong>Results Data</strong></span> array when a test passes.</td>
+</tr>
+</table>
+</li>
+</ol>
+<p class="Body">Refer to the following guidelines as you add test code to the block diagram:</p>
+<ul>
+<li>Check VIs being tested to ensure they are appropriate for the test code. For example, if a test checks block diagrams for a particular object, add code to the test to account for global VIs, which do not have block diagrams.</li>
+<li>Do not modify the connector pane of the test VI. For example, do not delete the <span class="DNL"><strong>VI Refnum</strong></span>, <span class="DNL"><strong>Results Data</strong></span>, and <span class="DNL"><strong>error out</strong></span> block diagram objects.</li>
+<li><a href="../glang/Close_LV_Object_Reference.html">Close references</a> to all objects except the reference to the VI being tested.</li>
+<li>Make sure any subVIs in the test LLB have unique filenames that other tests are not likely to duplicate. For example, you can name the subVIs with a test-specific prefix.</li>
+</ul><a name="reconstruct"></a><h2>Configuring the Test to Highlight Failures</h2>
+<p class="Body">After you run a test in the VI Analyzer, you can double-click a failure in the <a href="../lvvianalyzerhelp/Results_Window_DB.html">VI Analyzer Results Window</a> to open the VI that failed the test and display the object that caused the failure. Complete the following steps to allow the VI Analyzer to perform this task for custom tests you create.</p>
+<ol>
+<li>In the main test VI, use the Traverse for GObjects VI to obtain references to the objects that can fail a test. In the <span class="DNL"><strong>Traverse Target</strong></span> input, select one of the following items from the shortcut menu. 
+
+<table class="Bordered">
+<tr>
+<td class="Bordered">0</td>
+<td class="Bordered"><span class="DNL"><strong>FP</strong></span>&#8212;Specifies that the <span class="DNL"><strong>Class Name</strong></span> input is a class of object that can exist on the front panel.</td>
+</tr>
+<tr>
+<td class="Bordered">1</td>
+<td class="Bordered"><span class="DNL"><strong>BD</strong></span>&#8212;Specifies that the <span class="DNL"><strong>Class Name</strong></span> input is a class of object that can exist on the block diagram.</td>
+</tr>
+<tr>
+<td class="Bordered">2</td>
+<td class="Bordered"><span class="DNL"><strong>Other</strong></span>&#8212;Specifies to search only the container object wired to the <span class="DNL"><strong>Other Refnum</strong></span> input for the class of object specified by the <span class="DNL"><strong>Class Name</strong></span> input.</td>
+</tr>
+</table>
+</li>
+
+<li>Use the <span class="DNL"><strong>References</strong></span> output of the Traverse for GObjects VI in a loop structure to read the UID property of the objects, along with any other properties necessary to perform the test.</li>
+<li>Pass the value of the UID property as the <span class="DNL"><strong>Ref Index</strong></span> for any test failures you add to the <span class="DNL"><strong>Results Data</strong></span> array.</li>
+</ol>
+
+<a name="changetestranking"></a><h2>Changing the Test Ranking of a Custom Test</h2>
+<p class="Body">The VI Analyzer Test Creator wizard allows you to specify the test ranking when you create a new test. To change the test ranking after you create a test, complete the following steps.</p>
+<ol>
+	<li>Open the test configuration VI.</li>
+	<li>Determine whether the configuration page is global VI-based or VI-based. For example, select <strong>File</strong> and identify the presence of the <strong>Global Properties</strong> or <strong>VI Properties</strong> menu item, which indicates that the configuration page is global VI-based or VI-based, respectively.</li>
+	<li>Show the hidden <strong>Test Ranking</strong> control.
+		<ul>
+			<li>If the configuration page is global VI-based, <a href="../lvhowto/Show_Hidden_Controls.html">display all hidden controls and indicators</a> and select the <strong>Test Ranking</strong> control in the <strong>Show Hidden Controls and Indicators</strong> dialog box.</li>
+			<li>If the configuration page is VI-based, open the block diagram, find the <strong>Test Ranking</strong> control terminal, and <a href="../lvhowto/DisplayingHiddenFPObjects.html">display this hidden front panel object</a>.
+			<table class="Borderless">
+			<tr>
+			<td class="Icon"><img src="tip.gif"></td>
+			<td><strong>Tip</strong>&#160;&#160;If the configuration page is VI-based, select <strong>Edit�Find and Replace</strong> to display the <strong>Find</strong> dialog box and find the control by text.</td>
+			</tr>
+			</table>
+			</li>
+		</ul>
+	</li>
+	<li>Change the value of the <strong>Test Ranking</strong> control.</li>
+	<li>Right-click the control and select <strong>Data Operations�Make Current Value Default</strong> from the shortcut menu to make the current value the default value.</li>
+	<li>Hide the <strong>Test Ranking</strong> control and any other front panel objects you want to hide by right-clicking the object and selecting <strong>Advanced�Hide Control</strong>.</li>
+	<li>Save the test configuration VI.</li>
+</ol>
+
+
+<a name="distribute"></a><h2>Running and Distributing Custom Tests</h2>
+<p class="Body">After you modify each file in the test LLB, you can <a href="../lvvianalyzerhelp/Creating_Task.html">run the test in the VI Analyzer</a>. The VI Analyzer lists custom tests in the <strong>&lt;User-Specified&gt;</strong>�<a href="../lvvianalyzerhelp/Test_Descriptions.html">category</a>.</p>
+<p class="Body">You can run custom tests on other computers with the LabVIEW development system installed. Copy custom test LLBs from the <span class="Monospace">LabVIEW Data\VI Analyzer Tests</span> directory on the development computer to the corresponding location on other computers to allow the VI Analyzer to run the test on the other computers. LabVIEW returns an error if you run a test in an earlier version of LabVIEW than the version in which you created and saved the custom test.</p>
+
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Original filename: 13palettes.txt -->
+
+<title>VI Toolbar Buttons</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+</head><body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>VI Toolbar Buttons
+</h1>
+
+<p class="Body">The toolbar contains the following tools, which you can use to run and edit a VI.
+</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;Many of these toolbar buttons provide functionality that is also available through <a href="../lvhowto/Keyboard_Shortcuts.html">keyboard shortcuts</a>.</td>
+</tr>
+</table>
+
+<table class="Borderless"><tr><td><img src="noloc_env_run.gif"></td>
+<!-- begin child = Quick Ref Card -->
+<td><strong>Run</strong> runs the VI. LabVIEW compiles the VI, if necessary. <!-- begin parent = um 3400Erunning KM -->You can run a VI if the <strong>Run</strong> button appears as a solid white arrow, shown at left. The solid white arrow also indicates you can use the VI as a subVI if you <a href="../lvconcepts/Building_Connector_Pane.html">create a connector pane</a> for the VI.<!-- end parent = um 3400Erunning KM --></td></tr>
+<tr><td><img src="noloc_env_runtop.gif"></td>
+<td>While the VI runs, the <strong>Run</strong> button appears as shown at left if it is a top-level VI, meaning it has no callers and therefore is not a subVI.</td></tr>
+<tr><td><img src="noloc_env_runsubvi.gif"></td>
+<td>If the VI that is running is a subVI, the <strong>Run</strong> button appears as shown at left.</td></tr>
+
+<tr><td><img src="noloc_env_waitrun.png"></td>
+	<td>While the VI is reserved for call as a subVI, the <strong>Run</strong> button appears as shown at left. This situation can occur if the VI is a subVI of a VI that is already running or if the VI has a <a href="../lvhowto/Create_Strict_Type_VI_Ref.html">strictly typed VI reference</a> open to it. When the VI is reserved, you cannot run it directly.</td></tr>
+
+<tr><td><img src="noloc_env_brokrun.gif"></td>
+<td><!-- begin parent = um 3500Edebugging KM -->The <strong>Run</strong> button appears broken, shown at left, when the VI you are creating or editing contains errors. Click the broken <strong>Run</strong> button to display the <a href="../lvdialog/Error_List_Dialog_Box.html">Error list</a> window, which lists all the errors. If the <strong>Run</strong> button still appears broken after you finish wiring the block diagram, the <a href="../lvhowto/Correcting_Broken_VIs.html">VI is broken</a> and cannot run.<!-- end parent = um 3500Edebugging KM --></td></tr>
+<tr><td><img src="noloc_env_contrun.gif"></td>
+<td><strong>Run Continuously</strong> runs the VI until you abort or pause execution.</td></tr>
+<tr><td><img src="noloc_env_abortexe.gif"></td>
+<td><strong>Abort Execution</strong> aborts execution of the top-level VI. If more than one running top-level VI uses the VI, the button is dimmed. You also can use the <a href="../lvprop/VI_Abort_VI.html">Abort VI</a> method to abort the execution of the VI programmatically.</td></tr></table>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;The <strong>Abort Execution</strong> button stops the VI immediately, before the VI finishes the current iteration.  Aborting a VI that uses external resources, such as external hardware, might leave the resources in an unknown state by not resetting or releasing them properly. Design VIs with a stop button to avoid this problem.</td></tr></table>
+
+
+<table class="Borderless"><tr><td><img src="noloc_env_pause.gif"></td>
+<td><strong>Pause</strong> pauses or resumes execution. When you click the <strong>Pause</strong> button, LabVIEW highlights on the block diagram the location where you paused execution. Click it again to continue running the VI. The <strong>Pause</strong> button appears red when execution is paused.</td></tr>
+
+<tr><td><img src="noloc_env_exehilit.gif"></td>
+<td><strong>Highlight Execution</strong> displays an animation of the block diagram execution when you click the <strong>Run</strong> button. If the <strong>Highlight Execution</strong> button appears yellow, <a href="../lvhowto/Execution_Highlighting.html">execution highlighting</a> is enabled.</td></tr>
+<tr><td><img src="noloc_env_notretainwires.gif"></td>
+<td><strong>Retain Wire Values</strong> saves data values. When you click the <a href="../lvhowto/Retain_Wire_Values.html">Retain Wire Values</a> button, LabVIEW saves the values at each point in the flow of execution so that when you place a probe on a wire, you can immediately obtain the most recent value of the data that passed through the wire. This debugging tool can impact the performance of your VI.</td></tr>
+
+<tr><td><img src="noloc_env_stepinto.gif"></td>
+<td><strong>Step Into</strong> opens a node and pauses. When you click the <strong>Step Into</strong> button again, it executes the first action and pauses at the next action of the subVI or structure.
+
+</td></tr>
+<tr><td><img src="noloc_env_stepover.gif"></td>
+<td><strong>Step Over</strong> executes a node and pauses at the next node. </td></tr>
+<tr><td><img src="noloc_env_stepout.gif"></td>
+<td><strong>Step Out</strong> finishes executing the current node and pauses. When the VI finishes executing, the <strong>Step Out</strong> button becomes dimmed.</td></tr></table>
+<table class="Borderless"><tr><td><img src="loc_env_font.gif"></td>
+<td><strong>Text Settings</strong> <a href="../lvhowto/Changing_Text_Settings.html">changes the font settings</a> for the VI.</td></tr></table>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;When a VI stops at a <a href="../lvhowto/Breakpoints.html">breakpoint</a>, the <a href="../lvconcepts/Debug_Techniques.html#Suspending_Execution">Call list</a> pull-down menu appears in the location of <strong>Text Settings</strong> if other VIs call the stopped VI. You can select a VI from the <strong>Call list</strong> pull-down menu to go to the block diagram of that VI.</td>
+</tr>
+</table>
+<table class="Borderless"><tr><td><img src="noloc_env_align.gif"></td>
+<td><strong>Align Objects</strong> <a href="../lvhowto/Aligning_Objects.html">aligns objects</a> along axes.</td></tr>
+<tr><td><img src="noloc_env_distrbut.gif"></td>
+<td><strong>Distribute Objects</strong> <a href="../lvhowto/Distributing_Objects.html">spaces objects</a> evenly.</td></tr>
+<tr><td><img src="noloc_env_resizeobjects.gif"></td>
+<td><strong>Resize Objects</strong> <a href="../lvhowto/Resizing_Mult_Objects.html">resizes multiple front panel objects</a> to the same size.</td>
+</tr>
+<tr><td><img src="noloc_env_reorder.gif"></td>
+<td><strong>Reorder</strong> <a href="../lvhowto/Reordering_Objects.html">moves objects</a> relative to each other. Select the <strong>Reorder</strong> pull-down menu when you have objects that overlap each other and you want to define which one is in front or back of another.</td></tr>
+<tr><td><img src="noloc_env_cleanup.gif"></td>
+<td><strong>Clean Up Diagram</strong> <a href="../lvhowto/Cleaning_Up_the_Block_Diagram.html">reroutes all existing wires and rearrange all existing objects</a> on the block diagram automatically.</td></tr>
+<tr><td><img src="noloc_env_chbutton.gif"></td>
+<td><strong>Show Context Help Window</strong> displays the <a href="../lvdialog/Context_Help_Window.html">Context Help</a> window.</td></tr>
+<!-- end child = Quick Ref Card -->
+<tr><td><img src="noloc_env_check.gif"></td>
+<td><strong>Enter</strong> appears to remind you that a new value is available to replace an old value. The <strong>Enter</strong> button disappears when you click it, press the &lt;Enter&gt; key, or click the front panel or block diagram workspace.</td></tr>
+<tr><td><img src="noloc_env_warnbtn.gif"></td>
+<td><!-- begin parent = um 3500Edebugging KM --><strong>Warning</strong> appears if a VI includes a warning and you placed a checkmark in the <a href="../lvhowto/Warnings.html">Show Warnings</a> checkbox in the <a href="../lvdialog/Error_List_Dialog_Box.html">Error list</a> window.<!-- end parent = um 3500Edebugging KM --></td></tr>
+<tr><td><img src="noloc_env_sync.gif"></td>
+<td><strong>Synchronize with Other Application Instances</strong> applies <!--begin_child id = lvconcepts tag="button"-->changes to the VI in all application instances.<!--end_child id = lvconcepts tag="button"--> You cannot undo changes made to the VI after you click this button. This button is available only if you  <a href="../lvconcepts/Application_Instances.html#Editing_VIs_in_Multiple_Application_Instances">edit a VI that is open in multiple application instances</a>.</td></tr>
+</table>
+
+
+</body>
+</html>

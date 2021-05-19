@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Changing the Default Ports for TCP-Based NI-PSP (NI Linux Real-Time, Windows)</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Changing the Default Ports for TCP-Based NI-PSP (NI Linux Real-Time, Windows)</h1>
+
+<p>Complete the following steps to create the <span class="monospace">LogosXT.ini</span> file and use it to modify TCP ports <a href="../lvconcepts/NI_PSP.html">NI Publish-Subscribe Protocol (NI-PSP)</a> checks for availability.</p>
+
+
+<ol>
+<li>Create a new text document in the appropriate directory for your operating system:
+<br><br><strong>Windows Directory</strong>
+<ol>
+<li>Configure Windows to show all hidden folders.</li>
+<li>Navigate to the <span class="monospace">\National Instruments\Logos XT</span> subfolder in the common application directory. The location of this directory depends on how you configured the installation of LabVIEW. The default location is <span class="monospace">C:\ProgramData\National Instruments\Logos XT</span>. Create this subfolder if it does not exist.</li>
+<li>Create a new text document.</li>
+	<li>Name the new text document <span class="monospace">LogosXT.ini</span> and place it in the <span class="monospace">Logos XT</span> subfolder.</li>
+</ol>
+<br><strong>NI Linux Real-Time Directory</strong>
+<ol>
+<li>Log in to the RT target with administrator privileges.</li>
+<li>Navigate to the <span class="monospace">/etc/natinst/</span> directory.</li>
+<li>Create a new text document.</li>
+<li>Name the new text document <span class="monospace">LogosXT.ini</span>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp; The file system is case-sensitive.</td>
+</tr>
+</table></li>
+</ol></li>
+
+
+<li>Open <span class="monospace">LogosXT.ini</span> and enter the following text.<br><br>
+<span class="monospace">[LogosXT]<br>
+LogosXT_PortBase = 59110<br>
+LogosXT_NumPortsToCheck = 100</span>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;<span class="monospace">LogosXT_PortBase</span> specifies the port where the NI-PSP protocol begins to check availability. <span class="monospace">LogosXT_NumPortsToCheck</span> specifies the maximum number of ports the protocol checks. By default, NI-PSP begins checking port availability at port 59110 and checks a maximum of 100 ports.</td>
+</tr>
+</table>
+</li>
+<li>To modify the first port the NI-PSP protocol checks for availability, delete <span class="monospace">59110</span> and enter a different port number for <span class="monospace">LogosXT_PortBase</span>. To modify the maximum number of ports the NI-PSP protocol checks for availability, delete <span class="monospace">100</span> and enter a different number for <span class="monospace">LogosXT_NumPortsToCheck</span>.</li>
+<li>Save and close <span class="monospace">LogosXT.ini</span>. The changes take effect when you restart LabVIEW.</li>
+</ol>
+
+
+</body>
+</html>
+

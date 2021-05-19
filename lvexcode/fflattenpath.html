@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>FFlattenPath (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>FFlattenPath (LabVIEW Manager Function)</h1>
+<p class="Code">int32 FFlattenPath(p, fp);</p>
+<h2>Purpose</h2>
+<p class="Body">Converts <strong>path</strong> into a flat form that you can use to write the path as information to a file. This function stores the resulting flat path in a pre-allocated buffer and returns the number of bytes.</p>
+<p class="Body">To determine the size needed for the flattened path, pass <span class="Monospace">NULL</span> for <strong>fp</strong>. The function returns the necessary size without writing anything into the location pointed to by <strong>fp</strong>.</p>
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>path</strong></td>
+<td class="Bordered"><span class="Monospace">Path</span></td>
+ <td class="Bordered">Path you want to flatten.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>fp</strong></td>
+<td class="Bordered"><span class="Monospace">UPtr</span></td>
+ <td class="Bordered">Address in which <span class="Monospace">FFlattenPath</span> stores the resulting flattened path. If <span class="Monospace">NULL</span>, <span class="Monospace">FFlattenPath</span> does not write anything to this address, but does return the size that the flattened path would require. This parameter is a <a href="../lvexcodeconcepts/LabVIEW_Manager_Routines.html#Pointers_as_Parameters">pointer</a>.</td></tr>
+</table>
+<h2>Return Value</h2>
+<p class="Body"><span class="Monospace">int32</span>, indicating the number of bytes required to store the flattened path.</p>
+
+</body>
+</HTML>

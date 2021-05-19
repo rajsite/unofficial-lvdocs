@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Adding Folders to a Project</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Adding Folders to a Project</h1>
+<p class="Body">Use the <a href="../lvconcepts/Using_LabVIEW_Projects.html#Project_Explorer_Window">Project Explorer</a> window to add folders to create an <a href="Organizing_Items_Project.html">organizational structure</a> for items in a <a href="../lvconcepts/Using_LabVIEW_Projects.html">LabVIEW project</a>.</p>
+
+<h2>Adding Auto-Populated Folders to a Project</h2>
+<p class="Body">Adding <a href="../lvconcepts/Using_LabVIEW_Projects.html">auto-populated folders</a> adds a directory on disk to the project. LabVIEW continuously monitors and updates the folder according to changes made in the project and on disk. A blue folder icon with a yellow cylinder identifies this type of folder.</p>
+<p>Complete the following steps to add an auto-populated folder to the project.</p>
+<ol>
+<li>From the <strong>Items</strong> page, right-click a target or a folder under a target and select <strong>Add&#187;Folder (Auto-populating)</strong> from the shortcut menu to display a file dialog box. You also can select a target and then select <strong>Project&#0187;Add To Project&#0187;Folder (Auto-populating)</strong>.</li>
+<li>Navigate to and select a directory on disk to add to the project.</li>
+<li>Click the <strong>Select Folder</strong> button to add the current folder to the project. An auto-populated folder appears in the project. LabVIEW automatically adds all contents of the folder to the project. If items in the folder on disk are already in the project, the items move within the auto-populated folder.</li>
+<li>From the <strong>Files</strong> page, you can move, rename, reorganize, and remove files from the auto-populating folder. Project operations from the <strong>Files</strong> page both update and reflect the contents on disk. Likewise, LabVIEW updates the folder in the project if you make changes to the directory on disk. One advantage of making changes to files from the project instead of from disk is if you update files from the LabVIEW project, LabVIEW can detect filename changes and update caller VIs automatically.</li></ol>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;<span class="Platform">(macOS and Linux)</span> LabVIEW does not support the use of symbolic links for files in auto-populating folders on macOS or Linux operating systems.</td>
+</tr>
+</table>
+
+<p class="Body">You also can use the <a href="../lvprop/ProjItem_Convert_AutoPopulating.html">Convert to Auto-populating Folder</a> method to add an auto-populating folder to the project programmatically.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="tip.gif" alt="Tip"></td>
+<td><strong>Tip</strong>&nbsp;&nbsp;You can arrange items on the <strong>Items</strong> page. Right-click a folder and select <strong>Arrange by&#0187;Name</strong> from the shortcut menu to arrange items in alphabetical order. Right-click a folder and select <strong>Arrange by&#0187;Type</strong> from the shortcut menu to arrange items by file type. Right-click a folder and select <strong>Arrange by&#0187;Path</strong> from the shortcut menu to arrange items by file path.</td>
+</tr>
+</table>
+
+<p class="Body">To disconnect an auto-populated folder from disk, right-click the auto-populated folder on the <strong>Items</strong> page and select <strong>Stop Auto-populating</strong> from the shortcut menu. LabVIEW disconnects the folder from the corresponding folder on disk. This option is available only to top-level folders and applies recursively to subfolders of auto-populated folders.</p>
+
+<p class="Body">You also can use the <a href="../lvprop/ProjectItem_Disconnect_from_Disk.html">Stop Auto-populating</a> method to disconnect an auto-populating folder from disk programmatically.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;The project displays <a href="../lvconcepts/Project_Libraries.html">project library</a> contents by library hierarchy and not by disk organization. For example, if a VI exists in a project library file (<span class="Monospace">.lvlib</span>) the VI appears in the project under the library file. The VI does not appear in the project in its location on disk. Similarly, an auto-populated folder cannot contain a virtual folder unless the virtual folder is within a library hierarchy.</td>
+</tr>
+</table>
+<h2>Adding Virtual Folders to a Project</h2>
+<p class="Body">A virtual folder is a folder in the project that organizes project items and does not represent files on disk. A silver folder icon identifies this type of folder.</p>
+<p>Complete the following steps to add a virtual folder to the project.</p>
+<ol>
+<li>From the <strong>Items</strong> page, right-click a target or a folder under a target and select <strong>Add&#187;Folder (Snapshot)</strong> from the shortcut menu to display a file dialog box. You also can select a target and then select <strong>Project&#0187;Add To Project&#0187;Folder (Snapshot)</strong>.</li>
+<li>Navigate to and double-click a directory on disk to add to the project.</li>
+<li><!--begin child: ../glang/Project_Menu.html-->LabVIEW creates a new virtual folder in the project with the same name as the directory on disk. LabVIEW also creates project items that represent the contents of the entire directory, including files and contents of subdirectories.<!--end child: ../glang/Project_Menu.html--></li></ol>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;A virtual folder does not update in the project if you make changes to the directory on disk.</td>
+</tr>
+</table>
+
+<p class="Body">You can convert a virtual folder to an auto-populated folder. Right-click the virtual folder and select <strong>Convert to Auto-populating Folder</strong> to display a file dialog box. Select a folder on disk to auto-populate with. An auto-populating folder appears in the project. LabVIEW automatically renames the virtual folder to match the disk folder and adds all contents of the disk folder to the project. If items in the directory already exist in the project, the items move within the auto-populating folder. Items in the virtual folder that do not exist in the directory on disk move to the target.</p>
+
+<p class="Body">You also can convert virtual folders into <a href="../lvhowto/Convert_Fold_Lib.html">LabVIEW project libraries</a>. Right-click a virtual folder under a target and select <strong>Convert to Library</strong> from the shortcut menu.</p>
+
+<p class="Body">Create new virtual folders to organize project items by right-clicking a target and selecting <strong>New&#0187;Virtual Folder</strong> from the shortcut menu.</p>
+
+<p class="Body">You also can use the <a href="../lvprop/ProjectItem_Add_Item.html">Add Item</a> method to add a folder to the project programmatically.</p>
+
+<h2>Adding Target Folders to a Project</h2>
+<p class="Body">A target folder organizes one or more targets and its items in your LabVIEW project. A yellow folder icon with a silver controller identifies this type of folder.</p>
+
+<p class="Body">To add a target folder to a LabVIEW project, you must have a module or driver that supports targets installed.</p>
+<p class="Body"><!-- begin parent: ../lvhowto/Adding_Targets_Project.html-->To add a target folder to the project, right-click the project root in the <strong>Project Explorer</strong> window and select <strong>New&#0187;Target Folder</strong> from the shortcut menu. A target folder appears in the <strong>Project Explorer</strong> window. <!-- end parent: ../lvhowto/Adding_Targets_Project.html--></p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<link rel="STYLESHEET" type="text/css" href="expandable_tree.css"><script src="common.js" type="text/javascript"></script><script src="dynamicjumps.js" type="text/javascript"></script><script src="expandable_tree.js" type="text/javascript"></script><title>Obtaining a VI Object Reference Using VI Scripting</title>
+</head>
+<body>
+<h1>Obtaining a VI Object Reference Using VI Scripting</h1>
+<p><strong>Requires:</strong> <a href="enabling_vi_scripting.html">VI Scripting</a></p>
+<p>When you use VI Scripting to inspect, modify, or create front panel or block diagram objects, you must obtain a reference to the object with which you want to interact. You then can wire this reference to Property Nodes or Invoke Nodes to get or set information about the referenced object.</p>
+
+
+<p>Refer to the following list to identify the best way to obtain a VI reference for your specific use case. The approaches in the list increase in difficulty.</p>
+<ul>
+<li><strong>Use the Open VI Object Reference function</strong>.
+<br>The <a href="../glang/Open_VI_Object_Reference.html">Open VI Object Reference</a> function allows you to search for a specific object in a target VI by its label. Use this approach when you want to <a href="../lvhowto/scripting_obtaining_references_from_template.html">obtain a reference to an object in a target VI with known contents</a>, such as a template VI.</li>
+<li><strong>Use the Traverse for GObjects VI</strong>.
+<br>The <a href="../glang/TRef_Traverse_for_References.html">Traverse for GObjects</a> VI allows you to search for all objects in a target VI that are instances of a specific class. Use this approach when you want to <a href="../lvhowto/scripting_obtaining_unknown_references.html">obtain references to objects in an unknown target VI</a>. Also use this approach when you want to interact with multiple objects in a target VI that are instances of the same class.
+</li>
+<li><strong>Navigate the connections among objects within the target VI</strong>.
+<br><a href="../lvhowto/scripting_navigation_overview.html">Navigating connections among objects</a> within a target VI allows you to use a reference to one object to obtain references to connected objects. Use this approach to obtain a reference to an object that you cannot access directly with one of the previous approaches.
+</li>
+</ul>
+
+
+
+
+<a name="bestpractices"></a><h2>Caveats and Recommendations</h2>
+<ul>
+	<li><strong>Close all references that you open.</strong> An excessive number of open references negatively impacts the performance of a VI.  Read about <a href="../lvhowto/scripting_closing_references.html">closing VI and object references</a> for more performance details.
+	</li>
+</ul>
+
+
+</body>
+</html>

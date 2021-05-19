@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+
+<title>Adapting to Cycles of Fixed-Point Data in Loops with Shift Registers</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Adapting to Cycles of Fixed-Point Data in Loops with Shift Registers</h1>
+					<p class="Body">If you perform an operation within a loop that increases the size of <a href="../lvconcepts/numeric_data.html#Using_FXP">fixed-point data</a>, such as multiplication or incrementing, and pass the result of the operation into a shift register, LabVIEW converts the output data to floating-point representation to avoid potential data loss from <a href="../lvconcepts/numeric_data.html#FXP_overflow">overflow of the fixed-point data</a>. Overflow can occur because the word length of the fixed-point value can grow exponentially with each iteration of the loop, depending on the operation you perform within the loop.</p>
+					<p class="Body">The following block diagram displays an orange wire where LabVIEW automatically converted fixed-point data to floating-point. The coercion dots indicate that LabVIEW is discarding bits of the output values of the <a href="../glang/Numeric_Functions.html">Numeric</a> functions.</p>
+				<img src="noloc_bd_fxptypecycle_dbl.gif" />
+					<p class="Body">If you do not want LabVIEW to convert the data to floating-point automatically, you must <a href="../lvhowto/configure_fxp_ops.html">configure the output settings</a> for the function that processes data from the shift register to specify the output data type and how the function handles overflow, should it occur.</p> 
+					<p class="Body">For example, in the previous block diagram, you can configure the <a href="../glang/Add.html">Add</a> function to output only fixed-point values. After you configure the output data type to be fixed-point, the orange wire on the block diagram changes color to indicate that it carries fixed-point data.</p> 
+					<p class="Body">The following image displays the block diagram appearance after you configure the Add function to output fixed-point values. The blue coercion dots on the Numeric functions indicate that you have configured output settings for those functions.</p>
+					<img src="noloc_bd_fxptypecycle_fxp.gif" />
+
+
+
+</body>
+</html>

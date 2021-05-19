@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Viewing and Setting the Scan Engine Mode (NI Scan Engine)</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Viewing and Setting the Scan Engine Mode (NI Scan Engine)</h1>
+
+<p class="Body">You can use the <a href="scan_engine_probe.html">Scan Engine</a> page of a target probe to view and set the <a href="../lvioscanhelp/scan_engine.html#modes">scan engine mode</a> of a target with the <a href="../lvioscanhelp/scan_engine.html">NI Scan Engine</a> installed.</p>
+
+<p class="Body">Complete the following steps to view and set the scan engine mode.</p>
+
+<ol>
+
+<li>Click a scan-enabled target in the system tree to display a target probe in the <strong>Auto View</strong>. You also can right-click a target and select <strong>Probe</strong> to display a target probe in a separate window.</li>
+<li>The Scan Engine page of a target probe displays scan engine modes under the <strong>Scan Engine Enabled</strong> LED indicator and highlights the current scan engine mode with a green LED indicator.</li>
+<li>Use the <strong>Change to Config</strong> button to set the scan engine mode to <strong>Config Mode</strong> or the <strong>Change to Active</strong> button to set the scan engine mode to <strong>Active Mode</strong>. You cannot enter <strong>Active Mode</strong> directly from <strong>Fault Mode</strong>. You must first <a href="Clearing_Faults.html">clear</a> all major <a href="../lvioscanhelp/faults.html">faults</a> on the target.</li>
+</ol>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;Entering <strong>Config Mode</strong> from <strong>Fault Mode</strong> automatically converts all major faults to minor faults. You cannot enter fault mode manually. The target enters fault mode only when a <a href="../lvioscanhelp/faults.html">major</a> or <a href="../lvioscanhelp/faults.html">unrecoverable</a> fault occurs.</td></tr></table>
+
+</body>
+</html>

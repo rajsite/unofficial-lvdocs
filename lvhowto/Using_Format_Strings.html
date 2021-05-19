@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4400Estringshlp -->
+
+<title>Using Format Specifiers in Numeric Strings</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Using Format Specifiers in Numeric Strings</h1>
+<p class="Body">Use format specifiers, also known as percent codes, to specify how you want LabVIEW to display numbers. You can use the <strong>Numeric Properties</strong> dialog box or the <a href="../lvprop/NumericText_Format_String.html">Format String</a> property to specify how you want to format the numeric control. Format specifiers include the following items:
+</p>
+<ul>
+<li><strong>Format Specifier</strong>&#8212;String that begins with a <span class="Monospace">%</span> and ends with a letter. Letters are case sensitive. Format specifiers can include the following elements between the <span class="Monospace">%</span> and the letter:
+<ul class="List-Hyphen">
+<li><strong>Modifiers</strong>&#8212;A symbol that modifies the format code.
+</li>
+<li><strong>Minimum Width</strong>&#8212;Number greater than zero that specifies the field width.
+</li>
+<li><strong>Precision</strong>&#8212;String that begins with a <span class="Monospace">.</span> and is followed by a number greater than or equal to zero.
+</li>
+<li><strong>Significant Digits</strong>&#8212;String that begins with a <span class="Monospace">_</span> and is followed by a number greater than or equal to zero.
+</li>
+<li><strong>Embedded Format Information</strong>&#8212;String that LabVIEW uses to further format a number. Enclose string within <span class="Monospace">&lt;</span> and <span class="Monospace">&gt;</span>.
+</li>
+</ul></li>
+<li><strong>Delimiter</strong>&#8212;Text between, before, or after format codes. <span class="Monospace">%</span> and <span class="Monospace">&gt;</span> are the two delimiter characters. To embed a <span class="Monospace">%</span> character in a string, use <span class="Monospace">%%</span>. To embed a <span class="Monospace">&gt;</span> character in 
+a string, use <span class="Monospace">\&gt;</span>. Refer to the <a href="Backslash_Codes_Display.html">Backslash ('\') Codes Display</a> topic for more information about how LabVIEW interprets backslash codes.
+</li>
+<li><strong>Literal strings</strong>&#8212;Text you want to appear in the string.
+</li>
+</ul>
+<table class="Borderless">
+<tr><td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;You cannot use precision and significant digits together in a single format specifier.</td></tr>
+</table>
+<p class="Body">Refer to the <a href="../lvconcepts/Format_Specifier_Syntax.html#Format_Specifier_Examples">Format Specifiers Examples</a> table for more examples of format specifiers.
+</p>
+
+
+
+</body>
+</html>

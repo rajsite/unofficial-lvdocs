@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4200Estructureshlp -->
+
+<title>Passing Data through Frames of a Stacked Sequence Structure</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Passing Data through Frames of a Stacked Sequence Structure</h1>
+
+<p class="Body">Use a sequence local terminal <!-- Begin parent: 4200Estructures -->to pass data from one frame to any subsequent frame<!-- End parent: 4200Estructures --> in a <a href="../lvconcepts/sequence_structures_concepts.html#Stacked_Sequence_Structure">Stacked Sequence</a> structure.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;Stacked Sequence structures do not start to execute until all data wired to the structure arrives. The data wired from each frame leaves only when all the frames complete execution.</td></tr></table>
+
+<p class="Body">Complete the following steps to pass data through the frames of a <a href="../glang/Flat_Sequence.html">Stacked Sequence</a> structure by adding a sequence local terminal.</p>
+
+<ol>
+<li><a href="Moving_between_Subdiagrams.html">Move to the frame</a> from which you want to pass data to a subsequent frame.</li>
+<li>Right-click the right structure border and select <strong>Add Sequence Local</strong> from the shortcut menu.</li>
+<li>Wire the data you want to pass to the sequence local terminal. An outward-pointing arrow  <img src="noloc_bd_seqlocal.gif"> appears in the terminal. </li>
+<li>In subsequent frames, wire the sequence local terminal to any terminals where you want to pass the data from the previous frame. <!-- Begin parent: 4200Estructures -->The terminals in subsequent frames contain an inward-pointing arrow, indicating that the terminal is a data source for that frame.<!-- End parent: 4200Estructures --></li>
+</ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;<!-- Begin parent: 4200Estructures -->You cannot use the sequence local terminal in frames that precede the first frame where you wired the sequence local terminal.<!-- End parent: 4200Estructures --></td></tr></table>
+
+<p class="Body">To remove a sequence local terminal, right-click the sequence local terminal and select <strong>Remove</strong> from the shortcut menu.</p>
+
+
+
+</body>
+</html>

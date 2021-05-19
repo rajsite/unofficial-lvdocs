@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Original filename: mettool.txt -->
+
+<title>Analyzing VIs with the VI Metrics Window</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+	
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Analyzing VIs with the VI Metrics Window</h1>
+
+<p class="Body">Complete the following steps to analyze VIs.</p>
+
+<ol>
+<li>Open the VI or VIs you want to analyze.</li>
+<li>Select <strong>Tools&#0187;Profile&#0187;VI Metrics</strong> to display the <a href="../lvdialog/VI_Metrics_Dialog_Box.html">VI Metrics</a> window.</li></ol>
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif" /></td><td><strong>Note</strong>&nbsp;&nbsp;VI Metrics are available only in the LabVIEW Professional Development System.</td></tr></table>
+<ol start="3">
+<li>Use the <strong>Select a VI</strong> pull-down menu to select from the list of VIs whose front panels are open. In the <strong>statistics</strong> table at the bottom of the window, LabVIEW displays the names of the VI and its subVIs and metrics for each VI.<br><br>
+For each VI in the selected hierarchy, the window lists the number of nodes that VI contains. This number is a rough metric comparable to the <a href="../lvdevconcepts/Estimation.html#Source_Lines_of_Code_Number_of_Nodes_Estimation">SLOC metric</a> commonly used with text-based programming languages. The number of nodes includes functions, subVIs, structures, front panel object terminals, constants, global and local variables, and <a href="../glang/Property_Node.html">Property Nodes</a>. However, LabVIEW counts reading multiple properties with the same Property Node as one node. Place a checkmark in the <strong>User interface</strong> checkbox to determine the total number of properties a VI reads or writes.<br><br>
+The number of nodes does not include wires, tunnels, or objects that are subcomponents of structures, such as the iteration terminal of a For Loop or the sequence local terminal of a Stacked Sequence structure.</li>
+<li>(Optional) Place checkmarks in the <strong>Show statistics for</strong> checkboxes to display additional information related to the complexity of each VI, including <a href="Block_Diagram_Statistics.html">block diagram</a>, <a href="User_Interface_Statistics.html">user interface</a>, <a href="Globals_Locals_Statistics.html">global and local variable</a>, <a href="CINs_Shared_Library_Stats.html">shared library</a>, and <a href="SubVI_Interface_Statistics.html">subVI interface</a> metrics.</li>
+<li>(Optional) Click the <strong>Save</strong> button to save the metric information for the VI hierarchy to a text file.<br><br>
+The file contains the metrics from visible columns in the <strong>statistics</strong> table. The file also contains the number of user VIs and the number of <span class="Monospace">labview\vi.lib</span> VIs. LabVIEW saves the information in tab-delimited format so you can open it in a spreadsheet application or read and parse it using VIs.</li>
+</ol>
+
+
+
+</body>
+</html>

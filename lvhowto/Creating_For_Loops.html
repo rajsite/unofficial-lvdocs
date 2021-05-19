@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4200Estructureshlp -->
+
+<title>Specifying the Number of Times Operations in For Loops Execute</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Specifying the Number of Times Operations in For Loops Execute</h1>
+<p class="Body">A For Loop repeatedly executes the subdiagram inside it the number of times you wire to the count terminal.</p>
+
+<p class="Body">Complete the following steps to specify the number of times an operation executes using a For Loop.
+</p>
+<ol>
+
+<li>Add a <a href="../glang/For_Loop.html">For Loop</a> to the block diagram.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object761);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object761);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li>
+<li><a href="../lvhowto/Placing_Objects_Inside_Str.html">Add objects inside the For Loop</a> to create a subdiagram that the For Loop repeats.</li>
+<li>Determine how many times the For Loop iterates in one of the following ways:
+<ul><li>Wire a numeric value to the count terminal <img src="noloc_bd_count.gif">.</li><li>Wire an array to an input tunnel on the loop border by <a href="Auto_Indexing_1.html">auto-indexing</a> the array.</li></ul>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;A VI does not run if it contains a For Loop that does not have a numeric value wired to the count terminal or an auto-indexing input tunnel in which the size of the array determines the iteration count.</td>
+</tr>
+</table>
+</li>
+</ol>
+<p><!--begin parent: ../lvconcepts/"For_Loop_with_Conditional_Terminal.html-->You also can <a href="../lvhowto/Add_Cond_to_For_Loop.html">add a conditional terminal</a> to a For Loop to configure the loop to stop when a Boolean condition or error occurs. A For Loop with a conditional terminal executes until the condition you define occurs or until all iterations complete, whichever happens first.<!--end parent: ../lvconcepts/"For_Loop_with_Conditional_Terminal.html--></p>
+
+</body>
+</html>

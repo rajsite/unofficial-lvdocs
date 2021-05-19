@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>DSNewAlignedHClr (LabVIEW Manager Function)</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>DSNewAlignedHClr (LabVIEW Manager Function)</h1>
+		<p class="Body"><span class="Monospace">UHandle DSNewAlignedHClr (size, alignment, alignmentOffset);</span></p>
+
+	<h2>Purpose</h2>
+		<p class="Body">Creates a new handle to a relocatable block of memory of the specified <strong>size</strong>, <strong>alignment</strong>, and <strong>alignmentOffset</strong> and initializes the memory to zero. If you align the block of memory specifically for the data representation you want, you can improve the speed at which LabVIEW accesses that data or the speed and efficiency of data transfers to or from hardware.</p>
+		<p class="Body">This function is most useful when you allocate arrays of LabVIEW data that you plan to access with specific operations, such as SSE or AVX vector instructions that perform better when you align the data at 16- or 32-byte boundaries, respectively. You also can improve the performance of DMA data transfers between LabVIEW-allocated memory and hardware, such as data acquisition devices or disk. For example, set the data alignment at 64 bytes for cacheline size, 128 bytes for PCIe max payload size, or 512 bytes for PCIe read request size.</p>
+		<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;Use <a href="../lvexcode/aznewhclr_dsnewhclr.html"><span class="Monospace">DSNewHClr</span></a> instead of this function if you do not need to access arrays of LabVIEW data with specific operations, such as vector instructions or DMA data transfers. If you use this function incorrectly, you can cause your application to perform poorly or cause LabVIEW to crash.</td></tr></table>
+						
+	<h2>Parameters</h2>
+		<table class="Bordered"><tr><th class="Bordered Left-Align">Name</th><th class="Bordered Left-Align">Type</th><th class="Bordered Left-Align">Description</th></tr><tr><td class="Bordered"><strong>size</strong></td><td class="Bordered"><span class="Monospace">size_t</span></td><td class="Bordered">Size, in bytes, of the block of memory you want to create.</td></tr><tr><td class="Bordered"><strong>alignment</strong></td><td class="Bordered"><span class="Monospace">size_t</span></td><td class="Bordered">Boundary to which you want to align the block of memory. You must set the value to a power of 2, from 8 to 32,768. If you set the value to a number other than a power of 2, LabVIEW raises the value to the next power of 2.</td></tr><tr><td class="Bordered"><strong>alignmentOffset</strong></td><td class="Bordered"><span class="Monospace">size_t</span></td><td class="Bordered">Offset from the beginning of the allocation to the part of the allocation that you want to align. You must specify <strong>alignmentOffset</strong> to align data when the memory block contains header information at the beginning of the allocation. If you set <strong>alignmentOffset</strong> to a number other than 0, you create the memory block before the alignment boundary to account for the header information and to align the data with the boundary.</td></tr></table>
+					
+	<h2>Calculating the Alignment Offset</h2>
+		<p class="Body">The correct value of <strong>alignmentOffset</strong> depends upon the platform for which you compile the code, the number of dimensions in the array, and the data type of the array elements.</p>
+		<p class="Body">National Instruments recommends using the <a href="../lvexcode/offset.html">Offset</a> macro, located in the <span class="Monospace">extcode.h</span> header file in the <span class="Monospace">labview/cintools</span> directory, to get the correct alignment offset. For example, the following code defines an array:</p>
+		<p class="'code'"><span class="Monospace">typedef struct MyArray_t {</span></p>
+		<p class="'code'"><span class="Monospace">int32 count;</span></p>
+		<p class="'code'"><span class="Monospace">EltType elt[1];</span></p>
+		<p class="'code'"><span class="Monospace">} MyArray;</span></p>
+		<br>
+		<p class="Body">You can use the following expression to get the correct alignment offset for the array defined above:</p>
+		<p class="'code'"><span class="Monospace">Offset(MyArray, elt)</span></p>
+		<br>
+		<p class="Body">Use the Offset macro to get the correct value for <strong>alignmentOffset</strong> regardless of the data type of the array or the platform you use.</p>
+		<p class="Body">The following code is an example of how to use the Offset macro with this function for a two-dimensional array:</p>
+		<p class="'code'"><span class="Monospace">typedef struct {</span></p>
+		<p class="'code'"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;int32_t rows;</span></p>
+		<p class="'code'"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;int32_t cols;</span></p>
+		<p class="'code'"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;float64 data[1];</span></p>
+		<p class="'code'"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;} Float64Matrix;</span></p>
+		<p class="'code'"><span class="Monospace">typedef Float64Matrix ** Float64MatrixHandle;</span></p>
+		<br>
+		<p class="'code'"><span class="Monospace">#define NROWS 256</span></p>
+		<p class="'code'"><span class="Monospace">#define NCOLS 256</span></p>
+		<br>
+		<p class="'code'"><span class="Monospace">...</span></p>
+		<br>
+		<p class="'code'"><span class="Monospace">alignment = sizeof(float64) * N_FLOAT64S_PER_VECTOR_REGISTER;</span></p>
+		<p class="'code'"><span class="Monospace">totalNumberOfElements = NROWS * NCOLS;</span></p>
+		<br>
+		<p class="'code'"><span class="Monospace">size = Offset(Float64Matrix, data) + (totalNumberOfElements * sizeof(float64));</span></p>
+		<p class="'code'"><span class="Monospace">alignmentOffset = Offset(Float64Matrix, data);</span></p>
+		<p class="'code'"><span class="Monospace">Float64MatrixHandle matrixHandle = (Float64MatrixHandle)DSNewAlignedHClr(size, alignment, alignmentOffset);</span></p>
+		<p class="'code'"><span class="Monospace">(*matrixHandle)-&gt;rows = NROWS;</span></p>
+		<p class="'code'"><span class="Monospace">(*matrixHandle)-&gt;cols = NCOLS;</span></p>
+		<br>
+	<h2>Return Value</h2>
+		<p class="Body">A handle of the specified <strong>size</strong>, <strong>alignment</strong>, and <strong>alignmentOffset</strong>, where the block of memory is set to all zeros. If an error occurs, this function returns <span class="Monospace">NULL</span>.</p>
+
+</body>
+</html>

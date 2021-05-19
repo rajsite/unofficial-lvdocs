@@ -1,0 +1,163 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Classifying Filters by Impulse Response</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-55EFF340-78DB-4A01-83FB-FA0C2031D679" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Classifying Filters by Impulse Response</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 
+            		The impulse response of a filter determines whether the filter is an FIR or IIR filter. The output of an FIR filter depends
+            only on the current and past input values. The output of an IIR filter depends on the current and past input values and the
+            current and past output values. 
+            	 
+         </p> 
+         	 
+         <p>The operation of a cash register can serve as an example to illustrate the difference between FIR and IIR filter operations.
+            For this example, the following conditions are true: 
+            	 
+         </p> 
+         	 <a name="GUID-55EFF340-78DB-4A01-83FB-FA0C2031D679__UL_E508FF0FD47B48E5ADDBADAE759A9812" shape="rect">
+            <!-- --></a><ul id="GUID-55EFF340-78DB-4A01-83FB-FA0C2031D679__UL_E508FF0FD47B48E5ADDBADAE759A9812">
+            <li><a name="GUID-55EFF340-78DB-4A01-83FB-FA0C2031D679__LI_73E22AFAFA0B4ACB832F07441203E28D" shape="rect">
+                  <!-- --></a> x[<em>k</em>] is the cost of the current item entered into the cash register. 
+               		
+            </li>
+            <li><a name="GUID-55EFF340-78DB-4A01-83FB-FA0C2031D679__LI_04F69636CBAC4A0886D0C8641383B896" shape="rect">
+                  <!-- --></a> <em>x</em>[<em>k</em> - 1] is the price of the past item entered into the cash register. 
+               		
+            </li>
+            <li><a name="GUID-55EFF340-78DB-4A01-83FB-FA0C2031D679__LI_9236761E7D0D454A8A7E6B811B31D6DD" shape="rect">
+                  <!-- --></a>1 &#8804; <em>k</em> &#8804; <em>N</em> 
+               		
+            </li>
+            <li><a name="GUID-55EFF340-78DB-4A01-83FB-FA0C2031D679__LI_52BF8D4321E940CDA69E5F22E7C52980" shape="rect">
+                  <!-- --></a> <em>N</em> is the total number of items entered into the cash register. 
+               		
+            </li>
+         </ul> 
+         	 
+         <p>The following statements describe the operation of the cash register: 
+            	 
+         </p> 
+         	 <a name="GUID-55EFF340-78DB-4A01-83FB-FA0C2031D679__UL_9AD04CAD6A67455783F4B467996C4C17" shape="rect">
+            <!-- --></a><ul id="GUID-55EFF340-78DB-4A01-83FB-FA0C2031D679__UL_9AD04CAD6A67455783F4B467996C4C17">
+            <li><a name="GUID-55EFF340-78DB-4A01-83FB-FA0C2031D679__LI_C6E266C447A3437EBC6C8172ACE07EDB" shape="rect">
+                  <!-- --></a>The cash register adds the cost of each item to produce the running total <em>y</em>[<em>k</em>]. 
+               		
+            </li>
+            <li><a name="GUID-55EFF340-78DB-4A01-83FB-FA0C2031D679__LI_92A0457AB53D44A0AA647F30A39579CA" shape="rect">
+                  <!-- --></a>The following equation computes <em>y</em>[<em>k</em>] up to the <em>k</em>th item. 
+               		  
+               <p><em>y</em>[<em>k</em>] = <em>x</em>[<em>k</em>] + <em>x</em>[<em>k</em> - 1] + <em>x</em>[<em>k</em> - 2] + <em>x</em>[<em>k</em> - 3] + … + <em>x</em>[1] 
+                  		  
+               </p> 
+               		  
+               <p>Therefore, the total for <em>N</em> items is <em>y</em>[<em>N</em>]. 
+                  		  
+               </p> 
+               		
+            </li>
+            <li><a name="GUID-55EFF340-78DB-4A01-83FB-FA0C2031D679__LI_9784CF7BC088445B90A6A372AA84AB47" shape="rect">
+                  <!-- --></a> <em>y</em>[<em>k</em>] equals the total up to the <em>k</em>th item. 
+               		  
+               <p><em>y</em>[<em>k</em> - 1] equals the total up to the (<em>k</em> - 1) item. 
+                  		  
+               </p> 
+               		  
+               <p>Therefore, the previous equation can be rewritten as the following equation. 
+                  		  
+               </p> 
+               		  
+               <p><em>y</em>[<em>k</em>] = <em>y</em>[<em>k</em> - 1] + <em>x</em>[<em>k</em>] 
+                  		  
+               </p> 
+               		
+            </li>
+            <li><a name="GUID-55EFF340-78DB-4A01-83FB-FA0C2031D679__LI_7AB07EE025E1481DAEF7C7A83346D97B" shape="rect">
+                  <!-- --></a>Add a tax of 8.25% and rewrite the previous two equations as the following equations. 
+               		  
+               <p><em>y</em>[<em>k</em>] = 1.0825<em>x</em>[<em>k</em>] + 1.0825<em>x</em>[<em>k</em> - 1] + 1.0825<em>x</em>[<em>k</em> - 2] + 1.0825<em>x</em>[<em>k</em> - 3] + … + 1.0825<em>x</em>[1] 
+                  		  
+               </p> 
+               		  
+               <p><em>y</em>[<em>k</em>] = <em>y</em>[<em>k</em> - 1] + 1.0825<em>x</em>[<em>k</em>] 
+                  		  
+               </p> 
+               		
+            </li>
+         </ul> 
+         	 
+         <p>The two equations after adding the tax identically describe the behavior of the cash register. However, the first equation
+            describes the behavior of the cash register only in terms of the input, while the second equation describes the behavior in
+            terms of both the input and the output. The first equation represents a non-recursive, or FIR, operation. The second equation
+            represents a recursive, or IIR, operation. 
+            	 
+         </p> 
+         	 
+         <p>Equations that describe the operation of a filter and have the same form as the previous four equations are difference equations.
+            
+            	 
+         </p> 
+         	 
+         <p> FIR filters are the simplest filters to design. If a single impulse is present at the input of an FIR filter and all subsequent
+            inputs are zero, the output of an FIR filter becomes zero after a finite time. Therefore, FIR filters are finite. The time
+            required for the filter output to reach zero equals the number of filter coefficients. 
+            	 
+         </p> 
+         	 
+         <p>Because IIR filters operate on current and past input values and current and past output values, the impulse response of an
+            IIR filter never reaches zero and is an infinite response. 
+            	 
+         </p> 
+         	 
+         <p> In the following equation, 
+            	 
+         </p> 
+         	 
+         <p><em>y</em>[<em>k</em>] = 1.0825<em>x</em>[<em>k</em>] + 1.0825<em>x</em>[<em>k</em> - 1] + 1.0825<em>x</em>[<em>k</em> - 2] + 1.0825<em>x</em>[<em>k</em> - 3] + … + 1.0825<em>x</em>[1] 
+            	 
+         </p> 
+         	 
+         <p>the multiplying constant for each term is 1.0825. 
+            	 
+         </p> 
+         	 
+         <p>In the following equation, 
+            	 
+         </p> 
+         	 
+         <p><em>y</em>[<em>k</em>] = <em>y</em>[<em>k</em> - 1] + 1.0825<em>x</em>[<em>k</em>] 
+            	 
+         </p> 
+         	 
+         <p> the multiplying constants are 1 for <em>y</em>[<em>k</em>-1] and 1.0825 for <em>x</em>[<em>k</em>]. 
+            	 
+         </p> 
+         	 
+         <p>The multiplying constants are the coefficients of the filter. For an IIR filter, the coefficients multiplying the inputs are
+            the forward coefficients. The coefficients multiplying the outputs are the reverse coefficients. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Common_Digital_Filters.html" shape="rect">Common Digital Filters</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

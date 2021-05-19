@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script type="text/javascript">var noFeedbackLink = true;</script>
+<script src="common.js" type="text/javascript"></script>
+
+<title>Publishing a Web Service through a Stand-Alone Application (Real-Time, Windows)</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Publishing a Web Service through a Stand-Alone Application (Real-Time, Windows)</h1>
+<p><strong>Parent Topic</strong>: <a href="../lvconcepts/ws_distributing.html">Publishing Web Services</a></p>
+<p>You can publish a Web service to the NI Web Server or Application Web Server through a stand-alone application. The Web service starts/stops running when the application starts/stops running.</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;For more information about concepts in this topic, refer to the�<a href="../lvconcepts/WebServices.html">Web services introduction</a>�and�<a href="../lvhowto/web_service_tutorial.html">tutorial</a>. LabVIEW Web services are available only in the LabVIEW Full Development System and the LabVIEW Professional Development System.</td>
+</tr>
+</table>
+<p>Complete the following steps to publish a Web service through a stand-alone application:</p>
+<ol>
+	<li>Include the Web service in an application:
+		<ol>
+			<li><span class="Platform">(Windows)</span> Right-click <strong>Build Specifications</strong> in the�<a href="../lvdialog/Project_Explorer_Window.html">Project Explorer</a>�window and select�<strong>New</strong>&#0187;<strong>Application</strong> to launch the�<a href="../lvdialog/Build_App_or_DLL_DB.html">Application Properties</a>�dialog box.<br /><br/>
+			<span class="Platform">(Real-Time)</span> Right-click <strong>Build Specifications</strong> in�<strong>Project Explorer</strong> and select�<strong>New</strong>&#0187;<strong>Real-Time Application</strong> to launch the�<a href="../lvrtdialog/RT_Build_App_DB.html">Real-Time Application Properties</a>�dialog box.
+			</li>
+			<li>On the�<strong>Web Services</strong>�page, place a checkmark in the checkbox for the Web service you want to include.</li>
+			<li>Choose a web server for hosting the Web service. Refer to <a href="../lvconcepts/ws_web_server.html">Hosting Web Services</a> for more information on each web server.
+				<table class="Borderless">
+				<tr>
+				<td class="Icon"><img src="note.gif"></td>
+				<td>
+				<strong>Note</strong>&nbsp;&nbsp;<span class="Platform">(Real-Time)</span> You can use only the Application Web Server to host Web services on an RT target because the NI Web Server does not support RT targets.</td>
+				</tr>
+				</table>
+			</li>
+			<li>(Optional) If you choose <strong>Application Web Server</strong> in step c, configure which port you want to use to accept requests for the Web service. You must configure each application that runs simultaneously to use a unique port. Place a checkmark in the <strong>Enable SSL</strong> checkbox and configure the other items if you want to allow clients to use HTTPS protocol to call the Web service.</li>
+		</ol>
+	</li>
+	<li>Build the application that contains the Web service:
+		<ol>
+			<li>Click <strong>Build</strong> and the <a href="../lvdialog/build_status.html">Build Status</a> dialog box appears.</li>
+			<li>When LabVIEW completes building the application, click <strong>Explore</strong> to open the destination directory where LabVIEW saves the application files.</li>
+		</ol>
+	</li>
+	<li>Run the application on the target device so that the Web service starts running on the device:
+		<ol>
+			<li><span class="Platform">(Windows)</span> Double-click the executable in the destination directory to run it.<br /><br />
+			<span class="Platform">(Real-Time)</span> Right-click the application you build under <strong>Build Specifications</strong> in <strong>Project Explorer</strong>, and click <strong>Run as startup</strong>.<br /><br />
+			The application publishes the Web service to the web server on the target device.
+			<table class="Borderless">
+			<tr>
+			<td class="Icon"><img src="note.gif"></td>
+			<td>
+			<strong>Note</strong>&nbsp;&nbsp;Publishing Web services to the NI Web Server requires administrator privilege.</td>
+			</tr>
+			</table>
+			</li>
+			<li>Close the�LabVIEW project. Published Web services run on the LabVIEW Runtime and do not depend on the LabVIEW Development System.</li>
+		</ol>
+	</li>
+</ol>
+
+
+</body>
+</html>

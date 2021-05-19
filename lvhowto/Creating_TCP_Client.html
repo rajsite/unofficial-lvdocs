@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 6100Ecommhlp.txt -->
+
+<title>Creating a TCP Client</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Creating a TCP Client
+</h1>
+<p class="Body">Complete the following steps to create a TCP client using the <a href="../lvcomm/TCP_VI_Descriptions.html">TCP functions</a>.</p>
+<ol>
+<li>(Optional) Create a <a href="Creating_TCP_Server.html">TCP server</a>. When you create a TCP server, you specify the remote port or <a href="../lvdialog/VI_Server_Config_Options.html">service name</a> to represent the port you want the server to use for communication.</li>
+<li>Use the <a href="../lvcomm/TCP_Open_Connection.html">TCP Open Connection</a> function to open a connection to a server. You must specify the <strong>remote port or service name</strong> for the server. The <strong>remote port or service name</strong> identifies a communication channel on the computer that the server uses to listen for communication requests. 
+<!-- begin child: ../glang/Open_Application_Reference.html, ../lvcomm/TCP_Open_Connection.html, ../lvcomm/UDP_Open.html, ../lvcomm/TCP_Create_Listener.html, ../lvcomm/UDP_Write.html-->If you specify a service name, LabVIEW queries the <a href="../lvconcepts/NI_Service_Locator.html">NI Service Locator</a> for the port number that the server registered.<!-- end child: ../glang/Open_Application_Reference.html, ../lvcomm/TCP_Open_Connection.html, ../lvcomm/UDP_Open.html, ../lvcomm/TCP_Create_Listener.html, ../lvcomm/UDP_Write.html-->
+<br><br>
+If you want to establish a connection to a remote computer, you must specify the Internet address of the server. The <strong>address</strong> identifies a computer on the network. If you do not specify an address, LabVIEW establishes a connection to the local computer.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object649);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object649);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li>
+<li>Use the <a href="../lvcomm/TCP_Read.html">TCP Read</a> function to read a message from the server. You must specify the number of bytes you want to read.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object650);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object650);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li>
+<li>Use the <a href="../lvcomm/TCP_Write.html">TCP Write</a> function to send a message to a server.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object652);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object652);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li>
+<li>Use the <a href="../lvcomm/TCP_Close_Connection.html">TCP Close Connection</a> function to close the connection to the server.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object644);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object644);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li>
+</ol>
+
+<p class="Body">Refer to the following VIs for examples of a TCP client:</p>
+<ul>
+
+
+<li><span class="Monospace">labview\examples\Data Communication\Protocols\TCP\TCP Named Service\TCP Named Service.lvproj</span><br><br>
+<a href="javascript:openProj('examples%5C%5CData%20Communication%5C%5CProtocols%5C%5CTCP%5C%5CTCP%20Named%20Service%5C%5CTCP%20Named%20Service.lvproj');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(3101);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</li></ul>
+
+
+
+</body>
+</html>

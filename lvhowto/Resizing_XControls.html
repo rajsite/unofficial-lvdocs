@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<title>Resizing XControls</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Resizing XControls</h1>
+
+<p class="Body">You can configure an <a href="../lvconcepts/Using_LabVIEW_XControls.html">XControl</a> to respond to resizing by enabling front panel scaling in the <a href="../lvconcepts/Creating_an_XControl_Facade.html">Facade VI</a> or handling the <a href="../lvprop/VI_Front_Panel_Sized.html">Panel Resize</a> event in the Event structure in the Facade VI.</p>
+
+<p class="Body">If you enable front panel scaling in the Facade VI, the controls that make up the appearance of the XControl automatically resize when the XControl resizes. Complete the following steps to enable scaling of the front panel in the Facade VI.</p>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;If the Facade VI has multiple panes, you must complete these steps for each pane.</td></tr></table>
+
+<ol>
+<li><!--start parent  = lvconcepts  tag="edit_Facade_ability"-->Double-click the Facade ability in the  XControl library to open and <a href="../lvconcepts/Creating_an_XControl_Facade.html">edit the Facade VI</a>.<!--end parent  = lvconcepts  tag="edit_Facade_ability"--></li>
+
+<li>Set all front panel objects to <a href="SettingAllObjsOnFPtoScale.html">scale automatically</a> when the front panel resizes.</li>
+</ol>
+
+<p class="Body">Alternatively, you can handle the Panel Resize event in the Event structure in the Facade VI. When the XControl is resized, LabVIEW calls the Facade VI with a Panel Resize event. In response to the event, you can move and resize each control individually that makes up the appearance of the XControl. Using the Panel Resize event is useful because you have more flexibility when you resize; however, it requires more coding.</p>
+
+<p class="Body">Complete the following steps to configure the Event structure in the Facade VI to handle the Panel Resize event.</p>
+
+<ol>
+<li><!--start parent  = lvconcepts  tag="edit_Facade_ability"-->Double-click the Facade ability in the  XControl library to open and edit the Facade VI.<!--end parent  = lvconcepts  tag="edit_Facade_ability"--></li>
+
+<li>Right-click the <a href="../glang/Event_Structure.html">Event structure</a> on the block diagram and select <strong>Add Event Case</strong> from the shortcut menu to display the <a href="../lvdialog/Edit_Events_Dialog_Box.html">Edit Events</a> dialog box.</li>
+
+<li>In the dialog box, select <strong>&lt;This VI&gt;</strong> from the <strong>Event Sources</strong> list.</li><li>Select <strong>Panel Resize</strong> from the <strong>Events</strong> list.</li>
+
+<li>Click the <strong>OK</strong> button to save the configuration and close the dialog box.</li>
+</ol>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;If the XControl must have a fixed size, disable resizing on the front panel of the Facade VI. Remove the checkmark from the <strong>Allow user to resize window</strong> checkbox in the <a href="../lvdialog/Cust_Window_Appearance_DB.html">Customize Window Appearance</a> dialog box to disable resizing.
+
+<p class="Body">If the XControl must have a minimum size, specify the minimum size for the Facade VI.  Enter width and height values for the <strong>Minimum Panel Size</strong> option of the <a href="../lvdialog/Window_Size_Properties.html">Window Size</a> page of the <a href="../lvdialog/VI_Properties_Dialog_Box.html">VI Properties</a> dialog box.</p></td></tr></table>
+
+
+</body>
+</html>

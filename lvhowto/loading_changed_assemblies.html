@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 1800Erefnumcihlp -->
+
+<title>Loading Changes to a .NET Assembly in Memory</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+
+<h1>Loading Changes to a .NET Assembly in Memory</h1>
+	<p>When you make changes to an assembly while that assembly is in memory, you must force LabVIEW to reload the assembly in order to access the changes. Complete the following steps to force LabVIEW to load changes to an assembly.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;An assembly remains in memory even if you delete all nodes that reference the assembly from the VI.</td>
+</tr>
+</table>
+
+	<ol>
+		<li>Identify the name, version number, and path on disk of the assembly that you changed.</li>
+		<li>Use the <a href="../lvdialog/assemblies_in_memory.html">.NET Assemblies in Memory</a> dialog box to identify all LabVIEW projects that have a version of the modified assembly in memory. For each project that uses the assembly, verify that the version number and path of the assembly in memory match the version number and path of the assembly that you changed. If this information does not match, LabVIEW is using a different copy of the assembly than the one you updated. You can <a href="../lvhowto/debugging_assembly_calls.html">debug the assembly call</a> to make LabVIEW load the correct assembly.</li>
+		<li>Close and reopen all projects that reference the modified assembly.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If a VI in the main application instance references the modified assembly, you must relaunch LabVIEW in order to access the changes. National Instruments strongly recommends that you use .NET objects only in <a href="../lvconcepts/Using_LabVIEW_Projects.html">LabVIEW projects</a>.</td>
+</tr>
+</table>
+
+		</li>
+	</ol>
+
+
+
+</body>
+</html>

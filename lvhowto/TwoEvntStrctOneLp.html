@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4201Eeventshlp -->
+
+<title>Avoid Placing Two Event Structures in One Loop</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Avoid Placing Two Event Structures in One Loop
+</h1>
+<p class="Body">National Instruments recommends that you place only one Event structure in a loop. When an event occurs in this configuration, the Event structure handles the event, the loop iterates, and the Event
+structure waits for the next event to occur. If you place two Event structures in a single loop, the loop cannot iterate until both Event structures handle an event. If you have enabled front panel locking for the Event structures, the user interface of the VI can become unresponsive depending on how the user interacts with the front panel.
+</p>
+<p class="Body">For example, if you place two Event structures in a single While Loop and configure the first Event structure to handle a Mouse Down event and configure the second Event structure to handle a Key Down event, 
+the first Event structure receives a Mouse Down event when the user clicks the mouse button. The first Event structure executes the correct event case and finishes execution. Meanwhile, the second Event structure waits for a key press to occur. When the user presses a key, the second Event structure receives a Key Down event. After the second Event structure handles the event, the While Loop iterates. If the user continues to alternate interactions, generating a Mouse Down event, a Key Down event, a Mouse Down event, a Key Down event, and so on, the VI runs smoothly because the Event structures handle the events as they occur, and the While Loop continues to iterate.
+</p>
+<p class="Body">However, if the user clicks the mouse button twice, causing two Mouse Down events to occur sequentially with no intervening Key Down event, the user interface hangs. The first time the user clicks the mouse button, the first Event structure receives a Mouse Down event, handles the event, and finishes execution. However, the second Event structure continues to wait for a Key Down event, and prevents the While Loop from iterating again. When the user clicks the mouse button a second time, LabVIEW generates a second Mouse Down event and locks the front panel until the first Event structure handles the event. At this point, the VI is in a deadlock state. The first Event structure cannot execute until the While Loop iterates, and the While Loop cannot iterate until the second Event structure receives and handles a Key Down event. Because the front panel is locked, no Key Down events can occur. The front panel remains locked and unresponsive until the user aborts the VI.
+</p>
+<p class="Body">To avoid hanging the user interface with front panel locking, <a href="CfgEvents.html">configure all events</a> you want a VI to handle in a single Event structure or always make sure there is only one Event structure in a While Loop. Additionally, make sure there is always an <a href="Event_Struct_Outside_Loop.html">Event structure available</a> to handle events as they occur.
+</p>
+
+
+
+</body>
+</html>

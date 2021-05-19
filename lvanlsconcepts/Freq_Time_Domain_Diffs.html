@@ -1,0 +1,64 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Differences between Frequency Domain and Time Domain</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-6EBCD3D4-E2D7-479C-A4F2-44E8BBF71802" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Differences between Frequency Domain and Time Domain</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 The time-domain representation gives the amplitudes of the signal at the instants of time during which it was sampled.
+            However, in many cases you need to know the frequency content of a signal rather than the amplitudes of the individual samples.
+            
+            	 
+         </p> 
+         	 
+         <p>Fourier's theorem states that any waveform in the time domain can be represented by the weighted sum of sines and cosines.
+            The same waveform then can be represented in the frequency domain as a pair of amplitude and phase values at each component
+            frequency. 
+            	 
+         </p> 
+         	 
+         <p>You can generate any waveform by adding sine waves, each with a particular amplitude and phase. The following figure shows
+            the original waveform, labeled 
+            		<cite>sum</cite>, and its component frequencies. The fundamental frequency is shown at the frequency <em>f</em><sub>0</sub>, the second harmonic at frequency 2<em>f</em><sub>0</sub>, and the third harmonic at frequency 3<em>f</em><sub>0</sub>. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-6EBCD3D4-E2D7-479C-A4F2-44E8BBF71802__IMAGE_30458B282E374BE597843B5D54B473BE" shape="rect">
+            <!-- --></a><img id="GUID-6EBCD3D4-E2D7-479C-A4F2-44E8BBF71802__IMAGE_30458B282E374BE597843B5D54B473BE" src="GUID-778EDA50-3640-4888-9C76-4F4CAC177229-help-web.png"><br clear="none"> 
+         	 
+         <p>In the frequency domain, you can separate conceptually the sine waves that add to form the complex time-domain signal. The
+            previous figure shows single frequency components, which spread out in the time domain, as distinct impulses in the frequency
+            domain. The amplitude of each frequency line is the amplitude of the time waveform for that frequency component. The representation
+            of a signal in terms of its individual frequency components is the frequency-domain representation of the signal. The frequency-domain
+            representation might provide more insight about the signal and the system from which it was generated. 
+            	 
+         </p> 
+         	 
+         <p>The samples of a signal obtained from a DAQ device constitute the time-domain representation of the signal. Some measurements,
+            such as harmonic distortion, are difficult to quantify by inspecting the time waveform on an oscilloscope. When the same signal
+            is displayed in the frequency domain by an FFT Analyzer, also known as a Dynamic Signal Analyzer, you easily can measure the
+            harmonic frequencies and amplitudes. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="lvac_FrequencyAnalysis_Basics.html" shape="rect">Frequency Analysis Basics</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

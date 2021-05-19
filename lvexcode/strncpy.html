@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>StrNCpy (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>StrNCpy (LabVIEW Manager Function)</h1>
+<p class="Code">CStr StrNCpy(dst, src, n);</p>
+<h2>Purpose</h2>
+<p class="Body">Copies the C string <strong>src</strong> to the C string <strong>dst</strong>. If the source string is less than <strong>n</strong> characters, the&nbsp;function pads the destination with <span class="Monospace">NULL</span> characters. If the source string is greater than <strong>n</strong>, only <strong>n</strong> characters are copied. This function assumes <strong>dst</strong> is large enough to contain <strong>src</strong>.</p>
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>dst</strong></td>
+<td class="Bordered"><span class="Monospace">CStr</span></td>
+ <td class="Bordered">Pointer to a C string.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>src</strong></td>
+<td class="Bordered"><span class="Monospace">CStr</span></td>
+ <td class="Bordered">Pointer to a C string.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>n</strong></td>
+<td class="Bordered"><span class="Monospace">size_t</span></td>
+ <td class="Bordered">Maximum number of characters you want to copy.</td></tr>
+</table>
+<h2>Return Value</h2>
+<p class="Body">A copy of the destination C string pointer.</p>
+
+</body>
+</HTML>

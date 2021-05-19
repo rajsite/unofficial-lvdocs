@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 5900Econfigvihlp -->
+
+<title>Customizing Menus Programmatically</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Customizing Menus Programmatically
+</h1>
+<p class="Body">Complete the following steps to customize a menu programmatically.
+</p>
+<ol>
+<li>Select <strong>Edit&#0187;Run-Time Menu</strong> to display the <a href="../lvdialog/Menu_Editor_Dialog_Box.html">Menu Editor</a> dialog box.
+</li>
+<li>Select <strong>Custom</strong> from the <strong>Menu Type</strong> pull-down menu. The question marks in the <strong>Hierarchy</strong> listbox indicate that you are creating a new item that does not have a name yet.
+</li>
+<li>Select <strong>File&#0187;Save</strong> and name the custom menu. You can save the menu file wherever you choose.
+</li>
+<li>Close the <strong>Menu Editor</strong> dialog box.
+</li>
+<li>Add the <a href="../glang/Current_VIs_Menubar.html">Current VI's Menubar</a> function to the block diagram.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object746);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object746);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN>
+</li>
+<li>Add the <a href="../glang/Insert_Menu_Items.html">Insert Menu Items</a> function to the block diagram.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object740);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object740);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN>
+</li>
+<li>Wire the Current VI's Menubar function to the <strong>menu reference</strong> input of the Insert Menu Items function.
+</li>
+<li>Right-click the <strong>item names</strong> input of the Insert Menu Items function and select <strong>Create&#0187;Constant</strong> from the shortcut menu. An array constant appears.
+</li>
+<li>Type <span class="Monospace">File</span> in the <span class="Monospace">0</span> slot and <span class="Monospace">Edit</span> in the <span class="Monospace">1</span> slot of the array.
+</li>
+<li>Right-click the <strong>item tags</strong> input of the Insert Menu Items function and select <strong>Create&#0187;Constant</strong> from the shortcut menu. An array constant appears.
+</li>
+<li>Again, type <span class="Monospace">File</span> in the <span class="Monospace">0</span> slot and <span class="Monospace">Edit</span> in the <span class="Monospace">1</span> slot of the array. Menu item tags can have the same name as menu item names.
+</li>
+<li>Add a <a href="../glang/While_Loop.html">While Loop</a> to the block diagram so the While Loop encloses the menu functions.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object762);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object762);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN>
+</li>
+<li>Add the <a href="../glang/Wait_ms.html">Wait (ms)</a> function inside the While Loop to delay execution.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object517);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object517);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li>
+</ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;You must wire a value to the <strong>milliseconds to wait</strong> input of the Wait (ms) function for the VI to run.</td></tr></table>
+<ol start="14">
+<li>Switch to the front panel window and click the <strong>Run Continuously</strong> button. A <strong>File</strong> and <strong>Edit</strong> menu appear in the front panel window. However, there are no submenu items.
+</li>
+</ol>
+<h2>Adding Submenu Items to Existing File and Edit Menus</h2>
+<p class="Body">Complete the following steps to add submenu items to existing <strong>File</strong> and <strong>Edit</strong> menus.
+</p>
+<ol>
+<li>Add another Insert Menu Items function to the block diagram to the right of the first Insert Menu Items function.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object740);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object740);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN>
+</li>
+<li>Wire the <strong>menu reference out</strong> and <strong>error out</strong> output of the first Insert Menu Items function into the <strong>menu reference</strong> and <strong>error in</strong> input of the second Insert Menu Items function.
+</li>
+<li><a href="Setting_Up_Error_I_O_in_VI.html">Wire all error in and error out terminals</a> on the block diagram.
+</li>
+<li>Right-click the <strong>menu tag</strong> input of the second Insert Menu Items function and select <strong>Create&#0187;Constant</strong> from the shortcut menu. A string constant appears.
+</li>
+<li>Type <span class="Monospace">File</span> in the string to add items in the <strong>File</strong> menu you created in step 9.
+</li>
+<li>On the second Insert Menu Items function, right-click the <strong>item names</strong> input and select <strong>Create&#0187;Constant</strong> from the shortcut menu. An array constant appears.
+</li>
+<li>Type <span class="Monospace">Menu1</span> in the <span class="Monospace">0</span> slot and <span class="Monospace">Menu2</span> in the <span class="Monospace">1</span> slot. Repeat this step for the <strong>item tags</strong> input.
+</li>
+<li>Switch to the front panel and click the <strong>Run Continuously</strong> button. The front panel window includes a <strong>File</strong> menu and an <strong>Edit</strong> menu with <strong>Menu1</strong> and <strong>Menu2</strong> as subitems in the <strong>File</strong> menu.
+</li>
+<li><a href="Menu_Selection_Handling.html">Use a Case Structure</a> to execute the menu items.
+</li>
+</ol>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;You also can add default LabVIEW menu items by providing the <a href="Viewing_Application_Items.html">application item tags</a> as inputs to the Insert Menu Item function.</td></tr></table>
+
+<p class="Body">Refer to the <span class="Monospace">labview\examples\Dialog and User Interface\Menu\Customizing the Menubar\Customizing the Menubar.lvproj</span> for examples of customizing menus programmatically.
+</p>
+<p class="Body"><a href="javascript:openProj('examples%5C%5CDialog%20and%20User%20Interface%5C%5CMenu%5C%5CCustomizing%20the%20Menubar%5C%5CCustomizing%20the%20Menubar.lvproj');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open examples&nbsp;<a href="javascript:findExamples(3756);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</p>
+
+
+
+</body>
+</html>

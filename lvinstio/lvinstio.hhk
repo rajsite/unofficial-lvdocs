@@ -1,0 +1,814 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD>
+<BODY>
+<OBJECT type="text/site properties">
+	<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="488.2 functions">
+		<param name="Local" value="GPIB_488_2_Func_Descr.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="(see also GPIB)">
+			<param name="See Also" value="GPIB">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AllSpoll">
+		<param name="Local" value="AllSPoll.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Become Active Controller (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#cac">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Bus Specific functions">
+		<param name="Local" value="Interface_Spec_Func_Descr.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="cac (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#cac">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="cmd (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#cmd">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Conduct Parallel Poll (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#rpp">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="configuring">
+		<param name="See Also" value="configuring">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="parallel ports with VISA">
+			<param name="Local" value="VISA_Serial_Parallel_Ports.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="serial ports with VISA">
+			<param name="Local" value="VISA_Serial_Parallel_Ports.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="controller">
+		<param name="See Also" value="controller">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="functions">
+			<param name="Local" value="Controller_Functions_1.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Convert RTD Reading VI">
+		<param name="Local" value="conv_rtd_read.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Convert Strain Gauge Reading VI">
+		<param name="Local" value="conv_strain_read.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Convert Thermistor Reading VI">
+		<param name="Local" value="conv_thermis_read.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Convert Thermocouple Reading VI">
+		<param name="Local" value="conv_thermcoup_read.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Degrees to Radians">
+		<param name="Local" value="degrees_to_radians.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DevClear">
+		<param name="Local" value="DevClear.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DevClearList">
+		<param name="Local" value="DevClearList.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="dma (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#dma">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="EnableLocal">
+		<param name="Local" value="EnableLocal.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="EnableRemote">
+		<param name="Local" value="EnableRemote.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Event Handling VIs and functions">
+		<param name="Local" value="Event_Handling_Func_Descr.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FindLstn">
+		<param name="Local" value="FindLstn.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FindRQS">
+		<param name="Local" value="FindRQS.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Go from Active Controller to Standby (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#gts">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GPIB">
+		<param name="See Also" value="GPIB">
+		</OBJECT>
+	<UL>		
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="488.2 functions">
+			<param name="Local" value="GPIB_488_2_Func_Descr.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="controller functions">
+			<param name="Local" value="Controller_Functions_1.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="default address">
+			<param name="Local" value="GPIB_Defaults.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="default timeout">
+			<param name="Local" value="GPIB_Defaults.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="device and controller functions">
+			<param name="Local" value="GPIB_Dev_Contr_Func_Descr.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="device functions">
+			<param name="Local" value="Device_Functions.html">
+			</OBJECT>		
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="functions">
+			<param name="Local" value="Tradit_GPIB_Func_Descr.html">
+			</OBJECT>		
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="hardware compatible with LabVIEW">
+			<param name="Local" value="Tradit_GPIB_Func_Descr.html">
+			</OBJECT>
+</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GPIB Clear">
+		<param name="Local" value="GPIB_Clear.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GPIB Initialization">
+		<param name="Local" value="GPIB_Initialization.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GPIB Misc">
+		<param name="Local" value="GPIB_Misc.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GPIB Read">
+		<param name="Local" value="GPIB_Read.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GPIB Serial Poll">
+		<param name="Local" value="GPIB_Serial_Poll.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GPIB Status">
+		<param name="Local" value="GPIB_Status.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GPIB Trigger">
+		<param name="Local" value="GPIB_Trigger.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GPIB Wait">
+		<param name="Local" value="GPIB_Wait.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GPIB Write">
+		<param name="Local" value="GPIB_Write.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="gts (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#gts">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Instrument Drivers VIs">
+		<param name="Local" value="Instrument_Driver_VIs.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Instrument I/O VIs and functions">
+		<param name="Local" value="Inst_I_O_VI_and_Func_Descr.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Interface Specific functions">
+		<param name="Local" value="Interface_Spec_Func_Descr.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ist (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#ist">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="llo (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#llo">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="loc (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#loc">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Local Lockout (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#llo">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Low Level Register Access functions">
+		<param name="Local" value="Low_Level_Reg_Acc_Fun_Desc.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="MakeAddr">
+		<param name="Local" value="MakeAddr.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Measurement I/O VIs and functions">
+		<param name="Local" value="NI_Meas_VIs_Func.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="message">
+		<param name="See Also" value="message">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="GPIB multiline interface">
+			<param name="Local" value="Multiline_Interface_Mess.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="multiline interface messages">
+		<param name="Local" value="Multiline_Interface_Mess.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="off (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#off">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Parallel Poll Configure (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#ppc">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Parallel Poll Unconfigure (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#ppu">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="parallel port">
+		<param name="See Also" value="parallel port">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="configuring with VISA">
+			<param name="Local" value="VISA_Serial_Parallel_Ports.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PassControl">
+		<param name="Local" value="PassControl.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Place Controller in Local State (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#loc">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ppc (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#ppc">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PPoll">
+		<param name="Local" value="PPoll.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PPollConfig">
+		<param name="Local" value="PPollConfig.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PPollUnconfig">
+		<param name="Local" value="PPollUnconfig.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ppu (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#ppu">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Radians per Second to RPM">
+		<param name="Local" value="radian_s_to_rpm.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Radians to Degrees">
+		<param name="Local" value="radians_to_degrees.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="RcvRespMsg">
+		<param name="Local" value="RcvRespMsg.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ReadStatus">
+		<param name="Local" value="read_status_gpib.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Receive">
+		<param name="Local" value="Receive.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ReceiveSetup">
+		<param name="Local" value="ReceiveSetup.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Register Access functions">
+		<param name="Local" value="High_Level_Reg_Acc_Func.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Release or Request System Control (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#rsc">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Request Service and/or Set the Serial Poll Status Byte (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#rsv">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ResetSys">
+		<param name="Local" value="ResetSys.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="RPM to Radians per Second">
+		<param name="Local" value="rpm_to_radian_s.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="rpp (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#rpp">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="rsc (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#rsc">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="rsv (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#rsv">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Scaling VIs">
+		<param name="Local" value="scaling_palette.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Select Event Type">
+		<param name="Local" value="Select_Event_Type.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Send">
+		<param name="See Also" value="Send">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="GPIB">
+			<param name="Local" value="Send.html">
+			</OBJECT>
+	</UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Send IEEE 488 Commands (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#cmd">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Send Interface Clear (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#sic">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SendCmds">
+		<param name="Local" value="SendCmds.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SendDataBytes">
+		<param name="Local" value="SendDataBytes.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SendIFC">
+		<param name="Local" value="SendIFC.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SendList">
+		<param name="Local" value="SendList.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SendLLO">
+		<param name="Local" value="SendLLO.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SendSetup">
+		<param name="Local" value="SendSetup.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="serial port">
+		<param name="See Also" value="serial port">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="configuring with VISA">
+			<param name="Local" value="VISA_Serial_Parallel_Ports.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Serial VIs and functions">
+		<param name="Local" value="Serial_Port_VI_Descr.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Set DMA Mode or Programmed I/O Mode (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#dma">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Set Individual Status Bit (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#ist">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SetRWLS">
+		<param name="Local" value="SetRWLS.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SetTimeOut">
+		<param name="Local" value="SetTimeOut.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="sic (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#sic">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="sre (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#sre">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Take Controller Offline (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#off">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="TestSRQ">
+		<param name="Local" value="TestSRQ.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="TestSys">
+		<param name="Local" value="TestSys.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Trigger">
+		<param name="Local" value="Trigger.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="TriggerList">
+		<param name="Local" value="TriggerList.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Unassert or Assert Remote Enable (controller function)">
+		<param name="Local" value="Controller_Functions_1.html#sre">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="USB">
+		<param name="See Also" value="USB">
+		</OBJECT>
+	<UL>		
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Interrupt VI">
+			<param name="Local" value="VISA_Get_USB_Interupt.html">
+			</OBJECT>		
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VISA VI and functions">
+			<param name="Local" value="VISA_USB.html">
+			</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA">
+		<param name="See Also" value="VISA">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="configuring parallel ports">
+			<param name="Local" value="VISA_Serial_Parallel_Ports.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="configuring serial ports">
+			<param name="Local" value="VISA_Serial_Parallel_Ports.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="events">
+			<param name="Local" value="VISA_Events.html">
+			</OBJECT>		
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="functions">
+			<param name="Local" value="VISA_Lib_Ref_Func_Descr.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="resource name control">
+			<param name="Local" value="VISA_Resource_Name_generic.html">
+			</OBJECT>		
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VIs">
+			<param name="Local" value="VISA_Lib_Ref_Func_Descr.html">
+			</OBJECT>
+</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Advanced VIs and functions">
+		<param name="Local" value="VISA_Advanced_Subpalette.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Assert Interrupt Signal">
+		<param name="Local" value="VISA_Assert_Interrupt_Sig.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Assert Trigger">
+		<param name="Local" value="VISA_Assert_Trigger.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Assert Utility Signal">
+		<param name="Local" value="VISA_Assert_Utility_Signal.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Bytes at Serial Port">
+		<param name="Local" value="VISA_Bytes_at_Serial_Port.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Clear">
+		<param name="Local" value="VISA_Clear.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Close">
+		<param name="Local" value="VISA_Close.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Configure Serial Port">
+		<param name="Local" value="VISA_Configure_Serial_Port.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Disable Event">
+		<param name="Local" value="VISA_Disable_Event.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Discard Events">
+		<param name="Local" value="VISA_Discard_Events.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Enable Event">
+		<param name="Local" value="VISA_Enable_Event.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Find Resource">
+		<param name="Local" value="VISA_Find_Resource.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Flush I/O Buffer">
+		<param name="Local" value="VISA_Flush_I_O_Buffer.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Get USB Interrupt Data">
+		<param name="Local" value="VISA_Get_USB_Interupt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA GPIB Command">
+		<param name="Local" value="VISA_GPIB_Command.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA GPIB Control ATN">
+		<param name="Local" value="VISA_GPIB_Control_ATN.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA GPIB Control REN">
+		<param name="Local" value="VISA_GPIB_Control_REN.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA GPIB Pass Control">
+		<param name="Local" value="VISA_GPIB_Pass_Control.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA GPIB Send IFC">
+		<param name="Local" value="VISA_GPIB_Send_IFC.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA In 16">
+		<param name="Local" value="VISA_In16.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA In 32">
+		<param name="Local" value="VISA_In32.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA In 64">
+		<param name="Local" value="VISA_In64.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA In 8">
+		<param name="Local" value="VISA_In8.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Interface Specific functions">
+		<param name="Local" value="Interface_Spec_Func_Descr.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Lock Async">
+		<param name="Local" value="VISA_Lock_Async.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Low Level Register Access functions">
+		<param name="Local" value="Low_Level_Reg_Acc_Fun_Desc.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Map Address">
+		<param name="Local" value="VISA_Map_Address.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Map Trigger">
+		<param name="Local" value="VISA_Map_Trigger.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Memory Allocation">
+		<param name="Local" value="VISA_Memory_Allocation.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Memory Allocation Ex">
+		<param name="Local" value="VISA_Memory_Allocation_Ex.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Memory Free">
+		<param name="Local" value="VISA_Memory_Free.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Move">
+		<param name="Local" value="VISA_Move.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Move In 16">
+		<param name="Local" value="VISA_Move_In16.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Move In 32">
+		<param name="Local" value="VISA_Move_In32.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Move In 64">
+		<param name="Local" value="VISA_Move_In64.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Move In 8">
+		<param name="Local" value="VISA_Move_In8.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Move Out 16">
+		<param name="Local" value="VISA_Move_Out16.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Move Out 32">
+		<param name="Local" value="VISA_Move_Out32.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Move Out 64">
+		<param name="Local" value="VISA_Move_Out64.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Move Out 8">
+		<param name="Local" value="VISA_Move_Out8.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Open">
+		<param name="Local" value="VISA_Open.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Out 16">
+		<param name="Local" value="VISA_Out16.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Out 32">
+		<param name="Local" value="VISA_Out32.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Out 64">
+		<param name="Local" value="VISA_Out64.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Out 8">
+		<param name="Local" value="VISA_Out8.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Peek 16">
+		<param name="Local" value="VISA_Peek16.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Peek 32">
+		<param name="Local" value="VISA_Peek32.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Peek 64">
+		<param name="Local" value="VISA_Peek64.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Peek 8">
+		<param name="Local" value="VISA_Peek8.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Poke 16">
+		<param name="Local" value="VISA_Poke16.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Poke 32">
+		<param name="Local" value="VISA_Poke32.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Poke 64">
+		<param name="Local" value="VISA_Poke64.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Poke 8">
+		<param name="Local" value="VISA_Poke8.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Property Node">
+		<param name="Local" value="property_node_visa.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Read">
+		<param name="Local" value="VISA_Read.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Read STB">
+		<param name="Local" value="VISA_Read_STB.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Read To File">
+		<param name="Local" value="VISA_Read_To_File.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Register Access functions">
+		<param name="Local" value="High_Level_Reg_Acc_Func.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA resource name control">
+		<param name="Local" value="VISA_Resource_Name_generic.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Serial Break">
+		<param name="Local" value="VISA_Serial_Break.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Set I/O Buffer Size">
+		<param name="Local" value="VISA_Set_I_O_Buffer_Size.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Set Timeout">
+		<param name="Local" value="VISA_Set_Timeout.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Unlock">
+		<param name="Local" value="VISA_Unlock.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Unmap Address">
+		<param name="Local" value="VISA_Unmap_Address.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Unmap Trigger">
+		<param name="Local" value="VISA_Unmap_Trigger.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA USB Control In">
+		<param name="Local" value="VISA_USB_Control_In.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA USB Control Out">
+		<param name="Local" value="VISA_USB_Control_Out.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA USB VI and functions">
+		<param name="Local" value="VISA_USB.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA VXI Cmd or Query">
+		<param name="Local" value="VISA_VXI_Cmd_or_Query.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Wait on Event">
+		<param name="Local" value="VISA_Wait_On_Event.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Write">
+		<param name="Local" value="VISA_Write.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA Write From File">
+		<param name="Local" value="VISA_Write_From_File.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Wait for GPIB RQS">
+		<param name="Local" value="Wait_for_GPIB_RQS.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Wait for RQS">
+		<param name="Local" value="Wait_for_RQS.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="WaitSRQ">
+		<param name="Local" value="WaitSRQ.html">
+		</OBJECT>
+
+</UL>
+</BODY>
+</HTML>

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4200Estructureshlp -->
+
+<title>Determining When to Use Sequence Structures</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+
+<h1>Determining When to Use Sequence Structures</h1>
+
+<p><a href="../lvconcepts/sequence_structures_concepts.html">Sequence structures</a> guarantee the order of execution and prohibit parallel operations. For example, asynchronous tasks that use I/O devices, such as PXI, GPIB, serial ports, and DAQ devices, can run concurrently with other operations if sequence structures do not prevent them from doing so.</p>
+<p>In these cases, you may need to take advantage of the inherent parallelism in LabVIEW. Avoid overusing sequence structures in one of the following ways:</p>
+				<ul><li>When you need to control the execution order, consider establishing data dependency between nodes. For example, you can use <a href="../lvconcepts/Block_Diagram_Data_Flow.html#Flow-Through_Parameters">flow-through parameters</a> such as <a href="../lvconcepts/Error_Checking_and_Error_Handling.html">error I/O</a> to control the execution order.</li>
+				<li>Use a <a href="../glang/Case_Structure.html">Case</a> structure and a <a href="../glang/While_Loop.html">While Loop</a>. You cannot update an indicator from multiple frames of the sequence structure, as shown in the following illustration.<br><br>
+				<img src="loc_bd_seqstatus.gif"><br>
+					<br>In the previous block diagram, a VI used in a test application has a <strong>Status</strong> indicator that displays the name of the current test in progress. If each test is a subVI called from a different frame, you cannot update the indicator from each frame, as shown by the broken wire in the <a href="../glang/Flat_Sequence.html">Stacked Sequence</a> structure. Because all frames of a Stacked Sequence structure execute before any data passes out of the structure, only one frame can assign a value to the <strong>Status</strong> indicator.<br>
+<br>Instead, use a Case structure and a While Loop, as shown in the following block diagram.<br><br>
+				<img src="loc_bd_casestatus.gif">
+				<br>Each case in the Case structure is equivalent to a sequence structure frame. Each iteration of the While Loop executes the next case. The <strong>Status</strong> indicator displays the status of the VI for each case. Because data passes out of the structure after each case executes, the <strong>Status</strong> indicator is updated in the case before the one that calls the corresponding subVI.<br>
+				<br>Unlike a sequence structure, a Case structure can pass data to end the While Loop during any case. For example, if an error occurs while running the first test, the Case structure can pass FALSE to the conditional terminal to end the loop. However, a sequence structure must execute all its frames even if an error occurs.
+				</li></ul>
+
+</body>
+</html>

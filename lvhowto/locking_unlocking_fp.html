@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 9800Einstdrvrhlp -->
+
+<title>Locking and Unlocking Remote Front Panels</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Locking and Unlocking Remote Front Panels</h1>
+
+<p class="Body">You can lock and unlock a front panel that a client views remotely so the client cannot or can change the values of the front panel controls.</p>
+
+<p class="Body">Right-click anywhere on the front panel of the running VI and select <strong>Lock Control</strong> to lock a front panel that a client views remotely. When you lock a front panel that clients view remotely, LabVIEW <!--begin child=lvprop//VI_LockRmt_PnlCtrl.html-->queues any requests from clients to control the front panel.<!--end child=lvprop//VI_LockRmt_PnlCtrl.html--></p>
+
+<p class="Body">You also can use the <a href="../lvprop/VI_LockRmt_PnlCtrl.html">Remote Panel:Lock Control</a> method to lock control of a remote front panel programmatically. </p>
+
+<p class="Body">Right-click anywhere on the front panel of the running VI and select <strong>Unlock Control</strong> to allow a client viewing the front panel remotely to change the value of front panel controls. When you unlock a front panel that clients view remotely, LabVIEW <!--begin child=lvprop//VI_Unlock_Rmt_PnlCtrl.html-->grants control to the next client in the queue. If no clients are in the queue, the method unlocks the front panel.<!--end child=lvprop//VI_Unlock_Rmt_PnlCtrl.html--></p>
+
+<p class="Body">You also can use the <a href="../lvprop/VI_Unlock_Rmt_PnlCtrl.html">Remote Panel:Unlock Control</a> method to unlock control of a remote front panel programmatically. </p>
+
+
+
+
+
+</body>
+</html>

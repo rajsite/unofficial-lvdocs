@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 6000Eviserverhlp -->
+
+<title>Creating Properties and Methods with the Class Browser Window</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Creating Properties and Methods with the Class Browser Window</h1>
+
+<p class="Body">You can use the <a href="../lvdialog/Class_Browser.html">Class Browser</a> window to select an object library and create a new property or method.</p>
+
+<p class="Body">Complete the following steps to create a new property or method using the <strong>Class Browser</strong> window.</p>
+<ol>
+    <li>Select <strong>View&#0187;Class Browser</strong> to display the <strong>Class Browser</strong> window. </li>
+    <li>From the <strong>Object library</strong> pull-down menu, select a library.</li>
+</ol>	 
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;<span class="Platform">(Windows)</span> To select a .NET or ActiveX library, you must select <strong>.NET&#0187;Select Assemblies</strong> or <strong>ActiveX&#0187;Select Type Libraries</strong> to display the <a href="../lvdialog/Select_Assemblies.html">Select Assemblies</a> or <a href="../lvdialog/Select_Type_Libraries.html">Select Type Libraries</a> dialog box, respectively. Place a checkmark in the checkbox for the assembly or library you want and click the <strong>OK</strong> button to return to the <strong>Class Browser</strong> window.</td></tr></table>
+<ol>
+<li value="3">Select a class from the <strong>Class</strong> pull-down menu. Use the following buttons to navigate the classes.
+	<ul>
+		<li><img src="noloc_env_view_style_icon.gif">&nbsp;&nbsp;Click the <strong>Select View </strong> button to toggle between an alphabetical view and a hierarchical view of the items in the <strong>Class</strong> pull-down menu and the <strong>Properties and Methods</strong> list.</li>
+		<li><img src="noloc_env_search_icon.gif">&nbsp;&nbsp;Click the <strong>Search </strong> button to launch the <a href="../lvdialog/Class_Browser_Search.html">Class Browser Search</a> dialog box.</li>
+	</ul></li>
+	<li>From the <strong>Properties and Methods</strong> list in the <strong>Class Browser</strong> window, select a property or method. Dottable properties have a blue glyph next to the property name in this list. To <a href="../lvhowto/Dotted_Properties.html">create a dotted property</a>, double-click on a dottable property. The property or method you select appears in the <strong>Selected property or method</strong> box.</li></ol> 
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&#160;&#160;<a href="../lvconcepts/Creating_Classes.html">LabVIEW classes</a> do not support <a href="../glang/Invoke_Node.html">Invoke Nodes</a>. LabVIEW class methods are member VIs. If you use the <strong>Create</strong> button or if you drag a method directly to the block diagram, a subVI appears. Methods in LabVIEW classes appear as subVIs rather than Invoke Nodes. You cannot define LabVIEW class properties in this version of LabVIEW.</td></tr></table>
+
+<ol><li value="5">Click the <strong>Create</strong> button or the <strong>Create Write</strong> button to attach a node with the selected property or method to your mouse cursor and add the node to the block diagram. The <strong>Create</strong> button creates a property for reading or a method. This button dims when you select a write-only property. To create a property for writing, click the <strong>Create Write</strong> button. The <strong>Create Write</strong> button dims when you select a method or read-only property. You also can drag a property or method from the <strong>Properties and Methods</strong> list directly to the block diagram.</li>
+    <li>Repeat steps 2 through 5 for any other properties and methods you want to create and add to the block diagram. </li>
+    </ol>
+
+
+
+</body>
+</html>

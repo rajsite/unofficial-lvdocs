@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 6000Eviserverhlp -->
+
+<title>Creating a Strictly Typed VI Reference to Call VIs Dynamically</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Creating a Strictly Typed VI Reference to Call VIs Dynamically</h1>
+<p class="Body">Create a <a href="../lvconcepts/Dynamic_LoadCall_VIs.html#Call_By_Reference_Nodes_and_Strictly_Typed_VI_Refnums">strictly typed VI reference</a>, a reference with a <a href="Creating_Type_Defs.html">strict type definition</a>, to call a VI dynamically using either the <a href="../glang/Call_By_Reference_Node.html">Call By Reference</a> node or the <a href="../glang/start_asynchronous_call.html">Start Asynchronous Call</a> node. <!--begin parent= ../lvconcepts/Programmatically_Controlling_VIs.xml -->The strictly typed VI reference identifies both the VI you are calling and its connector pane.<!--end parent= ../lvconcepts/Programmatically_Controlling_VIs.xml --></p>
+
+<p class="Body">Complete the following steps to create a strictly typed VI reference to use with the Call By Reference node or the Start Asynchronous Call node.</p> 
+<ol>
+<li>Add the <a href="../glang/Open_VI_Reference.html">Open VI Reference</a> function to the block diagram.
+<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object708);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object708);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li>
+
+<li>Wire the path to the VI you want to use to create the strictly typed reference to the <strong>vi path</strong> input of the Open VI Reference function.</li>
+
+<li>Right-click the <strong>type specifier VI Refnum</strong> input of the Open VI Reference function and select <strong>Create&#0187;Constant</strong> from the shortcut menu.</li>
+
+<li>Right-click the <strong>type specifier VI Refnum</strong> constant, select <strong>Select VI Server Class&#0187;Browse</strong>, and select a VI from the file dialog box that appears. You also can select the VI icon in the upper right corner of a front panel window or block diagram window and drag the icon to the <strong>type specifier VI Refnum</strong> constant. After you select a VI, a strikeout icon (<img src="noloc_env_strikeout2.gif" alt="" border="0">) indicating that the reference is strictly typed appears in the upper left corner of the reference.</li>
+</ol>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;The connector pane of the VI you select must match the connector pane of the VI whose path you wired to the <strong>vi path</strong> input of the Open VI Reference function. You can use the same VI for both inputs.</td></tr></table>
+
+<p>Now the <strong>vi reference</strong> output of the Open VI Reference function is a strictly typed VI reference.</p>
+
+
+
+
+</body>
+</html>

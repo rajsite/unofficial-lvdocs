@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+
+<title>Automatically Updating Palette Sets</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Automatically Updating Palette Sets
+</h1>
+<p class="Body">LabVIEW automatically updates the palettes linked to an LLB as you add files to or remove files from the LLB. You can set a palette to automatically update if you add new files to or remove files from a directory. 
+</p>
+<p class="Body">Complete the following steps to set a <span class="Monospace">.mnu</span> file to update based on the contents of a directory.
+</p>
+<ol>
+<li>Select <strong>Tools&#0187;Advanced&#0187;Edit Palette Set</strong> to display the <a href="../lvdialog/Edit_Ctl_Fctn_Palettes_DB.html">Edit Controls and Functions Palette Set</a> dialog box.
+</li>
+<li>Right-click an icon on the palette and select <strong>Synchronize With Directory</strong> from the shortcut menu.
+</li>
+<li>Navigate to and select the directory with which you want the palette set to synchronize. Although National Instruments recommends you have the <span class="Monospace">.mnu</span> file in the same directory, you can select any directory with which to synchronize the palette set.
+</li>
+</ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;If you add a subdirectory or <span class="Monospace">.llb</span> file to the directory with which you synchronize and the subdirectory or filename begins with an underscore (_), the contents of the subdirectory or file do not appear on the palette.</td></tr></table>
+
+<p class="Body"><!--begin_child id = UN tag="displaysync"-->If an item is synchronized to a directory, you can display the path to the source directory by right-clicking the item and selecting  <strong>Display Synchronization Path</strong> from the shortcut menu.<!--end_child id = UN tag="displaysync"--></p>
+
+<p class="Body">If an item is synchronized with a directory, you cannot delete the item from the palette. <!--begin_child id = UN tag="hidesync"-->To hide an item that is synchronized with a directory, right-click the item and select <strong>Hide Synchronized Item</strong> from the shortcut menu.<!--end_child id = UN tag="hidesync"--> Items that are hidden do not appear on the palettes and are not included when you <a href="Searching_for_Controls_VIs.html">search the palettes</a>.</p>
+
+
+</body>
+</html>

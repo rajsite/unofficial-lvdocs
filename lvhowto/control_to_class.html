@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+
+<title>Converting the Contents of a Control to a LabVIEW Class</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Converting the Contents of a Control to a LabVIEW Class</h1>
+<p class="Body">You can create LabVIEW classes from existing controls and type definitions. Complete the following steps to convert the contents of a control or type definition to a LabVIEW class.</p>
+<ol><li>Open a LabVIEW project containing an existing custom control or type definition.</li>
+<li>Right-click the control or type definition in the <a href="../lvconcepts/Using_LabVIEW_Projects.html#Project_Explorer_Window">Project Explorer</a> window and select <strong>Convert Contents of Control to Class</strong> from the shortcut menu. LabVIEW creates a class with a private data control. The new class retains the name of the control that you create it from.</li>
+</ol>
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"/></td><td><strong>Note</strong>&#160;&#160;LabVIEW adds the new class to the front panel of the control and continues to use the control.</td></tr></table>
+<p class="Body">While LabVIEW leaves the control from which you create a class in the <strong>Project Explorer</strong> window, LabVIEW modifies the control on disk. Because LabVIEW updates the control to use the LabVIEW class, all references to the control might be broken. You need to provide accessors for the private data for those VIs to use or move those VIs into the newly created class.</p>
+
+
+</body>
+</html>

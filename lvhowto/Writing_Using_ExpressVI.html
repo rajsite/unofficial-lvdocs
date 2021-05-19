@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 5600Efileiohlp -->
+
+<title>Writing Data to LabVIEW Measurement Files</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Writing Data to LabVIEW Measurement Files</h1>
+
+<p class="Body">Complete the following steps to use the <a href="../lvexpress/Write_LV_Measurement_File.html">Write To Measurement File</a> Express VI to write numeric or waveform data to a LabVIEW measurement file. Use the <a href="../lvexpress/Read_LV_Measurement_File.html">Read From Measurement File</a> Express VI to <a href="Reading_Using_ExpressVI.html">read data from</a> a measurement file.</p>
+<ol>
+<li>Add the Write To Measurement File Express VI to the block diagram.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object2027);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object2027);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN>
+<br><br>
+Notice that the <strong>Filename</strong> text box in the <strong>Configure Write To Measurement File</strong> dialog box displays the full path to the output file.</li>
+<li>In the <strong>File Format</strong> section, select the format for the file to which you want to write data.</li>
+<li>In the <strong>Segment Headers</strong> section, select the header option for the file.</li>
+<li>Configure the <strong>X Value Columns</strong> section if you selected <strong>Text (LVM)</strong> in the <strong>File Format</strong> section and you plan to view the data in a spreadsheet or text editor.</li>
+<li>Configure the remaining sections in the <strong>Configure Write To Measurement File</strong> dialog box and click the <strong>OK</strong> button to save the configuration and close the dialog box.
+
+<table class="Borderless">
+<tr><td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;LabVIEW automatically generates column titles from the data forms that are wired to this VI. To change the column titles, use the <a href="../lvexpress/set_ddt_attributes.html">Set Dynamic Data Attributes</a> Express VI.</td></tr>
+</table></li>
+<li>Add the <a href="../lvexpress/Simulate_Signal.html">Simulate Signal</a> Express VI to the block diagram and configure the VI.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object1938);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object1938);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li>
+<li>Wire the output of the Simulate Signal Express VI to the <strong>Signals</strong> input of the Write To Measurement File Express VI.</li>
+<li><a href="Setting_Up_Error_I_O_in_VI.html">Wire all error in and error out terminals</a> on the block diagram.</li>
+<li>Run the VI. The VI writes the data from the Simulate Signal Express VI to the file specified in the <strong>Filename</strong> section of the <strong>Configure Write To Measurement File</strong> dialog box.</li>
+<li>To view the data you saved, open the output file with a spreadsheet or word processing application if it is a <span class="Monospace">.lvm</span> file. Use the file path displayed in the <strong>Filename</strong> section of the <strong>Configure Write To Measurement File</strong> dialog box to access the file.</li>
+</ol>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Solving PDEs in LabVIEW</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-D8290056-F8DE-4A64-9B64-427C00B1D17F" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Solving PDEs in LabVIEW</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 Use the <span>Partial Differential Equations VIs</span> to solve partial differential equations (PDE), including the Helmholtz, heat, and wave equations. The following table provides
+            details about these equations. 
+            	 
+         </p> 
+         	 
+         <table>
+            <tr>
+               <td><img alt="Note" src="note.gif"></td>
+               <td><a name="GUID-D8290056-F8DE-4A64-9B64-427C00B1D17F__GUID-5D671245-F628-45DF-BDD8-E0E456352488" shape="rect">
+                     <!-- --></a><span class="notetitle">Note&nbsp;&nbsp;</span> The <span>Partial Differential Equations VIs</span> are available only in the LabVIEW Full and Professional Development Systems. 
+                  	 
+               </td>
+            </tr>
+         </table> 
+         	 <a name="GUID-D8290056-F8DE-4A64-9B64-427C00B1D17F__TABLE_A000238DD53441C2BC252E61D4145826" shape="rect">
+            <!-- --></a><table class="rowsep colsep frametop framebottom frameleft frameright  " id="GUID-D8290056-F8DE-4A64-9B64-427C00B1D17F__TABLE_A000238DD53441C2BC252E61D4145826">
+            <thead align="left">
+               <tr>
+                  <th align="center" valign="bottom">Type of Equation 
+                     				
+                  </th>
+                  <th align="center" valign="bottom">Dimension and Domain 
+                     				
+                  </th>
+                  <th align="center" valign="bottom">Boundary Condition 
+                     				
+                  </th>
+                  <th align="center" valign="bottom">Method 
+                     				
+                  </th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td align="left">Helmholtz equation 
+                     				
+                  </td>
+                  <td align="left">The equation is two-dimensional and defined in a rectangular or polygonal domain. 
+                     				
+                  </td>
+                  <td align="left">The polygonal domain supports only the Dirichlet condition. The rectangular domain supports the Dirichlet and Neumann conditions.
+                     
+                     				
+                  </td>
+                  <td align="left">The finite element method solves the equation defined on the polygonal domain. The finite difference method solves the equation
+                     defined on the rectangular domain. 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left">Heat equation 
+                     				
+                  </td>
+                  <td align="left">The equation is one-dimensional or two-dimensional and defined on the rectangular domain. 
+                     				
+                  </td>
+                  <td align="left">The equation supports the Dirichlet and Neumann conditions. 
+                     				
+                  </td>
+                  <td align="left">The finite difference method solves this equation. 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left">Wave equation 
+                     				
+                  </td>
+                  <td align="left">The equation is one-dimensional or two-dimensional and defined on the rectangular domain. 
+                     				
+                  </td>
+                  <td align="left">The equation supports the Dirichlet and Neumann conditions. 
+                     				
+                  </td>
+                  <td align="left">The finite difference method solves this equation. 
+                     				
+                  </td>
+               </tr>
+            </tbody>
+         </table> 
+         	 
+         <p>The following block diagram examples show a common order for solving PDEs with the VIs. While you can add the VIs to the block
+            diagram in the order they appear in the two examples, you do not need to follow that order when you use the PDE VIs. The following
+            list provides an example of an order you can use when you want to solve PDEs with the VIs. 
+            	 
+         </p> 
+         	 <a name="GUID-D8290056-F8DE-4A64-9B64-427C00B1D17F__UL_52E8D99A437342DFA524EB7237A630FC" shape="rect">
+            <!-- --></a><ul id="GUID-D8290056-F8DE-4A64-9B64-427C00B1D17F__UL_52E8D99A437342DFA524EB7237A630FC">
+            <li><a name="GUID-D8290056-F8DE-4A64-9B64-427C00B1D17F__LI_25F12E47B7444B0594D3297F53BCC027" shape="rect">
+                  <!-- --></a>Define PDE 
+               		
+            </li>
+            <li><a name="GUID-D8290056-F8DE-4A64-9B64-427C00B1D17F__LI_F22DCAB897C749DD98E5C19647CFB858" shape="rect">
+                  <!-- --></a>Define PDE Domain 
+               		
+            </li>
+            <li><a name="GUID-D8290056-F8DE-4A64-9B64-427C00B1D17F__LI_1BA125865AAC49218EF0D2EC1BD647EE" shape="rect">
+                  <!-- --></a>Define PDE Boundary Condition 
+               		
+            </li>
+            <li><a name="GUID-D8290056-F8DE-4A64-9B64-427C00B1D17F__LI_668C24A1AB6A4B7D93CBF15A086DB071" shape="rect">
+                  <!-- --></a>Define PDE Initial Condition 
+               		
+            </li>
+            <li><a name="GUID-D8290056-F8DE-4A64-9B64-427C00B1D17F__LI_43B6DD265B554E22B6F44189C45EB6EA" shape="rect">
+                  <!-- --></a>PDE Solver 
+               		
+            </li>
+            <li><a name="GUID-D8290056-F8DE-4A64-9B64-427C00B1D17F__LI_59F12D10F87043FAB2D83ECEF8AA55DA" shape="rect">
+                  <!-- --></a>PDE Rendering 
+               		
+            </li>
+         </ul> 
+         	 
+         <p>The following block diagram illustrates an example of how to solve a 1D wave equation. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-D8290056-F8DE-4A64-9B64-427C00B1D17F__IMAGE_1EC0B3F2B43F4E70BF8082D551A0B8F5" shape="rect">
+            <!-- --></a><img id="GUID-D8290056-F8DE-4A64-9B64-427C00B1D17F__IMAGE_1EC0B3F2B43F4E70BF8082D551A0B8F5" src="GUID-9E3AA214-E683-4F70-B41B-F06A89513075-help-web.png"><br clear="none"> 
+         	 
+         <table>
+            <tr>
+               <td><img alt="Note" src="note.gif"></td>
+               <td><a name="GUID-D8290056-F8DE-4A64-9B64-427C00B1D17F__GUID-2A77468F-994D-45A1-B1D4-61EA8D95EAFC" shape="rect">
+                     <!-- --></a><span class="notetitle">Note&nbsp;&nbsp;</span> The polymorphic instance you choose must match the type of equation you need to solve. The type of instance also needs to
+                  be consistent from step to step. Otherwise, LabVIEW returns a type conflict error. 
+                  	 
+               </td>
+            </tr>
+         </table> 
+         	 
+         <p>The following block diagram illustrates an example of how to solve a Helmholtz equation in a loop. The coefficient, the right
+            side of the equation, and the domain of the equation do not change during the execution. While you do not need to repeatedly
+            define the equation and domain in the loop, the boundary values vary over time. Therefore, you only need to place the definition
+            of the boundary condition in the loop. In the following block diagram example, a shift register of a While Loop implements
+            the PDE class to transfer data from one iteration to the next. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-D8290056-F8DE-4A64-9B64-427C00B1D17F__IMAGE_224B38523EBA4967AFE716C5289B44E3" shape="rect">
+            <!-- --></a><img id="GUID-D8290056-F8DE-4A64-9B64-427C00B1D17F__IMAGE_224B38523EBA4967AFE716C5289B44E3" src="GUID-E99E550D-BEE8-4D84-B230-3FAAC4DA1865-help-web.png"><br clear="none"> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Solving_PDEs.html" shape="rect">Solving Partial Differential Equations</a></div>
+         </div>
+         <div class="relinfo"><strong>Related information</strong><br clear="none"><div><a href="../gmath/PDE_palette.html" shape="rect">Partial Differential Equations VIs</a></div>
+            <div><a href="../gmath/Define_PDE.html" shape="rect">Define PDE VI</a></div>
+            <div><a href="../gmath/Define_PDE_Domain.html" shape="rect">Define PDE Domain VI</a></div>
+            <div><a href="../gmath/Define_PDE_Boundary.html" shape="rect">Define PDE Boundary Condition VI</a></div>
+            <div><a href="../gmath/Define_PDE_Initial.html" shape="rect">Define PDE Initial Condition VI</a></div>
+            <div><a href="../gmath/PDE_Solver.html" shape="rect">PDE Solver VI</a></div>
+            <div><a href="../gmath/PDE_Rendering.html" shape="rect">PDE Rendering VI</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

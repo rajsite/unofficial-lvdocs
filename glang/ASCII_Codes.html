@@ -1,0 +1,957 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Original filename: ASCII.txt -->
+<title>ASCII Codes</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+
+<script src="common.js" type="text/javascript"></script>
+<script src="dynamicjumps.js" type="text/javascript"></script>
+
+
+
+
+</head><body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+
+
+<h1>ASCII Codes
+</h1>
+<p><!-- begin parent: ../lvconcepts/Porting_Among_Platforms.html-->
+ASCII encoding is a 7-bit code (from 0 to 127). It contains upper and lowercase English, American English punctuation, base 10 numbers, and a few control codes. The first 32 codes (from 0 to 31) are control codes, which are a set of non-printable control characters used for text formatting.</p>
+
+<p>To represent international characters, single-byte operating systems use an 8-bit extension of ASCII. The lower 128 character codes are identical to ASCII, and the upper 128 are different for each code page. The various international characters reside in the upper 128 character codes. Windows, Linux, and macOS use 8-bit character sets, but they each map differently.<!-- end parent: ../lvconcepts/Porting_Among_Platforms.html--> Because the upper 128 character sets differ between operating systems and languages, these are not displayed here.</p>
+
+
+<table class="Bordered"><tr><th class="Bordered">Dec</th>
+<th class="Bordered">Oct</th>
+<th class="Bordered">Hex</th>
+<th class="Bordered">Ctrl Char</th>
+<th class="Bordered">ASCII</th>
+<th class="Bordered">Msg</th></tr>
+
+<tr><td class="Bordered">0</td>
+<td class="Bordered">000</td>
+<td class="Bordered">00</td>
+<td class="Bordered">CTRL-@</td>
+<td class="Bordered">NUL</td>
+<td class="Bordered">&#8212;</td></tr>
+
+<tr><td class="Bordered">1</td>
+<td class="Bordered">001</td>
+<td class="Bordered">01</td>
+<td class="Bordered">CTRL-A</td>
+<td class="Bordered">SOH</td>
+<td class="Bordered">GTL</td></tr>
+
+<tr><td class="Bordered">2</td>
+<td class="Bordered">002</td>
+<td class="Bordered">02</td>
+<td class="Bordered">CTRL-B</td>
+<td class="Bordered">STX</td>
+<td class="Bordered">&#8212;</td></tr>
+
+<tr><td class="Bordered">3</td>
+<td class="Bordered">003</td>
+<td class="Bordered">03</td>
+<td class="Bordered">CTRL-C</td>
+<td class="Bordered">ETX</td>
+<td class="Bordered">&#8212;</td></tr>
+
+<tr><td class="Bordered">4</td>
+<td class="Bordered">004</td>
+<td class="Bordered">04</td>
+<td class="Bordered">CTRL-D</td>
+<td class="Bordered">EOT</td>
+<td class="Bordered">SDC</td></tr>
+
+<tr><td class="Bordered">5</td>
+<td class="Bordered">005</td>
+<td class="Bordered">05</td>
+<td class="Bordered">CTRL-E</td>
+<td class="Bordered">ENQ</td>
+<td class="Bordered">PPC</td></tr>
+
+<tr><td class="Bordered">6</td>
+<td class="Bordered">006</td>
+<td class="Bordered">06</td>
+<td class="Bordered">CTRL-F</td>
+<td class="Bordered">ACK</td>
+<td class="Bordered">&#8212;</td></tr>
+
+<tr><td class="Bordered">7</td>
+<td class="Bordered">007</td>
+<td class="Bordered">07</td>
+<td class="Bordered">CTRL-G</td>
+<td class="Bordered">BEL</td>
+<td class="Bordered">&#8212;</td></tr>
+
+<tr><td class="Bordered">8</td>
+<td class="Bordered">010</td>
+<td class="Bordered">08</td>
+<td class="Bordered">CTRL-H</td>
+<td class="Bordered">BS</td>
+<td class="Bordered">GET</td></tr>
+
+<tr><td class="Bordered">9</td>
+<td class="Bordered">011</td>
+<td class="Bordered">09</td>
+<td class="Bordered">CTRL-I</td>
+<td class="Bordered">HT</td>
+<td class="Bordered">TCT</td></tr>
+
+<tr><td class="Bordered">10</td>
+<td class="Bordered">012</td>
+<td class="Bordered">0A</td>
+<td class="Bordered">CTRL-J</td>
+<td class="Bordered">LF</td>
+<td class="Bordered">&#8212;</td></tr>
+
+<tr><td class="Bordered">11</td>
+<td class="Bordered">013</td>
+<td class="Bordered">0B</td>
+<td class="Bordered">CTRL-K</td>
+<td class="Bordered">VT</td>
+<td class="Bordered">&#8212;</td></tr>
+
+<tr><td class="Bordered">12</td>
+<td class="Bordered">014</td>
+<td class="Bordered">0C</td>
+<td class="Bordered">CTRL-L</td>
+<td class="Bordered">FF</td>
+<td class="Bordered">&#8212;</td></tr>
+
+<tr><td class="Bordered">13</td>
+<td class="Bordered">015</td>
+<td class="Bordered">0D</td>
+<td class="Bordered">CTRL-M</td>
+<td class="Bordered">CR</td>
+<td class="Bordered">&#8212;</td></tr>
+
+<tr><td class="Bordered">14</td>
+<td class="Bordered">016</td>
+<td class="Bordered">0E</td>
+<td class="Bordered">CTRL-N</td>
+<td class="Bordered">SO</td>
+<td class="Bordered">&#8212;</td></tr>
+
+<tr><td class="Bordered">15</td>
+<td class="Bordered">017</td>
+<td class="Bordered">0F</td>
+<td class="Bordered">CTRL-O</td>
+<td class="Bordered">SI</td>
+<td class="Bordered">&#8212;</td></tr>
+
+<tr><td class="Bordered">16</td>
+<td class="Bordered">020</td>
+<td class="Bordered">10</td>
+<td class="Bordered">CTRL-P</td>
+<td class="Bordered">DLE</td>
+<td class="Bordered">&#8212;</td></tr>
+
+<tr><td class="Bordered">17</td>
+<td class="Bordered">021</td>
+<td class="Bordered">11</td>
+<td class="Bordered">CTRL-Q</td>
+<td class="Bordered">DC1</td>
+<td class="Bordered">LLO</td></tr>
+
+<tr><td class="Bordered">18</td>
+<td class="Bordered">022</td>
+<td class="Bordered">12</td>
+<td class="Bordered">CTRL-R</td>
+<td class="Bordered">DC2</td>
+<td class="Bordered">&#8212;</td></tr>
+
+<tr><td class="Bordered">19</td>
+<td class="Bordered">023</td>
+<td class="Bordered">13</td>
+<td class="Bordered">CTRL-S</td>
+<td class="Bordered">DC3</td>
+<td class="Bordered">&#8212;</td></tr>
+
+<tr><td class="Bordered">20</td>
+<td class="Bordered">024</td>
+<td class="Bordered">14</td>
+<td class="Bordered">CTRL-T</td>
+<td class="Bordered">DC4</td>
+<td class="Bordered">DCL</td></tr>
+
+<tr><td class="Bordered">21</td>
+<td class="Bordered">025</td>
+<td class="Bordered">15</td>
+<td class="Bordered">CTRL-U</td>
+<td class="Bordered">NAK</td>
+<td class="Bordered">PPU</td></tr>
+
+<tr><td class="Bordered">22</td>
+<td class="Bordered">026</td>
+<td class="Bordered">16</td>
+<td class="Bordered">CTRL-V</td>
+<td class="Bordered">SYN</td>
+<td class="Bordered">&#8212;</td></tr>
+
+<tr><td class="Bordered">23</td>
+<td class="Bordered">027</td>
+<td class="Bordered">17</td>
+<td class="Bordered">CTRL-W</td>
+<td class="Bordered">ETB</td>
+<td class="Bordered">&#8212;</td></tr>
+
+<tr><td class="Bordered">24</td>
+<td class="Bordered">030</td>
+<td class="Bordered">18</td>
+<td class="Bordered">CTRL-X</td>
+<td class="Bordered">CAN</td>
+<td class="Bordered">SPE</td></tr>
+
+<tr><td class="Bordered">25</td>
+<td class="Bordered">031</td>
+<td class="Bordered">19</td>
+<td class="Bordered">CTRL-Y</td>
+<td class="Bordered">EM</td>
+<td class="Bordered">SPD</td></tr>
+
+<tr><td class="Bordered">26</td>
+<td class="Bordered">032</td>
+<td class="Bordered">1A</td>
+<td class="Bordered">CTRL-Z</td>
+<td class="Bordered">SUB</td>
+<td class="Bordered">&#8212;</td></tr>
+
+<tr><td class="Bordered">27</td>
+<td class="Bordered">033</td>
+<td class="Bordered">1B</td>
+<td class="Bordered">CTRL-&#91;</td>
+<td class="Bordered">ESC</td>
+<td class="Bordered">&#8212;</td></tr>
+
+<tr><td class="Bordered">28</td>
+<td class="Bordered">034</td>
+<td class="Bordered">1C</td>
+<td class="Bordered">CTRL-&#92;</td>
+<td class="Bordered">FS</td>
+<td class="Bordered">&#8212;</td></tr>
+
+<tr><td class="Bordered">29</td>
+<td class="Bordered">035</td>
+<td class="Bordered">1D</td>
+<td class="Bordered">CTRL-&#93;</td>
+<td class="Bordered">GS</td>
+<td class="Bordered">&#8212;</td></tr>
+
+<tr><td class="Bordered">30</td>
+<td class="Bordered">036</td>
+<td class="Bordered">1E</td>
+<td class="Bordered">CTRL-&#94;</td>
+<td class="Bordered">RS</td>
+<td class="Bordered">&#8212;</td></tr>
+
+<tr><td class="Bordered">31</td>
+<td class="Bordered">037</td>
+<td class="Bordered">1F</td>
+<td class="Bordered">CTRL-&#95;</td>
+<td class="Bordered">US</td>
+<td class="Bordered">&#8212;</td></tr>
+
+<tr><td class="Bordered">32</td>
+<td class="Bordered">040</td>
+<td class="Bordered">20</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">SP</td>
+<td class="Bordered">MLA0</td></tr>
+
+<tr><td class="Bordered">33</td>
+<td class="Bordered">041</td>
+<td class="Bordered">21</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">!</td>
+<td class="Bordered">MLA1</td></tr>
+
+<tr><td class="Bordered">34</td>
+<td class="Bordered">042</td>
+<td class="Bordered">22</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">&quot;</td>
+<td class="Bordered">MLA2</td></tr>
+
+<tr><td class="Bordered">35</td>
+<td class="Bordered">043</td>
+<td class="Bordered">23</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">#</td>
+<td class="Bordered">MLA3</td></tr>
+
+<tr><td class="Bordered">36</td>
+<td class="Bordered">044</td>
+<td class="Bordered">24</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">$</td>
+<td class="Bordered">MLA4</td></tr>
+
+<tr><td class="Bordered">37</td>
+<td class="Bordered">045</td>
+<td class="Bordered">25</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">%</td>
+<td class="Bordered">MLA5</td></tr>
+
+<tr><td class="Bordered">38</td>
+<td class="Bordered">046</td>
+<td class="Bordered">26</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">&amp;</td>
+<td class="Bordered">MLA6</td></tr>
+
+<tr><td class="Bordered">39</td>
+<td class="Bordered">047</td>
+<td class="Bordered">27</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">'</td>
+<td class="Bordered">MLA7</td></tr>
+
+<tr><td class="Bordered">40</td>
+<td class="Bordered">050</td>
+<td class="Bordered">28</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">(</td>
+<td class="Bordered">MLA8</td></tr>
+
+<tr><td class="Bordered">41</td>
+<td class="Bordered">051</td>
+<td class="Bordered">29</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">)</td>
+<td class="Bordered">MLA9</td></tr>
+
+<tr><td class="Bordered">42</td>
+<td class="Bordered">052</td>
+<td class="Bordered">2A</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">*</td>
+<td class="Bordered">MLA10</td></tr>
+
+<tr><td class="Bordered">43</td>
+<td class="Bordered">053</td>
+<td class="Bordered">2B</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">+</td>
+<td class="Bordered">MLA11</td></tr>
+
+<tr><td class="Bordered">44</td>
+<td class="Bordered">054</td>
+<td class="Bordered">2C</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">,</td>
+<td class="Bordered">MLA12</td></tr>
+
+<tr><td class="Bordered">45</td>
+<td class="Bordered">055</td>
+<td class="Bordered">2D</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">&#8211;</td>
+<td class="Bordered">MLA13</td></tr>
+
+<tr><td class="Bordered">46</td>
+<td class="Bordered">056</td>
+<td class="Bordered">2E</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">.</td>
+<td class="Bordered">MLA14</td></tr>
+
+<tr><td class="Bordered">47</td>
+<td class="Bordered">057</td>
+<td class="Bordered">2F</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">/</td>
+<td class="Bordered">MLA15</td></tr>
+
+<tr><td class="Bordered">48</td>
+<td class="Bordered">060</td>
+<td class="Bordered">30</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">0</td>
+<td class="Bordered">MLA16</td></tr>
+
+<tr><td class="Bordered">49</td>
+<td class="Bordered">061</td>
+<td class="Bordered">31</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">1</td>
+<td class="Bordered">MLA17</td></tr>
+
+<tr><td class="Bordered">50</td>
+<td class="Bordered">062</td>
+<td class="Bordered">32</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">2</td>
+<td class="Bordered">MLA18</td></tr>
+
+<tr><td class="Bordered">51</td>
+<td class="Bordered">063</td>
+<td class="Bordered">33</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">3</td>
+<td class="Bordered">MLA19</td></tr>
+
+<tr><td class="Bordered">52</td>
+<td class="Bordered">064</td>
+<td class="Bordered">34</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">4</td>
+<td class="Bordered">MLA20</td></tr>
+
+<tr><td class="Bordered">53</td>
+<td class="Bordered">065</td>
+<td class="Bordered">35</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">5</td>
+<td class="Bordered">MLA21</td></tr>
+
+<tr><td class="Bordered">54</td>
+<td class="Bordered">066</td>
+<td class="Bordered">36</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">6</td>
+<td class="Bordered">MLA22</td></tr>
+
+<tr><td class="Bordered">55</td>
+<td class="Bordered">067</td>
+<td class="Bordered">37</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">7</td>
+<td class="Bordered">MLA23</td></tr>
+
+<tr><td class="Bordered">56</td>
+<td class="Bordered">070</td>
+<td class="Bordered">38</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">8</td>
+<td class="Bordered">MLA24</td></tr>
+
+<tr><td class="Bordered">57</td>
+<td class="Bordered">071</td>
+<td class="Bordered">39</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">9</td>
+<td class="Bordered">MLA25</td></tr>
+
+<tr><td class="Bordered">58</td>
+<td class="Bordered">072</td>
+<td class="Bordered">3A</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">:</td>
+<td class="Bordered">MLA26</td></tr>
+
+<tr><td class="Bordered">59</td>
+<td class="Bordered">073</td>
+<td class="Bordered">3B</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">;</td>
+<td class="Bordered">MLA27</td></tr>
+
+<tr><td class="Bordered">60</td>
+<td class="Bordered">074</td>
+<td class="Bordered">3C</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">&lt;</td>
+<td class="Bordered">MLA28</td></tr>
+
+<tr><td class="Bordered">61</td>
+<td class="Bordered">075</td>
+<td class="Bordered">3D</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">=</td>
+<td class="Bordered">MLA29</td></tr>
+
+<tr><td class="Bordered">62</td>
+<td class="Bordered">076</td>
+<td class="Bordered">3E</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">&gt;</td>
+<td class="Bordered">MLA30</td></tr>
+
+<tr><td class="Bordered">63</td>
+<td class="Bordered">077</td>
+<td class="Bordered">3F</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">?</td>
+<td class="Bordered">UNL</td></tr>
+
+<tr><td class="Bordered">64</td>
+<td class="Bordered">100</td>
+<td class="Bordered">40</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">@</td>
+<td class="Bordered">MTA0</td></tr>
+
+<tr><td class="Bordered">65</td>
+<td class="Bordered">101</td>
+<td class="Bordered">41</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">A</td>
+<td class="Bordered">MTA1</td></tr>
+
+<tr><td class="Bordered">66</td>
+<td class="Bordered">102</td>
+<td class="Bordered">42</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">B</td>
+<td class="Bordered">MTA2</td></tr>
+
+<tr><td class="Bordered">67</td>
+<td class="Bordered">103</td>
+<td class="Bordered">43</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">C</td>
+<td class="Bordered">MTA3</td></tr>
+
+<tr><td class="Bordered">68</td>
+<td class="Bordered">104</td>
+<td class="Bordered">44</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">D</td>
+<td class="Bordered">MTA4</td></tr>
+
+<tr><td class="Bordered">69</td>
+<td class="Bordered">105</td>
+<td class="Bordered">45</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">E</td>
+<td class="Bordered">MTA5</td></tr>
+
+<tr><td class="Bordered">70</td>
+<td class="Bordered">106</td>
+<td class="Bordered">46</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">F</td>
+<td class="Bordered">MTA6</td></tr>
+
+<tr><td class="Bordered">71</td>
+<td class="Bordered">107</td>
+<td class="Bordered">47</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">G</td>
+<td class="Bordered">MTA7</td></tr>
+
+<tr><td class="Bordered">72</td>
+<td class="Bordered">110</td>
+<td class="Bordered">48</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">H</td>
+<td class="Bordered">MTA8</td></tr>
+
+<tr><td class="Bordered">73</td>
+<td class="Bordered">111</td>
+<td class="Bordered">49</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">I</td>
+<td class="Bordered">MTA9</td></tr>
+
+<tr><td class="Bordered">74</td>
+<td class="Bordered">112</td>
+<td class="Bordered">4A</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">J</td>
+<td class="Bordered">MTA10</td></tr>
+
+<tr><td class="Bordered">75</td>
+<td class="Bordered">113</td>
+<td class="Bordered">4B</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">K</td>
+<td class="Bordered">MTA11</td></tr>
+
+<tr><td class="Bordered">76</td>
+<td class="Bordered">114</td>
+<td class="Bordered">4C</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">L</td>
+<td class="Bordered">MTA12</td></tr>
+
+<tr><td class="Bordered">77</td>
+<td class="Bordered">115</td>
+<td class="Bordered">4D</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">M</td>
+<td class="Bordered">MTA13</td></tr>
+
+<tr><td class="Bordered">78</td>
+<td class="Bordered">116</td>
+<td class="Bordered">4E</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">N</td>
+<td class="Bordered">MTA14</td></tr>
+
+<tr><td class="Bordered">79</td>
+<td class="Bordered">117</td>
+<td class="Bordered">4F</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">O</td>
+<td class="Bordered">MTA15</td></tr>
+
+<tr><td class="Bordered">80</td>
+<td class="Bordered">120</td>
+<td class="Bordered">50</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">P</td>
+<td class="Bordered">MTA16</td></tr>
+
+<tr><td class="Bordered">81</td>
+<td class="Bordered">121</td>
+<td class="Bordered">51</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">Q</td>
+<td class="Bordered">MTA17</td></tr>
+
+<tr><td class="Bordered">82</td>
+<td class="Bordered">122</td>
+<td class="Bordered">52</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">R</td>
+<td class="Bordered">MTA18</td></tr>
+
+<tr><td class="Bordered">83</td>
+<td class="Bordered">123</td>
+<td class="Bordered">53</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">S</td>
+<td class="Bordered">MTA19</td></tr>
+
+<tr><td class="Bordered">84</td>
+<td class="Bordered">124</td>
+<td class="Bordered">54</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">T</td>
+<td class="Bordered">MTA20</td></tr>
+
+<tr><td class="Bordered">85</td>
+<td class="Bordered">125</td>
+<td class="Bordered">55</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">U</td>
+<td class="Bordered">MTA21</td></tr>
+
+<tr><td class="Bordered">86</td>
+<td class="Bordered">126</td>
+<td class="Bordered">56</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">V</td>
+<td class="Bordered">MTA22</td></tr>
+
+<tr><td class="Bordered">87</td>
+<td class="Bordered">127</td>
+<td class="Bordered">57</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">W</td>
+<td class="Bordered">MTA23</td></tr>
+
+<tr><td class="Bordered">88</td>
+<td class="Bordered">130</td>
+<td class="Bordered">58</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">X</td>
+<td class="Bordered">MTA24</td></tr>
+
+<tr><td class="Bordered">89</td>
+<td class="Bordered">131</td>
+<td class="Bordered">59</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">Y</td>
+<td class="Bordered">MTA25</td></tr>
+
+<tr><td class="Bordered">90</td>
+<td class="Bordered">132</td>
+<td class="Bordered">5A</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">Z</td>
+<td class="Bordered">MTA26</td></tr>
+
+<tr><td class="Bordered">91</td>
+<td class="Bordered">133</td>
+<td class="Bordered">5B</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">[</td>
+<td class="Bordered">MTA27</td></tr>
+
+<tr><td class="Bordered">92</td>
+<td class="Bordered">134</td>
+<td class="Bordered">5C</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">\</td>
+<td class="Bordered">MTA28</td></tr>
+
+<tr><td class="Bordered">93</td>
+<td class="Bordered">135</td>
+<td class="Bordered">5D</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">]</td>
+<td class="Bordered">MTA29</td></tr>
+
+<tr><td class="Bordered">94</td>
+<td class="Bordered">136</td>
+<td class="Bordered">5E</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">^</td>
+<td class="Bordered">MTA30</td></tr>
+
+<tr><td class="Bordered">95</td>
+<td class="Bordered">137</td>
+<td class="Bordered">5F</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">_</td>
+<td class="Bordered">UNT</td></tr>
+
+<tr><td class="Bordered">96</td>
+<td class="Bordered">140</td>
+<td class="Bordered">60</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">`</td>
+<td class="Bordered">MSA0,PPE</td></tr>
+
+<tr><td class="Bordered">97</td>
+<td class="Bordered">141</td>
+<td class="Bordered">61</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">a</td>
+<td class="Bordered">MSA1,PPE</td></tr>
+
+<tr><td class="Bordered">98</td>
+<td class="Bordered">142</td>
+<td class="Bordered">62</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">b</td>
+<td class="Bordered">MSA2,PPE</td></tr>
+
+<tr><td class="Bordered">99</td>
+<td class="Bordered">143</td>
+<td class="Bordered">63</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">c</td>
+<td class="Bordered">MSA3,PPE</td></tr>
+
+<tr><td class="Bordered">100</td>
+<td class="Bordered">144</td>
+<td class="Bordered">64</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">d</td>
+<td class="Bordered">MSA4,PPE</td></tr>
+
+<tr><td class="Bordered">101</td>
+<td class="Bordered">145</td>
+<td class="Bordered">65</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">e</td>
+<td class="Bordered">MSA5,PPE</td></tr>
+
+<tr><td class="Bordered">102</td>
+<td class="Bordered">146</td>
+<td class="Bordered">66</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">f</td>
+<td class="Bordered">MSA6,PPE</td></tr>
+
+<tr><td class="Bordered">103</td>
+<td class="Bordered">147</td>
+<td class="Bordered">67</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">g</td>
+<td class="Bordered">MSA7,PPE</td></tr>
+
+<tr><td class="Bordered">104</td>
+<td class="Bordered">150</td>
+<td class="Bordered">68</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">h</td>
+<td class="Bordered">MSA8,PPE</td></tr>
+
+<tr><td class="Bordered">105</td>
+<td class="Bordered">151</td>
+<td class="Bordered">69</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">i</td>
+<td class="Bordered">MSA9,PPE</td></tr>
+
+<tr><td class="Bordered">106</td>
+<td class="Bordered">152</td>
+<td class="Bordered">6A</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">j</td>
+<td class="Bordered">MSA10,PPE</td></tr>
+
+<tr><td class="Bordered">107</td>
+<td class="Bordered">153</td>
+<td class="Bordered">6B</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">k</td>
+<td class="Bordered">MSA11,PPE</td></tr>
+
+<tr><td class="Bordered">108</td>
+<td class="Bordered">154</td>
+<td class="Bordered">6C</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">l</td>
+<td class="Bordered">MSA12,PPE</td></tr>
+
+<tr><td class="Bordered">109</td>
+<td class="Bordered">155</td>
+<td class="Bordered">6D</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">m</td>
+<td class="Bordered">MSA13,PPE</td></tr>
+
+<tr><td class="Bordered">110</td>
+<td class="Bordered">156</td>
+<td class="Bordered">6E</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">n</td>
+<td class="Bordered">MSA14,PPE</td></tr>
+
+<tr><td class="Bordered">111</td>
+<td class="Bordered">157</td>
+<td class="Bordered">6F</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">o</td>
+<td class="Bordered">MSA15,PPE</td></tr>
+
+<tr><td class="Bordered">112</td>
+<td class="Bordered">160</td>
+<td class="Bordered">70</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">p</td>
+<td class="Bordered">MSA16,PPD</td></tr>
+
+<tr><td class="Bordered">113</td>
+<td class="Bordered">161</td>
+<td class="Bordered">71</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">q</td>
+<td class="Bordered">MSA17,PPD</td></tr>
+
+<tr><td class="Bordered">114</td>
+<td class="Bordered">162</td>
+<td class="Bordered">72</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">r</td>
+<td class="Bordered">MSA18,PPD</td></tr>
+
+<tr><td class="Bordered">115</td>
+<td class="Bordered">163</td>
+<td class="Bordered">73</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">s	</td>
+<td class="Bordered">MSA19,PPD</td></tr>
+
+<tr><td class="Bordered">116</td>
+<td class="Bordered">164</td>
+<td class="Bordered">74</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">t</td>
+<td class="Bordered">MSA20,PPD</td></tr>
+
+<tr><td class="Bordered">117</td>
+<td class="Bordered">165</td>
+<td class="Bordered">75</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">u</td>
+<td class="Bordered">MSA21,PPD</td></tr>
+
+<tr><td class="Bordered">118</td>
+<td class="Bordered">166</td>
+<td class="Bordered">76</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">v</td>
+<td class="Bordered">MSA22,PPD</td></tr>
+
+<tr><td class="Bordered">119</td>
+<td class="Bordered">167</td>
+<td class="Bordered">77</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">w</td>
+<td class="Bordered">MSA23,PPD</td></tr>
+
+<tr><td class="Bordered">120</td>
+<td class="Bordered">170</td>
+<td class="Bordered">78</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">x</td>
+<td class="Bordered">MSA24,PPD</td></tr>
+
+<tr><td class="Bordered">121</td>
+<td class="Bordered">171</td>
+<td class="Bordered">79</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">y</td>
+<td class="Bordered">MSA25,PPD</td></tr>
+
+<tr><td class="Bordered">122</td>
+<td class="Bordered">172</td>
+<td class="Bordered">7A</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">z</td>
+<td class="Bordered">MSA26,PPD</td></tr>
+
+<tr><td class="Bordered">123</td>
+<td class="Bordered">173</td>
+<td class="Bordered">7B</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">{</td>
+<td class="Bordered">MSA27,PPD</td></tr>
+
+<tr><td class="Bordered">124</td>
+<td class="Bordered">174</td>
+<td class="Bordered">7C</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">|</td>
+<td class="Bordered">MSA28,PPD</td></tr>
+
+<tr><td class="Bordered">125</td>
+<td class="Bordered">175</td>
+<td class="Bordered">7D</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">}</td>
+<td class="Bordered">MSA29,PPD</td></tr>
+
+<tr><td class="Bordered">126</td>
+<td class="Bordered">176</td>
+<td class="Bordered">7E</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">~</td>
+<td class="Bordered">MSA30,PPD</td></tr>
+
+<tr><td class="Bordered">127</td>
+<td class="Bordered">177</td>
+<td class="Bordered">7F</td>
+<td class="Bordered">&#8212;</td>
+<td class="Bordered">DEL</td>
+<td class="Bordered">&#8212;</td></tr>
+</table>
+
+
+
+<a name="ASCII Conversion Functions"></a><H2>ASCII Conversion Functions</H2>
+<p>The following is a list of some of the LabVIEW functions that use ASCII codes:</p>
+<p class="Body"><a href="Decimal_String_To_Number.html">Decimal String To Number</a></p>
+<p class="Body"><a href="Fract_Exp_String_To_Number.html">Fract/Exp String To Number</a></p>
+<p class="Body"><a href="Hex_String_To_Number.html">Hexadecimal String To Number</a></p>
+<p class="Body"><a href="Number_To_Eng_String.html">Number To Engineering String</a></p>
+<p class="Body"><a href="Number_To_Exp_String.html">Number To Exponential String</a></p>
+<p class="Body"><a href="Number_To_Fract_String.html">Number To Fractional String</a></p>
+<p class="Body"><a href="Number_To_Decimal_String.html">Number To Decimal String</a></p>
+<p class="Body"><a href="Number_To_Octal_String.html">Number To Octal String</a></p>
+<p class="Body"><a href="Number_To_Hex_String.html">Number To Hexadecimal String</a></p>
+<p class="Body"><a href="Octal_String_To_Number.html">Octal String To Number</a></p>
+<p class="Body"><a href="String_To_Byte_Array.html">String to Byte Array</a></p>
+
+
+
+</body>
+</html>

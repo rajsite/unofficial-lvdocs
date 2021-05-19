@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Setting Keyboard Shortcuts for Controls</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Setting Keyboard Shortcuts for Controls
+</h1>
+<!-- begin parent = lvconcepts/Building_the_Front_Panel.xml -->
+<p class="Body">You can assign keyboard shortcuts to controls so users can navigate the front panel window without a mouse.<!-- end parent = lvconcepts/Building_the_Front_Panel.xml --> You can assign modifiers, such as the &lt;Shift&gt; and &lt;Ctrl&gt; keys, to some shortcut keys. You cannot assign the same key combination to more than one control.
+</p>
+<p>LabVIEW does not respond to keyboard shortcuts for hidden controls.</p>
+
+<p class="Body">Complete the following steps to set key navigation for a control and to set a control so it is not included when the user tabs from control to control while running the VI.
+</p>
+<ol>
+<li>Right-click a front panel control and select <strong>Advanced&#0187;Key Navigation</strong> from the shortcut menu to display the <strong>Key Navigation</strong> page of the <a href="../lvhowto/ConfigControlsandIndicator.html">Properties</a> dialog box. You also can right-click a control, select <strong>Properties</strong> from the shortcut menu, and click the <strong>Key Navigation</strong> tab. To set key navigation for an array control, right-click the array border. To set key navigation for an array element, right-click the element.
+</li>
+</ol>
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;<!-- begin parent = lvconcepts/Building_the_Front_Panel.xml -->The <strong>Advanced&#0187;Key Navigation</strong> shortcut menu item is dimmed for indicators because you cannot enter data in an indicator.<!-- end parent = lvconcepts/Building_the_Front_Panel.xml --></td></tr>
+</table>
+<ol start="2">
+<li>From the pull-down menu in the <strong>Focus</strong> section, select the shortcut key you want to assign to the control.<br><br>
+<!--begin_child id = upnote tag="keyboard_shortcut"-->If you assign &lt;PageUp&gt;, &lt;PageDown&gt;, &lt;Home&gt;, or &lt;End&gt; as a shortcut key in the <strong>Focus</strong> section, you no longer can use that key to select items in listboxes or tree controls.<!--end_child id = upnote tag="keyboard_shortcut"--></li>
+<li>To include the &lt;Shift&gt; key and/or &lt;Ctrl&gt; key in a keyboard shortcut, place a checkmark in the <strong>Shift key</strong> and/or the <strong>Control key</strong> checkboxes. These checkboxes are available if you select a function key, such as &lt;F1&gt;, &lt;F2&gt;, and so on, in the <strong>Focus</strong> pull-down menu.</li></ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;<span class="Platform">(macOS)</span> Keyboard shortcuts for the function keys work only if the function keys are not assigned as shortcut keys for Expos&#233;. LabVIEW does not support &lt;VolumeUp&gt;, &lt;VolumeDown&gt;, and function keys &lt;F15&gt; to &lt;F24&gt; as shortcut keys on macOS.</td></tr></table>
+<ol start="4">
+<!-- begin parent = lvconcepts/Building_the_Front_Panel.xml -->
+<li>To prevent users from accessing a control using the &lt;Tab&gt; key while the VI is running, place a checkmark in the <strong>Skip this control when tabbing</strong> checkbox.
+</li>
+<!-- end parent = lvconcepts/Building_the_Front_Panel.xml -->
+</ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td><!-- begin parent = lvconcepts/Building_the_Front_Panel.xml -->
+<strong>Note</strong>&nbsp;&nbsp;You also can use the <a href="../lvprop/Control_Key_Down.html">Key Down</a> event to generate an event when the user presses a specific key on the keyboard.
+<!-- end parent = lvconcepts/Building_the_Front_Panel.xml --></td></tr>
+</table>
+<p class="Body">You can assign keyboard shortcuts to toggle Boolean controls using the <strong>Toggle</strong> section in the <strong>Key Navigation</strong> page, or to increment and decrement Numeric, Slide, Knob, Ring, and Enum controls using the <strong>Increment</strong> and <strong>Decrement</strong> sections in the <strong>Key Navigation</strong> page.  The <strong>Toggle</strong> section is available only for Boolean controls, and the <strong>Increment</strong> and <strong>Decrement</strong> sections are available only for Numeric, Slide, Knob, Ring, and Enum controls.</p>
+<p class="Body">You also can use the <a href="../lvprop/Control_p.html">Control</a> properties to assign keyboard shortcuts to controls and set tabbing behavior programmatically.
+</p>
+
+
+
+</body>
+</html>

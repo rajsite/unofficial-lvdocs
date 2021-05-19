@@ -1,0 +1,81 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Designing Equiripple FIR Filters Using the Parks-McClellan Algorithm</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-6569BE0E-7EFB-4432-8960-57D84D95FE4E" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Designing Equiripple FIR Filters Using the Parks-McClellan Algorithm</h1> 
+      
+      <div> 
+         	 
+         <p>You can use the Parks-McClellan algorithm to design equiripple FIR filters. Equiripple design equally weights the passband
+            and stopband ripple and produces filters with a linear phase characteristic. 
+            	 
+         </p> 
+         	 
+         <p>You must specify the following filter characteristics to design an equiripple FIR filter: 
+            	 
+         </p> 
+         	 <a name="GUID-6569BE0E-7EFB-4432-8960-57D84D95FE4E__UL_8DA5CCCAC71A4F1B956B6D02B1CB5C7D" shape="rect">
+            <!-- --></a><ul id="GUID-6569BE0E-7EFB-4432-8960-57D84D95FE4E__UL_8DA5CCCAC71A4F1B956B6D02B1CB5C7D">
+            <li><a name="GUID-6569BE0E-7EFB-4432-8960-57D84D95FE4E__LI_8E2131C1D7E44B4DBD710E33AB249126" shape="rect">
+                  <!-- --></a>Cut-off frequency 
+               		
+            </li>
+            <li><a name="GUID-6569BE0E-7EFB-4432-8960-57D84D95FE4E__LI_E574E88301744EEC936511AFE815B18B" shape="rect">
+                  <!-- --></a>Number of taps 
+               		
+            </li>
+            <li><a name="GUID-6569BE0E-7EFB-4432-8960-57D84D95FE4E__LI_0ACA78EB7D904D5CBADC5AD44280150C" shape="rect">
+                  <!-- --></a>Filter type, such as lowpass, highpass, bandpass, or bandstop 
+               		
+            </li>
+            <li><a name="GUID-6569BE0E-7EFB-4432-8960-57D84D95FE4E__LI_A1580766637B4166AD8E6C79A2A2D76C" shape="rect">
+                  <!-- --></a>Pass frequency 
+               		
+            </li>
+            <li><a name="GUID-6569BE0E-7EFB-4432-8960-57D84D95FE4E__LI_E811FB6092B949608F65C5940B1F33D8" shape="rect">
+                  <!-- --></a>Stop frequency 
+               		
+            </li>
+         </ul> 
+         	 
+         <p>The cut-off frequency for equiripple filters specifies the edge of the passband, the stopband, or both. The ripple in the
+            passband and stopband of equiripple filters causes the following magnitude responses: 
+            	 
+         </p> 
+         	 <a name="GUID-6569BE0E-7EFB-4432-8960-57D84D95FE4E__UL_61CAB21991D44473A514E67A2A3B20B8" shape="rect">
+            <!-- --></a><ul id="GUID-6569BE0E-7EFB-4432-8960-57D84D95FE4E__UL_61CAB21991D44473A514E67A2A3B20B8">
+            <li><a name="GUID-6569BE0E-7EFB-4432-8960-57D84D95FE4E__LI_942ED297B6434348836E7C7999F140DE" shape="rect">
+                  <!-- --></a>Passband—a magnitude response greater than or equal to 1 
+               		
+            </li>
+            <li><a name="GUID-6569BE0E-7EFB-4432-8960-57D84D95FE4E__LI_71CB8B3048314C8195C9D65225236F62" shape="rect">
+                  <!-- --></a>Stopband—a magnitude response less than or equal to the stopband attenuation 
+               		
+            </li>
+         </ul> 
+         	 
+         <p>For example, if you specify a lowpass filter, the passband cut-off frequency is the highest frequency for which the passband
+            conditions are true. Similarly, the stopband cut-off frequency is the lowest frequency for which the stopband conditions are
+            true. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="lvac_design_fir_filters.html" shape="rect">Designing FIR Filters</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

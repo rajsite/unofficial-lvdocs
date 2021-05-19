@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 1000Efpcontindhlp -->
+
+<title>Creating a Dialog Box</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Creating a Dialog Box</h1>
+<p class="Body">Use the <a href="../lvexpress/Display_Message_to_User.html">Display Message to User</a> Express VI or the <a href="../lvexpress/Prompt_User_for_Input.html">Prompt User for Input</a> Express VI to display a standard dialog box that contains an alert or a message to users or prompts users to enter information, such as a user name and password.</p>
+
+<table class="Borderless"><tr><td class="Icon"><img src="tip.gif"></td>
+<td><strong>Tip</strong>&nbsp;&nbsp;To keep from overusing dialog boxes, use a status text window to display less serious warnings or messages.</td></tr></table>
+
+<p class="Body">Complete the following steps to create a custom <a href="../lvdevconcepts/checklist.html#front_panel_checklist">dialog box</a> that looks like a standard dialog box across all platforms. </p>
+
+<ol>
+<li>Select <strong>File&#0187;New</strong> to display the <a href="../lvdialog/New_Dialog_Box.html">New</a> dialog box, which lists all available built-in template VIs.</li>
+<li>Select the Dialog Using Events template to assist in building dialog boxes. The template contains front panel and block diagram objects commonly used in dialog boxes.</li>
+<li>Click <strong>OK</strong> to close the <strong>New</strong> dialog box and open the custom dialog box for you to edit.</li>	
+<li>Use the following guidelines while building the front panel and block diagram of the VI.	
+<ul><li>Use <a href="../glang/ControlsPalette.html">system controls</a> to design the dialog box.</li>
+<li>Use <a href="../lvdialog/Miscellaneous_Options.html">Dialog Font</a> for all front panel text.</li></ul></li>
+<li><a href="Setting_Keyboard_Shortcut.html">Assign key navigation</a> for the front panel controls. Assign <strong>&lt;Enter&gt;</strong> for the <strong>OK</strong> button,  <strong>&lt;Escape&gt;</strong> for the <strong>Cancel</strong> button, and <strong>&lt;F1&gt;</strong> to the <strong>Help</strong> button.</li></ol>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td>
+<strong>Note</strong>&nbsp;&nbsp;Do not assign <strong>&lt;Enter&gt;</strong> for the <strong>OK</strong> button if the front panel has multi-line string controls.</td></tr></table>
+
+<ol start="6">
+<li>Reduce the front panel window size to show only the objects you want to appear in the dialog box.</li>
+<li>Set the front panel window appearance as <strong>Dialog</strong> and enter a title for the dialog box title bar.
+<ol class="abc"><li>Select <strong>File&#0187;VI Properties</strong> and select <a href="../lvdialog/Window_Properties.html">Window Appearance</a> from the <strong>Category</strong> pull-down menu of the <a href="../lvdialog/VI_Properties_Dialog_Box.html">VI Properties</a> dialog box.</li>
+<li>Select the <strong>Dialog</strong> option.</li>
+<li>Remove the checkmark from the <strong>Same as VI Name</strong> checkbox in the <strong>Window Title</strong> section to create a custom title that appears in the dialog box title bar. Enter the dialog box name in the field next to the checkbox.</li>
+<li>Click the <strong>OK</strong> button to save the changes and close the <strong>VI Properties</strong> dialog box.</li></ol></li></ol>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 2800Ewiringhlp -->
+
+<title>Wiring Block Diagram Objects Manually</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Wiring Block Diagram Objects Manually
+</h1>
+<!-- begin parent = ../lvconcepts/Building_the_Block_Diagram.xml KM -->
+<p class="Body">You transfer data between block diagram objects through wires. Use the Wiring tool to connect the terminals of a VI or function to the terminals of another VI or function.<!-- end parent = ../lvconcepts/Building_the_Block_Diagram.xml KM --> Use <a href="Automatic_Wiring.html">automatic wiring</a> to wire objects as you place them on the block diagram.
+</p>
+<p class="Body">Complete the following steps to practice wiring on the block diagram.</p>
+<ol>
+<li>Place two VIs or functions on the block diagram.
+</li>
+<li>Display the <a href="../lvdialog/Context_Help_Window.html">Context Help window</a> and move the cursor over a VI or function. The <strong>Context Help</strong> window lists labels next to each terminal of the VI or function.
+</li>
+<li>Use the labels next to each terminal in the <strong>Context Help</strong> window to determine to which terminal you want to wire.
+</li>
+<li>Use the Wiring tool to move the cursor over an output terminal of a VI or function. <!-- begin parent = ../lvconcepts/Building_the_Block_Diagram.xml KM -->When you move the Wiring tool over the terminal, the terminal blinks, and a tip strip appears.<!-- end parent = ../lvconcepts/Building_the_Block_Diagram.xml KM -->
+</li>
+<li>Use the Wiring tool to click the terminal and release the mouse. As you move the cursor across the block diagram, LabVIEW draws a wire between the terminal and the Wiring tool as though the wire were unwinding from a spool.
+</li></ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="tip.gif"></td>
+<td>
+
+<strong>Tip</strong>&nbsp;&nbsp;To cancel a wire you started, press the &lt;Esc&gt; key or right-click the mouse button.</td></tr></table>
+<ol start="6">
+<li>Without holding down the mouse button, move the cursor to an input terminal of another VI or function. The second terminal blinks, and a tip strip appears.</li>
+<li>Use the Wiring tool to click the second terminal. <!-- Begin parent: ../lvconcepts/Building_the_Block_Diagram.xml -->Wiring to the terminal might create a broken wire. You must <a href="../lvconcepts/Using_Wires.html#Correcting_Broken_Wires">correct the broken wire</a> before you can run the VI.<!-- End parent: ../lvconcepts/Building_the_Block_Diagram.xml -->
+</li>
+<li>Make sure you wire all required terminals. Use the <strong>Context Help</strong> window to <!-- Begin parent: ../lvconcepts/Building_the_Block_Diagram.xml -->see which terminals a block diagram node requires. The labels of <a href="Specifying_Required_Recomm.html">required terminals</a> appear bold in the <strong>Context Help</strong> window.<!-- End parent: ../lvconcepts/Building_the_Block_Diagram.xml --> Otherwise, the VI is <a href="Correcting_Broken_VIs.html">broken</a> and will not run.
+</li>
+</ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="tip.gif"></td>
+<td>
+<strong>Tip</strong>&nbsp;&nbsp;To bend a wire while wiring, click to tack down the wire and move the cursor in a perpendicular direction. To tack down a wire and stop building it without connecting the wire, double-click.</td></tr></table>
+<p class="Body">To wire from or to an existing wire, complete the previous steps, starting or ending the operation on the existing wire. The wire blinks when the Wiring tool is correctly positioned to fasten a new wire to the existing wire. To wire from an existing branch when <a href="Selecting_a_Tool.html">automatic tool selection is enabled</a>, move the cursor toward the wire until the cursor changes to the Wiring tool. You also can right-click the existing wire and select <strong>Create Wire Branch</strong> from the shortcut menu.
+</p>
+<p class="Body">You can <a href="Deleting_Wires.html">delete wires</a>, <a href="Moving_Wires.html">move wires</a>, <a href="Selecting_Wires.html">select wires</a>, and <a href="Wiring_Structures.html">wire structures</a>.
+</p>
+
+
+
+</body>
+</html>

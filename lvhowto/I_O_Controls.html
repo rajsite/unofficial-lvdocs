@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 1000Efpcontindhlp -->
+
+<title>I/O Controls and Indicators</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>I/O Controls and Indicators</h1>
+<p class="Body">Use the I/O controls on the <strong>I/O</strong> and <strong>Classic I/O</strong> palettes with the functions for acquiring data, sharing data between applications, and controlling instruments. You can use the I/O controls to specify the instrument or device resource you want to communicate with.</p>
+<ul>
+<li>Use the waveform control to hold acquired data for analysis and display.</li>
+<li>Use the controls located on the <strong>DAQmx Name Controls</strong> palette to access the tasks, global channels, physical channels, terminals, scales, devices, and switch resources you configure using Measurement &amp; Automation Explorer (MAX) and the DAQ Assistant.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;<span class="Platform">(Windows)</span> LabVIEW supports NI-DAQmx and the DAQ Assistant. <span class="Platform">(Linux)</span> LabVIEW supports NI-DAQmx but not the DAQ Assistant. <span class="Platform">(macOS)</span> LabVIEW supports NI-DAQmx Base but not the DAQ Assistant.</td>
+</tr>
+</table></li>
+<li>Use the VISA resource name and IVI logical name controls to access the VISA aliases or logical names you configure using MAX.</li>
+<li>Use the FieldPoint I/O point control to access the FieldPoint items you create and configure using MAX.</li>
+<li>Use the IMAQ session with image acquisition boards.</li>
+<li>Use the Motion resource I/O control to access a motion resource you configure using MAX. Any items you configure in MAX appear as options in the I/O control pull-down menu.</li>
+<li>Use the shared variable control to select, browse to, or enter shared variables for use in VIs.</li>
+<li>Use any of the other controls in the palette to access names or resources associated with them.</li>
+</ul>
+<p class="Body">After you select an I/O control, <a href="Configuring_IO_Controls.html">configure</a> it for use with the I/O VIs that communicate with the device or instrument.</p>
+<table class="Borderless">
+<tr><td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;Many I/O name controls are available on all platforms. You can develop I/O VIs on any platform that can communicate with devices that are platform-specific. However, if you try to run a VI with a platform-specific I/O control on a platform that does not support that device, you will receive an error.</td></tr>
+</table>
+<p class="Body">Some of the controls allow you to select multiple defined names. Use the Operating tool to click the control, select <strong>Browse</strong> from the pull-down menu, and press the &lt;Ctrl&gt; key. <span class="Platform">(macOS)</span> Press the &lt;Option&gt; key. <span class="Platform">(Linux)</span> Press the &lt;Alt&gt; key.
+</p>
+
+<p class="Body">Refer to the respective <a href="../lvhelp/LabVIEW_Toolkits.html">toolkit, module, or driver</a> documentation for more information about LabVIEW add-ons.</p>
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 6000Eviserverhlp -->
+
+<title>Creating Control Reference SubVIs from Property Nodes and Invoke Nodes</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Creating Control Reference SubVIs from Property Nodes and Invoke Nodes
+</h1>
+<p class="Body">Complete the following steps to create a subVI that includes a control reference directly from a <a href="../glang/Property_Node.html">Property Node</a> or <a href="../glang/Invoke_Node.html">Invoke Node</a>.
+</p>
+<ol>
+<li>Right-click the front panel object or its block diagram terminal for which you want a control reference subVI, select <strong>Create&#0187;Property Node</strong> or <strong>Create&#0187;Invoke Node</strong>, and select a property or method from the shortcut menu to <a href="Creating_Property_Nodes.html">create a Property Node or Invoke Node</a> implicitly linked to the object.
+</li>
+<li>Use the Positioning tool to select the new Property Node or Invoke Node and select <strong>Edit&#0187;Create SubVI</strong>. LabVIEW creates a control reference to the control on the block diagram of the main VI, creates a subVI that contains a control refnum wired to a Property Node or Invoke Node, and wires the control reference on the main VI to the <strong>control refnum</strong> input terminal of the new subVI.
+</li>
+</ol>
+<table class="Borderless">
+<tr><td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;Select several Property Nodes or Invoke Nodes at once to create a subVI with multiple control refnums and Property Nodes or Invoke Nodes.</td></tr>
+</table>
+<ol start="3">
+<li>Double-click the subVI to open it. Modify the Property Node or Invoke Node and other elements of the subVI as you do in any other VI.
+</li>
+</ol>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+	<title>VI Server Property and Method Characteristics</title>
+	<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+		</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>VI Server Property and Method Characteristics</h1>
+
+<p class="Body">The following list defines the characteristics for each property and method.</p>
+
+<ul>
+<li><strong>Data type</strong>&#8212;Specifies the data type of the property or method.</li>
+
+<li><strong>Permissions</strong>&#8212;Specifies if this property is Read Only, Write Only, Read/Write, or WriteInEditOnly. If the property is WriteInEditOnly, you can write to the property only when the VI is in edit mode.</li>
+
+<li><strong>Available in Run-Time Engine</strong>&#8212;Specifies if you can use this property or method in built applications. The value in parentheses indicates the permission for the property or method in the Run-Time Engine. Values include Read Only, Write Only, Read/Write, WriteInEditOnly, or no. Some properties and methods are only available during editing. If this characteristic value is No, LabVIEW returns <a href="../lverror/Misc_LV_Error_Codes.html">error 1043</a> if you use this property or method in built applications. <span class="checkFile lvdscprop">If you use <a href="../lvdscprop/SharedVariableIO_p.html">SharedVariableIO</a> properties or methods, you must install the Datalogging and Supervisory Control (DSC) Module Run-Time System. Refer to the <a href="javascript:WWW(WWW_DSCRTS)">National Instruments Web site</a> for information about the DSC Module Run-Time System.</span></li>
+
+<li><strong>Available in Real-Time Operating System</strong>&#8212;Specifies if you can use this property or method in the Real-Time Operating System. The value in parentheses indicates the permission for the property or method in the Real-Time Operating System. Values include Read Only, Write Only, Read/Write, WriteInEditOnly, or no. Some properties and methods are only available during editing. If this characteristic value is No, LabVIEW returns <a href="../lverror/Misc_LV_Error_Codes.html">error 1043</a> if you use this property or method in the Real-Time Operating System.</li>
+
+<li><strong>Settable when the VI is running</strong>&#8212;Specifies if you can write a value to this property or method when the VI is running. If this characteristic value is No, LabVIEW returns <a href="../lverror/Misc_LV_Error_Codes.html">error 1000 or 1073</a> if you try to write a value when the VI is running. This characteristic does not apply to the properties and methods in the Application class.</li>
+
+<li><strong>Loads the front panel into memory</strong>&#8212;Specifies if LabVIEW loads the front panel into memory. If this characteristic value is Yes, LabVIEW returns <a href="../lverror/Misc_LV_Error_Codes.html">error 1013</a> if the front panel cannot be loaded into memory. This characteristic does not apply to the properties and methods in the Application class.</li>
+
+<li><strong>Need to authenticate before use</strong>&#8212;Specifies if you need to authenticate the VI before you can use the property or method. For example, you might need to <a href="../lvhowto/Locking_and_Unlocking_VIs.html">unlock a password-protected VI</a> before using a method with a characteristic value of Yes. If this characteristic value is Yes, LabVIEW returns <a href="../lverror/Misc_LV_Error_Codes.html">error 1040 or 1044</a> if you did not authenticate the VI. </li>
+
+<li><strong>Loads the block diagram into memory</strong>&#8212;Specifies if LabVIEW loads the block diagram into memory. If this characteristic value is Yes, LabVIEW returns <a href="../lverror/Misc_LV_Error_Codes.html">error 1012</a> if the block diagram cannot be loaded into memory. This characteristic does not apply to the properties and methods in the Application class.</li>
+
+<li><strong>Remote access allowed</strong>&#8212;Specifies if access to this property or method is allowed with a permission error by a remote <a href="../lvconcepts/Application_Instances.html">application instance</a>. If this characteristic value is No, LabVIEW returns <a href="../lverror/Misc_LV_Error_Codes.html">error 1032</a> if you try to use a remote reference to this property or method.</li>
+
+<li><strong>Must wait until user interface is idle</strong>&#8212;Specifies if you can use this property or method while the user is selecting items in a dialog box, tracking a control, and so on.</li>
+
+<li><strong>Available with control VIs</strong>&#8212;Specifies if you can use this property or method with VIs that are controls. If this characteristic value is No, LabVIEW returns <a href="../lverror/Misc_LV_Error_Codes.html">error 1035</a> if you use this property or method with VIs that are controls. This characteristic applies only to the properties and methods in the VI class.</li>
+
+<li><strong>Available with global VIs</strong>&#8212;Specifies if you can use this property or method with VIs that are globals. If this characteristic value is No, LabVIEW returns <a href="../lverror/Misc_LV_Error_Codes.html">error 1035</a> if you use this property or method with VIs that are globals. This characteristic applies only to the properties and methods in the VI class.</li>
+
+<li><strong>Available with strict type definitions</strong>&#8212;Specifies if you can use this property or method with strict type definitions. This characteristic does not apply to the properties and methods in the Application and VI classes.</li>
+
+<li><strong>Available with polymorphic VIs</strong>&#8212;Specifies if you can use this property or method with polymorphic VIs. If this characteristic value is No, LabVIEW returns <a href="../lverror/Misc_LV_Error_Codes.html">error 1035</a> if you use this property or method with polymorphic VIs. This characteristic applies only to the properties and methods in the VI class.</li>
+</ul>
+
+
+</body>
+</html>

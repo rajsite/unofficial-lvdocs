@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<title>Numeric Constants</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head><BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Numeric Constants</h1>
+<p class="Body"><strong>Owning Palette:</strong> <a href="../lvexpress/Express_Numeric_Functions.html">Express Numeric Functions</a>, <a href="../glang/Numeric_Functions.html">Numeric Functions</a></p>
+<h2><a name="Neg_Inf">Negative Infinity</a></h2>
+<table class="Borderless"><tr><td><img src="neginfti.gif"></td>
+<td>Returns the value <span class="Monospace">-Inf</span> (negative infinity). LabVIEW converts -Inf to the lowest value for a data type. For example, converting -Inf to a 16-bit signed integer returns the value -32,768, the lowest possible value for a 16-bit signed integer.
+</td></tr></table>
+<h2><a name="Pos_Infin">Positive Infinity</a></h2>
+<table class="Borderless"><tr><td><img src="posinfti.gif"></td>
+<td>Returns the value <span class="Monospace">Inf</span> (infinity). LabVIEW converts Inf to the highest value for a data type. For example, converting Inf to a 16-bit signed integer returns the value 32,767, the highest possible value for a 16-bit signed integer.</td></tr></table>
+
+<p class="checkFile lvfpga Body"><span class="Platform">(FPGA Module)</span> The following details apply when you use these objects in an FPGA VI.</p>
+<table class="checkFile lvfpga Body, Bordered">
+<tr><td class="Bordered"><strong>Single-Cycle Timed Loop</strong></td><td class="Bordered">Supported.</td></tr>
+<tr><td class="Bordered"><strong>Usage</strong></td><td class="Bordered">The default data type for these constants is single-precision floating-point (SGL).</td></tr>
+<tr><td class="Bordered"><strong>Timing</strong></td><td class="Bordered">These constants require no clock cycles to execute because they do not include internal registers.</td></tr>
+<tr><td class="Bordered"><strong>Resources</strong></td><td class="Bordered">These constants alone consume no resources on the FPGA. However, if you wire one of these constants to a logical operation, FPGA lookup table resources store the constant value.</td></tr>
+</table>
+</body>
+</html>

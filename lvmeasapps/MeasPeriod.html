@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Measuring Period, Semi-Period, Pulse Width, and Two-Edge Separation</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css"><script src="common.js" type="text/javascript"></script></head>
+<body>
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Measuring Period, Semi-Period, Pulse Width, and Two-Edge Separation</h1>
+        
+            <p class="Body">You can measure period, semi-period, pulse width, and two-edge separation using <a href="../mxcncpts/counterparts.html">counters</a>, such as on a DAQ device, to determine the duration of an event
+or to determine the interval time between two events.  </p>
+
+<p class="Body">Period measurements measure the time between consecutive rising or falling edges of a <a href="Generating_Pulses.html">pulse</a>. Semi-period measurements measure the time between consecutive edges.  Pulse width measurements measure the time between either a rising and falling edge, or a falling and rising edge.  Two-edge separation measurements measure the time between the rising or falling edge of one digital signal  and the rising or falling edge of another digital signal.</p>
+
+
+<p class="Anchor"><img src="loc_eps_pulsewidth.gif" alt=""></p>
+
+<p class="Body">The formula for period, semi-period, pulse width, and two-edge separation is as follows: </p>
+
+<p class="Body">Period, Semi-Period, Pulse Width, or Two-Edge Separation (in seconds) = Count / Counter Timebase Rate (in Hz).</p>
+
+<p class="Body">where Count is the number of counter timebase ticks that elapse during one period, semi-period, pulse width, or two-edge separation of the measured input signal or signals.</p>
+
+<p class="Body">The Counter Timebase Rate is a known frequency and is usually a built-in time source.  If the counter timebase rate is unknown, you only can make measurements only in terms of ticks of the counter timebase.  This may be the case if you are using an external signal for the counter timebase, and the frequency of the external signal is unknown or aperiodic. </p> 
+
+        
+            <p class="Body">You also can measure pulse and time using the <a href="../lvwave/Pulse_Measurements.html">Pulse Measurements</a> VI and the <a href="../lvwave/Waveform_Measurement_VIs.html">Waveform Measurements</a> VIs.</p>
+            
+        <p class="Body">Period, semi-period, pulse width, and two-edge separation are examples of time measurements. Refer to <a href="../mxcncpts/configtimemeas.html">Configuring a Time-Based Measurement in NI-DAQmx</a> and <a href="../mxcncpts/twocountermeasmeth.html">Two Counter Measurement Method</a> for more information about measuring time. </p>
+            
+
+
+        
+    <div id="exlinks">
+<h2>Examples</h2>
+<p class="Body">Refer to the following VIs for examples of performing this measurement. You must have a driver installed to find examples for that driver.</p>
+      <h3>NI-DAQmx</h3>
+<p class="Body">You can use the DAQmx - Data Acquisition VIs to perform this measurement. Find related examples:</p>
+<p class="Body"><a href="javascript:findExamples('1917');"><img src="find.gif" border="0"></a>�Counter - Read Pulse Width and Frequency (On Demand)</p>
+<p class="Body">You also can use the DAQ Assistant Express VI to perform this measurement.</p>
+<p class="Body"><img style="cursor:pointer" src="add.gif" border="0" onclick="placeObject('DAQ%20Assistant');">�Add�
+         <img style="cursor:pointer" src="find.gif" border="0" onclick="findObject('DAQ%20Assistant');">�Find</p>
+      <h3>FieldPoint</h3>
+<p class="Body">You can use the FieldPoint VIs to perform this measurement. Find related examples:</p>
+<p class="Body"><a href="javascript:findExamples('3790');"><img src="find.gif" border="0"></a>�Advanced FieldPoint</p>
+<p class="Body"><a href="javascript:findExamples('3106');"><img src="find.gif" border="0"></a>�Process Control</p>
+    </div>
+</body>
+</html>

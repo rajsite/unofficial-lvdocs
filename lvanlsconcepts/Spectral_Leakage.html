@@ -1,0 +1,65 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Spectral Leakage</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-72609B91-94D1-4083-BEE3-C4ECC3FA86B4" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Spectral Leakage</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 According to the Shannon Sampling Theorem, you can completely reconstruct a continuous-time signal from discrete, equally
+            spaced samples if the highest frequency in the time signal is less than half the sampling frequency. Half the sampling frequency
+            equals the Nyquist frequency. The Shannon Sampling Theorem bridges the gap between continuous-time signals and digital-time
+            signals. 
+            	 
+         </p> 
+         	 
+         <p>In practical, signal-sampling applications, digitizing a time signal results in a finite record of the signal, even when you
+            carefully observe the Shannon Sampling Theorem and sampling conditions. Even when the data meets the Nyquist criterion, the
+            finite sampling record might cause energy leakage, called spectral leakage. Therefore, even though you use proper signal acquisition
+            techniques, the measurement might not result in a scaled, single-sided spectrum because of spectral leakage. In spectral leakage,
+            the energy at one frequency appears to leak out into all other frequencies. 
+            	 
+         </p> 
+         	 
+         <p>Spectral leakage results from an assumption in the fast Fourier transform (FFT) and discrete Fourier transform (DFT) algorithms
+            that the time record exactly repeats throughout all time. Thus, signals in a time record are periodic at intervals that correspond
+            to the length of the time record. When you use the FFT or DFT to measure the frequency content of data, the transforms assume
+            that the finite data set is one period of a periodic signal. Therefore, the finiteness of the sampling record results in a
+            truncated waveform with different spectral characteristics from the original continuous-time signal, and the finiteness can
+            introduce sharp transition changes into the measured data. The sharp transitions are discontinuities. The following figure
+            shows discontinuities. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-72609B91-94D1-4083-BEE3-C4ECC3FA86B4__IMAGE_3047EEC0EF0A4691B6E92656FC83E854" shape="rect">
+            <!-- --></a><img id="GUID-72609B91-94D1-4083-BEE3-C4ECC3FA86B4__IMAGE_3047EEC0EF0A4691B6E92656FC83E854" src="GUID-DB068D82-DFC6-4EDA-AD54-FE0B0DCA32C0-help-web.png"><br clear="none"> 
+         	 
+         <p>The discontinuities shown in the previous figure produce leakage of spectral information. Spectral leakage produces a discrete-time
+            spectrum that appears as a smeared version of the original continuous-time spectrum. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Smoothing_Windows.html" shape="rect">Smoothing Windows</a></div>
+         </div>
+         <div class="relinfo relconcepts"><strong>Related concepts</strong><br clear="none"><div><a href="Discrete_Fourier_Transform.html" shape="rect">Discrete Fourier Transform (DFT)</a></div>
+            <div><a href="FFT_Fundamentals.html" shape="rect">FFT Fundamentals</a></div>
+            <div><a href="lvac_Increasing_Sampling_Frequency_to_Avoid_Aliasing.html" shape="rect">Increasing Sampling Frequency to Avoid Aliasing</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

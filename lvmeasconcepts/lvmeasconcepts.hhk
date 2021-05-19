@@ -1,0 +1,550 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD>
+<BODY>
+<OBJECT type="text/site properties">
+	<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="accessing">
+		<param name="See Also" value="accessing">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="instrument drivers">
+			<param name="Local" value="Accessing_Inst_Driver_VIs.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="changing">
+		<param name="See Also" value="changing">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="instrument drivers">
+			<param name="Local" value="Modifying_an_Existing_Driv.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="command strings">
+		<param name="See Also" value="command strings">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="formatting">
+			<param name="Local" value="Data_String_Manip.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="communication">
+		<param name="See Also" value="communication">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="instruments">
+			<param name="Local" value="Using_LV_to_Control_Inst.html">
+			</OBJECT>
+	</UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="configuring">
+		<param name="See Also" value="configuring">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="devices">
+			<param name="Local" value="Configuring_IO_Resources.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="I/O resources">
+			<param name="Local" value="Configuring_IO_Resources.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="instruments">
+			<param name="Local" value="Configuring_IO_Resources.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="contributed">
+		<param name="See Also" value="contributed">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="instrument drivers">
+			<param name="Local" value="Types_of_Instrument_Drivers.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="controlling">
+		<param name="See Also" value="controlling">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="instruments">
+			<param name="Local" value="Using_LV_to_Control_Inst.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="converting">
+		<param name="See Also" value="converting">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="LabWindows/CVI instrument drivers">
+			<param name="Local" value="Types_of_Instrument_Drivers.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="creating">
+		<param name="See Also" value="creating">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="DAQ applications">
+			<param name="Local" value="Creating_DAQ_App.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="FieldPoint applications">
+			<param name="Local" value="Creating_FP_App.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VISA applications">
+			<param name="Local" value="Creating_VISA_App.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="instrument drivers">
+			<param name="Local" value="Creating_an_Instrument_D.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DAQ">
+		<param name="See Also" value="DAQ">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="comparing with computer-based instruments">
+			<param name="Local" value="Comparing_DAQ_Devices.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="creating applications">
+			<param name="Local" value="Creating_DAQ_App.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="general-purpose">
+			<param name="Local" value="General_Purpose_DAQ.html">
+			</OBJECT>
+	</UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="devices">
+		<param name="See Also" value="devices">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="configuring">
+			<param name="Local" value="Configuring_IO_Resources.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="error handling">
+		<param name="See Also" value="error handling">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="instrument control">
+			<param name="Local" value="Instrument_Control_Error_H.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Ethernet">
+		<param name="See Also" value="Ethernet">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="communication">
+			<param name="Local" value="Ethernet_Communication.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="instrument drivers">
+			<param name="Local" value="What_is_a_LV_Inst_Drv.html">
+			</OBJECT>
+	</UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FieldPoint I/O point controls">
+		<param name="See Also" value="FieldPoint I/O point controls">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="configuring in MAX">
+			<param name="Local" value="Configuring_IO_Resources.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="finding">
+		<param name="See Also" value="finding">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="instrument drivers">
+			<param name="Local" value="Installing_an_Instrument_D.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GPIB">
+		<param name="See Also" value="GPIB">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="communication">
+			<param name="Local" value="GPIB_Communications.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="instrument drivers">
+			<param name="Local" value="What_is_a_LV_Inst_Drv.html">
+			</OBJECT>
+	</UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="I/O">
+		<param name="See Also" value="I/O">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="configuring resources">
+			<param name="Local" value="Configuring_IO_Resources.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="installing">
+		<param name="See Also" value="installing">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="instrument drivers">
+			<param name="Local" value="Installing_an_Instrument_D.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Instrument Control Applications">
+		<param name="See Also" value="Instrument Control Applications">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="creating">
+			<param name="Local" value="Creating_InstContApps.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="instrument drivers">
+		<param name="Local" value="What_is_a_LV_Inst_Drv.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="IVI">
+			<param name="Local" value="Types_of_Instrument_Drivers.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Plug and Play">
+			<param name="Local" value="Types_of_Instrument_Drivers.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="accessing">
+			<param name="Local" value="Accessing_Inst_Driver_VIs.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="common inputs">
+			<param name="Local" value="Common_InstDriverVIs_Inputs.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="contributed">
+			<param name="Local" value="Types_of_Instrument_Drivers.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="converting LabWindows/CVI">
+			<param name="Local" value="Types_of_Instrument_Drivers.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="creating">
+			<param name="Local" value="Creating_an_Instrument_D.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error handling">
+			<param name="Local" value="Instrument_Control_Error_H.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="finding">
+			<param name="Local" value="Installing_an_Instrument_D.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="formatting command strings">
+			<param name="Local" value="Data_String_Manip.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="formatting instrument data">
+			<param name="Local" value="Data_String_Manip.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="installing">
+			<param name="Local" value="Installing_an_Instrument_D.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="modifying existing">
+			<param name="Local" value="Modifying_an_Existing_Driv.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="project-style">
+			<param name="Local" value="Types_of_Instrument_Drivers.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="testing VIs">
+			<param name="Local" value="InteractivelyTestingCompVI.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="types">
+			<param name="Local" value="Types_of_Instrument_Drivers.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="using">
+			<param name="Local" value="What_is_a_LV_Inst_Drv.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="verifying communication">
+			<param name="Local" value="RunningGettingStartedVI.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="instrument I/O">
+		<param name="Local" value="Instrument_I_O.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="instruments">
+		<param name="See Also" value="instruments">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Ethernet">
+			<param name="Local" value="Ethernet_Communication.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="LXI">
+			<param name="Local" value="Ethernet_Communication.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="USB">
+			<param name="Local" value="USB_Communication.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="controlling">
+			<param name="Local" value="Using_LV_to_Control_Inst.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="formatting data">
+			<param name="Local" value="Data_String_Manip.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="modular">
+			<param name="Local" value="Modular_Instruments.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="types">
+			<param name="Local" value="Types_of_Instruments.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="IVI">
+		<param name="See Also" value="IVI">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="instrument drivers">
+			<param name="Local" value="Types_of_Instrument_Drivers.html">
+			</OBJECT>
+	</UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="IVI logical name control">
+		<param name="See Also" value="IVI logical name control">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="creating">
+			<param name="Local" value="Configuring_IO_Resources.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="LabWindows/CVI">
+		<param name="See Also" value="LabWindows/CVI">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="converting instrument drivers">
+			<param name="Local" value="Types_of_Instrument_Drivers.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="LXI">
+		<param name="See Also" value="LXI">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="communication">
+			<param name="Local" value="Ethernet_Communication.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="instrument drivers">
+			<param name="Local" value="What_is_a_LV_Inst_Drv.html">
+			</OBJECT>
+	</UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Measurement &amp; Automation Explorer">
+		<param name="See Also" value="Measurement & Automation Explorer">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="accessing in LabVIEW">
+			<param name="Local" value="Configuring_IO_Resources.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="modular instruments">
+		<param name="Local" value="Modular_Instruments.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Motion resource name">
+		<param name="See Also" value="Motion resource name">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="creating">
+			<param name="Local" value="Configuring_IO_Resources.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Plug and Play">
+		<param name="See Also" value="Plug and Play">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="instrument drivers">
+			<param name="Local" value="Types_of_Instrument_Drivers.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="properties">
+		<param name="See Also" value="properties">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="measurement applications">
+			<param name="Local" value="Properties_Meas_Apps.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PXI instrument drivers">
+		<param name="Local" value="What_is_a_LV_Inst_Drv.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="serial port">
+		<param name="See Also" value="serial port">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="communication">
+			<param name="Local" value="Serial_Port_Communication.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="instrument drivers">
+			<param name="Local" value="What_is_a_LV_Inst_Drv.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="testing">
+		<param name="See Also" value="testing">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="instrument driver VIs">
+			<param name="Local" value="InteractivelyTestingCompVI.html">
+			</OBJECT>
+	</UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Traditional DAQ channel">
+		<param name="See Also" value="Traditional DAQ channel">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="creating">
+			<param name="Local" value="Configuring_IO_Resources.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="USB">
+		<param name="See Also" value="USB">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="communication">
+			<param name="Local" value="USB_Communication.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="instrument drivers">
+			<param name="Local" value="What_is_a_LV_Inst_Drv.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="USB Communication">
+		<param name="Local" value="USB_Communication.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VIs">
+		<param name="See Also" value="VIs">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="measurements">
+			<param name="Local" value="Overview_Meas_and_VI.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA">
+		<param name="Local" value="VISA_in_LabVIEW.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="creating applications">
+			<param name="Local" value="Creating_VISA_App.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="verifying communication">
+			<param name="Local" value="Verifying_VISA_Communication.html">
+			</OBJECT>
+	</UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA resource name control">
+		<param name="See Also" value="VISA resource name control">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="creating">
+			<param name="Local" value="Configuring_IO_Resources.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VXI instrument drivers">
+		<param name="Local" value="What_is_a_LV_Inst_Drv.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VXIpnp">
+		<param name="See Also" value="VXIpnp">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="converting LabWindows/CVI instrument drivers">
+			<param name="Local" value="Types_of_Instrument_Drivers.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="wrapper">
+		<param name="See Also" value="wrapper">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="converting LabWindows/CVI instrument drivers">
+			<param name="Local" value="Types_of_Instrument_Drivers.html">
+			</OBJECT>
+	</UL>
+
+</UL>
+</BODY>
+</HTML>

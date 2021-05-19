@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+
+<title>Caveats and Recommendations for Using Fixed-Point Numbers</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+
+<h1>Caveats and Recommendations for Using Fixed-Point Numbers</h1>
+					<p class="Body">The following list describes some of the caveats and recommendations to consider when you use <a href="../lvconcepts/numeric_data.html#Using_FXP">fixed-point</a> numbers:</p>
+					<ul>
+						<li>Adding a <a href="../lvconcepts/shift_registers_feedback_node.html">shift register</a> to a loop that contains <a href="../glang/Numeric_Functions.html">Numeric</a> functions that increase the size of fixed-point data can create <a href="../lvhowto/FXP_Adapting_Type_Cycles.html">cycles in the propagation of type information</a>. Overflow can occur as the growing data approaches the maximum word length that LabVIEW accepts or the maximum word length that you specify. If you do not <a href="../lvhowto/configure_fxp_ops.html">configure how the Numeric functions</a> handle overflow, LabVIEW converts the data to floating-point representation to avoid potential data loss and broken VIs.</li>
+						<li>The word length you specify might exceed the maximum word length a target accepts. If this occurs, LabVIEW sets the word length to the maximum possible length and uses the default settings for <a href="../lvconcepts/numeric_data.html#FXP_overflow">overflow and rounding</a>. By default, the word length retains the most significant bits. This word length reduction rounds the value but prevents overflow. Refer to the documentation for a target to determine the maximum word length the target accepts.</li>
+						<li>LabVIEW and other applications encode fixed-point numbers in binary format, which is a base-2 number system. Because the decimal number system is base-10, you cannot represent all decimal values exactly in fixed-point. For example, you can represent 0.1 exactly in decimal format, but if you convert 0.1 to a fixed-point number with a 32-bit word length and a 16-bit integer word length, LabVIEW changes the rational number to 0.100006, which it can represent in base-2.</li>
+		
+					</ul>
+
+
+</body>
+</html>

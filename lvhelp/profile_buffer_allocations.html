@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+<title>Profile Buffer Allocations Window</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Profile Buffer Allocations Window</h1>
+
+<p>Use the <strong>Profile Buffer Allocations</strong> window to <a href="../lvhowto/profiling_buffer.html">identify and analyze</a> buffer allocations in a LabVIEW application. Select <strong>Tools&#0187;Profile&#0187;Profile Buffer Allocations</strong> to display this window.</p>
+
+<p>This window includes the following components:</p>
+<ul>
+    <li><strong>Application Instances</strong>&#8212;Filters application instances that contain buffer allocations. By default, the <strong>Profile Buffer Allocations</strong> window shows VIs from all the application instances that allocate large buffers during the profiling session.</li>
+    <li><strong>Maximum buffers to display</strong>&#8212;Specifies the maximum number of buffer allocations to display in <strong>Profile Data</strong>.</li>
+    <li><strong>Size unit</strong>&#8212;Specifies the unit of size (bytes, kilobytes, or megabytes) LabVIEW uses to display the results in <strong>Profile Data</strong>.</li>
+    <li><strong>Profile Data</strong>&#8212;Displays a list of buffer allocations that LabVIEW identifies during the profiling session. Click the column header to sort data by column.</li>
+    <li><strong>Time vs Memory Graph</strong>&#8212;Plots the size of a buffer allocation over time.</li>
+    <li><strong>Threshold</strong>&#8212;Specifies the minimum size of buffer allocations to record. The <strong>Profile Data</strong> table only displays buffer allocations larger than <strong>Threshold</strong>.</li>
+    <li><strong>Start/Stop</strong>&#8212;Starts or stops the profiling session.</li>
+</ul>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;<span class="Platform">(Real-Time Module)</span> The LabVIEW Real-Time Module currently does not support the <strong>Profile Buffer Allocations</strong> window on RT targets.</td>
+</tr>
+</table>
+</body>
+</html>

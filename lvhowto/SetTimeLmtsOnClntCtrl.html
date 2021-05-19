@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 6100Ecommhlp -->
+
+<title>Setting Time Limits on Client Control</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Setting Time Limits on Client Control</h1>
+
+<p class="Body">With the Web Server, you can set a time limit on how long a remote client can control a VI when multiple clients are waiting to control the VI. You should set a time limit to guarantee that every client has a chance to obtain control of the VI. When a particular client reaches the time limit, the next client in the queue is the controller. However, all clients still can view the front panel. 
+</p>
+<table class="Borderless">
+<tr><td class="Icon"><img src="note.gif"></td>
+<td><!--begin child: lvdialog.chm,Web_Server_Visible_Options.html--><strong>Note</strong>&nbsp;&nbsp;LabVIEW does not begin monitoring the time limit set on a particular VI until a second client requests control of the same VI. If a second client never requests control of the VI, then the initial client never loses control of the VI.<!--End child: 
+lvdialog.chm,Web_Server_Visible_Options.html--></td></tr>
+</table>
+<p class="Body">Complete the following steps to set the time limit on how long each client can control a particular VI.
+</p>
+<ol>
+<li>Select <strong>Tools&#0187;Options</strong> to display the <a href="../lvdialog/Options_Dialog_Box.html">Options</a> dialog box.</li>
+<li>Select <a href="../lvdialog/Web_Server_Config_Options.html">Web Server</a> from the <strong>Category</strong> list.
+</li>
+<li>Click a VI in the <strong>Visible VIs</strong> list in the <strong>Visible VIs</strong> section. If no VIs appear in the list, you need to <a href="Adding_New_Visible_VIs_En.html">add visible VI entries</a> to the list and then select it.
+</li>
+<li>Place a checkmark in the <strong>Allow access</strong> checkbox.</li>
+<li>If you want to change the default time limit, remove the checkmark from the <strong>Use default</strong> checkbox. The default is 300 seconds.
+</li>
+<li>In the <strong>Control time limit (sec)</strong> field, enter the amount of time in seconds you want to allow each client to control the front panel of the VI you selected in the <strong>Visible VIs</strong> list.
+</li>
+<li>Click the <strong>OK</strong> button.
+</li>
+</ol>
+
+
+
+</body>
+</html>

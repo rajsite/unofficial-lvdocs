@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+<title>Saving and Loading Configuration Files</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Saving and Loading Configuration Files</h1>
+<!--begin child ../lvvianalyzerhelp/Analyzing _Open_VI.html-->
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;The VI Analyzer functionality this topic describes is available only if you install and activate the LabVIEW VI Analyzer Toolkit or if the <span class="Monospace">LabVIEW Data\VI Analyzer Tests</span> directory contains tests.</td>
+</tr>
+</table>
+<!--end child ../lvvianalyzerhelp/Analyzing _Open_VI.html-->
+
+<p class="Body">You can save the settings you configure for a VI Analyzer task into a configuration file that you can load into the VI Analyzer. The configuration file contains the path to the VIs you want to analyze, the tests you want to run, and the settings you select for specific tests. You can distribute a configuration file to other users.</p>
+
+<h2>Creating a Configuration File</h2>
+<p class="Body">Complete the following steps to create a configuration file.
+</p>
+<table class="Borderless-Wide">
+<tr><td class="Icon"><img src="tip.gif"></td>
+<td><strong>Tip</strong>&nbsp;&nbsp;You can set the test criteria you want and save the configuration file without specifying VIs in the <a href="Select_VIs_DB.html">VI Analyzer - Select VIs</a> dialog box. You can use this configuration file to run the same VI Analyzer task on different groups of VIs.</td></tr>
+</table> 
+<ol>
+<li><a href="Creating_Task.html">Create and configure a VI Analyzer task</a>.
+</li>
+<li>From any dialog box in the VI Analyzer, click the <strong>Save</strong> button. A file dialog box appears.
+</li>
+<li>Navigate to the location where you want to save the configuration file. 
+</li>
+<li>Enter the filename you want for the configuration file and click the <strong>OK</strong> button.</li>
+</ol>
+
+<h2>Loading a Configuration File</h2>
+<p class="Body">Complete the following steps to load a configuration file into the VI Analyzer.
+</p>
+<ol>
+<li>Select <strong>Tools&#0187;VI Analyzer&#0187;Analyze VIs</strong>. The <a href="Select_Task_DB.html">VI Analyzer - Select Task</a> dialog box appears.
+</li>
+<li>Select the <strong>Load a previously saved analysis configuration file</strong> option and click the <strong>Next</strong> button. A file dialog box appears.
+</li>
+<li>Navigate to the configuration file you want to load and select it. You are prompted to enter the password if the configuration file is password-protected. The  <strong>VI Analyzer - Select VIs</strong> dialog box appears with the settings you saved in the configuration file. The settings you saved also appear in the <a href="Select_Tests_DB.html">VI Analyzer - Select Tests</a> and <a href="Exclude_Tests_DB.html">VI Analyzer - Exclude Tests from VIs</a> dialog boxes.
+</li>
+</ol>
+<p class="checkFile lvvianalyzer Body">You also can load a configuration file into the <strong>Path to Configuration File</strong> input of the <a href="../lvvianalyzer/An_Easy_Analyze.html">VIAn Easy Analyze</a> VI or the <a href="../lvvianalyzer/An_New_Task.html">VIAn New Task</a> VI.
+</p>
+
+<h2>Editing a Configuration File</h2>
+<p class="Body">The VI Analyzer configuration file is a text file. If you edit the configuration file using a text editor, NI recommends that you load the file in the VI Analyzer, save the file without any new change, and compare the two versions of the file. These steps verify that the VI Analyzer accepts the changes you made using the text editor.</p>
+
+<p class="checkFile lvvianalyzer Body">Refer to the <em>Loading VI Analyzer Configuration Files</em> section of the <a href="javascript:AcrobatLink('../manuals/VIAnalyzer_User_Guide.pdf');">LabVIEW VI Analyzer Toolkit User Guide</a> for more information about saving and loading configuration files.</p>
+
+</body>
+</html>

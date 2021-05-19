@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<title>Creating XControls</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Creating XControls</h1>
+<p class="Body">Use <a href="../lvconcepts/Using_LabVIEW_XControls.html">XControls</a> to design and create complex controls and indicators in LabVIEW.</p>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;You can create and edit XControls only in the LabVIEW Professional Development System. If a VI contains an XControl, you can run the VI in all LabVIEW packages.</td></tr></table>
+
+<p class="Body">Complete the following steps to create an XControl:</p>
+<ol>
+<li>Open the project in which you want to use an XControl. You can <a href="../lvhowto/Creating_LV_Projects.html">create a new project</a> to display the <a href="../lvdialog/Project_Explorer_Window.html">Project Explorer</a> window.</li>
+<li>In the <a href="../lvconcepts/Using_LabVIEW_Projects.html">Project Explorer</a> window, right-click <strong>My Computer</strong> and select <strong>New&#0187;XControl</strong> from the shortcut menu. LabVIEW creates a new XControl library in the project. Within the XControl library, LabVIEW automatically creates required <a href="Creating_XControl_Abilities.html">abilities</a>.</li>
+</ol>
+<table class="Borderless"><tr><td class="Icon"><img src="tip.gif"></td><td><strong>Tip</strong>&nbsp;&nbsp;You also can use the XControl template in the <a href="../lvdialog/New_Dialog_Box.html">New</a> dialog box to create an XControl.</td></tr></table>
+<ol start="3">
+<li><!--start parent  = lvconcepts  tag="edit_Data_ability"-->Double-click the Data ability in the XControl library to open and edit the Data type definition.<!--end parent  = lvconcepts  tag="edit_Data_ability"--> Replace the numeric control with a control that represents the data type of the new XControl. Select <strong>File&#0187;Apply Changes</strong> to propagate the change in the Data ability.</li>
+<li><!--start parent  = lvconcepts  tag="edit_State_ability"-->Double-click the State ability in the  XControl library to open and edit the State type definition.<!--end parent  = lvconcepts  tag="edit_State_ability"--> Include any information that affects the appearance or state of the XControl as part of the cluster control. Select <strong>File&#0187;Apply Changes</strong> to propagate the change in the State ability.</li>
+<li><!--start parent  = lvconcepts  tag="edit_Facade_ability"-->Double-click the Facade ability in the  XControl library to open and <a href="../lvconcepts/Creating_an_XControl_Facade.html">edit the Facade VI</a>.<!--end parent  = lvconcepts  tag="edit_Facade_ability"--></li>
+<li>Right-click the XControl library and select <strong>Properties</strong> from the shortcut menu to display the <a href="../lvdialog/XControl_Properties_Dialog_Box.html">XControl Properties</a> dialog box. Use this dialog box to configure the XControl library, document the XControl, and configure settings for the abilities, properties, methods, and VIs of an XControl.</li><li>Right-click the XControl library and select <strong>Save</strong> from the shortcut menu to save the XControl.</li>
+</ol>
+<p class="Body">You also can add <a href="Creating_XControl_Abilities.html">optional abilities</a>, <a href="Creating_XControl_Properties.html">properties</a>, <a href="Creating_XControl_Methods.html">methods</a>, and VIs to the XControl library. Right-click the XControl library and select <strong>New</strong> from the shortcut menu to add an item to the XControl library.</p>
+<p class="Body">Refer to Simple Dual Mode Thermometer XControl.lvproj in the <span class="Monospace">labview\examples\Controls and Indicators\XControls\Dual Mode Thermometer</span> directory for an example of creating an XControl.</p>
+<p class="Body"><a href="javascript:openProj('examples%5C%5CControls%20and%20Indicators%5C%5CXControls%5C%5CDual%20Mode%20Thermometer%5C%5CSimple%20Dual%20Mode%20Thermometer%20XControl.lvproj');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(3172);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples&nbsp;</p>
+
+
+</body>
+</html>
+

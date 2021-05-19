@@ -1,0 +1,74 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Sampling Signals</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-57D806BA-89A5-46F0-8CF5-EA01C0B188AE" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Sampling Signals</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 
+            		 
+            		 Measuring the frequency content of a signal requires digitalization of a continuous signal. To use digital signal processing
+            techniques, you must first convert an analog signal into its digital representation. In practice, the conversion is implemented
+            by using an analog-to-digital (A/D) converter. Consider an analog signal <em>x</em>(<em>t</em>) that is sampled every &#916;<em>t</em> seconds. The time interval &#916;<em>t</em> is the sampling interval or sampling period. Its reciprocal, 1/&#916;<em>t</em>, is the sampling frequency, with units of samples/second. Each of the discrete values of <em>x</em>(<em>t</em>) at <em>t</em> = 0, &#916;<em>t</em>, 2&#916;<em>t</em>, 3&#916;<em>t</em>, and so on, is a sample. Thus, <em>x</em>(0), <em>x</em>(&#916;<em>t</em>), <em>x</em>(2&#916;<em>t</em>), …, are all samples. The signal <em>x</em>(<em>t</em>) thus can be represented by the following discrete set of samples. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./rkset2Ftemp2FSampling_Signals.xml_d6682e90.png"></span></div> 
+         </div> 
+         	 
+         <p>The following figure shows an analog signal and its corresponding sampled version. The sampling interval is &#916;<em>t</em>. The samples are defined at discrete points in time. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-57D806BA-89A5-46F0-8CF5-EA01C0B188AE__IMAGE_7857E0CCC69F46AFB767E584E0657DFB" shape="rect">
+            <!-- --></a><img id="GUID-57D806BA-89A5-46F0-8CF5-EA01C0B188AE__IMAGE_7857E0CCC69F46AFB767E584E0657DFB" src="GUID-0A7FAF36-4D4E-40AF-ACCE-4C78E17EB57F-help-web.png"><br clear="none"> 
+         	 
+         <p>The following notation represents the individual samples. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./rkset2Ftemp2FSampling_Signals.xml_d6682e191.png"></span></div> 
+         </div> 
+         	 
+         <p> for <em>i</em>= 0, 1, 2, … 
+            	 
+         </p> 
+         	 
+         <p>If <em>N</em> samples are obtained from the signal <em>x</em>(<em>t</em>), then you can represent <em>x</em>(<em>t</em>) by the following sequence: 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./rkset2Ftemp2FSampling_Signals.xml_d6682e245.png"></span></div> 
+         </div> 
+         	 
+         <p>The preceding sequence representing <em>x</em>(<em>t</em>) is the digital representation, or the sampled version, of <em>x</em>(<em>t</em>). The sequence <em>X</em> = {<em>x</em>[<em>i</em>]} is indexed on the integer variable <em>i</em> and does not contain any information about the sampling rate. So knowing only the values of the samples contained in <em>X</em> gives you no information about the sampling frequency. 
+            	 
+         </p> 
+         	 
+         <p>One of the most important parameters of an analog input system is the frequency at which the DAQ device samples an incoming
+            signal. The sampling frequency determines how often an A/D conversion takes place. Sampling a signal too slowly can result
+            in an aliased signal. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Intro_DSP_and_Anls_in_LV.html" shape="rect">Introduction to Digital Signal Processing and Analysis</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

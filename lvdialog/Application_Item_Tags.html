@@ -1,0 +1,592 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Application Item Tags</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+<script src="dynamicjumps.js" type="text/javascript"></script>
+</head>
+<body>
+<noscript>
+<p class="Body">Javascript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Application Item Tags</h1>
+
+<p class="Body">Select <strong>Edit&#0187;Run-Time Menu</strong> from the front panel or block diagram window of a VI to display the <a href="Menu_Editor_Dialog_Box.html">Menu Editor</a> dialog box and <a href="../lvhowto/Viewing_Application_Items.html">view application item tags</a>.</p>
+
+<p class="Body">Use the tags in the following tables to <a href="../lvhowto/Customizing_Menus_Programm.html">customize menus programmatically</a> or <a href="../lvhowto/Customizing_Menus_Statical.html">statically</a> and to <a href="../glang/Delete_Menu_Items.html">delete menu items</a>.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="tip.gif" alt="Tip"></td>
+<td><strong>Tip</strong>&nbsp;&nbsp;You also can use tags to <a href="../lvdialog/Application_Item_Tags_SCMenus.html">customize shortcut menus</a>.</td>
+</tr>
+</table>
+
+<p class="Body">Items followed by an asterisk (<span class="Monospace">*</span>) are group items. LabVIEW updates this type of item as a group. You cannot add or delete the items within these groups.</p>
+
+<p class="Body">Items followed by two asterisks (<span class="Monospace">**</span>) are available in stand-alone applications you build in LabVIEW.</p>
+
+<a name="File"></a><h2>File Menu</h2>
+<table class="Bordered">
+<tr><th class="Bordered"><strong>Menu Item</strong></th>
+<th class="Bordered"><strong>Application Item Tag</strong></th></tr>
+<tr><td class="Bordered">File</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_FILE</span></span></td></tr>
+<tr><td class="Bordered">New VI</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_NEW_VI</span></span></td></tr>
+<tr><td class="Bordered">New...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_NEW</span></span></td></tr>
+<tr><td class="Bordered">Open... **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_OPEN</span></span></td></tr>
+<tr><td class="Bordered">Close **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_CLOSE</span></span></td></tr>
+<tr><td class="Bordered">Close All **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_CLOSEALL</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Save This VI</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SAVE</span></span></td></tr>
+<tr><td class="Bordered">Save As...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SAVEAS</span></span></td></tr>
+<tr><td class="Bordered">Save All</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SAVEALL</span></span></td></tr>
+<tr><td class="Bordered">Save for Previous Version</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SAVE_FOR_PREVIOUS</span></span></td></tr>
+<tr><td class="Bordered">Revert...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_REVERT</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Create Project</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_PROJECT_NEW</span></span></td></tr>
+<tr><td class="Bordered">Open Project</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_PROJECT_OPEN</span></span></td></tr>
+<tr><td class="Bordered">Save Project</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_PROJECT_SAVE</span></span></td></tr>
+<tr><td class="Bordered">Close Project</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_PROJECT_CLOSE</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Page Setup... **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_PRINTER_SETUP</span></span></td></tr>
+<tr><td class="Bordered">Print...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_PRINT_DOCUMENTATION</span></span></td></tr>
+<tr><td class="Bordered">Print Window... **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_PRINT_WINDOW</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">VI Properties... **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_VI_PROPERTIES</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Recent Projects</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_RECENTLY_OPEN_PROJECTS</span></span></td></tr>
+<tr><td class="Bordered">Recent Files</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_RECENTLY_OPEN_FILES</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Exit **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_EXIT</span></span></td></tr>
+</table>
+<br>
+<br>
+<a name="Edit"></a><h2>Edit Menu</h2>
+<table class="Bordered">
+<tr><th class="Bordered"><strong>Menu Item</strong></th>
+<th class="Bordered"><strong>Application Item Tag</strong></th></tr>
+<tr><td class="Bordered">Edit</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_EDIT</span></span></td></tr>
+<tr><td class="Bordered">Undo </td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_UNDO</span></span></td></tr>
+<tr><td class="Bordered">Redo</td> 
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_REDO</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Cut **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_CUT</span></span></td></tr>
+<tr><td class="Bordered">Copy **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_COPY</span></span></td></tr>
+<tr><td class="Bordered">Paste **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_PASTE</span></span></td></tr>
+<tr><td class="Bordered">Remove From Project **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_CLEAR</span></span></td></tr>
+<tr><td class="Bordered">Select All **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SELECT_ALL</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Make Current Values Default</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_MAKE_CURRENT_VALUES_DEFAULT</span></span></td></tr>
+<tr><td class="Bordered">Reinitialize Values to Default **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_REINIT_ALL_TO_DEFAULT</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Customize Control...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_CUSTOMIZE_CONTROL</span></span></td></tr>
+<tr><td class="Bordered">Import Picture to Clipboard</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_IMPORT_PICT_FROM_FILE</span></span></td></tr>
+<tr><td class="Bordered">Set Tabbing Order...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SET_TABBING_ORDER</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+
+<tr><td class="Bordered">Remove Broken Wires<br>Remove Broken Wires from Selection</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_REMOVE_BROKEN_WIRES</span></span></td></tr>
+
+<tr><td class="Bordered">Clean Up Diagram</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_CLEANUP_DIAGRAM</span></span></td></tr>
+
+<tr><td class="Bordered">Remove Breakpoints from Hierarchy</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_REMOVE_BREAKPOINTS_HIER</span></span></td></tr>
+<tr><td class="Bordered">Create VI Snippet from Selection</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_CREATE_ENHANCED_VI_IMAGE</span></span></td></tr>
+<tr><td class="Bordered">Create SubVI</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_CREATE_SUBVI</span></span></td></tr>
+<tr><td class="Bordered">Create Simulation Subsystem</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_CREATE_SIM_SUBSYSTEM</span></span></td></tr>
+<tr><td class="Bordered">Show Companion Diagram</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SHOW_COMPANION_DIAGRAM</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Toggle Alignment Grid</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_TOGGLE_ALIGNMENT_GRID</span></span></td></tr>
+<tr><td class="Bordered">Align Items</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SC_ALIGN_ITEMS</span></span></td></tr>
+<tr><td class="Bordered">Distribute Items</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SC_DISTRIBUTE_ITEMS</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">VI Revision History</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SHOW_HISTORY</span></span></td></tr>
+<tr><td class="Bordered">Run-time Menu...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_RUN_TIME_MENU</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Find and Replace...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_FIND</span></span></td></tr>
+<tr><td class="Bordered">Show Search Results</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SHOW_SRCH_RSLTS</span></span></td></tr>
+</table>
+<br>
+<br>
+<a name="View"></a><h2>View Menu</h2>
+<table class="Bordered">
+<tr><th class="Bordered"><strong>Menu Item</strong></th>
+<th class="Bordered"><strong>Application Item Tag</strong></th></tr>
+<tr><td class="Bordered">View *</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_VIEW</span></span></td></tr>
+<tr><td class="Bordered">Controls Palette</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SHOW_CTRLS_FCTNS</span></span></td></tr>
+<tr><td class="Bordered">Functions Palette</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SHOW_FUNCTIONS_PALETTE</span></span></td></tr>
+<tr><td class="Bordered">Tools Palette</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SHOW_TOOLS</span></span></td></tr>
+<tr><td class="Bordered">Quick Drop</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_QUICK_DROP</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Breakpoint Manager</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_BREAKPOINTS</span></span></td></tr>
+<tr><td class="Bordered">Probe Watch Window</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SC_WATCH_WINDOW</span></span></td></tr>
+<tr><td class="Bordered">Error List</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SHOW_ERRORS</span></span></td></tr>
+<tr><td class="Bordered">Load and Save Warning List</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SHOW_LOAD_SAVE_WARNING_LIST</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">VI Hierarchy</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_THIS_VIS_HIERARCHY</span></span></td></tr>
+<tr><td class="Bordered">LabVIEW Class Hierarchy</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SHOW_CLASS_HIERARCHY</span></span></td></tr>
+<tr><td class="Bordered">Browse Relationships</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SHOW_VI_HIER</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This VI's Library</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_THIS_VIS_LIBRARY</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This VI's Callers</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_THIS_VIS_CALLERS</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This VI's SubVIs</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_THIS_VIS_SUBVIS</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unopened SubVIs</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_UNOPENED_SUBVIS</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unopened Type Defs</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_UNOPENED_TYPEDEFS</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reentrant Original</td> 
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_REENTRANT_ORIGINAL</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Class Browser</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SHOW_CLASS_BROWSER_WINDOW</span></span></td></tr>
+<tr><td class="Bordered">.NET Assemblies in Memory</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_DOTNET_ASSEMBLIES_IN_MEMORY</span></span></td></tr>
+<tr><td class="Bordered">ActiveX Control Property Browser</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_ACX_PROPERTY_BROWSER</span></span></td></tr>
+<tr><td class="Bordered">Getting Started Window...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_VIEW_GETTING_STARTED</span></span></td></tr>
+<tr><td class="Bordered">Navigation Window</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SHOW_NAVIGATION_WINDOW</span></span></td></tr>
+<tr><td class="Bordered">Toolbars</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_PROJECT_TOOLBARS</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Toolbar Placeholder</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_PROJECT_TOOLBAR_PLACEHOLDER</span></span></td></tr>
+</table>
+<br>
+<br>
+<a name="Project"></a><h2>Project Menu</h2>
+<table class="Bordered">
+<tr><th class="Bordered"><strong>Menu Item</strong></th>
+<th class="Bordered"><strong>Application Item Tag</strong></th></tr>
+<tr><td class="Bordered">Project</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_PROJECT</span></span></td></tr>
+<tr><td class="Bordered">Create Project</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_PROJECT_NEW2</span></span></td></tr>
+<tr><td class="Bordered">Open Project</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_PROJECT_OPEN2</span></span></td></tr>
+<tr><td class="Bordered">Save Project</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_PROJECT_SAVE2</span></span></td></tr>
+<tr><td class="Bordered">Close Project</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_PROJECT_CLOSE2</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Add to Project</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_ADD_TO_PROJECT</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New VI</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_NEW_VI_IN_PROJECT</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_NEW_IN_PROJECT</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Filter View</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_PROJECT_FILTER_VIEW</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dependencies</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_PROJECT_FILTER_DEPENDENCIES</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build Specifications</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_PROJECT_FILTER_BUILDS</span></span></td></tr>
+
+<tr><td class="Bordered">Show Item Paths</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_PROJECT_SHOW_PATHS</span></span></td></tr>
+<tr><td class="Bordered">File Information</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_PROJECT_FILE_INFORMATION</span></span></td></tr>
+<tr><td class="Bordered">Resolve Conflicts...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_PROJECT_RESOLVE_CONFLICTS</span></span></td></tr>
+
+
+
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Properties</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_PROJECT_PROPERTIES</span></span></td></tr>
+</table>
+<br>
+<br>
+<a name="Operate"></a><h2>Operate Menu</h2>
+<table class="Bordered">
+<tr><th class="Bordered"><strong>Menu Item</strong></th>
+<th class="Bordered"><strong>Application Item Tag</strong></th></tr>
+<tr><td class="Bordered">Operate</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_OPERATE</span></span></td></tr>
+<tr><td class="Bordered">Run **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_RUN_INSTR</span></span></td></tr>
+<tr><td class="Bordered">Stop **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_STOP</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Step Into</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_DEBUG_STEPINTO</span></span></td></tr>
+<tr><td class="Bordered">Step Over</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_DEBUG_STEPOVER</span></span></td></tr>
+<tr><td class="Bordered">Step Out</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_DEBUG_STEPOUT</span></span></td></tr>
+<tr><td class="Bordered">Suspend when Called</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SUSPEND_WHEN_CALLED</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Print at Completion **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_PRINT_AT_COMPLETION</span></span></td></tr>
+<tr><td class="Bordered">Log at Completion **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_LOG_AT_COMPLETION</span></span></td></tr>
+<tr><td class="Bordered">Data Logging **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_DATA_LOGGING</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Log... **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_LOG</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieve... **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_RETRIEVE</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purge Data... **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_PURGE_DATA</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Change Log File Binding... **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_CHANGE_LOG_BINDING</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear Log File Binding **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_CLEAR_LOG_BINDING</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Change to Run Mode</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_CHANGE_TO_RUN_MODE</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Connect to Remote Panel... **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_CONNECT_TO_REMOTE_PANEL</span></span></td></tr>
+<tr><td class="Bordered">Debug Application or Shared Library...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_REMOTE_DEBUGGING</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Configure Simulation Parameters</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_CONFIGURE_SIM_PARAMS</span></span></td></tr>
+</table>
+<br>
+<br>
+<a name="Tools"></a><h2>Tools Menu</h2>
+<table class="Bordered">
+<tr><th class="Bordered"><strong>Menu Item</strong></th>
+<th class="Bordered"><strong>Application Item Tag</strong></th></tr>
+<tr><td class="Bordered">Tools</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_TOOLS</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Measurement &amp; Automation Explorer...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_MAX</span></span></td></tr>
+<tr><td class="Bordered">Instrumentation</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_INSTRUMENTATION</span></span></td></tr>
+<tr>
+<td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Find Instrument Drivers...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_INST_DRIVER_FIND_TOOLS</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create Instrument Driver Project...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_INST_DRIVER_PROJ_CREATOR</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edit Instrument Driver Project...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_INST_DRIVER_PROJ_EDITOR</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create VI Interface to LabWindows/CVI Instrument Driver...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_CONVERT_CVI</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Generate C Interface for LabVIEW Driver...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_DRIVER_LV_TO_C</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NI I/O Trace</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_NISPY</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Advanced Development *</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_ADVANCED_DVLP_MENU</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show Driver Guidelines</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_SHOW_DRIVER_GUIDELINES</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other Resources</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_VISIT_OTHER_ID_RESOURCES</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visit Instrument Driver Network...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_INST_DRIVER_NTWK</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">MathScript Window...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_INTERACTIVE_MATH</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Data Acquisition</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_DATA_ACQUISITION</span></span></td></tr>
+<tr><td class="Bordered">DSC Module</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_LVDSC</span></span></td></tr>
+<tr><td class="Bordered">Real-Time</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_REALTIME</span></span></td></tr>
+<tr><td class="Bordered">IMAQ Vision...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_IMAQ_VISION</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Debug VHDL...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_DEBUG_VHDL</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Compare</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_COMPARE</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compare VIs...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_COMPARE_VIS</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show Differences</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_SHOW_DIFFERENCES</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compare VI Hierarchies...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_COMPARE_HIERARCHIES</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compare Files...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_COMPARE_FILES</span></span></td></tr>
+<tr><td class="Bordered">Merge</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_MERGE</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merge VIs...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_MERGE_VIS</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merge LLBs...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_MERGE_LLBS</span></span></td></tr>
+<tr><td class="Bordered">Profile</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_PROFILE_MENU</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance and Memory...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_SHOW_PROFILE_WINDOW</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show Buffer Allocations...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_SHOW_BUFFER_ALLOCATIONS</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VI Metrics...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_VI_METRICS</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Find Parallelizable Loops...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_DETECT_PARALLEL_LOOPS</span></span></td></tr>
+<tr><td class="Bordered">Security **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_NI_SECURITY_MENU</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login... **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_NI_SECURITY_LOGIN</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Change Password... **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_NI_SECURITY_CHANGE_PASSWORD</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logout **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_NI_SECURITY_LOGOUT</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Domain Account Manager... **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_NI_DOMAIN_ACCOUNT_MANAGER</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Front Panel Security</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_FRONT_PANEL_SECURITY</span></span></td></tr>
+<tr><td class="Bordered">User Name...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_USER_NAME</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">LLB Manager...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_VI_LIBRARY_MANAGER</span></span></td></tr>
+<tr><td class="Bordered">Import *</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_IMPORT_TOOLS</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.NET Controls to Palette...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_IMPORT_DOTNET_CONTROLS</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ActiveX Controls to Palette...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_IMPORT_OCX</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shared Library (.dll)</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_SHARED_LIBRARY_IMPORT_WIN</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shared Library (.framework)</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_SHARED_LIBRARY_IMPORT_MAC</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shared Library (.so)</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_SHARED_LIBRARY_IMPORT_LINUX</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Web Service...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_WEB_SERVICE_PROXY_IMPORT</span></span></td></tr>
+<tr><td class="Bordered">Shared Variable</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_VARIABLE_MENU</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Front Panel Binding Mass Configuration</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_MASS_CONFIGURATOR</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multiple Variable Editor...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_MULTIPLE_VARIABLE_EDITOR</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Register Computer...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_REGISTER_COMPUTER</span></span></td></tr>
+<tr><td class="Bordered">Distributed System Manager</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_VARIABLE_MANAGER</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">User Project VIs *</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_USER_PROJECT_VIS</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Advanced</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_TOOLS_ADVANCED</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mass Compile...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_MASS_COMPILE</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edit Error Codes...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_ERROR_EDITOR</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edit Palette Set...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_PALETTE_EDITOR</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_SEPARATOR</span></span></td></tr>
+
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create or Edit Express VI</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_CREATE_EDIT_EXPRESSVI</span></span></td></tr>
+
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Export Strings...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_EXPORT_STRINGS</span></span></td></tr>
+<tr><td class="Bordered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Import Strings...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APP_IMPORT_STRINGS</span></span></td></tr>
+<tr><td class="Bordered">FPGA Module Options...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_FPGAOPTIONS</span></span></td></tr>
+<tr><td class="Bordered">Options... **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_OPTIONS</span></span></td></tr>
+</table>
+<br>
+<br>
+<a name="Window"></a><h2>Window Menu</h2>
+<table class="Bordered">
+<tr><th class="Bordered"><strong>Menu Item</strong></th>
+<th class="Bordered"><strong>Application Item Tag</strong></th></tr>
+<tr><td class="Bordered">Window</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_WINDOWS</span></span></td></tr>
+<tr><td class="Bordered">Show Panel or Diagram</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SHOW_PANEL_DIAGRAM</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">New Configuration</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_NEW_CONFIGURATION</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Tile Left and Right</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_TILE_LEFT_RIGHT</span></span></td></tr>
+<tr><td class="Bordered">Tile Up and Down</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_TILE_UP_DOWN</span></span></td></tr>
+<tr><td class="Bordered">Full Size **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_FULL_SIZE</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Open Windows * **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_OPEN_WINDOWS</span></span></td></tr>
+<tr><td class="Bordered">All Windows...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_WINDOW_LIST</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Bring VIs to Front</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_BRING_VIS_TO_FRONT</span></span></td></tr>
+<tr><td class="Bordered">Bring Frame Window to Front</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SHOW_FRAME_WINDOW</span></span></td></tr>
+<tr><td class="Bordered">Detach from Frame</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_TOGGLE_IN_FRAME</span></span></td></tr>
+<tr><td class="Bordered">Arrange</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_ARRANGE_WINDOWS</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+</table>
+<br>
+<br>
+<a name="Help"></a><h2>Help Menu</h2>
+<table class="Bordered">
+<tr><th class="Bordered"><strong>Menu Item</strong></th>
+<th class="Bordered"><strong>Application Item Tag</strong></th></tr>
+<tr><td class="Bordered">Help</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_HELP</span></span></td></tr>
+<tr><td class="Bordered">Show Context Help **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SHOW_HELP</span></span></td></tr>
+<tr><td class="Bordered">Lock Context Help</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_LOCK_HELP</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">LabVIEW Help...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_ONLINE_REF</span></span></td></tr>
+<tr><td class="Bordered">Explain Error...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_EXPLAIN_ERROR</span></span></td></tr>
+<tr><td class="Bordered">Investigate Internal Error...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_INVESTIGATE_FAILURE</span></span></td></tr>
+<tr><td class="Bordered">Help for This VI **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_ONLINE_HELP_FOR_VI</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Find Examples...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_EXAMPLES</span></span></td></tr>
+<tr><td class="Bordered">Find Instrument Drivers...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_INST_DRIVER_FIND_HELP</span></span></td></tr>
+<tr><td class="Bordered">Web Resources...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_WEB_LINKS</span></span></td></tr>
+<tr><td class="Bordered">Student Edition Web Resources...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_LVSE_WEB_LINKS</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Help Files *</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_HELP_FILES</span></span></td></tr>
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Activate LabVIEW Components</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SC_ACTIVATE_LABVIEW</span></span></td></tr>
+
+<tr><td class="Bordered">-</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SEPARATOR</span></span></td></tr>
+<tr><td class="Bordered">Patents **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_PATENTS</span></span></td></tr>
+<tr><td class="Bordered">About LabVIEW... **</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_ABOUT</span></span></td></tr>
+</table>
+
+</body>
+</html>

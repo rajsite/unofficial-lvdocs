@@ -1,0 +1,112 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Aliasing</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-A123C676-B047-4126-9B95-ADFFE5D2E6C6" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Aliasing</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 An aliased signal provides a poor representation of the analog signal. Aliasing causes a false lower frequency component
+            to appear in the sampled data of a signal. The following figure shows an adequately sampled signal and an inadequately sampled
+            signal. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-A123C676-B047-4126-9B95-ADFFE5D2E6C6__IMAGE_886C5F1848584C949099FF8EAA6A13DE" shape="rect">
+            <!-- --></a><img id="GUID-A123C676-B047-4126-9B95-ADFFE5D2E6C6__IMAGE_886C5F1848584C949099FF8EAA6A13DE" src="GUID-932173FE-D89C-4BC0-A3ED-980F99BCC06B-help-web.png"><br clear="none"> 
+         	 
+         <p>In the previous figure, the inadequately sampled signal appears to have a lower frequency than the actual signal—two cycles
+            instead of ten cycles. 
+            	 
+         </p> 
+         	 
+         <p>Increasing the sampling frequency increases the number of data points acquired in a given time period. Often, a fast sampling
+            frequency provides a better representation of the original signal than a slower sampling frequency. 
+            	 
+         </p> 
+         	 
+         <p> 
+            		 For a given sampling frequency, the maximum frequency you can accurately represent without aliasing is the Nyquist frequency.
+            The Nyquist frequency equals one-half the sampling frequency, as shown by the following equation. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./en-US2Fworkset2Ftemp2FAliasing.xml_d50e33.png"></span></div> 
+         </div> 
+         	 
+         <p>where <em>f</em><sub><em>N</em></sub> is the Nyquist frequency and <em>f</em><sub><em>s</em></sub> is the sampling frequency. 
+            	 
+         </p> 
+         	 
+         <p>Signals with frequency components above the Nyquist frequency appear aliased between DC and the Nyquist frequency. In an aliased
+            signal, frequency components actually above the Nyquist frequency appear as frequency components below the Nyquist frequency.
+            For example, a component at frequency <em>f</em><sub><em>N</em></sub> &lt; <em>f</em><sub>0</sub> &lt; <em>f</em><sub><em>s</em></sub> appears as the frequency <em>f</em><sub><em>s</em></sub> - <em>f</em><sub>0</sub>. 
+            	 
+         </p> 
+         	 
+         <p>The following two figures show the aliasing phenomenon. The first figure shows the frequencies contained in an input signal
+            acquired at a sampling frequency, <em>f</em><sub><em>s</em></sub>, of 100 Hz. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-A123C676-B047-4126-9B95-ADFFE5D2E6C6__IMAGE_E9BCE2602D624DDF9304FA0AE3CB5D50" shape="rect">
+            <!-- --></a><img id="GUID-A123C676-B047-4126-9B95-ADFFE5D2E6C6__IMAGE_E9BCE2602D624DDF9304FA0AE3CB5D50" src="GUID-038C441C-11AC-4113-8ADA-2ED98DBC1B4E-help-web.png"><br clear="none"> 
+         	 
+         <p>The following figure shows the frequency components and the aliases for the input signal from the previous figure 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-A123C676-B047-4126-9B95-ADFFE5D2E6C6__IMAGE_557E775F21A44059AB897604A5ACE931" shape="rect">
+            <!-- --></a><img id="GUID-A123C676-B047-4126-9B95-ADFFE5D2E6C6__IMAGE_557E775F21A44059AB897604A5ACE931" src="GUID-42922803-42D4-4DA7-8145-0174DC79039B-help-web.png"><br clear="none"> 
+         	 
+         <p>In the previous figure, frequencies below the Nyquist frequency of <em>f</em><sub><em>s</em></sub>/2 = 50 Hz are sampled correctly. For example, F1 appears at the correct frequency. Frequencies above the Nyquist frequency
+            appear as aliases. For example, aliases for F2, F3, and F4 appear at 30 Hz, 40 Hz, and 10 Hz, respectively. 
+            	 
+         </p> 
+         	 
+         <p>The alias frequency equals the absolute value of the difference between the closest integer multiple of the sampling frequency
+            and the input frequency, as shown in the following equation: 
+            	 
+         </p> 
+         	 
+         <p>AF = |CIMSF - IF| 
+            	 
+         </p> 
+         	 
+         <p>where AF is the alias frequency, CIMSF is the closest integer multiple of the sampling frequency, and IF is the input frequency.
+            For example, you can compute the alias frequencies for F2, F3, and F4 from the previous figure with the following equations:
+            
+            	 
+         </p> 
+         	 
+         <p>Alias F2 = |100 - 70| = 30 Hz 
+            	 
+         </p> 
+         	 
+         <p>Alias F3 = |(2)100 - 160| = 40 Hz 
+            	 
+         </p> 
+         	 
+         <p>Alias F4 = |(5)100 - 510| = 10 Hz 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Intro_DSP_and_Anls_in_LV.html" shape="rect">Introduction to Digital Signal Processing and Analysis</a></div>
+         </div>
+         <div class="relinfo relconcepts"><strong>Related concepts</strong><br clear="none"><div><a href="Sampling_Rate_DF.html" shape="rect">Sampling Rate</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

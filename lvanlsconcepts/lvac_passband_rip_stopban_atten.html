@@ -1,0 +1,123 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Passband Ripple and Stopband Attenuation</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-CDE6FD79-8BC7-4596-82AC-F8A92C290AFE" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Passband Ripple and Stopband Attenuation </h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 
+            		 In many applications, you can allow the gain in the passband to vary slightly from unity. This variation in the passband
+            is the passband ripple, or the difference between the actual gain and the desired gain of unity. In practice, the stopband
+            attenuation cannot be infinite, and you must specify a value with which you are satisfied. Measure both the passband ripple
+            and the stopband attenuation in decibels (dB). The following equation defines a decibel. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./_passband_rip_stopban_atten.xml_d20259e26.png"></span></div>
+         </div> 
+         	 
+         <p>where log denotes the base 10 logarithm, <em>A</em><sub><em>i</em></sub>(<em>f</em>) is the amplitude at a particular frequency <em>f</em> before filtering, and <em>A</em><sub>0</sub>(<em>f</em>) is the amplitude at a particular frequency <em>f</em> after filtering. 
+            	 
+         </p> 
+         	 
+         <p>When you know the passband ripple or stopband attenuation, you can use the previous equation to determine the ratio of input
+            and output amplitudes. The ratio of the amplitudes shows how close the passband or stopband is to the ideal. For example,
+            for a passband ripple of -0.02 dB, the previous equation yields the following set of equations. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./_passband_rip_stopban_atten.xml_d20259e110.png"></span></div>
+         </div>
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./_passband_rip_stopban_atten.xml_d20259e162.png"></span></div>
+         </div> 
+         	 
+         <p>The previous two equations show that the ratio of input and output amplitudes is close to unity, which is the ideal for the
+            passband. 
+            	 
+         </p> 
+         	 
+         <p>Practical filter design attempts to approximate the ideal desired magnitude response, subject to certain constraints. The
+            following table compares the characteristics of ideal filters and practical filters. 
+            	 
+         </p> 
+         	 <a name="GUID-CDE6FD79-8BC7-4596-82AC-F8A92C290AFE__TABLE_4F3E5015818443859F9ED2FE6336244F" shape="rect">
+            <!-- --></a><table class="rowsep colsep frametop framebottom frameleft frameright  " id="GUID-CDE6FD79-8BC7-4596-82AC-F8A92C290AFE__TABLE_4F3E5015818443859F9ED2FE6336244F">
+            <thead align="left">
+               <tr>
+                  <th align="left"> Characteristic 
+                     				
+                  </th>
+                  <th align="left"> Ideal Filters 
+                     				
+                  </th>
+                  <th align="left"> Practical Filters 
+                     				
+                  </th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td align="left"> Passband 
+                     				
+                  </td>
+                  <td align="left"> Flat and constant 
+                     				
+                  </td>
+                  <td align="left"> Might contain ripples 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Stopband 
+                     				
+                  </td>
+                  <td align="left"> Flat and constant 
+                     				
+                  </td>
+                  <td align="left"> Might contain ripples 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Transition band 
+                     				
+                  </td>
+                  <td align="left"> None 
+                     				
+                  </td>
+                  <td align="left"> Have transition regions 
+                     				
+                  </td>
+               </tr>
+            </tbody>
+         </table> 
+         	 
+         <p>Practical filter design involves compromise, allowing you to emphasize a filter characteristic you want at the expense of
+            a characteristic you do not want. The compromises you can make depend on whether the filter is an FIR or IIR filter and the
+            design algorithm. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Practical__Nonideal__Filters.html" shape="rect">Practical Filters</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

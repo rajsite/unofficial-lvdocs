@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Symbolic Paths</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+
+<h1>Symbolic Paths</h1>
+<p class="Body">A symbolic path or pseudopath is a predefined short form of a path that you can use in LabVIEW. Use a symbolic path to point to a location that changes with the execution environment, such as where on disk LabVIEW is installed or which user is logged in.</p>
+<p>For example, the <span class="Monospace">&lt;vilib&gt;</span> symbolic path represents the <span class="Monospace">&lt;vi.lib&gt;</span> directory in the <span class="Monospace">labview</span> directory. At run time, LabVIEW interprets the <span class="Monospace">&lt;vilib&gt;</span> symbolic path as an absolute path, such as <span class="Monospace">C:\Program Files (x86)\National Instruments\LabVIEW 2009\vi.lib</span> or <span class="Monospace">D:\Program Files\National Instruments\LabVIEW 2009\vi.lib</span>, depending on where LabVIEW is installed.</p>
+<p class="Body">The following table includes information about the symbolic paths that you can use in LabVIEW.</p>
+
+<table class="Bordered">
+<tr><th class="Bordered">Symbolic path</th><th class="Bordered">Description</th><th class="Bordered">Usage</th></tr>
+<tr><td class="Bordered"><span class="Monospace">&lt;osdatadir&gt;</span></td><td class="Bordered">Path to the default file directory on the operating system.</td><td class="Bordered">Use this symbolic path when setting the <strong>VI Search Path</strong> on the <a href="../lvdialog/Path_Options.html">Paths</a> page of the <a href="../lvdialog/Options_Dialog_Box.html">Options</a> dialog box. To use this symbolic path, enter <span class="Monospace">&lt;osdatadir&gt;:\</span> then the filename or path and filename to the VI.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">&lt;vilib&gt;</span></td><td class="Bordered">The <span class="Monospace">vi.lib</span> directory in the <span class="Monospace">labview</span> directory.</td><td class="Bordered">Use this symbolic path when setting the <strong>VI Search Path</strong> on the <a href="../lvdialog/Path_Options.html">Paths</a> page of the <a href="../lvdialog/Options_Dialog_Box.html">Options</a> dialog box. To use this symbolic path, enter <span class="Monospace">&lt;vilib&gt;:\</span> then the filename or path and filename to the VI.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">&lt;userlib&gt;</span></td><td class="Bordered">The <span class="Monospace">user.lib</span> directory in the <span class="Monospace">labview</span> directory.</td><td class="Bordered">Use this symbolic path when setting the <strong>VI Search Path</strong> on the <a href="../lvdialog/Path_Options.html">Paths</a> page of the <a href="../lvdialog/Options_Dialog_Box.html">Options</a> dialog box or the <strong>Help path</strong> on the <a href="../lvdialog/Documentation_Properties.html">Documentation</a> page of the <a href="../lvdialog/VI_Properties_Dialog_Box.html">VI Properties</a> dialog box. To use this symbolic path, enter <span class="Monospace">&lt;userlib&gt;:\</span> then the filename or path and filename to the VI or help file.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">&lt;instrlib&gt;</span></td><td class="Bordered">The <span class="Monospace">instr.lib</span> directory in the <span class="Monospace">labview</span> directory.</td><td class="Bordered">Use this symbolic path when setting the <strong>VI Search Path</strong> on the <a href="../lvdialog/Path_Options.html">Paths</a> page of the <a href="../lvdialog/Options_Dialog_Box.html">Options</a> dialog box or the <strong>Help path</strong> on the <a href="../lvdialog/Documentation_Properties.html">Documentation</a> page of the <a href="../lvdialog/VI_Properties_Dialog_Box.html">VI Properties</a> dialog box. To use this symbolic path, enter <span class="Monospace">&lt;instrlib&gt;:\</span> then the filename or path and filename to the VI or help file.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">&lt;helpdir&gt;</span></td><td class="Bordered">The <span class="Monospace">help</span> directory in the <span class="Monospace">labview</span> directory.</td><td class="Bordered">Use this symbolic path when setting the <strong>Help path</strong> on the <a href="../lvdialog/Documentation_Properties.html">Documentation</a> page of the <a href="../lvdialog/VI_Properties_Dialog_Box.html">VI Properties</a> dialog box. To use this symbolic path, enter <span class="Monospace">&lt;helpdir&gt;:\</span> then the filename or path and filename to the help file.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">&lt;resource&gt;</span></td><td class="Bordered">The <span class="Monospace">resource</span> directory in the <span class="Monospace">labview</span> directory, which is intended to store support VIs for a particular version of LabVIEW.</td><td class="Bordered">Use this symbolic path when creating VIs that are meant to be additions to the LabVIEW editor and are not meant to be used in user applications. The APIs of the <span class="Monospace">resource</span> directory are subject to change between successive versions of LabVIEW without maintaining backward compatibility. To use this symbolic path, enter <span class="Monospace">&lt;resource&gt;:\</span> then the filename or path and filename to the VI.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">&lt;ExtraVILib&gt;</span></td><td class="Bordered">The <span class="Monospace">ExtraVILib</span> directory in the <span class="Monospace">LabVIEW Data</span> directory.</td><td class="Bordered">Use this symbolic path to store VIs instantiated from templates for various LabVIEW features. For example, LabVIEW stores channel instances for <a href="../lvconcepts/channel_wires_intro.html">channel wires</a> in this symbolic path. The channel instances are generated from <a href="../glang/channel_wire_endpoint.html">channel templates</a>. When you load VIs using a different LabVIEW version and bitness other than the LabVIEW version or bitness that you used to create the VIs, LabVIEW recreates a separate copy for the instances that the loading VIs need so that you can use the VIs in the loading LabVIEW version and bitness. To use this symbolic path, enter <span class="Monospace">&lt;ExtraVILib&gt;:\</span> then the filename or path and filename to the VI.</td></tr>
+</table>
+<h3>Related Information</h3>
+<p class="Body"><a href="../lvconcepts/basics_file_paths.html">File Paths</a></p>
+</body>
+</html>

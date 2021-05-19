@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD>
+<BODY>
+<OBJECT type="text/site properties">
+	<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="faults (NI Scan Engine)">
+		<param name="Local" value="faults.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="I/O variables">
+		<param name="See Also" value="I/O variables">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="accessing containers as arrays">
+			<param name="Local" value="BlockIOAccess.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="configuring">
+			<param name="Local" value="io_vars.html#configuring">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="deploying">
+			<param name="Local" value="io_vars.html#deploying">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="introduction">
+			<param name="Local" value="io_vars.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="NI Scan Engine">
+		<param name="See Also" value="NI Scan Engine">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="introduction">
+			<param name="Local" value="scan_engine.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="scan engine">
+		<param name="See Also" value="scan engine">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="faults (NI Scan Engine)">
+			<param name="Local" value="faults.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="introduction">
+			<param name="Local" value="scan_engine.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="scanned access">
+		<param name="See Also" value="scanned access">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="I/O variables">
+			<param name="Local" value="io_vars.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="user-defined I/O variables">
+		<param name="Local" value="io_vars.html#user_IOV">
+		</OBJECT>
+
+</UL>
+</BODY>
+</HTML>

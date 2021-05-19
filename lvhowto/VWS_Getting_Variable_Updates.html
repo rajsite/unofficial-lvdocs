@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Getting Variable Updates</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Getting Variable Updates</h1>
+
+<p class="Body">To receive updates, HTTP clients must poll manually.  HTTP does not provide a push method for servers to notify HTTP clients of events or changes.  To reduce unnecessary
+       traffic when polling, OData provides a <a href="javascript:WWW(WWW_ODATA2)">$deltatoken</a> parameter that returns only items that are changed or added.</p>
+
+    <p class="Body">In the case of <span class="Monospace">VariableValueGroups</span>, the <span id="Monospace">$deltatoken</span> provides the updated variable values while skipping variable values that
+    have not changed since the last request.</p>
+
+    <p class="Body">This process works in the following way:</p>
+
+    <p class="Body">Initially, the HTTP client reads the <span class="Monospace">VariableValues</span> property of a group.</p>
+
+    <p class="Body"><span class="Monospace">GET http://my_server:3580/nivariable/VariableValueGroups('1587dcd4a87d118ae3ddd0fce09246f6')/VariableValues?$format=json</span></p>
+
+    <p class="Body">The HTTP client receives the initial data set.  To request the delta change, the HTTP client uses the following URI, as given by the <span class="Monospace">_delta</span> property, with the timestamp from the <span class="Monospace">VariableValue</span> reading as the <span class="Monospace">$deltatoken</span>.</p>
+
+    <p class="Body"><span class="Monospace">GET http://my_server:3580/nivariable/VariableValueGroups('1587dcd4a87d118ae3ddd0fce09246f6')/VariableValues?$format=json&amp;$deltatoken=1305692428170 </span></p>
+
+    <p class="Body">If there are no changes since the previous GET, the results are empty.  To get the changes again, follow the
+    delta URI as specified in the last response.</p>
+
+    <p class="Body"><span class="Monospace">GET http://my_server:3580/nivariable/VariableValueGroups('1587dcd4a87d118ae3ddd0fce09246f6')/VariableValues?$format=json&amp;$deltatoken=1305692428170</span></p>
+
+    <table class="Borderless">
+	<tr>
+	<td class="Icon"><img src="note.gif"></td>
+	<td>
+	<strong>Note</strong>&nbsp;&nbsp;Requesting a delta value that has not changed does not cause an error for the HTTP client.</td></tr></table>
+
+    <h3><a name="pollvariables">Polling Variables Bound to External I/O or Other Shared Variables in Set Periods</a></h3>
+    <p class="Body">If a shared variable is bound to an external I/O or another shared variable, a value update can come with a timestamp that
+    is older than the deltatoken.  For example, you request a delta change at time <em>t</em>, and a new value change arrives at <em>t</em>+1, but with a timestamp of <em>t</em>-1.  The next time you get another delta change, the server no longer treats the <em>t</em>-1 timestamp as a new value. To avoid this issue, poll variable values in set periods instead of using the <span class="Monospace">$delta</span> link.</p>
+
+</body>
+</html>

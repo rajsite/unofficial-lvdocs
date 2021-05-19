@@ -1,0 +1,570 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD>
+<BODY>
+<OBJECT type="text/site properties">
+	<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="1D Linear Evaluation PtByPt">
+		<param name="Local" value="1D_Linear_Evaluation_Pt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="1D Polar to Rectangular PtByPt">
+		<param name="Local" value="1D_Polar_To_Rectangular_Pt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="1D Polynomial Evaluation PtByPt">
+		<param name="Local" value="1D_Polynomial_Eval_Pt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="1D Rectangular to Polar PtByPt">
+		<param name="Local" value="1D_Rectangular_To_Polar_Pt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AC & DC Estimator PtByPt">
+		<param name="Local" value="AC_DC_Estimator_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add Array Elements PtByPt">
+		<param name="Local" value="Add_Array_Elements_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Amplitude and Phase Spectrum PtByPt">
+		<param name="Local" value="Amplitude_Phase_Spect_Pt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Array Max & Min PtByPt">
+		<param name="Local" value="Array_Max_Min_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Auto Power Spectrum PtByPt">
+		<param name="Local" value="Auto_Power_Spectrum_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AutoCorrelation PtByPt">
+		<param name="Local" value="AutoCorrelation_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Bessel Filter PtByPt">
+		<param name="Local" value="Bessel_Filter_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Boolean Crossing PtByPt">
+		<param name="Local" value="Boolean_Crossing_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Buneman Frequency Estimator PtByPt">
+		<param name="Local" value="Buneman_Frequency_Estim_Pt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Butterworth Filter PtByPt">
+		<param name="Local" value="Butterworth_Filter_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Chebyshev Filter PtByPt">
+		<param name="Local" value="Chebyshev_Filter_PtByPt.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Inverse Chebyshev Filter PtByPt">
+			<param name="Local" value="Inv_Chebyshev_Filter_Pt.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Complex Dot Product PtByPt">
+		<param name="Local" value="Complex_Dot_Product_PtByPt.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Dot Product PtByPt">
+			<param name="Local" value="Dot_Product_PtByPt.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Complex Outer Product PtByPt">
+		<param name="Local" value="Complex_Outer_Product_Pt.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Outer Product PtByPt">
+			<param name="Local" value="Outer_Product_PtByPt.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Complex Queue PtByPt">
+		<param name="Local" value="Complex_Queue_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Convolution PtByPt">
+		<param name="Local" value="Convolution_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Cross Power PtByPt">
+		<param name="Local" value="Cross_Power_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Cross Power Spectrum PtByPt">
+		<param name="Local" value="Cross_Power_Spectrum_Pt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CrossCorrelation PtByPt">
+		<param name="Local" value="CrossCorrelation_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Data Queue PtByPt">
+		<param name="Local" value="Data_Queue_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Deconvolution PtByPt">
+		<param name="Local" value="Deconvolution_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Decrement PtByPt">
+		<param name="Local" value="Decrement_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Derivative x(t) PtByPt">
+		<param name="Local" value="Derivative_xt_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Dot Product PtByPt">
+		<param name="Local" value="Dot_Product_PtByPt.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Complex Dot Product PtByPt">
+			<param name="Local" value="Complex_Dot_Product_PtByPt.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Elliptic Filter PtByPt">
+		<param name="Local" value="Elliptic_Filter_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Equi-Ripple BandPass PtByPt">
+		<param name="Local" value="EquiRipple_BandPass_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Equi-Ripple BandStop PtByPt">
+		<param name="Local" value="EquiRipple_BandStop_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Equi-Ripple HighPass PtByPt">
+		<param name="Local" value="EquiRipple_HighPass_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Equi-Ripple LowPass PtByPt">
+		<param name="Local" value="EquiRipple_LowPass_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Exponential Fit Coefficients PtByPt">
+		<param name="Local" value="Exponential_Fit_Coeff_Pt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Exponential Fit PtByPt">
+		<param name="Local" value="Exponential_Fit_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Fast Hilbert Transform PtByPt">
+		<param name="Local" value="Fast_Hilbert_Transform_Pt.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Inverse Fast Hilbert Transform PtByPt">
+			<param name="Local" value="Inv_Fast_Hilbert_Trans_Pt.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FFT PtByPt">
+		<param name="Local" value="FFT_PtByPt.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Inverse FFT PtByPt">
+			<param name="Local" value="Inverse_FFT_PtByPt.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FHT PtByPt">
+		<param name="Local" value="FHT_PtByPt.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Inverse FHT PtByPt">
+			<param name="Local" value="Inverse_FHT_PtByPt.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Filters PtByPt VIs">
+		<param name="Local" value="Filter_VIs_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FIR Filter PtByPt">
+		<param name="Local" value="FIR_Filter_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FIR Windowed Filter PtByPt">
+		<param name="Local" value="FIR_Windowed_Filter_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Fitting PtByPt VIs">
+		<param name="Local" value="Curve_Fitting_VIs_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Gaussian White Noise PtByPt">
+		<param name="Local" value="Gaussian_White_Noise_Pt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="General Histogram PtByPt">
+		<param name="Local" value="General_Histogram_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="General LS Linear Fit PtByPt">
+		<param name="Local" value="General_LS_Linear_Fit_Pt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="General Polynomial Fit PtByPt">
+		<param name="Local" value="General_Polynomial_Fit_Pt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Geometry PtByPt VIs">
+		<param name="Local" value="Geometry_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Histogram PtByPt">
+		<param name="Local" value="Histogram_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="IIR Cascade Filter PtByPt">
+		<param name="Local" value="IIR_Cascade_Filter_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="IIR Cascade Filter with I.C. PtByPt">
+		<param name="Local" value="IIR_Cascade_Filter_IC_Pt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="IIR Filter PtByPt">
+		<param name="Local" value="IIR_Filter_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="IIR Filter with I.C. PtByPt">
+		<param name="Local" value="IIR_Filter_with_IC_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Impulse Response Function PtByPt">
+		<param name="Local" value="Impulse_Response_Func_Pt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Increment PtByPt">
+		<param name="Local" value="Increment_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Integral &amp; Differential PtByPt VIs">
+		<param name="Local" value="Integ_Diff_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Integral x(t) PtByPt">
+		<param name="Local" value="Integral_xt_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Interpolation PtByPt VIs">
+		<param name="Local" value="Interpolation_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Inverse Chebyshev Filter PtByPt">
+		<param name="Local" value="Inv_Chebyshev_Filter_Pt.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Chebyshev Filter PtByPt">
+			<param name="Local" value="Chebyshev_Filter_PtByPt.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Inverse Fast Hilbert Transform PtByPt">
+		<param name="Local" value="Inv_Fast_Hilbert_Trans_Pt.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Fast Hilbert Transform PtByPt">
+			<param name="Local" value="Fast_Hilbert_Transform_Pt.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Inverse FFT PtByPt">
+		<param name="Local" value="Inverse_FFT_PtByPt.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="FFT PtByPt">
+			<param name="Local" value="FFT_PtByPt.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Inverse FHT PtByPt">
+		<param name="Local" value="Inverse_FHT_PtByPt.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="FHT PtByPt">
+			<param name="Local" value="FHT_PtByPt.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Linear Algebra PtByPt VIs">
+		<param name="Local" value="Linear_Algebra_VIs_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Linear Fit Coefficients PtByPt">
+		<param name="Local" value="Linear_Fit_Coefficients_Pt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Linear Fit PtByPt">
+		<param name="Local" value="Linear_Fit_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Mean PtByPt">
+		<param name="Local" value="Mean_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Median Filter PtByPt">
+		<param name="Local" value="Median_Filter_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Median PtByPt">
+		<param name="Local" value="Median_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Mode PtByPt">
+		<param name="Local" value="Mode_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Moment about Mean PtByPt">
+		<param name="Local" value="Moment_About_Mean_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="MSE PtByPt">
+		<param name="Local" value="MSE_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Normalize Vector PtByPt">
+		<param name="Local" value="Normalize_Vector_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Other Functions PtByPt VIs">
+		<param name="Local" value="Other_Point_By_Point_VIs.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Outer Product PtByPt">
+		<param name="Local" value="Outer_Product_PtByPt.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Complex Outer Product PtByPt">
+			<param name="Local" value="Complex_Outer_Product_Pt.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Peak Detector PtByPt">
+		<param name="Local" value="Peak_Detector_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Periodic Random Noise PtByPt">
+		<param name="Local" value="Periodic_Random_Noise_Pt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Point By Point VIs">
+		<param name="Local" value="PtByPt_VI_Help.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Polynomial Interpolation PtByPt">
+		<param name="Local" value="Polynomial_Interpolat_Pt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Polynomial PtByPt VIs">
+		<param name="Local" value="Polynomial_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Power Spectrum PtByPt">
+		<param name="Local" value="Power_Spectrum_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Probability &amp; Statistics PtByPt VIs">
+		<param name="Local" value="Prob_and_Stat_VIs_PtByPt.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PtByPt VIs">
+		<param name="See Also" value="PtByPt VIs">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="(see Point By Point VIs)">
+			<param name="See Also" value="Point By Point VIs">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Quick Scale 1D PtByPt">
+		<param name="Local" value="Quick_Scale_1D_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Rational Interpolation PtByPt">
+		<param name="Local" value="Rational_Interpolation_Pt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="RMS PtByPt">
+		<param name="Local" value="RMS_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Sample Variance PtByPt">
+		<param name="Local" value="Sample_Variance_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Savitzky Golay Filter PtByPt">
+		<param name="Local" value="Savitzky_Golai_Filter_Pt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Sawtooth Wave PtByPt">
+		<param name="Local" value="Sawtooth_Wave_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Scale 1D PtByPt">
+		<param name="Local" value="Scale_1D_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Search 1D Array PtByPt">
+		<param name="Local" value="Search_1D_Array_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Signal Generation PtByPt VIs">
+		<param name="Local" value="Sgnal_Gneration_VIs_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Signal Operation PtByPt VIs">
+		<param name="Local" value="Array_Operation_VIs_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Signal Processing VIs">
+		<param name="See Also" value="Signal Processing VIs">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Point By Point VIs">
+			<param name="Local" value="PtByPt_VI_Help.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Sine Wave PtByPt">
+		<param name="Local" value="Sine_Wave_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Sort 1D Array PtByPt">
+		<param name="Local" value="Sort_1D_Array_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Spectral Analysis PtByPt VIs">
+		<param name="Local" value="Transform_VIs_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Spline Interpolant PtByPt">
+		<param name="Local" value="Spline_Interpolant_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Spline Interpolation PtByPt">
+		<param name="Local" value="Spline_Interpolation_Pt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Square Wave PtByPt">
+		<param name="Local" value="Square_Wave_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Standard Deviation PtByPt">
+		<param name="Local" value="Standard_Deviation_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="STFT Spectrogram PtByPt">
+		<param name="Local" value="STFT_Spectrogram_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Threshold Detector PtByPt">
+		<param name="Local" value="Threshold_Peak_Detector_Pt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Transfer Function PtByPt">
+		<param name="Local" value="Transfer_Function_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Transforms PtByPt VIs">
+		<param name="Local" value="Transforms_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Triangle Wave PtByPt">
+		<param name="Local" value="Triangle_Wave_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Uniform White Noise PtByPt">
+		<param name="Local" value="Uniform_White_Noise_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Unit Vector PtByPt">
+		<param name="Local" value="Unit_Vector_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Unwrap Phase PtByPt">
+		<param name="Local" value="Unwrap_Phase_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Value Has Changed PtByPt">
+		<param name="Local" value="Value_Has_Changed_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Variance PtByPt">
+		<param name="Local" value="Variance_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Walsh Hadamard Inverse PtByPt">
+		<param name="Local" value="Walsh_Hadamard_Inverse_Pt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Walsh Hadamard PtByPt">
+		<param name="Local" value="Walsh_Hadamard_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Wavelet Transform Daubechies4 Inverse PtByPt">
+		<param name="Local" value="Wave_Trans_Daub4_Inv_Pt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Wavelet Transform Daubechies4 PtByPt">
+		<param name="Local" value="Wave_Transform_Daub4_Pt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Windowed FFT PtByPt">
+		<param name="Local" value="Windowed_FFT_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="WVD Spectrogram PtByPt">
+		<param name="Local" value="WVD_Spectrogram_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Y[i]=Clip{X[i]} PtByPt">
+		<param name="Local" value="Yi_eq_Clip_Xi_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Y[i]=X[i-n] PtByPt">
+		<param name="Local" value="Yi_eq_Xi_minus_n_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Zero Crossing PtByPt">
+		<param name="Local" value="Zero_Crossing_PtByPt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Zero-Order Hold PtByPt">
+		<param name="Local" value="Zero_Order_Hold_PtByPt.html">
+		</OBJECT>
+
+</UL>
+</BODY>
+</HTML>

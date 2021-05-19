@@ -1,0 +1,510 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Upgrade and Compatibility Issues</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script src="" type="text/javascript" xml:space="preserve"></script></head>
+   <body>
+      <div class="nested0"><a name="GUID-3AE67D93-D8A0-4027-9489-4AF5581831AA" shape="rect">
+            <!-- --></a> 
+         
+         <h1 class="topictitle1">Upgrade and Compatibility Issues</h1> 
+         
+         
+         <div>
+            <p> 
+               
+            </p> 
+            	 
+            <div class="p"><a name="GUID-3AE67D93-D8A0-4027-9489-4AF5581831AA__UPGRADE_ISSUES" shape="rect">
+                  <!-- --></a>When you update to <span>LabVIEW 2020</span>, refer to the upgrade and compatibility issues for the version of
+               			LabVIEW from which you are upgrading: <a name="GUID-3AE67D93-D8A0-4027-9489-4AF5581831AA__UL_78038CAA06FD4F2DBDEDB75D6F5CD6CE" shape="rect">
+                  <!-- --></a><ul id="GUID-3AE67D93-D8A0-4027-9489-4AF5581831AA__UL_78038CAA06FD4F2DBDEDB75D6F5CD6CE">
+                  <li><a name="GUID-3AE67D93-D8A0-4027-9489-4AF5581831AA__LI_39D49875AF9E48178E5B61A900492973" shape="rect">
+                        <!-- --></a><a href="Upgrade_Issues.html#GUID-3844A8B5-11F5-46DB-BE9C-D1A4A9DA142A" title="You might encounter the following compatibility issues when you upgrade to LabVIEW 2020 from LabVIEW 2016." shape="rect">LabVIEW 2016</a>
+                     				
+                  </li>
+                  <li><a name="GUID-3AE67D93-D8A0-4027-9489-4AF5581831AA__LI_06B54ECF1392438AB8D1E3719ECF09E7" shape="rect">
+                        <!-- --></a><a href="Upgrade_Issues.html#GUID-556C4224-5CED-4B02-90D9-7E7497AEF4B1" title="You might encounter the following compatibility issues when you upgrade to LabVIEW 2020 from LabVIEW 2017." shape="rect">LabVIEW 2017</a>
+                     				
+                  </li>
+                  <li><a name="GUID-3AE67D93-D8A0-4027-9489-4AF5581831AA__LI_4A432A2C051E4004A87B56C9CEAEE589" shape="rect">
+                        <!-- --></a><a href="Upgrade_Issues.html#GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA" shape="rect">LabVIEW 2018</a>
+                     				
+                  </li>
+                  <li><a name="GUID-3AE67D93-D8A0-4027-9489-4AF5581831AA__LI_BDF11390246C4581AE962B82C2BB3CD6" shape="rect">
+                        <!-- --></a><a href="Upgrade_Issues.html#GUID-31F4647D-7384-4CD0-881F-75A1DA11D7CB" title="You might encounter the following compatibility issue when you upgrade to LabVIEW 2020 from LabVIEW 2019." shape="rect">LabVIEW 2019</a>
+                     				
+                  </li>
+               </ul>
+               		
+            </div> 
+            	 
+            <p>Refer to the <span class="filepath">readme.html</span> file in the <span class="filepath">labview</span>
+               			directory for information about known issues in the new version of LabVIEW, additional
+               			compatibility issues, and information about late-addition features in <span>LabVIEW 2020</span>. 
+            </p> 
+            
+         </div> 
+         
+         <div class="nested1" xml:lang="en-US"><a name="GUID-3844A8B5-11F5-46DB-BE9C-D1A4A9DA142A" shape="rect">
+               <!-- --></a> 
+            
+            <h2 class="topictitle2">Upgrading from LabVIEW 2016</h2> 
+            
+            
+            <div>
+               <p>You might encounter the following compatibility issues when you upgrade to <span>LabVIEW 2020</span> from
+                  LabVIEW 2016. 
+               </p> 
+               	 
+               <div class="section"><a name="GUID-3844A8B5-11F5-46DB-BE9C-D1A4A9DA142A__SECTION_6A8F5BEF854D4E2683A8A2A4BDC98DBE" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Behavior Change in the Actor Framework VIs</h3> 
+                  		 
+                  		
+                  <p>In LabVIEW 2016 and earlier, when a nested actor fails to launch because of an error in the Pre-Launch Init method, the nested
+                     actor returns an error and sends a Last Ack message that contains the error to its caller actor. In LabVIEW 2017 and later,
+                     the nested actor returns an error without sending a Last Ack message to its caller actor. 
+                     		
+                  </p> 
+                  	 
+               </div> 
+               
+            </div> 
+            
+            <div>
+               <div class="relinfo"><strong>Related information</strong><br clear="none"><div><a href="../lvcomm/AF_Pre_Launch_Init.html" shape="rect">Actor:Pre Launch Init</a></div>
+               </div>
+            </div>
+            
+         </div>
+         <div class="nested1" xml:lang="en-US"><a name="GUID-556C4224-5CED-4B02-90D9-7E7497AEF4B1" shape="rect">
+               <!-- --></a> 
+            
+            <h2 class="topictitle2">Upgrading from LabVIEW 2017</h2> 
+            
+            
+            <div>
+               <p>You might encounter the following compatibility issues when you upgrade to <span>LabVIEW 2020</span>
+                  		from LabVIEW 2017. 
+               </p> 
+               	 
+               <div class="section"><a name="GUID-556C4224-5CED-4B02-90D9-7E7497AEF4B1__SECTION_EBF5F74E91B340BF9D7E7A3EDF6E5BFB" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Backward Compatibility of the LabVIEW Run-Time Engine</h3> 
+                  		 
+                  		
+                  <p>LabVIEW 2017 and later supports backward compatibility for the LabVIEW Run-Time Engine. You can load and run binaries and
+                     VIs built in older versions of LabVIEW without mass recompiling VIs or rebuilding binaries in the current version of LabVIEW.
+                     For example, versions of LabVIEW later than 2017 can load binaries and VIs built with LabVIEW 2017 without recompiling. This
+                     improvement applies to stand-alone applications (EXEs), shared libraries (DLLs), and packed project libraries. 
+                     		
+                  </p> 
+                  		
+                  <p>To enable binaries to be backward compatible, place a checkmark in the following checkbox on the Advanced page of the specific
+                     dialog box depending on your build specification: 
+                     		
+                  </p> 
+                  		<a name="GUID-556C4224-5CED-4B02-90D9-7E7497AEF4B1__TABLE_04C6E38C4D684ACD95136C980F50C5F9" shape="rect">
+                     <!-- --></a><table class="rowsep colsep frametop framebottom frameleft frameright  " id="GUID-556C4224-5CED-4B02-90D9-7E7497AEF4B1__TABLE_04C6E38C4D684ACD95136C980F50C5F9">
+                     <thead align="left">
+                        <tr>
+                           <th width="NaN%">Build Specification 
+                              				  
+                           </th>
+                           <th width="NaN%">Dialog Box 
+                              				  
+                           </th>
+                           <th width="NaN%">Checkbox 
+                              				  
+                           </th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td width="NaN%">Stand-alone application (EXE) 
+                              				  
+                           </td>
+                           <td width="NaN%"><span class="wintitle">Application Properties</span> 
+                              				  
+                           </td>
+                           <td width="NaN%"><strong>Allow future versions of the LabVIEW Runtime to run this application</strong> 
+                              				  
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="NaN%">Packed project library 
+                              				  
+                           </td>
+                           <td width="NaN%"><span class="wintitle">Packed Library Properties</span> 
+                              				  
+                           </td>
+                           <td width="NaN%"><strong>Allow future versions of LabVIEW to load this packed library</strong> 
+                              				  
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="NaN%">Shared library (DLL) 
+                              				  
+                           </td>
+                           <td width="NaN%"><span class="wintitle">Shared Library Properties</span> 
+                              				  
+                           </td>
+                           <td width="NaN%"><strong>Allow future versions of LabVIEW to load this shared library</strong> 
+                              				  
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table> 
+                  		
+                  <p>LabVIEW enables these options by default for build specifications you create in LabVIEW 2017 and later. You can disable these
+                     options to bind a build specification to a specific version of LabVIEW. Disabling these options prevents any changes to the
+                     performance profiles and helps you avoid unexpected problems resulting from compiler upgrades. For real-time applications,
+                     these options do not appear in the dialog boxes but the functionality is enabled by default. 
+                     		
+                  </p> 
+                  	 
+               </div> 
+               	 
+               <div class="section"><a name="GUID-556C4224-5CED-4B02-90D9-7E7497AEF4B1__SECTION_A499A8CF89954AAC8FD5CC1EAC7D9D85" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Behavior Changes to the Report Generation VIs</h3> 
+                  		 
+                  		
+                  <p>In LabVIEW 2018, the Report Generation VIs no longer support generating reports in the Standard Report format. You can generate
+                     reports in HTML, Word, or Excel formats only. Because of the behavior change, the following VIs are deprecated: 
+                     		
+                  </p> 
+                  		<a name="GUID-556C4224-5CED-4B02-90D9-7E7497AEF4B1__UL_51A3963C407F42D18A2987B03B6EB0E9" shape="rect">
+                     <!-- --></a><ul id="GUID-556C4224-5CED-4B02-90D9-7E7497AEF4B1__UL_51A3963C407F42D18A2987B03B6EB0E9">
+                     <li><a name="GUID-556C4224-5CED-4B02-90D9-7E7497AEF4B1__LI_0DD3F8EC1668482EB4E3E4850E2941CE" shape="rect">
+                           <!-- --></a><span>Easy Print VI Panel or Documentation</span>�This VI is deprecated. Use the <span>Print VI Panel or Documentation</span> VI instead. 
+                        		  
+                     </li>
+                     <li><a name="GUID-556C4224-5CED-4B02-90D9-7E7497AEF4B1__LI_A592525D5007446DA33DE2E00B5645DE" shape="rect">
+                           <!-- --></a><span>Easy Text Report</span>�This VI is deprecated. Use the <span>Create Easy Text Report</span> VI instead. 
+                        		  
+                     </li>
+                     <li><a name="GUID-556C4224-5CED-4B02-90D9-7E7497AEF4B1__LI_A6D429476B4B46269487B04051E84570" shape="rect">
+                           <!-- --></a><span>Get Report Type</span>�This VI is deprecated. Use the <span>Report Type</span> VI instead. 
+                        		  
+                     </li>
+                     <li><a name="GUID-556C4224-5CED-4B02-90D9-7E7497AEF4B1__LI_5411B414C36549CBB76C8FC7766B4EC4" shape="rect">
+                           <!-- --></a><span>New Report</span>�This VI is deprecated. Use the <span>Create Report</span> VI instead. 
+                        		  
+                     </li>
+                     <li><a name="GUID-556C4224-5CED-4B02-90D9-7E7497AEF4B1__LI_6913CF56B2FD43C6BF3545C468F88E42" shape="rect">
+                           <!-- --></a><span>Set Report Tab Width</span>�This VI is deprecated. 
+                        		  
+                     </li>
+                  </ul> 
+                  	 
+               </div> 
+               	 
+               <div class="section"><a name="GUID-556C4224-5CED-4B02-90D9-7E7497AEF4B1__SECTION_E958FF6BD6594B53B6D182DF5D0D057E" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Deprecated VIs, Functions, and Nodes</h3> 
+                  		 
+                  		
+                  <p>LabVIEW 2018 and later do not support the <span>Number To Enum</span> VI. Use the <span>Coerce To Type</span> function instead. 
+                     		
+                  </p> 
+                  	 
+               </div> 
+               
+            </div> 
+            
+            <div>
+               <div class="relinfo"><strong>Related information</strong><br clear="none"><div><a href="../lvdialog/App_Settings_Tab.html" shape="rect">Advanced Page (Application Properties Dialog Box)</a></div>
+                  <div><a href="../lvdialog/Advanced_Packed_Page.html" shape="rect">Advanced Page (Packed Library Properties Dialog Box)</a></div>
+                  <div><a href="../lvdialog/Advanced_DLL_Page.html" shape="rect">Advanced Page (Shared Library Properties Dialog Box)</a></div>
+                  <div><a href="../lvreport/Report_Gen_VIs.html" shape="rect">Report Generation VIs</a></div>
+                  <div><a href="../lvreport/Easy_Print_Panel_Doc.html" shape="rect">Print VI Panel or Documentation VI</a></div>
+                  <div><a href="../lvreport/Easy_Text_Report.html" shape="rect">Create Easy Text Report VI</a></div>
+                  <div><a href="../lvreport/Get_Report_Type.html" shape="rect">Report Type VI</a></div>
+                  <div><a href="../lvreport/New_Report.html" shape="rect">Create Report VI</a></div>
+                  <div><a href="../glang/coerce_to_type.html" shape="rect">Coerce To Type Function</a></div>
+               </div>
+            </div>
+            
+         </div>
+         <div class="nested1" xml:lang="en-US"><a name="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA" shape="rect">
+               <!-- --></a> 
+            
+            <h2 class="topictitle2">Upgrading from LabVIEW 2018</h2> 
+            
+            
+            <div>
+               <p> 
+                  
+               </p> 
+               	 
+               <p>You might encounter the following compatibility issue when you upgrade to <span>LabVIEW 2020</span> from LabVIEW 2018. 
+               </p> 
+               	 <a name="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__UL_19E7F99F42C74D389E87F45C1F54D669" shape="rect">
+                  <!-- --></a><ul id="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__UL_19E7F99F42C74D389E87F45C1F54D669">
+                  <li><a name="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__LI_2B0AC3FCEE9F4AEA8C84C644D49652B6" shape="rect">
+                        <!-- --></a>The 
+                     		  <span class="wintitle">Package Attributes</span> page of the Package Properties dialog box is renamed to 
+                     		  <span class="wintitle">Package</span> page. 
+                     		
+                  </li>
+                  <li><a name="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__LI_63E85E0838814DD6ACCD0051ABB46CB2" shape="rect">
+                        <!-- --></a>The <span>Array, Matrix &amp; Cluster</span> palette is renamed <span>Data Containers</span>. 
+                     		
+                  </li>
+                  <li><a name="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__LI_5AF6E3B2319242B7A4B5916E47E3DF8C" shape="rect">
+                        <!-- --></a>The top-level terminal names of the <span>Data Type Parsing</span> VIs changed from uppercase to lowercase. Sub-level terminal names, such as cluster elements, are unchanged. 
+                     		
+                  </li>
+               </ul> 
+               	 
+               <div class="section"><a name="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__SECTION_D3210C1572C14FD1B80FDDAF65C7C40E" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Behavior Changes to the Type
+                     				Specialization Structure
+                  </h3>
+                  			
+                  			
+                  <p>In LabVIEW 2019, the Type Specialization structure changes the syntax error checking
+                     				behavior when deciding whether to accept or decline a subdiagram. In LabVIEW 2018
+                     				and earlier, the Type Specialization structure considers errors within the
+                     				structure, such as broken wires, and errors from broken subVIs or other dependencies
+                     				as syntax errors. In LabVIEW 2019 and later, the Type Specialization structure
+                     				considers only errors within the structure as syntax errors. 
+                  </p><br clear="none"><a name="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__IMAGE_0C5A9DABBD534276847930916F4222BF" shape="rect">
+                     <!-- --></a><div class="imagecenter"><img id="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__IMAGE_0C5A9DABBD534276847930916F4222BF" src="GUID-CEBC8EDE-4B79-4500-A777-4CE923301EA3-5.5x8.5%20-%20a5.png"></div><br clear="none">
+                  			
+                  <p><a name="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__TSS" shape="rect">
+                        <!-- --></a> 
+                  </p>
+                  		
+               </div>
+               		
+               <div class="section"><a name="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__SECTION_C31C3D9703C942F287427ECC78C6B09C" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Behavior Changes to Creating
+                     				Boolean Controls and Indicators with Classic, System, or NXG Style
+                  </h3>
+                  			
+                  			
+                  <p>LabVIEW 2019 changes the behavior of creating controls and indicators from Boolean
+                     				terminals when a VI is configured to use classic, system, or NXG style for creating
+                     				controls and indicators. The following table compares the appearances of Boolean
+                     				controls and indicators created in LabVIEW 2018 and earlier versus in LabVIEW 2019
+                     				and later. 
+                  </p><a name="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__TABLE_C7CC657087884ECF92F1E98CDA138393" shape="rect">
+                     <!-- --></a><table class="rowsep colsep frametop framebottom frameleft frameright  " id="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__TABLE_C7CC657087884ECF92F1E98CDA138393">
+                     <thead align="left">
+                        <tr>
+                           <th width="NaN%">Style </th>
+                           <th width="NaN%">Type </th>
+                           <th width="NaN%">LabVIEW 2018 and earlier </th>
+                           <th width="NaN%">LabVIEW 2019 and later</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td width="NaN%">Classic </td>
+                           <td width="NaN%">Control </td>
+                           <td width="NaN%">
+                              								<br clear="none"><a name="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__IMAGE_0816985A02904DB68454A558FC511D87" shape="rect">
+                                 <!-- --></a><div class="imagecenter"><img id="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__IMAGE_0816985A02904DB68454A558FC511D87" src="GUID-C6FEC337-73BD-42E6-8349-12BB0D8531D0-5.5x8.5%20-%20a5.png"></div><br clear="none">
+                              							
+                           </td>
+                           <td width="NaN%">
+                              								<br clear="none"><a name="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__IMAGE_B14218E1890045B1A4DECF718E34854F" shape="rect">
+                                 <!-- --></a><div class="imagecenter"><img id="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__IMAGE_B14218E1890045B1A4DECF718E34854F" src="GUID-1E0FB81A-4B3A-4677-A7E9-983AA6765E53-5.5x8.5%20-%20a5.png"></div><br clear="none">
+                              							
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="NaN%">System </td>
+                           <td width="NaN%">Control/Indicator </td>
+                           <td width="NaN%">
+                              								<br clear="none"><a name="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__IMAGE_ECF08FDFE5CE4A35A1F1BDAE5616F7DD" shape="rect">
+                                 <!-- --></a><div class="imagecenter"><img id="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__IMAGE_ECF08FDFE5CE4A35A1F1BDAE5616F7DD" src="GUID-FC71B690-0814-47B1-B1F5-4CBF59EB7E8F-5.5x8.5%20-%20a5.png"></div><br clear="none">
+                              							
+                           </td>
+                           <td width="NaN%">
+                              								<br clear="none"><a name="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__IMAGE_8EA17A23D65A404EB5CBE2AEDE2B8B50" shape="rect">
+                                 <!-- --></a><div class="imagecenter"><img id="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__IMAGE_8EA17A23D65A404EB5CBE2AEDE2B8B50" src="GUID-F55FEA12-E7DA-428C-A518-E9ADF42BD57A-5.5x8.5%20-%20a5.png"></div><br clear="none">
+                              							
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="NaN%">NXG </td>
+                           <td width="NaN%">Control </td>
+                           <td width="NaN%">
+                              								<br clear="none"><a name="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__IMAGE_534238AEF6DA40598908D487B41A44DF" shape="rect">
+                                 <!-- --></a><div class="imagecenter"><img id="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__IMAGE_534238AEF6DA40598908D487B41A44DF" src="GUID-75CB3D17-304F-4E98-A085-6715E1FE275B-5.5x8.5%20-%20a5.png"></div><br clear="none">
+                              							
+                           </td>
+                           <td width="NaN%">
+                              								<br clear="none"><a name="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__IMAGE_9B6007E5A3A9438EB559297CF992ACA3" shape="rect">
+                                 <!-- --></a><div class="imagecenter"><img id="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__IMAGE_9B6007E5A3A9438EB559297CF992ACA3" src="GUID-63A1E5E3-E2A7-4837-8B74-46E0ACC229B8-5.5x8.5%20-%20a5.png"></div><br clear="none">
+                              							
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  			
+                  <table class="noteTable">
+                     <tr>
+                        <td><img alt="Note" src="note.gif"></td>
+                        <td><a name="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__GUID-D6289836-A5C1-4B63-9671-411815C6CDBD" shape="rect">
+                              <!-- --></a><span class="notetitle">Note&nbsp;&nbsp;</span> To configure the style for creating
+                           				controls and indicators, select <span class="menucascade"><strong>File�</strong><strong>VI Properties</strong></span>, select <strong>Editor Options</strong> from the
+                           					<strong>Category</strong> pull-down menu, and select an appropriate style
+                           				in the <strong>Control Style for Create Control/Indicator</strong> list. 
+                        </td>
+                     </tr>
+                  </table>
+                  			
+                  <p>The behavior change applies to Boolean controls and indicators that you create using
+                     				the following methods: 
+                  </p>
+                  			<a name="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__UL_8BADD42374AD44ECB5BCE4A21B353C09" shape="rect">
+                     <!-- --></a><ul id="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__UL_8BADD42374AD44ECB5BCE4A21B353C09">
+                     <li><a name="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__LI_F08D2FD25D1742F49C362A7874A05031" shape="rect">
+                           <!-- --></a>Use the <span>Create
+                           						Control</span> or <span>Create Indicator</span> method. 
+                     </li>
+                     <li><a name="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__LI_CC75C5E70F2B4CB984FC1772622263A4" shape="rect">
+                           <!-- --></a>Right-click a Boolean terminal and
+                        					select <span class="menucascade"><strong>Create�</strong><strong>Control</strong></span> or <span class="menucascade"><strong>Create�</strong><strong>Indicator</strong></span> from the shortcut menu. 
+                     </li>
+                  </ul>
+                  		
+               </div>
+               		
+               <div class="section"><a name="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__SECTION_A5365F52DB8C46BFAF369FA55B489225" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Behavior Changes to Automatic
+                     				Error Handling of the Data Value Reference Read / Write Element Border Node
+                  </h3>
+                  			
+                  			
+                  <p>When you place a pair of <span>Data Value Reference Read / Write
+                        					Element</span> border nodes on an <span>In Place Element</span>
+                     				structure, both the left and right border nodes have the <strong>error
+                        					out</strong> terminal. In LabVIEW 2018, if an error occurs and the VI has
+                     				automatic error handling enabled, LabVIEW displays an error dialog box for each
+                     				unwired <strong>error out</strong> terminal. In LabVIEW 2019 and later,
+                     				LabVIEW displays only one error dialog box regardless of the number of unwired
+                     					<strong>error out</strong> terminals. 
+                  </p>
+                  			
+                  <p><a name="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__DVR" shape="rect">
+                        <!-- --></a> 
+                  </p>
+                  		
+               </div>
+               		
+               <div class="section"><a name="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__SECTION_0794E030065948DFB90A759783826EE0" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Behavior Changes to Calling
+                     				Community Members in a Password-Protected Library
+                  </h3>
+                  			
+                  			
+                  <p> In LabVIEW 2018, if a friend VI calls a community member in a library that is
+                     				password-protected, you must provide the password of the library the first time you
+                     				edit or run the friend VI. In LabVIEW 2019 and later, you can edit or run the friend
+                     				VI without providing the password of the library. 
+                  </p>
+                  		
+               </div> 
+               	 
+               <div class="section"><a name="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__SECTION_E2AFE5C51AB04E02933FC267C5965784" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Indicating Text Overflow in
+                     				Constants, Controls, and Indicators
+                  </h3>
+                  			
+                  			
+                  <p>By default, LabVIEW 2019 indicates that visible text is cut off in strings, numerics,
+                     				timestamps, text rings and enums, and combo boxes by a text fade out effect with an
+                     				arrow. To enable text overflow in LabVIEW 2018 and earlier, right-click a control or
+                     				indicator or a constant inside a cluster or cluster array and select <span class="menucascade"><strong>Visible Items�</strong><strong>Text Overflow</strong></span>.
+                  </p>
+                  		
+               </div>
+               		
+               <div class="section"><a name="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__SECTION_6A2F73BDC57A4F87A9F8804AEE36F22F" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Terminal Name Changes to the Data
+                     				Type Parsing VIs
+                  </h3>
+                  			
+                  			
+                  <p>The top-level terminal names of the <span>Data Type Parsing</span> VIs
+                     				changed from uppercase to lowercase. Sub-level terminal names, such as cluster
+                     				elements, are unchanged. 
+                  </p>
+                  			
+                  <p><a name="GUID-0E75699E-DEC2-4CC9-848E-98898279FDBA__DTP" shape="rect">
+                        <!-- --></a> 
+                  </p>
+               </div> 
+               
+            </div> 
+            
+            <div>
+               <div class="relinfo"><strong>Related information</strong><br clear="none"><div><a href="../glang/type_specialization_structure.html" shape="rect">Type Specialization Structure</a></div>
+                  <div><a href="../glang/data_type_parsing.html" shape="rect">Data Type Parsing VIs</a></div>
+                  <div><a href="../glang/inplace_datareference.html" shape="rect">Data Value Reference Read / Write Element Border Node</a></div>
+               </div>
+            </div>
+            
+         </div>
+         <div class="nested1" xml:lang="en-US"><a name="GUID-31F4647D-7384-4CD0-881F-75A1DA11D7CB" shape="rect">
+               <!-- --></a>
+            
+            <h2 class="topictitle2">Upgrading from LabVIEW 2019</h2>
+            
+            
+            <div>
+               <p>You might encounter the following compatibility issue when you upgrade to <span>LabVIEW 2020</span> from LabVIEW 2019.
+               </p>
+               
+               <div class="section"><a name="GUID-31F4647D-7384-4CD0-881F-75A1DA11D7CB__SECTION_AHR_1RX_MJB" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">MathScript Functionality Is No Longer Recommended</h3>
+                  <p>LabVIEW MathScript is
+                     no longer recommended for new designs. Visit <a href="http://www.ni.com/migratemathscript" target="_blank" shape="rect">ni.com/migratemathscript</a> for more information and recommended
+                     alternatives.
+                  </p>
+               </div>
+               
+               <div class="section"><a name="GUID-31F4647D-7384-4CD0-881F-75A1DA11D7CB__SECTION_JX1_NNM_XKB" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">SSL Encryption Is Deprecated For Remote Front
+                     Panels
+                  </h3>
+                  <p>In LabVIEW 2020, Secure Sockets Layer (SSL) encryption is no longer
+                     supported when you place a checkmark in the <strong>SSL</strong> checkbox in
+                     the <span class="wintitle">Remote Panel Server</span> section on the <span class="wintitle">Web
+                        Server</span> page of the <span class="wintitle">Options</span> dialog box. LabVIEW
+                     returns an error when you attempt to make a secure connection to a remote front
+                     panel server.
+                  </p>
+               </div>
+               
+               <div class="section"><a name="GUID-31F4647D-7384-4CD0-881F-75A1DA11D7CB__SECTION_BW3_L5Z_LJB" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Deprecated VIs, Functions, and
+                     Nodes
+                  </h3>
+                  <p>LabVIEW 2020 and later do not support the <span>MD5Checksum
+                        File</span> VI. Use the <span>File Checksum</span> VI
+                     instead.
+                  </p>
+               </div>
+               
+               <div class="section"><a name="GUID-31F4647D-7384-4CD0-881F-75A1DA11D7CB__SECTION_R12_2NK_4JB" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Name Change to the Call Parent Method Node</h3>
+                  <p>The <span>Call Parent Method</span> node is renamed <span>Call Parent Class Method</span>.
+                  </p>
+               </div>
+               
+            </div>
+            
+            <div>
+               <div class="relinfo"><strong>Related information</strong><br clear="none"><div><a href="../glang/file_checksum.html" shape="rect">File Checksum</a></div>
+               </div>
+            </div>
+            
+         </div>
+      </div>
+   </body>
+</html>

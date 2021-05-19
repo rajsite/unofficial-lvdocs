@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Converting an LLB to a Project Library</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Converting an LLB to a Project Library</h1>
+
+<p class="Body">Consider the ways in which you might use an <a href="../lvconcepts/SavingVIs.html#Advantages_of_Saving_VIs_as_Libraries">LLB</a> before you decide whether to convert it to a <a href="../lvconcepts/Project_Libraries.html">LabVIEW project library</a>. LLBs and project libraries serve different purposes and are not mutually exclusive.</p>
+<p class="Body">For example, you might want to convert a self-contained collection of files that serves as an application programming interface (API). Converting an LLB to a LabVIEW project library provides several advantages. You can perform <a href="../lvconcepts/Using_Source_Code.html">source control</a> operations on individual items that the project library owns. However, you cannot perform source control operations on individual VIs in an LLB. You also can configure access options on items that the project library owns so they are public or private.</p>
+<p class="Body">If you convert an LLB to a project library, you lose the ability to set a top-level VI to run automatically when you open the LLB. You cannot mark a VI as top-level in a project library. For example, you might not want to convert an LLB that consists of VIs that behave as a single application, which runs automatically when you open the LLB. Consider organizing this type of LLB in a LabVIEW project instead.</p>
+<p class="Body">If an LLB consists of a single top-level VI and a collection of subVIs, consider adding the VIs in the LLB to a project library. Save the project library file (<span class="Monospace">.lvlib</span>) inside the LLB with the VIs. In the project library, set the access for the subVIs as private. Organizing the files in this way allows users to run the top-level file in the VI without having access to the subVIs.</p>
+<p class="Body">Complete the following steps to convert an LLB to a project library.</p>
+<ol>
+<li><a href="Converting_LLBs_to_Directo.html">Convert the LLB to a directory</a>.</li>
+<li>In the <a href="../lvconcepts/Using_LabVIEW_Projects.html">Project Explorer</a> window, right-click a target and select <strong>Add&#0187;Folder (Snapshot)</strong> from the shortcut menu to display a file dialog. Navigate to the directory you created in step 1 and click the <strong>Select Folder</strong> button. LabVIEW creates a <a href="../lvhowto/Adding_Folders_Project.html">virtual folder</a> in the project. </li>
+<li>Right-click the project folder and select <strong>Convert to Library</strong> from the shortcut menu to <a href="Convert_Fold_Lib.html">create a project library from the project folder</a>.</li>
+<li>Right-click the project library and select <strong>Save&#0187;Save</strong> from the shortcut menu to name and save the new project library file.</li>
+</ol>
+
+</body>
+</html>

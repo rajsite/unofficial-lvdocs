@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Original filename: mettool.txt -->
+
+<title>Block Diagram Metrics</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Block Diagram Metrics</h1>
+
+<p class="Body">Block diagram metrics, available in the LabVIEW Professional Development System, appear in the <a href="../lvdialog/VI_Metrics_Dialog_Box.html">VI Metrics</a> window when you place a checkmark in the <strong>Diagram</strong> checkbox. The following metrics specify the block diagram of a VI and its structures and wires:</p>
+
+<ul>
+<li><strong>structures</strong>&#8212;Number of <a href="../glang/For_Loop.html">For Loops</a>, <a href="../glang/While_Loop.html">While Loops</a>, <a href="../glang/Case_Structure.html">Case structures</a>, <a href="../glang/Event_Structure.html">Event structures</a>, <a href="../glang/Flat_Sequence.html">Flat Sequence structures</a>, <a href="../glang/Flat_Sequence.html">Stacked Sequence structures</a>, <a href="../glang/Conditional_Disable_Structure.html">Conditional Disable structures</a>, and <a href="../glang/Diagram_Disable_Structure.html">Diagram Disable structures</a>.</li>
+<li><strong>diagrams</strong>&#8212;Number of block diagrams. Each VI has a single top-level block diagram. In addition, it has one subdiagram for each loop or structure.</li>
+<li><strong>max diag depth</strong>&#8212;Deepest nesting level of block diagrams in a VI. If the VI has no structures, it has a depth of 0.</li>
+<li><strong>diag width (pixels)</strong>&#8212;Width of the block diagram in pixels.</li>
+<li><strong>diag height (pixels)</strong>&#8212;Height of the block diagram in pixels.</li>
+<li><strong>wire sources</strong>&#8212;Measures the total number of sources in the VI. Each wire has a single source but can branch to multiple destinations. If a wire enters or exits a structure, LabVIEW considers the tunnel that the wire passes through to be a new source.</li>
+</ul>
+
+
+
+</body>
+</html>

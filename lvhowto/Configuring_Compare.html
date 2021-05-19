@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 3900Esavinghlp -->
+
+<title>Configuring Text Comparison for File Recovery</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Configuring Text Comparison for File Recovery</h1>
+<p class="Body">Complete the following steps to configure text comparison for recovered project (<span class="monospace">.lvproj</span>), project library (<span class="monospace">.lvlib</span>), XControl (<span class="monospace">.xctl</span>), and LabVIEW class (<span class="monospace">.lvclass</span>) files.</p>
+<table class="Borderless"><tr><td><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;If LabVIEW automatically recovers one of the previously listed file types before you configure text comparison, LabVIEW disables the <strong>Compare Backup with Original </strong> button in the <a href="../lvdialog/Auto_Recover.html">Select Files to Recover</a> window.</td></tr></table>
+<ol>
+<li>In the <span class="monospace">LabVIEW Data</span> directory, create a new text file called <span class="monospace">LVAutoSave_Text_Compare.txt</span>.</li>
+<li>Use <a href="../lvconcepts/Format_Specifier_Syntax.html">format specifier syntax</a> to enter a string that calls the third-party text comparison software that you want to use to compare recovered files. Enter the path to the text comparison executable within quotation marks, then enter the string <span class="monospace">&quot;%s&quot; &quot;%s&quot;</span>. On Windows, for example, if you want to call a program located on the <span class="monospace">C:\</span> drive, enter the following text, where <span class="monospace"><em>xxx</em></span> represents the name of the executable to use for text comparison.<br><br>
+<span class="monospace">&quot;C:\\Program Files\\<em>Folder Name</em>\\<em>xxx</em>.exe&quot; &quot;%s&quot; &quot;%s&quot;</span>
+</li>
+<li>Do not enter any other text or make any carriage returns. Save <span class="monospace">LVAutoSave_Text_Compare.txt</span> and close the file.</li>
+</ol>
+
+
+</body>
+</html>

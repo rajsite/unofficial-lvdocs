@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+
+<title>Viewing and Opening Implementations of Dynamic Dispatch Member VIs</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Viewing and Opening Implementations of Dynamic Dispatch Member VIs</h1>
+<p class="Body">
+<a href="../lvconcepts/Creating_Classes.html#Dynamic_Dispatch">Dynamic dispatch subVIs</a> can call any one of a set of VIs in a LabVIEW class hierarchy. LabVIEW determines which implementation of the subVI to call at run time, depending on the class or interface data type flowing into the dynamic dispatch terminal.</p>
+<p class="Body">Complete the following steps to open one or more implementations of a dynamic dispatch subVI using the <a href="../lvdialog/Choose_Implementation_DB.html">Choose Implementation</a> dialog box.</p>
+
+
+<ol>
+<li>Double-click the dynamic dispatch VI on the block diagram. If one or more implementations exist for the VI, the <strong>Choose Implementation</strong> dialog box appears.<br/><br/> <!--begin child lvdialog,chm::Choose_Implementation_DB.html-->The arrow glyph <img src="noloc_env_dyndisparrw.gif"> indicates the implementation that executes if the run-time data type on the wire is the same as the edit-time data type on the wire.  Because a LabVIEW class or interface wire can carry data of its own type or data of any child type, this glyph indicates that the implementation LabVIEW executes at run time will be at the glyph level or below in the class hierarchy.<br/><br/> LabVIEW lists all classes and interfaces in the LabVIEW class hierarchy. If a class inherits the dynamic dispatch member VI from an ancestor class but does not have its own implementation, LabVIEW dims the class or interface in the <strong>Select VI</strong> list. <br/><br/>Additionally, if the class or interface wired to the VI on the block diagram does not have its own implementation of the VI, the arrow glyph appears to the left of the ancestor class or interface from which it inherits the VI in the <strong>Select VI</strong> list.<!--end child lvdialog,chm::Choose_Implementation_DB.html--> In the example below, the Commercial Vehicles class inherits the Set Make VI from the Automobile class. Because the Commercial Vehicles class is wired to the ancestor implementation of the Set Make VI on the block diagram, the arrow glyph appears next to the ancestor implementation.<br/><br/>
+<img src="loc_eps_sequence-flow.gif"></li>
+
+
+<li>Select the VI in the <strong>Select VI</strong> list that you want to open. <br/><br/>
+You also can open multiple VIs by holding the &lt;Ctrl&gt; key and selecting multiple VIs. <span class="Platform">(macOS)</span> Hold the &lt;Option&gt; key. <span class="Platform">(Linux)</span> Hold the &lt;Alt&gt; key.</li>
+<li>Click the <strong>Open</strong> button to close the dialog box and open the VI or VIs you selected.</li>
+</ol>
+
+
+</body>
+</html>

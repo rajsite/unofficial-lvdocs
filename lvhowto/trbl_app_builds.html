@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+
+<html> 
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<title>Troubleshooting the Build Process</title>
+<link rel="stylesheet" type="text/css" href= "minimal.css">
+</head>
+
+<body>
+
+		<h1>Troubleshooting the Build Process</h1>
+		<p class="Body">Complete the following to correct two common issues you might encounter while <a href="../lvhowto/develop_distribute_applications.html">Building and Distributing Applications</a> in LabVIEW. </p>
+		<h2><strong>[Conflict] appears next to one of the VIs in my project, preventing me from building an application from the project.</strong></h2>
+				<p class="Body">The Application Builder does not allow you to build an application if the project contains conflicts. A conflict in a LabVIEW Project is a potential <a href="../lvconcepts/Resolving_Project_Conflicts.html#Resolving_Project_Conflicts">cross-link</a> that occurs when LabVIEW tries to load a VI that has the same qualified name as an item already in the project. To correct a conflict, select <strong>Project&gt;&gt;Resolve Conflicts.</strong></p>	
+		<h2>The build process fails when I try to build my application, but I cannot identify the specific cause or appropriate fix.</h2>	
+		<p>You can use the following two methods to solve this problem. In some situations, you may need to use both methods.</p>	
+		<ol>
+		 <li><strong>Recompile your VIs.</strong>
+		<ol>
+		  <li>Using the <a href="VI_Server.html">VI Server</a>, the <a href="../glang/Call_By_Reference_Node.html">Call By Reference</a> node, or the <a href="../glang/start_asynchronous_call.html">Start Asynchronous Call</a> node, open one of the top-level VIs you want to use in the build as well as any VIs you want to load dynamically.</li>
+			<li>From an open VI, press the &lt;Ctrl-Shift&gt; keys while you click the <strong>Run</strong> button to recompile all VIs in memory. <br /><span class="Platform">(macOS)</span> Press the &lt;Option-Shift&gt; keys. <span class="Platform">(Linux)</span> Press the &lt;Meta-Shift&gt; keys.</li>
+			<li>Select <strong>File�Save All</strong> to save all VIs in memory.</li></ol>	</li>
+	<li><a href="../lvprop/App_ClearAppBuilderCache.html"><strong>Clear the Application Builder Cache</strong></a>.</li>
+	<li>Right-click the build specification name of your application and select <strong>Build</strong> to rebuild the application.</li>
+</ol>
+</body>
+</html>

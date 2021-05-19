@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<head>
+
+
+
+<META http-equiv="Content-Type" content="text/html; charset=Windows-1252"><!-- Original filename: Gmathmaster.txt -->
+
+<TITLE>Differences between the Parser in the Mathematics VIs and the Formula Node</TITLE><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+</HEAD>
+<BODY bgcolor="#ffffff">
+<NOSCRIPT>
+<P class="Body">JavaScript is disabled. <A href="../lvhelp/JavaScript_Disabled.html">Details</A></P>
+<HR width="100%" noshade></NOSCRIPT><H1>Differences between the Parser in the Mathematics VIs and the Formula Node
+</H1>
+<p class="Body">The parser in the <A href="Mathematics.html">Mathematics</A> VIs supports all elements that <A href="../glang/Formula_Node.html">Formula Nodes</A> support with the following exceptions:</p>
+<ul><li><strong>Variables</strong>&#8212;Only <em>a</em>, <em>a</em>0, ..., <em>a</em>9, ... <em>z</em>, <em>z</em>0, ..., <em>z</em>9, are valid.</li>
+<li><strong>Logical, conditional, inequality, equality</strong>&#8212;?:, |, <IMG src="parallel.gif">, &amp;, &amp;&amp;, !=, ==,
+&lt;, &gt;, &lt;=, and &gt;= are not valid.</li>
+<li><strong>Functions</strong>&#8212;atan2, max, min, mod, pow, rem, and sizeOfDim are not valid. You can use these functions in a Formula Node or use their <a href="../lvhowto/Formula_Node_and_Express.html">corresponding LabVIEW functions</a>.</li></ul>
+
+<p class="Body">The following table lists functions that the parser in the Mathematics VIs supports but Formula Nodes do not.</p>
+	<TABLE class="Bordered">
+		<TR>
+			<TH class="Bordered Left-Align">	Function
+			</TH>
+			<TH class="Bordered Left-Align">	Corresponding LabVIEW VI
+			</TH>
+			<TH class="Bordered Left-Align">	Description
+			</TH>
+		</TR>
+		<TR>
+			<TD class="Bordered">	ci(<em>x</em>)
+			</TD>
+			<TD class="Bordered">	<a href="../gmath/Cosine_Integral.html">Cosine Integral</a>
+			</TD>
+			<TD class="Bordered">	Evaluates the cosine integral for any real nonnegative number <em>x</em>.
+			</TD>
+		</TR>
+		<TR>
+			<TD class="Bordered">	gamma(<em>x</em>)
+			</TD>
+			<TD class="Bordered">	<a href="../gmath/Incomplete_Gamma_Function.html">Gamma</a>
+			</TD>
+			<TD class="Bordered">	Evaluates the gamma function or incomplete gamma function for <em>x</em>.
+			</TD>
+		</TR>
+		<TR>
+			<TD class="Bordered">	si(<em>x</em>)
+			</TD>
+			<TD class="Bordered">	<a href="../gmath/Sine_Integral.html">Sine Integral</a>
+			</TD>
+			<TD class="Bordered">	Evaluates the sine integral for any real number <em>x</em>.
+			</TD>
+		</TR>
+		<TR>
+			<TD class="Bordered">	spike(<em>x</em>)
+			</TD>
+			<TD class="Bordered">	<a href="../gmath/Spike_Function.html">Spike</a>
+			</TD>
+			<TD class="Bordered">	Generates the spike function for any real number <em>x</em>.
+			</TD>
+		</TR>
+		<TR>
+			<TD class="Bordered">	square(<em>x</em>)
+			</TD>
+			<TD class="Bordered">	<a href="../gmath/Square_Function.html">Square</a>
+			</TD>
+			<TD class="Bordered">	Generates the square function for any real number <em>x</em>.
+			</TD>
+		</TR>
+		<TR>
+			<TD class="Bordered">	step(<em>x</em>)
+			</TD>
+			<TD class="Bordered">	<a href="../gmath/Step_Function.html">Step</a>
+			</TD>
+			<TD class="Bordered">	Generates the step function for any real number <em>x</em>.
+			</TD>
+		</TR>
+	</TABLE>
+	
+	<p class="Body">To use these functions with a Formula Node, place their corresponding VIs on the block diagram and wire their outputs to the Formula Node. For example, use the Cosine Integral VI in place of ci.</p>
+	
+	<p class="Body">The following table lists cases where Formula Nodes and the parser in the Mathematics VIs use different syntax.</p>
+	<TABLE class="Bordered">
+		<TR>
+			<TH class="Bordered Left-Align">	Element
+			</TH>
+			<TH class="Bordered Left-Align">	Formula Node
+			</TH>
+			<TH class="Bordered Left-Align">	Parser VI Routine
+			</TH>
+		</TR>
+		<TR>
+			<TD class="Bordered">	<IMG src="pi.gif">
+			</TD>
+			<TD class="Bordered">	pi
+			</TD>
+			<TD class="Bordered">	pi(1) =<IMG src="pi.gif">, pi(2) = 2<IMG src="pi.gif">, 2pi or 2(pi) return an error
+			</TD>
+		</TR>
+		<TR>
+			<TD class="Bordered">	Exponentiation
+			</TD>
+			<TD class="Bordered">	**
+			</TD>
+			<TD class="Bordered">	^
+			</TD>
+		</TR>
+		<TR>
+			<TD class="Bordered">	int
+			</TD>
+			<TD class="Bordered">	Rounds to the nearest integer.
+			</TD>
+			<TD class="Bordered">	Rounds to the next smaller integer.
+			</TD>
+		</TR>
+	</TABLE>
+<P class="Body">The <A href="../lvhowto/Precedence_of_Operators_in.html">precedence of operators</A> is the same for the Mathematics VIs as in Formula Nodes. Refer to <A href="Advanced_Formula_VIs.html">Formula Parsing VIs</A> for more information about specific Formula Parsing VIs.</P>
+<P class="Body">The parser in the Mathematics VIs uses the following syntax:</P>
+<P class="Indent1"><span class="Monospace">function (argument)</SPAN></P>
+
+</body>
+
+</HTML>

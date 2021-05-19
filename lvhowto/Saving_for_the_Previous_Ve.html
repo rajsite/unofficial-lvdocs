@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 3900Esavinghlp -->
+
+<title>Saving for a Previous Version</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Saving for a Previous Version
+</h1>
+<!-- begin parent: lvconcepts, Creating_VIs_and_SubVIs.xml -->
+<p class="Body">You can save VIs, LabVIEW projects, and project libraries for a previous version of LabVIEW to make upgrading LabVIEW convenient and to help you maintain files in more than one version of LabVIEW when necessary.
+</p>
+<!-- end parent: lvconcepts, Creating_VIs_and_SubVIs.xml -->
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+	<strong>Note</strong>&nbsp;&nbsp;<!-- begin parent: lvconcepts, Creating_VIs_and_SubVIs.xml -->To save <a href="../lvconcepts/packed_libraries.html">packed project libraries</a> for a previous version of LabVIEW, save the files in the packed library for a previous version and <a href="../lvhowto/develop_distribute_applications.html">rebuild the packed library</a> with the desired version of LabVIEW.<!-- end parent: lvconcepts, Creating_VIs_and_SubVIs.xml --></td>
+</tr>
+</table>
+
+<p class="Body">Complete the following steps to save a hierarchy of VIs, project, or project library for a previous version of LabVIEW.
+</p>
+<ol>
+
+<li>For the top-level VI in a hierarchy of VIs, select <strong>File&#0187;Save for Previous Version</strong> to display the <a href="../lvdialog/Save_Options.html">Save for Previous Version</a> dialog box. For a project,  select <strong>File&#0187;Save for Previous Version</strong> in the <a href="../lvconcepts/Using_LabVIEW_Projects.html">Project Explorer</a> window. For a project library, right-click the library file in the <strong>Project Explorer</strong> window and select <strong>Save for Previous Version</strong> from the shortcut menu, or open the project library and select <strong>File&#0187;Save for Previous Version</strong>.  
+</li>
+<li>Select the version of LabVIEW for which to save the VIs, project, or project library from the <strong>LabVIEW Version</strong> pull-down menu.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;When you save a VI hierarchy, project, or project library that uses a LabVIEW toolkit that has provided LabVIEW with a list of version information, you can select which version of the toolkit to save for in the <strong>Toolkit Version</strong> field.</td></tr></table>
+</li>
+<li>Click the <strong>Save</strong> button to display a file dialog box.</li>
+<li>Select the directory where you want to save the VI hierarchy, project, or project library.</li>
+<li>Click the <strong>Save</strong> button.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If you save a password-protected VI for a previous LabVIEW version, you must enter the password.</td>
+</tr>
+</table>
+</li>
+</ol>
+
+<!-- begin parent: lvconcepts, Creating_VIs_and_SubVIs.xml -->
+<p class="Body">If a VI, project, or project library uses functionality that is not available in the previous version, LabVIEW saves as much as it can and produces a report of what it cannot convert. The report appears immediately in the <a href="../lvdialog/SFP_Warning_DB.html">Save for Previous Warning Summary</a> dialog box.</p>
+<!-- end parent: lvconcepts, Creating_VIs_and_SubVIs.xml --> 
+
+<!-- begin parent: lvconcepts, Creating_VIs_and_SubVIs.xml -->
+<p class="Body">Click the <strong>Show Details</strong> button in the <strong>Save for Previous Warning Summary</strong> dialog box to open the <a href="../lvdialog/LoadSave_WarningList_DB.html">Load and Save Warning List</a> dialog box and review the details of each warning. You also can click the <strong>Ignore</strong> button to acknowledge these warnings and close the summary dialog box. Click the <strong>Save to File</strong> button in the <strong>Load and Save Warning List</strong> dialog box to save the warnings to a text file you can review later.</p>
+<!-- end parent: lvconcepts, Creating_VIs_and_SubVIs.xml -->
+
+<p class="Body">You also can use the <a href="../lvprop/VI_Save_For_Previous.html">Save:For Previous</a> method to save a VI for a previous version of LabVIEW programmatically, the <a href="../lvprop/Project_Save_For_Previous.html">Save For Previous</a> method (Project) to save a LabVIEW project for a previous version of LabVIEW programmatically, and the <a href="../lvprop/Library_Save058For_Previous.html">Save:For Previous</a> method (Library) to save a project library for a previous version of LabVIEW programmatically.</p>
+
+
+
+
+</body>
+</html>

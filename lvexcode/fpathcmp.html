@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>FPathCmp (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>FPathCmp (LabVIEW Manager Function)</h1>
+<p class="Code">int32 FPathCmp(lsp1, lsp2);</p>
+<h2>Purpose</h2>
+<p class="Body">Compares two paths.</p>
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>lsp1</strong></td>
+<td class="Bordered"><span class="Monospace">Path</span></td>
+ <td class="Bordered">First path you want to compare.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>lsp2</strong></td>
+<td class="Bordered"><span class="Monospace">Path</span></td>
+ <td class="Bordered">Second path you want to compare.</td></tr>
+</table>
+<h2>Return Value</h2>
+<p class="Body"><span class="Monospace">int32</span>, which can contain the following values.</p>
+<table class="Bordered">
+<tr><th class="Bordered Left-Align">Value</th>
+<th class="Bordered Left-Align">Description</th></tr>
+<tr><td class="Bordered"><span class="Monospace">&#8211;1</span></td><td class="Bordered">Paths are of different types. For example, one is absolute and the other is relative.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">0</span></td><td class="Bordered">Paths are identical.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">n+1</span></td><td class="Bordered">Paths have the same first <em>n</em> components but are not identical.</td></tr>
+</table>
+
+</body>
+</HTML>

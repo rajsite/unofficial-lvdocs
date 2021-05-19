@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script type="text/javascript">var noFeedbackLink = true;</script>
+<script src="common.js" type="text/javascript"></script>
+<title>Testing and Debugging a Web Service on the NI Web Server (Windows)</title>
+</head>
+<body>
+	
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Testing and Debugging a Web Service on the NI Web Server (Windows)</h1>
+
+	<p><strong>Parent Topic</strong>: <a href="../lvconcepts/ws_developing.html">Developing Web Services</a></p>
+	
+<p>Before you publish a Web service to a target, you might want to test that clients can invoke and communicate with HTTP method VIs and static content as expected. If you notice unexpected behavior or errors, you can correct them and then test the Web service again.</p>
+	
+	<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;For more information about concepts in this topic, refer to the�<a href="../lvconcepts/WebServices.html">Web services introduction</a>�and�<a href="../lvhowto/web_service_tutorial.html">tutorial</a>. LabVIEW Web services are available only in the LabVIEW Full Development System and the LabVIEW Professional Development System.</td>
+</tr>
+</table>
+
+<h2>Workflow for Debugging a Web Service</h2>
+<p>Testing and debugging a Web service�is typically an iterative process you complete in the LabVIEW project that contains the Web service files. Complete the following steps to test and debug a Web service on the NI Web Server:</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;In this topic, you test and debug a Web service on the NI Web Server. You can also test your Web service on the Application Web Server, refer to <a href="../lvhowto/ws_debugging.html">Testing and Debugging a Web Service on the Application Web Server</a>.</td>
+</tr>
+</table>
+	
+	<ol>
+		<li>If the Web service is part of a stand-alone application, open and run any startup VIs for the application from the project.</li>
+		<li>Right-click the Web service project item�<img src="noloc_env_ws_node.gif"> in the project tree and select�<strong>Start</strong>. LabVIEW places the Web service on the NI Web Server, where it behaves as if published to a target.</li>
+		<li>If you are using the NI Web Server for the first time on your computer, complete the following steps to enable and configure the NI Web Server:
+			<ol>
+			<li>Click <strong>Configure NI Web Server</strong> in the <strong>Start Web Service</strong> dialog box to launch NI Web Server Configuration.</li>
+			<li>For testing and debugging, choose the <strong>Simple local access</strong> configuration preset and click <strong>Next</strong>.</li>
+			<li>On the <strong>Authentication</strong> page, select <strong>Log in using an admin user for server administration</strong> and create your own password. Click <strong>Next</strong>.</li>
+			<li>Click <strong>Finish</strong> to apply this configuration.</li>
+			<li>Switch back to the LabVIEW project and repeat step 2.</li>
+			</ol>
+		</li>
+		<li>Open HTTP method VIs from the project. Use standard LabVIEW debugging techniques, such as probes, breakpoints, and execution highlighting, to observe their behavior when the client invokes them.</li>
+		<li>Invoke an HTTP method VI from a client, such as a web browser, using the URL mapped to the VI. You can find and copy the appropriate URL directly from the project. <br /><br />Complete the following steps to access an HTTP Method VI:
+			<ol>
+				<li>Right-click the HTTP method VI�and select�<strong>Show Method URL</strong>�to display the�<a href="../lvdialog/ws_http_method_url_db.html">HTTP Method URL</a>�dialog box.</li>
+				<li>In the�<strong>Available Servers</strong>�pull-down menu, select the item that contains <strong>NI Web Server</strong>, and then click <strong>Copy URL</strong>.</li>
+				<li>Close the dialog box.
+				<table class="Borderless">
+					<tr>
+					<td class="Icon"><img src="note.gif"></td>
+					<td>
+					<strong>Note</strong>&nbsp;&nbsp;The Web service does not respond to any requests from the client if the <strong>HTTP Method URL</strong> dialog box is open.</td>
+					</tr>
+				</table>
+				</li>
+				<li>Paste the URL into a web browser and replace the�<span class="Monospace">{value}</span>�variables with numeric values, such as�<span class="Monospace">http://127.0.0.1:80/TutorialService/Add?b=2&amp;a=3</span>.
+				<table class="Borderless">
+					<tr>
+					<td class="Icon"><img src="note.gif"></td>
+					<td>
+					<strong>Note</strong>&nbsp;&nbsp;NI Web Server uses 80/443 as the default port in accordance with HTTP/HTTPS protocol. However, the port number might change if another application occupies the port. You can customize the port number in NI Web Server Configuration. Refer to <a href="javascript:WWW(WWW_NIWSConfig)">Configuring NI Web Server</a> in the <em>NI Web Server Manual</em> for more information on server settings like authentication, port, and remote connections.</td>
+					</tr>
+				</table>
+				</li>
+				<li>Browse to the URL.</li>
+			</ol>
+			
+		</li>
+		<li>If you notice an error or finish testing the Web service, right-click the Web service project item in the project tree and select�<strong>Stop</strong>. If startup VIs for a LabVIEW stand-alone application are running, you do�not�have to stop them.
+		<table class="Borderless">
+					<tr>
+					<td class="Icon"><img src="note.gif"></td>
+					<td>
+					<strong>Note</strong>&nbsp;&nbsp;You cannot edit HTTP method VIs until you stop the debugging session because LabVIEW reserves them for execution during debugging.</td>
+					</tr>
+				</table>
+		</li>
+		<li>Edit the VIs to correct any issues you noticed.</li>
+		<li>(Optional) Repeat steps 2-7 to validate your changes to the Web service files.
+</li>
+	</ol>
+<h3>Related Information</h3>
+<p class="Body"><a href="../lvconcepts/ws_web_server.html#niws">Understanding the NI Web Server</a></p>
+</body>
+</html>

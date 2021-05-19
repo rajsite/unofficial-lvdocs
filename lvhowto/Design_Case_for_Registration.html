@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Step 2: Design an Event Case to Specify When You Want LabVIEW to Register for the Event</title>
+</head>
+<body bgcolor="#ffffff">
+
+
+<h1>Step 2: Design an Event Case to Specify When You Want LabVIEW to Register for the Event</h1>
+<p class="Body">In this example, the <a href="../lvprop/Control_Mouse_Down.html">Mouse Down</a> event case contains the Register For Events function that registers the <a href="../lvprop/Ctrl_Mouse_Move.html">Mouse Move</a> event. When the user clicks the picture control on the front panel, the Event structure executes to handle the Mouse Down event and the code in the Mouse Down event case executes to register the Mouse Move event on the pane reference.</p>
+<a name="toUse"></a><h2>What to Use</h2>
+<p>Use the following block diagram objects to modify event registration dynamically.</p>
+<table class="Usage">
+	<col class="Object">
+	<col class="Spacer">
+	<col class="Object">
+
+	
+	<tr>
+		<td><a href="../glang/Control_Reference.html">VI Server Reference</a></td>
+		<td></td>
+		<td><a href="../glang/Register_Events.html">Register For Events</a></td>
+		<td></td>
+		</tr>
+	
+	<tr>
+	<td><br><br><br><br><img src="loc_icon_VIserver.gif"></td>
+	<td></td>
+	<td><br><br><br><img src="loc_icon_register_event.gif"></td>
+	<td></td>
+
+</tr>
+	
+		<tr>
+<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object1186);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN></td>
+<td><SPAN title=" Find on the palette "><a href="javascript:findObject(object1186);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table></td>
+
+	<td></td>
+
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object2065);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN></td>
+<td><SPAN title=" Find on the palette "><a href="javascript:findObject(object2065);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table></td>
+
+	<td></td></tr></table>
+		
+	
+
+
+
+
+	
+<h2>What to Do</h2>
+<p class="Body">Create the following block diagram so LabVIEW registers the Mouse Move event on a valid object at run time.</p>
+
+
+<img src="loc_bd_modify_dynamic_registration_2.gif">
+<p>The following list describes important details about the previous step.</p>
+	<table>
+		<tr>
+	<td>
+		<img src="noloc_eps_callout_1.gif"></td><td>To modify the existing registration, wire the <strong>event registration refnum</strong> output of a Register For Events function to the top left input of another Register For Events function. When you wire the <strong>event registration refnum</strong> input, the function automatically resizes to show the same events on the same types of references as you specified in the Register For Events function that originally created the event registration refnum. You cannot manually resize or reconfigure the function while the <strong>event registration refnum</strong> input is wired.</td></tr>
+<tr>
+	<td>
+		<img src="noloc_eps_callout_2.gif"></td><td>Wire the Pane reference to the Mouse Move event to replace the registered placeholder. When the user clicks the picture control, the Event structure executes to handle the Mouse Down event and LabVIEW registers the Mouse Move event.</td>
+</tr></table>
+<p>After you design an event case to specify when you want LabVIEW to register for the event, <a href="../lvhowto/Unregister_Individual_Event.html">unregister for the event before you unregister for all events</a>.</p>
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+</body>
+</html>

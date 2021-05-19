@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 3400Erunningvishlp -->
+
+<title>Running VIs</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Running VIs
+</h1>
+<!-- begin parent = um 3500Edebugging KM -->
+<p class="Body">Running a VI executes the operation for which you designed the VI. You can run a VI if the <strong>Run</strong> button on the toolbar appears as a solid white arrow. The solid white arrow also indicates you can use the VI as a subVI if you <a href="../lvconcepts/Building_Connector_Pane.html">create a connector pane</a> for the VI.
+</p>
+<!-- end parent = um 3500Edebugging KM -->
+<p class="Body">You can configure how a VI runs by selecting <strong>File&#0187;VI Properties</strong> and selecting <a href="../lvdialog/Execution.html">Execution</a> from the <strong>Category</strong> pull-down menu.
+</p>
+<p class="Body">Complete the following steps to run a VI on the block diagram:
+</p>
+<ol>
+
+<li>Wire all the subVIs, functions, and structures with the correct data types for the terminal.
+</li>
+<!-- begin parent = um 3500Edebugging KM -->
+<li>Click the <strong>Run</strong> or <strong>Run Continuously</strong> buttons or the single-stepping buttons on the block diagram toolbar. Clicking the <strong>Run</strong> button runs the VI once. The VI stops when the VI completes its data flow. Clicking the <strong>Run Continuously</strong> button runs the VI continuously until you stop it manually. Clicking the <a href="Single_Step_Mode.html">single-stepping</a> buttons runs the VI in incremental steps.
+</li>
+</ol>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;The <strong>Abort Execution</strong> button stops the VI immediately, before the VI finishes the current iteration. Aborting a VI that uses external resources, such as external hardware, might leave the resources in an unknown state by not resetting or releasing them properly. Design VIs with a stop button to avoid this problem.</td></tr></table>
+
+<!-- end parent = um 3500Edebugging KM -->
+<p class="Body">You also can run a VI outside of the block diagram in the following ways:</p>
+<ul>
+<li>Run a VI from a <a href="../lvconcepts/Using_LabVIEW_Projects.html">LabVIEW Project</a> by right-clicking a VI in the <a href="../lvconcepts/Using_LabVIEW_Projects.html#Project_Explorer_Window">Project Explorer</a> window and selecting <strong>Run</strong> from the shortcut menu. The VI front panel opens in run mode.</li>
+<li>Run a VI programmatically using the <a href="../lvprop/VI_Run_VI.html">Run VI</a> method.</li>
+<li>Run a VI programmatically using the <a href="../lvconcepts/cli_predefined_operations.html#RunVI"><span class="DNL">RunVI</span></a> command line operation.</li>
+</ul>
+
+
+
+</body>
+</html>

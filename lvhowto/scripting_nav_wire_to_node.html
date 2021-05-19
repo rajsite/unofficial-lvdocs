@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<link rel="STYLESHEET" type="text/css" href="expandable_tree.css"><script src="common.js" type="text/javascript"></script><script src="dynamicjumps.js" type="text/javascript"></script><script src="expandable_tree.js" type="text/javascript"></script><title>Navigating from a Wire to a Node Using VI Scripting</title>
+</head>
+<body>
+<h1>Navigating from a Wire to a Node Using VI Scripting</h1>
+<p><strong>Requires:</strong> <a href="enabling_vi_scripting.html">VI Scripting</a></p>
+<p>You navigate from a wire to a node any time that you use a wire reference to obtain a reference to a node that it connects to. Navigating from a wire to a connected node is a navigation subtask that you can combine with other navigation subtasks to accomplish larger navigation goals. Refer to <a href="../lvhowto/scripting_navigation_overview.html">navigation overview</a> to learn more about how navigating from a wire to a node interacts with other navigation tasks.</p>
+<p class="Body"></p>
+
+<a name="whatYouNeed"></a><h2>What to Use</h2>
+<p>This VI Scripting task requires the following objects:</p>
+<table class="Usage">
+	<col class="Object"/>
+	<col class="Spacer"/>
+	<col class="Object"/>
+	<col class="Spacer"/>
+	<col class="Object"/>
+	<col class="Spacer"/>
+	<col class="Object"/>
+	<tr><td><a href="../lvscript/Wire_Terminals091093.html">Wire:Terminals[]</a></td>
+		<td></td>
+		<td><a href="../glang/Index_Array.html">Index Array</a></td>
+		<td></td>
+		<td><a href="../lvprop/Gen_Owner.html">Terminal:Owner</a></td>
+		<td></td>
+		<td><a href="../glang/Close_LV_Object_Reference.html">Close Reference</a></td>
+	</tr>
+	<tr><td><img src="loc_bd_WireTerminals.gif"></td>
+	<td></td>
+		<td><img src="noloc_bd_IndexArray.gif"></td>
+		<td></td>
+		<td><img src="loc_bd_TerminalOwner.gif"></td>
+		<td></td>
+		<td><img src="noloc_bd_CloseReference.gif"></td>
+	</tr>
+	<tr>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object725);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN></td><td> 
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object725);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object289);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN></td><td> 
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object289);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object725);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN></td><td> 
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object725);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object709);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN></td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object709);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+	</tr>
+</table>
+
+			
+<a name="how"></a><h2>What to Do</h2>
+<p><strong>Before you start: </strong>Open the Navigating Nodes and Wires VI in the <span class="Monospace">labview\examples\Application Control\VI Scripting\Finding and Modifying Objects</span> directory for an example that illustrates each step of the following procedure. Note that this example also illustrates the procedure for navigating from a node to a wire.</p>
+<a href="javascript:openVI('examples%5C%5CApplication%20Control%5C%5CVI%20Scripting%5C%5CFinding%20and%20Modifying%20Objects%5C%5CNavigating%20Nodes%20and%20Wires.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open Example
+<p>Expand the procedure for more information about this specific example.</p>
+
+
+<input type="button" onclick="openAll()" value="Expand All"><input type="button" onclick="closeAll()" value="Collapse All">
+
+
+
+<ol>
+	<li><a href="../lvhowto/scripting_obtaining_object_references.html">Obtain a reference</a> to a wire.
+		<p>When navigating from a wire to a node, you most commonly obtain the wire reference as the result of previous navigation.</p>
+		<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the scripting VI obtains the initial wire reference by navigating from the One Button Dialog function to the wire connected to the <strong>button name</strong> input of that function.</p></div>
+	</li>
+	<li>Use the <a href="../lvscript/Wire_Terminals091093.html">Wire:Terminals[]</a> property of the wire to obtain references to the terminals of the wire.
+	</li>
+	<li>Identify which terminal or terminals of the wire best further your navigation goals.
+		<p>In some navigation tasks, you might be interested in only one terminal of the wire. In other navigation tasks, you might be interested in inspecting or navigating across all the terminals of the wire.</p>
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the scripting VI requires only the source terminal of the wire.</p></div>
+	</li>
+	<li>Use the <a href="../glang/Index_Array.html">Index Array</a> function with the Terminals[] array from step 2 to obtain a reference to the desired terminal.
+		<p>The first element in the Terminals[] array is always a reference to the source terminal of the wire. If the wire connects only two terminals, the second element in the array is a reference to the sink terminal of the wire. If the wire has multiple sink terminals, the array stores them in random order beginning at index 1 of the array.</p>
+		<p>When a wire has multiple sink terminals, you can use a For Loop to iterate across each terminal reference in the array. Repeat step 5 for each terminal reference.</p>
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the scripting VI requires a reference only to the source terminal of the wire. Because the source terminal is always stored at the beginning of the Terminals[] array of a wire, the scripting VI uses the <a href="../glang/For_Loop.html">Index Array</a> function to obtain a reference to the terminal at index 0 of the Terminals[] array.</p></div>
+	</li>
+	<li>Use the <a href="../lvprop/Gen_Owner.html">Terminal:Owner</a> property of the returned terminal reference to obtain a reference to the connected node.		
+	</li>
+	<li>(Optional) Use the <a href="../glang/To_More_Specific_Class.html">To More Specific Class</a> function to cast the returned reference to its actual class. This step provides the following benefits:
+		<ul>
+			<li>Identifies class&#8212;The To More Specific Class function casts the referenced object to a more specific class only if the object is a member of that class. Therefore, you can use the To More Specific Class function to check the class of the reference. This check is necessary when you want to interact with the referenced object only if it is a member of a certain class.</li>
+			<li>Enables access to more properties and methods&#8212;When you cast the reference to a more specific class, you can use more specific properties and methods of the reference. The Terminal:Owner property in the previous step always returns a GObject reference, a class which supports only a limited set of properties and methods.</li>
+		</ul>
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the scripting VI can modify the returned node only if it is a string constant.  Thus, the scripting VI tries to cast the reference to a string constant. The Case structure determines whether the To More Specific Class function returns an error and therefore whether the referenced object is a string constant.</p></div>
+	</li>
+	<li>Use the node reference to either edit the node or to continue navigating.
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the scripting VI edits the node rather than using it to continue navigating. The scripting VI sets the value of the node, a string constant, to <span class="Monospace">Okay!</span> by using the <a href="../lvscript/Constant_Value.html">StringConstant:Value</a> property.</p></div>
+	</li>
+	<li>Use the <a href="../glang/Close_LV_Object_Reference.html">Close Reference</a> function to close the wire reference, the terminal reference, and the node reference when you are finished using them.
+	</li>
+</ol>
+
+<a name="bestpractices"></a><h2>Caveats and Recommendations</h2>
+<ul>
+	<li><strong>Downcast the reference returned by the Terminal:Owner property</strong>&#8212;The Terminal:Owner property always returns a reference to a Generic object. However, if you know that the terminal connects the wire to a more specific class of object, you can use the <a href="../glang/To_More_Specific_Class.html">To More Specific Class</a> function to downcast the returned reference to the more specific class. When you downcast a reference to a more specific class, you are able to call more specific properties or methods on the reference.</li>
+	<li><strong>Close all references that you open</strong>&#8212;An excessive number of open references negatively impacts the performance of a VI.  Read about <a href="../lvhowto/scripting_closing_references.html">closing VI and object references</a> for more performance details.</li>
+</ul>
+
+<a name="examples"></a><h2>Additional Examples</h2>
+<p class="Body">Refer to the Navigation Overview VI in the <span class="Monospace">labview\examples\Application Control\VI Scripting\Finding and Modifying Objects</span> directory for a complete navigation example that includes navigating from a node to a wire.</p>
+<p class="Body"><a href="javascript:openVI('examples%5C%5CApplication%20Control%5C%5CVI%20Scripting%5C%5CFinding%20and%20Modifying%20Objects%5C%5CNavigation%20Overview.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(1443);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</p>
+</body>
+</html>
+
+

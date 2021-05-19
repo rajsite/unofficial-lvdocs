@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 6000Eviserverhlp -->
+
+<title>Controlling Front Panel Objects Programmatically from a SubVI</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Controlling Front Panel Objects Programmatically from a SubVI
+</h1>
+<p class="Body">Complete the following steps to pass a control reference to a subVI and use it to modify properties or methods of the referenced control or indicator.
+</p>
+<ol>
+<li>Right-click the front panel control or indicator of the main VI to which you want to create a reference and select <strong>Create&#0187;Reference</strong> from the shortcut menu. LabVIEW attaches a strictly typed control reference to the mouse cursor. Drop the reference on the block diagram of the main VI.
+<br><br>
+You also can create a control reference by selecting a <a href="../lvconcepts/Controlling_Front_Panel_Objects.html">control refnum</a> on the <strong>Controls</strong> palette, adding it to the front panel of the subVI, and adding an object of the same type as the referenced object to the front panel control refnum shell. This creates a non-strictly typed control reference.
+</li>
+<li>Open the subVI, or create a new VI, to which you are passing the control reference. From the block diagram of the main VI, drag the control reference to the front panel of the subVI to create a control refnum control for the control reference on the subVI front panel.  A corresponding control reference terminal appears on the subVI block diagram.
+</li>
+</ol>
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If you drag the control reference to the block diagram, you only copy the control and control reference rather than create a control refnum control.</td></tr>
+</table>
+<ol start="3">
+<li>Complete the following steps to modify properties or methods of the front panel object associated with the control reference by creating a <a href="../glang/Property_Node.html">Property Node</a> or <a href="../glang/Invoke_Node.html">Invoke Node</a>.
+<ol class="List-abc">
+<li>Right-click the control reference on the block diagram of the VI.
+</li>
+<li>Select <strong>Create&#0187;Property for (type name)</strong> or <strong>Create&#0187;Method for (type name)</strong> and select a property or method from the shortcut menus.
+</li>
+<li>Click to place the node on the block diagram of the subVI.
+</li>
+<li>Wire the control reference to the <strong>reference</strong> terminal of the Property Node or Invoke Node. The Property Node or Invoke Node references the control in the main VI.
+</li>
+</ol>
+You also can select a Property Node or Invoke Node on the <strong>Functions</strong> palette and place it on the block diagram. Right-click the node and select a property or method from the <strong>Properties</strong> or <strong>Methods</strong> shortcut menus.</li>
+
+<li><a href="Selecting_a_Connector_Pane.html">Set up the terminals on the connector pane</a> of the subVI, including the control reference.</li>
+
+<li>On the main VI, add the subVI to the block diagram and wire the control reference to the control reference terminal of the subVI.</li>
+</ol>
+
+<p class="Body">Refer to the Control References VI in the <span class="Monospace">labview\examples\Application Control\VI Server\Control References</span> directory for an example of controlling front panel objects programmatically from a subVI.</p>
+
+<p class="Body"><a href="javascript:openVI('examples%5C%5CApplication%20Control%5C%5CVI%20Server%5C%5CControl%20References%5C%5CControl%20References.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(3071);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</p>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 1900Edialogcihlp -->
+
+<title>Configuring Tab Control Pages Programmatically</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Configuring Tab Control Pages Programmatically</h1>
+<!--start help-->
+<p class="Body">Complete the following steps to configure a tab control page programmatically.</p>
+<ol>
+<li>Right-click a tab of a tab control and select <strong>Create&#0187;Property Node&#0187;</strong><a href="../lvprop/PageSel_Pgs.html">Pages</a> from the shortcut menu. LabVIEW creates an implicitly linked <a href="../glang/Property_Node.html">Property Node</a> on the block diagram for the property you selected.</li>
+<li>Add the <a href="../glang/Index_Array.html">Index Array</a> function to the block diagram.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object289);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object289);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li>
+<li>Wire the <strong>Pages</strong> output of the Property Node to the <strong>n-dimension array</strong> input of the Index Array function.</li>
+<li>Right-click the <strong>Index</strong> input of the Index Array function and select <strong>Create&#0187;Constant</strong> from the shortcut menu to create a <a href="../glang/Numeric_Constant.html">numeric constant</a>.</li>
+<li>Type the index of the page you want to configure and press the &lt;Enter&gt; key. The index corresponds to the order of the pages as they appear on the tab control, in the range 0 to <em>n</em>&#8211;1, where <em>n</em> is the number of pages on the tab control. For example, type <span class="Monospace">0</span> to configure the first page in the tab control.</li>
+<li>Use the Positioning tool to <a href="Resizing_Array_Functions.html">resize</a> the Index Array function if necessary.</li>
+<li>Use the Wiring tool to right-click an <strong>element</strong> output of the Index Array function and select <strong>Create&#0187;Property for Page Class</strong> and a property from the shortcut menu. LabVIEW creates a Property Node for the property you selected.</li>
+<li>Add the Property Node to the block diagram and wire the <strong>element</strong> output of the Index Array function to the <strong>reference</strong> input of the Property Node you created in step 8.</li>
+<li>Configure the Property Node if necessary.</li>
+</ol>
+<p class="Body">After you obtain a reference to a tab control page, you also can configure a control within a tab control page programmatically using the <a href="../lvprop/Page_Controls_on_Page.html">Controls on Page</a> property.</p>
+<p class="Body">Refer to the Programmatically Manipulate a Tab Control VI in the <span class="Monospace">labview\examples\Controls and Indicators\Containers</span> directory for an example of configuring tab control pages programmatically.</p>
+<p class="Body"><a href="javascript:openVI('examples%5C%5CControls%20and%20Indicators%5C%5CContainers%5C%5CProgrammatically%20Manipulate%20a%20Tab%20Control.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(3172);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</p>
+
+
+</body>
+</html>

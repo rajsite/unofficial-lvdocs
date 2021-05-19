@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<link rel="STYLESHEET" type="text/css" href="expandable_tree.css"><script src="common.js" type="text/javascript"></script><script src="dynamicjumps.js" type="text/javascript"></script><script src="expandable_tree.js" type="text/javascript"></script><title>Navigating from a Node to a Wire Using VI Scripting</title>
+</head>
+<body>
+<h1>Navigating from a Node to a Wire Using VI Scripting</h1>
+<p><strong>Requires:</strong> <a href="enabling_vi_scripting.html">VI Scripting</a></p>
+<p>You navigate from a node to a wire any time that you use a reference to a node to obtain a reference to a connected wire. Navigating from a node to a wire is a navigation subtask that you can combine with other navigation subtasks to accomplish larger navigation goals. Refer to the <a href="../lvhowto/scripting_navigation_overview.html">navigation overview</a> to learn more about how navigating from a node to a wire interacts with other navigation tasks. </p>
+
+<p class="Body"></p>
+
+<a name="whatYouNeed"></a><h2>What to Use</h2>
+<p>This VI Scripting task requires the following objects:</p>
+<table class="Usage">
+	<col class="Object"/>
+	<col class="Spacer"/>
+	<col class="Object"/>
+	<col class="Spacer"/>
+	<col class="Object"/>
+	<col class="Spacer"/>
+	<col class="Object"/>
+	<col class="Spacer"/>
+	<col class="Object"/>
+	<tr><td><a href="../lvscript/Node_Terminals091093.html">Node:Terminals[]</a></td>
+		<td></td>
+		<td><a href="../lvconcepts/context_help_scripting_information.html">Visible Terminal Indexes</a></td>
+		<td></td>
+		<td><a href="../glang/Index_Array.html">Index Array</a></td>
+		<td></td>
+		<td><a href="../lvscript/Terminal_Connected_Wire.html">Terminal:Connected Wire</a></td>
+		<td></td>
+		<td><a href="../glang/Close_LV_Object_Reference.html">Close Reference</a></td>
+	</tr>
+	<tr><td><img src="loc_bd_NodeTerminals.gif"></td>
+	<td></td>
+		<td><img src="noloc_env_terminals.gif"></td>
+		<td></td>
+		<td><img src="noloc_bd_IndexArray.gif"></td>
+<td></td>
+		<td><img src="loc_bd_TerminalConnectedWire.gif"></td>
+		<td></td>
+		<td><img src="noloc_bd_CloseReference.gif"></td>
+	</tr>
+	<tr>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object725);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object725);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object289);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object289);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object725);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object725);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object709);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object709);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+	</td></tr>
+</table>
+
+	
+<a name="how"></a><h2>What to Do</h2>
+<p><strong>Before you start: </strong>Open the Navigating Nodes and Wires VI in the <span class="Monospace">labview\examples\Application Control\VI Scripting\Finding and Modifying Objects</span> directory for an example that illustrates each step of the following procedure.</p>
+<a href="javascript:openVI('examples%5C%5CApplication%20Control%5C%5CVI%20Scripting%5C%5CFinding%20and%20Modifying%20Objects%5C%5CNavigating%20Nodes%20and%20Wires.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open Example
+<p>Expand the procedure for more information about this specific example.</p>
+
+
+<input type="button" onclick="openAll()" value="Expand All"><input type="button" onclick="closeAll()" value="Collapse All">
+
+<ol>
+	<li><a href="../lvhowto/scripting_obtaining_object_references.html">Obtain a reference</a> to a node.
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the scripting VI uses the <a href="../glang/TRef_Traverse_for_References.html">Traverse for GObjects</a> VI to obtain references to all the Function nodes in the target VI. The Case structure checks the style of each Function node so that navigation continues only from the Function nodes whose style is <span class="Monospace">One Button Dialog</span>.</p></div>
+	</li>
+	<li>Use the <a href="../lvscript/Node_Terminals091093.html">Node:Terminals[]</a> property to obtain references to the terminals of the node.
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the Node:Terminals[] property appears as Function:Terminals[] because the reference is a Function reference. Because Function is a subclass of Node, Function inherits the Terminals[] property of Node.</p></div>
+	</li>
+	<li>Refer to the <strong>Context Help</strong> window of the node to identify the terminal index of the terminal that connects the node to the destination wire.
+		<p>You must <a href="../lvconcepts/context_help_scripting_information.html">display additional VI scripting information in the Context Help window</a> to cause the connector pane in the Context Help window to display a bracketed number next to each terminal. This number represents the index in the Terminals[] array where the reference to the corresponding terminal is stored.
+		</p>
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the scripting VI requires the index of the <strong>button name</strong> input of the One Button Dialog function. According to the Context Help window for the One Button Dialog function, the index for that input terminal is <span class="Monospace">1</span>.</p></div>
+	</li>
+	<li>Use the <a href="../glang/Index_Array.html">Index Array</a> function with the desired terminal index to obtain a reference to the desired terminal in the Terminals[] array.
+	</li>
+	<li>Use the <a href="../lvscript/Terminal_Connected_Wire.html">Terminal:Connected Wire</a> property of the returned terminal reference to obtain a reference to the wire connected to that terminal.
+	</li>
+	<li>Use the returned wire reference to either modify the wire or to <a href="../lvhowto/scripting_nav_wire_to_node.html">continue navigating</a>.
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the scripting VI uses the wire reference to continue <a href="../lvhowto/scripting_nav_wire_to_node.html">navigating from a wire to a node</a> by using the <a href="../lvscript/Wire_Terminals091093.html">Wire:Terminals[]</a> property of the wire.</p></div>
+	</li>
+	<li>Use the <a href="../glang/Close_LV_Object_Reference.html">Close Reference</a> function to close the node reference, the terminal reference, and the wire reference when you are finished using them.
+	</li>
+</ol>
+
+<a name="bestpractices"></a><h2>Caveats and Recommendations</h2>
+<ul>
+	<li><a href="../lvconcepts/context_help_scripting_information.html">Display terminal indexes in the Context Help window</a>&#8212;You can access the desired terminal in the Node:Terminals[] array if you know the index of the desired terminal.</li>
+	<li><strong>Beware of invalid references in the Node:Terminals[] array</strong>&#8212;The Node:Terminals[] array contains one element for every terminal of a Node. However, each element is a valid reference to a terminal only if the terminal is wired. Because many VIs and functions have optional inputs that are not always wired, the array of terminals often contains invalid references for these terminals. Therefore, if you are not sure whether a specific terminal is wired, check the corresponding element in the terminals array to see if it is an invalid reference before attempting to use it elsewhere in a scripting VI.</li>
+	<li><strong>Close all references that you open</strong>&#8212;An excessive number of open references negatively impacts the performance of a VI.  Read about <a href="../lvhowto/scripting_closing_references.html">closing VI and object references</a> for more performance details.</li>
+</ul>
+
+<a name="examples"></a><h2>Additional Examples</h2>
+<p class="Body">Refer to the Navigation Overview VI in the <span class="Monospace">labview\examples\Application Control\VI Scripting\Finding and Modifying Objects</span> directory for a complete navigation example that includes navigating from a node to a wire and navigating across a structure.</p>
+<p class="Body"><a href="javascript:openVI('examples%5C%5CApplication%20Control%5C%5CVI%20Scripting%5C%5CFinding%20and%20Modifying%20Objects%5C%5CNavigation%20Overview.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(1443);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</p>
+</body>
+</html>
+
+

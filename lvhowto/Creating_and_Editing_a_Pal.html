@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Editing a Palette Set</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Editing a Palette Set</h1>
+<p class="Body">Complete the following steps to edit the <strong>Controls</strong> or <strong>Functions</strong> palettes. </p>
+<ol>
+<li>Select <strong>Tools&#0187;Advanced&#0187;Edit Palette Set</strong> to display the <a href="../lvdialog/Edit_Ctl_Fctn_Palettes_DB.html">Edit Controls and Functions Palette Set</a> dialog box.</li>
+<li>Right-click the <strong>Controls</strong> or <strong>Functions</strong> palettes and select from the options on the shortcut menu.<br><br>
+Right-click an open area on the palette to insert an object, <a href="Inserting_New_Rows_or_Colu.html">row, or column</a>, toggle the standard menu view, or <a href="../lvhowto/Deleting_Empty_Slot.html">delete an empty slot</a> from the palette. Right-click an icon to <a href="Moving_Subpalettes.html">move a subpalette</a>, delete a subpalette, copy an icon, edit a subpalette icon, rename a subpalette, set a file to <a href="Automatically_Updating_Pal.html">update based on the contents of a directory</a>, or  <a href="Editing_Icon_Short_Name.html">edit an icon short name</a>. To move an object, drag it to a new location on the palette.</li>
+<li>After you edit the palettes, click the <strong>Save Changes</strong> button in the <strong>Edit Controls and Functions Palette Set</strong> dialog box to open the <a href="../lvdialog/Preview_Palette_Changes_Dialog_Box.html">Preview Palette Changes</a> dialog box and save the changes. Click the <strong>Cancel</strong> button to cancel any changes you made in this editing session and close this dialog box.</li></ol>
+<p class="Body"><!--start child ../lvconcepts/Adding_Targets_to_Project.html
+-->To edit the palette set for a specific target, select <strong>Tools&#0187;Advanced&#0187;Edit Palette Set</strong> from a VI on the target whose palette set you want to modify.<!--end child ../lvconcepts/Adding_Targets_to_Project.html
+--></p>
+<p class="Body"><!--start parent  = lvconcepts  tag="savingedits"-->If you edit the palettes, LabVIEW saves the edits to the <span class="Monospace">labview\menus</span> directory. LabVIEW saves the edits in a copy of the original palette. The protection of the original palettes ensures that you can experiment with the palettes without corrupting the original palettes. To revert to the original palettes, click the <strong>Restore to Default</strong> button on the <strong>Edit Controls and Functions Palette Set</strong> dialog box.<!--end parent  = lvconcepts  tag="savingedits"--> </p>
+
+<p>To edit the visible palette categories on the <strong>Controls</strong> or <strong>Functions</strong> palette, click the <strong>Customize</strong> button on the palette toolbar and select <strong>Change Visible Palettes</strong> from the shortcut menu to display the <a href="../lvdialog/Change_Visible_Categories_DB.html">Change Visible Palettes</a> dialog box. You also can click the <strong>Change Visible Palettes</strong> link at the bottom of a pinned palette to display the <strong>Change Visible Palettes</strong> dialog box.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;To edit a palette inside a <a href="../lvconcepts/packed_libraries.html">packed project library</a>, make changes to the palette and rebuild the packed library to update those changes in the library.</td></tr></table>
+
+<p class="Body">You also can use the <a href="../glang/Paletted_Editing_VIs.html">Palette Editing</a> VIs to edit the <strong>Controls</strong> or <strong>Functions</strong> palette set programmatically.</p>
+
+</body>
+</html>

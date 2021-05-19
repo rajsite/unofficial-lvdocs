@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Reserved Application Item Tags</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Reserved Application Item Tags</h1>
+
+<p class="Body">The following list includes <a href="../lvdialog/Application_Item_Tags.html">application item tags</a> that have been removed from LabVIEW either because the feature is no longer available or because it has been combined with another feature. If you <a href="../lvhowto/Customizing_Menus_Statical.html">create run-time menu (<span class="Monospace">.rtm</span>) files</a> that include any of the items in the following list, LabVIEW automatically removes the items when it loads the run-time menu.</p>
+<p>
+If you use a <a href="../lvprop/VI_Menu_Selection_App.html">Menu Selection (App) Event</a> or a <a href="../lvprop/Ctrl_Shrtct_Menu_Sel_App.html">Shortcut Menu Selection (App) Event</a> to handle these tags, you must remove this code, or you can add a user menu item to be handled in a similar way. Alternately, you can programmatically add, delete, or inspect the menu items in the following list from the application menus using the functions <a href="../glang/Insert_Menu_Items.html">Insert Menu Items</a>, <a href="../glang/Delete_Menu_Items.html">Delete Menu Items</a>, or <a href="../glang/Get_Menu_Item_Info.html">Get Menu Item Info</a>, respectively.</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="tip.gif"></td>
+<td>
+<strong>Tip</strong>&nbsp;&nbsp;Adding any of the items in the following list results in <a href="../lverror/RunTimeMenu_Error_Codes.html">error 1437</a>. Deleting or inspecting any of the items in the following list results in <a href="../lverror/RunTimeMenu_Error_Codes.html">error 1162</a>, the same error LabVIEW returns any time an item cannot be found.</td></tr></table>
+
+<table class="Bordered">
+<tr><th class="Bordered"><strong>Menu Item</strong></th>
+<th class="Bordered"><strong>Application Item Tag</strong></th></tr>
+<tr><td class="Bordered">.NET Assembly References...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_DN_ASSEMBLY_REFS</span></span></td></tr>
+<tr><td class="Bordered">_Configure Tags...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_DSC_TAGEDITOR</span></span></td></tr>
+<tr><td class="Bordered">_Edit User Accounts...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_DSC_USEREDITOR</span></span></td></tr>
+<tr><td class="Bordered">_Monitor Tags...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_DSC_TAGMONITOR</span></span></td></tr>
+<tr><td class="Bordered">_Security</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_DSC_SECURITY</span></span></td></tr>
+<tr><td class="Bordered">Advanced</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_DSC_ADVANCED</span></span></td></tr>
+<tr><td class="Bordered">Build Application or Shared Library (DLL)...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_BUILD_STANDALONE_APP</span></span></td></tr>
+<tr><td class="Bordered">Change _Password...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_DSC_CPWD</span></span></td></tr>
+<tr><td class="Bordered">Edit VI Library...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_EDIT_VI_LIBRARY</span></span></td></tr>
+<tr><td class="Bordered">Interactive Server Tester...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_DSC_IST</span></span></td></tr>
+<tr><td class="Bordered">Launch _Engine...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_DSC_ENGINE</span></span></td></tr>
+<tr><td class="Bordered">Log_out</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_DSC_LOGOUT</span></span></td></tr>
+<tr><td class="Bordered">Options...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_DSC_OPTIONS</span></span></td></tr>
+<tr><td class="Bordered">Real-Time...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_REALTIME</span></span></td></tr>
+<tr><td class="Bordered">RT Engine _Info</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_RT_ENGINE_INFO</span></span></td></tr>
+<tr><td class="Bordered">Save with Options...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SAVE_WITH_OPTIONS</span></span></td></tr>
+<tr><td class="Bordered">Server Browser...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_DSC_SRVBRW</span></span></td></tr>
+<tr><td class="Bordered">Show Clipboard</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SHOW_CLIPBOARD</span></span></td></tr>
+<tr><td class="Bordered">Show the LabVIEW Bookshelf...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_VIEW_PRINTED_MANUALS</span></span></td></tr>
+<tr><td class="Bordered">Show _Toolbar</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_DSC_TOOLBAR</span></span></td></tr>
+<tr><td class="Bordered">Source Code Control</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SRC_CODE_CTRL</span></span></td></tr>
+<tr><td class="Bordered">Startup _VIs...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_DSC_STARTUP</span></span></td></tr>
+<tr><td class="Bordered">Switch Execution _Target</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_SWITCH_EXEC_TARGET</span></span></td></tr>
+<tr><td class="Bordered">Update VXIplug&amp;play Drivers...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_UPDATE_VXI</span></span></td></tr>
+<tr><td class="Bordered">User _Info...</td>
+<td class="Bordered"><span class="DNL"><span class="Monospace">APP_DSC_USERINFO</span></span></td></tr>
+</table>
+
+
+
+
+
+
+</body>
+</html>

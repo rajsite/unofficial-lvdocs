@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Configuring Run-Time Languages for Applications and Shared Libraries</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Configuring Run-Time Languages for Applications and Shared Libraries</h1>
+<p class="Body">You can specify the language or languages to use with a stand-alone application or shared library. By default, LabVIEW uses the same run-time language as Windows. If LabVIEW cannot use the Windows run-time language or the platform is non-Windows, LabVIEW defaults to English. Change the default behavior by configuring the run-time language options.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;LabVIEW localizes text for items such as default run-time menus, default menu items for custom run-time menus, descriptions of error codes, and LabVIEW dialog boxes. However, you must <a href="../lvconcepts/Localizing_LabVIEW_VIs.html">localize the text</a> for items such as captions and control descriptions.</td>
+</tr>
+</table>
+
+<p class="Body">You can configure the run-time language options for a stand-alone application using the following methods. The methods appear in order of precedence.</p>
+	<ul>
+		<li>Run the application with the <span class="Monospace">&#8211;lang</span> <span class="Monospace-Italic">language</span> command-line argument, where <span class="Monospace-Italic">language</span> is the English name of the language you want to use.</li>
+		<li>Add the following line to the <a href="../lvhowto/Copying_Your_LabVIEW_Prefs.html">configuration file</a> for the application: <br/><span class="Monospace">AppLanguage=</span> <span class="Monospace-Italic">language</span>, where <span class="Monospace-Italic">language</span> is the English name of the language you want to use. Modifying the configuration file for the application does not modify the project settings.</li>
+		<li><span class="Platform">(Windows)</span> If you do not specify the language you want to use in the command line or the configuration file of the application, the application uses the operating system language. Navigate to <strong>Control Panel&#187;Regional and Language Options</strong> to view the language settings for the operating system. If the application does not support the operating system language, the application uses the default language for the application.</li>
+ 		<li>Use the <strong>Default language</strong> option  to configure the default language for the application. In the <strong>Project Explorer</strong> window, right-click an application under <strong>Build Specifications</strong>, select <strong>Properties</strong> from the shortcut menu, and navigate to the <strong>Run-Time Languages</strong> page of the <a href="../lvdialog/Build_App_or_DLL_DB.html">Application Properties</a> dialog box. If you previously hid <strong>Build Specifications</strong> in the <strong>Project Explorer</strong> window, you must <a href="../lvhowto/Showing_Hiding_Nodes.html">display the item</a> again to access it.</li>
+		<li>Use the <strong>Supported Languages</strong> option to configure the supported languages for an application in the build specification. In the <strong>Project Explorer</strong> window, right-click an application under <strong>Build Specifications</strong>, select <strong>Properties</strong> from the shortcut menu, and navigate to the <strong>Run-Time Languages</strong> page of the <a href="../lvdialog/Build_App_or_DLL_DB.html">Application Properties</a> dialog box to configure language options for the application. The <strong>Supported languages</strong> option on the <strong>Run-Time Languages</strong> page lists all supported languages.</li>	
+</ul>
+<p class="Body">If you do not specify a language using the previous options, the application uses the first available supported language in alphabetical order. The <strong>Supported languages</strong> option on the <strong>Run-Time Languages</strong> page of the <a href="../lvdialog/Build_App_or_DLL_DB.html">Application Properties</a> dialog box lists all supported languages. If the application cannot use any of the supported languages because the required language files have been deleted, corrupted, or are not readable, LabVIEW cannot load the application.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;The <a href="../lvconcepts/Using_the_LV_Run_Time_Eng.html">LabVIEW Run-Time Engine</a> is multilingual, so you do not have to include multiple versions of it with an application, shared library, or installer in order to use localized text.</td></tr>
+</table>
+
+<p class="Body">You can use the <a href="../lvprop/App_AppLang.html">Application:Language</a> property to determine the default language for an application programmatically.</p>
+
+<p class="Body">Use the <a href="../lvdialog/Run_Time_DLL_Page.html">Run-Time Languages</a> page of the <a href="../lvdialog/DLL_Settings_DB.html">Shared Library Properties</a> dialog box  to configure language options for a shared library.</p>
+
+
+</body>
+</html>

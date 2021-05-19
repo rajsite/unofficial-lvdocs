@@ -1,0 +1,127 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Eigenvalues and Eigenvectors</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-05C8E34D-F1F5-4024-914B-3768E5428E39" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Eigenvalues and Eigenvectors</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 
+            		 To understand eigenvalues and eigenvectors, start with the classical definition. Given an <em>n</em> � <em>n</em> matrix <em>A</em>, the problem is to find a scalar &#955; and a nonzero vector <em>x</em> such that 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./p2Flvac_eigen_values_vectors.xml_d14252e43.png"></span></div>
+         </div> 
+         	 
+         <p>In the previous equation, &#955; is a vector of eigenvalues. Similar matrices have the same eigenvalues. In the previous equation,
+            <em>x</em> is the eigenvector that corresponds to the eigenvalues. An eigenvector of a matrix is a nonzero vector that does not rotate
+            when the matrix is applied to it. 
+            	 
+         </p> 
+         	 
+         <p>Calculating the eigenvalues and eigenvectors are fundamental principles of linear algebra and allow you to solve many problems
+            such as systems of differential equations when you understand what they represent. Consider an eigenvector <em>x</em> of a matrix <em>A</em> as a nonzero vector that does not rotate when <em>x</em> is multiplied by <em>A</em>, except perhaps to point in precisely the opposite direction. <em>x</em> may change length or reverse its direction, but it will not turn sideways. In other words, there is some scalar constant
+            &#955; such that the previous equation holds true. The value &#955; is an eigenvalue of <em>A</em>. 
+            	 
+         </p> 
+         	 
+         <p>Consider the following example. One of the eigenvectors of the matrix <em>A</em>, where 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./p2Flvac_eigen_values_vectors.xml_d14252e93.png"></span></div>
+         </div> 
+         	 
+         <p>is 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./p2Flvac_eigen_values_vectors.xml_d14252e125.png"></span></div>
+         </div> 
+         	 
+         <p>Multiplying the matrix <em>A</em> and the vector <em>x</em> simply causes the vector <em>x</em> to be expanded by a factor of 6.85. Hence, the value 6.85 is one of the eigenvalues of the vector <em>x</em>. For any constant &#945;, the vector &#945;<em>x</em> also is an eigenvector with eigenvalue &#955; because 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./p2Flvac_eigen_values_vectors.xml_d14252e166.png"></span></div>
+         </div> 
+         	 
+         <p>In other words, an eigenvector of a matrix determines a direction in which the matrix expands or shrinks any vector lying
+            in that direction by a scalar multiple, and the expansion or contraction factor is given by the corresponding eigenvalue.
+            A generalized eigenvalue problem is to find a vector &#955; and a nonzero vector <em>x</em> such that 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./p2Flvac_eigen_values_vectors.xml_d14252e205.png"></span></div>
+         </div> 
+         	 
+         <p>where <em>B</em> is another <em>n</em> � <em>n</em> matrix. 
+            	 
+         </p> 
+         	 
+         <p>The following are some important properties of eigenvalues and eigenvectors: 
+            	 
+         </p> 
+         	 <a name="GUID-05C8E34D-F1F5-4024-914B-3768E5428E39__UL_DAE75DE4AADC4FD682AC6152C5B979FD" shape="rect">
+            <!-- --></a><ul id="GUID-05C8E34D-F1F5-4024-914B-3768E5428E39__UL_DAE75DE4AADC4FD682AC6152C5B979FD">
+            <li><a name="GUID-05C8E34D-F1F5-4024-914B-3768E5428E39__LI_6482BB2DB14942268DC9ACE1C4322D15" shape="rect">
+                  <!-- --></a>The eigenvalues of a matrix are not necessarily all distinct. In other words, a matrix can have multiple eigenvalues. 
+               		
+            </li>
+            <li><a name="GUID-05C8E34D-F1F5-4024-914B-3768E5428E39__LI_F2B7E7D492E34CB9B5655D1BB735A604" shape="rect">
+                  <!-- --></a>All the eigenvalues of a real matrix need not be real. However, complex eigenvalues of a real matrix must occur in complex
+               conjugate pairs. 
+               		
+            </li>
+            <li><a name="GUID-05C8E34D-F1F5-4024-914B-3768E5428E39__LI_02A3138F71DD4D65BD2DD13B4D83A452" shape="rect">
+                  <!-- --></a>The eigenvalues of a diagonal matrix are its diagonal entries, and the eigenvectors are the corresponding columns of an identity
+               matrix of the same dimension. 
+               		
+            </li>
+            <li><a name="GUID-05C8E34D-F1F5-4024-914B-3768E5428E39__LI_2415B8820D3F49F79B921CD12F3B5B6B" shape="rect">
+                  <!-- --></a>A real symmetric matrix always has real eigenvalues and eigenvectors. 
+               		
+            </li>
+            <li><a name="GUID-05C8E34D-F1F5-4024-914B-3768E5428E39__LI_9BC0B11D06AA4E88AFAF90E27F7302D8" shape="rect">
+                  <!-- --></a>Eigenvectors can be scaled arbitrarily. 
+               		
+            </li>
+         </ul> 
+         	 
+         <p>There are many practical applications in the field of science and engineering for an eigenvalue problem. For example, the
+            stability of a structure and its natural modes and frequencies of vibration are determined by the eigenvalues and eigenvectors
+            of an appropriate matrix. Eigenvalues also are very useful in analyzing numerical methods, such as convergence analysis of
+            iterative methods for solving systems of algebraic equations and the stability analysis of methods for solving systems of
+            differential equations. 
+            	 
+         </p> 
+         	 
+         <p> Depending on the particular application, you might just want to compute the eigenvalues or both the eigenvalues and the eigenvectors.
+            Also, a symmetric matrix needs less computation than a nonsymmetrical matrix. Choose the matrix type carefully. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Linear_Algebra.html" shape="rect">Linear Algebra</a></div>
+         </div>
+         <div class="relinfo"><strong>Related information</strong><br clear="none"><div><a href="../gmath/EigenValues_and_Vectors.html" shape="rect">Eigenvalues and Vectors VI</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

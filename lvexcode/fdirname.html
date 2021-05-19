@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>FDirName (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>FDirName (LabVIEW Manager Function)</h1>
+<p class="Code">MgErr FDirName(path, dir);</p>
+<h2>Purpose</h2>
+<p class="Body">Creates a path for the parent directory of a specified <strong>path</strong>. You can pass the same path variable for the parent path that you use for <strong>path</strong>. Therefore, you can call this function in the following two ways:</p>
+<UL>
+ <li><span class="Monospace">err = FDirName(path, dir);
+<br>/* the parent path is returned in a second path variable */</span></li>
+<li><span class="Monospace">err = FDirName(path, path);
+
+<br>/* the parent path writes over the existing path */</span></li>
+</ul>
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>path</strong></td>
+<td class="Bordered"><span class="Monospace">Path</span></td>
+ <td class="Bordered">Path whose parent path you want to determine.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>dir</strong></td>
+<td class="Bordered"><span class="Monospace">Path</span></td>
+ <td class="Bordered">Parameter in which <span class="Monospace">FDirName</span> stores the parent path.</td></tr>
+</table>
+<h2>Return Value</h2>
+<p class="Body"><span class="Monospace">MgErr</span>, which can contain the following errors. If you receive errors from <a href="LabVIEW_Manager_Functions.html">LabVIEW Manager functions</a>, most error names correspond to LabVIEW error codes.</p>
+<table class="Bordered">
+<tr><th class="Bordered Left-Align">Value</th>
+<th class="Bordered Left-Align">Corresponding Error Code or Description</th></tr>
+<tr><td class="Bordered"><span class="Monospace">noErr</span></td><td class="Bordered">No error.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">mgArgErr</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">1</a></td></tr></table>
+
+</body>
+</HTML>

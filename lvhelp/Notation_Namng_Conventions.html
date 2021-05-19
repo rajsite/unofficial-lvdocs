@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: LVANLS -->
+<title>Notation and Naming Conventions</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Notation and Naming Conventions
+</h1>
+<p class="Body">To help you identify the type of parameters and operations, this help file uses the following notation and naming conventions unless otherwise specified in a VI description. Although there are a few scalar functions and operations, most of the analysis VIs process large blocks of data in the form of one-dimensional arrays, or vectors, and two-dimensional arrays, or matrices.
+</p>
+<h2>Scalars, Constants, and Arrays</h2>
+
+<p class="Body">All variables are in italics.</p>
+
+<p class="Body">Lowercase letters represent scalars or constants, for example, <em>a</em>, <img src="pi.gif">, and <em>b</em> = 1.234.
+</p>
+<p class="Body">Capital letters represent arrays, for example, <em>X</em>, <em>A</em>, and <em>Y</em> = <em>aX</em> + <em>b</em>. <em>X</em> and <em>Y</em> generally denote 1D arrays.  <em>A</em>, <em>B</em>, and <em>C</em> generally represent matrices. 
+</p>
+<p class="Body"><!--begin child: ../lvconcepts/Grouping_Data_Using_Strings_Arrays_and_Clusters.xml-->Array indexes in LabVIEW are zero-based. The index of the first element in the array, regardless of its dimension, is zero.<!--end child: ../lvconcepts/Grouping_Data_Using_Strings_Arrays_and_Clusters.xml--> The following sequence of numbers represents a 1D array <em>X</em> containing <em>n</em> elements.</p>
+<p class="Indent1"><img src="noloc_eq_nnc1.gif"></p>
+
+<p class="Body">The following scalar quantity represents the <em>i</em>th element of the sequence <em>X</em>.</p>
+<p class="Indent1"><em>X</em><sub>i</sub>&nbsp;&nbsp;&nbsp;&nbsp; 0 <img src="leq.gif"><em> i <img src="leq.gif"> n</em>&#8211;1</p>
+
+<p class="Body">The first element in the sequence is <img src="noloc_eq_x0b.gif"> and the last element in the sequence is <img src="noloc_eq_nnc3.gif"> for a total of <em>n</em> elements.
+</p>
+<p class="Body">The following sequence of numbers represents a 2D array containing <em>n</em> rows and <em>m</em> columns. 
+</p>
+<p class="Indent1"><img src="noloc_eq_nnc4.gif"></p>
+
+<p class="Body">The total number of elements in the 2D array is the product of <em>n</em> and <em>m</em>. The first index corresponds to the row number. The second index corresponds to the column number. The following scalar quantity represents the element located on the <em>i</em>th row and the <em>j</em>th column. 
+</p>
+<p class="Indent1"><em>a<sub>ij</sub></em>&nbsp;&nbsp;&nbsp;&nbsp; 0 <img src="leq.gif"> <em>i <img src="leq.gif"> n</em>&#8211; 1 and 0 <img src="leq.gif"> <em>j <img src="leq.gif"> m</em> &#8211; 1</p>
+
+<p class="Body">The first element in <em>A</em> is <img src="noloc_eq_nnc6.gif">. The last element in <em>A</em> is <img src="noloc_eq_nnc7.gif">.
+</p>
+<h2>Array Operation Notations</h2>
+<p class="Body">Unless otherwise specified, this help file uses the following simplified array operation notations.
+</p>
+<p class="Body">Setting the elements of an array to a scalar constant is represented by</p>
+<p class="Indent1"><em>X</em> = <em>a</em>,</p>
+<p class="Body">which corresponds to the sequence</p>
+<p class="Indent1"><em>X</em> = {<em>a</em>, <em>a</em>, <em>a</em>, &#8230;, <em>a</em>}.</p>
+<p class="Body"><em>X</em> = <em>a</em> is used instead of</p>
+<p class= "Indent1"><em>x<sub>i</sub> &#61; a</em></p> 
+<p class= "Indent1">for <em>i</em> &#61; 0, 1, 2,..,<em> n</em>&#8211; 1</p>
+
+<p class="Body">Multiplying the elements of an array by a scalar constant is represented by</p>
+<p class="Indent1"><em>Y</em> = <em>aX</em>,</p>
+<p class="Body">which corresponds to the sequence</p>
+<p class="Indent1"><img src="noloc_eq_nnc9.gif"></p>
+<p class="Body"><em>Y</em> = <em>aX</em> is used instead of</p>
+<p class= "Indent1"><em>y<sub>i</sub> &#61; ax<sub>i</sub></em></p> 
+<p class= "Indent1">for <em>i</em> &#61; 0, 1, 2,..,<em> n</em>&#8211; 1</p>
+
+<p class="Body">Similarly, multiplying a 2D array by a scalar constant is represented by
+</p>
+<p class="Indent1"><em>B</em> = <em>kA</em>,
+</p>
+<p class="Body">which corresponds to the following sequence.
+</p>
+<p class="Indent1"><img src="noloc_eq_nnc11.gif"></p>
+<p class="Body"><em>B</em> = <em>kA</em> is used instead of</p>
+<p class="Indent1"><em>b<sub>ij</sub></em> = <em>ka<sub>ij</sub></em> </p>   
+<p class="Indent1">for <em>i</em> &#61; 0, 1, 2, .., <em>n</em> &#8211; 1 and <em>j</em> &#61; 0, 1, 2, &#8230;,<em> m</em> &#8211; 1</p>
+
+<p class="Body">An array with no elements is an empty array and is represented by
+</p>
+<p class="Indent1">Empty = NULL = <img src="oslash.gif"> = { }.
+</p>
+<p class="Body">In general, operations on empty arrays result in empty output arrays or undefined results.
+</p>
+
+
+
+</body>
+</html>

@@ -1,0 +1,665 @@
+
+<html>
+<head>
+<!-- Sitemap 1.0 -->
+</head>
+<body>
+<UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Signal Processing and Analysis"><param name="Local" value="Signal_Processing_and_Analysis.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Introduction to Digital Signal Processing and Analysis"><param name="Local" value="Intro_DSP_and_Anls_in_LV.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Importance of Data Analysis"><param name="Local" value="Impt_Data_Anls.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Sampling Signals"><param name="Local" value="Sampling_Signals.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Aliasing"><param name="Local" value="Aliasing.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Increasing Sampling Frequency to Avoid Aliasing"><param name="Local" value="lvac_Increasing_Sampling_Frequency_to_Avoid_Aliasing.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Anti-Aliasing Filters"><param name="Local" value="lvac_Anti_Aliasing_Filters.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Converting to Logarithmic Units"><param name="Local" value="Convert_to_Log_Units.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Displaying Results on a Decibel Scale"><param name="Local" value="lvac_Displaying_Results_on_a_Decibel_Scale.html"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Signal Generation"><param name="Local" value="Signal_Gen.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Common Test Signals"><param name="Local" value="Common_TestSignals.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Frequency Response Measurements"><param name="Local" value="Freq_Resp_Meas.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Multitone Generation"><param name="Local" value="Multitone_Generation.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Crest Factor"><param name="Local" value="lvac_Crest_Factor.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Phase Generation"><param name="Local" value="lvac_Phase_Gen.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Swept Sine versus Multitone"><param name="Local" value="lvac_Swept_Sine_versus_Multitone.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Noise Generation"><param name="Local" value="Noise_Generation.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Normalized Frequency"><param name="Local" value="Normalized_Frequency.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Signal Generation in LabVIEW"><param name="Local" value="Wave_and_Pattern_VIs.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Digital Filtering"><param name="Local" value="Digital_Filtering.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Introduction to Filtering"><param name="Local" value="Introduction_to_Filtering.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Advantages of Digital Filtering Compared to Analog Filtering"><param name="Local" value="lvac_adv_dig_filt.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Common Digital Filters"><param name="Local" value="Common_Digital_Filters.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Impulse Response"><param name="Local" value="lvac_impuse_response.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Classifying Filters by Impulse Response"><param name="Local" value="lvac_classifying_filters_by_imp_resp.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Characteristics of an Ideal Filter"><param name="Local" value="Char_Ideal_Filter.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Practical Filters"><param name="Local" value="Practical__Nonideal__Filters.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Transition Band"><param name="Local" value="lvac_transition_band.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Passband Ripple and Stopband Attenuation"><param name="Local" value="lvac_passband_rip_stopban_atten.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Group Delay"><param name="Local" value="lvac_group_delay.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Sampling Rate"><param name="Local" value="Sampling_Rate_DF.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="FIR and IIR Filters"><param name="Local" value="Comparing_FIR_andIIR_Filters.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="FIR Filters"><param name="Local" value="FIR_Filters.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Taps"><param name="Local" value="lvac_taps.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Designing FIR Filters"><param name="Local" value="lvac_design_fir_filters.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Designing FIR Filters by Windowing"><param name="Local" value="lvac_design_fir_windowing.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Designing Optimum FIR Filters Using the Parks-McClellan Algorithm"><param name="Local" value="lvac_design_optimum_fir.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Designing Equiripple FIR Filters Using the Parks-McClellan Algorithm"><param name="Local" value="lvac_design_equiripple_fir.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Designing Narrowband FIR Filters"><param name="Local" value="lvac_design_narrow_fir.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Designing Wideband FIR Filters"><param name="Local" value="lvac_design_wideband_fir.html"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="IIR Filters"><param name="Local" value="IIR_Filters.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Cascade Form IIR Filtering"><param name="Local" value="lvac_cascade_iir.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Second-Order Filtering"><param name="Local" value="lvac_second_order_filter.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Fourth-Order Filtering"><param name="Local" value="lvac_fourth_order_filter.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="IIR Filter Types"><param name="Local" value="lvac_iir_filter_types.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Minimizing Peak Error"><param name="Local" value="lvac_min_peak_error.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Butterworth Filters"><param name="Local" value="lvac_butterworth_filters.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Chebyshev Filters"><param name="Local" value="lvac_chebyshev_filters.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Chebyshev II Filters"><param name="Local" value="lvac_chebyshev_ii.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Elliptic Filters"><param name="Local" value="lvac_elliptic_filters.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Bessel Filters"><param name="Local" value="lvac_bessel_filters.html"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="IIR Filter Characteristics in LabVIEW"><param name="Local" value="lvac_iir_filter_char_in_LV.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Transient Response"><param name="Local" value="lvac_transient_response.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Nonlinear Filters"><param name="Local" value="Nonlinear_Filters.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Selecting a Digital Filter Design"><param name="Local" value="Select_DFD.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Frequency Analysis"><param name="Local" value="FrequencyAnalysis.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Frequency Analysis Basics"><param name="Local" value="lvac_FrequencyAnalysis_Basics.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Differences between Frequency Domain and Time Domain"><param name="Local" value="Freq_Time_Domain_Diffs.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Parseval's Theorem"><param name="Local" value="lvac_Parseval_s_theorem.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Fourier Transform and Discrete Fourier Transform"><param name="Local" value="lvac_ft_dft.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Fourier Transform"><param name="Local" value="Fourier_Transform.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Discrete Fourier Transform (DFT)"><param name="Local" value="Discrete_Fourier_Transform.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Relationship between N Samples in the Frequency and Time Domains"><param name="Local" value="lvac_nsamples.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Example of Calculating Discrete Fourier Transform"><param name="Local" value="lvac_Example_of_Calculating_DFT.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Magnitude and Phase Information"><param name="Local" value="lvac_Magnitude_and_Phase_Information.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Frequency Spacing between DFT Samples"><param name="Local" value="Freq_Space_btwn_DFT_Samps.html"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="FFT Fundamentals"><param name="Local" value="FFT_Fundamentals.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Computing Frequency Components"><param name="Local" value="lvac_Computing_Frequency_Components.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Fast FFT Sizes"><param name="Local" value="lvac_Fast_FFT_Sizes.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Zero Padding"><param name="Local" value="lvac_Zero_Padding.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Real FFT and Complex FFT"><param name="Local" value="lvac_real_complex_fft.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Displaying Frequency Information from Transforms"><param name="Local" value="Display_Transforms_Freq_Info.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Two-Sided and DC-Centered FFT"><param name="Local" value="Two_Sided_DC_Centered_FFT.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Mathematical Representation of a Two-Sided and DC-Centered FFT"><param name="Local" value="lvac_math_rep_of_twosided_dc_centered_fft.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Creating DC-Centered Spectra"><param name="Local" value="lvac_creating_dc_centered_spec.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Power Spectrum"><param name="Local" value="Power_Spect.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Converting a Two-Sided Power Spectrum to a Single-Sided Power Spectrum"><param name="Local" value="lvac_convert_twosided_power_spec_to_singlesided.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Loss of Phase Information"><param name="Local" value="lvac_Loss_of_Phase_Information.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Computations on the Spectrum"><param name="Local" value="Computations_on_the_Spectrum.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Estimating Power and Frequency"><param name="Local" value="lvac_Estimating_Power_and_Frequency.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Computing Noise Level and Power Spectral Density"><param name="Local" value="lvac_noise_level_and_power_spectral_density.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Computing the Amplitude and Phase Spectrums"><param name="Local" value="Compute_Amp_Phase_Spectrums.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Calculating Amplitude in Vrms and Phase in Degrees"><param name="Local" value="lvac_amplitude_in_vrms_phase_in_degrees.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Frequency Response Function"><param name="Local" value="Frequency_Response_Function.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Cross Power Spectrum"><param name="Local" value="Cross_Power_Spect.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Frequency Response and Network Analysis"><param name="Local" value="FreqResp_Network_Anls.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Frequency Response of a Network"><param name="Local" value="lvac_frf_of_network.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Impulse Response Function of a Network"><param name="Local" value="lvac_impulse_resp_func_of_network.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Coherence Function"><param name="Local" value="lvac_Coherence_Function.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Windowing and FFT"><param name="Local" value="Windowing_FA.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Common Measurement Averaging Modes"><param name="Local" value="Average_Improve_Measure_Freq.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="RMS Averaging"><param name="Local" value="lvac_rms_averaging.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Vector Averaging"><param name="Local" value="lvac_vector_averaging.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Peak Hold"><param name="Local" value="lvac_peak_hold.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Weighting"><param name="Local" value="lvac_weighting.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Hilbert Transform"><param name="Local" value="lvac_hilbert_transform.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Hilbert Transform on an Analytic Signal"><param name="Local" value="hilbert_transform_analytic.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Hilbert Transform on an Oscillating Signal"><param name="Local" value="hilbert_transform_oscillating.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Echo Detection and Hilbert Transform"><param name="Local" value="Echo_Detection.html"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Smoothing Windows"><param name="Local" value="Smoothing_Windows.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Spectral Leakage"><param name="Local" value="Spectral_Leakage.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Sampling an Integer Number of Cycles"><param name="Local" value="lvac_sampling_integer_number_of_cycles.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Sampling a Noninteger Number of Cycles"><param name="Local" value="lvac_sampling_noninteger_number_of_cycles.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Windowing Signals"><param name="Local" value="Windowing_Signals.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Characteristics of Different Smoothing Windows"><param name="Local" value="Char_Smoothing_Windows.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Main Lobe"><param name="Local" value="lvac_main_lobe.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Side Lobes"><param name="Local" value="lvac_side_lobes.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Rectangular (None)"><param name="Local" value="lvac_rectangular_window.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Bohman"><param name="Local" value="lvac_bohman.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Hanning"><param name="Local" value="lvac_hanning.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Hamming"><param name="Local" value="lvac_hamming.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Kaiser-Bessel"><param name="Local" value="lvac_kaiser_bessel.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Low Sidelobe"><param name="Local" value="lvac_low_sidelobe.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Modified Bartlett-Hanning"><param name="Local" value="lvac_modified_bartlett_hanning.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Parzen"><param name="Local" value="lvac_parzen.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Triangle"><param name="Local" value="lvac_triangle.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Welch"><param name="Local" value="lvac_welch.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Flat Top"><param name="Local" value="lvac_flat_top.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Exponential"><param name="Local" value="lvac_exponential.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Exact Blackman"><param name="Local" value="lvac_exact_blackman.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Blackman"><param name="Local" value="lvac_blackman.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Blackman-Harris"><param name="Local" value="lvac_blackman_harris.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Blackman-Nuttall"><param name="Local" value="lvac_blackman_nuttall.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Cosine"><param name="Local" value="lvac_general_cosine.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Cosine Tapered"><param name="Local" value="lvac_cosine_tapered.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Gaussian"><param name="Local" value="lvac_gaussian_window.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Dolph-Chebyshev"><param name="Local" value="lvac_dolph_chebyshev_window.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Force"><param name="Local" value="lvac_force_window.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Windows for Spectral Analysis versus Windows for Coefficient Design"><param name="Local" value="Windows_Spect_Anls_Coeff_Dsgn.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Windows for Spectral Analysis"><param name="Local" value="lvac_windows_for_spectral_analysis.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Windows for FIR Filter Coefficient Design"><param name="Local" value="lvac_windows_for_fir_filter_coeft_design.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Choosing the Correct Smoothing Window"><param name="Local" value="Choosing_Smoothing_Window.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Scaling Smoothing Windows"><param name="Local" value="Scaling_Smoothing_Windows.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Distortion Measurements"><param name="Local" value="Distortion_Meas.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Application of Distortion Measurements"><param name="Local" value="lvac_distortion_meas_apps.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Harmonic Distortion"><param name="Local" value="Harmonic_Distortion.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Total Harmonic Distortion (THD)"><param name="Local" value="lvac_thd.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Total Harmonic Distortion Plus Noise (THD + N)"><param name="Local" value="lvac_thd_n.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Signal Noise and Distortion (SINAD)"><param name="Local" value="lvac_sinad.html"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="DC/RMS Measurements"><param name="Local" value="DC_RMS_Measurements.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="DC Level of a Signal"><param name="Local" value="What_Is_DC_Level.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="RMS Level of a Signal"><param name="Local" value="What_Is_RMS_Level.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Averaging to Improve the Measurement"><param name="Local" value="Average_Improve_Measure.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Common Error Sources Affecting DC and RMS Measurements"><param name="Local" value="DC_RMS_Error_Sources.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="DC Overlapped with Single Tone"><param name="Local" value="lvac_dc_overlapped_with_single_tone.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Defining the Equivalent Number of Digits"><param name="Local" value="lvac_defining_equiv_number_of_digits.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="DC Plus Sine Tone"><param name="Local" value="lvac_dc_plus_sine_tone.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Windowing to Improve DC Measurements"><param name="Local" value="lvac_windowing_to_improve_dc_meas.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="RMS Measurements Using Windows"><param name="Local" value="lvac_rms_meas_using_windows.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Using Windows with Care"><param name="Local" value="lvac_using_windows_with_care.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Rules for Improving DC and RMS Measurements"><param name="Local" value="Rules_Improve_DC_RMS_Meas.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="RMS Levels of Specific Tones"><param name="Local" value="lvac_rms_levels_of_specific_tones.html"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Limit Testing"><param name="Local" value="limit_testing_overview.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Specifying a Limit"><param name="Local" value="lvac_specifying_a_limit.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Specifying a Limit Using a Formula"><param name="Local" value="lvac_specifying_a_limit_using_formula.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Performing Limit Testing"><param name="Local" value="lvac_performing_limit_testing.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Applications of Limit Testing"><param name="Local" value="Applications.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Limit Testing in Modem Manufacturing"><param name="Local" value="lvac_limit_testing_modem_manufacturing.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Limit Testing in Digital Filter Design"><param name="Local" value="lvac_limit_testing_dfd.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Limit Testing in Pulse Mask Testing"><param name="Local" value="lvac_pulse_mask_testing.html"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Curve Fitting"><param name="Local" value="Curve_Fitting_Overview.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Least Squares Method"><param name="Local" value="Introduction_to_Curve_Fitting.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General LS Linear Fit Theory"><param name="Local" value="General_LS_Linear_Fit_Theory.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Polynomial Fit with a Single Predictor Variable"><param name="Local" value="Poly_Fit_Single_Predictor_Var.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Curve Fitting in LabVIEW"><param name="Local" value="Curve_Fitting_in_LabVIEW.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Confidence Interval and Prediction Interval"><param name="Local" value="conf_pred_intervals.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Confidence Interval"><param name="Local" value="lvac_confidence_interval.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Prediction Interval"><param name="Local" value="lvac_prediction_interval.html"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Interpolation"><param name="Local" value="interpolation_curve_fitting.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Linear Interpolation"><param name="Local" value="lvac_linear_interpolation.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Polynomial Interpolation"><param name="Local" value="lvac_poly_interpolation.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Lagrange Interpolation"><param name="Local" value="lvac_lagrange_interpolation.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Spline Interpolation"><param name="Local" value="lvac_spline_interpolation.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Hermite Interpolation"><param name="Local" value="lvac_hermite_interpolation.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Probability and Statistics"><param name="Local" value="Probability_and_Statistics.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Probability"><param name="Local" value="Probability_c.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Random Variables"><param name="Local" value="lvac_random_variables.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Discrete Random Variables"><param name="Local" value="lvac_discrete_random_var.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Continuous Random Variables"><param name="Local" value="lvac_cont_random_var.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Normal Distribution"><param name="Local" value="lvac_normal_dist.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Computing the One-Sided Probability"><param name="Local" value="lvac_compute_oneside_prob.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Probability Distribution and Density Functions"><param name="Local" value="lvac_prob_dist_density.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Statistics"><param name="Local" value="Stats.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Mean"><param name="Local" value="lvac_mean.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Median"><param name="Local" value="lvac_median.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Variance"><param name="Local" value="lvac_variance.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Population Variance"><param name="Local" value="lvac_pop_variance.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Sample Variance"><param name="Local" value="lvac_sample_variance.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Standard Deviation"><param name="Local" value="lvac_stand_deviation.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Mode"><param name="Local" value="lvac_mode.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Moment about the Mean"><param name="Local" value="lvac_moment_mean.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Skewness"><param name="Local" value="lvac_skewness.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Kurtosis"><param name="Local" value="lvac_kurtosis.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Histogram"><param name="Local" value="lvac_histogram.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Mean Square Error"><param name="Local" value="lvac_mean_square_error.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Root Mean Square"><param name="Local" value="lvac_root_mean_square.html"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Linear Algebra"><param name="Local" value="Linear_Algebra.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Matrix Analysis"><param name="Local" value="Lin_Sys_and_Matrix_Anls.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Trace of a Matrix"><param name="Local" value="lvac_trace_matrix.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Determinant of a Matrix"><param name="Local" value="lvac_determinant_matrix.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Transpose of a Matrix"><param name="Local" value="lvac_transpose_matrix.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Linear Independence"><param name="Local" value="lvac_linear_independence.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Matrix Rank"><param name="Local" value="lvac_matrix_rank.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Magnitude (Norms) of Matrices"><param name="Local" value="lvac_mag_matrices.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Determining Singularity (Condition Number)"><param name="Local" value="lvac_determine_singularity.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Basic Matrix Operations"><param name="Local" value="Matrix_Ops_Eigen_Problems.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Dot Product and Outer Product"><param name="Local" value="lvac_dot_out_products.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Matrix Exponential"><param name="Local" value="lvac_matrix_exponential.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Matrix Logarithm"><param name="Local" value="lvac_matrix_logarithm.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Kronecker Product"><param name="Local" value="lvac_kronecker_product.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Solving Systems of Linear Equations"><param name="Local" value="MtxInv_Solve_Lin_Eq_Systems.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Matrix Inverse"><param name="Local" value="lvac_types_matrices.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Matrix Factorization"><param name="Local" value="Matrix_Factorization.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="LU Factorization"><param name="Local" value="lvac_lu_factorization.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Cholesky Factorization"><param name="Local" value="lvac_cholesky_factorization.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="QR Factorization"><param name="Local" value="lvac_qr_factorization.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="SVD Factorization"><param name="Local" value="lvac_svd_factorization.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Pseudoinverse"><param name="Local" value="lvac_pseudoinverse.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Solutions of Systems of Linear Equations"><param name="Local" value="lvac_solutions_linear_eq.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Eigenvalues and Eigenvectors"><param name="Local" value="lvac_eigen_values_vectors.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Basic Linear Algebra Subroutines"><param name="Local" value="Basic_Linear_Algebra_Subroutines.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Choosing Between BLAS VIs and Linear Algebra VIs"><param name="Local" value="lvac_choose_blas_linear_algebra.html"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Optimization"><param name="Local" value="Optimization.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Introduction to Optimization"><param name="Local" value="Introduction_to_Optimization.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Constraints on the Objective Function"><param name="Local" value="lvac_constraints_objective.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Linear and Nonlinear Programming Problems"><param name="Local" value="lvac_linear_non_program.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Solving Optimization Problems Iteratively"><param name="Local" value="lvac_solve_opt_iterative.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Linear Programming"><param name="Local" value="Linear_Programming.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Linear Programming Simplex Method"><param name="Local" value="lvac_linear_simplex.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Nonlinear Programming"><param name="Local" value="Nonlinear_Programming.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Impact of Derivative Use on Search Method Selection"><param name="Local" value="lvac_impact_deriv_use.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Line Minimization"><param name="Local" value="lvac_line_opt.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Local and Global Minima"><param name="Local" value="lvac_local_gloal_minima.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Global Minimum"><param name="Local" value="lvac_global_minimum.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Local Minimum"><param name="Local" value="lvac_local_minimum.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Downhill Simplex Method"><param name="Local" value="lvac_downhill_simplex.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Golden Section Search Method"><param name="Local" value="lvac_golden_section.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Choosing a New Point x in the Golden Section"><param name="Local" value="lvac_choose_x_goldensec.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Gradient Search Methods"><param name="Local" value="lvac_gradient_search.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Caveats about Converging to an Optimal Solution"><param name="Local" value="lvac_caveats_converg_opt.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Terminating Gradient Search Methods"><param name="Local" value="lvac_term_gradient_search.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Conjugate Direction Search Methods"><param name="Local" value="lvac_conj_direct_search.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Conjugate Gradient Search Methods"><param name="Local" value="lvac_conj_gradient_search.html"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Polynomials"><param name="Local" value="Polynomials.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Form of a Polynomial"><param name="Local" value="General_Form_of_a_Polynomial.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Basic Polynomial Operations"><param name="Local" value="Basic_Polynomial_Operations.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Order of Polynomial"><param name="Local" value="lvac_polynomial_order.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Polynomial Evaluation"><param name="Local" value="lvac_polynomial_eval.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Polynomial Addition"><param name="Local" value="lvac_polynomial_addition.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Polynomial Subtraction"><param name="Local" value="lvac_polynomial_subtraction.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Polynomial Multiplication"><param name="Local" value="lvac_polynomial_multiplication.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Polynomial Division"><param name="Local" value="lvac_polynomial_division.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Polynomial Composition"><param name="Local" value="lvac_polynomial_composition.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Greatest Common Divisor of Polynomials"><param name="Local" value="lvac_polynomial_gcd.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Least Common Multiple of Two Polynomials"><param name="Local" value="lvac_polynomial_lcm.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Derivatives of a Polynomial"><param name="Local" value="lvac_polynomial_derivatives.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Integrals of a Polynomial"><param name="Local" value="lvac_polynomial_integrals.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Number of Real Roots of a Real Polynomial"><param name="Local" value="lvac_num_real_roots_polynomial.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Rational Polynomial Function Operations"><param name="Local" value="Rational_Poly_Func_Ops.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Rational Polynomial Function Addition"><param name="Local" value="lvac_rational_polynom_add.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Rational Polynomial Function Subtraction"><param name="Local" value="lvac_rational_polynom_subtract.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Rational Polynomial Function Multiplication"><param name="Local" value="lvac_rational_polynom_multiply.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Rational Polynomial Function Division"><param name="Local" value="lvac_rational_polynom_divide.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Negative Feedback with a Rational Polynomial Function"><param name="Local" value="lvac_rational_polynom_neg_feedback.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Positive Feedback with a Rational Polynomial Function"><param name="Local" value="lvac_rational_polynom_pos_feedback.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Derivative of a Rational Polynomial Function"><param name="Local" value="lvac_rational_poly_derivative.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Partial Fraction Expansion"><param name="Local" value="lvac_partial_frac_expansion.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Heaviside Cover-Up Method"><param name="Local" value="lvac_heaviside_coverup_method.html"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Orthogonal Polynomials"><param name="Local" value="Orthogonal_Polynomials.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Chebyshev Orthogonal Polynomials of the First Kind"><param name="Local" value="lvac_chebyshev_orth_polynom_first.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Chebyshev Orthogonal Polynomials of the Second Kind"><param name="Local" value="lvac_chebyshev_orth_polynom_second.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Gegenbauer Orthogonal Polynomials"><param name="Local" value="lvac_gegenbauer_orth_polynom.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Hermite Orthogonal Polynomials"><param name="Local" value="lvac_hermite_orth_polynom.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Laguerre Orthogonal Polynomials"><param name="Local" value="lvac_laguerre_orth_polynom.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Associated Laguerre Orthogonal Polynomials"><param name="Local" value="lvac_assoc_laguerre_orth_polynom.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Legendre Orthogonal Polynomials"><param name="Local" value="lvac_legendre_orth_polynom.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Evaluating a Polynomial with a Matrix"><param name="Local" value="Evaluate_Poly_with_Matrix.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Polynomial Eigenvalues and Vectors"><param name="Local" value="lvac_polynom_eigenvalues_vectors.html"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Point-By-Point Analysis"><param name="Local" value="Point_By_Point_Analysis.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Point-by-Point Analysis and Array-Based Analysis in LabVIEW"><param name="Local" value="FrequentlyAsked_Questions.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Performing Analysis without Buffers of Data"><param name="Local" value="lvac_analysis_without_buffer.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Case Study of Point-By-Point Analysis"><param name="Local" value="Case_Study_PtByPt_Analysis.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Point-By-Point Analysis of Train Wheels"><param name="Local" value="lvac_ptbypt_train_wheels.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Overview of the LabVIEW Point-By-Point Solution"><param name="Local" value="lvac_overview_lv_ptbypt_solution.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Characteristics of a Train Wheel Waveform"><param name="Local" value="lvac_char_train_wheel.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Analysis Stages of the Train Wheel PtByPt VI"><param name="Local" value="lvac_analysis_stages_ptbyptvi.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="DAQ Stage of the Train Wheel PtByPt VI"><param name="Local" value="lvac_daq_stage_ptbyptvi.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Filter Stage of the Train Wheel PtByPt VI"><param name="Local" value="lvac_filter_stage_ptbyptvi.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Analysis Stage of the Train Wheel PtByPt VI"><param name="Local" value="lvac_analysis_stage_ptbyptvi.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Events Stage of the Train Wheel PtByPt VI"><param name="Local" value="lvac_events_stage_ptbyptvi.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Report Stage of the Train Wheel PtByPt VI"><param name="Local" value="lvac_report_stage_ptbyptvi.html"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Solving Ordinary Differential Equations"><param name="Local" value="Solving_ODEs.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ODE Solver Accuracy and Order"><param name="Local" value="ODE_Solver_Accuracy_and_Order.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Variable Step-Size ODE Solvers versus Fixed Step-Size ODE Solvers"><param name="Local" value="Vble_vs_Fixed_Step_Size_ODE.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Single-Step ODE Solvers versus Multi-Step ODE Solvers"><param name="Local" value="Single_vs_Multi_Step_ODE.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Stiff Problems"><param name="Local" value="Stiff_Problems.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="ODE Solvers in LabVIEW"><param name="Local" value="ODE_Solvers_in_LabVIEW.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Solving Differential Algebraic Equations"><param name="Local" value="Solving_DAEs.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="The Semi-Explicit Form"><param name="Local" value="lvac_dae_semi_explicit_form.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="The Differentiation Index"><param name="Local" value="lvac_dae_differentiation_index.html"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Solving Partial Differential Equations"><param name="Local" value="Solving_PDEs.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Types of PDEs"><param name="Local" value="Types_of_PDEs.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Linear and Non-Linear Equations"><param name="Local" value="lvac_pde_linear_nonlinear_eq.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Stationary and Evolutionary Equations"><param name="Local" value="lvac_pde_stationary_evolutionary_eq.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Dimension and Order of Equations"><param name="Local" value="lvac_pde_dimension.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Second Order Linear Equations"><param name="Local" value="lvac_second_order_linear_eq.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Helmholtz Equation"><param name="Local" value="lvac_hemholtz_eq.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Laplace Equation"><param name="Local" value="lvac_laplace_eq.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Poisson Equation"><param name="Local" value="lvac_poisson_eq.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Heat Equation"><param name="Local" value="lvac_heat_eq.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Wave Equation"><param name="Local" value="lvac_wave_eq.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Second Order Equations of Two Variables"><param name="Local" value="lvac_second_order_eq_two_variables.html"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Domain, Boundary Conditions, and Initial Conditions for PDEs"><param name="Local" value="Conditions_PDEs.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Domain"><param name="Local" value="lvac_pde_domain.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Boundary Condition"><param name="Local" value="lvac_boundary_condition.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Dirichlet Condition"><param name="Local" value="lvac_dirichlet_condition.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Neumann Condition"><param name="Local" value="lvac_neumann_condition.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Robin Condition"><param name="Local" value="lvac_robin_condition.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Initial Condition"><param name="Local" value="lvac_initial_condition.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Definition of a Partial Differential Equation"><param name="Local" value="lvac_def_pde.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Solving PDEs with Numerical Methods"><param name="Local" value="Methods_Solve_PDEs.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="The Finite Difference Method"><param name="Local" value="lvac_finite_difference_method.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="The Difference Schemes"><param name="Local" value="lvac_difference_schemes.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="The Finite Difference Method for the Laplace Equation"><param name="Local" value="lvac_finite_difference_method_for_laplace_eq.html"></OBJECT>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="The Finite Element Method"><param name="Local" value="lvac_finite_element_method.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Discretization and Elements"><param name="Local" value="lvac_fem_discretization_elements.html"></OBJECT>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="The Finite Element Method for the Variational Problem"><param name="Local" value="lvac_fem_variational_problem.html"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Solving PDEs in LabVIEW"><param name="Local" value="PDEs_LabVIEW.html"></OBJECT>
+</LI></UL>
+</LI></UL>
+</LI></UL>
+</body>
+</html>

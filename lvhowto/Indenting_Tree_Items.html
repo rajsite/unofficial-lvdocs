@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Indenting Tree Control Items</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Indenting Tree Control Items</h1>
+
+<p class="Body">Complete the following steps to move an item higher or lower in the tree control hierarchy.</p>
+<ol>
+<li>Right-click an item in the tree control.</li>
+<li>Select one of the following options from the shortcut menu:
+<ul>
+<li><strong>Indent Item</strong>&#8212;Indents the item one level lower in the hierarchy. If the item already appears indented below the item directly above it, you cannot indent it. You can indent the current item, using the Operating tool, by pressing the period (<span class="Monospace">.</span>) key.
+</li>
+<li><strong>Outdent Item</strong>&#8212;Moves the item one level higher in the hierarchy. If the item already appears at the highest level in the hierarchy, you cannot outdent the item. You can move the current item one level higher, using the Operating tool, by pressing the comma (<span class="Monospace">,</span>) key.
+</li>
+</ul>
+</li>
+</ol>
+
+<p class="Body">If you want to configure an item so you cannot indent other items under it, right-click the item and select <strong>Child-Only Item</strong> from the shortcut menu. <!-- Begin child: lvdialog.chm,Edit_Tree_Nodes.html -->If you drag another item under a child-only item, LabVIEW places the item at the same hierarchical level as the child-only item. This menu item is not available if you right-click an item that has other items indented under it.<!-- End child: lvdialog.chm,Edit_Tree_Nodes.html --> You also can use the <a href="../lvprop/TreeCtrl_ActNodeSlTbl.html">Active Item:Child-Only?</a> property to configure an item so you cannot indent other items under it programmatically.</p>
+<p class="Body">You also can use the <a href="../lvprop/TreeCtrl_ActNodeIndntLvl.html">Active Item:Indent Level</a> property to set the indent level of an item in a tree control programmatically.</p>
+
+</body>
+</html>

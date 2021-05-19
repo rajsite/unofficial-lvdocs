@@ -1,0 +1,207 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Original filename: Masterlvinstio.txt -->
+
+
+<title>Controller Functions</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Controller Functions
+</h1>
+<p class="Body">The <a href="GPIB_Dev_Contr_Func_Descr.html">controller functions</a> configure the controller or send IEEE 488 commands to which all instruments respond.
+</p>
+<p class="Body"><a href="#cac">cac&#8212;Become Active Controller</a>
+</p>
+<p class="Body"><a href="#cmd">cmd&#8212;Send IEEE 488 Commands</a>
+</p>
+<p class="Body"><a href="#dma">dma&#8212;Set DMA Mode or Programmed I/O Mode</a>
+</p>
+<p class="Body"><a href="#gts">gts&#8212;Go from Active Controller to Standby</a>
+</p>
+<p class="Body"><a href="#ist">ist&#8212;Set Individual Status Bit</a>
+</p>
+<p class="Body"><a href="#llo">llo&#8212;Local Lockout</a>
+</p>
+<p class="Body"><a href="#loc">loc&#8212;Place Controller in Local State</a>
+</p>
+<p class="Body"><a href="#off">off&#8212;Take Controller Offline</a>
+</p>
+<p class="Body"><a href="#ppc">ppc&#8212;Parallel Poll Configure (Enable and Disable)</a>
+</p>
+<p class="Body"><a href="#ppu">ppu&#8212;Parallel Poll Unconfigure</a>
+</p>
+<p class="Body"><a href="#rpp">rpp&#8212;Conduct Parallel Poll</a>
+</p>
+<p class="Body"><a href="#rsc">rsc&#8212;Release or Request System Control</a>
+</p>
+<p class="Body"><a href="#rsv">rsv&#8212;Request Service and/or Set the Serial Poll Status Byte</a>
+</p>
+<p class="Body"><a href="#sic">sic&#8212;Send Interface Clear</a>
+</p>
+<p class="Body"><a href="#sre">sre&#8212;Unassert or Assert Remote Enable</a>
+</p>
+<h2><a name="cac">cac&#8212;Become Active Controller</a></h2>
+<table class="Borderless"><tr><td><em>syntax</em></td>
+<td><strong>cac</strong> 0 (take control synchronously)</td></tr>
+<tr><td></td>
+<td><strong>cac</strong> 1 (take control immediately)</td></tr></table>
+
+<p class="Body"><strong>cac</strong> takes control either synchronously or immediately, and in some cases asynchronously. You generally do not need to use the <strong>cac</strong> function because other functions, such as <strong>cmd</strong> and <strong>rpp</strong>, take control automatically.
+</p>
+<p class="Body">If you try to take control synchronously when a data handshake is in progress, the function postpones the take control action until the handshake is complete. If a handshake is not in progress, the function executes the take control action immediately. Taking control synchronously is not guaranteed if a read or write operation completes with a timeout or other error.
+</p>
+<p class="Body">You should take control asynchronously when it is impossible to gain control synchronously, for example, after a timeout error.
+</p>
+<p class="Body">The ECIC error results if the GPIB controller is not CIC.
+</p>
+<h2><a name="cmd">cmd&#8212;Send IEEE 488 Commands</a></h2>
+<table class="Borderless"><tr><td><em>syntax</em></td>
+<td><strong>cmd</strong> <em>string</em></td></tr></table>
+
+<p class="Body"><strong>cmd</strong> sends GPIB command messages. These command messages include device talk and listen addresses, secondary addresses, serial and parallel poll configuration messages, and device clear and trigger messages.
+</p>
+<p class="Body">You do not use <strong>cmd</strong> to transmit programming instructions to devices. The <a href="GPIB_Read.html">GPIB Read</a> and <a href="GPIB_Write.html">GPIB Write</a> functions transmit programming instructions and other device-dependent information.
+</p>
+<p class="Body"><em>string</em> contains the command bytes the controller sends. ASCII characters represent these bytes in <strong>cmd</strong> <em>string</em>. If you must send characters that cannot be displayed, you can <a href="../lvhowto/Backslash_Codes_Display.html">enable backslash codes</a> on the string control or string constant, or you can use a format function to list the commands in hexadecimal.
+</p>
+<h2><a name="dma">dma&#8212;Set DMA Mode or Programmed I/O Mode</a></h2>
+<table class="Borderless"><tr><td><em>syntax</em></td>
+<td><strong>dma</strong> 0 (use programmed I/O)</td></tr>
+<tr><td></td>
+<td><strong>dma</strong> 1 (use DMA)</td></tr></table>
+
+<p class="Body"><strong>dma</strong> indicates whether data transfers use DMA.
+</p>
+<p class="Body">Some GPIB controllers do not have DMA capability. If you try to execute <strong>dma</strong> 1, the function returns <a href="../lverror/GPIB_Error_Codes.html">GPIB error 11</a> to indicate no capability.
+</p>
+<h2><a name="gts">gts&#8212;Go from Active Controller to Standby</a></h2>
+<table class="Borderless"><tr><td><em>syntax</em></td>
+<td><strong>gts</strong> 0 (no shadow handshaking)</td></tr>
+<tr><td></td>
+<td><strong>gts</strong> 1 (shadow handshaking)</td></tr></table>
+
+<p class="Body"><strong>gts</strong> sets the GPIB controller to the controller standby state and unasserts the ATN signal if it is the active controller. Normally, the GPIB controller is involved in the data transfer. <strong>gts</strong> permits GPIB devices to transfer data without involving the GPIB controller.
+</p>
+<p class="Body">If shadow handshaking is active, the GPIB controller participates in the GPIB transfer as a listener but does not accept any data. When it detects the END message, the GPIB controller asserts the Not Ready For Data (NRFD) to create a handshake holdoff state.
+</p>
+<p class="Body">If shadow handshaking is not active, the GPIB controller performs neither shadow handshaking nor a handshake holdoff.
+</p>
+<p class="Body">If you enable the shadow handshake option, the GPIB controller participates in a data handshake as a listener without actually reading the data. It monitors the transfer for the END message and stops subsequent transfers. This mechanism allows the GPIB controller to take control synchronously on subsequent operations such as <strong>cmd</strong> or <strong>rpp</strong>.
+</p>
+<p class="Body">After you send the <strong>gts</strong> command, wait for END before you initiate another GPIB command. You can do this with the <a href="GPIB_Wait.html">GPIB Wait</a> function.
+</p>
+<p class="Body">The ECIC error results if the GPIB controller is not CIC.
+</p>
+<h2><a name="ist">ist&#8212;Set Individual Status Bit</a></h2>
+<table class="Borderless"><tr><td><em>syntax</em></td>
+<td><strong>ist</strong> 0 (individual status bit is cleared)</td></tr>
+<tr><td></td>
+<td><strong>ist</strong> 1 (individual status bit is set)</td></tr>
+<tr><td></td>
+<td><strong>ist</strong> sets the sense of the individual status (<strong>ist</strong>) bit.</td></tr></table>
+
+<p class="Body">Use <strong>ist</strong> when the GPIB controller is not the CIC but participates in a parallel poll conducted by a device that is the active controller. The CIC conducts a parallel poll by asserting the EOI and ATN signals, which send the Identify (IDY) message. While this message is active, each device that you configured to participate in the poll responds by asserting a predetermined GPIB data line either TRUE or FALSE, depending on the value of its local <strong>ist</strong> bit. For example, you can assign the GPIB controller to drive the DIO3 data line TRUE if <strong>ist</strong> is 1 and FALSE if <strong>ist</strong> is 0. Conversely, you can assign it to drive DIO3 TRUE if <strong>ist</strong> is 0 and FALSE if <strong>ist</strong> is 1.
+</p>
+<p class="Body">The Parallel Poll Enable (PPE) message in effect for each device determines the relationship among the value of <strong>ist</strong>, the line that is driven, and the sense at which the line is driven. The GPIB controller is capable of receiving this message either locally using <strong>ppc</strong> or remotely through a command from the CIC. After the PPE message executes, <strong>ist</strong> changes the sense at which the GPIB controller drives the line during the parallel poll, and the GPIB controller can convey a one-bit, device-dependent message to the controller.
+</p>
+<h2><a name="llo">llo&#8212;Local Lockout</a></h2>
+<table class="Borderless"><tr><td><em>syntax</em></td>
+<td><strong>llo</strong></td></tr></table>
+
+<p class="Body"><strong>llo</strong> places all devices in local lockout state. This action usually inhibits recognition of inputs from the front panel of the device.
+</p>
+<p class="Body"><strong>llo</strong> sends the Local Lockout (LLO) command.
+</p>
+<h2><a name="loc">loc&#8212;Place Controller in Local State</a></h2>
+<table class="Borderless"><tr><td><em>syntax</em></td>
+<td><strong>loc</strong></td></tr></table>
+
+<p class="Body"><strong>loc</strong> places the GPIB controller in a local state by sending the local message Return To Local (RTL) if it is not locked in remote mode (indicated by the LOK bit of status). You use <strong>loc</strong> to simulate a front panel RTL switch when you use a computer to simulate an instrument.
+</p>
+<h2><a name="off">off&#8212;Take Controller Offline</a></h2>
+<table class="Borderless"><tr><td><em>syntax</em></td>
+<td><strong>off</strong></td></tr></table>
+
+<p class="Body"><strong>off</strong> takes the controller offline. This is only needed when sharing the controller with another application which is using the NI-488 Library.
+</p>
+<h2><a name="ppc">ppc&#8212;Parallel Poll Configure (Enable and Disable)</a></h2>
+<table class="Borderless"><tr><td><em>syntax</em></td>
+<td><strong>ppc</strong> <em>byte</em></td></tr></table>
+
+<p class="Body"><strong>ppc</strong> configures the GPIB Controller to participate in a parallel poll by setting its Local Poll Enable (LPE) message to the value of <em>byte</em>. If the value of <em>byte</em> is 0, the GPIB controller unconfigures itself.
+</p>
+<p class="Body">Each of the 16 Parallel Poll Enable (PPE) messages selects the GPIB data line (DIO1 through DIO8) and sense (1 or 0) that the device must use when responding to the Identify (IDY) message during a parallel poll. The device interprets the assigned message and the current value of the individual status (<strong>ist</strong>) bit to determine if the selected line is driven TRUE or FALSE. For example, if PPE=0x64, DIO5 is driven TRUE if <strong>ist</strong> is 0 and FALSE if <strong>ist</strong> is 1. If PPE=0x68, DIO1 PPE message is in effect. You must know which PPE and PPD messages are sent and determine what the responses indicate.
+</p>
+<h2><a name="ppu">ppu&#8212;Parallel Poll Unconfigure</a></h2>
+<table class="Borderless"><tr><td><em>syntax</em></td>
+<td><strong>ppu</strong></td></tr></table>
+
+<p class="Body"><strong>ppu</strong> disables all devices from responding to parallel polls.
+</p>
+<p class="Body"><strong>ppu</strong> sends the Parallel Poll Unconfigure (PPU) command.
+</p>
+<h2><a name="rpp">rpp&#8212;Conduct Parallel Poll</a></h2>
+<table class="Borderless"><tr><td><em>syntax</em></td>
+<td><strong>rpp</strong></td></tr></table>
+
+<p class="Body"><strong>rpp</strong> conducts a parallel poll of previously configured devices by asserting the ATN and EOI signals, which sends the IDY message.
+</p>
+<p class="Body"><strong>rpp</strong> places the parallel poll response in the output string as ASCII characters.
+</p>
+<h2><a name="rsc">rsc&#8212;Release or Request System Control</a></h2>
+<table class="Borderless"><tr><td><em>syntax</em></td>
+<td><strong>rsc</strong> 0 (release system control)</td></tr>
+<tr><td></td>
+<td><strong>rsc</strong> 1 (request system control)</td></tr></table>
+
+<p class="Body"><strong>rsc</strong> releases or requests the capability of the GPIB controller to send the Interface Clear (IFC) and Remote Enable (REN) messages to GPIB devices using the <strong>sic</strong> and <strong>sre</strong> functions. For the GPIB controller to respond to IFC sent by another controller, the GPIB controller must not be the system controller.
+</p>
+<p class="Body">In most applications, the GPIB controller is always the system controller. You use <strong>rsc</strong> only if the computer is not the system controller for the duration of the program execution.
+</p>
+<h2><a name="rsv">rsv&#8212;Request Service and/or Set the Serial Poll Status Byte</a></h2>
+<table class="Borderless"><tr><td><em>syntax</em></td>
+<td><strong>rsv</strong> <em>byte</em></td></tr></table>
+
+<p class="Body"><strong>rsv</strong> sets the serial poll status byte of the GPIB controller to <em>byte</em>. If the 0x40 bit is set in <em>byte</em>, the GPIB controller also requests service from the controller by asserting the GPIB RQS line. For example, if you want to assert the GPIB RQS line, send the ASCII character @, in which the 0x40 bit is set.
+</p>
+<p class="Body">You use <strong>rsv</strong> to request service from the controller using the Service Request (SRQ) signal and to provide a system-dependent status byte when the controller serial polls the GPIB port.
+</p>
+<h2><a name="sic">sic&#8212;Send Interface Clear</a></h2>
+<table class="Borderless"><tr><td><em>syntax</em></td>
+<td><strong>sic</strong></td></tr></table>
+
+<p class="Body"><strong>sic</strong> causes the controller to assert the IFC signal for at least 100 ms if the controller has system controller authority. This action initializes the GPIB and makes the Controller port CIC. You generally use <strong>sic</strong> when you want a device to become CIC or to clear a bus fault condition.
+</p>
+<p class="Body">The IFC signal resets only the GPIB functions of bus devices; it does not reset internal device functions. The Device Clear (DCL) and Selected Device Clear (SDC) commands reset the device functions. Consult the instrument documentation to determine the effect of these messages.
+</p>
+<h2><a name="sre">sre&#8212;Unassert or Assert Remote Enable</a></h2>
+<table class="Borderless"><tr><td><em>syntax</em></td>
+<td><strong>sre</strong> 0 (unassert Remote Enable)</td></tr>
+<tr><td></td>
+<td><strong>sre</strong> 1 (assert Remote Enable)</td></tr></table>
+
+<p class="Body"><strong>sre</strong> unasserts or asserts the GPIB REN line. Devices monitor REN when they select between local and remote modes of operation. A device does not actually enter remote mode until it receives its listen address.
+</p>
+<p class="Body">The ESAC error occurs if the controller is not system controller.
+</p>
+
+
+</body>
+</html>

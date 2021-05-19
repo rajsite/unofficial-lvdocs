@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<link rel="STYLESHEET" type="text/css" href="expandable_tree.css"><script src="common.js" type="text/javascript"></script><script src="dynamicjumps.js" type="text/javascript"></script><script src="expandable_tree.js" type="text/javascript"></script><title>Adding an Object to a VI Using VI Scripting</title>
+</head>
+<body>
+<h1>Adding an Object to a VI Using VI Scripting</h1>
+<p><strong>Requires:</strong> <a href="enabling_vi_scripting.html">VI Scripting</a></p>
+<p>You can use VI Scripting to programmatically add any object to the front panel or block diagram of a VI. These objects include:</p>
+<ul>
+	<li>Front panel controls, including user-defined custom controls</li>
+	<li>Block diagram nodes, including functions, structures, and calls to subVIs</li>
+	<li>Elements of clusters, arrays, and structures</li>
+</ul>
+
+
+<p class="Body"></p>
+
+<a name="whatYouNeed"></a><h2>What to Use</h2>
+<p>This VI Scripting task requires the following objects:</p>
+<table class="Usage">
+	<col class="Object"/>
+	<col class="Spacer"/>
+	<col class="Object"/>
+	<col class="Spacer"/>
+	<col class="Object"/>
+	<tr><td><a href="../glang/New_VI_Object.html">New VI Object</a></td>
+		<td></td>
+		<td><a href="../glang/Class_Specifier_Constant.html">Class Specifier Constant</a></td>
+		<td></td>
+		<td><a href="../glang/Close_LV_Object_Reference.html">Close Reference</a></td>
+	</tr>
+	<tr><td><img src="noloc_bd_NewVIObject.gif"></td>
+	<td></td>
+		<td><img src="loc_bd_ClassSpecifierConstant.gif"></td>
+		<td></td>
+		<td><img src="noloc_bd_CloseReference.gif"></td>
+	</tr>
+	<tr>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object4908);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN></td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object4908);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object749);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN></td><td> 
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object749);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object709);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object709);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+	</tr>
+</table>
+
+
+	
+<a name="how"></a><h2>What to Do</h2>
+<p><strong>Before you start:</strong> Open the Adding Objects VI in the <span class="Monospace">labview\examples\Application Control\VI Scripting\Creating Objects</span> directory for an example that illustrates each step of the following procedure.</p>
+<a href="javascript:openVI('examples%5C%5CApplication%20Control%5C%5CVI%20Scripting%5C%5CCreating%20Objects%5C%5CAdding%20Objects.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open Example
+<p>Expand the procedure for more information about this specific example.</p>
+
+
+<input type="button" onclick="openAll()" value="Expand All"><input type="button" onclick="closeAll()" value="Collapse All">
+
+
+<ol>
+	<li><a href="../lvhowto/scripting_obtaining_vi_reference.html">Obtain a reference to the target VI</a>.</li>
+	<li>Determine the defining information of the new object that you want to create.
+		<ul>
+			<li>Owner reference&#8212;<!-- Begin child: ../lvhowto/scripting_obtaining_references_from_template.html-->Every object on the front panel or the block diagram has an owner. In the simplest case, the owner of an object is either the front panel or the block diagram of a VI. However, if an object resides within a substructure such as a loop, a Case structure, a sequence structure, or a cluster, that substructure owns the object.<!-- End child: ../lvhowto/scripting_obtaining_references_from_template.html--> The <a href="../lvhowto/scripting_adding_objects.html#examples">Additional Examples</a> section contains examples of adding an object to a loop, an array, and a cluster.
+
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the goal is to create the new Subtract function on the block diagram of the target VI. The scripting VI uses the reference to the target VI as the owner for the new Subtract function even though the block diagram of the target VI is the more precise owner. However, the New VI Object function recognizes when an object such as a Subtract function can appear only on a block diagram and places the new object accordingly.</p></div>
+
+</li>
+			<li>Class name&#8212;Every front panel or block diagram object that you can create with VI Scripting is a member of a <a href="../lvprop/propmeth_class_hierarchy.html">VI Server class</a>. Refer to the <a href="../lvconcepts/anatomy.html">anatomies of VIs</a> to determine the class name of the object you want to create. Use a <a href="../glang/Class_Specifier_Constant.html">class specifier constant</a> to indicate the class of object for the New VI Object function.
+
+
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the Subtract function is a member of the <strong>Function</strong> class.</p></div></li>
+			<li>Style&#8212;Every native LabVIEW object has a style that further defines exactly what kind of object it is. You can use the <a href="../lvscript/Control_Style_ID.html">Control:Style ID</a> property or the <a href="../lvscript/Node_Style.html">Node:Style</a> property to help identify the style of an object that you want to create. 
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;You do not need to specify a style if you are adding a subVI or a user-defined control to the target VI.</td>
+</tr>
+</table>
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the scripting VI is creating a Subtract function, so the style is <span class="Monospace">Subtract</span>. Notice that the style of a node is often different than the class of the node.</p></div>
+			</li>
+			<li>Location&#8212;You must specify the location of any object that you create. This location is relative to the origin of the owner of the object.
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the scripting VI specifies a location of (100, 200) for the Subtract function.</p></div></li>
+			<li>(Optional) Path to subVI or user-defined custom controls&#8212;SubVIs and user-defined custom controls require you to wire a path to the source file to the <strong>path</strong> input of the New VI Object function. Refer to the <a href="#examples">Additional Examples</a> section for an example of creating a call to a subVI.</li>
+			<li>(Optional) Size of new object&#8212;You can specify a size for any object that you can manually resize.
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the scripting VI is creating a Subtract function, which is not resizeable.</p></div> </li>
+		</ul>
+	</li>
+
+
+	<li>Use a <a href="../glang/New_VI_Object.html">New VI Object</a> function to add the new object to the target VI by wiring the information from step 2 to the function.
+	</li>
+	<li>(Optional) <a href="../lvhowto/scripting_quick_reference.html#wiring">Programmatically wire the newly created object to existing objects</a> in the target VI.
+		<p>Refer to the <a href="#examples">Additional Examples</a> section for an example of using VI scripting to wire objects.</p>
+	</li>
+	<li>Use the <a href="../glang/Close_LV_Object_Reference.html">Close Reference</a> function to close each open object reference when you are finished using it.
+	</li>
+</ol>
+
+<a name="bestpractices"></a><h2>Caveats and Recommendations</h2>
+<ul>
+	<li><strong><a href="../lvhowto/scripting_creating_vi_from_template.html">Create complicated new VIs from a template</a> when possible</strong>&#8212;Although you can create a new VI programmatically by creating each component object one at a time, it is much easier to create a new VI from a template and then modify small sections of the code. The Creating New VI From Scratch VI in the <a href="#examples">Additional Examples</a> section demonstrates that creating even a simple target VI one object at a time requires extensive scripting code. You can avoid such complicated scripting code by creating a new VI from a template.</li>
+	<li><strong>Create complex controls from a template when possible</strong>&#8212;Although you can programmatically create a complex control one element at a time, it is easier to create a custom control manually, add an instance of the control by following the previous procedure, and then modify individual parts of the control as necessary. If you have a reference to a custom control, you also can use the <a href="../lvscript/VI_Create_from_Reference.html">VI:Create from Reference</a> method to create a copy of the control.</li>
+	<li><strong>Close all references that you open</strong>&#8212;An excessive number of open references negatively impacts the performance of a VI.  Read about <a href="../lvhowto/scripting_closing_references.html">closing VI and VI object references</a> for more performance details.</li>
+</ul>
+
+<a name="examples"></a><h2>Additional Examples</h2>
+<p class="Body">Refer to the Creating New VI From Scratch VI in the <span class="Monospace">labview\examples\Application Control\VI Scripting\Creating VIs</span> directory for an example of adding an array control, a numeric indicator, and a call to a subVI to a target VI.</p>
+<p class="Body"><a href="javascript:openVI('examples%5C%5CApplication%20Control%5C%5CVI%20Scripting%5C%5CCreating%20VIs%5C%5CCreating%20New%20VI%20From%20Scratch.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(1443);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</p>
+
+<p class="Body">Refer to the Drop Add Function Inside While Loop VI in the <span class="Monospace">labview\examples\Application Control\VI Scripting\Creating Objects</span> directory for an example of adding an Add function inside of another object such as a While Loop.</p>
+<p class="Body"><a href="javascript:openVI('examples%5C%5CApplication%20Control%5C%5CVI%20Scripting%5C%5CCreating%20Objects%5C%5CDrop%20Add%20Function%20Inside%20While%20Loop.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(1443);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</p>
+
+<p class="Body">Refer to the Drop Digital Numeric Inside Cluster VI in the <span class="Monospace">labview\examples\Application Control\VI Scripting\Creating Objects</span> directory for an example of adding an object to a cluster.</p>
+<p class="Body"><a href="javascript:openVI('examples%5C%5CApplication%20Control%5C%5CVI%20Scripting%5C%5CCreating%20Objects%5C%5CDrop%20Digital%20Numeric%20Inside%20Cluster.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(1443);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</p>
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4200Estructureshlp -->
+
+<title>Changing the Continuation Behavior of Loops</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Changing the Continuation Behavior of Loops
+</h1>
+
+
+<p class="Body">If the conditional terminal of a <a href="../glang/While_Loop.html">While Loop</a>, a <a href="../glang/For_Loop.html">For Loop</a>, or a <span class="Platform">(Real-Time, Windows)</span> <a href="../glang/Timed_Loop.html">Timed Loop</a> is <strong>Stop if True</strong> <img src="noloc_bd_stopiftrue.gif">, the loop executes its subdiagram until the conditional terminal receives a TRUE value. If the conditional terminal is <strong>Continue if True</strong> <img src="noloc_bd_continueiftrue.gif">, the loop executes its subdiagram until the conditional terminal receives a FALSE value.</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;<!--begin parent: ../lvconcepts/For_Loop_Conditional.html-->A For Loop with a conditional terminal executes until the conditional terminal receives the stop value or until the set number of iterations completes, whichever happens first.<!--end parent: ../lvconcepts/For_Loop_Conditional.html--></td></tr></table>
+
+<p>Complete the following steps to change the continuation behavior of a loop with a conditional terminal.
+</p>
+
+<ol>
+<li>Right-click the conditional terminal. In a While Loop or a Timed Loop, you also can right-click the loop border.</li>
+<li>Select <strong>Stop if True</strong> or <strong>Continue if True</strong> from the shortcut menu.</li>
+</ol>
+<p class="Body"><!--begin parent: ../lvconcepts/For_Loop_Conditional.html-->You also can use the Operating tool to click the conditional terminal to change the condition.<!--end parent: ../lvconcepts/For_Loop_Conditional.html-->
+</p>
+
+<p class="Body">You must wire a Boolean value or an error cluster to the conditional terminal in a While Loop or a For Loop with a conditional terminal.
+</p>
+
+
+
+
+</body>
+</html>

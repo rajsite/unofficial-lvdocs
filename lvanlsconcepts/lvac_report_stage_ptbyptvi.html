@@ -1,0 +1,80 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Report Stage of the Train Wheel PtByPt VI</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-E4308E89-4711-4BE8-BF33-F00DBC077322" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Report Stage of the Train Wheel PtByPt VI</h1> 
+      
+      <div> 
+         	 
+         <p>The <span>Train Wheel PtByPt VI</span> reports on all wheels for all trains that pass through the data acquisition system. The <span>Train Wheel PtByPt VI</span> also reports any potentially defective wheels. 
+            	 
+         </p> 
+         	 
+         <p>Every time a wheel passes the strain gauge, the <span>Train Wheel PtByPt VI</span> captures its waveform, analyzes it, and reports the event. The following table describes the components of a report on a
+            single train wheel. 
+            	 
+         </p> 
+         	 <a name="GUID-E4308E89-4711-4BE8-BF33-F00DBC077322__TABLE_9C22E1C479AE47D3B32E9EA2022D0DE8" shape="rect">
+            <!-- --></a><table class="rowsep colsep frametop framebottom frameleft frameright  " id="GUID-E4308E89-4711-4BE8-BF33-F00DBC077322__TABLE_9C22E1C479AE47D3B32E9EA2022D0DE8">
+            <thead align="left">
+               <tr>
+                  <th align="center" valign="bottom"> Information Source 
+                     				
+                  </th>
+                  <th align="center" valign="bottom"> Meaning of Results 
+                     				
+                  </th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td align="left"> Counter mechanism for waveform events 
+                     				
+                  </td>
+                  <td align="left"> Stage One: Wheel number four has passed the strain gauge. 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Analysis of highpass filter data 
+                     				
+                  </td>
+                  <td align="left"> Stage Two: Wheel number four has passed the strain gauge and the wheel might be defective. 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Counter mechanism for end-of-train events 
+                     				
+                  </td>
+                  <td align="left"> Stage Three: Wheel number four in train number eight has passed the strain gauge, and the wheel might be defective. 
+                     				
+                  </td>
+               </tr>
+            </tbody>
+         </table> 
+         	 
+         <p>The <span>Train Wheel PtByPt VI</span> uses point-by-point analysis to generate a report, not to control an industrial process. However, the <span>Train Wheel PtByPt VI</span> acquires data in real time, and you can modify the application to generate real-time control responses, such as stopping
+            the train when the <span>Train Wheel PtByPt VI</span> encounters a potentially defective wheel. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="lvac_analysis_stages_ptbyptvi.html" shape="rect">Analysis Stages of the Train Wheel PtByPt VI</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

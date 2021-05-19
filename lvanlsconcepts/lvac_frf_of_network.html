@@ -1,0 +1,66 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Frequency Response of a Network</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-E43F67D3-6CF5-4A4D-A821-86566B18AC0A" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Frequency Response of a Network</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 
+            		 The following figure shows the method for measuring the frequency response of a network. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-E43F67D3-6CF5-4A4D-A821-86566B18AC0A__IMAGE_030BAEB5A9274EB9BD8FA5640AFD66FB" shape="rect">
+            <!-- --></a><img id="GUID-E43F67D3-6CF5-4A4D-A821-86566B18AC0A__IMAGE_030BAEB5A9274EB9BD8FA5640AFD66FB" src="GUID-077B66D6-ED30-4E90-9F11-D27B5013ECAB-help-web.png"><br clear="none"> 
+         	 
+         <p>In the previous figure, you apply a stimulus to the network under test and measure the stimulus and response signals. From
+            the measured stimulus and response signals, you compute the frequency response function. The frequency response function gives
+            the gain and phase versus frequency of a network. Use the following equation to compute the response function. 
+            	 
+         </p> 
+         <div class="fignone"><a name="GUID-E43F67D3-6CF5-4A4D-A821-86566B18AC0A__NOLOC_EQ_FREQUENCY_REPSONSE_AND_NETWORK_ANALYSIS" shape="rect">
+               <!-- --></a><div class="mathml-block"><span><img src="./et2Ftemp2Flvac_frf_of_network.xml_d15755e35.png"></span></div>
+         </div> 
+         	 
+         <p>where <em>H</em>(<em>f</em>) is the response function, <em>A</em> is the stimulus signal, <em>B</em> is the response signal, <em>S</em><sub><em>A</em><em>B</em></sub>(<em>f</em>) is the cross power spectrum of <em>A</em> and <em>B</em>, and <em>S</em><sub><em>A</em><em>A</em></sub>(<em>f</em>) is the power spectrum of <em>A</em>. 
+            	 
+         </p> 
+         	 
+         <p>The frequency response function is a two-sided complex form, having real and imaginary parts. You can convert to the frequency
+            response gain and the frequency response phase in the same way you compute the amplitude and phase spectrums of a power spectrum.
+            
+            	 
+         </p> 
+         	 
+         <p>To convert to single-sided form, discard the second half of the response function array. 
+            	 
+         </p> 
+         	 
+         <p>You might want to take several frequency response function readings and compute the average. You can use the same equation
+            for computing the response function and substitute the average <em>S</em><sub><em>A</em><em>B</em></sub>(<em>f</em>) and the average <em>S</em><sub><em>A</em><em>A</em></sub>(<em>f</em>). 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="FreqResp_Network_Anls.html" shape="rect">Frequency Response and Network Analysis</a></div>
+         </div>
+         <div class="relinfo relconcepts"><strong>Related concepts</strong><br clear="none"><div><a href="Compute_Amp_Phase_Spectrums.html" shape="rect">Computing the Amplitude and Phase Spectrums</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

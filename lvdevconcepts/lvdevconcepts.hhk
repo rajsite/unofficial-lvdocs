@@ -1,0 +1,1273 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD>
+<BODY>
+<OBJECT type="text/site properties">
+	<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="alpha testing">
+		<param name="Local" value="Testing_Guidelines.html#System_Testing">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="analyzing">
+		<param name="See Also" value="analyzing">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="dynamic code">
+			<param name="Local" value="Testing_Guidelines.html#Static_and_Dynamic_Code_Analysis">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="static code">
+			<param name="Local" value="Testing_Guidelines.html#Static_and_Dynamic_Code_Analysis">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="API">
+		<param name="See Also" value="API">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="style checklist">
+			<param name="Local" value="checklist.html#API_deisgn_checklist">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="applications">
+		<param name="See Also" value="applications">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="developing">
+			<param name="Local" value="Dev_Large_Applications.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="documentation">
+			<param name="Local" value="Developing_User_Documentation.html#Documenting_an_Application">
+			</OBJECT>
+	</UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="best practices">
+		<param name="See Also" value="best practices">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="deployment">
+			<param name="Local" value="../lvdevconcepts/best_practices_large_apps.html#deploying">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="design">
+			<param name="Local" value="../lvdevconcepts/best_practices_large_apps.html#designing">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="development">
+			<param name="Local" value="../lvdevconcepts/best_practices_large_apps.html#developing">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="large applications">
+			<param name="Local" value="../lvdevconcepts/best_practices_large_apps.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="beta testing">
+		<param name="Local" value="Testing_Guidelines.html#System_Testing">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="black box testing">
+		<param name="Local" value="Testing_Guidelines.html#Black_Box_and_White_Box_Testing">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="block diagram">
+		<param name="See Also" value="block diagram">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="checklist">
+			<param name="Local" value="checklist.html#block_diagram_checklist">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="style considerations">
+			<param name="Local" value="checklist.html#block_diagram_checklist">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="top-down design">
+			<param name="Local" value="Top_Down_Design.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="bottom-up design">
+		<param name="Local" value="Bottom_Up_Design.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Capability Maturity Model Integration (CMMI)">
+		<param name="Local" value="Software_Quality_Standards.html#Capability_Maturity_Model_Integration_(CMMI)">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="checklist">
+		<param name="See Also" value="checklist">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="style guidelines">
+			<param name="Local" value="checklist.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="classes">
+		<param name="See Also" value="classes">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="style checklist">
+			<param name="Local" value="checklist.html#LabVIEW_classes_checklist">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CMMI (Capability Maturity Model Integration)">
+		<param name="Local" value="Software_Quality_Standards.html#Capability_Maturity_Model_Integration_(CMMI)">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="COCOMO II estimation">
+		<param name="Local" value="Estimation.html#Other_Estimation_Techniques">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="code">
+		<param name="See Also" value="code">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="reviews">
+			<param name="Local" value="Code_Reviews.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="code and fix model">
+		<param name="Local" value="Lifecycle_Models.html#Code_and_Fix_Model">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="common operations">
+		<param name="See Also" value="common operations">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="identifying">
+			<param name="Local" value="Identifying_Common_Operations.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="conditional">
+		<param name="See Also" value="conditional">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="style checklist">
+			<param name="Local" value="checklist.html#block_diagram_conditional_checklist">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="configuration management">
+		<param name="Local" value="Configuration_Management.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="change control">
+			<param name="Local" value="Configuration_Management.html#Change_Control">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="retrieving old versions of files">
+			<param name="Local" value="Configuration_Management.html#Retrieving_Old_Versions_of_Files">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="source control">
+			<param name="Local" value="Configuration_Management.html#Source_Code_Control">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tracking changes">
+			<param name="Local" value="Configuration_Management.html#Tracking_Changes">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Constructive Cost Model II (COCOMO II) estimation">
+		<param name="Local" value="Estimation.html#Other_Estimation_Techniques">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="controls">
+		<param name="See Also" value="controls">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="describing">
+			<param name="Local" value="Describing.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="descriptions">
+			<param name="Local" value="Describing.html#Creating_Control_and_Indicator_Descriptions">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="corner cases">
+		<param name="See Also" value="corner cases">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="style checklist">
+			<param name="Local" value="checklist.html#corner_cases_checklist">
+			</OBJECT>
+	</UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="creating">
+		<param name="See Also" value="creating">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="large applications">
+			<param name="Local" value="../lvdevconcepts/best_practices_large_apps.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DAQ">
+		<param name="See Also" value="DAQ">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="system design example">
+			<param name="Local" value="Top_Down_Design.html#Data_Acquisition_System_Example">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="design reviews">
+		<param name="Local" value="Design_Reviews.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="design techniques">
+		<param name="Local" value="PD_Techniques.html">
+		</OBJECT>
+	<UL>
+<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="(see also development models)">
+			<param name="See Also" value="development models">
+			</OBJECT>		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="bottom-up design">
+			<param name="Local" value="Bottom_Up_Design.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="data acquisition system example">
+			<param name="Local" value="Top_Down_Design.html#Data_Acquisition_System_Example">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="defining requirements for systems">
+			<param name="Local" value="Defining_the_Requirements.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="front panel prototyping">
+			<param name="Local" value="Front_Panel_Prototyping.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="identifying common operations">
+			<param name="Local" value="Identifying_Common_Operations.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="instrument driver example">
+			<param name="Local" value="Bottom_Up_Design.html#Instrument_Driver_Example">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="multiple developer considerations">
+			<param name="Local" value="Multiple_Developers.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="performance benchmarking">
+			<param name="Local" value="Performance_Benchmarking.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="top-down design">
+			<param name="Local" value="Top_Down_Design.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="design-related documentation">
+		<param name="Local" value="Designing_and_Developing.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="developing in LabVIEW">
+		<param name="Local" value="../lvdevconcepts/lvdevconcepts_main.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="developing large applications">
+		<param name="Local" value="Dev_Large_Applications.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="development guidelines">
+		<param name="Local" value="../lvdevconcepts/lvdevconcepts_main.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="development models">
+		<param name="See Also" value="development models">
+		</OBJECT>
+	<UL>
+<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="(see also design techniques)">
+			<param name="See Also" value="design techniques">
+			</OBJECT>		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="code and fix model">
+			<param name="Local" value="Lifecycle_Models.html#Code_and_Fix_Model">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="common pitfalls">
+			<param name="Local" value="Common_Development_Pitfalls.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="life cycle models">
+			<param name="Local" value="Lifecycle_Models.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="modified waterfall model">
+			<param name="Local" value="Lifecycle_Models.html#Modified_Waterfall_Model">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="prototyping for clarification">
+			<param name="Local" value="Lifecycle_Models.html#Prototyping">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="spiral model">
+			<param name="Local" value="Lifecycle_Models.html#Spiral_Model">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="summary">
+			<param name="Local" value="Lifecycle_Models.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="waterfall model">
+			<param name="Local" value="Lifecycle_Models.html#Waterfall_Model">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="distributing source code">
+		<param name="See Also" value="distributing source code">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="style checklist">
+			<param name="Local" value="checklist.html#distributing_source_code_checklist">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="documenting">
+		<param name="See Also" value="documenting">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="applications">
+			<param name="Local" value="Developing_User_Documentation.html#Documenting_an_Application">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="documenting VIs">
+		<param name="See Also" value="documenting VIs">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="controls">
+			<param name="Local" value="Describing.html#Creating_Control_and_Indicator_Descriptions">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="creating help files">
+			<param name="Local" value="CreatingHelp_Files.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="descriptions">
+			<param name="Local" value="Describing.html#Creating_VI_Descriptions">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="design-related documentation">
+			<param name="Local" value="Designing_and_Developing.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="front panels">
+			<param name="Local" value="Describing.html#Documenting_Front_Panels">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="guidelines">
+			<param name="Local" value="Creating_Documentation.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="indicators">
+			<param name="Local" value="Describing.html#Creating_Control_and_Indicator_Descriptions">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="libraries">
+			<param name="Local" value="Developing_User_Documentation.html#Documenting_a_Library_of_VIs">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="organizing documentation">
+			<param name="Local" value="Developing_User_Documentation.html#Systematically_Organizing_Documentation">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="user documentation">
+			<param name="Local" value="Developing_User_Documentation.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="effort estimation">
+		<param name="Local" value="Estimation.html#Effort_Estimation">
+		</OBJECT>
+	<UL>
+<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="(see also estimation)">
+			<param name="See Also" value="estimation">
+			</OBJECT>	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="errors">
+		<param name="See Also" value="errors">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="style checklist">
+			<param name="Local" value="checklist.html#error_handling_checklist">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="estimation">
+		<param name="Local" value="Scheduling_and_Project_Tracking.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="COCOMO II estimation">
+			<param name="Local" value="Estimation.html#Other_Estimation_Techniques">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Wideband Delphi estimation">
+			<param name="Local" value="Estimation.html#Wideband_Delphi_Estimation">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="effort estimation">
+			<param name="Local" value="Estimation.html#Effort_Estimation">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="function-point estimation">
+			<param name="Local" value="Estimation.html#Other_Estimation_Techniques">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="mapping estimates to schedules">
+			<param name="Local" value="Mapping_Estimates_to_Schedules.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="problems with size-based metrics">
+			<param name="Local" value="Estimation.html#Problems_with_Source_Lines_of_Code_and_Number_of_Nodes">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="source lines of code">
+			<param name="Local" value="Estimation.html#Source_Lines_of_Code_Number_of_Nodes_Estimation">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FDA (U.S. Food and Drug Administration) standards">
+		<param name="Local" value="Software_Quality_Standards.html#U.S._Food_and_Drug_Administration_Standards">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="file management">
+		<param name="See Also" value="file management">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="change control">
+			<param name="Local" value="Configuration_Management.html#Change_Control">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="previous versions of files">
+			<param name="Local" value="Configuration_Management.html#Retrieving_Old_Versions_of_Files">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tracking changes">
+			<param name="Local" value="Configuration_Management.html#Tracking_Changes">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Food and Drug Administration (FDA) standards">
+		<param name="Local" value="Software_Quality_Standards.html#U.S._Food_and_Drug_Administration_Standards">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPGA">
+		<param name="See Also" value="FPGA">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="style checklist">
+			<param name="Local" value="checklist.html#FPGA_specific_checklist">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPGA Host">
+		<param name="See Also" value="FPGA Host">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="style checklist">
+			<param name="Local" value="checklist.html#FPGA_host_interface_checklist">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="front panel">
+		<param name="See Also" value="front panel">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="documenting">
+			<param name="Local" value="Describing.html#Documenting_Front_Panels">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="prototyping">
+			<param name="Local" value="Front_Panel_Prototyping.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="function-point estimation">
+		<param name="Local" value="Estimation.html#Other_Estimation_Techniques">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="handling data">
+		<param name="See Also" value="handling data">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="style checklist">
+			<param name="Local" value="checklist.html#handling_data_checklist">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="help files">
+		<param name="See Also" value="help files">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="creating (guidelines)">
+			<param name="Local" value="CreatingHelp_Files.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="linking to VIs">
+			<param name="Local" value="CreatingHelp_Files.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="History window">
+		<param name="See Also" value="History window">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="documenting VIs">
+			<param name="Local" value="Designing_and_Developing.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="IEEE (Institute of Electrical and Electronic Engineers) standards">
+		<param name="Local" value="Software_Quality_Standards.html#Institute_of_Electrical_and_Electronic_Engineers_(IEEE)_Standards">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="indicators">
+		<param name="See Also" value="indicators">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="describing">
+			<param name="Local" value="Describing.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="descriptions">
+			<param name="Local" value="Describing.html#Creating_Control_and_Indicator_Descriptions">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="initialization and shutdown">
+		<param name="See Also" value="initialization and shutdown">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="style checklist">
+			<param name="Local" value="checklist.html#initialization_shutdown_checklist">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Institute of Electrical and Electronic Engineers (IEEE) standards">
+		<param name="Local" value="Software_Quality_Standards.html#Institute_of_Electrical_and_Electronic_Engineers_(IEEE)_Standards">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="instrument drivers">
+		<param name="See Also" value="instrument drivers">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="design example">
+			<param name="Local" value="Bottom_Up_Design.html#Instrument_Driver_Example">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="integration testing">
+		<param name="Local" value="Testing_Guidelines.html#Integration_Testing">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="International Organization for Standardization (ISO) 9000">
+		<param name="Local" value="Software_Quality_Standards.html#International_Organization_for_Standardization_ISO_9000">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ISO 9000 standards">
+		<param name="Local" value="Software_Quality_Standards.html#International_Organization_for_Standardization_ISO_9000">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="large applications">
+		<param name="Local" value="../lvdevconcepts/best_practices_large_apps.html">
+		</OBJECT>
+	<UL>		
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="organizing">
+			<param name="Local" value="PD_Techniques.html">
+			</OBJECT>
+</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="life cycle models">
+		<param name="Local" value="Lifecycle_Models.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="code and fix model">
+			<param name="Local" value="Lifecycle_Models.html#Code_and_Fix_Model">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="modified waterfall model">
+			<param name="Local" value="Lifecycle_Models.html#Modified_Waterfall_Model">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="prototyping">
+			<param name="Local" value="Lifecycle_Models.html#Prototyping">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="spiral model">
+			<param name="Local" value="Lifecycle_Models.html#Spiral_Model">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="waterfall model">
+			<param name="Local" value="Lifecycle_Models.html#Waterfall_Model">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="lines of code">
+		<param name="See Also" value="lines of code">
+		</OBJECT>
+	<UL>
+<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="(see source lines of code metric)">
+			<param name="See Also" value="source lines of code metric">
+			</OBJECT>	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="metrics">
+		<param name="See Also" value="metrics">
+		</OBJECT>
+	<UL>
+<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="(see also size-based metrics)">
+			<param name="See Also" value="size-based metrics">
+			</OBJECT>	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="milestones for a project">
+		<param name="Local" value="Tracking.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="miscellaneous-RT">
+		<param name="See Also" value="miscellaneous-RT">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="style checklist">
+			<param name="Local" value="checklist.html#miscellaneous_RT_checklist">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="models">
+		<param name="See Also" value="models">
+		</OBJECT>
+	<UL>
+<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="(see also development models)">
+			<param name="See Also" value="development models">
+			</OBJECT><LI><OBJECT type="text/sitemap">
+			<param name="Name" value="(see also prototyping)">
+			<param name="See Also" value="prototyping">
+			</OBJECT>	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="modified waterfall model">
+		<param name="Local" value="Lifecycle_Models.html#Modified_Waterfall_Model">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="multiple developer design considerations">
+		<param name="Local" value="Multiple_Developers.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="nodes">
+		<param name="See Also" value="nodes">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="counting for metrics">
+			<param name="Local" value="Estimation.html#Source_Lines_of_Code_Number_of_Nodes_Estimation">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="source lines of code">
+			<param name="Local" value="Estimation.html#Source_Lines_of_Code_Number_of_Nodes_Estimation">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="number of nodes">
+		<param name="Local" value="Estimation.html#Source_Lines_of_Code_Number_of_Nodes_Estimation">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="organization">
+		<param name="See Also" value="organization">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="style checklist">
+			<param name="Local" value="checklist.html#organization_checklist">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="organizing">
+		<param name="See Also" value="organizing">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="large applications">
+			<param name="Local" value="PD_Techniques.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="organizing documentation">
+		<param name="Local" value="Developing_User_Documentation.html#Systematically_Organizing_Documentation">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="performance">
+		<param name="See Also" value="performance">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="benchmarking">
+			<param name="Local" value="Performance_Benchmarking.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="style checklist">
+			<param name="Local" value="checklist.html#performance_checklist">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="post-project analysis">
+		<param name="Local" value="Post_Project_Analysis.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Print dialog box">
+		<param name="See Also" value="Print dialog box">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="printing documentation">
+			<param name="Local" value="Designing_and_Developing.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="programming">
+		<param name="See Also" value="programming">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="style checklist">
+			<param name="Local" value="checklist.html#programming_checklist">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="project organization">
+		<param name="See Also" value="project organization">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="style checklist">
+			<param name="Local" value="checklist.html#project_organization_checklist">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="projects">
+		<param name="Local" value="Estimation.html#Other_Estimation_Techniques">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Wideband Delphi estimation">
+			<param name="Local" value="Estimation.html#Wideband_Delphi_Estimation">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="estimating size">
+			<param name="Local" value="Estimation.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="function-point estimation">
+			<param name="Local" value="Estimation.html#Other_Estimation_Techniques">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="mapping estimates to schedules">
+			<param name="Local" value="Mapping_Estimates_to_Schedules.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="missed milestones">
+			<param name="Local" value="Tracking.html#Responding_to_Missed_Milestones">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tracking schedules using milestones">
+			<param name="Local" value="Tracking.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="prototyping">
+		<param name="See Also" value="prototyping">
+		</OBJECT>
+	<UL>
+<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="(see also design techniques)">
+			<param name="See Also" value="design techniques">
+			</OBJECT>		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="development models">
+			<param name="Local" value="Lifecycle_Models.html#Prototyping">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="front panel prototyping">
+			<param name="Local" value="Front_Panel_Prototyping.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="methods in LabVIEW">
+			<param name="Local" value="Lifecycle_Models.html#LabVIEW_Prototyping_Methods">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="quality control">
+		<param name="Local" value="Incorporating_Quality.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Capability Maturity Model Integration (CMMI)">
+			<param name="Local" value="Software_Quality_Standards.html#Capability_Maturity_Model_Integration_(CMMI)">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="FDA standards">
+			<param name="Local" value="Software_Quality_Standards.html#U.S._Food_and_Drug_Administration_Standards">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="IEEE standards">
+			<param name="Local" value="Software_Quality_Standards.html#Institute_of_Electrical_and_Electronic_Engineers_(IEEE)_Standards">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ISO 9000 standards">
+			<param name="Local" value="Software_Quality_Standards.html#International_Organization_for_Standardization_ISO_9000">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="black box testing">
+			<param name="Local" value="Testing_Guidelines.html#Black_Box_and_White_Box_Testing">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="change control">
+			<param name="Local" value="Configuration_Management.html#Change_Control">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="code reviews">
+			<param name="Local" value="Code_Reviews.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="configuration management">
+			<param name="Local" value="Configuration_Management.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="design reviews">
+			<param name="Local" value="Design_Reviews.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="formal methods of verification">
+			<param name="Local" value="Testing_Guidelines.html#Formal_Methods_of_Verification">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="post-project analysis">
+			<param name="Local" value="Post_Project_Analysis.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="requirements">
+			<param name="Local" value="Quality_Requirements.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="retrieving old versions of files">
+			<param name="Local" value="Configuration_Management.html#Retrieving_Old_Versions_of_Files">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="software quality standards">
+			<param name="Local" value="Software_Quality_Standards.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="style guidelines">
+			<param name="Local" value="Style_Guidelines.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="testing guidelines">
+			<param name="Local" value="Testing_Guidelines.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tracking changes">
+			<param name="Local" value="Configuration_Management.html#Tracking_Changes">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="unit testing">
+			<param name="Local" value="Testing_Guidelines.html#Unit_Testing">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="white box testing">
+			<param name="Local" value="Testing_Guidelines.html#Black_Box_and_White_Box_Testing">
+			</OBJECT>
+	</UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="related documentation">
+		<param name="See Also" value="related documentation">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="development guidelines">
+			<param name="Local" value="../lvdevconcepts/Related_Doc.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="risk management">
+		<param name="See Also" value="risk management">
+		</OBJECT>
+	<UL>
+<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="(see spiral model)">
+			<param name="See Also" value="spiral model">
+			</OBJECT>	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="RT">
+		<param name="See Also" value="RT">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="style checklist">
+			<param name="Local" value="checklist.html#RT_specific_checklist">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="safeguarding applications">
+		<param name="Local" value="Incorporating_Quality.html">
+		</OBJECT>
+	<UL>
+<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="(see also quality control)">
+			<param name="See Also" value="quality control">
+			</OBJECT>	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="scheduling">
+		<param name="Local" value="Mapping_Estimates_to_Schedules.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="COCOMO II estimation">
+			<param name="Local" value="Estimation.html#Other_Estimation_Techniques">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Wideband Delphi estimation">
+			<param name="Local" value="Estimation.html#Wideband_Delphi_Estimation">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="effort estimation">
+			<param name="Local" value="Estimation.html#Effort_Estimation">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="estimating number of nodes">
+			<param name="Local" value="Estimation.html#Source_Lines_of_Code_Number_of_Nodes_Estimation">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="estimating source lines of code">
+			<param name="Local" value="Estimation.html#Source_Lines_of_Code_Number_of_Nodes_Estimation">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="estimation">
+			<param name="Local" value="Estimation.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="function-point estimation">
+			<param name="Local" value="Estimation.html#Other_Estimation_Techniques">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="mapping estimates to schedules">
+			<param name="Local" value="Mapping_Estimates_to_Schedules.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="missed milestones">
+			<param name="Local" value="Tracking.html#Responding_to_Missed_Milestones">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tracking schedules using milestones">
+			<param name="Local" value="Tracking.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="size">
+		<param name="See Also" value="size">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="style checklist">
+			<param name="Local" value="checklist.html#size_location_checklist">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="size-based metrics">
+		<param name="See Also" value="size-based metrics">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="number of nodes">
+			<param name="Local" value="Estimation.html#Source_Lines_of_Code_Number_of_Nodes_Estimation">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="problems">
+			<param name="Local" value="Estimation.html#Problems_with_Source_Lines_of_Code_and_Number_of_Nodes">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="source lines of code">
+			<param name="Local" value="Estimation.html#Source_Lines_of_Code_Number_of_Nodes_Estimation">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SLOCs">
+		<param name="See Also" value="SLOCs">
+		</OBJECT>
+	<UL>
+<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="(see source lines of code metric)">
+			<param name="See Also" value="source lines of code metric">
+			</OBJECT>	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="software quality standards">
+		<param name="Local" value="Software_Quality_Standards.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Capability Maturity Model Integration (CMMI)">
+			<param name="Local" value="Software_Quality_Standards.html#Capability_Maturity_Model_Integration_(CMMI)">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Institute of Electrical and Electronic Engineers (IEEE)">
+			<param name="Local" value="Software_Quality_Standards.html#Institute_of_Electrical_and_Electronic_Engineers_(IEEE)_Standards">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="International Organization for Standardization (ISO) 9000">
+			<param name="Local" value="Software_Quality_Standards.html#International_Organization_for_Standardization_ISO_9000">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="U.S. Food and Drug Administration (FDA)">
+			<param name="Local" value="Software_Quality_Standards.html#U.S._Food_and_Drug_Administration_Standards">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="source control">
+		<param name="See Also" value="source control">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="change control">
+			<param name="Local" value="Configuration_Management.html#Change_Control">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="quality control considerations">
+			<param name="Local" value="Configuration_Management.html#Source_Code_Control">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="tracking changes">
+			<param name="Local" value="Configuration_Management.html#Tracking_Changes">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="source lines of code metric">
+		<param name="See Also" value="source lines of code metric">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="in estimation">
+			<param name="Local" value="Estimation.html#Source_Lines_of_Code_Number_of_Nodes_Estimation">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="problems with">
+			<param name="Local" value="Estimation.html#Problems_with_Source_Lines_of_Code_and_Number_of_Nodes">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="spiral model">
+		<param name="Local" value="Lifecycle_Models.html#Spiral_Model">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="standards">
+		<param name="See Also" value="standards">
+		</OBJECT>
+	<UL>
+<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="(see software quality standards)">
+			<param name="See Also" value="software quality standards">
+			</OBJECT>	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="stub VIs">
+		<param name="Local" value="Multiple_Developers.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="style guidelines">
+		<param name="Local" value="Style_Guidelines.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="checklist">
+			<param name="Local" value="checklist.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="subVIs">
+		<param name="See Also" value="subVIs">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="documenting">
+			<param name="Local" value="Developing_User_Documentation.html#Documenting_a_Library_of_VIs">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="style checklist">
+			<param name="Local" value="checklist.html#subVIs_checklist">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="system">
+		<param name="See Also" value="system">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="testing">
+			<param name="Local" value="Testing_Guidelines.html#System_Testing">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="testing">
+		<param name="Local" value="Testing_Guidelines.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="black box testing">
+			<param name="Local" value="Testing_Guidelines.html#Black_Box_and_White_Box_Testing">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="dynamic code analysis">
+			<param name="Local" value="Testing_Guidelines.html#Static_and_Dynamic_Code_Analysis">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="formal methods of verification">
+			<param name="Local" value="Testing_Guidelines.html#Formal_Methods_of_Verification">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="integration testing">
+			<param name="Local" value="Testing_Guidelines.html#Integration_Testing">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="static code analysis">
+			<param name="Local" value="Testing_Guidelines.html#Static_and_Dynamic_Code_Analysis">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="system testing">
+			<param name="Local" value="Testing_Guidelines.html#System_Testing">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="unit testing">
+			<param name="Local" value="Testing_Guidelines.html#Unit_Testing">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="white box testing">
+			<param name="Local" value="Testing_Guidelines.html#Black_Box_and_White_Box_Testing">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="top-down design">
+		<param name="Local" value="Top_Down_Design.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="tracking changes">
+		<param name="Local" value="Configuration_Management.html#Tracking_Changes">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="tracking projects">
+		<param name="Local" value="Scheduling_and_Project_Tracking.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="U.S. Food and Drug Administration (FDA) standards">
+		<param name="Local" value="Software_Quality_Standards.html#U.S._Food_and_Drug_Administration_Standards">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="United States Food and Drug Administration (FDA) standards">
+		<param name="Local" value="Software_Quality_Standards.html#U.S._Food_and_Drug_Administration_Standards">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="user documentation">
+		<param name="See Also" value="user documentation">
+		</OBJECT>
+	<UL>
+<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="(see documenting VIs)">
+			<param name="See Also" value="documenting VIs">
+			</OBJECT>	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="verification methods">
+		<param name="Local" value="Testing_Guidelines.html#Formal_Methods_of_Verification">
+		</OBJECT>
+	<UL>
+<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="(see also testing)">
+			<param name="See Also" value="testing">
+			</OBJECT>	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VI metrics">
+		<param name="See Also" value="VI metrics">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="estimating the size of a project">
+			<param name="Local" value="Estimation.html#Source_Lines_of_Code_Number_of_Nodes_Estimation">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VIs">
+		<param name="See Also" value="VIs">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="describing">
+			<param name="Local" value="Describing.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="linking to help files">
+			<param name="Local" value="Describing.html#Documenting_Front_Panels">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="waterfall model">
+		<param name="Local" value="Lifecycle_Models.html#Waterfall_Model">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="modified">
+			<param name="Local" value="Lifecycle_Models.html#Modified_Waterfall_Model">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="white box testing">
+		<param name="Local" value="Testing_Guidelines.html#Black_Box_and_White_Box_Testing">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Wideband Delphi estimation">
+		<param name="Local" value="Estimation.html#Wideband_Delphi_Estimation">
+		</OBJECT>
+
+</UL>
+</BODY>
+</HTML>

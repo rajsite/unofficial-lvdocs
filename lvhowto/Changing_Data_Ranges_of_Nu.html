@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 1100Enumericcihlp -->
+
+<title>Changing Data Ranges of Numeric Controls and Indicators</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Changing Data Ranges of Numeric Controls and Indicators</h1>
+
+<p class="Body">You can limit intermediate values of numeric controls or indicators to certain increments. For example, you might limit 16-bit integers to increments of 10 or single-precision, floating-point numbers to increments of 0.25. If you change either the limits or the increment, you also should decide what to do if the user attempts to set a value outside the range or off the increment. You also can use the <a href="../glang/In_Range_and_Coerce.html">In Range and Coerce</a> function to determine if a value falls outside of a range and coerce the value to fall within the range.</p>
+
+<p class="Body">Complete the following steps to designate other limits within the <a href="Numeric_Data_Types_Table.html">natural minimum and maximum data range limits</a>.</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;Use the fields described below to set how to handle the numeric value the user enters if that value is outside of the specified numeric range. Changing these fields does not affect values that are set programmatically, including the values of indicators. </td></tr></table>
+<ol>
+<li>Right-click a numeric control and select <strong>Data Entry</strong> from the shortcut menu to display the <a href="../lvpage/pp_Data_Entry_DB.html">Data Entry</a> page of the <strong>Numeric Properties</strong> dialog box.</li>
+<li>Remove the checkmark from the <strong>Use Default Limits</strong> checkbox.</li>
+<li>In the <strong>Minimum</strong> field, set the low value limit and select <strong>Ignore</strong> or <strong>Coerce</strong> from the pull-down menu in the <strong>Response to value outside limits</strong> section.</li>
+<li>In the <strong>Maximum</strong> field, set the high value limit and select <strong>Ignore</strong> or <strong>Coerce</strong> from the pull-down menu in the <strong>Response to value outside limits</strong> section.</li>
+<li>In the <strong>Increment</strong> field, set the incremental value and select <strong>Ignore</strong>, <strong>Coerce to nearest</strong>, <strong>Coerce up</strong>, or <strong>Coerce down</strong> from the pull-down menu in the <strong>Response to value outside limits</strong> section.
+<br><br>
+
+<table class="Bordered"><tr><th class="Bordered Left-Align">Response to value outside limits</th>
+<th class="Bordered Left-Align">Description</th></tr>
+<tr><td class="Bordered"><strong>Ignore</strong></td>
+<td class="Bordered"><!-- Begin child: AbsTime_OutOfRangeAction.html, AbsTime_OutOfRangeIncrem.html, AbsTime_OutOfRangeMax.html, AbsTime_OutOfRangeMin.html, Numrc_OutRange_Action.html, Numrc_OutRange_ActInc.html, Numrc_OutRange_ActMax.html, Numrc_OutRange_ActMin.html -->LabVIEW does not change or flag invalid values.<!-- End child: AbsTime_OutOfRangeAction.html, AbsTime_OutOfRangeIncrem.html, AbsTime_OutOfRangeMax.html, AbsTime_OutOfRangeMin.html, Numrc_OutRange_Action.html, Numrc_OutRange_ActInc.html, Numrc_OutRange_ActMax.html, Numrc_OutRange_ActMin.html --> Clicking the increment and decrement buttons changes the value by the increment you set, but the value does not go beyond the minimum or maximum values.</td></tr>
+<tr><td class="Bordered"><strong>Coerce to nearest</strong></td>
+<td class="Bordered">LabVIEW increments to the nearest value. For example, if the minimum is <span class="Monospace">3</span>, the maximum is <span class="Monospace">10</span>, and the increment is <span class="Monospace">2</span>, valid values are <span class="Monospace">3</span>, <span class="Monospace">5</span>, <span class="Monospace">7</span>, <span class="Monospace">9</span>, and <span class="Monospace">10</span>. LabVIEW coerces the value <span class="Monospace">0</span> to <span class="Monospace">3</span>, the value <span class="Monospace">6</span> to <span class="Monospace">7</span>, and the value <span class="Monospace">100</span> to <span class="Monospace">10</span>.</td></tr>
+<tr><td class="Bordered"><strong>Coerce up</strong></td>
+<td class="Bordered">LabVIEW increments the value by one increment value.</td></tr>
+<tr><td class="Bordered"><strong>Coerce down</strong></td>
+<td class="Bordered">LabVIEW decrements the value by one increment value.</td></tr></table>
+</li></ol>
+<p class="Body">You also can use the <a href="../lvprop/Numeric_p.html">Numeric properties</a> or <a href="../lvprop/AbsTime_p.html">AbsTime properties</a> to set the data range and response to values outside limits programmatically. </p>
+
+
+
+</body>
+</html>

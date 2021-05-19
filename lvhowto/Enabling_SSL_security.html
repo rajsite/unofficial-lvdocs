@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<title>Enabling TLS/SSL Security for Remote Front Panels (Windows)</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body>
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Enabling TLS/SSL Security for Remote Front Panels (Windows)</h1>
+<p class="Body">You can enable <a href="../lvconcepts/SSL_Security.html">Transport Layer Security (TLS)</a>, previously known as Secure Sockets Layer (SSL), encryption for network communication involving <a href="../lvconcepts/Viewing_FP_remote.html">remote front panels</a>.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;To use TLS/SSL encryption with <a href="../lvconcepts/WebServices.html">LabVIEW Web services</a>, you must <a href="security_ws.html">enable TLS/SSL on the Application Web Server</a>.</td>
+</tr>
+</table>
+
+<p class="Body">Complete the following steps to enable TLS/SSL on the LabVIEW Web Server for remote front panels.</p>
+
+<ol>
+<li>Navigate to the <strong>Remote Panel Server</strong> section on the <a href="../lvdialog/Web_Server_Config_Options.html">Web Server</a> page of the <a href="../lvdialog/Options_Dialog_Box.html">Options</a> dialog box. If necessary, <a href="Enabling_and_Configuring_t.html">enable the LabVIEW Web Server for use with remote front panels.</a></li>
+<li>Place a checkmark in the <strong>SSL</strong> checkbox.</li>
+<li>Enter the network port to encrypt with TLS/SSL in the <strong>SSL Port</strong> field or use the default TLS/SSL port <span class="Monospace">443</span>. You cannot enable TLS/SSL on network communication that uses the default port <span class="Monospace">80</span>.</li>
+<li>Leave the <strong>SSL certificate file</strong> text box blank to use the <a href="../lvconcepts/SSL_Security.html#SSL_Default_Cert">default LabVIEW self-signed certificate</a>.</li>
+<li>(Optional) <a href="../lvconcepts/SSL_Security.html#SystemManager">Create a custom self-signed certificate</a> using <a href="../lvhowto/NI_WebConfig.html">NI Web-based Configuration &amp; Monitoring</a>. You also can use a <a href="../lvconcepts/SSL_Security.html#SystemManager">certificate signed by a CA</a>.</li>
+<li>(Optional) Specify the address of the system or target that contains the certificate in the <strong>Server address</strong> text box.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;You also can navigate directly to the certificate file that you created using the <strong>SSL certificate file</strong> text box.</td>
+</tr>
+</table>
+</li>
+<li>(Optional) Click the <strong>Query</strong> button to display available certificates located on the server in the <strong>Discovered certificates</strong> listbox.</li>
+<li>(Optional) Select the certificate from the <strong>Discovered certificates</strong> listbox.</li>
+</ol>
+
+
+
+</body>
+</html>

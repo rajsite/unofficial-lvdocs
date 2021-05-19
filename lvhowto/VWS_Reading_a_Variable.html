@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Reading the Value of a Variable</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Reading the Value of a Variable</h1>
+
+<p class="Body"><strong>Required permission: </strong><span class="DNL">VariableRead</span></p>
+    <p class="Body">To read the value of a shared variable, you must read the <code>VariableValue</code>. To read a <code>VariableValue</code>, use the following URI format:</p>
+    <p class="Body"><code>GET http://[host]:[port]/nivariable/VariableValues('[dynamic api url]')</code></p>
+
+    <p class="Body">For example, use the following URI to read the value of <span id="Monospace">ni.var.psp://localhost/hvac/t01</span>:</p>
+    <p class="Body"><code>GET http://my_server:3580/nivariable/VariableValues('ni.var.psp://localhost/hvac/t01')?$format=json</code></p>
+ 
+    <table class="Borderless">
+	<tr>
+	<td class="Icon"><img src="note.gif"></td>
+	<td>
+	<strong>Note</strong>&nbsp;&nbsp;In the JSON response, the timestamp is represented as milliseconds after 1970/1/1 0:0:0, UTC time.</td></tr></table>
+
+    <p class="Body">To read the value property without the timestamp, use the following URI:</p>
+
+    <p class="Body"><code>GET http://my_server:3580/nivariable/VariableValues('ni.var.psp://localhost/hvac/t01')/Value?$format=json</code></p>
+
+
+</body>
+</html>

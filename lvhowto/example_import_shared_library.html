@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Example: Importing Functions from a Shared Library File</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+
+<body bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+		<h1>Example: Importing Functions from a Shared Library File</h1>
+					<p class="Body">Complete the following steps to create and update a library of VIs based on the functions in a regular expression DLL using the <a href="../lvdialog/import_library_wizard.html">Import Shared Library</a> wizard. Refer to  <a href="import_shared_library.html">Importing Functions from a Shared Library File</a> to create or update wrapper VIs for functions in any shared library file.</p>
+					<ol>
+                    	<li>Select <strong>Tools�Import�Shared Library</strong> to launch the <strong>Import Shared Library</strong> wizard. The <a href="../lvdialog/create_vi_wrapper.html">Specify Create or Update Mode</a> page appears.</li>
+                        <li>Select <strong>Create VIs for a shared library</strong>, and click the <strong>Next</strong> button to display the <a href="../lvdialog/DLL_select_dll.html">Select Shared Library and Header File</a> page of the wizard.</li>
+                        <li>Click the <strong>Browse</strong> button next to the <strong>Shared Library File</strong> text box to navigate to and select <span class="Monospace">labview\examples\dll\ImportSharedLibraryExample\ImportSharedLibraryExample.dll</span>. After you select this file, LabVIEW designates <span class="Monospace">labview\examples\dll\ImportSharedLibraryExample\ImportSharedLibraryExample.h</span> as the default header file.
+                        <table class="Borderless">
+                        	<tr><td class="Icon"><img src="note.gif" /></td><td><strong>Note</strong>��<span class="Monospace">ImportSharedLibraryExample.dll</span> is not supported on macOS.</td></tr>
+                        </table></li>
+                        <li>If a checkmark appears in the <strong>Shared library file is not on the local machine</strong> checkbox, remove it.</li>
+                        <li>Click the <strong>Next</strong> button to display the <a href="../lvdialog/DLL_config_paths.html">Configure Include Paths and Preprocessor Definitions</a> page. You do not need to add any additional include paths or preprocessor definitions for this DLL.</li>
+                        <li>Click the <strong>Next</strong> button to display the <a href="../lvdialog/DLL_select_func.html">Select Functions to Convert</a> page. A dialog box appears to notify you that LabVIEW is parsing the specified header file.</li>
+                        <li>Select the functions for which you want to create wrapper VIs by placing a checkmark in the checkbox next to each function. The two functions that appear contain checkmarks by default. LabVIEW creates VIs for each of the functions you select.</li>
+                        <li>Click the <strong>Next</strong> button to display the <a href="../lvdialog/DLL_config_projlib.html">Configure Project Library Settings</a> page.</li><li>By default, <span class="Monospace">ImportSharedLibraryExample</span> appears in the <strong>Project Library Name (.lvlib)</strong> field. LabVIEW automatically includes all generated VIs within this project library file and gives it a <span class="Monospace">.lvlib</span> file extension. Also by default, <span class="Monospace">labview\user.lib\ImportSharedLibraryExample</span> appears in the <strong>Project Library Path</strong> field, and the <strong>Copy the shared library file to the destination directory</strong> checkbox contains a checkmark.</li>
+                        <li>Click the <strong>Next</strong> button to display the <a href="../lvdialog/DLL_error_handle.html">Select Error Handling Mode</a> page.</li><li>Select <strong>Function Returns Error Code/Status</strong> from the <strong>Error Handling Mode</strong> pull-down menu. If an error occurs, use the error status description to form the <a href="../lvhowto/Using_Error_Clusters.html">error cluster</a> information in LabVIEW.</li>
+                        <li>Click the <strong>Next</strong> button to display the <a href="../lvdialog/DLL_config_VIs.html">Configure VIs and Controls</a> page.</li>
+                        <li>Review the configuration for the VIs and controls you want to create. Select a VI or a control on the left and then use the fields on the <strong>Settings</strong> and <strong>Name and Description</strong> tabs to review and edit specific information. Make the following changes to the default configuration settings:
+							<ul>
+								<li><span class="Monospace">DWTest_Change_Info()</span>
+									<ol>
+                        				<li>Change the <strong>Default string to initialize the pointer</strong> text box for <span class="Monospace">name</span> to <strong>Old</strong>.</li>
+                        			</ol>
+                                </li>
+								<li><span class="Monospace">DWTest_Copy()</span>
+									<ol>
+                         			   	<li>Change <strong>Input/Output</strong> for <span class="Monospace">outputEnum1</span> to <strong>Output</strong>.</li>
+                            			<li>Change <strong>Input/Output</strong> for <span class="Monospace">outputEnum2</span> to <strong>Output</strong>.</li>
+                            			<li>Change <strong>Input/Output</strong> for <span class="Monospace">outputRunTimeSizeArray</span> to <strong>Output</strong>.</li>
+                           			 	<li>Change <strong>Input/Output</strong> for <span class="Monospace">outputBool</span> to <strong>Output</strong>.</li>
+                            			<li>Change <strong>Input/Output</strong> for <span class="Monospace">outputString</span> to <strong>Output</strong>.</li>
+                            		</ol>
+								</li>
+							</ul>
+							<table class="Borderless">
+                            <tr><td class="Icon"><img src="tip.gif" /></td><td><strong>Tip</strong>��You can change VI and control names to be more descriptive or to improve readability. Similarly, control names in LabVIEW can include spaces to improve readability.</td></tr>
+                            </table>
+						</li>
+                        <li>Click the <strong>Next</strong> button to display the <a href="../lvdialog/DLL_gen_summary.html">Generation Summary</a> page, and review the <strong>Generation Summary</strong> to determine if you are ready to generate VIs. If you want to make any changes, click the <strong>Back</strong> button.</li>
+                        <li>Click the <strong>Next</strong> button to create wrapper VIs for the functions you selected in the specified shared library. The <strong>Generation Progress</strong> page shows the progress of the wizard as it generates the wrapper VIs. When the generation completes, the <a href="../lvdialog/DLL_finish.html">Finish</a> page appears.</li>
+                        <li>Place checkmarks in the <strong>Open the generated library</strong> and <strong>View the report</strong> checkboxes, and click the <strong>Finish</strong> button to close the wizard, open the project library file, and view the report in the default browser.</li>
+                        <li>Review the report. The report indicates that no errors or warnings occurred.</li>
+                        <li>Review the project library file and the generated VIs within it. After you initially generate the VIs, you can make changes to the VIs individually within the block diagram or front panel of each VI. Then you can re-run the wizard to update the VIs within the library.</li>
+                        <li>Close the <span class="Monospace">ImportSharedLibraryExample.lvlib</span> project library file.</li>
+                    </ol>
+                        
+				<h2>Update the Generated Project Library VIs with Custom Controls</h2>
+					<p class="Body">The generated library is complete and usable as is. However, you might want to make changes to several VIs within the library. To do this, you can re-launch the wizard and select the <strong>Update VIs for a shared library</strong> option on the <strong>Specify Create or Update Mode</strong> page. With this option, you can update and overwrite specific VIs that you generated previously. Complete the following steps to update a subset of the VIs within <span class="Monospace">ImportSharedLibraryExample.lvlib</span> with custom controls:</p>
+					<ol>
+                    	<li>Select <strong>Tools�Import�Shared Library</strong> to launch the <strong>Import Shared Library</strong> wizard. The <strong>Specify Create or Update Mode</strong> page appears.</li>
+                        <li>Select <strong>Update VIs for a shared library</strong> and select <span class="Monospace">ImportSharedLibraryExample.lvlib</span> from the list of projects.</li>
+                        <li>Click the <strong>Next</strong> button to display the <strong>Select Shared Library and Header File</strong> page of the wizard. The <strong>Shared Library File</strong> text box contains the path <span class="Monospace">labview\examples\dll\ImportSharedLibraryExample\ImportSharedLibraryExample.dll</span>, and the <strong>Header (.h) File</strong> text box contains <span class="Monospace">labview\examples\dll\ImportSharedLibraryExample\ImportSharedLibraryExample.h</span> as the default header file.
+                        	<table class="Borderless">
+                        	<tr><td class="Icon"><img src="note.gif" /></td><td><strong>Note</strong>��<span class="Monospace">ImportSharedLibraryExample.dll</span> is not supported on macOS.</td></tr>
+                       		</table></li>
+                        <li>Click the <strong>Next</strong> button to display the <strong>Configure Include Paths and Preprocessor Definitions</strong> page. You do not need to add any additional include paths or preprocessor definitions for this DLL.</li>
+                        <li>Click the <strong>Next</strong> button to display the <strong>Select Functions to Convert</strong> page. A dialog box appears to notify you that LabVIEW is parsing the specified header file.</li>
+                        <li>Select the functions you want to convert by placing a checkmark in the checkbox next to each function. The two functions that appear contain checkmarks by default. Click the <strong>Uncheck All</strong> button to remove the checkmarks.</li>
+                        <li>Place a checkmark in the checkbox next to <span class="Monospace">DWTest_Copy()</span> to select it as the function to update.</li>
+                        <li>Click the <strong>Next</strong> button to display the <strong>Configure Project Library Settings</strong> page. You do not need to change any of the settings on this page.</li>
+                        <li>Click the <strong>Next</strong> button to display the <strong>Select Error Handling Mode</strong> page. LabVIEW prompts you to confirm whether you want to overwrite the specified files. Click the <strong>OK</strong> button.</li>
+                        <li>On the <strong>Select Error Handling Mode</strong> page, select <strong>Function Returns Error Code/Status</strong> from the <strong>Error Handling Mode</strong> pull-down menu.</li>
+                        <li>Click the <strong>Next</strong> button to display the <strong>Configure VIs and Controls</strong> page.</li>
+                        <li>Make the following changes to the default configuration settings:
+							<ul>
+								<li><span class="Monospace">DWTest_Copy()</span>
+									<ol>
+                                    	<li>Change the <strong>Control Type</strong> of <span class="Monospace">outputStruct</span> to <strong>Custom Control</strong>.</li>
+                                        <li>Click the <strong>Browse</strong> button next to the <strong>Path to Custom Control</strong> field to navigate to <span class="Monospace">labview\examples\dll\ImportSharedLibraryExample\CustomDefinedControl.ctl</span> as the custom control.</li>
+                                    </ol>
+								</li>
+							</ul>	
+						</li>
+                    	<li>Click the <strong>Next</strong> button to display the <strong>Generation Summary</strong> page. </li>
+                        <li>Click the <strong>Next</strong> button to update the VIs. </li>
+                        <li>On the <strong>Finish</strong> page, select the <strong>Open the generated library</strong> option and click the <strong>Finish</strong> button to close the wizard and open the project library file.</li>
+                        <li>Close the <span class="Monospace">ImportSharedLibraryExample.lvlib</span> project library file.</li>
+                    </ol>
+
+
+</body>
+</html>

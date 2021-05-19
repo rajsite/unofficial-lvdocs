@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4800Egraphchartoptionshlp -->
+
+<title>Plotting X, Y, and Z Data on an ActiveX 3D Surface Graph</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Plotting X, Y, and Z Data on an ActiveX 3D Surface Graph</h1>
+
+<p class="Body">Complete the following steps to plot x, y, and z data on an <a href="../lvconcepts/Types_of_Graphs_and_Charts.html#3D_Graphs">ActiveX 3D surface graph</a>.</p>
+
+<ol>
+<li><a href="Graph_Controls.html">Add an ActiveX 3D surface graph</a> to the front panel.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObjectFP(control13);"><img src="add.gif" border="0"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObjectFP(control13);"><img src="find.gif" border="0"></a>&nbsp;Find</SPAN>
+<table class="Borderless">
+<tr><td class="Icon"><img src="note.gif"></td>
+<td><!-- begin parent = um 5300E3Dgraphs JK, ../lvconcepts/graphs_and_charts.xml --><strong>Note</strong>&nbsp;&nbsp;The 3D graph controls are available only in the LabVIEW Full and Professional Development Systems.<!-- end parent = um 5300E3Dgraphs JK, ../lvconcepts/graphs_and_charts.xml --></td></tr>
+</table>
+</li>
+<li>On the block diagram, delete the <a href="../lvpict/3D_Surface.html">3D Surface</a> VI and the wire to the VI. This leaves only the ActiveX container terminal for the 3D graph.</li>
+<li>Add an <a href="../glang/Invoke_Node.html">Invoke Node</a> to the block diagram, and wire the 3D graph container terminal to the <strong>reference</strong> input of the Invoke Node.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object727);"><img src="add.gif" border="0"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object727);"><img src="find.gif" border="0"></a>&nbsp;Find</SPAN>
+</li>
+<li>Right-click the Invoke Node and select <strong>Select Method&#0187;Plot3DMesh</strong> from the shortcut menu. The Plot3DMesh method accepts <a href="Variants.html">variant data</a> for arrays of x, y, and z data and plots triangulated surfaces.
+</li>
+<li>Enter variant data to the <strong>xVector</strong>, <strong>yVector</strong>, and <strong>zVector</strong> inputs of the Plot3DMesh method. The values of <strong>xVector</strong> and <strong>yVector</strong> specify where the corresponding point in the <strong>zVector</strong> array is.<br>The default values for <strong>xVector</strong> and <strong>yVector</strong> are 0, 1, 2, 3, and so on. The first point in <strong>zVector</strong> array (index 0,0) is located at (x vector[0], y vector[0]), or (0,0). If you change <strong>xVector</strong> to �1, 1, 2, 3, and so on, the first point in <strong>zVector</strong> moves to (�1,0).</li>
+<li>(Optional) Wire magnitude data to the <strong>wVector</strong> input of the Plot3DMesh method to show the magnitude.</li>
+<li><a href="../lvconcepts/Customizing_Graphs_and_Charts.html#Customizing_3D_Graphs">Scale</a> the graph to ensure that <a href="../lvhowto/Changing_Array_Dimensions.html">array dimensions</a> match. The dimension size of the 2D array is the product of the 1D arrays.<br>For example, <strong>xVector</strong> and <strong>yVector</strong> correspond to the two indexes for the <strong>zVector</strong> 2D array. If the number of elements in <strong>xVector</strong> does not match the width of the <strong>zVector</strong> array in the first dimension, and the number of elements in <strong>yVector</strong> does not match the width of the <strong>zVector</strong> array in the second dimension, this method ignores the values of both <strong>xVector</strong> and <strong>yVector</strong>.</li>
+<li>Run the VI.</li>
+</ol>
+<p class="Body">Complete the following steps to show individual points instead of surfaces.
+</p>
+<ol>
+<li>Right-click the front panel graph and select <strong>CWGraph3D&#0187;Properties</strong> from the shortcut menu.
+</li>
+<li>Click the <strong>Plots</strong> tab and change the plot style to <strong>Point</strong>.
+</li>
+<li>To avoid getting multiple colors for every point, select <strong>None</strong> from the <strong>Color map style</strong> pull-down menu.
+<table class="Borderless">
+<tr><td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;You might have to change the default point color and size on the <strong>Point</strong> page for the data to be visible on the graph.</td></tr>
+</table>
+</li> 
+<li>Click the <strong>OK</strong> button.</li>
+<li>Run the VI.</li></ol>
+
+<p class="Body">You also can <a href="../lvhowto/Plotting_Data_3D_Graph.html">plot x, y, and z data</a> on a 3D graph XControl.</p>
+
+</body>
+</html>

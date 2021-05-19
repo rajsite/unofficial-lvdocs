@@ -1,0 +1,51 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Performing Limit Testing</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-E66BF7CE-1460-4B8A-8B5F-78FB872AA7F2" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Performing Limit Testing</h1> 
+      
+      <div> 
+         	 
+         <p>After you define the mask, you acquire a signal using a DAQ device. The sample rate is set at 1/dx S/s. Compare the signal
+            with the limit. For the upper limit, if the data point is less than or equal to the limit point, the test passes. If the data
+            point is greater than the limit point, the test fails. For the lower limit, if the data point is greater than or equal to
+            the limit point, the test passes. If the data point is less than the limit point, the test fails. 
+            	 
+         </p> 
+         	 
+         <p> 
+            		 The following figure shows the result of limit testing in a continuous mask case. The test signal falls within the mask
+            at all the points it is sampled, other than points b and c. Thus, the limit test fails. Point d is not tested because it falls
+            outside the mask. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-E66BF7CE-1460-4B8A-8B5F-78FB872AA7F2__IMAGE_63EDD2B9E51B4A56879D0376F274112D" shape="rect">
+            <!-- --></a><img id="GUID-E66BF7CE-1460-4B8A-8B5F-78FB872AA7F2__IMAGE_63EDD2B9E51B4A56879D0376F274112D" src="GUID-2EFC33FF-90EC-4E8B-A098-0D189D6EC99C-help-web.png"><br clear="none"> 
+         	 
+         <p>The following figure shows the result of limit testing in a segmented mask case. All the points fall within the mask. Points
+            b and c are not tested because the mask is undefined at those points. Thus, the limit test passes. Point d is not tested because
+            it falls outside the mask. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-E66BF7CE-1460-4B8A-8B5F-78FB872AA7F2__IMAGE_23E275D4F93943569E97053D61685384" shape="rect">
+            <!-- --></a><img id="GUID-E66BF7CE-1460-4B8A-8B5F-78FB872AA7F2__IMAGE_23E275D4F93943569E97053D61685384" src="GUID-EEC587E1-FD16-487E-8791-0D9D686F0436-help-web.png"><br clear="none"> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="limit_testing_overview.html" shape="rect">Limit Testing</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

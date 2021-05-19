@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 6200Eactivexhlp -->
+
+<title>Accessing an ActiveX-Enabled Application</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Accessing an ActiveX-Enabled Application</h1>
+
+<p>To access an ActiveX-enabled application in LabVIEW, complete the following steps:</p>
+
+<ol>
+<li>Add an automation refnum control to the front panel of a VI.</li>
+<li>Select an ActiveX class for the automation refnum control to specify the ActiveX object you want to access.</li>
+<li>Use the Automation Open function on the block diagram to open the reference to the ActiveX object. When you open the reference, you enable LabVIEW to communicate with the referenced ActiveX object.</li>
+<li>Pass the reference to a Property Node or an Invoke Node to access properties or invoke methods on the object. When you click one of these nodes, LabVIEW displays all of the properties or methods available for the object. The object implements the Component Object Model (COM) interface, which determines the available properties and methods.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td><td>&nbsp;&nbsp;If LabVIEW does not display the properties or methods that you expect for a particular ActiveX object, the object might implement multiple COM interfaces. LabVIEW can display the properties or methods from only one COM interface implemented by an object at a time. You can force LabVIEW to display the properties and methods from a different COM interface that the object implements by using the Variant To Data function to cast the object to the other COM interface.</td>
+</tr>
+</table></li>
+<li>Use the Close Reference function to remove the object from memory.</li>
+</ol>
+
+
+<p>You can use the previous steps to access common ActiveX enabled applications, such as Microsoft Office applications. For example, Microsoft Excel is an ActiveX-enabled application. You can open a reference to Excel and call properties and methods that open Excel so it appears on the user screen, create a workbook, create a spreadsheet, and write a table from LabVIEW to the Excel spreadsheet.</p>
+
+<p>Refer to the Excel - Write Table VI in the <span class="Monospace">labview\examples\Connectivity\Excel</span> directory for an example of using LabVIEW as an Excel client.</p>
+<p><a href="javascript:openVI('examples%5C%5CConnectivity%5C%5CExcel%5C%5CExcel%20-%20Write%20Table.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(3765);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>��
+				Applications that include ActiveX custom interfaces appear with a <img src="noloc_env_custominterface.gif"> icon. Click the icon to select an object for the custom interface.</td></tr></table>
+<h3>Related Information</h3>
+<p><a href="../lvhowto/Selecting_ActiveX_Class.html">Selecting an ActiveX Class</a></p>
+<p><a href="../lvconcepts/Using_ActiveX_with_LabVIEW.html">Using ActiveX with LabVIEW</a></p>
+<p><a href="../lvcomm/Automation_Open.html">Automation Open Function</a></p>
+<p><a href="../glang/Property_Node.html">Property Node</a></p>
+<p><a href="../glang/Variant_To_Data.html">Variant to Data Function</a></p>
+</body>
+</html>

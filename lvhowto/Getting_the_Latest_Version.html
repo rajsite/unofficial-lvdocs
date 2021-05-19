@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+	
+	<title>Getting the Latest Version of Files in Source Control</title>
+	<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+	
+
+
+</head>
+
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+	
+<h1>Getting the Latest Version of Files in Source Control</h1>
+
+<p class="Body">When another user has edited a file or added a new file to source control, you can use LabVIEW to copy the latest version of the file from source control to the local directory.
+</p>
+<p class="Body">Complete the following steps to get the latest version of a file from source control.
+</p>
+<ol>
+<li>If you are in a LabVIEW project, select the folder or files for which you want to retrieve the latest version. If you are working on an individual VI outside a project, open the VI.
+</li>
+<li>Select <strong>Tools&#0187;Source Control&#0187;Get Latest Version</strong>. A dialog box appears to remind you that the latest versions of the files will overwrite the current files on the computer. Click the <strong>Yes</strong> button to continue the operation and display the <a href="../lvdialog/Source_Control_Ops_DB.html">Source Control Operations</a> dialog box.
+</li>
+<li>The <strong>Files</strong> tree contains the names and paths of all files for which you want to retrieve the latest version from source control. Remove the checkmark from the checkbox next to the name of any file for which you do not want to retrieve the latest version.
+</li>
+<li>Click the <strong>OK</strong> button. If the file exists on the computer, the latest version in source control overwrites the local version and any changes that you made to the file are lost.
+</li>
+<li>If you selected a VI for which you want to retrieve the latest version and the VI was open during the operation, LabVIEW prompts you to reload the VI from the disk. If you reload the VI, any unsaved changes you made are lost.
+</li></ol>
+<p class="Body">You can verify that a file is the latest version if you view the source control properties. Select <strong>Tools&#0187;Source Control&#0187;Properties</strong> from the menu in the front panel or block diagram window of a VI to display the source control properties for a file.
+</p>
+
+<h2>Retrieving Missing or Out-of-Date Files in Source Control</h2>
+
+<p class="Body">You also can retrieve the latest version of missing or out-of-date files in a LabVIEW project. LabVIEW retrieves the latest version of any missing or out-of-date files from source control and copies the files to the local directory. </p>
+<p>Complete the following steps to locate and retrieve missing or out-of-date files in a project:</p>
+<ol>
+<li>Right-click the project root and select <strong>Get Latest Version of All Files</strong> from the shortcut menu. If there are missing items, the <a href="../lvdialog/missing_file_info.html">Missing File Information</a> dialog box appears and lists missing files that LabVIEW cannot retrieve, such as dependencies or files not in source control. </li>
+<li>To retrieve any remaining files, click <strong>Continue </strong>in the <a href="../lvdialog/missing_file_info.html">Missing File Information</a> dialog box to display the <strong>Get Latest Version </strong> dialog box, which is a modified version of the <a href="../lvdialog/Source_Control_Ops_DB.html">Source Control Operations</a> dialog box.</li>
+<li>Select the files you want to retrieve. By default, LabVIEW selects all the files. </li>
+<li>Click the <strong>OK</strong> button. LabVIEW retrieves the selected files and copies them to your local directory. </li>
+</ol>
+
+
+</body>
+</html>

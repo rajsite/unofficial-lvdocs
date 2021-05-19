@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 6100Ecommhlp -->
+
+<title>Writing Live Data Programmatically</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Writing Live Data Programmatically</h1>
+
+<p class="Body">Write live data programmatically to send live data updates from a VI that is not in a project, to control and view properties of the data connection, to send live data updates to other VIs without displaying the data on the front panel of the VI, or to <a href="../lvconcepts/Buffering_Data.html">avoid data loss</a> that might occur if you write data from the front panel.</p>
+
+<p class="Body"><span class="Platform">(Real-Time, Windows)</span> National Instruments recommends that you <a href="../lvconcepts/SV_Using_Nodes.html">use a Shared Variable node</a> to write live data on a block diagram.</p>
+
+<p class="Body">Complete the following steps to write live data programmatically.</p><ol><li>Add the <a href="../lvcomm/DataSocket_Write.html">DataSocket Write</a> function to the block diagram.<br><br><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object559);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object559);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Find</SPAN><br><br></li>
+<li>Specify a <span class="Monospace">psp </span> <a href="../lvconcepts/Using_DataSocket_Technology.html#Specifying_a_URL">URL</a> or wire a <a href="../lvhowto/I_O_Controls.html">shared variable control</a> to the <strong>connection in</strong> input of the DataSocket Write function.</li>
+<li>Wire the <a href="../lvconcepts/Using_DataSocket_Technology.html#Data_Formats_Supported_by_the_DataSocket_VI_and_Functions">data</a> you want to write to the <strong>data</strong> input of the DataSocket Write function. If another application reads the live data, <a href="ConvertingLVDatatoVarData.html">convert the data</a> to variant data.</li>
+<li>Run the VI or continually run the VI to write live data updates to the data connection.</li>
+</ol>
+
+
+
+</body>
+</html>

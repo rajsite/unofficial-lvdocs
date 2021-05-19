@@ -1,0 +1,59 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Specifying a Limit</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-C49841C6-D62F-4896-8443-1F3F5AB6B819" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Specifying a Limit</h1> 
+      
+      
+      <div>
+         <p> 
+            
+         </p> 
+         	 
+         <p> 
+            		Assume that the signal to be monitored starts at <em>x</em> = <em>x</em><sub>0</sub> and all the data points are evenly spaced. The spacing between each point is denoted by <em>d</em><em>x</em>. 
+            	 
+         </p> 
+         	 
+         <p>A continuous limit is specified using a set of <em>x</em> and <em>y</em> points {{<em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>, <em>x</em><sub>3</sub>, …}, {<em>y</em><sub>1</sub>, <em>y</em><sub>2</sub>, <em>y</em><sub>3</sub>, …}}. You create a limit with the first point at <em>x</em><sub>0</sub> and all other points at a uniform spacing of <em>d</em><em>x</em>(<em>x</em><sub>0</sub> + <em>d</em><em>x</em>, <em>x</em><sub>0</sub> + 2<em>d</em><em>x</em>, …). This is done through a linear interpolation of the <em>x</em> and <em>y</em> values that define the limit. The following figure shows a continuous limit. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-C49841C6-D62F-4896-8443-1F3F5AB6B819__IMAGE_242EBE4124B246CA93509BA20AC46F02" shape="rect">
+            <!-- --></a><img id="GUID-C49841C6-D62F-4896-8443-1F3F5AB6B819__IMAGE_242EBE4124B246CA93509BA20AC46F02" src="GUID-AD6ACB3C-67EE-4283-8EA5-33BFDE137422-help-web.png"><br clear="none"> 
+         	 
+         <p> In the previous figure, white dots represent the points at which the limit is defined and the solid line represents the limit
+            you create. You can repeat the interpolation process if the spacing between the samples changes. The limit is undefined in
+            the region <em>x</em><sub>0</sub> &lt; <em>x</em> &lt; <em>x</em><sub>1</sub> and for <em>x</em> &gt; <em>x</em><sub>4</sub>. 
+            	 
+         </p> 
+         	 
+         <p>The following figure shows a segmented limit. 
+            	 
+         </p><br clear="none"><a name="GUID-C49841C6-D62F-4896-8443-1F3F5AB6B819__IMAGE_A863E84410CA49B0919B23C40D9DBA07" shape="rect">
+            <!-- --></a><img id="GUID-C49841C6-D62F-4896-8443-1F3F5AB6B819__IMAGE_A863E84410CA49B0919B23C40D9DBA07" src="GUID-A637E133-A905-4FA8-BB70-AF580001D9DC-help-web.png"><br clear="none"> 
+         	 
+         <p>The first segment is defined using a set of <em>x</em> and <em>y</em> points {{<em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>}, {<em>y</em><sub>1</sub>, <em>y</em><sub>2</sub>}}. The second segment is defined using a set of points {<em>x</em><sub>3</sub>, <em>x</em><sub>4</sub>, <em>x</em><sub>5</sub>} and {<em>y</em><sub>3</sub>, <em>y</em><sub>4</sub>, <em>y</em><sub>5</sub>}. You can define any number of such segments. As with continuous limits, you use linear interpolation to create a limit with
+            the first point at <em>x</em><sub>0</sub> and all other points with a uniform spacing of dx. The limit is undefined in the region <em>x</em><sub>0 
+               		</sub>&lt; <em>x</em> &lt; <em>x</em><sub>1</sub> and in the region <em>x</em> &gt; <em>x</em><sub>5</sub>. Also, the limit is undefined in the region <em>x</em><sub>2</sub> &lt; <em>x</em> &lt; <em>x</em><sub>3</sub>. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="limit_testing_overview.html" shape="rect">Limit Testing</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

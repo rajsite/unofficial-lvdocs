@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Building a Universal Framework on macOS</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Building a Universal Framework on macOS</h1>
+
+<p>A universal framework, or shared library, contains both 64-bit and 32-bit code so that both 64-bit and 32-bit applications can call the framework. You need both 64-bit and 32-bit versions of LabVIEW to build a universal framework. Complete the following steps to build a universal framework in LabVIEW:</p>
+
+<ol>
+	<li>Using 64-bit LabVIEW, build the framework that you want to make universal. LabVIEW builds the framework with 64-bit VI code.</li>
+    <li>Using 32-bit LabVIEW, build the same framework you built in the previous step. LabVIEW builds the framework with 32-bit VI code.</li>
+    <li>Navigate to the 32-bit framework on disk, and copy the <span class="Monospace">.llb</span> file from the 32-bit framework into the 64-bit framework you created in step 1. After you copy the <span class="Monospace">.llb</span> file into the 64-bit framework, you no longer need the 32-bit framework you created in step 2.
+		<table class="Borderless">
+			<tr>
+				<td class="Icon"><img src="note.gif"></td>
+				<td><strong>Note</strong>&nbsp;&nbsp;You must copy the <span class="Monospace">.llb</span> file from the 32-bit framework into the 64-bit framework. The framework does not work universally if you copy the <span class="Monospace">.llb</span> file from the 64-bit framework into the 32-bit framework.</td>
+			</tr>
+		</table>
+    </li>
+</ol>
+
+<p>You can now call the framework you built in step 1 from both 32-bit and 64-bit applications.</p>
+
+<h3>Related Information</h3>
+<p><a href="../lvconcepts/Building_and_Distributing_Applications.html">Building and Distributing Applications</a></p>
+<p><a href="../lvhowto/develop_distribute_applications.html">How to Build a Framework (Shared Library)</a></p>
+<p><a href="../lvhowto/Debug_Apps_DLLs.html">Debugging Applications and Shared Libraries</a></p>
+
+
+
+</body>
+</html>

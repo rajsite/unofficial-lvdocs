@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+
+<title>Using Scroll Bar Controls</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Using Scroll Bar Controls
+</h1>
+<p class="Body">You can use <a href="../lvconcepts/Numeric_Controls_and_Indicators.html">scroll bar controls</a> to add custom scroll bars to a control with scrollable data.  Complete the following steps to use a scroll bar control with a listbox.
+</p>
+<ol>
+<li>Add a listbox to the front panel and <a href="../lvhowto/Creating_a_Listbox.html">enter items in the listbox</a>.
+<br><br>
+<SPAN title=" Add to the front panel window "><a href="javascript:placeObjectFP(control11);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN>
+<SPAN title=" Find on the palette "><a href="javascript:findObjectFP(control11);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN>
+</li>
+<li>Add a vertical scroll bar to the front panel.<br><br>
+<SPAN title=" Add to the front panel window "><a href="javascript:placeObjectFP(control46);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN>
+<SPAN title=" Find on the palette "><a href="javascript:findObjectFP(control46);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN>
+</li>
+<li>Right-click the listbox, select <strong>Create&#0187;Property Node&#0187;Top Row</strong> from the shortcut menu, and add the <a href="../lvprop/ListBox_Top_Row.html">Top Row</a> property to the block diagram.</li>
+<li>Right-click the Top Row property and select <strong>Change All To Write</strong> from the shortcut menu.</li>
+<li>Wire the scroll bar terminal to the Top Row property.</li>
+<li>Customize the scroll bar by right-clicking the front panel scroll bar, selecting <strong>Data Entry</strong> from the shortcut menu, and configuring options on the <strong>Data Entry</strong> page.</li>
+<li>Click the <strong>Run Continuously</strong> button and change the value of the scroll bar control to scroll the items in the listbox.</li>
+</ol>
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td>
+<strong>Note</strong>&nbsp;&nbsp;Using a custom scroll bar to scroll a control disables the built-in scroll bars of that control.</td></tr></table>
+<p class="body">You also can use the <a href="../lvprop/Scrollbar_p.html">Scrollbar properties</a> to configure the scroll bar programmatically.</p>
+
+
+
+</body>
+</html>

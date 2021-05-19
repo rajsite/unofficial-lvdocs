@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Troubleshooting Shortcut Menu Plug-Ins</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Troubleshooting Shortcut Menu Plug-Ins</h1>
+
+<p>The following guidelines help to ensure your LabVIEW shortcut menu plug-in is valid. A malformed plug-in might not appear when you right-click an object or fail to execute if you select the plug-in. LabVIEW does not return errors or warnings if a plug-in is invalid.</p>
+
+<ul>
+	<li><strong>VIs are not broken</strong>&#8212;Load VIs in LabVIEW and ensure VIs do not report errors.</li>
+	<li><strong>Connector panes adhere to required pattern</strong>&#8212;The Create Shortcut Menu Plug-in From Template VI generates the build VI (<span class="Monospace-Italic">x</span><span class="Monospace">.vi</span>) and plug-in execution VI (<span class="Monospace">Execute</span> <span class="Monospace-Italic">x</span><span class="Monospace">.vi</span>) to adhere to a specific connector pane pattern and terminal name syntax. LabVIEW cannot use these VIs as plug-ins if you change the pattern or syntax. You should only change the type definition (<span class="Monospace-Italic">x</span><span class="Monospace">.ctl</span>, where <em>x</em> is the name of the plug-in).</li>
+	<li><strong>Plug-in LLB and build VI names match</strong>&#8212;LabVIEW saves the plug-in files and type definition in an LLB with the plug-in name (<span class="Monospace-Italic">x</span><span class="Monospace">.llb</span>). The build VI must have the same name as the LLB except for the file extension. This naming convention allows LabVIEW to simultaneously manage multiple plug-ins in memory.</li>
+	<li><strong>Debugging tools are disabled</strong>&#8212;You must disable debugging tools for the build VI. LabVIEW cannot stop for breakpoints or probes when building the shortcut menu.</li>
+	<li><strong>Length of the menu item tag does not exceed 255 characters</strong>&#8212;The maximum length of a menu item tag is 255 characters. LabVIEW constructs the tag name using the name of the plug-in and the menu item tag suffix, returned from the build VI. The complete tag name has the following syntax: <span class="Monospace">APP_SC_PLUGIN</span>_&lt;<span class="Monospace-Italic">x</span>.<span class="Monospace">vi</span>&gt;/&lt;<span class="Monospace-Italic">menu_item_tag_suffix</span>&gt;, where <em>x</em> is the name of the plug-in.</li>
+	<li><strong>Refnum type matches the objects the plug-in affects</strong>&#8212;Check that the refnum types in the type definition match the object type that the plug-in affects. To <a href="shortcutmenuplugins_lookuptagstypes.html">identify the refnum types</a> of an object, you can use the <strong>Lookup All Shortcut Menu Tags and Types</strong> plug-in that LabVIEW provides.</li>
+</ul>
+
+
+<h3>Related Information</h3>
+<p><a href="shortcutmenuplugins_intro.html">Creating Shortcut Menu Plug-Ins</a></p>
+<p><a href="shortcutmenuplugins_lookuptagstypes.html">Identifying Refnum Types and Menu Item Tags of Objects</a></p>
+<p><a href="shortcutmenuplugins_tips.html">Tips and Tricks for Creating Shortcut Menu Plug-Ins</a></p>
+
+</body>
+</html>

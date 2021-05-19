@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Creating and Configuring Domain Users (Windows)</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Creating and Configuring Domain Users (Windows)</h1>
+<p class="Body">Use the <a href="using_dom_acct_man.html">Domain Account Manager</a> to <a href="../lvhowto/create_domain.html">create</a> and <a href="../lvhowto/destroy_domain.html">destroy</a> a local domain, <a href="../lvhowto/migrate_domain.html">export and import a local domain</a>, <a href="../lvhowto/add_domain.html">add and remove network domains</a>, <a href="../lvhowto/create_ldomain.html">import a Lookout account</a>, and manage domain users and <a href="../lvhowto/create_group.html">groups</a>.</p>
+<p class="Body">Complete the following steps to use the <strong>Domain Account Manager</strong> to create, configure, and delete domain users. You must be <a href="login_domain.html">logged in</a> to the domain to create, configure, or delete users.</p>
+<ol>
+						<li>Select <strong>Tools&#0187;Security&#0187;Domain Account Manager</strong> to display the <strong>Domain Account Manager</strong>.</li>
+						<li>Click the user list and select <strong>File&#0187;New&#0187;User</strong> or right-click the user list and select <strong>New</strong> from the shortcut menu to display the <a href="../lvdialog/Domain_Manager_User_Properties_DB.html">User Properties</a> dialog box.</li>
+						<li>Click the <strong>General</strong> tab and enter the user name in the <strong>User name</strong> text box. </li>
+						<li>Enter the user's full name in the <strong>Full name</strong> text box. </li>
+						<li>Enter a description in the <strong>Description</strong> text box. </li>
+						<li>Place a checkmark in the <strong>Account is locked</strong> checkbox if you want to lock a user account without removing the user from the domain. </li>
+						<li>Click the <strong>Change Password</strong> button to display the <a href="../lvdialog/Domain_Manager_Change_Password_DB.html">Change Password</a> dialog box.</li>
+						<li>Enter and re-type a password for the user and click the <strong>OK</strong> button.</li>
+						<li>Click the <strong>Memberships</strong> tab and add the new user to a group by selecting the group in the <strong>Groups user can join</strong> list and clicking the right arrow button. To remove the user from a group, select a group in <strong>User is member of these groups</strong> list and click the left arrow button. </li>
+						<li>Click the <strong>OK</strong> button.</li>
+					</ol>
+					<p class="Body">You also can configure domain user properties. Click the user and select <strong>Edit&#0187;Properties</strong> or right-click the user and select <strong>Properties</strong> from the shortcut menu to display the <strong>User Properties</strong> dialog box and configure user settings.</p>
+					<p class="Body">To delete a domain user, click the user and select <strong>Edit&#0187;Delete</strong> or right-click the user and select <strong>Delete</strong> from the shortcut menu. You cannot delete a built-in user. Deleting a user invalidates all previous users by that name, and entries in the Access Control List might become invalid. Even if you recreate a user with the same name, the internal user identification number is different.</p>
+
+
+</body>
+</html>

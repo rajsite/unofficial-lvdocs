@@ -1,0 +1,96 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Matrix Logarithm</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-094CDA9A-B6E2-4FC0-8603-D6588C54FC55" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Matrix Logarithm</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 The natural logarithm is the inverse operation of the exponential. The following equation defines the natural logarithm
+            of a matrix <em>A</em>: <em>e</em><sup><em>B</em></sup> = <em>A</em>, where matrix <em>B</em> is the natural logarithm of matrix <em>A</em>. A matrix has a logarithm if and only if its inverse matrix exists. For a real matrix <em>A</em>, its logarithm matrix <em>B</em> can be complex, and the conjugate of matrix <em>B</em> is also the natural logarithm of <em>A</em>. 
+            	 
+         </p> 
+         	 
+         <p>To obtain the logarithm of a diagonal matrix, you can calculate the logarithm of each diagonal element of the matrix. For
+            example, if 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./2Ftemp2Flvac_matrix_logarithm.xml_d18991e54.png"></span></div>
+         </div> 
+         	 
+         <p>then 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./2Ftemp2Flvac_matrix_logarithm.xml_d18991e143.png"></span></div>
+         </div> 
+         	 
+         <p>Thus, a common method of calculating the logarithm of a matrix is first to diagonalize the matrix and then to calculate the
+            logarithm of each diagonal element of the new matrix. For example, consider the following: 
+            	 
+         </p> 
+         	 <a name="GUID-094CDA9A-B6E2-4FC0-8603-D6588C54FC55__UL_7E4F8013DDAE456C86D7D2F31C5B88A5" shape="rect">
+            <!-- --></a><ul id="GUID-094CDA9A-B6E2-4FC0-8603-D6588C54FC55__UL_7E4F8013DDAE456C86D7D2F31C5B88A5">
+            <li><a name="GUID-094CDA9A-B6E2-4FC0-8603-D6588C54FC55__LI_780FD720E4C84171AD9A3F0D80C753C0" shape="rect">
+                  <!-- --></a> &#955; is a diagonal matrix whose diagonal elements are the eigenvalues of matrix <em>A</em> 
+               		
+            </li>
+            <li><a name="GUID-094CDA9A-B6E2-4FC0-8603-D6588C54FC55__LI_8F8FC2300ABC4E18B442C574CAFAC147" shape="rect">
+                  <!-- --></a> &#955; = <em>V</em><sup>-1</sup><em>A</em><em>V</em>, where <em>V</em> is the matrix composed of the eigenvectors of matrix <em>A</em> 
+               		
+            </li>
+         </ul> 
+         	 
+         <p>If the previous two requirements are true, you can use the following equation to calculate the logarithm of <em>A</em>: ln(<em>A</em>) = <em>V</em>(ln&#955;)<em>V</em><sup>-1</sup>. 
+            	 
+         </p> 
+         	 
+         <p>If you cannot diagonalize a matrix, you can use other methods, such as the Jordan Canonical Form or Taylor series expansion,
+            to calculate the logarithm of the matrix. 
+            	 
+         </p> 
+         	 
+         <p>The matrix logarithm satisfies the following properties: 
+            	 
+         </p> 
+         	 <a name="GUID-094CDA9A-B6E2-4FC0-8603-D6588C54FC55__UL_9E1AF7C5C58049F3B40D55C10FA13C6C" shape="rect">
+            <!-- --></a><ul id="GUID-094CDA9A-B6E2-4FC0-8603-D6588C54FC55__UL_9E1AF7C5C58049F3B40D55C10FA13C6C">
+            <li><a name="GUID-094CDA9A-B6E2-4FC0-8603-D6588C54FC55__LI_AD8B254EE94E40A8BAEEAAC7B2195ACC" shape="rect">
+                  <!-- --></a> ln(<em>I</em>) = 0, where 0 is a zero matrix whose elements are zeros 
+               		
+            </li>
+            <li><a name="GUID-094CDA9A-B6E2-4FC0-8603-D6588C54FC55__LI_2101193C869E4F80B81FAC0B201872B2" shape="rect">
+                  <!-- --></a>If ln(<em>X</em>)*ln(<em>Y</em>) = ln(<em>Y</em>)*ln(<em>X</em>), then ln(<em>X</em><em>Y</em>) = ln(<em>X</em>)+ln(<em>Y</em>) 
+               		
+            </li>
+            <li><a name="GUID-094CDA9A-B6E2-4FC0-8603-D6588C54FC55__LI_96A519BD3D24450D925F6FBCA10C1255" shape="rect">
+                  <!-- --></a>If <em>Y</em> is invertible, then ln(<em>Y</em><em>X</em><em>Y</em><sup>-1</sup>) = <em>Y</em>ln(<em>X</em>)<em>Y</em><sup>-1</sup> 
+               		
+            </li>
+            <li><a name="GUID-094CDA9A-B6E2-4FC0-8603-D6588C54FC55__LI_A7F96B6AA2924AD6BE78A211E2A3F567" shape="rect">
+                  <!-- --></a> ln(<em>X</em>*) = (ln(<em>X</em>))*, where <em>X</em>* is the transpose of the real matrix <em>X</em>, or the conjugate transpose of the complex matrix <em>X</em> 
+               		
+            </li>
+         </ul> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Matrix_Ops_Eigen_Problems.html" shape="rect">Basic Matrix Operations</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

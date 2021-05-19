@@ -1,0 +1,172 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Number of Real Roots of a Real Polynomial</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-331332FA-A976-4C04-A6FF-8FB6818AB06C" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Number of Real Roots of a Real Polynomial</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 For a real polynomial, you can find the number of real roots of the polynomial over a certain interval by applying the
+            Sturm function. 
+            	 
+         </p> 
+         	 
+         <p>If 
+            	 
+         </p> 
+         	 
+         <p> P<sub>0</sub>(<em>x</em>) = <em>P</em>(<em>x</em>) 
+            	 
+         </p> 
+         	 
+         <p>and 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./c_num_real_roots_polynomial.xml_d19872e42.png"></span></div>
+         </div> 
+         	 
+         <p>the following equation defines the Sturm function. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./c_num_real_roots_polynomial.xml_d19872e85.png"></span></div>
+         </div> 
+         	 
+         <p>where <em>P</em><sub><em>i</em></sub>(<em>x</em>) is the Sturm function and 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./c_num_real_roots_polynomial.xml_d19872e227.png"></span></div>
+         </div> 
+         	 
+         <p>represents the quotient polynomial resulting from the division of  P<sub><em>i</em> - 2</sub>(<em>x</em>) by <em>P</em><sub><em>i</em> - 1</sub>(<em>x</em>). 
+            	 
+         </p> 
+         	 
+         <p>You can calculate <em>P</em><sub><em>i</em></sub>(<em>x</em>) until it becomes a constant. For example, the following equations show the calculation of the Sturm function over the interval
+            (-2, 1). 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./c_num_real_roots_polynomial.xml_d19872e312.png"></span></div>
+         </div>
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./c_num_real_roots_polynomial.xml_d19872e361.png"></span></div>
+         </div> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./c_num_real_roots_polynomial.xml_d19872e418.png"></span></div>
+         </div> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./c_num_real_roots_polynomial.xml_d19872e598.png"></span></div>
+         </div> 
+         	 
+         <p>To evaluate the Sturm functions at the boundary of the interval (-2, 1), you do not have to calculate the exact values in
+            the evaluation. You only need to know the signs of the values of the Sturm functions. The following table lists the signs
+            of the Sturm functions for the interval (-2, 1). 
+            	 
+         </p> 
+         	 <a name="GUID-331332FA-A976-4C04-A6FF-8FB6818AB06C__TABLE_72C1FC5F40D74D9E983C0A07C7ECF38A" shape="rect">
+            <!-- --></a><table class="rowsep colsep frametop framebottom frameleft frameright  " id="GUID-331332FA-A976-4C04-A6FF-8FB6818AB06C__TABLE_72C1FC5F40D74D9E983C0A07C7ECF38A">
+            <thead align="left">
+               <tr>
+                  <th align="center" valign="bottom"> <em>x</em> 
+                     				
+                  </th>
+                  <th align="center" valign="bottom"> <em>P</em><sub>0</sub>(<em>x</em>) 
+                     				
+                  </th>
+                  <th align="center" valign="bottom"> <em>P</em><sub>1</sub>(<em>x</em>) 
+                     				
+                  </th>
+                  <th align="center" valign="bottom"> <em>P</em><sub>2</sub>(<em>x</em>) 
+                     				
+                  </th>
+                  <th align="center" valign="bottom"> <em>P</em><sub>3</sub>(<em>x</em>) 
+                     				
+                  </th>
+                  <th align="center" valign="bottom">Number of Sign Changes 
+                     				
+                  </th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td align="left"> -2 
+                     				
+                  </td>
+                  <td align="left"> - 
+                     				
+                  </td>
+                  <td align="left"> + 
+                     				
+                  </td>
+                  <td align="left"> - 
+                     				
+                  </td>
+                  <td align="left"> + 
+                     				
+                  </td>
+                  <td align="left"> 3 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> 1 
+                     				
+                  </td>
+                  <td align="left"> - 
+                     				
+                  </td>
+                  <td align="left"> + 
+                     				
+                  </td>
+                  <td align="left"> + 
+                     				
+                  </td>
+                  <td align="left"> + 
+                     				
+                  </td>
+                  <td align="left"> 1 
+                     				
+                  </td>
+               </tr>
+            </tbody>
+         </table> 
+         	 
+         <p>In the previous table, notice the number of sign changes for each boundary. For <em>x</em> = -2, the evaluation of <em>P</em><sub><em>i</em></sub>(<em>x</em>) results in three sign changes. For <em>x</em> = 1, the evaluation of <em>P</em><sub><em>i</em></sub>(<em>x</em>) results in one sign change. 
+            	 
+         </p> 
+         	 
+         <p>The difference in the number of sign changes between the two boundaries corresponds to the number of real roots that lie in
+            the interval. For the calculation of the Sturm function over the interval (-2, 1), the difference in the number of sign changes
+            is two, which means two real roots of polynomial <em>P</em>(<em>x</em>) lie in the interval (-2, 1). The following figure shows the result of evaluating <em>P</em>(<em>x</em>) over (-2, 1). 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-331332FA-A976-4C04-A6FF-8FB6818AB06C__IMAGE_D412AED819A44379AC224B41E67AA79D" shape="rect">
+            <!-- --></a><img id="GUID-331332FA-A976-4C04-A6FF-8FB6818AB06C__IMAGE_D412AED819A44379AC224B41E67AA79D" src="GUID-5086FD47-BC1F-4495-88A8-7E5CD7009202-help-web.png"><br clear="none"> 
+         	 
+         <p>In the previous figure, the two real roots lie at approximately -1.5 and 0.26. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Basic_Polynomial_Operations.html" shape="rect">Basic Polynomial Operations</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

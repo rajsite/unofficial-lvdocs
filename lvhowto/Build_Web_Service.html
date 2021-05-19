@@ -1,0 +1,261 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Tutorial: Creating and Publishing a LabVIEW Web Service to the Application Web Server (Real-Time, Windows)</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Tutorial: Creating and Publishing a LabVIEW Web Service to the Application Web Server (Real-Time, Windows)</h1>
+
+<p class="Body">Complete the following steps to create, publish, and exchange data between a LabVIEW Web service and a web client, in this case, a web browser.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;For more information about concepts in this topic, refer to the <a href="../lvconcepts/WebServices.html">Web services introduction</a>. LabVIEW Web services are available only in the LabVIEW Full Development System and the LabVIEW Professional Development System.
+</td>
+</tr>
+</table>
+<p class="Body">This tutorial contains the following sections:</p>
+<ol>
+<li><a href="#Creating_VIs_WS">Creating a Web Service</a></li>
+<li><a href="#Debugging_WS">Testing and Debugging the Web Service</a></li>
+<li><a href="#Configuring_WS">Configuring How Clients Access the Web Service</a></li>
+<li><a href="#Deploying_WS">Publishing the Web Service to the Application Web Server</a></li>
+<li><a href="#Accessing_WS">Accessing the Web Service with a Client</a></li>
+<li><a href="#Monitoring_WS">Monitoring the Web Service</a></li>
+</ol>
+
+
+<a name="Creating_VIs_WS"></a><h2>Creating a Web Service</h2>
+<p class="Body">Develop a Web service in a LabVIEW project to group together and configure the VIs and other files that make up the Web service. Complete the following steps to create a Web service project and two HTTP method VIs.</p>
+
+<ol>
+<li>Create a LabVIEW project to organize the Web service files. Save the project as <span class="Monospace">Tutorial.lvproj</span>. </li>
+<li>Right-click <strong>My Computer</strong> and select <strong>New&#0187;Web Service</strong>. LabVIEW adds a Web service project item and folders under the target.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;<ul><li>In this tutorial, you create a Web service and publish it on the host computer. You also can publish a Web service to a Real-Time target by creating a Web service project under the RT target in a LabVIEW project.</li>
+<li><span class="platform">(Windows)</span> NI recommends using the NI Web Server to host your Web service on a Windows computer. Refer to <a href="../lvhowto/web_service_tutorial.html">Tutorial: Creating and Publishing a LabVIEW Web Service to the NI Web Server</a> for detailed instructions.</li></ul></td>
+</tr>
+</table>
+</li>
+<li>Right-click the Web service project item <img src="noloc_env_ws_node.gif" />, select <strong>Rename</strong>, and name the Web service <span class="Monospace">TutorialService</span>. The project appears as follows:<br /><br />
+<img src="loc_env_Add.gif">
+</li>
+<li>Right-click <strong>Web Resources</strong> and select <strong>New VI</strong> to create a new HTTP method VI, which is a VI that receives HTTP requests from clients and returns data to clients. LabVIEW opens a new VI from a template.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;By default, an HTTP method VI returns data to clients via the connector pane. In this tutorial, the HTTP method VIs return the default JSON-formatted text responses. When you create an HTTP method VI outside this tutorial, you also can stream data to a client in a custom format, such as a customized HTML page or image data. Configure the output format type on the <a href="../lvdialog/ws_http_method_page.html">HTTP Method VI Settings</a> page of the <strong>Web Service Properties</strong> dialog box.
+</td>
+</tr>
+</table></li>
+<li>In the new VI, build the block diagram, front panel, and connector pane as shown in the following figures. <br /><br />
+    <table class="Bordered">
+    <tr>
+    <th class="Bordered" align="center">Block Diagram</th>
+    <th class="Bordered" align="center">Front Panel</th>
+    <th class="Bordered" align="center">Connector Pane</th>
+    </tr>
+    <tr>
+    <td class="Bordered"><img src="loc_bd_urlmapping.gif"></td>
+    <td class="Bordered"><img src="loc_fp_url_map.gif"></td>
+    <td class="Bordered"><img src="loc_term_url_map.gif"></td>
+    </tr>
+    </table>
+	<br />
+    
+When you publish this VI as part of a Web service, a web client can send an HTTP request to invoke it. When invoked, this VI performs the following actions:
+    <ul>
+        <li>Receives the values of any controls assigned to the connector pane (<em>except</em>&nbsp;<strong>LabVIEW Web Service Request</strong>) from the HTTP request the client made. <strong>LabVIEW Web Service Request</strong> acts like a refnum by identifying the current HTTP request.</li>
+        <li>Computes the sum of <strong>a</strong> and <strong>b</strong>.</li>
+        <li>Returns the sum of those values to the client via the <strong>c</strong> indicator assigned to the connector pane.</li>
+        <li>Executes the Read Request Variable VI and returns the query string the client included in the current HTTP request, which <strong>LabVIEW Web Service Request</strong> identifies.
+            <table class="Borderless">
+            <tr>
+            <td class="Icon"><img src="tip.gif" alt="Tip"></td>
+            <td><strong>Tip</strong>&nbsp;&nbsp;In a more complex Web service, you might use other VIs on the <a href="../lvcomm/Web_Services.html">Web Services</a> palette to enable features such as HTTP sessions, authentication, HTTP headers, and cookies.</td>
+            </tr>
+            </table>
+        </li>
+    </ul>
+</li>
+	
+	<li>Notice that each control and indicator appears on the connector pane. With the default <strong>Terminal</strong> output type, Web services can receive data from clients or send data to clients only through inputs and outputs assigned to the connector pane of an HTTP method VI.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="tip.gif" alt="Tip"></td>
+<td><strong>Tip</strong>&nbsp;&nbsp;Assign recognizable names to each object. These names become part of the URL that web clients use to exchange data with the VI.</td>
+</tr>
+</table>
+</li>
+<li>Save the VI as <span class="Monospace">Add.vi</span>.</li>
+<li>Select <strong>File&#0187;Save As</strong> and select <strong>Copy&#0187;Open additional copy</strong> in the dialog box that prompts. Ensure the <strong>Add copy to Tutorial.lvproj</strong> checkbox contains a checkmark, and then click <strong>Continue</strong>.</li>
+<li>Save the new copy as <span class="Monospace">Subtract.vi</span>.</li>
+<li>Open the block diagram of <span class="Monospace">Subtract.vi</span> and replace the Add function with the Subtract function. Rewire the controls and indicators.</li>
+<li>Return to the project, right-click <strong>Web Resources</strong>, and select <strong>New Web Resource</strong>. Rename the new project item <span class="Monospace">AdditionalOperations</span>.</li>
+<li>Drag <span class="Monospace">Subtract.vi</span> under the <strong>AdditionalOperations</strong> project item. Save the project, which should appear as in the following figure.<br /><br />
+	<img src="loc_env_Subtract.gif"></li>
+</ol>
+<p class="Body">Notice the following features in the project tree:</p> 
+<ul>
+	<li>LabVIEW appends an HTTP request type to the name of each HTTP method VI, which by default is GET. You can change the type of HTTP request that clients send to a specific HTTP method VI later in this tutorial.</li>
+	<li>The Web service project item <img src="noloc_env_ws_node.gif" /> also contains a <strong>Startup VIs</strong> folder. This tutorial does not use startup VIs, but you can find more information about them at the end of the tutorial.</li>
+</ul>
+
+<h3>Related Information</h3>
+<p class="Body"><a href="../lvconcepts/WebServices_components.html">Components of a Web Service</a></p>
+<p class="Body"><a href="../lvhowto/Assigning_Controls_and_Ind.html">Assigning Terminals to Controls and Indicators</a></p>
+<p class="Body"><a href="../lvconcepts/ws_method_vis.html#output">Developing HTTP Method VIs: Choosing the Format of Output Data</a></p>
+<p class="Body"><a href="../lvconcepts/WS_Configuring_Headers.html">Configuring HTTP Headers, Streaming, and Buffering</a></p>
+<p class="Body"><a href="../lvconcepts/Using_LabVIEW_Projects.html">Managing a Project in LabVIEW</a></p>
+
+
+<a name="Debugging_WS"></a><h2>Testing and Debugging the Web Service</h2>
+<p class="Body">Before you publish the Web service to a target, you might want to test that the HTTP method VIs communicate with clients as expected. You can place the Web service on a debugging server directly from the LabVIEW project to allow a client to send requests to HTTP method VIs. The debugging server provides a sandbox-like environment.</p>
+<ol>
+    <li><span class="Platform">(Windows)</span> Right-click the Web service project item <img src="noloc_env_ws_node.gif" /> under <strong>My Computer</strong> and select <strong>Application Web Server&#0187;Start (Debug Server)</strong>.<br /><br />
+	<span class="Platform">(Real-Time)</span> Right-click the Web service project item <img src="noloc_env_ws_node.gif" /> under the RT target and select <strong>Start (Debug Server)</strong>.</li>
+    <li>Open <span class="Monospace">Add.vi</span>. Notice that the <strong>Run</strong> button indicates the VI is reserved for execution <img src="noloc_env_run_reserved.gif"> because LabVIEW loads the Web service and makes it available on the debugging server for communication with clients.</li>
+    <li>Close <span class="Monospace">Add.vi</span>.</li>
+    <li>Complete the following steps to get the URL that clients use to invoke <span class="Monospace">Add.vi</span>:
+    <ol>
+        <li>Right-click <span class="Monospace">Add.vi</span> and select <strong>Show Method URL</strong> to display the <a href="../lvdialog/ws_http_method_url_db.html">HTTP Method URL</a> dialog box.</li>
+        <li>In the <strong>Available Servers</strong> pull-down menu, select the item that contains <strong>Local Debugging</strong>, and then click the <strong>Copy URL</strong> button. Clients must communicate with Web services on the debugging server through a different port than if you publish the service to a web server.</li>
+        <li>Close the dialog box.
+		<table class="Borderless">
+		<tr>
+		<td class="Icon"><img src="note.gif" alt="Note"></td>
+		<td><strong>Note</strong>&nbsp;&nbsp;The Web service does not respond to any requests from the client if the <strong>HTTP Method URL</strong> dialog box is open.</td>
+		</tr>
+		</table></li>
+    </ol>
+    </li>
+    <li>Paste the URL from step 4 into a standard web browser and replace the <span class="Monospace">{value}</span> variables with numeric values, such as: <span class="Monospace">http://127.0.0.1:8001/TutorialService/Add?b=2&amp;a=3</span>.
+    </li>
+    <li>Browse to the URL. <span class="Monospace">Add.vi</span> receives the HTTP request from the browser, computes the sum of the values for <strong>a</strong> and <strong>b</strong>, and returns a response with the name and output value of each indicator assigned to the connector pane of <span class="Monospace">Add.vi</span>. In this tutorial, the response is a JSON string, which is the default <strong>Terminal</strong> output format. Recall that <span class="Monospace">Add.vi</span> has two indicators assigned to its connector pane, <strong>c</strong> and <strong>value</strong>, whose values the HTTP method VI returns in the response.
+	<p><span class="Monospace">{&quot;c&quot;:5,&quot;value&quot;:&quot;b=2&amp;a=3&quot;}</span></p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If you notice unexpected behavior, you must stop the debugging session before you can edit the Web service files because you cannot edit the files while LabVIEW reserves them for execution.</td>
+</tr>
+</table>
+</li>
+<li>Repeat steps 4 and 5 for <span class="Monospace">Subtract.vi</span>, or update the URL from step 5 to reflect the unique URL mapping for <span class="Monospace">Subtract.vi</span>: <span class="Monospace">http://127.0.0.1:8001/TutorialService/AdditionalOperations/Subtract?b=2&amp;a=3.</span></li>
+<li>Repeat step 6 for <span class="Monospace">Subtract.vi</span>.</li>
+<li><span class="Platform">(Windows)</span> Right-click the Web service project item and select <strong>Application Web Server&#0187;Stop (Debug Server)</strong>.<br /><br />
+<span class="Platform">(Real-Time)</span> Right-click the Web service project item and select <strong>Stop (Debug Server)</strong>.</li>
+</ol>
+
+<h3>Related Information</h3>
+<p class="Body"><a href="../lvhowto/ws_debugging.html">Testing and Debugging a Web Service on the Application Web Server</a></p>
+
+<a name="Configuring_WS"></a><h2>Configuring How Clients Access the Web Service</h2>
+<p class="Body">Web clients use URLs to exchange data with HTTP method VIs. Later in this tutorial, you will enter a specific URL in a web browser to send data directly to the controls on the connector pane of the HTTP method VIs.</p>
+
+<p class="Body">Complete the following steps to define the URLs clients can use to access the HTTP method VIs:</p>
+     <ol>
+	    <li>Right-click the Web service project item <img src="noloc_env_ws_node.gif" /> and select <strong>Properties</strong> to display the <strong>Web Service Properties</strong> dialog box.</li>
+
+	  <li>On the <a href="../lvdialog/ws_http_method_page.html">HTTP Method VI Settings</a> page, notice that HTTP method VIs from the <strong>Web Resources</strong> folder in the LabVIEW project appear in the table of Web service VIs. Further, notice how placing <span class="Monospace">Subtract.vi</span> under the <span class="Monospace">AdditionalOperations</span> project item affects the URL mapping compared to <span class="Monospace">Add.vi</span>.</li>
+	<li>Select <span class="Monospace">Subtract.vi</span> in the table and notice the following features on the <strong>URL Mapping</strong> tab at the bottom of the page:
+	<ul>
+		<li>You can change the HTTP request type in the�<strong>Method</strong>�pull-down menu. Use the default <span class="monospace">GET</span> value for <span class="Monospace">Subtract.vi</span>.</li>
+		<li>You can choose to disable the standard format LabVIEW uses to map a URL to the VI and instead customize the part of the URL that appears after the service name. For this tutorial, use the standard URL mapping and include the VI name.</li>
+			<li>The <strong>URL</strong> field displays the base URL LabVIEW creates for the HTTP method VI. For example, for <span class="Monospace">Subtract.vi</span>, LabVIEW creates the default URL mapping <span class="monospace">/AdditionalOperations/Subtract</span>.<br /><br />
+<img src="loc_env_ws_props.png" />
+
+</li></ul>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;In a more complex Web service, you might use the remaining tabs on this page to configure the format that the VI returns output data to the web client, as well as security settings like permissions.</td>
+</tr>
+</table></li>
+<li>Click <strong>OK</strong> to close the <strong>Web Service Properties</strong> dialog box.</li>
+<li>Save <span class="Monospace">Tutorial.lvproj</span>.</li>
+</ol>
+<h3>Related Information</h3>
+<p class="Body"><a href="../lvconcepts/ws_URL_mapping.html">Understanding URL Mappings and Query Strings in Web Services</a></p>
+
+<a name="Deploying_WS"></a><h2>Publishing the Web Service to the Application Web Server</h2>
+<p class="Body">You can publish the Web service you create to the Application Web Server. In this tutorial, you publish a stand-alone Web service, but in a more complex application, you might publish a Web service through a LabVIEW stand-alone application or an installer. The Application Web Server hosts Web services on a network and provides multiple security-related features to protect the network data exchange, including Secure Socket Layer (SSL) encryption.</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;<span class="Platform">(Windows)</span> You can also publish your Web service to the NI Web Server. Refer to <a href="../lvhowto/web_service_tutorial.html">Tutorial: Creating and Publishing a LabVIEW Web Service to the NI Web Server</a> for detailed instructions.</td>
+</tr>
+</table>
+
+<p class="Body">Complete the following steps to publish the Web service to the Application Web Server running on the local computer:</p>
+<ol>
+<li>Right-click the Web service project item and select <strong>Application Web Server&#0187;Publish</strong>. The <strong>Deployment Progress</strong> dialog box appears.</li>
+
+<li>If LabVIEW publishes the Web service without errors, click the <strong>Close</strong> button. Web clients can now exchange data with the HTTP method VIs.</li> 
+</ol>
+<h3>Related Information</h3>
+<p class="Body"><a href="../lvconcepts/ws_distributing.html">Publishing Web Services</a></p>
+<p class="Body"><a href="../lvhowto/WS_Enable_Web_Server.html">Setting up the Application Web Server for Web Services</a></p>
+
+<a name="Accessing_WS"></a><h2>Accessing the Web Service with a Client</h2>
+<p class="Body">Complete the following steps to send data to the published Web service from a web browser via a URL:</p>
+<ol>
+<li>Right-click <span class="Monospace">Add.vi</span> and select <strong>Show Method URL</strong> to display the <a href="../lvdialog/ws_http_method_url_db.html">HTTP Method URL</a> dialog box.</li>
+<li>In the <strong>Available Servers</strong> pull-down menu, select the item that contains <strong>Application</strong>, and then click the <strong>Copy URL</strong> button. This URL contains a different port number than the URL for the debugging server. LabVIEW uses this port number for communication with the Web service files running on the Application Web Server.</li>
+<li>Close the dialog box.</li>
+<li>Paste the URL into a standard web browser and replace the <span class="Monospace">{value}</span> variables with numeric values, such as: <span class="Monospace">http://127.0.0.1:8080/TutorialService/Add?b=2&amp;a=3</span>.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If the client is located on a different system than where you publish the Web service, you must replace�<span class="Monospace">127.0.0.1</span>�with the actual IP address of the hosting system or the hostname you customize in <a href="../lvhowto/NI_WebConfig.html">NI Web-based Configuration &amp; Monitoring</a>.</td>
+</tr>
+</table>
+</li>
+<li>The browser returns a JSON response with the output values from each indicator assigned to the connector pane.</li>
+</ol>
+
+<h3>Related Information</h3>
+<p class="Body"><a href="../lvconcepts/WS_send_data_URL.html">Sending Data to a Deployed Application Using URLs</a></p>
+
+<a name="Monitoring_WS"></a><h2>Monitoring the Web Service</h2>
+<p class="Body">Complete the following steps to check the status of Web services published to the Application Web Server:</p>
+<ol>
+<li>Right-click the Web service project item and select <strong>Application Web Server&#0187;Manage Web Server</strong>. NI Web-based Configuration &amp; Monitoring opens in a web browser.</li>
+<li>Click the <strong>Web Services Management</strong> button in the left-hand sidebar <img src="noloc_env_ws_mgmt_btn.gif">.</li>
+<li>Select <strong>TutorialService</strong> in the <strong>Published Web Services</strong> list. If the list is empty, click the <strong>Refresh</strong> button.</li>
+<li>Notice that the status of the Web service is <strong>Running</strong>. To pause, resume, restart, and unpublish Web services, use the buttons at the bottom of the page.</li>
+<li>On the right side of the page, notice that the URL mappings for the HTTP method VIs, <span class="Monospace">Add</span> and <span class="Monospace">AdditionalOperations/Subtract</span>, appear with the HTTP method they perform.</li>
+</ol>
+
+
+<a name="Next"></a><h2>Where to Go Next</h2>
+<ul>
+<li><a href="../lvconcepts/ws_portal.html">Communicating with a LabVIEW Application from Web Clients</a></li>
+<li><a href="../lvconcepts/WebServices.html">Overview: Web-based Communication with a LabVIEW Application</a>&#8212;An overall introduction to LabVIEW Web Service</li>
+<li><a href="../lvhowto/ws_publishing_app.html">Publishing a Web Service through a Stand-Alone Application</a>&#8212;Include a Web service in a LabVIEW stand-alone application, so that the Web service runs when the application runs.</li>
+<li><a href="../lvhowto/ws_publishing_installer.html">Publishing a Web Service through an Installer</a>&#8212;Include a Web service in a Windows installer, so that the Web service runs when you finish the installation process.</li>
+<li><a href="../lvconcepts/ws_method_vis.html">Developing HTTP Method VIs</a> or <a href="../lvconcepts/ws_startup_vis.html">Developing Startup VIs to Initialize and Communicate with HTTP Method VIs</a>&#8212;Develop more complex HTTP method VIs, as well as startup VIs that run as part of a Web service application but do not exchange data with a web client.</li>
+<li><a href="../lvhowto/WS_Static_Content.html">Integrating Static Content into a Web Service</a>&#8212;Publish static content such as HTML pages or images with a Web service.</li>
+</ul>
+
+<h3>Example Code</h3>
+<p class="Body">Refer to the following LabVIEW projects for examples of using Web services:</p>
+<ul>
+<li><span class="Monospace">examples\Connectivity\Web Services\Weather Monitor\Web Services &mdash; Weather Monitor.lvproj</span>
+<br><a href="javascript:openProj('examples%5C%5CConnectivity%5C%5CWeb%20Services%5C%5CWeather%20Monitor%5C%5CWeb%20Services%20-%20Weather%20Monitor.lvproj');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(1694);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</li>
+</ul>
+</body>
+</html>

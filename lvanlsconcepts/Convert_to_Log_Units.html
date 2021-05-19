@@ -1,0 +1,90 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Converting to Logarithmic Units</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-5A310ACD-AB52-468D-9381-0400B6CFE5B7" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Converting to Logarithmic Units</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 
+            		 
+            		 On some instruments, you can display amplitude on either a linear scale or a decibel (dB) scale. The linear scale shows
+            the amplitudes as they are. The decibel is a unit of ratio. The decibel scale is a transformation of the linear scale into
+            a logarithmic scale. 
+            	 
+         </p> 
+         	 
+         <p>The following equation defines the decibel in terms of power.
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./t2Ftemp2FConvert_to_Log_Units.xml_d1538e36.png"></span></div>
+         </div>
+         	 
+         <p>where <em>P</em> is the measured power, <em>P</em><sub><em>r</em></sub> is the reference power, and <em>P</em>/<em>P</em><sub><em>r</em></sub> is the power ratio. 
+            	 
+         </p> 
+         	 
+         <p>The following equation defines the decibel in terms of amplitude.
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./t2Ftemp2FConvert_to_Log_Units.xml_d1538e95.png"></span></div>
+         </div>
+         	 
+         <p>where <em>A</em> is the measured amplitude, <em>A</em><sub><em>r</em></sub> is the reference amplitude, and <em>A</em>/<em>A</em><sub><em>r</em></sub> is the voltage ratio. 
+            	 
+         </p> 
+         	 
+         <p>The previous equations require a reference value to measure power and amplitude in decibels. The reference value serves as
+            the 0 dB level. Several conventions exist for specifying a reference value. You can use the following common conventions to
+            specify a reference value for calculating decibels: 
+            	 
+         </p> 
+         	 <a name="GUID-5A310ACD-AB52-468D-9381-0400B6CFE5B7__UL_F9EBEAD3458347FFA82B793A59889911" shape="rect">
+            <!-- --></a><ul id="GUID-5A310ACD-AB52-468D-9381-0400B6CFE5B7__UL_F9EBEAD3458347FFA82B793A59889911">
+            <li><a name="GUID-5A310ACD-AB52-468D-9381-0400B6CFE5B7__LI_44FA9162A72840DE888A797D347669E7" shape="rect">
+                  <!-- --></a>Use the reference one volt-rms squared (1V<sup>2</sup><sub>rms</sub>) for power, which yields the unit of measure dBV. 
+               		
+            </li>
+            <li><a name="GUID-5A310ACD-AB52-468D-9381-0400B6CFE5B7__LI_CB1687C1593249AB907A2903185B0CF0" shape="rect">
+                  <!-- --></a>Use the reference one volt-rms (1V<sub>rms</sub>) for amplitude, which yields the unit of measure dBV. 
+               		
+            </li>
+            <li><a name="GUID-5A310ACD-AB52-468D-9381-0400B6CFE5B7__LI_6A5AA36CADAF4B99BE0B0A9FACD19A38" shape="rect">
+                  <!-- --></a>Use the reference 1 mW into a load of 50 &#937; for radio frequencies where 0 dB is 0.22 V<sub>rms</sub>, which yields the unit of measure dBm. 
+               		
+            </li>
+            <li><a name="GUID-5A310ACD-AB52-468D-9381-0400B6CFE5B7__LI_EE9C9C75F4AE4709B302E1934CDF114C" shape="rect">
+                  <!-- --></a>Use the reference 1 mW into a load of 600 &#937; for audio frequencies where 0 dB is 0.78 V<sub>rms</sub>, which yields the unit of measure dBm. 
+               		
+            </li>
+         </ul> 
+         	 
+         <p>When using amplitude or power as the amplitude-squared of the same signal, the resulting decibel level is exactly the same.
+            Multiplying the decibel ratio by two is equivalent to having a squared ratio. Therefore, you obtain the same decibel level
+            and display regardless of whether you use the amplitude or power spectrum. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Intro_DSP_and_Anls_in_LV.html" shape="rect">Introduction to Digital Signal Processing and Analysis</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

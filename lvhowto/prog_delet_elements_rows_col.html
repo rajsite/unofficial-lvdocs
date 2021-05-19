@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4500Earrayclustershlp -->
+
+<title>Programmatically Deleting Elements, Rows, Columns, and Pages within Arrays</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Programmatically Deleting Elements, Rows, Columns, and Pages within Arrays </h1>
+<p class="Body">You can delete an element, row, column, or page within an array programmatically. What you can delete depends on how many dimensions the array has. For example, you can delete a row or a column from an array of two or more dimensions. You can delete a page from an array of three or more dimensions.</p>
+
+<p class="Body">Complete the following steps to delete elements, rows, columns, or pages in an array.</p>
+
+<ol>
+<li>Add the <a href="../glang/Delete_From_Array.html">Delete From Array</a> function to the block diagram.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object361);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object361);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li>
+<li>Wire an array of any dimension to the <strong>n-dim array</strong> input of the Delete From Array function. The function automatically resizes based on the dimensions of the array.</li>
+
+<li>Determine which operation you want to perform from the following table and complete the associated steps.</li></ol>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;The <strong>index</strong> input specifies from which element, row, column, or page you want to start deleting, with 0 being the first. The <strong>length</strong> input specifies the number of elements, rows, columns, or pages you want to delete. <!-- Begin parent: ../lvhowto/prog_insrt_elements_rows_col.html-->In the following table, <em>n</em> is the total number of elements, rows, columns, pages, or dimensions in the array.<!-- End parent: ../lvhowto/prog_insrt_elements_rows_col.html--> </td></tr></table>
+<br>
+
+<table class="Bordered">
+<tr><th class="Bordered">Array wired to n-dimension array</th><th class="Bordered">Deleting</th><th class="Bordered">Complete these steps.</th></tr>
+
+<tr><td class="Bordered">1D array</td><td class="Bordered">Element(s)</td><td class="Bordered">Wire a value 1 through <em>n</em> to <strong>length</strong>.<br>Wire a value 0 through <em>n</em> to <strong>index</strong>.</td></tr>
+
+<tr><td class="Bordered" rowspan="2">2D array</td><td class="Bordered">Row(s)</td><td class="Bordered">Wire a value 1 through <em>n</em> to <strong>length</strong>.<br>Wire a value 0 through <em>n</em> to <strong>index (row)</strong>.</td></tr>
+
+<tr><td class="Bordered">Column(s)</td><td class="Bordered">Wire a value 1 through <em>n</em> to <strong>length</strong>.<br>Wire a value 0 through <em>n</em> to <strong>index (column)</strong>.</td></tr>
+
+<tr><td class="Bordered">3D through <em>n</em>D array</td><td class="Bordered">Page(s)</td>
+<td class="Bordered">Wire a value 1 through <em>n</em> to <strong>length</strong>.<br>Wire a value 0 through <em>n</em> to <strong>index (page)</strong>.</td></tr></table>
+
+<ol start="4">
+<li>Run the VI.</li></ol>
+
+
+
+</body>
+</html>

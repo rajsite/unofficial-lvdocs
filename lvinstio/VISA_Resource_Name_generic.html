@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Original filename: Masterlvinstio.txt -->
+
+
+<title>VISA Resource Name Control</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>VISA Resource Name Control
+</h1>
+<p class="Body">Use the <strong>VISA resource name</strong> control to specify the resource to which a VISA session will be opened and to maintain the session and class. A VISA session is a unique logical identifier used by VISA to communicate with a resource. The VISA session is maintained by the <strong>VISA resource name</strong> control and is not seen by the user. <strong>VISA resource name out</strong> is a copy of the resource name that is passed out of the VISA functions. By passing the resource name in and out of functions and VIs, you can simplify dataflow programming by chaining functions and VIs together. This is similar to the file refnum outputs used by the File I/O functions.
+</p>
+<p class="Body">The following table shows the syntax for the <strong>VISA resource name</strong> string. Optional parameters are shown in square brackets ([ ]).</p>
+<table class="Bordered">
+<tr><th class="Bordered">Interface</th><th class="Bordered">Syntax</th><th class="Bordered">Classes</th></tr>
+<tr>
+<td class="Bordered">VXI INSTR</td><td class="Bordered">VXI[board]::VXI logical address[::INSTR]</td>
+<td class="Bordered"><a href="../lvvisaprop/Instr.html">Instr</a>;<br>
+<a href="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr.html">VXI/GPIB-VXI&nbsp;MBD&nbsp;Instr</a>;<br>
+<a href="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr.html">VXI/GPIB-VXI/VME&nbsp;RBD Instr</a></td>
+</tr>
+<tr><td class="Bordered">VXI MEMACC</td><td class="Bordered">VXI[board]::MEMACC</td>
+<td class="Bordered"><a href="../lvvisaprop/VXI_GPIB-VXI_VME_MemAcc.html">VXI/GPIB-VXI/VME MemAcc</a></td>
+</tr>
+<tr><td class="Bordered">VXI BACKPLANE</td><td class="Bordered">VXI[board][::VXI logical address]::BACKPLANE</td>
+<td class="Bordered"><a href="../lvvisaprop/VXI_GPIB-VXI_Backplane.html">VXI/GPIB-VXI Backplane</a></td>
+</tr>
+<tr><td class="Bordered">VXI SERVANT</td><td class="Bordered">VXI[board]::SERVANT</td>
+<td class="Bordered"><a href="../lvvisaprop/VXI_Servant.html">VXI Servant</a></td>
+</tr>
+<tr><td class="Bordered">GPIB-VXI INSTR</td><td class="Bordered">GPIB-VXI[board]::VXI logical address[::INSTR]</td>
+<td class="Bordered"><a href="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr.html">VXI/GPIB-VXI MBD Instr</a>;<br>
+<a href="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr.html">VXI/GPIB-VXI/VME RBD Instr</a></td>
+</tr>
+<tr><td class="Bordered">GPIB-VXI MEMACC</td><td class="Bordered">GPIB-VXI[board]::MEMACC</td>
+<td class="Bordered"><a href="../lvvisaprop/VXI_GPIB-VXI_VME_MemAcc.html">VXI/GPIB-VXI/VME MemAcc</a></td>
+</tr>
+<tr><td class="Bordered">GPIB-VXI BACKPLANE</td><td class="Bordered">GPIB-VXI[board][::VXI logical address]::BACKPLANE</td>
+<td class="Bordered"><a href="../lvvisaprop/VXI_GPIB-VXI_Backplane.html">VXI/GPIB-VXI Backplane</a></td>
+</tr>
+<tr><td class="Bordered">GPIB INSTR</td><td class="Bordered">GPIB[board]::primary address[::GPIB secondary address][::INSTR]</td>
+<td class="Bordered"><a href="../lvvisaprop/GPIB_Instr.html">GPIB Instr</a><br></td>
+</tr>
+<tr><td class="Bordered">GPIB INTFC</td><td class="Bordered">GPIB[board]::INTFC</td>
+<td class="Bordered"><a href="../lvvisaprop/GPIB_BoardInterface.html">GPIB BoardInterface</a></td>
+</tr>
+<tr><td class="Bordered">GPIB SERVANT</td><td class="Bordered">GPIB[board]::SERVANT</td>
+<td class="Bordered">N/A</td>
+</tr>
+<tr><td class="Bordered">PXI INSTR</td><td class="Bordered">PXI[bus]::device[::function][::INSTR]</td>
+<td class="Bordered"><a href="../lvvisaprop/PXI_Instr.html">PXI Instr</a></td>
+</tr>
+<tr><td class="Bordered">PXI INSTR</td><td class="Bordered">PXI[interface]::[bus-]device[.function][::INSTR]</td>
+<td class="Bordered"><a href="../lvvisaprop/PXI_Instr.html">PXI Instr</a></td>
+</tr>
+<tr><td class="Bordered">PXI MEMACC</td><td class="Bordered">PXI[interface]::MEMACC</td>
+<td class="Bordered"><a href="../lvvisaprop/PXI_MemAcc.html">PXI MemAcc</a></td>
+</tr>
+<tr><td class="Bordered">Serial INSTR</td><td class="Bordered">ASRL[board][::INSTR]</td>
+<td class="Bordered"><a href="../lvvisaprop/Serial_Instr.html">Serial Instr</a></td>
+</tr>
+<tr><td class="Bordered">TCPIP INSTR</td><td class="Bordered">TCPIP[board]::host address[::LAN device name][::INSTR]</td>
+<td class="Bordered"><a href="../lvvisaprop/TCP_IP_Instr.html">TCP/IP Instr</a></td>
+</tr>
+<tr><td class="Bordered">TCPIP SOCKET</td><td class="Bordered">TCPIP[board]::host address::port::SOCKET</td>
+<td class="Bordered"><a href="../lvvisaprop/TCP_IP_Socket.html">TCP/IP Socket</a></td>
+</tr>
+<tr><td class="Bordered">USB INSTR</td>
+<td class="Bordered">USB[board]::manufacturer ID::model code::serial number[::USB interface number][::INSTR]</td>
+<td class="Bordered"><a href="../lvvisaprop/USB_Instr.html">USB Instr</a></td>
+</tr>
+<tr><td class="Bordered">USB RAW</td>
+<td class="Bordered">USB[board]::manufacturer ID::model code::serial number[::USB interface number]::RAW</td>
+<td class="Bordered"><a href="../lvvisaprop/USB_Raw.html">USB Raw</a></td>
+</tr>
+</table>
+
+<p class="Body">The VXI keyword is used for VXI instruments through either embedded or MXIbus controllers. The GPIB keyword is used to establish communication with a GPIB device. The GPIB-VXI keyword is used for a GPIB-VXI controller. The ASRL keyword is used to establish communication with an asynchronous serial (such as RS232) device.</p>
+<p class="Body">The INSTR keyword specifies a VISA resource of the type INSTR.</p>
+<p class="Body">The following table shows the default value for optional string segments.</p>
+
+<table class="Bordered"><tr><th class="Bordered">Optional String Segment</th><th class="Bordered">Default Value</th></tr>
+<tr><td class="Bordered">board</td><td class="Bordered"><span class="Monospace">0</span></td></tr>
+<tr><td class="Bordered">GPIB secondary address</td><td class="Bordered">None</td></tr>
+<tr><td class="Bordered">LAN device name</td><td class="Bordered"><span class="Monospace">inst0</span></td></tr>
+<tr><td class="Bordered">PXI function</td><td class="Bordered"><span class="Monospace">0</span></td></tr>
+<tr><td class="Bordered">USB interface number</td><td class="Bordered">lowest numbered relevant interface</td></tr></table>
+<p class="Body">The following table shows examples of address strings.</p>
+
+<table class="Bordered"><tr><th class="Bordered">Address String</th><th class="Bordered">Description</th></tr>
+<tr><td class="Bordered">VXI0::1::INSTR</td><td class="Bordered">A VXI device at logical address 1 in VXI interface VXI0.</td></tr>
+<tr><td class="Bordered">GPIB-VXI::9::INSTR</td><td class="Bordered">A VXI device at logical address 9 in a GPIB-VXI controlled system.</td></tr>
+<tr><td class="Bordered">GPIB::1::0::INSTR</td><td class="Bordered">A GPIB device at primary address 1 and secondary address 0 in GPIB interface 0.</td></tr>
+<tr><td class="Bordered">ASRL1::INSTR</td><td class="Bordered">A serial device attached to interface ASRL1.</td></tr>
+<tr><td class="Bordered">VXI::MEMACC</td><td class="Bordered">Board-level register access to the VXI interface.</td></tr>
+<tr><td class="Bordered">GPIB-VXI1::MEMACC</td><td class="Bordered">Board-level register access to GPIB-VXI interface number 1.</td></tr>
+<tr><td class="Bordered">GPIB2::INTFC</td><td class="Bordered">Interface or raw resource for GPIB interface 2.</td></tr>
+<tr><td class="Bordered">VXI::1::BACKPLANE</td><td class="Bordered">Mainframe resource for chassis 1 on the default VXI system, which is interface 0.</td></tr>
+<tr><td class="Bordered">GPIB-VXI2::BACKPLANE</td><td class="Bordered">Mainframe resource for default chassis on GPIB-VXI interface 2.</td></tr>
+<tr><td class="Bordered">GPIB1::SERVANT</td><td class="Bordered">Servant/device-side resource for GPIB interface 1.</td></tr>
+<tr><td class="Bordered">VXI0::SERVANT</td><td class="Bordered">Servant/device-side resource for VXI interface 0.</td></tr>
+<tr><td class="Bordered">TCPIP0::1.2.3.4::999::SOCKET</td><td class="Bordered">Raw TCP/IP access to port 999 at the specified IP address.</td></tr>
+<tr><td class="Bordered">TCPIP::dev.company.com::INSTR</td><td class="Bordered">A TCP/IP device using VXI-11 located at the specified address. This uses the default LAN Device Name of inst0. </td></tr>
+<tr><td class="Bordered">PXI::15::INSTR</td><td class="Bordered">PXI device number 15 on bus 0.</td></tr>
+<tr><td class="Bordered">PXI0::2-12.1::INSTR</td><td class="Bordered">PXI bus number 2, device 12 with function 1.</td></tr>
+<tr><td class="Bordered">PXI0::MEMACC</td><td class="Bordered">PXI MEMACC session.</td></tr>
+<tr><td class="Bordered">visa://hostname/resource</td><td class="Bordered">The resource on the specified remote system. The hostname can be represented as either an IP address (dot-notation) or network machine name. This remote system need not be explicitly configured on the client system.</td></tr>
+<tr><td class="Bordered">USB::0x1234::125::A22-5::INSTR</td><td class="Bordered">A USB Test &amp; Measurement class device with manufacturer ID 0x1234, model code 125, and serial number A22-5. This uses the first available USBTMC interface of the device. This is usually number 0.</td></tr>
+<tr><td class="Bordered">USB::0x5678::0x33::SN999::1::RAW</td><td class="Bordered">A raw USB nonclass device with manufacturer ID 0x5678, model code 0x33, and serial number SN999. This uses the device interface number 1.</td></tr></table>
+
+<p class="Body">By default, the <strong>VISA resource name</strong> control is set to the <a href="../lvvisaprop/Instr.html">Instr</a> class, which also corresponds to the class of the session to be opened. You can change the class type by right-clicking the control in edit mode and selecting a <a href="../lvvisaprop/VISA_object.html">different class</a> from the shortcut menu.</p>
+<p class="Body">VISA functions vary in the class of <strong>VISA resource name</strong> that can be wired to them. The valid classes for each function are listed in the <em>NI-VISA Help</em>. For example, the functions on the <a href="High_Level_Reg_Acc_Func.html">Register Access</a> and <a href="Low_Level_Reg_Acc_Fun_Desc.html">Low Level Register Access</a> palettes do not accept VISA sessions of class GPIB Instr or Serial Instr.</p>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;You can wire resource names set to the <a href="../lvvisaprop/Event_Class.html">Event</a> classes only to the <a href="VISA_Close.html">VISA Close</a> function and a <a href="../glang/Property_Node.html">Property Node</a>.</td></tr></table>
+
+<p class="Body">If you wire the <strong>VISA resource name</strong> control to a function that does not accept the class of the session, or if you wire two resource names of differing classes together, the block diagram will not run and a <a href="../lverror/edClassConflict.html">Class Conflict</a> error is reported.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;VISA name controls and constants are available on all platforms. However, if you try to run a VI with a name control that contains a resource string for a device that your platform does not support, you will receive an error.</td>
+</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4200Estructureshlp -->
+<title>Adding and Duplicating Subdiagrams</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+</head>
+<body bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Adding and Duplicating Subdiagrams</h1>
+
+<p class="Body">Right-click a structure border and select <strong>Add Case</strong> (or <strong>Frame</strong> or <strong>Subdiagram</strong>) <strong>After</strong> or <strong>Before</strong>, if available, from the shortcut menu to add a <a href="../lvconcepts/case_sequence_inplace_disable.html">subdiagram</a>. You also can press the &lt;Shift-Enter&gt; keys in the selector label to add a subdiagram to a structure.</p>
+
+<p class="Body">Complete the following steps to make a copy of the visible subdiagram in a Case, Stacked Sequence, Conditional Disable, Diagram Disable, or Type Specialization structure and insert it after the original subdiagram.</p>
+						<ol>
+							<li><a href="Moving_between_Subdiagrams.html">Move to the subdiagram</a> you want to duplicate.</li>
+							<li>Right-click the structure border and select <strong>Duplicate Case</strong> (or <strong>Frame</strong> or <strong>Subdiagram</strong>) from the shortcut menu. The duplicate subdiagram contains all objects from the original subdiagram except block diagram terminals that correspond to front panel objects.</li>
+</ol>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;You also can press the &lt;Ctrl-Shift-Enter&gt; keys in the case selector label to duplicate the visible subdiagram of a Case structure.</td>
+</tr>
+</table>
+
+<ol start="3">
+							<li>If you are <a href="Creating_Cond_Disable_Struc.html">configuring a Conditional Disable structure</a>, right-click the structure border and select <strong>Duplicate Subdiagram</strong> from the shortcut menu to display the <a href="../lvdialog/Configure_Condition_DB.html">Configure Condition</a> dialog box. Select a <strong>Symbol</strong> and enter a <strong>Value</strong> in the <strong>Configure Condition</strong> dialog box.</li></ol>
+					
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;<!-- start parent: ../lvconcepts/Cond_Diagram_Disable.html-->If you do not use the Conditional Disable structure in a LabVIEW project, <span class="DNL"><span class="Monospace">RUN_TIME_ENGINE</span></span>, <span class="DNL"><span class="Monospace">TARGET_BITNESS</span></span>, and <span class="DNL"><span class="Monospace">TARGET_TYPE</span></span> are the only symbols available. If you use the Conditional Disable structure in a LabVIEW project, you also can create and define symbols using the <a href="../lvdialog/Conditional_Disable_Project.html">Conditional Disable Symbols</a> page.<!-- end parent: ../lvconcepts/Cond_Diagram_Disable.html --> </td>
+</tr>
+</table>
+<p class="Body">Consider the following issues when you add or duplicate a subdiagram:</p>
+<ul>
+<li><!-- Begin parent: ../lvconcepts/Loops_and_Structures.xml -->When you add, <a href="Deleting_Subdiagrams.html">delete</a>, or <a href="Rearrange_Subdiagrams.html">rearrange frames</a> in a Stacked Sequence structure, LabVIEW automatically adjusts the numbers in the frame labels.<!-- End parent: ../lvconcepts/Loops_and_Structures.xml --></li>
+<li><!-- Begin parent: ../lvconcepts/Loops_and_Structures.xml -->When you add or delete frames in a Flat Sequence structure, the structure resizes automatically.<!-- End parent: ../lvconcepts/Loops_and_Structures.xml --></li>
+<li><!-- Begin parent: lvhelp Rearrange_Subdiagrams.html -->When you rearrange the subdiagrams in a <a href="../glang/Conditional_Disable_Structure.html">Conditional Disable</a> structure, multiple subdiagrams can be TRUE, but LabVIEW compiles and executes only  the first subdiagram that is TRUE.<!-- End parent: lvhelp Rearrange_Subdiagrams.html --></li>
+<li>
+<p>Adding or deleting subdiagrams in a <a href="../glang/type_specialization_structure.html">Type Specialization</a> structure affects the subdiagram labels and how the VI runs. This is because the Type Specialization structure attempts to compile each subdiagram in order and declines subdiagrams with syntax errors. It accepts the first subdiagram with no syntax error and ignores the remaining subdiagrams.</p>
+<p>For example, the following Type Specialization structure has subdiagrams A, B, and C. It declines the first two subdiagrams and accepts the last subdiagram C (indexed 2). If you add subdiagram D before subdiagram C, the index of subdiagram C becomes 3. The structure accepts subdiagram D and ignores subdiagram C because the structure compiles subdiagram D with no error before attempting to compile subdiagram C.</p>
+<img src="loc_bd_tss_adding.gif">
+</li>
+<li>You also can <a href="AddDupEventCase.html">add or duplicate cases for event structures</a>.</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 3500Edebugginghlp -->
+
+<title>Setting up Error I/O in a VI</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Setting up Error I/O in a VI
+</h1>
+<p class="Body">Most VIs and functions provide error I/O information. This information is useful to identify the location of errors on the block diagram that occur at run time.
+</p>
+<p class="Body">Complete the following steps to set up error I/O in a VI.
+</p>
+<ol>
+
+<li>Create an error cluster control by right-clicking a subVI or function <strong>error in</strong> terminal and selecting <strong>Create&#0187;Control</strong> from the shortcut menu. You also can find the error cluster controls on the <strong>Array, Matrix &amp; Cluster</strong> and <strong>Classic Array, Matrix &amp; Cluster</strong> palettes.
+</li>
+<li>With the first subVI or function, wire the <strong>error out</strong> output to the <strong>error in</strong> input of the next subVI or function.
+</li>
+<li>Repeat step 2 for subsequent subVIs and functions until you reach the last subVI or function in the data flow.
+</li>
+<li>On the last function or subVI, create an error indicator by right-clicking the <strong>error out</strong> parameter and selecting <strong>Create&#0187;Indicator</strong> from the shortcut menu.
+</li>
+<li><a href="Assigning_Controls_and_Ind.html">On the connector pane</a> of the VI, wire the <strong>error in</strong> control to a terminal and the <strong>error out</strong> indicator to another terminal.
+</li>
+</ol>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;LabVIEW standard is to wire <strong>error in</strong> to the lower left terminal and <strong>error out</strong> to the lower right terminal on the connector pane.</td></tr></table>
+
+
+
+<p class="Body">Some VIs and functions return errors with numeric error codes instead of error clusters. If a VI uses the <strong>error</strong> or <strong>error code</strong> output instead of the <strong>error out</strong> output, wire an <a href="../glang/General_Error_Handler.html">error handler VI</a> to the VI.
+</p>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 6700Ecomparisonhlp -->
+
+<title>Comparing Clusters</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Comparing Clusters</h1>
+
+<!-- Begin parent: UM 6700Ecomparison -->
+<p class="Body"><a href="../lvconcepts/Comparison_Funcs.html#Comparing_Arrays_and_Clusters">Clusters you compare</a> must include the same number of elements, each element in the clusters must be of compatible types, and the elements must be in the same cluster order. For example, you can compare a cluster of a DBL and a string to a cluster of an I32 and a string.</p>
+<p class="Body">In Compare Elements mode, <a href="../glang/Comparison_Functions.html">Comparison</a> functions return a cluster of Boolean elements, one for each corresponding element in the input clusters.</p> 
+<p class="Body">In Compare Aggregates mode, comparison functions return a single Boolean result after comparing the elements in a cluster. Comparison functions compare elements sequentially until a decision can be made, much like the alphabetical ordering of English words, where letters of each word are compared until they are not equal. Therefore, the function performs the following steps to determine the result of the comparison:</p>
+			<ul>
+				<li>The function compares corresponding elements in each input cluster, starting at the beginning of the cluster.</li>
+				<li>If the corresponding elements are <em>not</em> equal, the function stops&#8212;it returns the result of this comparison.</li>
+				<li>If the corresponding elements are equal, the comparison function processes the next pair of values, until it finds an inequality or reaches the end of the input clusters.</li>
+			</ul>
+<!-- End parent: UM 6700Ecomparison -->
+
+
+
+
+</body>
+</html>

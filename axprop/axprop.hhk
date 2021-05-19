@@ -1,0 +1,1435 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD>
+<BODY>
+<OBJECT type="text/site properties">
+	<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Abort (ActiveX VI method)">
+		<param name="Local" value="VI_Abort_VIAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ActiveItemsInTree (ActiveX Project property)">
+		<param name="Local" value="Project_ActiveItemsInTreeAX.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ActiveX">
+		<param name="See Also" value="ActiveX">
+		</OBJECT>
+	<UL>		
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Application methods">
+			<param name="Local" value="App_Class_Methods.html">
+			</OBJECT>		
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Application properties">
+			<param name="Local" value="Application_Class.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="enumerations">
+			<param name="Local" value="ActiveX_Enumerations.html">
+			</OBJECT>		
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VI methods">
+			<param name="Local" value="VI_Class_Method.html">
+			</OBJECT>		
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VI properties">
+			<param name="Local" value="VirtualInstrument_Class.html">
+			</OBJECT>
+</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AddAbility (ActiveX XInterfaceLibrary method)">
+		<param name="Local" value="XInterfaceLibrary_AddAbility.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AddFile (ActiveX ProjectItem method)">
+		<param name="Local" value="ProjectItem_AddFile.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AddItem (ActiveX ProjectItem method)">
+		<param name="Local" value="ProjectItem_AddItem.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AddItemFromMemory (ActiveX ProjectItem method)">
+		<param name="Local" value="ProjItem_AddItemMemAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AddMethod (ActiveX XInterfaceLibrary method)">
+		<param name="Local" value="XInterfaceLibrary_AddMethod.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AddPropertyVI (ActiveX PropertyFolder method)">
+		<param name="Local" value="PropertyFolder_AddPropertyVI.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AlarmsEventsDBComputer (ActiveX Library property)">
+		<param name="Local" value="Lib_AlarmsEventsDbCompAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AlarmsEventsDBName (ActiveX Library property)">
+		<param name="Local" value="Lib_AlarmsEventsDb_NmeAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AlarmsEventsDBPath (ActiveX Library property)">
+		<param name="Local" value="Lib_AlarmsEventsDb_PathAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AlarmsEventsEnable (ActiveX Library property)">
+		<param name="Local" value="Lib_AlarmsEvents_EnableAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AlarmsEventsUseDataLoggingDB (ActiveX Library property)">
+		<param name="Local" value="Lib_AlarmsEvtsUseDatLog_DbAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AllMethodsOfLVClass2 (ActiveX Application method)">
+		<param name="Local" value="App_AllMethodsOfLVClass2AX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AllowDebugging (ActiveX VI property)">
+		<param name="Local" value="AllowDebugging.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AllProjects (ActiveX Application property)">
+		<param name="Local" value="App_ProjProjs.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AllVIsInMemory (ActiveX Application property)">
+		<param name="Local" value="AllVIsInMemory.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AppKind (ActiveX Application property)">
+		<param name="Local" value="AppKind.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AppKindEnum (ActiveX enumeration)">
+		<param name="Local" value="AppKindEnum.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Application (ActiveX Project property)">
+		<param name="Local" value="Proj_ApplicationAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Application class (ActiveX)">
+		<param name="See Also" value="Application class (ActiveX)">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="methods">
+			<param name="Local" value="App_Class_Methods.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="properties">
+			<param name="Local" value="Application_Class.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ApplicationDirectory (ActiveX Application property)">
+		<param name="Local" value="ApplicationDirectory.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AppName (ActiveX Application property)">
+		<param name="Local" value="Application_AppNameAX.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AppTargCPUEnum (ActiveX enumeration)">
+		<param name="Local" value="AppTargCPUEnum.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AppTargetCPU (ActiveX Application property)">
+		<param name="Local" value="AppTargetCPU.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AppTargetOS (ActiveX Application property)">
+		<param name="Local" value="AppTargetOS.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AppTargOSEnum (ActiveX enumeration)">
+		<param name="Local" value="AppTargOSEnum.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="AutomaticClose (ActiveX Application property)">
+		<param name="Local" value="AutomaticClose.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="BDModificationBitSet (ActiveX VI property)">
+		<param name="Local" value="BDModificationBitSet.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="BDSize (ActiveX VI property)">
+		<param name="Local" value="BDSize.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="BringToFront (ActiveX Application method)">
+		<param name="Local" value="BringToFront.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="BrowseDataSocket (ActiveX Application method)">
+		<param name="Local" value="App_Browse_DataSocketAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="BuildSpecifications (ActiveX TargetItem property)">
+		<param name="Local" value="TargetItem_Build_SpecAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Call (ActiveX VI method)">
+		<param name="Local" value="Call.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Call2 (ActiveX VI method)">
+		<param name="Local" value="Call2.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Callers (ActiveX VI property)">
+		<param name="Local" value="Callers.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CenterFrontPanel (ActiveX VI method)">
+		<param name="Local" value="VI_CenterFrontPanel.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Children (ActiveX ProjectItem property)">
+		<param name="Local" value="ProjectItem_ChildrenAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CloneName (ActiveX VI property)">
+		<param name="Local" value="VI_CloneName.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Close (ActiveX Project method)">
+		<param name="Local" value="Proj_CloseAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CloseFPAfterCall (ActiveX VI property)">
+		<param name="Local" value="CloseFPAfterCall.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CloseFrontPanel (ActiveX VI method)">
+		<param name="Local" value="VI_Close_Front_PanelAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CloseWindow (ActiveX Project method)">
+		<param name="Local" value="Project_Close_WindowAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CmdArgs (ActiveX Application property)">
+		<param name="Local" value="App_Command_Line_ArgsAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CodeSize (ActiveX VI property)">
+		<param name="Local" value="CodeSize.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ContainsCompiledCode (ActiveX Library property)">
+		<param name="Local" value="Library_ContainsCompCodeAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ContainsConflicts (ActiveX ProjectItem property)">
+		<param name="Local" value="ProjItem_ContainsConflictsAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CreateLibrary (ActiveX Application method)">
+		<param name="Local" value="Application_CreateLibrary.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DataLoggingDBComputer (ActiveX Library property)">
+		<param name="Local" value="Lib_DataLogging_Db_CompAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DataLoggingDBName (ActiveX Library property)">
+		<param name="Local" value="Lib_DataLogging_Db_NameAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DataLoggingDBPath (ActiveX Library property)">
+		<param name="Local" value="Lib_DataLogging_Db_PathAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DataLoggingEnable (ActiveX Library property)">
+		<param name="Local" value="Library_DataLogging_EnableAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DataLoggingLifespan (ActiveX Library property)">
+		<param name="Local" value="Lib_DataLogging_LifespanAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DataSize (ActiveX VI property)">
+		<param name="Local" value="DataSize.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DefaultDataLocation (ActiveX Application property)">
+		<param name="Local" value="App_AppDflt_Data_DirAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Delete (ActiveX ProjectItem method)">
+		<param name="Local" value="ProjItem_DeleteAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DeleteLibTag (ActiveX Library method)">
+		<param name="Local" value="Library_Delete_Library_TagAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DeleteTag (ActiveX ProjectItem method)">
+		<param name="Local" value="ProjectItem_Delete_TagAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Dependencies (ActiveX TargetItem property)">
+		<param name="Local" value="TargetItem_DependenciesAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DeployItems (ActiveX Project method)">
+		<param name="Local" value="Project_DeployItems.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Description properties (ActiveX)">
+		<param name="See Also" value="Description properties (ActiveX)">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Library">
+			<param name="Local" value="Library_DescriptionAX.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Project">
+			<param name="Local" value="Proj_DescriptionAX.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VI class">
+			<param name="Local" value="Description.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="XPropertyFolder">
+			<param name="Local" value="XPropertyFolder_DescriptionAX.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DisconnectFromLibrary methods (ActiveX)">
+		<param name="See Also" value="DisconnectFromLibrary methods (ActiveX)">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Library">
+			<param name="Local" value="Lib_Disconnect_From_LibAX.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VI class">
+			<param name="Local" value="VI_DisconnectFromLibrary.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DisplayName (ActiveX ProjectItem property)">
+		<param name="Local" value="ProjItem_Display_NameAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="EditMode (ActiveX VI property)">
+		<param name="Local" value="EditMode.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="enumerations">
+		<param name="See Also" value="enumerations">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ActiveX">
+			<param name="Local" value="ActiveX_Enumerations.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ExecInlining (ActiveX VI property)">
+		<param name="Local" value="VI_ExecInliningAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ExecIsInlineable (ActiveX VI property)">
+		<param name="Local" value="VI_ExecIsInlineableAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ExecPriority (ActiveX VI property)">
+		<param name="Local" value="ExecPriority.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ExecState (ActiveX VI property)">
+		<param name="Local" value="ExecState.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ExecStateEnum (ActiveX enumeration)">
+		<param name="Local" value="ExecStateEnum.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ExpandWhenDroppedAsSubVI (ActiveX VI property)">
+		<param name="Local" value="VI_ExpndWhenDropdAsSubVIAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ExportedVIs (ActiveX Application property)">
+		<param name="Local" value="ExportedVIs.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ExportVIStrings (ActiveX VI method)">
+		<param name="Local" value="ExportVIStrings.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FindCallers (ActiveX ProjectItem property)">
+		<param name="Local" value="ProjectItem_FindCallersAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FindChildren (ActiveX ProjectItem property)">
+		<param name="Local" value="ProjectItem_FindChildrenAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FindConflicts (ActiveX ProjectItem property)">
+		<param name="Local" value="ProjectItem_FindConflictsAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FindFriends (ActiveX ProjectItem property)">
+		<param name="Local" value="ProjectItem_FindFriendsAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FindItemsIncorrectlyClaimedByLibrary (ActiveX ProjectItem property)">
+		<param name="Local" value="ProjItm_FndItmIncrtClmdLibAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FindItemsThatMakeThisADependency (ActiveX ProjectItem property)">
+		<param name="Local" value="ProjectItem_FindItemsThatMakeThisADependencyAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FindItemsWithNoCallers (ActiveX ProjectItem property)">
+		<param name="Local" value="ProjectItem_FindItemsWithNoCallersAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FindSubVIs (ActiveX ProjectItem property)">
+		<param name="Local" value="ProjectItem_FindSubVIsAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FindVariableCallers (ActiveX ProjectItem property)">
+		<param name="Local" value="ProjectItem_FindVariableCallersAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPAllowRTPopup (ActiveX VI property)">
+		<param name="Local" value="FPAllowRTPopup.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPBehavior (ActiveX VI property)">
+		<param name="Local" value="VI_FP_WinBehaviorAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPGetRuntimePos (ActiveX VI method)">
+		<param name="Local" value="VI_FPGetRuntimePos.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPHiliteReturnButton (ActiveX VI property)">
+		<param name="Local" value="FPHiliteReturnButton.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPKeepWinProps (ActiveX VI property)">
+		<param name="Local" value="FPKeepWinProps.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPMinimizable (ActiveX VI property)">
+		<param name="Local" value="VI_Frnt_Pnl_WinMinimizeAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPModificationBitSet (ActiveX VI property)">
+		<param name="Local" value="FPModificationBitSet.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPMonitor (ActiveX VI property)">
+		<param name="Local" value="VI_FPMonitor.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPResizable (ActiveX VI property)">
+		<param name="Local" value="FPResizable.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPRunTimePosEnum (ActiveX enumeration)">
+		<param name="Local" value="FPRunTimePosEnum.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPRunTimePosRunCentered (ActiveX VI method)">
+		<param name="Local" value="VI_FPRTPRunCentered.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPRunTimePosRunCustom (ActiveX VI method)">
+		<param name="Local" value="VI_FPRTPRunCustom.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPRunTimePosRunMax (ActiveX VI method)">
+		<param name="Local" value="VI_FPRTPRunMax.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPRunTimePosRunMin (ActiveX VI method)">
+		<param name="Local" value="VI_FPRTPRunMin.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPRunTimePosRunUnchanged (ActiveX VI method)">
+		<param name="Local" value="VI_FPRTPRunUnchanged.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPRunTransparently (ActiveX VI property)">
+		<param name="Local" value="VI_FPRunTransparently.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPShowMenuBar (ActiveX VI property)">
+		<param name="Local" value="FPShowMenuBar.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPSize (ActiveX VI property)">
+		<param name="Local" value="FPSize.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPState (ActiveX VI property)">
+		<param name="Local" value="VI_FP_WinStateAX.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPStateEnum (ActiveX enumeration)">
+		<param name="Local" value="FPStateEnum.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPTitleBarVisible (ActiveX VI property)">
+		<param name="Local" value="FPTitleBarVisible.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPTransparency (ActiveX VI property)">
+		<param name="Local" value="VI_FPTransparency.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPWinBounds (ActiveX VI property)">
+		<param name="Local" value="FPWinBounds.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPWinClosable (ActiveX VI property)">
+		<param name="Local" value="FPWinClosable.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPWinCustomTitle (ActiveX VI property)">
+		<param name="Local" value="FPWinCustomTitle.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPWinIsFrontMost (ActiveX VI property)">
+		<param name="Local" value="FPWinIsFrontMost.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPWinPanelBounds (ActiveX VI property)">
+		<param name="Local" value="FPWinPanelBounds.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FPWinTitle (ActiveX VI property)">
+		<param name="Local" value="FPWinTitle.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GetAllDescendents (ActiveX ProjectItem method)">
+		<param name="Local" value="ProjItem_All_DescAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GetControlValue (ActiveX VI method)">
+		<param name="Local" value="GetControlValue.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GetHierImgScaled (ActiveX Application method)">
+		<param name="Local" value="Application_GetHierImgScaledAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GetLibTag (ActiveX Library method)">
+		<param name="Local" value="Library_Get_Library_TagAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GetLockState methods (ActiveX)">
+		<param name="See Also" value="GetLockState methods (ActiveX)">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Library">
+			<param name="Local" value="Library_Get_Lock_StateAX.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VI class">
+			<param name="Local" value="GetLockState.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GetSourceScope (ActiveX Library method)">
+		<param name="Local" value="Library_GetSourceScopeAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GetTag (ActiveX ProjectItem method)">
+		<param name="Local" value="ProjectItem_Get_TagAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GetTagNames methods (ActiveX)">
+		<param name="See Also" value="GetTagNames methods (ActiveX)">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Library">
+			<param name="Local" value="Lib_Get_Lib_Tag_NamesAX.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ProjectItem">
+			<param name="Local" value="ProjectItem_Get_Tag_NamesAX.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GetVIDependencies (ActiveX VI method)">
+		<param name="Local" value="VI_GetVIDependenciesAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GetVIEditorVersion (ActiveX Application method)">
+		<param name="Local" value="Application_GetVIEditorVersionAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GetVIReference (ActiveX Application method)">
+		<param name="Local" value="GetVIReference.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GetVIVersion (ActiveX Application method)">
+		<param name="Local" value="App_Get_VI_VersionAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GetXMLTag (ActiveX ProjectItem method)">
+		<param name="Local" value="ProjectItem_Get_XML_TagAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="HelpDocumentPath properties (ActiveX)">
+		<param name="See Also" value="HelpDocumentPath properties (ActiveX)">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Library">
+			<param name="Local" value="Library_Help_Document_PathAX.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VI class">
+			<param name="Local" value="HelpDocumentPath.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="HelpDocumentTag properties (ActiveX)">
+		<param name="See Also" value="HelpDocumentTag properties (ActiveX)">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Library">
+			<param name="Local" value="Library_Help_Document_TagAX.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VI class">
+			<param name="Local" value="HelpDocumentTag.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="HelpDocumentUrl (ActiveX VI property)">
+		<param name="Local" value="VI_HelpDocumentUrlAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="HelpTag (ActiveX XPropertyFolder property)">
+		<param name="Local" value="XPropertyFolder_HelpTag.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="HelpUseOnline (ActiveX VI property)">
+		<param name="Local" value="VI_HelpUseOnlineAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="HiliteInProjectWindow (ActiveX Library method)">
+		<param name="Local" value="Library_HiliteInProjectWindowAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="HistAddCommentsAtSave (ActiveX VI property)">
+		<param name="Local" value="HistAddCommentsAtSave.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="HistoryText (ActiveX VI property)">
+		<param name="Local" value="HistoryText.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="HistPromptAtClose (ActiveX VI property)">
+		<param name="Local" value="HistPromptAtClose.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="HistPromptForCommentsAtSave (ActiveX VI property)">
+		<param name="Local" value="HistPromptForCommentAtSave.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="HistRecordAppComments (ActiveX VI property)">
+		<param name="Local" value="HistRecordAppComments.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="HistUseDefaults (ActiveX VI property)">
+		<param name="Local" value="HistUseDefaults.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="HTMLImageFormatEnum (ActiveX enumeration)">
+		<param name="Local" value="HTMLImageFormatEnum.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Icon (ActiveX ProjectItem property)">
+		<param name="Local" value="ProjectItem_IconAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Identifier (ActiveX XPropertyFolder property)">
+		<param name="Local" value="XPropertyFolder_IdentifierAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ImportVIStrings (ActiveX VI method)">
+		<param name="Local" value="ImportVIStrings.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="InConflict (ActiveX ProjectItem property)">
+		<param name="Local" value="ProjItem_InConflictAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="IsCloneVI (ActiveX VI property)">
+		<param name="Local" value="VI_IsCloneVI.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="IsProbe (ActiveX VI property)">
+		<param name="Local" value="IsProbe.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="IsReentrant (ActiveX VI property)">
+		<param name="Local" value="IsReentrant.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ItemID (ActiveX ProjectItem property)">
+		<param name="Local" value="ProjectItem_ItemIDAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Language (ActiveX Application property)">
+		<param name="Local" value="App_AppLangAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Library">
+		<param name="See Also" value="Library">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="methods (ActiveX)">
+			<param name="Local" value="LibraryAX_m.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="properties (ActiveX)">
+			<param name="Local" value="LibraryAX_p.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Library (ActiveX VI property)">
+		<param name="Local" value="VI_LibraryAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="LibraryGetFileLVVersion (ActiveX Application method)">
+		<param name="Local" value="LibGetProjectLibFileVersion.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="LibraryItemScopeEnum (ActiveX enumeration)">
+		<param name="Local" value="LibraryItemScopeEnum.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="LibraryItemType (ActiveX ProjectItem property)">
+		<param name="Local" value="ProjectItem_LibraryItemType.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="LibraryItemTypeString (ActiveX ProjectItem property)">
+		<param name="Local" value="ProjectItem_LibraryItemTypeString.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="LocalName (ActiveX Library property)">
+		<param name="Local" value="Library_Localized_NameAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="LogAtFinish (ActiveX VI property)">
+		<param name="Local" value="LogAtFinish.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="LogFilePath (ActiveX VI property)">
+		<param name="Local" value="LogFilePath.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="LongName (ActiveX XPropertyFolder property)">
+		<param name="Local" value="XPropertyFolder_LongName.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="LVClassImplementingVIPath (ActiveX Application method)">
+		<param name="Local" value="App_LVClassImplementingVIPathAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="MakeCurValueDefault (ActiveX VI method)">
+		<param name="Local" value="MakeCurValueDefault.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="MassCompile (ActiveX Application method)">
+		<param name="Local" value="MassCompile.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="methods">
+		<param name="See Also" value="methods">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Application class (ActiveX)">
+			<param name="Local" value="App_Class_Methods.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VI class (ActiveX)">
+			<param name="Local" value="VI_Class_Method.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="MyComputer (ActiveX Project property)">
+		<param name="Local" value="Project_My_ComputerAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Name properties (ActiveX)">
+		<param name="See Also" value="Name properties (ActiveX)">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Project">
+			<param name="Local" value="Proj_NameAX.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ProjectItem">
+			<param name="Local" value="ProjItem_NameAX.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VI class">
+			<param name="Local" value="Name.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="NewProject (ActiveX Application method)">
+		<param name="Local" value="Application_ProjectNew.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="NewProperty (ActiveX XInterfaceLibrary method)">
+		<param name="Local" value="XInterfaceLibrary_NewProperty.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="OpenFrontPanel (ActiveX VI method)">
+		<param name="Local" value="VI_Open_Front_PanelAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="OpenLibrary (ActiveX Application method)">
+		<param name="Local" value="Application_OpenLibrary.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="OpenProject (ActiveX Application method)">
+		<param name="Local" value="App_ProjOpen.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="OpenWindow (ActiveX Project method)">
+		<param name="Local" value="Project_Open_WindowAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="OSBuildNumber (ActiveX Application property)">
+		<param name="Local" value="Application_OSBuildNumberAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="OSDetailedName (ActiveX Application property)">
+		<param name="Local" value="Application_OSDetailedNameAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="OSName (ActiveX Application property)">
+		<param name="Local" value="OSName.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="OSVersion (ActiveX Application property)">
+		<param name="Local" value="OSVersion.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="OwningApp (ActiveX VI property)">
+		<param name="Local" value="VI_OwningApp.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PageOrientationEnum (ActiveX enumeration)">
+		<param name="Local" value="pageOrientationEnum.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Parent (ActiveX ProjectItem property)">
+		<param name="Local" value="ProjectItem_ParentAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Path properties (ActiveX)">
+		<param name="See Also" value="Path properties (ActiveX)">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Project">
+			<param name="Local" value="Proj_PathAX.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ProjectItem">
+			<param name="Local" value="ProjItem_PathAX.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VI class">
+			<param name="Local" value="Path.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PreferredExecSystem (ActiveX VI property)">
+		<param name="Local" value="PreferredExecSystem.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintDefaultPrinter (ActiveX Application property)">
+		<param name="Local" value="App_PrintDefPrinterAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintersAvailable (ActiveX Application property)">
+		<param name="Local" value="App_PrintAvail_PrintersAX.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintFormatEnum (ActiveX enumeration)">
+		<param name="Local" value="PrintFormatEnum.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintHeaderDatePrint (ActiveX VI property)">
+		<param name="Local" value="VI_PrintHead_ContDate_PrntAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintHeaderModifyDate (ActiveX VI property)">
+		<param name="Local" value="VI_PrintHead_ContMdfy_DateAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintHeaderPageNumber (ActiveX VI property)">
+		<param name="Local" value="VI_PrintHead_ContPage_NumAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintHeaderVIIcon (ActiveX VI property)">
+		<param name="Local" value="VI_PrintHead_ContVI_IconAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintHeaderVIName (ActiveX VI property)">
+		<param name="Local" value="VI_PrintHead_ContVI_NameAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintingBDScaling (ActiveX VI property)">
+		<param name="Local" value="VI_PrintBD_ScalingAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintingColorDepth (ActiveX Application property)">
+		<param name="Local" value="App_PrintClrGryscleAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintingFPScaling (ActiveX VI property)">
+		<param name="Local" value="VI_PrintFP_ScalingAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintingHeaders (ActiveX VI property)">
+		<param name="Local" value="VI_PrintPage_HeadersAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintingHeaderVIPath (ActiveX VI property)">
+		<param name="Local" value="VI_PrintHead_ContVI_PathAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintingOrientation (ActiveX VI property)">
+		<param name="Local" value="VI_PrintPage_OrientationAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintLogFileAtFinish (ActiveX VI property)">
+		<param name="Local" value="PrintLogFileAtFinish.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintMargins (ActiveX VI property)">
+		<param name="Local" value="VI_PrintMrgnAX.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintMarginsEnum (ActiveX enumeration)">
+		<param name="Local" value="PrintMarginsEnum.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintMethod (ActiveX Application property)">
+		<param name="Local" value="App_PrintMethodAX.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintMethodsEnum (ActiveX enumeration)">
+		<param name="Local" value="printMethodsenum.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintPanel (ActiveX VI method)">
+		<param name="Local" value="PrintPanel.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintSetupCustomClusterConstants (ActiveX Application property)">
+		<param name="Local" value="Application_PrintSetupCustomClusterConstantsAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintSetupCustomConnector (ActiveX Application property)">
+		<param name="Local" value="PrintSetupCustomConnector.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintSetupCustomControlDesc (ActiveX Application property)">
+		<param name="Local" value="PrintSetupCustomControlDes.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintSetupCustomControls (ActiveX Application property)">
+		<param name="Local" value="PrintSetupCustomControls.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintSetupCustomControlTypes (ActiveX Application property)">
+		<param name="Local" value="PrintSetupCutomCtrlTypes.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintSetupCustomDescription (ActiveX Application property)">
+		<param name="Local" value="PrintSetupCustomDesc.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintSetupCustomDiagram (ActiveX Application property)">
+		<param name="Local" value="PrintSetupCustomDiagram.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintSetupCustomDiagramHidden (ActiveX Application property)">
+		<param name="Local" value="PrintSetupCustomDiagHidden.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintSetupCustomDiagramRepeat (ActiveX Application property)">
+		<param name="Local" value="PrintSetupCustomDiagRepeat.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintSetupCustomExpressVIConfigInfo (ActiveX Application property)">
+		<param name="Local" value="App_PrntCust_ExpVI_CfgAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintSetupCustomHierarchy (ActiveX Application property)">
+		<param name="Local" value="PrintSetupCustomHierarchy.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintSetupCustomHistory (ActiveX Application property)">
+		<param name="Local" value="PrintSetupCustomHistory.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintSetupCustomLabel (ActiveX Application property)">
+		<param name="Local" value="Application_PrintSetupCustomLabel.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintSetupCustomLabelEnum (ActiveX enumeration)">
+		<param name="Local" value="PrintSetupCustomLabelEnum.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintSetupCustomPanel (ActiveX Application property)">
+		<param name="Local" value="PrintSetupCustomPanel.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintSetupCustomPanelBorder (ActiveX Application property)">
+		<param name="Local" value="PrintSetupCustomPanelBrder.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintSetupCustomSubVIs (ActiveX Application property)">
+		<param name="Local" value="PrintSetupCustomSubVIs.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintSetupFileWrapText (ActiveX Application property)">
+		<param name="Local" value="PrintSetupFileWrapText.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintSetupJPEGQuality (ActiveX Application property)">
+		<param name="Local" value="PrintSetupJPEGQuality.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintSetupPNGCompressLevel (ActiveX Application property)">
+		<param name="Local" value="PrintSetupPNGCompressLevel.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintVIToHTML (ActiveX VI method)">
+		<param name="Local" value="PrintVIToHTML.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintVIToPrinter (ActiveX VI method)">
+		<param name="Local" value="PrintVIToPrinter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintVIToRTF (ActiveX VI method)">
+		<param name="Local" value="PrintVIToRTF.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PrintVIToText (ActiveX VI method)">
+		<param name="Local" value="PrintVIToText.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Project">
+		<param name="See Also" value="Project">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="methods (ActiveX)">
+			<param name="Local" value="ProjectAX_m.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="properties (ActiveX)">
+			<param name="Local" value="ProjectAX_p.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Project (ActiveX ProjectItem property)">
+		<param name="Local" value="ProjectItem_ProjectAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ProjectGetFileLVVersion (ActiveX Application method)">
+		<param name="Local" value="App_ProjGetFileLVVersAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ProjectItem">
+		<param name="See Also" value="ProjectItem">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="methods (ActiveX)">
+			<param name="Local" value="ProjectItemAX_m.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="properties (ActiveX)">
+			<param name="Local" value="ProjectItemAX_p.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="properties">
+		<param name="See Also" value="properties">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Application class (ActiveX)">
+			<param name="Local" value="Application_Class.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VI class (ActiveX)">
+			<param name="Local" value="VirtualInstrument_Class.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PropertyFolder">
+		<param name="See Also" value="PropertyFolder">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="methods (ActiveX)">
+			<param name="Local" value="PropertyFolder_m_ax.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="properties (ActiveX)">
+			<param name="Local" value="PropertyFolder_p_ax.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="QualifiedName (ActiveX Library property)">
+		<param name="Local" value="Library_QualifiedNameAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Quit (ActiveX Application method)">
+		<param name="Local" value="Application_QuitAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ReentrancyType (ActiveX VI property)">
+		<param name="Local" value="VI_ReentrancyTypeAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="RefreshDependencies (ActiveX TargetItem method)">
+		<param name="Local" value="TargetItem_RfrshDepndncsAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ReinitializeAllToDefault (ActiveX VI method)">
+		<param name="Local" value="ReinitializeAllToDefault.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Revert (ActiveX VI method)">
+		<param name="Local" value="Revert.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="RevisionNumber (ActiveX VI property)">
+		<param name="Local" value="RevisionNumber.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Root (ActiveX Project property)">
+		<param name="Local" value="Project_RootAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="RTHostConnected (ActiveX Application property)">
+		<param name="Local" value="App_AppRT_Host_ConnectedAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Run (ActiveX VI method)">
+		<param name="Local" value="Run.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="RunOnOpen (ActiveX VI property)">
+		<param name="Local" value="RunOnOpen.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="RunTimeMenuPath (ActiveX VI property)">
+		<param name="Local" value="RunTimeMenuPath.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Save methods (ActiveX)">
+		<param name="See Also" value="Save methods (ActiveX)">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Library">
+			<param name="Local" value="Library_SaveAX.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Project">
+			<param name="Local" value="Proj_SaveAX.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SaveCopy (ActiveX Library method)">
+		<param name="Local" value="Library_Save_a_CopyAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SaveForPrevious methods (ActiveX)">
+		<param name="See Also" value="SaveForPrevious methods (ActiveX)">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Library">
+			<param name="Local" value="Library_SaveForPrevious.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Project">
+			<param name="Local" value="Project_SaveForPrevious.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VI class">
+			<param name="Local" value="VI_Save_For_PreviousAX.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SaveInstrument (ActiveX VI method)">
+		<param name="Local" value="SaveInstrument.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SaveRunTimeMenu (ActiveX VI method)">
+		<param name="Local" value="SaveRunTimeMenu.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SaveVersion (ActiveX Application property)">
+		<param name="Local" value="Application_SaveVersionAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SaveVersions (ActiveX Application property)">
+		<param name="Local" value="Application_SaveVersionsAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SelectedItemsInTree (ActiveX Project property)">
+		<param name="Local" value="Project_Sel_Items_in_TreeAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SetControlValue (ActiveX VI method)">
+		<param name="Local" value="SetControlValue.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SetLibTag (ActiveX Library method)">
+		<param name="Local" value="Library_Set_Library_TagAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SetLockState methods (ActiveX)">
+		<param name="See Also" value="SetLockState methods (ActiveX)">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Library">
+			<param name="Local" value="Library_Set_Lock_StateAX.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VI class">
+			<param name="Local" value="SetLockState.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SetSourceScope (ActiveX Library method)">
+		<param name="Local" value="Library_SetSourceScopeAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SetSourceScopeAndPropagate (ActiveX Library method)">
+		<param name="Local" value="Lib_SetSrcScpePropAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SetTag (ActiveX ProjectItem method)">
+		<param name="Local" value="ProjectItem_Set_TagAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SetVIIcon (ActiveX VI method)">
+		<param name="Local" value="SetVIIcon.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SetXMLTag (ActiveX ProjectItem method)">
+		<param name="Local" value="ProjectItem_Set_XML_TagAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ShowFPOnCall (ActiveX VI property)">
+		<param name="Local" value="ShowFPOnCall.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ShowFPOnLoad (ActiveX VI property)">
+		<param name="Local" value="ShowFPOnLoad.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ShowFPTipStrips (ActiveX Application property)">
+		<param name="Local" value="ShowFPTipStrips.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SuspendOnCall (ActiveX VI property)">
+		<param name="Local" value="SuspendOnCall.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Target (ActiveX ProjectItem property)">
+		<param name="Local" value="ProjectItem_TargetAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="TargetItem">
+		<param name="See Also" value="TargetItem">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="methods (ActiveX)">
+			<param name="Local" value="TargetItemAX_m.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="properties (ActiveX)">
+			<param name="Local" value="TargetItemAX_p.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Targets (ActiveX Project property)">
+		<param name="Local" value="Project_TargetsAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="TBShowAbortButton (ActiveX VI property)">
+		<param name="Local" value="TBShowAbortButton.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="TBShowFreeRunButton (ActiveX VI property)">
+		<param name="Local" value="TBShowFreeRunButton.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="TBShowRunButton (ActiveX VI property)">
+		<param name="Local" value="TBShowRunButton.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="TBVisible (ActiveX VI property)">
+		<param name="Local" value="TBVisible.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="TypeGUID (ActiveX ProjectItem property)">
+		<param name="Local" value="ProjectItem_TypeGUID.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="TypeString (ActiveX ProjectItem property)">
+		<param name="Local" value="ProjectItem_TypeString.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="UserName (ActiveX Application property)">
+		<param name="Local" value="UserName.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Version properties (ActiveX)">
+		<param name="See Also" value="Version properties (ActiveX)">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Application class">
+			<param name="Local" value="Version.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Library">
+			<param name="Local" value="Library_VersionAX.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VersionYear (ActiveX Application property)">
+		<param name="Local" value="Application_VersionYearAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VI (ActiveX ProjectItem property)">
+		<param name="Local" value="ProjectItem_ReferenceAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VI class (ActiveX)">
+		<param name="See Also" value="VI class (ActiveX)">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="methods">
+			<param name="Local" value="VI_Class_Method.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="properties">
+			<param name="Local" value="VirtualInstrument_Class.html">
+			</OBJECT>
+	</UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VIExecSysEnum (ActiveX enumeration)">
+		<param name="Local" value="VIExecSysEnum.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VIFPBehaviorEnum (ActiveX enumeration)">
+		<param name="Local" value="VIFPBehaviorenum.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VILockStateEnum (ActiveX enumeration)">
+		<param name="Local" value="VILockStateEnum.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VINoLoad (ActiveX ProjectItem property)">
+		<param name="Local" value="ProjectItem_VINoLoadAX.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VIPriorityEnum (ActiveX enumeration)">
+		<param name="Local" value="VIPriorityEnum.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VIServerPort (ActiveX Application property)">
+		<param name="Local" value="App_SrvrPortAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VisibleInTree (ActiveX ProjectItem property)">
+		<param name="Local" value="ProjectItem_VisibleInTreeAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VIType (ActiveX VI property)">
+		<param name="Local" value="VIType.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VITypeEnum (ActiveX enumeration)">
+		<param name="Local" value="VITypeEnum.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="WindowState (ActiveX Project property)">
+		<param name="Local" value="Project_WindowStateAX.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="XInterfaceLibrary">
+		<param name="See Also" value="XInterfaceLibrary">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="methods (ActiveX)">
+			<param name="Local" value="XInterfaceLibrary_m_ax.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="properties (ActiveX)">
+			<param name="Local" value="XInterfaceLibrary_p_ax.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="XPropertyFolder">
+		<param name="See Also" value="XPropertyFolder">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="methods (ActiveX)">
+			<param name="Local" value="XPropertyFolder_m_ax.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="properties (ActiveX)">
+			<param name="Local" value="XPropertyFolder_p_ax.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="_GetVIQualifiedName (ActiveX Application method)">
+		<param name="Local" value="App_GetVIQualifiedNameAX.html">
+		</OBJECT>
+
+</UL>
+</BODY>
+</HTML>

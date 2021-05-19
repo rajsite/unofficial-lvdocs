@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Step 6: Update the Drop Target with the Drag Data</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+
+<h1>Step 6: Update the Drop Target with the Drag Data</h1>
+<p class="Body">To update the drop target with the drag data, you must determine whether the drop target accepts the custom data name. If the drop target accepts the data name, retrieve the stored drag data and provide the data to the drop target.</p>
+<h2>What to Use</h2>
+<p class="Body">Use the following block diagram objects to update the drop target with the drag data:</p>
+<table class="Usage">
+	<col class="Object"> 
+	<col class="Spacer"> 
+	<col class="Object"> 
+	<col class="Spacer"> 
+	<col class="Object"> 
+	<col class="Spacer"> 
+	<col class="Object"> 
+	<col class="Spacer"> 
+	<col class="Object"> 
+	<tr>
+		<td><a href="../glang/Search_1D_Array.html">Search 1D Array</a></td>
+		<td></td>
+		<td><a href="../glang/Not_Equal.html">Not Equal?</a></td>
+		<td></td>
+		<td><a href="../glang/Case_Structure.html">Case Structure</a></td>
+		<td></td>
+		<td><a href="../glang/Get_Drag_Drop_Data.html">Get Drag Drop Data</a></td>
+		<td></td>
+		<td><a href="../lvprop/Control_Value.html">Value</a></td>
+	</tr>
+	<tr>
+		<td><br><br><br><img src="noloc_bd_searcharray.gif"></td>
+		<td></td>
+		<td><br><br><br><img src="noloc_bd_notequal.gif"></td>
+		<td></td>
+		<td><img src="loc_bd_casestruct.gif"></td>
+		<td></td>
+		<td><br><br><br><img src="noloc_bd_getdragdata.gif"></td>
+		<td></td>
+		<td><br><br><br><img src="loc_bd_valueprop2.gif"></td>
+	</tr>
+	<tr>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object337);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object337);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object473);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object473);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object757);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object757);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object3584);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object3584);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object725);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object725);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+	</tr>
+</table>
+<h2>What to Do</h2>
+<p class="Body">Create the following block diagram to update the drop target with the drag data.</p>
+<img src="loc_bd_dragdropupdate.gif">
+<p class="Body">The following list describes important details about the previous diagram:</p>
+<table>
+	<tr>
+		<td><img src="noloc_eps_callout_1.gif"></td>
+		<td>Searching the <strong>Available Data Names</strong> determines whether the desired data name is available.</td>
+	</tr>
+	<tr>
+		<td><img src="noloc_eps_callout_2.gif"></td>
+		<td>The Get Drag Drop Data function retrieves the drag data you provide to the Start Drag method when you <a href="drag_and_drop_programmatic_start.html">provide the drag data</a>. The data name you provide is the desired custom data name you create in the Mouse Leave event. The data type you provide is the data type of the drag source.<br><br>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="tip.gif" alt="Tip"></td>
+<td><strong>Tip</strong>&nbsp;&nbsp;To ensure that you use the correct data type, right-click the drag source on the block diagram and select <strong>Create&#0187;Constant</strong>. Wire the constant you create to the <strong>type</strong> parameter of the Get Drag Drop Data function.</td>
+</tr>
+</table>
+</td>
+	</tr>
+	<tr>
+		<td><img src="noloc_eps_callout_3.gif"></td>
+		<td>If the data name is found, then the drag is acceptable and you can update the drop target. In the <span class="Monospace">False</span> case of the Case structure, do not update the drop target, and provide a FALSE value to the <strong>Accepted?</strong> input to indicate that the drop is not accepted.</td>
+	</tr>
+	<tr>
+		<td><img src="noloc_eps_callout_4.gif"></td>
+		<td>The Value property refers to the value of the drop target. Use the Value property to update the drop target with the drag data.</td>
+	</tr>
+</table>
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 1100Enumericcihlp -->
+
+<title>Changing Scale Limits</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Changing Scale Limits
+</h1>
+<p class="Body">The outer two markers on slide and rotary controls or indicators are the scale limits. Scale limits do not have to match range limits. Scale limits can be a subset of the range of the control or indicator. For example, the default range of a 16-bit signed integer control or indicator is &#8211;32,768 to 32,767. However, you can set the data range to &#8211;1,000 to 1,000 and then set the scale limits to 0 and 500.
+</p>
+<p class="Body">Complete the following steps to change scale limits and increments.
+</p>
+<ol>
+<li>Use the Operating tool or the Labeling tool to click the upper or lower limit on the scale of the slide or rotary object.
+</li>
+<li>Highlight the digits you want to change and type the new number.
+</li>
+<li>Press the &lt;Enter&gt; key, click the <strong>Enter</strong> button on the toolbar, or click outside the scale to enter the new value. The other limit stays the same and LabVIEW recalculates the increment automatically.
+</li>
+<li>Repeat steps 1 through 3 to change the value of an intermediate marker on the scale. LabVIEW adjusts the increments of the scale automatically.
+<br><br>
+If the increments of the scale do not adjust automatically, the intermediate marker is too close to another marker, so you need to <a href="Resizing_Objects.html">increase the size of the slide or rotary object</a> before you change the value of the intermediate marker.
+</li>
+</ol>
+<p class="Body">You also can use the <a href="../lvprop/Scl_Range.html">Range</a> properties to change scale limits and increments programmatically.
+</p>
+
+
+
+</body>
+</html>

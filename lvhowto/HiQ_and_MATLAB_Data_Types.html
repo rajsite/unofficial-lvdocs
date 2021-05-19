@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 6400Eformula/hlp -->
+
+<title>Comparison of MathScript RT Module and the MATLAB&#0174; Software Data Types in LabVIEW</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+<script src="dynamiclinks.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Comparison of MathScript RT Module and the MATLAB&#0174; Software Data Types in LabVIEW</h1>
+<!--start parent  = ../lvconcepts/Script_Nodes.html-->
+<p class="Body">The following table shows LabVIEW data types and the corresponding data types in the MATLAB&#0174; software. <span class="Platform">(MathScript RT Module)</span> This table also shows the corresponding <a href="../lvtextmathmain/LabVIEW_MathScript.html" class="checkLink lvtextmathmain">LabVIEW MathScript</a> data types.<!--end parent  = ../lvconcepts/Script_Nodes.html--> You can <a href="../lvhowto/Cnfig_Datatype_of_Terminal.html">change the data type</a> of an input or output terminal on a script node.</p>
+
+<!--start parent  = ../lvconcepts/Script_Nodes.html -->
+<table class="Bordered">
+<tr>
+<th class="Bordered Left-Align">LabVIEW Data Type</th>
+<th class="Bordered Left-Align">MATLAB&#0174; Script Node Data Type</th>
+<th class="Bordered Left-Align">MathScript Node Data Type</th>
+</tr>
+<tr><td class="Bordered"><p class="Anchor"><img src="cdbl.gif"></p>Double-precision, floating-point numeric</td>
+<td class="Bordered">Real</td>
+<td class="Bordered">Scalar&#0187;DBL</td>
+</tr>
+<tr>
+<td class="Bordered"><p class="Anchor"><img src="ccdb.gif"></p>Complex double-precision, floating-point numeric</td>
+<td class="Bordered">Complex</td>
+<td class="Bordered">Scalar&#0187;CDB</td>
+</tr>
+<tr>
+<td class="Bordered"><p class="Anchor"><img src="c1ddbl.gif"></p>1D array of double-precision, floating-point numeric</td>
+<td class="Bordered">1-D Array of Real</td>
+<td class="Bordered">1D-Array&#0187;DBL 1D</td>
+</tr>
+<tr>
+<td class="Bordered"><p class="Anchor"><img src="c1dcdb.gif"></p>1D array of complex double-precision, floating-point numeric</td>
+<td class="Bordered">1-D Array of Complex</td>
+<td class="Bordered">1D-Array&#0187;CDB 1D</td>
+</tr>
+<tr>
+<td class="Bordered"><p class="Anchor"><img src="c2ddbl.gif"></p>Multidimensional array of double-precision, floating-point numeric</td>
+<td class="Bordered">2-D Array of Real</td>
+<td class="Bordered">Matrix&#0187;Real Matrix (2D only)</td>
+</tr>
+<tr>
+<td class="Bordered"><p class="Anchor"><img src="c2dcdb.gif"></p>Multidimensional array of complex double-precision, floating-point numeric</td>
+<td class="Bordered">2-D Array of Complex</td>
+<td class="Bordered">Matrix&#0187;Complex Matrix (2D only)</td>
+</tr>
+<tr>
+<td class="Bordered"><p class="Anchor"><img src="cstr.gif"></p>String</td>
+<td class="Bordered">String</td>
+<td class="Bordered">Scalar&#0187;String</td>
+</tr>
+<tr>
+<td class="Bordered"><p class="Anchor"><img src="cpath.gif"></p>Path</td>
+<td class="Bordered">Path</td>
+<td class="Bordered">N/A</td>
+</tr>
+<tr>
+<td class="Bordered"><p class="Anchor"><img src="c1dstr.gif"></p>1D array of string</td>
+<td class="Bordered">N/A</td>
+<td class="Bordered">1D-Array&#0187;String 1D</td>
+</tr>
+</table>
+
+<br><br>
+<p class="checkFile lvtextmathmain Body"><span class="Platform">(MathScript RT Module)</span> You can use <a href="../lvtextmathmain/mathscript_data_types.html" class="checkLink lvtextmathmain">additional data types</a> with the <a href="../gmath/MathScript_Node.html">MathScript Node</a>, including the state-space, transfer function, and zero-pole-gain models of the LabVIEW Control Design and Simulation Module. You must have the Control Design and Simulation Module installed to use these models. Refer to the Control Design and Simulation Module documentation for more information about these models.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;MathScript <a href="../lvtextmathmain/mathscript_data_types.html" class="checkLink lvtextmathmain">represents strings internally</a> as arrays of the corresponding <a href="../glang/ASCII_Codes.html">ASCII character codes</a>.</td>
+</tr>
+</table>
+
+<p class="Body">The <a href="../gmath/matlab_script_node.html">MATLAB script</a> node and the MathScript Node handle 1D array inputs only by row. To change the orientation of a 1D array from row to column or column to row, transpose the array before you perform operations on elements of the array.</p>
+
+<p class="Body">Use the <a href="../glang/Conversion_Functions.html">Conversion</a> VIs and functions or the <a href="../glang/String_Array_Path_Conver.html">Path/Array/String Conversion</a> functions to convert a LabVIEW data type to a data type that the MathScript RT Module or the MATLAB software supports.</p><!--end parent  = ../lvconcepts/Script_Nodes.html  tag="datatype_table"-->
+
+
+
+</body>
+</html>

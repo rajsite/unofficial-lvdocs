@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4200Estructureshlp -->
+
+<title>Replacing Shift Registers with Tunnels</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Replacing Shift Registers with Tunnels
+</h1>
+<p class="Body">Tunnels are the terminals that feed data into and out of structures. Replace shift registers with tunnels when you no longer need to transfer values from one loop iteration to the next.
+</p>
+<p class="Body">Complete the following steps to replace shift registers with tunnels:
+</p>
+<ol>
+<li>Right-click the shift register.
+</li>
+<li>Select <strong>Replace with Tunnels</strong> from the shortcut menu.
+</li>
+</ol>
+
+<h2>Replacing Tunnels with Shift Registers</h2>
+<p class="Body">Replace tunnels with shift registers when you need to transfer values from one loop iteration to the next.</p>
+
+<p class="Body">Complete the following steps to replace tunnels with shift registers:</p>
+
+<ol>
+<li>Right-click the tunnel.</li> 
+
+<li>Select <strong>Replace with Shift Register</strong> from the shortcut menu.</li>
+</ol>
+<p class="Body">If no tunnel exists on the loop border opposite of the tunnel you right-clicked, LabVIEW automatically creates a pair of shift register terminals. If a tunnel exists on the loop border opposite of the tunnel you right-clicked, LabVIEW replaces the tunnel you right-clicked with a shift register terminal, and the cursor becomes a shift register icon, shown as follows. </p>
+			<img src="noloc_bd_shiftregicon.gif"/> 
+			<p>When the cursor becomes a shift register icon, complete one of the following actions:</p>
+			<ul><li>Click a tunnel on the opposite side of the loop to replace the tunnel with a shift register.</li><li>Click the block diagram to place the shift register on the loop border directly across from the other shift register terminal.</li></ul>
+
+			<table class="Borderless">
+<tr><td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If the shift register terminal appears behind a tunnel, the shift register is not wired.</td></tr></table>
+
+
+<p class="Body">If you convert a tunnel with auto-indexing enabled to a shift register on a While Loop, the wire to any node outside the loop breaks because shift registers cannot auto-index. Complete the following steps when the wire breaks:</p>
+<ol><li>Delete the broken wire and the output following the broken wire.</li><li>Right-click the output wire of the right shift register and select <strong>Create&#0187;Indicator</strong> from the shortcut menu.</li></ol>
+<h3>Related Information</h3>
+<p><a href="../lvconcepts/shift_registers_concepts.html">Shift Registers: Passing Values between Loop Iterations</a></p>
+<p><a href="Auto_Indexing_1.html">Processing Individual Elements in an Array or a Collection with a Loop</a></p>
+<p><a href="../glang/While_Loop.html">While Loop</a></p>
+<p><a href="../glang/For_Loop.html">For Loop</a></p>
+</body>
+</html>

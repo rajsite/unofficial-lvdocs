@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 2000Elabelinghlp -->
+
+<title>Changing Text Characteristics</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Changing Text Characteristics
+</h1>
+<p class="Body"><!-- begin parent: lvconcepts.chm::Designing_User_Interfaces.html-->LabVIEW defines its <a href="../lvconcepts/Text_Characteristics.html">built-in fonts</a> as the default system fonts. When you move VIs between platforms, LabVIEW automatically updates its built-in fonts so that they match the default system fonts of the current platform. Additionally, if you attempt to open a VI that uses an unavailable font, LabVIEW substitutes the closest match. <!-- end parent: lvconcepts.chm::Designing_User_Interfaces.html-->LabVIEW handles colors similarly to fonts. If a color is not available on a computer, LabVIEW replaces it with the closest match. You also can use <a href="../lvhowto/Config_User_Colors.html">system colors</a> to adapt the appearance of a front panel to the system colors of any computer that runs the VI.
+</p>
+<p class="Body">Complete the following steps to change the font, size, and color of text.
+</p>
+<ol>
+<li>Select the specific objects for which you want to change the font, size, or color of the text. <!--begin parent= ../lvdialog/Font_Style.html-->To set the font characteristics for all front panel or block diagram objects, deselect any objects that you have selected.<!--end parent= ../lvdialog/Font_Style.html-->
+</li>
+<li>Select <strong>Font Dialog</strong> from the <strong>Text Settings</strong> pull-down menu on the toolbar to display the <strong>Default Font</strong> dialog box. This dialog box includes the same options as the <a href="../lvdialog/Font_Style.html">Font Style</a> dialog box.
+</li></ol>
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;<!-- begin parent = um 2000Elabeling KM -->Changing the default font does not change the font of existing labels. It affects only those labels you create from that point on.</td></tr></table>
+<ol start ="3">
+<!-- end parent = um 2000Elabeling KM -->
+<li>Select a font in the <strong>Font</strong> pull-down menu. LabVIEW displays all fonts currently installed on the computer.
+</li>
+<li>Select a size by clicking the arrow button and choosing a size from the pull-down menu or by entering the size in the <strong>Size</strong> text box.
+</li>
+<li>Select an alignment option in the <strong>Align</strong> pull-down menu.
+</li>
+<li>Click the <strong>Color</strong> box and select a color for the text from the <a href="Coloring_Objects_and_Backg.html">color picker</a> that appears.
+</li></ol>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="tip.gif"></td>
+<td>
+<strong>Tip</strong>&nbsp;&nbsp;<span class="Platform">(Windows and Linux)</span> To make labels transparent, use the Coloring tool and right-click the <span class="Monospace">T</span> in the color picker.<br>
+<span class="Platform">(macOS)</span> To make labels transparent, use the Coloring tool and &lt;Control&gt;-click the <span class="Monospace">T</span> in the color picker.</td></tr></table>
+<ol start="7">
+<li>Select how you want the text to appear by placing or removing checkmarks from the <strong>Plain</strong>, <strong>Bold</strong>, <strong>Italic</strong>, <strong>Underline</strong>, <strong>Strikeout</strong>, <span class="Platform">(macOS)</span> <strong>Outline</strong>, and <span class="Platform">(macOS)</span> <strong>Shadow</strong> checkboxes.
+</li>
+<li>The front panel text with modifications appears in the text box showing how it will appear.
+</li>
+<li>Place a checkmark in the <strong>Panel default</strong> or <strong>Diagram default</strong> checkboxes to use the new text settings as the default font for new front panel or block diagram labels, respectively.
+</li>
+<li>Click the <strong>OK</strong> button to save these text settings or click the <strong>Cancel</strong> button to exit the <strong>Default Font</strong> dialog box without saving the changes.
+</li>
+</ol>
+<!--begin parent: ../lvconcepts/Text_Characteristics.html--><p class="checkFile lvtextmathmain Body"><span class="Platform">(MathScript RT Module)</span> LabVIEW discards color and style settings you apply to text in a <a href="../gmath/MathScript_Node.html">MathScript Node</a> when a type of <a href="../lvtextmathmain/enable_script_highlight.html">script highlighting is enabled</a> for the node.</p><!--end parent: ../lvconcepts/Text_Characteristics.html-->
+<p class="Body">You also can use the <a href="../lvprop/Txt_Font.html">Font</a> property to set the font programmatically, the <a href="../lvprop/Text_Justification.html">Justification</a> property to get and set the justification of text programmatically, and the <a href="../lvprop/Txt_Txt_Clrs.html">Text Colors</a> property to change the foreground and background color of a text string programmatically.
+</p>
+
+
+
+
+</body>
+</html>

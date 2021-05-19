@@ -1,0 +1,91 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Choosing a New Point x in the Golden Section</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-692AF405-E0C3-4C23-95BC-1CAD81C69E5B" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Choosing a New Point x in the Golden Section</h1> 
+      
+      <div> 
+         	 
+         <p> Given that <em>a</em> &lt; <em>b</em> &lt; <em>c</em>, point <em>b</em> is a fractional distance <em>W</em> between <em>a</em> and <em>c</em>, as shown in the following equations. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./emp2Flvac_choose_x_goldensec.xml_d11319e37.png"></span></div>
+         </div> 
+         	 
+         <p>A new point <em>x</em> is an additional fractional distance <em>Z</em> beyond <em>b</em>, as shown in the following equation. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./emp2Flvac_choose_x_goldensec.xml_d11319e107.png"></span></div>
+         </div> 
+         	 
+         <p>Given the previous equation, the next bracketing triplet can have either a length of <em>W</em> + <em>Z</em> relative to the current bracketing triplet or a length of 1 - <em>W</em>. To minimize the possible worst case, choose <em>Z</em> such that the following equations are true. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./emp2Flvac_choose_x_goldensec.xml_d11319e147.png"></span></div>
+         </div> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./emp2Flvac_choose_x_goldensec.xml_d11319e166.png"></span></div>
+         </div> 
+         	 
+         <p>Given the second equation above, the new <em>x</em> is the point in the interval symmetric to <em>b</em>. Therefore, the following equation is true. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./emp2Flvac_choose_x_goldensec.xml_d11319e192.png"></span></div>
+         </div> 
+         	 
+         <p>You can imply from the previous equation that <em>x</em> is within the larger segment because <em>Z</em> is positive only if <em>W</em> &lt; 1/2. 
+            	 
+         </p> 
+         	 
+         <p>If <em>Z</em> is the current optimal value of <em>f</em>(<em>x</em>), <em>W</em> is the previous optimal value of <em>f</em>(<em>x</em>). Therefore, the fractional distance of <em>x</em> from <em>b</em> to <em>c</em> equals the fractional distance of <em>b</em> from <em>a</em> to <em>c</em>, as shown in the following equation. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./emp2Flvac_choose_x_goldensec.xml_d11319e275.png"></span></div>
+         </div> 
+         	 
+         <p>Equations <span class="mathml-inline"><span><img src="./emp2Flvac_choose_x_goldensec.xml_d11319e296.png"></span></span> and <span class="mathml-inline"><span><img src="./emp2Flvac_choose_x_goldensec.xml_d11319e312.png"></span></span> yield the following quadratic equation. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./emp2Flvac_choose_x_goldensec.xml_d11319e333.png"></span></div>
+         </div>
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./emp2Flvac_choose_x_goldensec.xml_d11319e358.png"></span></div>
+         </div> 
+         	 
+         <p>Therefore, the middle point <em>b</em> of the optimal bracketing interval <em>a</em> &lt; <em>b</em> &lt; <em>c</em> is the fractional distance of 0.38197 from one of the end points and the fractional distance of 0.61803 from the other end
+            point. 0.38197 and 0.61803 comprise the golden mean, or golden section, of the Pythagoreans. 
+            	 
+         </p> 
+         	 
+         <p>The golden section search method uses a bracketing triplet and measures from point <em>b</em> to find a new point <em>x</em> a fractional distance of 0.38197 into the larger interval, either (<em>a</em>, <em>b</em>) or (<em>b</em>, <em>c</em>), on each iteration of the search method. Even when starting with an initial bracketing triplet whose segments are not within
+            the golden section, the process of successively choosing a new point <em>x</em> at the golden mean quickly causes the method to converge linearly to the correct, self-replicating golden section. After
+            the search method converges to the self-replicating golden section, each new function evaluation brackets the minimum to an
+            interval only 0.61803 times the size of the preceding interval. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="lvac_golden_section.html" shape="rect">Golden Section Search Method</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

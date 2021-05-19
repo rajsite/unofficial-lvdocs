@@ -1,0 +1,48 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Creating DC-Centered Spectra</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-F7D1213C-9013-4306-94CF-7CBFA8A67E6A" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Creating DC-Centered Spectra</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		You can create DC-centered spectra for even-sized input sequences by negating the odd elements of the input sequence. 
+            	 
+         </p> 
+         	 
+         <p>You cannot create DC-centered spectra by directly negating the odd elements of an input time-domain sequence containing an
+            odd number of elements because the Nyquist frequency appears between two frequency bins. To create DC-centered spectra for
+            odd-sized input sequences, you must rotate the FFT arrays by the amount given in the following relationship: 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./c_creating_dc_centered_spec.xml_d12623e23.png"></span></div>
+         </div> 
+         	 
+         <p>For a DC-centered spectrum created from an odd-sized input sequence, the following equation computes <em>x</em><sub>0</sub>. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./c_creating_dc_centered_spec.xml_d12623e51.png"></span></div>
+         </div> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Two_Sided_DC_Centered_FFT.html" shape="rect">Two-Sided and DC-Centered FFT</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

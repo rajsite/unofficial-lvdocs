@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>FMRead (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>FMRead (LabVIEW Manager Function)</h1>
+<p class="Code">MgErr FMRead(fd, inCount, outCountp, buffer);</p>
+<h2>Purpose</h2>
+<p class="Body">Reads <strong>inCount</strong> bytes from the file specified by the file descriptor <strong>fd</strong>. The function starts from the current position mark and reads the data into memory, starting at the address specified by <strong>buffer</strong>. <!-- Begin parent:lvexcode::/fmwrite.html-->Use the <a href="fmseek.html">FMSeek</a> function to set the current position mark and the <a href="fmtell.html">FMTell</a> function to return the position of the current position mark.<!-- End parent:lvexcode::/fmwrite.html--></p>
+<p class="Body">The function stores the actual number of bytes read in <strong>*outCountp</strong>. The number of bytes can be less than <strong>inCount</strong> if the function encounters end-of-file before reading <strong>inCount</strong> bytes. The number of bytes is zero if any other error occurs.</p>
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>fd</strong></td>
+<td class="Bordered"><span class="Monospace">File</span></td>
+ <td class="Bordered">File descriptor associated with the file from which you want to read.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>inCount</strong></td>
+<td class="Bordered"><span class="Monospace">int32</span></td>
+ <td class="Bordered">Number of bytes you want to read.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>outCountp</strong></td>
+ <td class="Bordered"><span class="Monospace">int32&nbsp;*</span></td>
+ <td class="Bordered">Address at which <span class="Monospace">FMRead</span> stores the number of bytes read. <span class="Monospace">FMRead</span> does not store any value if <span class="Monospace">NULL</span> is passed. This parameter is a <a href="../lvexcodeconcepts/LabVIEW_Manager_Routines.html#Pointers_as_Parameters">pointer</a>.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>buffer</strong></td>
+<td class="Bordered"><span class="Monospace">UPtr</span></td>
+ <td class="Bordered">Address where <span class="Monospace">FMRead</span> stores the data.</td></tr>
+</table>
+<h2>Return Value</h2>
+<p class="Body"><span class="Monospace">MgErr</span>, which can contain the following errors. If you receive errors from <a href="LabVIEW_Manager_Functions.html">LabVIEW Manager functions</a>, most error names correspond to LabVIEW error codes.</p>
+<table class="Bordered">
+<tr><th class="Bordered Left-Align">Value</th>
+<th class="Bordered Left-Align">Corresponding Error Code or Description</th></tr>
+<tr><td class="Bordered"><span class="Monospace">noErr</span></td><td class="Bordered">No error.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">mgArgErr</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">1</a> or <strong>inCount</strong> &lt; <span class="Monospace">0</span>.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">fEOF</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">4</a></td></tr>
+<tr><td class="Bordered"><span class="Monospace">fIOErr</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">6</a></td></tr>
+</table>
+
+</body>
+</HTML>

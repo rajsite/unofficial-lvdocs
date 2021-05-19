@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Fuzzy System Parameters</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Fuzzy System Parameters</h1>
+
+<p class="Body">Many <a href="../lvpid/FuzzyLogicTitle.html">Fuzzy Logic</a> VIs contain a <strong>fuzzy system in</strong> or <strong>fuzzy system out</strong> parameter that contains the complete information for a <a href="../lvpidmain/fuzzy_systems.html">fuzzy system</a>. Wire the <strong>fuzzy system out</strong> output from one VI to the <strong>fuzzy system in</strong> input of another VI.</p>
+
+<p class="Body"><strong>fuzzy system in</strong> contains the following cluster elements. <strong>fuzzy system out</strong> contains similar cluster elements to <strong>fuzzy system in</strong>, except that the cluster elements are indicators instead of controls.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;Do not modify the <strong>fuzzy system in</strong> and <strong>fuzzy system out</strong> clusters directly. Use the Fuzzy Logic VIs to modify these clusters instead.</td>
+</tr>
+</table>
+
+<table class="Borderless">
+<tr>
+<td>
+<p class="Anchor"><img src="c1dcclst.gif"></p>
+</td>
+<td><strong>input variables</strong> specifies the input linguistic variables for the fuzzy system. Each input linguistic variable contains the following cluster elements.
+	<table class="Borderless">
+	<tr>
+	<td class="Icon"><img src="cstr.gif"></td>
+	<td><strong>name</strong> specifies the name of the linguistic variable.
+	</td>
+	</tr>
+	<tr>
+	<td class="Icon"><img src="c1ddbl.gif"></td>
+	<td><strong>range</strong> specifies the minimum and maximum values of the linguistic variable.
+	</td></tr>
+	<tr>
+	<td class="Icon"><img src="c1dcclst.gif"></td>
+	<td><strong>membership functions</strong> specifies the linguistic terms for the linguistic variable and the degree of membership of the linguistic variable within those linguistic terms. Each element of the <strong>membership functions</strong> array corresponds to a linguistic term.
+		<table class="Borderless">
+		<tr>
+		<td class="Icon"><img src="cstr.gif"></td>
+		<td><strong>name</strong> specifies the name of the membership function, or linguistic term, you want to modify.
+		</td>
+		</tr>
+		<tr>
+		<td class="Icon"><img src="cu16.gif"></td>
+		<td><strong>shape</strong> specifies the shape of the function that determines the degrees of membership for the linguistic variable.
+		<br><br>
+			<table class="Bordered">
+			<tr><td class = "Bordered">0</td><td class = "Bordered"><strong>Triangle</strong>&#8212;Specifies that a triangle function determines the degrees of membership for the linguistic variable.</td></tr><tr><td class = "Bordered">1</td><td class = "Bordered"><strong>Trapezoid</strong>&#8212;Specifies that a trapezoid function determines the degrees of membership for the linguistic variable.</td></tr><tr><td class = "Bordered">2</td><td class = "Bordered"><strong>Singleton</strong>&#8212;Specifies that a singleton function determines the degrees of membership for the linguistic variable. A singleton function has only one point. Therefore, no value of the linguistic variable has partial membership within the corresponding linguistic term.</td></tr><tr><td class = "Bordered">3</td><td class = "Bordered"><strong>Sigmoid</strong>&#8212;Specifies that a sigmoid function determines the degrees of membership for the linguistic variable.</td></tr><tr><td class = "Bordered">4</td><td class = "Bordered"><strong>Gaussian</strong>&#8212;Specifies that a Gaussian function determines the degrees of membership for the linguistic variable.</td></tr><tr><td class = "Bordered">5</td><td class = "Bordered"><strong>User-Defined</strong>&#8212;Specifies that the user-defined shape corresponding to the <strong>user-defined shape index</strong> determines the degrees of membership for the linguistic variable.</td></tr>
+			</table>
+		</td></tr>
+		<tr>
+		<td class="Icon"><img src="ci32.gif"></td>
+		<td><strong>user-defined shape index</strong> specifies the index of the user-defined shape that determines the degrees of membership for the linguistic variable. This parameter is applicable only if you set <strong>shape</strong> to <strong>User-Defined</strong>. Define the user-defined shapes in the <strong>user-defined membership function shapes</strong> array in both the <a href="../lvpid/FL_New_Fuzzy_System.html">FL New Fuzzy System</a> VI and the User-Defined instance of the <a href="../lvpid/FL_Create_Membership_Function.html">FL Create Membership Function</a> VI.
+		</td></tr>
+		<tr>
+		<td class="Icon"><img src="cu32.gif"></td>
+		<td><strong>color</strong> specifies the color of the membership function when you view the membership function in the <a href="../lvpid/Fuzzy_System_Designer_DB.html">Fuzzy System Designer</a>. You can wire a <a href="../glang/Color_Box_Constant.html">color box constant</a> to this input.
+		</td></tr>
+		<tr>
+		<td class="Icon"><img src="c1ddbl.gif"></td>
+		<td><strong>points</strong> specifies the values of the linguistic variable corresponding to the base and top points, in order from left to right and base to top, of the membership function. The degree of membership of the linguistic variable within the linguistic term <strong>name</strong> is 0 at the base points and 1 at the top points. Specify one point for a singleton function, three points for a triangle function, and four points for trapezoid, sigmoid, or Gaussian functions.
+		</td></tr>
+		</table>
+	</td></tr>
+	</table>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Anchor"><img src="c1dcclst.gif"></p>
+</td>
+<td><strong>output variables</strong> specifies the output linguistic variables for the fuzzy system. Each output linguistic variable contains the following cluster elements.
+	<table class="Borderless">
+	<tr>
+	<td class="Icon"><img src="cstr.gif"></td>
+	<td><strong>name</strong> specifies the name of the linguistic variable.
+	</td>
+	</tr>
+	<tr>
+	<td class="Icon"><img src="c1ddbl.gif"></td>
+	<td><strong>range</strong> specifies the minimum and maximum values of the linguistic variable.
+	</td></tr>
+	<tr>
+	<td class="Icon"><img src="c1dcclst.gif"></td>
+	<td><strong>membership functions</strong> specifies the linguistic terms for the linguistic variable and the degree of membership of the linguistic variable within those linguistic terms. Each element of the <strong>membership functions</strong> array corresponds to a linguistic term.
+		<table class="Borderless">
+		<tr>
+		<td class="Icon"><img src="cstr.gif"></td>
+		<td><strong>name</strong> specifies the name of the membership function, or linguistic term, you want to modify.
+		</td>
+		</tr>
+		<tr>
+		<td class="Icon"><img src="cu16.gif"></td>
+		<td><strong>shape</strong> specifies the shape of the function that determines the degrees of membership for the linguistic variable.
+		<br><br>
+			<table class="Bordered">
+			<tr><td class = "Bordered">0</td><td class = "Bordered"><strong>Triangle</strong>&#8212;Specifies that a triangle function determines the degrees of membership for the linguistic variable.</td></tr><tr><td class = "Bordered">1</td><td class = "Bordered"><strong>Trapezoid</strong>&#8212;Specifies that a trapezoid function determines the degrees of membership for the linguistic variable.</td></tr><tr><td class = "Bordered">2</td><td class = "Bordered"><strong>Singleton</strong>&#8212;Specifies that a singleton function determines the degrees of membership for the linguistic variable. A singleton function has only one point. Therefore, no value of the linguistic variable has partial membership within the corresponding linguistic term.</td></tr><tr><td class = "Bordered">3</td><td class = "Bordered"><strong>Sigmoid</strong>&#8212;Specifies that a sigmoid function determines the degrees of membership for the linguistic variable.</td></tr><tr><td class = "Bordered">4</td><td class = "Bordered"><strong>Gaussian</strong>&#8212;Specifies that a Gaussian function determines the degrees of membership for the linguistic variable.</td></tr><tr><td class = "Bordered">5</td><td class = "Bordered"><strong>User-Defined</strong>&#8212;Specifies that the user-defined shape corresponding to the <strong>user-defined shape index</strong> determines the degrees of membership for the linguistic variable.</td></tr>
+			</table>
+		</td></tr>
+		<tr>
+		<td class="Icon"><img src="ci32.gif"></td>
+		<td><strong>user-defined shape index</strong> specifies the index of the user-defined shape that determines the degrees of membership for the linguistic variable. This parameter is applicable only if you set <strong>shape</strong> to <strong>User-Defined</strong>. Define the user-defined shapes in the <strong>user-defined membership function shapes</strong> array in both the <a href="../lvpid/FL_New_Fuzzy_System.html">FL New Fuzzy System</a> VI and the User-Defined instance of the <a href="../lvpid/FL_Create_Membership_Function.html">FL Create Membership Function</a> VI.
+		</td></tr>
+		<tr>
+		<td class="Icon"><img src="cu32.gif"></td>
+		<td><strong>color</strong> specifies the color of the membership function when you view the membership function in the <a href="../lvpid/Fuzzy_System_Designer_DB.html">Fuzzy System Designer</a>. You can wire a <a href="../glang/Color_Box_Constant.html">color box constant</a> to this input.
+		</td></tr>
+		<tr>
+		<td class="Icon"><img src="c1ddbl.gif"></td>
+		<td><strong>points</strong> specifies the values of the linguistic variable corresponding to the base and top points, in order from left to right and base to top, of the membership function. The degree of membership of the linguistic variable within the linguistic term <strong>name</strong> is 0 at the base points and 1 at the top points. Specify one point for a singleton function, three points for a triangle function, and four points for trapezoid, sigmoid, or Gaussian functions.
+		</td></tr>
+		</table>
+	</td></tr>
+	</table>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Anchor"><img src="c1dcclst.gif"></p>
+</td>
+<td><strong>rules</strong> specifies the rules for the fuzzy system. Use the <strong>input variables</strong> and <strong>output variables</strong> to form the antecedents and consequents, respectively, of the rules.
+	<table class="Borderless">
+	<tr>
+	<td class="Icon"><img src="c1dnclst.gif"></td>
+	<td><strong>antecedents</strong> specifies the antecedents, or IF portions, of the rule. Each antecedent consists of three parts: the index of an input linguistic variable, an operator that specifies whether to calculate the degree of membership or the degree of non-membership of the input linguistic variable within a linguistic term, and the index of the linguistic term. The indexes correspond to the order in which the variables or linguistic terms were created.
+	</td>
+	</tr>
+	<tr>
+	<td class="Icon"><img src="c1dnclst.gif"></td>
+	<td><strong>consequents</strong> specifies the consequents, or THEN portions, of the rule. Each consequent consists of three parts: the index of an output linguistic variable, an operator that specifies whether to calculate the degree of membership or the degree of non-membership of the output linguistic variable within a linguistic term, and the index of the linguistic term. The indexes correspond to the order in which the variables or linguistic terms were created.
+	</td></tr>
+	<tr>
+	<td class="Icon"><img src="cu16.gif"></td>
+	<td><strong>antecedent connective</strong> specifies how this VI calculates the truth value of the aggregated rule antecedent.
+	<br><br>
+		<table class="Bordered">
+		<tr><td class = "Bordered">0</td><td class = "Bordered"><strong>AND (Minimum)</strong>&#8212;Specifies that this VI uses the smallest degree of membership of the antecedents.</td></tr><tr><td class = "Bordered">1</td><td class = "Bordered"><strong>AND (Product)</strong>&#8212;Specifies that this VI uses the product of the degrees of membership of the antecedents.</td></tr><tr><td class = "Bordered">2</td><td class = "Bordered"><strong>OR (Maximum)</strong>&#8212;Specifies that this VI uses the largest degree of membership of the antecedents.</td></tr><tr><td class = "Bordered">3</td><td class = "Bordered"><strong>OR (Probabilistic)</strong>&#8212;Specifies that this VI uses the probabilistic sum of the degrees of membership of the antecedents. The fuzzy logic controller uses the following equation to calculate the probabilistic sum: (<em>A</em> + <em>B</em>) &#8211; (<em>A</em> * B), where <em>A</em> and <em>B</em> are the antecedents.</td></tr>
+		</table>
+	</td></tr>
+	<tr>
+	<td class="Icon"><img src="cdbl.gif"></td>
+	<td><strong>degree of support</strong> specifies the weight, between 0 and 1, that you want to apply to the rule. The default is 1. Multiply the <strong>degree of support</strong> by the truth value of the aggregated rule antecedent to calculate the rule weight.
+	</td></tr>
+	<tr>
+	<td class="Icon"><img src="cu16.gif"></td>
+	<td><strong>consequent implication</strong> specifies the implication method this VI uses to scale the membership functions of the output linguistic variable based on the rule weight.
+	<br><br>
+		<table class="Bordered">
+		<tr><td class = "Bordered">0</td><td class = "Bordered"><strong>Minimum</strong>&#8212;Specifies to use the <a href="../lvpidmain/conseq_implication.html#minimum">Minimum</a> implication method.</td></tr><tr><td class = "Bordered">1</td><td class = "Bordered"><strong>Product</strong>&#8212;Specifies to use the <a href="../lvpidmain/conseq_implication.html#product">Product</a> implication method.</td></tr>
+		</table>
+	</td></tr>
+	</table>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Anchor"><img src="cu16.gif"></p>
+</td>
+<td><strong>defuzzification method</strong> specifies the defuzzification method this VI uses to convert the degrees of membership of output linguistic variables into numerical values. 
+<br><br>
+	<table class="Bordered">
+	<tr><td class = "Bordered">0</td><td class = "Bordered"><strong>Center of Area</strong>&#8212;Specifies to use the <a href="../lvpidmain/center_of_area.html">Center of Area</a> defuzzification method.</td></tr><tr><td class = "Bordered">1</td><td class = "Bordered"><strong>Modified Center of Area</strong>&#8212;Specifies to use the <a href="../lvpidmain/modcenter_of_area.html">modified Center of Area</a> defuzzification method.</td></tr><tr><td class = "Bordered">2</td><td class = "Bordered"><strong>Center of Sums</strong>&#8212;Specifies to use the <a href="../lvpidmain/center_of_sums.html">Center of Sums</a> defuzzification method.</td></tr><tr><td class = "Bordered">3</td><td class = "Bordered"><strong>Center of Maximum</strong>&#8212;Specifies to use the <a href="../lvpidmain/center_of_max.html">Center of Maximum</a> defuzzification method.</td></tr><tr><td class = "Bordered">4</td><td class = "Bordered"><strong>Mean of Maximum</strong>&#8212;Specifies to use the <a href="../lvpidmain/mean_of_max.html">Mean of Maximum</a> defuzzification method.</td></tr>
+	</table>
+</td>
+</tr>
+<tr>
+<td>
+<p class="Anchor"><img src="cstr.gif"></p>
+</td>
+<td><strong>description</strong> specifies a description for the fuzzy system.</td>
+</tr>
+</table>
+
+</body>
+</html>

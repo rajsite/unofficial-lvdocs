@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 2300Edatatypehlp -->
+
+<title>Numeric Conversion</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Numeric Conversion
+</h1>
+<!-- begin parent = um 6600Epolymorphfunc KM -->
+<p class="Body">If you wire an output to a destination that has a different numeric representation, LabVIEW converts the data according to the following rules:
+</p>
+<ul>
+
+<li><!-- start parent  = AppendixB_STRUCTURED  tag="conversion"--><strong>Signed or unsigned integer to floating-point number</strong>&#8212;LabVIEW converts the data to the nearest value possible. This conversion is exact when the floating-point number is more precise than the integer. If the integer is more precise than the floating-point number, LabVIEW maintains as much precision as possible in the conversion.<!-- end parent  = AppendixB_STRUCTURED  tag="conversion"--> 					
+</li>
+<li><strong>Floating-point number to signed or unsigned integer</strong>&#8212;LabVIEW coerces out-of-range values to the minimum or maximum value of the integer. For example, if you convert a negative floating-point number to an unsigned integer, the result is <span class="Monospace">0</span>.
+</li>
+<li><strong>LabVIEW treats enums as unsigned integers</strong>&#8212;For example, if you convert &#8211;1, a floating-point number, to an <a href="Enumerated_Type_Controls.html">enum</a>, LabVIEW coerces the value into the range of the enum. If the range of the enum is 0 to 25, LabVIEW converts the value to 0.
+</li>
+<li><strong>Integer to integer</strong>&#8212;LabVIEW does not coerce out-of-range values to the minimum or maximum value of an integer. If the source is smaller than the destination, LabVIEW extends the sign of a signed source and places zeros in the extra bits of an unsigned source. If the source is larger than the destination, LabVIEW copies only the least significant bits of the value.
+</li>
+<li><strong>Integer, floating-point, or fixed-point  number to fixed-point number</strong>&#8212;LabVIEW coerces values outside the desired range for the fixed-point number to within the fixed-point number's maximum and minimum values.</li>
+</ul>
+
+<p class="Body">If you wire two different numeric data types to a numeric function that expects the inputs to be the same data type, LabVIEW converts one of the terminals to the same representation as the other terminal. LabVIEW chooses the representation that uses more bits. If the number of bits is the same, LabVIEW chooses unsigned over signed. 
+</p>
+
+<table class="checkFile lvfpgamain Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;<span class="Platform">(FPGA Module)</span> Coercions that occur in FPGA VIs can consume significant FPGA resources, especially when a terminal is coerced to or from the SGL data type.</td>
+</tr>
+</table>
+
+
+<p class="Body">LabVIEW places a <a href="../lvconcepts/Coercion_Dots.html">coercion dot</a> on a block diagram node to alert you that LabVIEW coerced the value passed into the node to a different representation. In <a href="../lvconcepts/Coercion_Dots.html#Eliminating_Coercions">certain coercions</a>, coercion dots may lead to an increase in memory usage and execution time and a decrease in accuracy of results. To eliminate coercion dots, match the output data type of the control or constant to the data type of the receiving terminal. You can right-click the control or constant on the block diagram and select <strong>Representation</strong> from the shortcut menu to change the representation of the input value to the representation of the terminal.
+</p>
+<!-- end parent = um 6600Epolymorphfunc KM -->
+
+
+</body>
+</html>

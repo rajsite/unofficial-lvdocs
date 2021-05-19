@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+<title>Caveats and Recommendations for Using In Place Element Structures</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Caveats and Recommendations for Using In Place Element Structures</h1>
+
+<p>The following list describes some of the caveats and recommendations to consider when you use the <a href="../lvconcepts/In_Place_Element.html">In Place Element</a> structure:</p>
+			<ul>
+				<li>When you unbundle a cluster with the <a href="../glang/inplace_unbundle.html">Unbundle / Bundle Elements</a> border node of the <a href="../glang/In_Place_Element_Structure.html">In Place Element</a> structure, you cannot unbundle any cluster element more than one time. For example, if the cluster you are unbundling contains another cluster and you unbundle an element of the subcluster, you cannot also unbundle the entire subcluster because you already unbundled one of the elements of the subcluster.</li>
+				<li>Do not use more than one border node for a single array, cluster, variant, or waveform. Operate on each individual item with a single border node. If you use more than one border node for a single array, cluster, variant, or waveform, a copy of the entire array, cluster, variant, or waveform is placed in memory, which negates the positive performance effects of the In Place Element structure. </li> 
+				<li>Because variants can contain data of multiple types, you must wire the data type of the data you want to replace from the variant to the <strong>data type</strong> input of the <a href="../glang/inplace_variant.html">Variant To / From Element</a> border node. If the variant does not contain data of the type wired to the <strong>data type</strong> input, the VI returns an error.</li>
+				<li>You can place an In Place Element structure inside another In Place Element structure. Nested In Place Element structures allow you to access elements of multiple complex data types. For example, if you want to access an element of an array within a cluster, use the outer In Place Element structure to unbundle the cluster, and use the inner In Place Element structure to access an element of the array. </li>
+				<li>Consider using the <strong>Mark As Modifier</strong> shortcut menu option on nodes of the In Place Element structure to indicate that LabVIEW will modify the value of the data you wire to the node. For example, <a href="../lvconcepts/Creating_Classes.html#Dynamic_Outputs">dynamic dispatch terminals</a> can execute any implementation of a dynamic dispatch subVI in a class hierarchy. The parent implementation of the dynamic dispatch VI might have no operation and does not modify the data; however, a child implementation might modify the data. If you wire the parent implementation to the node and select the <strong>Mark As Modifier</strong> option, you can indicate that LabVIEW will modify the value wired to a dynamic dispatch terminal at some point in the class hierarchy. Using the <strong>Mark As Modifier</strong> option then optimizes performance by minimizing the number of copies of the data LabVIEW creates.</li>			
+			</ul>
+
+</body>
+</html>

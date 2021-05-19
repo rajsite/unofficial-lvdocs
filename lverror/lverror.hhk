@@ -1,0 +1,3157 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD>
+<BODY>
+<OBJECT type="text/site properties">
+	<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="3D picture controls">
+		<param name="See Also" value="3D picture controls">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="3D_Pic_Error_Codes.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="3D scene">
+		<param name="See Also" value="3D scene">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="3D_Pic_Error_Codes.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="a class input to this tunnel or shift register does not originate at the Data Value Reference Read Element border node (error)">
+		<param name="Local" value="edTunnelUnitesTooManyClassesInAReference.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="a shared variable is broken">
+		<param name="Local" value="edSharedVariableBroken.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="a subVI which claims to be part of a dependent packed library is missing from that packed library (error)">
+		<param name="Local" value="edLVLibpSubVIMissingFromPackedLibInMemory.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="a syntax or semantic error has occurred (error) (MathScript RT Module)">
+		<param name="Local" value="edMathScriptNodeSemanticError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="a syntax, semantic, or type error has occurred (MathScript RT Module)">
+		<param name="Local" value="edMathScriptNodeUDFTypeError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="a type definition in this application instance is different than the variable type definition">
+		<param name="Local" value="edSharedVariableTypedefMismatch.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="a type definition is broken">
+		<param name="Local" value="edSharedVariableTypedefBroken.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="a type definition that defines the shared variable data type has unapplied changes.">
+		<param name="Local" value="edSharedVariableTypedefHasUnappliedChanges.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="access options">
+		<param name="See Also" value="access options">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VI cannot access class constant (error)">
+			<param name="Local" value="edUDClassConstantNotAccessible.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VI cannot access referenced item (error)">
+			<param name="Local" value="edNotInLibraryScope.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="accessor VI is in an invalid location for overriding a parent accessor (error)">
+		<param name="Local" value="edUDClassChildOverridesPropertyDefIncorrectly.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="accessor VIs have different data types (error)">
+		<param name="Local" value="edUDClassPropDefAccessorsHaveDifferentType.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add-on has a license that is unsupported on this platform (error)">
+		<param name="Local" value="edLVLibInvalidThirdPartyLicenseUnsupported.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add-on is expired or invalidly licensed (error)">
+		<param name="Local" value="edLVLibInvalidThirdPartyLicenseError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ancestor classes are reserved for run (error)">
+		<param name="Local" value="edUDClassBadUntilParentUnreserves.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="array element conflict (error)">
+		<param name="Local" value="edArrayToScalarConflict.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="array indexing expected (error)">
+		<param name="Local" value="edArrayIndexingExpectedError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="array operation not allowed here (error)">
+		<param name="Local" value="edArrayOpsNotAllowed.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="array type required (error)">
+		<param name="Local" value="edArrayTypeRequiredError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="arrays">
+		<param name="See Also" value="arrays">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="different dimensions (error)">
+			<param name="Local" value="edDimConflict.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="element conflict (error)">
+			<param name="Local" value="edArrayToScalarConflict.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="assignment not allowed in Expression Node (error)">
+		<param name="Local" value="edAssignNotAllowedError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="at least one dynamic member VI of this LabVIEW class is broken (error)">
+		<param name="Local" value="edUDClassMemberVIBroken.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="bad linkage to method information (error)">
+		<param name="Local" value="edBadInvokeNodeLinkage.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="bad linkage to subVI (error)">
+		<param name="Local" value="edSubVIBadLinkage.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="bad unit syntax (error)">
+		<param name="Local" value="edBadUnitSyntax.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Bluetooth">
+		<param name="See Also" value="Bluetooth">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="TCP_and_UDP_Error_Codes.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Boolean controls and indicators">
+		<param name="See Also" value="Boolean controls and indicators">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="cannot use latch mechanical action with local variables (error)">
+			<param name="Local" value="edBoolActionLocal.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Boolean latch action is incompatible with local variables (error)">
+		<param name="Local" value="edBoolActionLocal.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="C is not wired (error)">
+		<param name="Local" value="edMissingLoopChunkSize.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Call By Reference Node">
+		<param name="See Also" value="Call By Reference Node">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="reference input must be a strict VI reference (error)">
+			<param name="Local" value="edCBRNodeNeedsStrictVIRef.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Call Parent Method Node">
+		<param name="See Also" value="Call Parent Method Node">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="cannot use Call Parent Method node outside of a LabVIEW class (error)">
+			<param name="Local" value="edUDClassVINotDynamic.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="parent class does not define this method (error)">
+			<param name="Local" value="edUDClassDynamicVINotFound.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="cannot have dynamic outputs without a dynamic input (error)">
+		<param name="Local" value="edUDClassDynamicInputMissing.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="cannot mix static and dynamic data in a cluster (error)">
+		<param name="Local" value="Cannot_mix_static_and_dynamic.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="cannot use an XControl in a private data control (error)">
+		<param name="Local" value="edXControlUsedInPrivataDataControl.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="cannot use Call Parent Method node outside of a LabVIEW class (error)">
+		<param name="Local" value="edUDClassVINotDynamic.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="case does not have selector value (error)">
+		<param name="Local" value="edCaseWithNoSelVal.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="case select value not unique (error)">
+		<param name="Local" value="edCaseValueDuplicateError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Case structures">
+		<param name="See Also" value="Case structures">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="case does not have selector value (error)">
+			<param name="Local" value="edCaseWithNoSelVal.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="missing assignment to tunnel (error)">
+			<param name="Local" value="edMissingAssign.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="no case for some selector values (error)">
+			<param name="Local" value="edSelValWithNoCase.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="selector values not unique (error)">
+			<param name="Local" value="edSelValNotUnique.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="selector values wrong type (error)">
+			<param name="Local" value="edSelValWrongType.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="unwired selector (error)">
+			<param name="Local" value="edUnwiredSelector.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Channel cannot be used as a constant (error)">
+		<param name="Local" value="edChannelTypeCannotBeConstant.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="channel controls">
+		<param name="See Also" value="channel controls">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="cannot be inside a structure (error)">
+			<param name="Local" value="edChannelFPTermCannotBeInsideStructure.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="cannot be nested inside another control (error)">
+			<param name="Local" value="edChannelCtrlCannotBeNestedCtrl.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="must be on the connector pane (error)">
+			<param name="Local" value="edChannelCtrlMustBeOnConpane.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="unwired terminals (error)">
+			<param name="Local" value="edChannelFPTermMustBeWired.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Channel controls or indicators cannot be nested inside another control or indicator (error)">
+		<param name="Local" value="edChannelCtrlCannotBeNestedCtrl.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Channel controls or indicators must be on the connector pane (error)">
+		<param name="Local" value="edChannelCtrlMustBeOnConpane.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="channel indicators">
+		<param name="See Also" value="channel indicators">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="cannot be nested inside another indicator (error)">
+			<param name="Local" value="edChannelCtrlCannotBeNestedCtrl.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="must be on the connector pane (error)">
+			<param name="Local" value="edChannelCtrlMustBeOnConpane.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="channel type">
+		<param name="See Also" value="channel type">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="cannot use a channel type as a constant (error)">
+			<param name="Local" value="edChannelTypeCannotBeConstant.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="channel wires">
+		<param name="See Also" value="channel wires">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Channel cannot be used as a constant (error)">
+			<param name="Local" value="edChannelTypeCannotBeConstant.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Channel controls or indicators cannot be nested inside another control or indicator (error)">
+			<param name="Local" value="edChannelCtrlCannotBeNestedCtrl.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Channel controls or indicators must be on the connector pane (error)">
+			<param name="Local" value="edChannelCtrlMustBeOnConpane.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="The channel control cannot be inside a structure (error)">
+			<param name="Local" value="edChannelFPTermCannotBeInsideStructure.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="The channel control contains unwired terminals (error)">
+			<param name="Local" value="edChannelFPTermMustBeWired.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="This channel wire cannot fork (error)">
+			<param name="Local" value="edChannelWireCannotFork.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="cannot pass through a structure (error)">
+			<param name="Local" value="edChannelWireCannotEnterAndLeaveStructure.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="cannot pass through a subVI (error)">
+			<param name="Local" value="edChannelWireCannotEnterAndLeaveVI.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="endpoint contains unwired terminals (error)">
+			<param name="Local" value="edChannelTermMustBeWired.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="unforkable channel wires cannot enter or leave a parallel For Loop (error)">
+			<param name="Local" value="edChannelThatCannotForkCannotEnterParallelForLoop.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="child class overrides a property accessor VI in a bad location within the class">
+		<param name="Local" value="edUDClassChildOverridesPropertyDefIncorrectly.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="class cannot be bundled or unbundled because the class private data is empty (error)">
+		<param name="Local" value="edUDClassUnbundleZeroElements.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="class conflict (error)">
+		<param name="Local" value="edClassConflict.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="class has editor changes not yet applied (error)">
+		<param name="Local" value="edUDClassEditingCtl.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="class input terminal is not marked as required">
+		<param name="Local" value="edUDPropConPaneClassInputNotRequired.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="class or error data is assigned to the wrong side of the connector pane">
+		<param name="Local" value="edUDPropConPaneWrongDirection.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="class output terminal does not return the input class">
+		<param name="Local" value="edUDPropConPaneStaticThrallProblem.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="class type of input terminal does not match class type of output terminal">
+		<param name="Local" value="edUDPropConPaneClassInputOutputTypeMismatch.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="cluster is invalid or empty (error)">
+		<param name="Local" value="edBadNMuxCluster.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="cluster items are not named (error)">
+		<param name="Local" value="edItemNamesNotUnique.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="clusters">
+		<param name="See Also" value="clusters">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="different contents (error)">
+			<param name="Local" value="edEltConflict.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="empty (error)">
+			<param name="Local" value="edBadNMuxCluster.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="invalid (error)">
+			<param name="Local" value="edBadNMuxCluster.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="items not named (error)">
+			<param name="Local" value="edItemNamesNotUnique.html">
+			</OBJECT>
+	</UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="communication">
+		<param name="See Also" value="communication">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="TCP_and_UDP_Error_Codes.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Conditional Disable node has invalid or empty condition(s) (error)">
+		<param name="Local" value="edEmptyCondition.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="conditional terminal is not wired (error)">
+		<param name="Local" value="edMissingLoopTst.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="conditional terminals">
+		<param name="See Also" value="conditional terminals">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="not wired (error)">
+			<param name="Local" value="edMissingLoopTst.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="constant has undefined type (error)">
+		<param name="Local" value="edBDUndefType.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="constant of this type is not supported on this target (error)">
+		<param name="Local" value="Constant_not_supported_on_target.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="constant refers to a broken type definition (error)">
+		<param name="Local" value="edBDTypedefConstHasBadDependency.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="constant value includes broken or missing LabVIEW class (error)">
+		<param name="Local" value="edBDProblemWithUDClassInDefaultData.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="constants">
+		<param name="See Also" value="constants">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="refers to a broken LabVIEW class (error)">
+			<param name="Local" value="edBDRefersToBadUDClass.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="refers to a broken type definition (error)">
+			<param name="Local" value="edFPTypedefHasBadDependency.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="refers to a missing LabVIEW class (error)">
+			<param name="Local" value="edBDStdRefnum_UDClassRefUnresolved.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="undefined type (error)">
+			<param name="Local" value="edBDUndefType.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="value includes broken or missing LabVIEW class (error)">
+			<param name="Local" value="edBDProblemWithUDClassInDefaultData.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="contains unwired or bad terminal (error)">
+		<param name="Local" value="edBadTermInNode.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="control contains no elements and is undefined (error)">
+		<param name="Local" value="edFPUndefType.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="control does not match its type definition (error)">
+		<param name="Local" value="edTypeDefBadDDO.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="control has bad unit syntax (error)">
+		<param name="Local" value="edFPBadUnitSyntax.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="control is corrupt (error)">
+		<param name="Local" value="edTableControlCorruptPrivateDataTD.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="control of this type must be on the connector pane (error)">
+		<param name="Local" value="Control_Must_Be_On_Connector.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="control requires an external library (error)">
+		<param name="Local" value="edFPPIMissingLib.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="control VI has unapplied changes (error)">
+		<param name="Local" value="edCtlEditInProgress.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="controls">
+		<param name="See Also" value="controls">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="cannot access the class control (error)">
+			<param name="Local" value="edUDClassControlNotAccessible.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="contains no elements (error)">
+			<param name="Local" value="edFPUndefType.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="control to control (error)">
+			<param name="Local" value="ed2Srcs.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="refers to a broken LabVIEW class (error)">
+			<param name="Local" value="edFPRefersToBadUDClass.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="refers to a missing LabVIEW class (error)">
+			<param name="Local" value="edFPStdRefnum_UDClassRefUnresolved.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="requires an external library (error)">
+			<param name="Local" value="edFPPIMissingLib.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="type does not coerce with variable (error)">
+			<param name="Local" value="edPSPTypeNotCoerce.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="could not determine data types of all wires in this VI (error)">
+		<param name="Local" value="edTypePropFailed.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="data type overflows the 16-bit integer array format (error)">
+		<param name="Local" value="edFlattenTD16Overflow.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="data types">
+		<param name="See Also" value="data types">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="could not determine data types of all wires in this VI (error)">
+			<param name="Local" value="edTypePropFailed.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="for the event registration refnums do not match (error)">
+			<param name="Local" value="edDynEvenRefnumDataDiffer.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="numeric with incompatible units (error)">
+			<param name="Local" value="edUnitConflict.html">
+			</OBJECT>
+	</UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DataSocket">
+		<param name="See Also" value="DataSocket">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="TCP_and_UDP_Error_Codes.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="decrement operator not allowed in Expression Node (error)">
+		<param name="Local" value="edDecrNotAllowedError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="default value includes broken or missing LabVIEW class (error)">
+		<param name="Local" value="edFPProblemWithUDClassInDefaultData.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="deployment">
+		<param name="See Also" value="deployment">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="deployment_error_codes.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Diagram/Conditional Disable Structure has no active diagram (error)">
+		<param name="Local" value="edNoActiveDiagram.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="duplicate items selected in an Event Filter Node (error)">
+		<param name="Local" value="edEventDuplicateFilterItem.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="duplicate parameter name (error)">
+		<param name="Local" value="edDuplicateFBoxParamName.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="dynamic dispatch">
+		<param name="See Also" value="dynamic dispatch">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VIs cannot be in private scope (error)">
+			<param name="Local" value="edUDMethDynamicCannotBePrivate.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VIs cannot be members of polymorphic VIs (error)">
+			<param name="Local" value="edPolyErrorDynamicIUseNodes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="cannot have dynamic outputs without a dynamic input (error)">
+			<param name="Local" value="edUDClassDynamicInputMissing.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="dynamic front panel terminal cannot be placed inside a structure (error)">
+			<param name="Local" value="edUDClassFPTerminalNotAtTopLevelDiagram.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="dynamic terminals must be of same class as owner of VI (error)">
+			<param name="Local" value="edUDClassDynamicForWrongClass.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="one of the inputs to Max & Min function does not originate at the dynamic input front panel terminal (error)">
+			<param name="Local" value="edUDClassMinMaxUnitesTooManyDataSources.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="one or more of the inputs to this tunnel or shift register does not originate at the dynamic input front panel terminal (error)">
+			<param name="Local" value="edUDClassTunnelUnitesTooManyDataSources.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="one or more of the set of VIs which this dynamic dispatch node may call are broken (error)">
+			<param name="Local" value="edUDClassAPIBroken.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="only VIs owned by a LabVIEW class may use dynamic terminals in the connector pane (error)">
+			<param name="Local" value="edUDMethDynamicOutsideClass.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="refers to a dynamic member VI (error)">
+			<param name="Local" value="edUDClassCallByRefDynTerm.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="run-time type not propagated from dynamic input to dynamic output (error)">
+			<param name="Local" value="edUDClassFPTerminalRuntimeTypeNotPropagated.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="this VI attempts to override a static VI in an ancestor class (error)">
+			<param name="Local" value="edUDMethStaticMismatch.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="this dynamic dispatch VI does not unconditionally invoke the Call Parent Method node (error)">
+			<param name="Local" value="edFailsAlwaysCallParent.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="dynamic dispatch VIs cannot be in community scope (error)">
+		<param name="Local" value="edUDMethDynamicCannotBeCommunity.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="dynamic dispatch VIs cannot be in private scope (error)">
+		<param name="Local" value="edUDMethDynamicCannotBePrivate.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="dynamic dispatch VIs cannot be members of polymorphic VIs (error)">
+		<param name="Local" value="edPolyErrorDynamicIUseNodes.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="dynamic event configuration does not match dynamic event registration (error)">
+		<param name="Local" value="edEventInvalidDynamic.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="dynamic front panel terminal cannot be placed inside a structure (error)">
+		<param name="Local" value="edUDClassFPTerminalNotAtTopLevelDiagram.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="dynamic terminals must be of same class as owner of VI (error)">
+		<param name="Local" value="edUDClassDynamicForWrongClass.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="empty custom control panel (error)">
+		<param name="Local" value="edCtlEditNoObj.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="enumerated type controls">
+		<param name="See Also" value="enumerated type controls">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="enumeration conflict (error)">
+			<param name="Local" value="edEnumConflict.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="enumeration items must be unique (error)">
+			<param name="Local" value="edEnumDuplicate.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="enumeration conflict (error)">
+		<param name="Local" value="edEnumConflict.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="enumeration items must be unique (error)">
+		<param name="Local" value="edEnumDuplicate.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="EPICS">
+		<param name="See Also" value="EPICS">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="EPICS_Error_Codes.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="error codes">
+		<param name="Local" value="lverror_intro.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="3D picture control">
+			<param name="Local" value="3D_Pic_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Bluetooth">
+			<param name="Local" value="TCP_and_UDP_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="DataSocket">
+			<param name="Local" value="TCP_and_UDP_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="EPICS">
+			<param name="Local" value="EPICS_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="general">
+			<param name="Local" value="Misc_LV_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="GPIB">
+			<param name="Local" value="GPIB_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Input Device Control">
+			<param name="Local" value="InputDeviceControlErrorCodes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="instrument driver">
+			<param name="Local" value="Instr_Driver_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="IrDA">
+			<param name="Local" value="TCP_and_UDP_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="LabVIEW object-oriented programming">
+			<param name="Local" value="LV_OOP_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="mathematics">
+			<param name="Local" value="Parser_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="MathScript">
+			<param name="Local" value="MathScript_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="MATLAB script node">
+			<param name="Local" value="MATLAB_and_HiQ_Script_Code.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Modbus">
+			<param name="Local" value="Modbus_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="networking">
+			<param name="Local" value="TCP_and_UDP_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="OPC UA">
+			<param name="Local" value="OPCUA_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Point By Point">
+			<param name="Local" value="Error_Codes_PtByPt.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ranges of">
+			<param name="Local" value="Error_Code_Ranges.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="regular expression">
+			<param name="Local" value="Regular_Expression_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="remote front panel connections">
+			<param name="Local" value="TCP_and_UDP_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="report generation">
+			<param name="Local" value="Report_Gen_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="run-time menu">
+			<param name="Local" value="RunTimeMenu_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="script nodes">
+			<param name="Local" value="MATLAB_and_HiQ_Script_Code.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="security">
+			<param name="Local" value="Security_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="serial">
+			<param name="Local" value="Serial_Port_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="shared variable">
+			<param name="Local" value="Shared_Variable_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="signal processing">
+			<param name="Local" value="Analysis_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="source control">
+			<param name="Local" value="SCC_error_codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="storage/DataPlugin">
+			<param name="Local" value="Storage_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="TCP">
+			<param name="Local" value="TCP_and_UDP_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="TDM streaming">
+			<param name="Local" value="Storage_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Timed Loop">
+			<param name="Local" value="Timed_Loop_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="UDP">
+			<param name="Local" value="TCP_and_UDP_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VI Server">
+			<param name="Local" value="TCP_and_UDP_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VISA">
+			<param name="Local" value="VISA_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="waveform">
+			<param name="Local" value="Wavefrm_Datype_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Windows connectivity">
+			<param name="Local" value="ActiveX_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Windows registry access">
+			<param name="Local" value="Win_Registry_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="write filters">
+			<param name="Local" value="XP_Embedded_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="XML parser">
+			<param name="Local" value="DOM_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Windows Embedded Standard">
+			<param name="Local" value="XP_Embedded_Error_Codes.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="error in add expression (error)">
+		<param name="Local" value="edErrorInAddExprError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="error in and expression (error)">
+		<param name="Local" value="edErrorInLogicalAndExprError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="error in bit-and expression (error)">
+		<param name="Local" value="edErrorInBitAndExprError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="error in bit-or expression (error)">
+		<param name="Local" value="edErrorInBitOrExprError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="error in comparison expression (error)">
+		<param name="Local" value="edErrorInRelationalExprError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="error in equality expression (error)">
+		<param name="Local" value="edErrorInEqualityExprError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="error in exclusive-or expression (error)">
+		<param name="Local" value="edErrorInBitXOrExprError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="error in exponent expression (error)">
+		<param name="Local" value="edErrorInPowerExprError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="error in expression (error)">
+		<param name="Local" value="edExpressionError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="error in multiply expression (error)">
+		<param name="Local" value="edErrorInMultExprError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="error in or expression (error)">
+		<param name="Local" value="edErrorInLogicalOrExprError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="error in shift expression (error)">
+		<param name="Local" value="edErrorInShiftExprError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="error in statement (error)">
+		<param name="Local" value="edStatementError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="error in unary expression (error)">
+		<param name="Local" value="edErrorInUnaryExprError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="event specified by more than one event case (error)">
+		<param name="Local" value="edEventSpecsNotUnique.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Event structures">
+		<param name="See Also" value="Event structures">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Timeout event not handled (error)">
+			<param name="Local" value="edEventNoTimeOutDiag.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="duplicate items in Event Data Field node (error)">
+			<param name="Local" value="edEventDuplicateFilterItem.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="dynamic event configuration does not match dynamic event registration (error)">
+			<param name="Local" value="edEventInvalidDynamic.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="event specified in another case (error)">
+			<param name="Local" value="edEventSpecsNotUnique.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="event unavailable in standard VI (error)">
+			<param name="Local" value="edEventSpecsNotAvailable.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="events not compatible (error)">
+			<param name="Local" value="edEventDiagWithIncompatEvents.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="no event selected (error)">
+			<param name="Local" value="edEventRegInvalidEvent.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="no events defined (error)">
+			<param name="Local" value="edEventDiagWithNoEvent.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="user event data type is unnamed or has elements with no names (error)">
+			<param name="Local" value="edUnnamedUserEvent.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="events specified by event case are not compatible with each other (error)">
+		<param name="Local" value="edEventDiagWithIncompatEvents.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="external component or driver missing (error)">
+		<param name="Local" value="edExternalComponentMissing.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="External data value reference on the block diagram contains unsupported data type (error)">
+		<param name="Local" value="edExternalDataValueReferenceBadSubTypeBD.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="External data value reference on the front panel contains unsupported data type (error)">
+		<param name="Local" value="edExternalDataValueReferenceBadSubTypeFP.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="extra controls on custom control's front panel (error)">
+		<param name="Local" value="edCtlEditExtraObj.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Feedback Node">
+		<param name="See Also" value="Feedback Node">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="data type is undefined (error)">
+			<param name="Local" value="edFBNUndefType.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Feedback Node: data type is undefined (error)">
+		<param name="Local" value="edFBNUndefType.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Flatten To JSON type is invalid (error)">
+		<param name="Local" value="edFlattenToJSONInvalidType.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="For Loops">
+		<param name="See Also" value="For Loops">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="N not wired and no indexing inputs (error)">
+			<param name="Local" value="edMissingLoopLimit.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="conditional terminal is not wired (error)">
+			<param name="Local" value="edMissingLoopTst.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="format specifier type mismatch (error)">
+		<param name="Local" value="edFmtTypeMismatch.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="format specifiers">
+		<param name="See Also" value="format specifiers">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="too few (error)">
+			<param name="Local" value="edTooFewFmt.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="too many (error)">
+			<param name="Local" value="edTooManyFmt.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="type mismatch (error)">
+			<param name="Local" value="edFmtTypeMismatch.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="unknown (error)">
+			<param name="Local" value="edUnknownFmt.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Formula Nodes">
+		<param name="See Also" value="Formula Nodes">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="duplicate parameter name (error)">
+			<param name="Local" value="edDuplicateFBoxParamName.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="invalid parameter name (error)">
+			<param name="Local" value="edInvalidFBoxParamName.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="reserved parameter name (error)">
+			<param name="Local" value="edReservedFBoxParamName.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="unwired input (error)">
+			<param name="Local" value="edUnwiredFBoxInput.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="front panel">
+		<param name="See Also" value="front panel">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="contains extra controls that do not belong to custom control (error)">
+			<param name="Local" value="edCtlEditExtraObj.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="of custom control must contain a control (error)">
+			<param name="Local" value="edCtlEditNoObj.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="front panel control contains a datatype with a type definition (error)">
+		<param name="Local" value="edCtlEditTypeDefDataType.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="function conflict (error)">
+		<param name="Local" value="edFunConflict.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="function is no longer supported (error)">
+		<param name="Local" value="Funct_no_longer_supported.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="function not found in library (error)">
+		<param name="Local" value="edFuncNotFound.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="function not supported by this version (error)">
+		<param name="Local" value="edNotInVersion.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="functions">
+		<param name="See Also" value="functions">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="conflict (error)">
+			<param name="Local" value="edFunConflict.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="not found in library (error)">
+			<param name="Local" value="edFuncNotFound.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="not specified (error)">
+			<param name="Local" value="edNoExtFunc.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="not supported by this version (error)">
+			<param name="Local" value="edNotInVersion.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="the VI cannot access (error)">
+			<param name="Local" value="edXNodeNotAccessible.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="this function does not support LabVIEW classes (error)">
+			<param name="Local" value="edUDClassNotSupported.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="global variables">
+		<param name="See Also" value="global variables">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="missing global VI (error)">
+			<param name="Local" value="edMissingGlobal.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="no item with this name (error)">
+			<param name="Local" value="edUnknownNamedItem.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="global VI is missing (error)">
+		<param name="Local" value="edMissingGlobal.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="GPIB">
+		<param name="See Also" value="GPIB">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="GPIB_Error_Codes.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="hidden front panel control has undefined type (error)">
+		<param name="Local" value="edTermUndefType.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="hidden front panel objects">
+		<param name="See Also" value="hidden front panel objects">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="control has undefined type (error)">
+			<param name="Local" value="edTermUndefType.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="identifier expected (error)">
+		<param name="Local" value="edIdentExpectedError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="illegal break (error)">
+		<param name="Local" value="edillegalBreakError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="illegal continue (error)">
+		<param name="Local" value="edillegalContinueError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="illegal Property Node recursion">
+		<param name="Local" value="edUDPropInvalidRecursion.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="incompatible property definition override (error)">
+		<param name="Local" value="edUDClassPropDefIncompatibleOverride.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="increment operator not allowed in Expression Node (error)">
+		<param name="Local" value="edIncrNotAllowedError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="index list expected (error)">
+		<param name="Local" value="edIndexListExpectedError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="indicators">
+		<param name="See Also" value="indicators">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="indicator to indicator (error)">
+			<param name="Local" value="ed2Sinks.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="input is referenced by different names (error)">
+		<param name="Local" value="edExprNMoreThanOneVar.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="instrument drivers">
+		<param name="See Also" value="instrument drivers">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="Instr_Driver_Error_Codes.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="integer constant required (error)">
+		<param name="Local" value="edIntegerConstReqError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="integer type required (error)">
+		<param name="Local" value="edIntegerTypeReqError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="invalid accessor VI connector pane (error)">
+		<param name="Local" value="edInvalidPropertyAccessorConPane.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="invalid constructor (error)">
+		<param name="Local" value="edInvalidConstructor.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="invalid dotted method (error)">
+		<param name="Local" value="edInvalidDottedMethod.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="invalid dotted property (error)">
+		<param name="Local" value="edInvalidDottedProperty.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="invalid method (error)">
+		<param name="Local" value="edInvalidMethod.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="invalid parameter name (error)">
+		<param name="Local" value="edInvalidFBoxParamName.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="invalid polymorphic subsystem (error)">
+		<param name="Local" value="edPolyErrorInvalidPolySubsys.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="invalid property (error)">
+		<param name="Local" value="edInvalidProperty.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="invalid refnum class (error)">
+		<param name="Local" value="edInvalidClass.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="invalid shared variable configuration (error)">
+		<param name="Local" value="edSharedVariableInvalidConfiguration.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="invalid use of type definition in Control Editor (error)">
+		<param name="Local" value="edTypeDefNotAllowed.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Invoke Nodes">
+		<param name="See Also" value="Invoke Nodes">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="bad linkage to method (error)">
+			<param name="Local" value="edBadInvokeNodeLinkage.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="invalid method (error)">
+			<param name="Local" value="edInvalidMethod.html">
+			</OBJECT>
+	</UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="IrDA">
+		<param name="See Also" value="IrDA">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="TCP_and_UDP_Error_Codes.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="is a member of a cycle (error)">
+		<param name="Local" value="edCycle.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="keyword while expected (error)">
+		<param name="Local" value="edWhileExpectedError.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="LabVIEW">
+		<param name="See Also" value="LabVIEW">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="Misc_LV_Error_Codes.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="LabVIEW cannot auto-update control or constant without losing or incorrectly preserving data (error)">
+		<param name="Local" value="edTypeDefRequiresManualUpdate.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="LabVIEW is insufficiently licensed for the MathScript RT Module (error) (MathScript RT Module)">
+		<param name="Local" value="edMathScriptNodeNeedsLVFull.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="LabVIEW MathScript Window">
+		<param name="See Also" value="LabVIEW MathScript Window">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="MathScript_Error_Codes.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="LabVIEW needs more memory to compile VI (error)">
+		<param name="Local" value="edCodeGenMemError.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="LabVIEW object-oriented programming">
+		<param name="See Also" value="LabVIEW object-oriented programming">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="LV_OOP_Error_Codes.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="library claims to be part of another library (error)">
+		<param name="Local" value="edLVLibNotClaimedByOwningLibrary.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="library not found or failed to load (error)">
+		<param name="Local" value="edLibNotFound.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="library that contains the VI or item is not properly licensed (error)">
+		<param name="Local" value="edVILibraryUnlicensed.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="library that defines the XNode cannot be found (error)">
+		<param name="Local" value="edXNodeNoGoverningLibrary.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="library that defines the XNode is broken (error)">
+		<param name="Local" value="edXNodeGoverningLibraryBroken.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="library version is incompatible with XNode version (error)">
+		<param name="Local" value="edXNodeBadVersion.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="licenses">
+		<param name="See Also" value="licenses">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="invalid or missing (error) (MathScript RT Module)">
+			<param name="Local" value="edMathScriptNodeLicenseError.html">
+			</OBJECT>
+	</UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Match Regular Expression">
+		<param name="See Also" value="Match Regular Expression">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="Regular_Expression_Error_Codes.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Mathematics VIs">
+		<param name="See Also" value="Mathematics VIs">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="Parser_Error_Codes.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="MathScript">
+		<param name="See Also" value="MathScript">
+		</OBJECT>
+	<UL>		
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="a syntax or semantic error has occurred (error)">
+			<param name="Local" value="edMathScriptNodeSemanticError.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="MathScript_Error_Codes.html">
+			</OBJECT>		
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="license is invalid or missing (error) (MathScript RT Module)">
+			<param name="Local" value="edMathScriptNodeLicenseError.html">
+			</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="MathScript Node">
+		<param name="See Also" value="MathScript Node">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="MathScript_Error_Codes.html">
+			</OBJECT>		
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="unwired input (error)">
+			<param name="Local" value="edUnwiredFBoxInput.html">
+			</OBJECT>
+</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="MathScript RT Module license is invalid or missing (error) (MathScript RT Module)">
+		<param name="Local" value="edMathScriptNodeLicenseError.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="MATLAB">
+		<param name="See Also" value="MATLAB">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="MATLAB_and_HiQ_Script_Code.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="member VIs">
+		<param name="See Also" value="member VIs">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="at least one member VI of this LabVIEW class is broken (error)">
+			<param name="Local" value="edUDClassMemberVIBroken.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="this LabVIEW class is missing at least one member VI (error)">
+			<param name="Local" value="edUDClassMemberVIMissing.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="memory">
+		<param name="See Also" value="memory">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="insufficient (error)">
+			<param name="Local" value="edCodeGenMemError.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="missing">
+		<param name="See Also" value="missing">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="assignment to tunnel (error)">
+			<param name="Local" value="edMissingAssign.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="missing assignment to tunnel (error)">
+		<param name="Local" value="edMissingAssign.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="missing colon (error)">
+		<param name="Local" value="edMissingColonError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="missing left bracket (error)">
+		<param name="Local" value="edMissingLeftBracketError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="missing left parenthesis (error)">
+		<param name="Local" value="edMissingLftParenError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="missing right bracket (error)">
+		<param name="Local" value="edRightBraceRequiredError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="missing right parenthesis (error)">
+		<param name="Local" value="edMissingRgtParenError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="missing semicolon (error)">
+		<param name="Local" value="edMissingSemicolonError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="more than one index input is wired (error)">
+		<param name="Local" value="edOneIndexAllowed.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="multiline available only in regular expression mode (error)">
+		<param name="Local" value="edMultilineBadForNonRegExp.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="multiple assignment to tunnel (error)">
+		<param name="Local" value="edMultAssign.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="n is not wired, and there are no indexing inputs (error)">
+		<param name="Local" value="edMissingLoopLimit.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="neither bundle nor unbundle of this LabVIEW class is allowed on this VI (error)">
+		<param name="Local" value="edUDClassNoUnbundleHere.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="network streams">
+		<param name="See Also" value="network streams">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="Streams_Error_Codes.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="no case for some selector values (error)">
+		<param name="Local" value="edSelValWithNoCase.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="no event selected (error)">
+		<param name="Local" value="edEventRegInvalidEvent.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="no function specified (error)">
+		<param name="Local" value="edNoExtFunc.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="no item with this name (error)">
+		<param name="Local" value="edUnknownNamedItem.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="no library specified (error)">
+		<param name="Local" value="edNoExtLib.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="node contains terminals that are wired but not valid (error)">
+		<param name="Local" value="edNodeHasWiredInvalidTerminals.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="one of the class inputs to this Max and Min function does not originate at the Data Value Reference Read Element border node (error)">
+		<param name="Local" value="edMaxMinUnitesTooManyClassesInAReference.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="one of the class inputs to this Select function does not originate at the Data Value Reference Read Element border node (error)">
+		<param name="Local" value="edSelectUnitesTooManyClassesInAReference.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="one of the class inputs to this Select function does not originate at the dynamic control (error)">
+		<param name="Local" value="edUDClassSelectUnitesTooManyDataSources.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="one of the class terminals is static and the other class terminal is dynamic">
+		<param name="Local" value="edUDPropConPaneStaticDynamicMismatch.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="one of the inputs to this Max &amp; Min function does not originate at the dynamic input front panel terminal (error)">
+		<param name="Local" value="edUDClassMinMaxUnitesTooManyDataSources.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="one or more event cases have no events defined (error)">
+		<param name="Local" value="edEventDiagWithNoEvent.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="one or more inputs (or outputs) share the same name (error)">
+		<param name="Local" value="edScriptTermDuplicate.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="one or more of the inputs to this tunnel or shift register does not originate at the dynamic input front panel terminal (error)">
+		<param name="Local" value="edUDClassTunnelUnitesTooManyDataSources.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="one or more of the set of VIs which this dynamic dispatch subVI may call are broken (error)">
+		<param name="Local" value="edUDClassAPIBroken.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="only single expression allowed in Expression Node (error)">
+		<param name="Local" value="edSingleExprOnlyError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="only VIs owned by a LabVIEW class may use dynamic terminals in the connector pane (error)">
+		<param name="Local" value="edUDMethDynamicOutsideClass.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="OPC UA">
+		<param name="See Also" value="OPC UA">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="OPCUA_Error_Codes.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="operator expected (error)">
+		<param name="Local" value="edOperatorExpectedError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="output data type has not been selected (MathScript RT Module)">
+		<param name="Local" value="edMathScriptNodeTypeNotSelected.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="overflow (error)">
+		<param name="Local" value="edFlattenTD16Overflow.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="owning library has blocked execution of the VI (error)">
+		<param name="Local" value="edVILibraryProblem.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="owning library is broken (error)">
+		<param name="Local" value="edLVLibOwningLibraryBroken.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="owning library of this VI is missing (error)">
+		<param name="Local" value="edLVLibMissingOwningLibrary.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="packed project libraries">
+		<param name="See Also" value="packed project libraries">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="missing subVIs">
+			<param name="Local" value="edLVLibpSubVIMissingFromPackedLibInMemory.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="parallel For Loop cannot contain a Boolean control with latch option (error)">
+		<param name="Local" value="edLatchedBooleanInParForLoop.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="parallel For Loop cannot contain a conditional terminal (error)">
+		<param name="Local" value="edConditionalDisableInParForLoop.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="parallel For Loop cannot contain a dependence between loop iterations (error)">
+		<param name="Local" value="edLoopCarriedDependencyInParForLoop.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="parallel For Loop cannot contain a Feedback Node (error)">
+		<param name="Local" value="edFeedbackNodeInParForLoop.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="parallel For Loop cannot contain a stacked shift register (error)">
+		<param name="Local" value="edShiftRegisterWithHistoryOnParForLoop.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="parallel For Loop cannot contain an array dependence between loop iterations (error)">
+		<param name="Local" value="edAliasedArrayAccessInParForLoop.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="parallel For Loop cannot contain an uninitialized shift register (error)">
+		<param name="Local" value="edUninitShiftRegisterOnParForLoop.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="parent class">
+		<param name="See Also" value="parent class">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="broken (error)">
+			<param name="Local" value="edUDClassParentBroken.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="cannot find parent class (error)">
+			<param name="Local" value="edUDClassMissingParent.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="data type problem (error)">
+			<param name="Local" value="edUDClassParentProblem.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="private and not accessible from this class (error)">
+			<param name="Local" value="edUDClassPrivateParent.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="parent class does not define this method (error)">
+		<param name="Local" value="edUDClassDynamicVINotFound.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="parent class of this LabVIEW class has a data type problem (error)">
+		<param name="Local" value="edUDClassParentProblem.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="parent of this LabVIEW class is broken (error)">
+		<param name="Local" value="edUDClassParentBroken.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="parent of this LabVIEW class is private and is not accessible from this class (error)">
+		<param name="Local" value="edUDClassPrivateParent.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="part of a broken recursive cycle (error)">
+		<param name="Local" value="edRecursiveOtherDisabler.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Point By Point VIs">
+		<param name="See Also" value="Point By Point VIs">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="Error_Codes_PtByPt.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="polymorphic instances have different connector pane terminals (error)">
+		<param name="Local" value="edPolyErrorDiffConPane.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="polymorphic instances have different terminal directions on connector panes (error)">
+		<param name="Local" value="edPolyErrorConPaneDirection.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="polymorphic subsystems">
+		<param name="See Also" value="polymorphic subsystems">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="invalid (error)">
+			<param name="Local" value="edPolyErrorInvalidPolySubsys.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="polymorphic subVI is broken (error)">
+		<param name="Local" value="edPolySubVIBroken.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="polymorphic terminal cannot accept this data type (error)">
+		<param name="Local" value="edPolymorhpicTerminalRejects.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="polymorphic terminal reject (error)">
+		<param name="Local" value="edPolymorhpicTerminalRejects.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="polymorphic VI does not contain subVIs (error)">
+		<param name="Local" value="edPolyErrorNoSubVIs.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="polymorphic VIs">
+		<param name="See Also" value="polymorphic VIs">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="cannot contain instances that also are polymorphic VIs (error)">
+			<param name="Local" value="edPolyErrorPolyInPoly.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="does not contain subVI (error)">
+			<param name="Local" value="edPolyErrorNoSubVIs.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="has no subVIs or has subVIs with different connector patterns (error)">
+			<param name="Local" value="edBadPolyVI.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="subVI broken (error)">
+			<param name="Local" value="edPolySubVIBroken.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="polymorphic VIs cannot contain instances that also are polymorphic VIs (error)">
+		<param name="Local" value="edPolyErrorPolyInPoly.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="private data control">
+		<param name="See Also" value="private data control">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="class has editor changes not yet applied (error)">
+			<param name="Local" value="edUDClassEditingCtl.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="private data control of the class must be a cluster (error)">
+			<param name="Local" value="edUDClassCtlMustBeCluster.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="private data control of the class uses an illegal value for its default data (error)">
+			<param name="Local" value="edUDClassCtlHasIllegalDefaultValue.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="private data control of this LabVIEW class has an undefined type (error)">
+			<param name="Local" value="edUDClassCtlUndefined.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="private data control of this LabVIEW class is broken (error)">
+			<param name="Local" value="edUDClassPrivateDataCTLBroken.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="private data control of this class is not a valid data type (error)">
+			<param name="Local" value="edUDClassCtlTypeNotValid.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="private data control for this class has unapplied changes (error)">
+		<param name="Local" value="edUDClassPrivateDataCTLHasUnappliedChanges.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="private data control of this class is not a valid data type (error)">
+		<param name="Local" value="edUDClassCtlTypeNotValid.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="private data control of this class must be a cluster (error)">
+		<param name="Local" value="edUDClassCtlMustBeCluster.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="private data control of this class uses an illegal value for its default data (error)">
+		<param name="Local" value="edUDClassCtlHasIllegalDefaultValue.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="private data control of this LabVIEW class has an undefined type (error)">
+		<param name="Local" value="edUDClassCtlUndefined.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="project libraries">
+		<param name="See Also" value="project libraries">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="blocked execution of VI (error)">
+			<param name="Local" value="edVILibraryProblem.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="failed to load (error)">
+			<param name="Local" value="edLibNotFound.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="invalid license (error)">
+			<param name="Local" value="edVILibraryUnlicensed.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="not found (error)">
+			<param name="Local" value="edLibNotFound.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="not specified (error)">
+			<param name="Local" value="edNoExtLib.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="this VI claims to be part of a library, but that library does not claim to own this VI (error)">
+			<param name="Local" value="edLibraryDoesNotClaimVI.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="this VI's owning library is missing (error)">
+			<param name="Local" value="edCannotLoadLibrary.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="property data terminal is assigned to the wrong side of the connector pane (error)">
+		<param name="Local" value="edUDPropConPaneDataWrongDirection.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="property is not readable">
+		<param name="Local" value="edUDClassPropertyNotReadable.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="property is not writable (error)">
+		<param name="Local" value="edUDClassPropertyNotWritable.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Property Node cannot write to property that is read-only for strict type definitions (error)">
+		<param name="Local" value="edPropNodeCantWriteStrictTypedefProperty.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Property Nodes">
+		<param name="See Also" value="Property Nodes">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="invalid property (error)">
+			<param name="Local" value="edInvalidProperty.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="linked to strict type definition (error)">
+			<param name="Local" value="edPropNodeCantWriteStrictTypedefProperty.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="radio button has enumeration conflict (error)">
+		<param name="Local" value="edFPRadioButtonsDup.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="radio buttons controls">
+		<param name="See Also" value="radio buttons controls">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="enumeration conflict (error)">
+			<param name="Local" value="edFPRadioButtonsDup.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="read only: cannot write to this shared variable (error)">
+		<param name="Local" value="edSharedVariableInvalidWriteAccess.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="recursive function call detected (error) (MathScript RT Module)">
+		<param name="Local" value="edMathScriptNodeRecursiveCallError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="recursive reference in non-reentrant VI (error)">
+		<param name="Local" value="edRecursiveDisabler.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="recursive reference with no shared reentrancy (error)">
+		<param name="Local" value="edRecursiveNoEnabler.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="recursive VI call could not determine inplaceness (error)">
+		<param name="Local" value="edRecursiveInplacenessDidntSettle.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="reentrant VI with dynamic input terminal must use share clones between instances option (error)">
+		<param name="Local" value="edUDClassNoDynamicReentrancy.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Reference creation and deletion for this class is restricted (error)">
+		<param name="Local" value="edNewDeleteDataValRefOfProtectedClass.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="reference input for a Call By Reference Node must be a strict VI reference (error)">
+		<param name="Local" value="edCBRNodeNeedsStrictVIRef.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="refers to a broken LabVIEW class (constant) (error)">
+		<param name="Local" value="edBDRefersToBadUDClass.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="refers to a broken LabVIEW class (control) (error)">
+		<param name="Local" value="edFPRefersToBadUDClass.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="refers to a broken type definition (error)">
+		<param name="Local" value="edFPTypedefHasBadDependency.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="refers to a dynamic member VI (error)">
+		<param name="Local" value="edUDClassCallByRefDynTerm.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="refers to a missing LabVIEW class (constant) (error)">
+		<param name="Local" value="edBDStdRefnum_UDClassRefUnresolved.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="refers to a missing LabVIEW class (control) (error)">
+		<param name="Local" value="edFPStdRefnum_UDClassRefUnresolved.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="refnum conflict (error)">
+		<param name="Local" value="edRefNumConflict.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="refnums">
+		<param name="See Also" value="refnums">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="conflict (error)">
+			<param name="Local" value="edRefNumConflict.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="data types for the event registration refnums do not match (error)">
+			<param name="Local" value="edDynEvenRefnumDataDiffer.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="invalid class (error)">
+			<param name="Local" value="edInvalidClass.html">
+			</OBJECT>
+	</UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="regular expression error codes">
+		<param name="Local" value="Regular_Expression_Error_Codes.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="remote front panels">
+		<param name="See Also" value="remote front panels">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="TCP_and_UDP_Error_Codes.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Report Generation VIs">
+		<param name="See Also" value="Report Generation VIs">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="Report_Gen_Error_Codes.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="required input is not wired (error)">
+		<param name="Local" value="edUnwiredRequiredInput.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="reserved parameter name (error)">
+		<param name="Local" value="edReservedFBoxParamName.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="run-time menus">
+		<param name="See Also" value="run-time menus">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="RunTimeMenu_Error_Codes.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="run-time type not propagated from dynamic input to dynamic output (error)">
+		<param name="Local" value="edUDClassFPTerminalRuntimeTypeNotPropagated.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="script node terminal has no name (error)">
+		<param name="Local" value="edScriptTermNoName.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="script node terminal type conflict (error)">
+		<param name="Local" value="edScriptTermTypeRedef.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="script node terminal type not supported by server (error)">
+		<param name="Local" value="edScriptTermWrongType.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="script nodes">
+		<param name="See Also" value="script nodes">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="MATLAB_and_HiQ_Script_Code.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="script support DLL not found (error)">
+		<param name="Local" value="edScriptDllNotFound.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="script text is being edited by server (error)">
+		<param name="Local" value="edScriptStillInServer.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Search and Replace String">
+		<param name="See Also" value="Search and Replace String">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="multiline available only in regular expression mode (error)">
+			<param name="Local" value="edMultilineBadForNonRegExp.html">
+			</OBJECT>
+	</UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="security">
+		<param name="See Also" value="security">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="Security_Error_Codes.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Select">
+		<param name="See Also" value="Select">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="one of the class inputs to this Select function does not originate at the dynamic input front panel terminal (error)">
+			<param name="Local" value="edUDClassSelectUnitesTooManyDataSources.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="selector values are not unique (error)">
+		<param name="Local" value="edSelValNotUnique.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="selector values have wrong type (error)">
+		<param name="Local" value="edSelValWrongType.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="semicolon not allowed in Expression Node (error)">
+		<param name="Local" value="edSemicNotAllowedError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="sequence local has sources on separate frames (error)">
+		<param name="Local" value="edSequenceLocalWiring.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="sequence local terminals">
+		<param name="See Also" value="sequence local terminals">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="sources on separate frames (error)">
+			<param name="Local" value="edSequenceLocalWiring.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="unassigned (error)">
+			<param name="Local" value="edUnAssSLoc.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="sequence structures">
+		<param name="See Also" value="sequence structures">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="multiple assignment to tunnel (error)">
+			<param name="Local" value="edMultAssign.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="sequence local sources on separate frames (error)">
+			<param name="Local" value="edSequenceLocalWiring.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="unassigned sequence local(s) (error)">
+			<param name="Local" value="edUnAssSLoc.html">
+			</OBJECT>
+	</UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Serial VIs and functions">
+		<param name="See Also" value="Serial VIs and functions">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="Serial_Port_Error_Codes.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Shared Variable local access mode not supported for this variable (error)">
+		<param name="Local" value="edSharedVariableIOVAccessModeInvalid.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Shared variable timeout mode not supported for this variable type (error)">
+		<param name="Local" value="edSharedVariableTimeoutNotAllowed.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="shared variables">
+		<param name="See Also" value="shared variables">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="Shared_Variable_Error_Codes.html">
+			</OBJECT>		
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="invalid shared variable configuration (error)">
+			<param name="Local" value="edSharedVariableInvalidConfiguration.html">
+			</OBJECT>
+</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="shift register data type is undefined (error)">
+		<param name="Local" value="edRSRUndefType.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="shift register unwired from inside the loop (error)">
+		<param name="Local" value="edUnwiredRSR.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="shift registers">
+		<param name="See Also" value="shift registers">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="data type undefined (error)">
+			<param name="Local" value="edRSRUndefType.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="not all elements initialized (error)">
+			<param name="Local" value="edUnwiredLSR.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="unwired from inside loop (error)">
+			<param name="Local" value="edUnwiredRSR.html">
+			</OBJECT>
+	</UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="signal processing">
+		<param name="See Also" value="signal processing">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="Analysis_Error_Codes.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SMTP">
+		<param name="See Also" value="SMTP">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="reply codes">
+			<param name="Local" value="SMTP_Reply_Codes.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="source control">
+		<param name="See Also" value="source control">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="SCC_error_codes.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="state of the XNode is incompatible with the library that defines the XNode (error)">
+		<param name="Local" value="edXNodeHasBadStateTD.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Static VI Reference is not currently linked to a VI (error)">
+		<param name="Local" value="edStaticVIRefNodeNotConfigured.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Storage/DataPlugin VIs">
+		<param name="See Also" value="Storage VIs">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="Storage_Error_Codes.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="structured statements are not allowed in Expression Node (error)">
+		<param name="Local" value="edStructStatNotAllowed.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="subroutine priority VI cannot call a non-subroutine priority subVI (error)">
+		<param name="Local" value="edSubrIllegalCall.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="subroutine priority VI cannot contain an asynchronous node (error)">
+		<param name="Local" value="edAsyncSubroutine.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="subVI is already running (error)">
+		<param name="Local" value="edSubVIActive.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="subVI is in interactive retrieval mode (error)">
+		<param name="Local" value="edSubVIProgRet.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="subVI is in panel order or cluster order mode (error)">
+		<param name="Local" value="edSubVIClustOrder.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="subVI is missing (error)">
+		<param name="Local" value="edMissingSubVI.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="subVI is not executable (error)">
+		<param name="Local" value="edSubVINotExecutable.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="subVIs">
+		<param name="See Also" value="subVIs">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VI cannot find (error)">
+			<param name="Local" value="edNoBDBadLinkageError.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="already running (error)">
+			<param name="Local" value="edSubVIActive.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="bad linkage (error)">
+			<param name="Local" value="edSubVIBadLinkage.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="interactive retrieval mode (error)">
+			<param name="Local" value="edSubVIProgRet.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="missing (error)">
+			<param name="Local" value="edMissingSubVI.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="not executable (error)">
+			<param name="Local" value="edSubVINotExecutable.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="panel order or cluster order mode (error)">
+			<param name="Local" value="edSubVIClustOrder.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="required input not wired (error)">
+			<param name="Local" value="edUnwiredRequiredInput.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="target type is not a more generic type than reference type (error)">
+		<param name="Local" value="edNotAMoreGenericClass.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="TCP/IP">
+		<param name="See Also" value="TCP/IP">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="TCP_and_UDP_Error_Codes.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="TDM Streaming VIs and functions">
+		<param name="See Also" value="TDM Streaming VIs and functions">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="Storage_Error_Codes.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="terminals">
+		<param name="See Also" value="terminals">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="bad (error)">
+			<param name="Local" value="edBadTermInNode.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="different types (error)">
+			<param name="Local" value="edTypeConflict.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="unwired (error)">
+			<param name="Local" value="edBadTermInNode.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="The channel control cannot be inside a structure (error)">
+		<param name="Local" value="edChannelFPTermCannotBeInsideStructure.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="The channel control contains unwired terminals (error)">
+		<param name="Local" value="edChannelFPTermMustBeWired.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="The channel wire cannot pass through a structure (error)">
+		<param name="Local" value="edChannelWireCannotEnterAndLeaveStructure.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="The channel wire cannot pass through a subVI (error)">
+		<param name="Local" value="edChannelWireCannotEnterAndLeaveVI.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="The channel wire endpoint contains unwired terminals (error)">
+		<param name="Local" value="edChannelTermMustBeWired.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="the class object inside a reference cannot be exchanged with another class object (error)">
+		<param name="Local" value="edDataValRefClassRefSwapped.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="the data type cannot be used with the Interface to Data format (error)">
+		<param name="Local" value="ed_BadInterfaceToDataType.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="the data types for the event registration refnums do not match (error)">
+		<param name="Local" value="edDynEvenRefnumDataDiffer.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="the overriding accessor VI has a different filename than the accessor VI in the parent class (error)">
+		<param name="Local" value="edUDClassPropDefOverrideFNameMismatch.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="the owning library of this VI is missing (error)">
+		<param name="Local" value="edLVLibMissingOwningLibrary.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="the parent of this LabVIEW class is broken (error)">
+		<param name="Local" value="edUDClassParentBroken.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="the parent of this LabVIEW class is in community scope and is not accessible from this class (error)">
+		<param name="Local" value="edUDClassCommunityParent.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="the parent of this LabVIEW class is private and is not accessible from this class (error)">
+		<param name="Local" value="edUDClassPrivateParent.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="the private data control of this LabVIEW class is broken (error)">
+		<param name="Local" value="edUDClassPrivateDataCTLBroken.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="the property definition adds readability or writability to an overridden property (error)">
+		<param name="Local" value="edUDClassPropDefOverrideAddsAbility.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="the property definition folder contains a member that is not a VI (error)">
+		<param name="Local" value="edUDClassPropDefHasNonVIMember.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="the property definition folder does not have a valid accessor VI (error)">
+		<param name="Local" value="edUDClassPropDefHasNoAccessorVIs.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="the property definition folder has a colon in its name (error)">
+		<param name="Local" value="edUDClassPropDefHierarchyHasColon.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="the property definition folder has a duplicate long name (error)">
+		<param name="Local" value="edUDClassPropDefLongNameNotUnique.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="the property definition folder has more than one read VI (error)">
+		<param name="Local" value="edUDClassPropDefHasTooManyReadVIs.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="the property definition folder has more than one write VI (error)">
+		<param name="Local" value="edUDClassPropDefHasTooManyWriteVIs.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="the reference input for a Call By Reference Node must be a strict VI reference (error)">
+		<param name="Local" value="edCBRNodeNeedsStrictVIRef.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="the VI cannot access the function (error)">
+		<param name="Local" value="edXNodeNotAccessible.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="the VI cannot access the XControl (error)">
+		<param name="Local" value="edXCtlNotAccessible.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="the wired class does not support a method of this VI's name (error)">
+		<param name="Local" value="edUDClassAPINotDefined.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="the XControl used in this VI is broken (error)">
+		<param name="Local" value="edXCtlBroken.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="This channel wire cannot enter or leave a parallel For Loop (error)">
+		<param name="Local" value="edChannelThatCannotForkCannotEnterParallelForLoop.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="This channel wire cannot fork (error)">
+		<param name="Local" value="edChannelWireCannotFork.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this class cannot inherit from the community scoped item in a locked library (error)">
+		<param name="Local" value="edUDClassCommunityParentBadGUID.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this dynamic dispatch VI does not unconditionally invoke the Call Parent Method node (error)">
+		<param name="Local" value="edFailsAlwaysCallParent.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this function does not support LabVIEW classes (error)">
+		<param name="Local" value="edUDClassNotSupported.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this LabVIEW class cannot find its parent class (error)">
+		<param name="Local" value="edUDClassMissingParent.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this LabVIEW class definition is corrupt (error)">
+		<param name="Local" value="edUDClassCorrupt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this LabVIEW class is missing at least one member VI (error)">
+		<param name="Local" value="edUDClassMemberVIMissing.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this library is invalidly licensed (error)">
+		<param name="Local" value="edLVLibInvalidLicenseError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this object is not allowed in a VI on which you enable inlining (error)">
+		<param name="Local" value="edInliningDisallowedNode.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this polymorphic VI has no subVIs or has subVIs with different connector patterns (error)">
+		<param name="Local" value="edBadPolyVI.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this recursive VI is configured with inlining enabled (error)">
+		<param name="Local" value="edInliningRecursiveVI.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this type definition has unapplied changes (error)">
+		<param name="Local" value="edTypedefHasUnappliedChanges.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this variable can only access a type definition in public scope">
+		<param name="Local" value="edSharedVariableTypedefNotInPublicScope.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this variable is not connected to anything (error)">
+		<param name="Local" value="edUnwiredGlobal.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this VI attempts to override a static VI in an ancestor class (error)">
+		<param name="Local" value="edUDMethStaticMismatch.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this VI cannot access the class constant (error)">
+		<param name="Local" value="edUDClassConstantNotAccessible.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this VI cannot access the class control (error)">
+		<param name="Local" value="edUDClassControlNotAccessible.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this VI cannot access the referenced item (error)">
+		<param name="Local" value="edNotInLibraryScope.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this VI cannot access the referenced item in community scope (error)">
+		<param name="Local" value="edCannotReachCommunityScope.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this VI cannot access the referenced item in private scope (error)">
+		<param name="Local" value="edCannotReachPrivateScope.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this VI cannot access the referenced item in protected scope (error)">
+		<param name="Local" value="edCannotReachProtectedScope.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this VI cannot connect to the referenced item in a locked library (error)">
+		<param name="Local" value="edCannotReachCommunityScopeBadGUID.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this VI claims to be part of a library, but that library does not claim to own this VI (error)">
+		<param name="Local" value="edLibraryDoesNotClaimVI.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this VI does not match other VIs in the method; connector pane patterns are different (error)">
+		<param name="Local" value="edUDMethConPaneMismatch.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this VI does not match other VIs in the method; connector pane terminal(s) are different (error)">
+		<param name="Local" value="edUDMethConPaneTermMismatch.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this VI does not match other VIs in the method; execution priorities are different (error)">
+		<param name="Local" value="edUDMethPriorityMismatch.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this VI does not match other VIs in the method; one is reentrant, one is not (error)">
+		<param name="Local" value="edUDMethReentrancyMismatch.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this VI does not match other VIs in the method; preferred execution systems are different (error)">
+		<param name="Local" value="edUDMethExecSysMismatch.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this VI does not match other VIs in the method; the scope is different (error)">
+		<param name="Local" value="edUDMethScopeMismatch.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this VI is configured with inlining and automatic error handling enabled (error)">
+		<param name="Local" value="edInliningAutoErrorVI.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this VI is configured with inlining and debugging enabled (error)">
+		<param name="Local" value="edInliningDebuggableVI.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this VI is not an accessor VI, but it overrides one (error)">
+		<param name="Local" value="edNonPropAccessorOverridesPropAccessor.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this VI's owning library is missing (error)">
+		<param name="Local" value="edCannotLoadLibrary.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this wire connects more than one data source (error)">
+		<param name="Local" value="edMultSrcs.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this wire connects one or more data sinks but has no source (error)">
+		<param name="Local" value="edNoSource.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="this wire is not connected to anything (error)">
+		<param name="Local" value="edZeroSrcs.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Timed Loop">
+		<param name="See Also" value="Timed Loop">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="Timed_Loop_Error_Codes.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="timeout input wired but Timeout event not handled (error)">
+		<param name="Local" value="edEventNoTimeOutDiag.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="To More Specific Class">
+		<param name="See Also" value="To More Specific Class">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="To More Specific Class must cast to the original data type of the dynamic input front panel terminal or an ancestor type (error)">
+			<param name="Local" value="edUDClassDowncastMustBeToOriginalType.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="To More Specific Class must cast to the original data type of the Data Value Reference Read Element border node (error)">
+		<param name="Local" value="edClassDowncastMustBeToOriginalTypeInReference.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="To More Specific Class must cast to the original data type of the dynamic input front panel terminal or an ancestor type (error)">
+		<param name="Local" value="edUDClassDowncastMustBeToOriginalType.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="too few arguments (error)">
+		<param name="Local" value="edTooFewArgsError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="too few format specifiers (error)">
+		<param name="Local" value="edTooFewFmt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="too many arguments (error)">
+		<param name="Local" value="edTooManyArgsError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="too many format specifiers (error)">
+		<param name="Local" value="edTooManyFmt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="tunnel has undefined type (error)">
+		<param name="Local" value="edTunnelHasVoidType.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="tunnels">
+		<param name="See Also" value="tunnels">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="undefined type (error)">
+			<param name="Local" value="edTunnelHasVoidType.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Type Cast">
+		<param name="See Also" value="Type Cast">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="you cannot type cast between different data value reference types (error)">
+			<param name="Local" value="edTypeCastHasIncompatibleTypes.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="type declarations not allowed in Expression Node (error)">
+		<param name="Local" value="edNoTypeDeclInSingleExprError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="type definition cannot have array of arrays (error)">
+		<param name="Local" value="edTypeDefArrayNotAllowed.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="type definition inside that same type definition (error)">
+		<param name="Local" value="edTypeDefRecursive.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="type definition not found or contains errors (error)">
+		<param name="Local" value="edTypeDefBadVI.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="type definition:LabVIEW cannot auto-update control or constant without losing or incorrectly preserving data (error)">
+		<param name="Local" value="edTypeDefRequiresManualUpdate.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="type definitions">
+		<param name="See Also" value="type definitions">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Property Node linked to (error)">
+			<param name="Local" value="edPropNodeCantWriteStrictTypedefProperty.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="cannot have array of arrays (error)">
+			<param name="Local" value="edTypeDefArrayNotAllowed.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="control does not match its type definition (error)">
+			<param name="Local" value="edTypeDefBadDDO.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="invalid use of type definition in Control Editor (error)">
+			<param name="Local" value="edTypeDefNotAllowed.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="not found or contains errors (error)">
+			<param name="Local" value="edTypeDefBadVI.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="refers to a broken type definition (error)">
+			<param name="Local" value="edFPTypedefHasBadDependency.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="type definition has unapplied changes (error)">
+			<param name="Local" value="edTypedefHasUnappliedChanges.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="type definition inside that same type definition (error)">
+			<param name="Local" value="edTypeDefRecursive.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="type does not coerce (error)">
+		<param name="Local" value="edPSPTypeNotCoerce.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="typedef:LabVIEW cannot auto-update control or constant without losing or incorrectly preserving data (error)">
+		<param name="Local" value="edTypeDefRequiresManualUpdate.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="UDP">
+		<param name="See Also" value="UDP">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="TCP_and_UDP_Error_Codes.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="unable to display the block diagram for add-on VI (error)">
+		<param name="Local" value="activate_addon_msg.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="unable to perform Save for Previous on add-on VI (error)">
+		<param name="Local" value="activate_addon_msg.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="unassigned sequence local(s) (error)">
+		<param name="Local" value="edUnAssSLoc.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="undefined function (error)">
+		<param name="Local" value="edUndefFunctionError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="undefined variable (error)">
+		<param name="Local" value="edUndeclaredVariableError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="undirected tunnel (error)">
+		<param name="Local" value="edUndirectedTunnel.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="unexpected type on accessor VI class or error terminal">
+		<param name="Local" value="edUDPropConPaneWrongType.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="unexpected XNode error occurred (error)">
+		<param name="Local" value="edXNodeFatalErrorBrokenForever.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Unflatten From JSON type is invalid (error)">
+		<param name="Local" value="edUnflattenFromJSONInvalidType.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="unit labels">
+		<param name="See Also" value="unit labels">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="unit text is invalid (error)">
+			<param name="Local" value="edFPBadUnitSyntax.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="units">
+		<param name="See Also" value="units">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="bad syntax (error)">
+			<param name="Local" value="edBadUnitSyntax.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="incompatible (error)">
+			<param name="Local" value="edUnitConflict.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="text in unit label is invalid (error)">
+			<param name="Local" value="edFPBadUnitSyntax.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="unknown format specifier (error)">
+		<param name="Local" value="edUnknownFmt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="unresolved linkage to network-published variable (error)">
+		<param name="Local" value="edPSPUnresolvedItemIDError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="unwired input (error)">
+		<param name="Local" value="edUnwiredFBoxInput.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="unwired selector (error)">
+		<param name="Local" value="edUnwiredSelector.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="user event data type is unnamed or has elements with no names or duplicate names (error)">
+		<param name="Local" value="edUnnamedUserEvent.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="user-defined function contains an error (error) (MathScript RT Module)">
+		<param name="Local" value="edMathScriptNodeUDFError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="variable already defined (error)">
+		<param name="Local" value="edDuplicateIdDeclError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="variable expected (error)">
+		<param name="Local" value="edLValueRequiredError.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="variables">
+		<param name="See Also" value="variables">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="not connected (error)">
+			<param name="Local" value="edUnwiredGlobal.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VI containing Shared Variable node needs to be loaded in a project (error)">
+		<param name="Local" value="edSharedVariableNeedsProject.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VI edited in another application instance (error)">
+		<param name="Local" value="edVIEditedInOtherContext.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VI failed to compile (error)">
+		<param name="Local" value="edBadCodeGeneration.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VI has a bad connection to or cannot find a subVI or external routine (error)">
+		<param name="Local" value="edNoBDBadLinkageError.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VI must be reentrant if a control of this type is on the connector pane (error)">
+		<param name="Local" value="VI_must_be_reentrant_for_connector.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VI must be reentrant to use a control of this type (error)">
+		<param name="Local" value="VI_must_be_reentrant_for_control.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VI Server">
+		<param name="See Also" value="VI Server">
+		</OBJECT>
+	<UL>		
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="class conflict (error)">
+			<param name="Local" value="edClassConflict.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="TCP_and_UDP_Error_Codes.html">
+			</OBJECT>
+</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VI's record of owning library's password does not match library's actual password (error)">
+		<param name="Local" value="edLibraryPasswordTampered.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VISA">
+		<param name="See Also" value="VISA">
+		</OBJECT>
+	<UL>		
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="class conflict (error)">
+			<param name="Local" value="edClassConflict.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="VISA_Error_Codes.html">
+			</OBJECT>
+</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="waveform">
+		<param name="See Also" value="waveform">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="Wavefrm_Datype_Error_Codes.html">
+			</OBJECT>		
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="invalid (error)">
+			<param name="Local" value="edBadNMuxWaveform.html">
+			</OBJECT>
+</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="waveform is invalid (error)">
+		<param name="Local" value="edBadNMuxWaveform.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Web services">
+		<param name="See Also" value="Web services">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="Web_Services_Error_Codes.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Windows connectivity">
+		<param name="See Also" value="Windows connectivity">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="ActiveX_Error_Codes.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Windows Embedded Standard">
+		<param name="See Also" value="Windows Embedded Standard">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="XP_Embedded_Error_Codes.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Windows Registry Access VIs">
+		<param name="See Also" value="Windows Registry Access VIs">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="Win_Registry_Error_Codes.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="wire connected to an undirected tunnel (error)">
+		<param name="Local" value="edUndirectedTunnel.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="wire has loose ends (error)">
+		<param name="Local" value="edLooseEnds.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="wire is a member of a cycle (error)">
+		<param name="Local" value="edCycle.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="wired class does not support a method of this VI's name (error)">
+		<param name="Local" value="edUDClassAPINotDefined.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="wired refnums are of different types (error)">
+		<param name="Local" value="edRefNumConflict.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="wiring">
+		<param name="See Also" value="wiring">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="loose ends (error)">
+			<param name="Local" value="edLooseEnds.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="member of a cycle (error)">
+			<param name="Local" value="edCycle.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="more than one data source (error)">
+			<param name="Local" value="edMultSrcs.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="more than one index input (error)">
+			<param name="Local" value="edOneIndexAllowed.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="no source (error)">
+			<param name="Local" value="edNoSource.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="not connected (error)">
+			<param name="Local" value="edZeroSrcs.html">
+			</OBJECT>
+	</UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Write Filters VIs">
+		<param name="See Also" value="Write Filters VIs">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="XP_Embedded_Error_Codes.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="write only: cannot read from this shared variable (error)">
+		<param name="Local" value="edSharedVariableInvalidReadAccess.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="wrong connector pane pattern for accessor VI">
+		<param name="Local" value="edUDPropConPaneWrongPattern.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="XControl">
+		<param name="See Also" value="XControl">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="the VI cannot access (error)">
+			<param name="Local" value="edXCtlNotAccessible.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="XControl is disconnected (error)">
+		<param name="Local" value="edXCtlDisconnected.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="XControl not supported for current target (error)">
+		<param name="Local" value="edXCtlNotSupportedOnTarget.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="XControl used in this VI is broken (error)">
+		<param name="Local" value="edXCtlBroken.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="XControls">
+		<param name="See Also" value="XControls">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="XControl is disconnected (error)">
+			<param name="Local" value="edXCtlDisconnected.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="missing libraries or VIs (error)">
+			<param name="Local" value="edXCtlBroken.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="not supported for current target (error)">
+			<param name="Local" value="edXCtlNotSupportedOnTarget.html">
+			</OBJECT>
+	</UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="XML">
+		<param name="See Also" value="XML">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="parser error codes">
+			<param name="Local" value="DOM_Error_Codes.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="XNode is not executable (error)">
+		<param name="Local" value="edXNodeBadGeneratedCode.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="you cannot type cast between different data value reference types (error)">
+		<param name="Local" value="edTypeCastHasIncompatibleTypes.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="you have attempted to connect a wire to a floating object (error)">
+		<param name="Local" value="floating_object.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="you have connected a control to a control (error)">
+		<param name="Local" value="ed2Srcs.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="you have connected a scalar type to an array of that type (error)">
+		<param name="Local" value="edScalarToArrayConflict.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="you have connected an indicator to an indicator (error)">
+		<param name="Local" value="ed2Sinks.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="you have connected numeric data types that have incompatible units (error)">
+		<param name="Local" value="edUnitConflict.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="you have connected two arrays of different dimensions (error)">
+		<param name="Local" value="edDimConflict.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="you have connected two clusters with different contents (error)">
+		<param name="Local" value="edEltConflict.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="you have connected two terminals of different types (error)">
+		<param name="Local" value="edTypeConflict.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="you have initialized some shift register elements but not all of them (error)">
+		<param name="Local" value="edUnwiredLSR.html">
+		</OBJECT>
+
+</UL>
+</BODY>
+</HTML>

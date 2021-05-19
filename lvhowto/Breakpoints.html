@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 3500Edebugginghlp -->
+
+<title>Managing Breakpoints</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Managing Breakpoints
+</h1>
+<!-- begin parent: ../lvconcepts/Debug_Techniques.html -->
+<p class="Body">Use the <a href="../glang/Tools_Palette_Icons.html">Breakpoint</a> tool to place a breakpoint on a VI, node, or wire and pause execution at that location. When you set a breakpoint on a wire, execution pauses after data passes through the wire and the <strong>Pause</strong> button appears red. Place a breakpoint on the block diagram to pause execution after all nodes on the block diagram execute. The block diagram border appears red and blinks to reflect the placement of a breakpoint.
+</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;<span class="Platform">(MathScript RT Module)</span> You also can set a breakpoint on a line of script in a <a href="../gmath/MathScript_Node.html">MathScript Node</a>.</td>
+</tr>
+</table>
+<p class="Body">When a VI pauses at a breakpoint, LabVIEW brings the block diagram to the front and uses a marquee to <a href="../lvconcepts/Debug_Techniques.html#How_LabVIEW_Highlights_Breakpoints">highlight</a> the node or wire that contains the breakpoint. When you move the cursor over an existing breakpoint, the black area of the Breakpoint tool cursor appears white.
+</p>
+<!-- end parent: ../lvconcepts/Debug_Techniques.html -->
+<h2>Setting Breakpoints</h2>
+<p class="Body">Complete the following steps to place a breakpoint on a VI, node, or wire and pause execution at that location.
+</p>
+<ol>
+<li>Use the Breakpoint tool <img src="noloc_env_brkpoint.gif"> to click the VI, node, or wire where you want to pause execution. You also can right-click the VI, node, or wire and select <strong>Breakpoint&#0187;Set Breakpoint</strong> from the shortcut menu.
+</li>
+</ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;<span class="Platform">(MathScript RT Module)</span> You cannot place breakpoints on certain lines of script in MathScript Nodes. For example, you cannot place a breakpoint on the line <span class="Monospace">a = 1;</span>. If you try to place a breakpoint on a line of script that does not support breakpoints, LabVIEW automatically moves the breakpoint to the next line that supports breakpoints.</td>
+</tr>
+</table>
+<ol start="2">
+<li>Run the VI. <!-- begin parent: ../lvconcepts/Debug_Techniques.html -->When you reach a breakpoint during execution, the VI pauses and the <strong>Pause</strong> button appears red. Also, the VI background and border begin blinking. You can take the following actions:
+
+<ul>
+<li><a href="Single_Step_Mode.html">Single-step</a> through execution using the single-stepping buttons.
+</li>
+<li>Check intermediate values on <a href="../lvhowto/Using_the_Probe_Tool.html">probes</a> that you placed on wires prior to running the VI. 
+</li>
+<li>Check intermediate values on probes that you place after running the VI if you have enabled the <a href="../lvhowto/Retain_Wire_Values.html">Retain Wire Values</a> option.
+</li>
+<li>Change values of front panel controls.
+</li>
+<li>Check the <a href="../lvconcepts/Debug_Techniques.html#Suspending_Execution">Call list</a> pull-down menu to see the list of VIs that call the VI that is stopped at a breakpoint.</li>
+<li>Click the <a href="../glang/LabVIEW_Toolbar.html">Pause button</a> to continue running to the next breakpoint or until the VI finishes running.
+</li>
+<!-- end parent: ../lvconcepts/Debug_Techniques.html -->
+</ul>
+</li>
+</ol>
+
+<h2>Disabling and Enabling Breakpoints</h2>
+<p class="Body">To disable a breakpoint so the VI continues executing when LabVIEW reaches the breakpoint, right-click an object with a breakpoint and select <strong>Breakpoint&#0187;Disable Breakpoint</strong> from the shortcut menu. To enable a breakpoint that you previously disabled, right-click the block diagram object and select <strong>Breakpoint&#0187;Enable Breakpoint</strong> from the shortcut menu. You also can disable or enable breakpoints individually or all at once using the <a href="../lvdialog/Breakpoint_Manager.html">Breakpoint Manager</a> window.</p>
+
+<h2>Removing Breakpoints</h2>
+<p class="Body">Use the Breakpoint tool to click an existing breakpoint to remove it. You also can right-click a breakpoint using the <a href="../glang/Tools_Palette_Icons.html">Positioning</a> tool and select <strong>Breakpoint&#0187;Clear Breakpoint</strong> from the shortcut menu to remove it. To remove all breakpoints in the VI hierarchy, select <strong>Edit&#0187;Remove Breakpoints from Hierarchy</strong>. You also can remove all breakpoints in the VI hierarchy using the <strong>Breakpoint Manager</strong> window.</p>
+
+<!-- Begin parent: ../glang/Edit_Menu.html -->
+<p class="Body">You must manually remove breakpoints in dynamically called VIs or VIs referenced by the <a href="../glang/Static_VI_Ref.html">Static VI Reference</a> function.</p><!-- End parent: ../glang/Edit_Menu.html -->
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;<span class="Platform">(MathScript RT Module)</span> To remove all breakpoints in a script in a MathScript Node, right-click inside the MathScript Node and select <strong>Clear Script Breakpoints</strong> from the shortcut menu.</td>
+</tr>
+</table>
+
+<p class="Body">To locate and manage all breakpoints in the VI hierarchy, select <strong>View&#0187;Breakpoint Manager.</strong> Double-click any item in the listbox to highlight the breakpoint on the block diagram.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;You cannot view breakpoints on a password-protected block diagram if you do not know the password, but you can enable, disable, and remove breakpoints. After you run the VI, the VI will return to the state it was in before you made any changes to the breakpoints.</td>
+</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 1100Enumericcihlp -->
+
+<title>Configuring the Time and Date in a Time Stamp Control</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Configuring the Time and Date in a Time Stamp Control
+</h1>
+<p class="Body">Use the time stamp control to use, view, and store absolute time with high precision. This data type can accurately store 18 digits of precision each in whole second and 19 digits of precision in fractions of a second. The time stamp wire data type stores values in UTC, but the time stamp control displays values in local time.</p>
+
+<p class="Body">You can use a numeric control to display time stamp values, but the numeric control holds a relative quantity. The time stamp control holds an absolute quantity.</p>
+
+<p class="Body">Complete the following steps to configure the time and date value in a time stamp control.
+</p>
+<ol>
+<li>Add a time stamp control to the front panel window.
+<br><br>
+<SPAN title=" Add to the front panel window "><a href="javascript:placeObjectFP(control3);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObjectFP(control3);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN>
+</li>
+<li>Use the <a href="../glang/Tools_Palette.html">Operating tool</a> to click the <strong>Time/Date Browse</strong> button <img src="noloc_env_timedatebrowse.gif"> to display the <a href="../lvdialog/Select_time_date_DB.html">Set Time and Date</a> dialog box. You also can right-click the time stamp control and select <strong>Data Operations&#0187;Set Time and Date</strong> from the shortcut menu to display the <strong>Set Time and Date</strong> dialog box.
+</li>
+<li>Configure the time and date you want as the time stamp for the data.
+</li>
+</ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;To configure the time, click the portion of time, such as minutes or seconds, you want to configure. LabVIEW highlights the selected portion of time. Use the up arrow and down arrow keys to increment or decrement accordingly. You also can enter a new value in the selected portion of time.</td></tr>
+</table>
+<p class="Body">You also can right-click a time stamp control and select <strong>Data Operations&#0187;Set Time to Now</strong> from the shortcut menu to set the time and date value to the current time and date.
+</p>
+<p class="Body">You can change the time stamp control value programmatically by <a href="Creating_Property_Nodes.html">creating a Property Node</a> from the time stamp control and wiring a <a href="../glang/Timestamp_Constant.html">time stamp constant</a> to the <a href="../lvprop/Ctrl_Value_LV_Var.html">Value</a> property.
+</p>
+<table class="Borderless">
+<tr><td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;You cannot use units with the time stamp control. In addition, National Instruments recommends you do not use units with a numeric control formatted for absolute time.</td></tr>
+</table>
+
+
+
+</body>
+</html>

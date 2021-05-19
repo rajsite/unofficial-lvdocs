@@ -1,0 +1,63 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>IIR Filter Characteristics in LabVIEW</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-33EFF16C-EC5E-46D5-93D2-4D628FD9B14E" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">IIR Filter Characteristics in LabVIEW</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 IIR filters in LabVIEW have the following characteristics: 
+            	 
+         </p> 
+         	 <a name="GUID-33EFF16C-EC5E-46D5-93D2-4D628FD9B14E__UL_4100F40AF6144814A84F64D9F33E9FA2" shape="rect">
+            <!-- --></a><ul id="GUID-33EFF16C-EC5E-46D5-93D2-4D628FD9B14E__UL_4100F40AF6144814A84F64D9F33E9FA2">
+            <li><a name="GUID-33EFF16C-EC5E-46D5-93D2-4D628FD9B14E__LI_2C996B1492A8405BAFA52E42B0EE4D7A" shape="rect">
+                  <!-- --></a>The <span>IIR Filter VI</span> interprets values at negative indexes in the following impulse equations as zero the first time you call the VI. 
+               		  
+               <p><em>x</em><sub>0</sub> = 1 
+                  		  
+               </p> 
+               		  
+               <p><em>x</em><sub><em>i</em></sub> = 0 
+                  		  
+               </p> 
+               		  
+               <p>for all <em>i</em> &#8800; 0. 
+                  		  
+               </p> 
+               		
+            </li>
+            <li><a name="GUID-33EFF16C-EC5E-46D5-93D2-4D628FD9B14E__LI_4B12B1A64547469086FAB2141FFCCE4C" shape="rect">
+                  <!-- --></a>A transient response, or delay, proportional to the filter order occurs before the filter reaches a steady state. 
+               		
+            </li>
+            <li><a name="GUID-33EFF16C-EC5E-46D5-93D2-4D628FD9B14E__LI_54EE89CF78214BC3BA3B32FC5E358B0D" shape="rect">
+                  <!-- --></a>The number of elements in the filtered sequence equals the number of elements in the input sequence. 
+               		
+            </li>
+            <li><a name="GUID-33EFF16C-EC5E-46D5-93D2-4D628FD9B14E__LI_624679ED3D6F44549D6717E4D0295612" shape="rect">
+                  <!-- --></a>The filter retains the internal filter state values when the filtering process finishes. 
+               		
+            </li>
+         </ul> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Comparing_FIR_andIIR_Filters.html" shape="rect">FIR and IIR Filters</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

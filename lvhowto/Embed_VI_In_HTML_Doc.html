@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 6100Ecommhlp -->
+
+<title>Embedding a VI in an Existing HTML Document</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Embedding a VI in an Existing HTML Document</h1>
+
+<p class="Body">National Instruments recommends you use the Web Publishing Tool to <a href="Creating_HTML_Documents_an.html">create an HTML document and embed VIs</a> so a client computer can view and control the front panel of the VI in a Web browser.</p>
+
+<p class="Body">However, if you already have an HTML document, use the following syntax to embed a VI in the HTML document so a client computer can view and control the front panel of the VI in a browser. Store the HTML document in the <a href="root_directory.html">Web Server root directory</a>. Refer to <a href="Syntax_Examples.html">Web Server Syntax Examples</a> for examples of embedding VIs in HTML documents.</p>
+
+<p class="Body">The client and server computers must be running the same version of the remote panel protocol in LabVIEW. If you are using a browser to view and control a remote front panel, you must <a href="../lvconcepts/Using_the_LV_Run_Time_Eng.html">use a version of the LabVIEW Run-Time Engine</a> compatible with the version of LabVIEW on the server computer.</p>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td>
+<strong>Note</strong>&nbsp;&nbsp;Different versions of the LabVIEW browser plug-in can run concurrently, but they communicate with different remote front panel servers. Each browser plug-in can display VIs developed in the same version of LabVIEW. The HTML <span class="Monospace">OBJECT/EMBED</span> tag determines which plug-in the browser loads. For the LabVIEW ActiveX control, the <span class="Monospace">CLASSID</span> you specify in the <span class="Monospace">OBJECT</span> tag determines which plug-in to load. The <span class="Monospace">CLASSID</span> for each version of the plug-in is different.</td></tr></table>
+
+<p class="Indent1"><span class="monospace">&lt;OBJECT ID=&quot;LabVIEWControl&quot; CLASSID=&quot;CLSID:A40B0AD4-B50E-4E58-8A1D-8544233807B0&quot;<br> WIDTH=<em>x</em> HEIGHT=<em>x</em> CODEBASE=&quot;ftp://ftp.ni.com/support/labview/runtime/windows/<strong>15.0</strong>/LVRTE<strong>15.0</strong>min.exe&quot;&gt;<br> 
+&lt;PARAM name=&quot;LVFPPVINAME&quot; value=&quot;<em>VI_NAME.vi</em>&quot;&gt;<br>
+&lt;EMBED SRC=&quot;.LV_FrontPanelProtocol.<strong>rpvi150</strong>&quot; LVFPPVINAME=&quot;<em>VI_NAME.vi</em>&quot;  TYPE=&quot;application/x-<strong>labviewrpvi150</strong>&quot; WIDTH=<em>x</em> HEIGHT=<em>x</em> PLUGINSPAGE=&quot;http://digital.ni.com/express.nsf/bycode/exck2m&quot;&gt;&lt;/EMBED&gt;<br>
+&lt;/OBJECT&gt;
+</span></p>
+
+<p class="Body">Refer to the following table for more information about the syntax used in different versions of LabVIEW. Changes between versions are highlighted in bold in the previous example.</p>
+
+<table class="Bordered">
+<tr><th class="Bordered">LabVIEW Version</th><th class="Bordered">CODE BASE</th><th class="Bordered">EMBED SRC</th><th class="Bordered">EMBED TYPE</th></tr>
+<tr><td class="Bordered">2015</td><td class="Bordered"><span class="Monospace">15.0</span></td><td class="Bordered"><span class="Monospace">rpvi150</span></td><td class="Bordered"><span class="Monospace">labviewrpvi150</span></td></tr>
+<tr><td class="Bordered">2014</td><td class="Bordered"><span class="Monospace">14.0</span></td><td class="Bordered"><span class="Monospace">rpvi140</span></td><td class="Bordered"><span class="Monospace">labviewrpvi140</span></td></tr>
+<tr><td class="Bordered">2013</td><td class="Bordered"><span class="Monospace">13.0</span></td><td class="Bordered"><span class="Monospace">rpvi130</span></td><td class="Bordered"><span class="Monospace">labviewrpvi130</span></td></tr>
+</table>
+
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td>
+<strong>Note</strong>&nbsp;&nbsp;If clients access the VIs using the LabVIEW ActiveX control you need only to include the <span class="Monospace">&lt;OBJECT&gt;</span> tag information. However, to best support all potential clients with various configurations, you should include both the <span class="Monospace">&lt;OBJECT&gt;</span> and <span class="Monospace">&lt;EMBED&gt;</span> tags. This makes sure all clients can access the VIs remotely using a browser.</td></tr></table>
+
+<p class="Body">The following list describes the parameters you must configure.</p>
+<table class="Bordered">
+<tr><th class="Bordered Left-Align">Parameter</th><th class="Bordered Left-Align">Description</th></tr>
+<tr><td class="Bordered"><span class="Monospace"><span class="DNL">CODEBASE</span></span></td>
+<td class="Bordered">The location of the <a href="../lvconcepts/Using_the_LV_Run_Time_Eng.html">LabVIEW Run-Time Engine</a> installer, including the name of the <span class="Monospace">.exe</span> file, for clients who access VIs using the LabVIEW ActiveX Control. The address provided in the previous example includes the location of the current version of the installer.</td></tr>
+<tr><td class="Bordered"><span class="Monospace-Italic"><span class="DNL">VI_NAME</span></span></td>
+<td class="Bordered">The name of the VI, such as <span class="Monospace">Example.vi</span>. <span class="Monospace-Italic">VI_NAME</span> does not include path or directory names even if the VI is located in a subdirectory or inside a <span class="monospace">.llb</span> file.</td></tr>
+<tr><td class="Bordered"><span class="Monospace"><span class="DNL">PLUGINSPAGE</span></span></td>
+<td class="Bordered">The URL where clients can download the LabVIEW Run-Time Engine installer, for clients who access VIs using the Netscape plug-in. The address provided in the previous example includes the location of the current version of the installer.</td></tr>
+<tr><td>(Optional) <span class="Monospace"><span class="DNL">WIDTH</span></span></td><td class="Bordered">Width of the front panel in pixels.</td></tr>
+<tr><td class="Bordered">(Optional) <span class="Monospace"><span class="DNL">HEIGHT</span></span></td><td class="Bordered">Height of the front panel in pixels.</td></tr>
+</table>
+
+</body>
+</html>

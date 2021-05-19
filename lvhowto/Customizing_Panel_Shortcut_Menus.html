@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+<title>Customizing Run-Time Shortcut Menus for Front Panels Programmatically</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Customizing Run-Time Shortcut Menus for Front Panels Programmatically</h1>
+
+<p class="Body">Complete the following steps to customize a shortcut menu for the front panel of a VI programmatically.</p>
+<ol>
+<li>Add an <a href="../glang/Event_Structure.html">Event structure</a> to the block diagram and drag out a region on the block diagram.
+				    <br><br><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object1217);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Add</SPAN>  
+					<SPAN title=" Find on the palette "><a href="javascript:findObject(object1217);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Find</SPAN>
+	<br><br></li>
+	
+<li>Right-click the Event structure and select <strong>Edit Events Handled by This Case</strong> from the shortcut menu.</li>
+
+<li>In the <a href="../lvdialog/Edit_Events_Dialog_Box.html">Edit Events</a> dialog box, select <strong>Pane</strong> from the <strong>Event Sources</strong> list and select <a href="../lvprop/Ctrl_Shrtct_Menu_Act.html">Shortcut Menu Activation?</a> from the <strong>Events</strong> list.<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;LabVIEW labels the first pane as <strong>Pane</strong>. LabVIEW labels subsequent panes that you create by adding splitter bars to the front panel as <strong>Pane <em>X</em></strong>, where <em>X</em> numbers the pane according to the order in which you create the pane. You can view the label of the pane by right-clicking the scroll bar of the pane and selecting <strong>Visible Items&#0187;Labels</strong> from the shortcut menu.</td></tr></table></li>
+
+<li>Click the <strong>OK</strong> button to close the  dialog box.</li><li>Add the <a href="../glang/Insert_Menu_Items.html">Insert Menu Items</a> function to the block diagram inside the Shortcut Menu Activation? Event structure.
+				<br><br><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object740);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Add</SPAN>  
+					<SPAN title=" Find on the palette "><a href="javascript:findObject(object740);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Find</SPAN>
+	<br><br></li>
+	
+<li>Right-click the <strong>item names</strong> input of the Insert Menu Items function and select <strong>Create&#0187;Constant</strong> from the shortcut menu. An array constant appears.</li>
+
+<li>Type <span class="Monospace">About this Application</span> in element <span class="Monospace">0</span> and <span class="Monospace">Help</span> in element <span class="Monospace">1</span> of the string array constant.</li>
+
+<li>Wire the <strong>MenuRef</strong> event data field to the <strong>menu reference</strong> input of the Insert Menu Items function. </li>
+
+<li>Click the <strong>Run Continuously</strong> button.</li>
+
+<li>Right-click in the front panel window. The shortcut menu includes an <strong>About this Application</strong> item and a <strong>Help</strong> item.</li>
+
+<li><a href="Runtime_Shortcut_Menu_Handling.html">Configure a Shortcut Menu Selection event</a> to handle the selection of the items.</li></ol>
+
+
+
+
+
+</body>
+</html>

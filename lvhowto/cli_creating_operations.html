@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+
+<title>Creating Custom Command Line Operations</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Creating Custom Command Line Operations</h1>
+
+<p>To create a custom command line operation to <a href="cli_running_operations.html">run</a> in the command line interface (CLI) for LabVIEW, complete the following tasks:</p>
+<ul>
+<li><a href="#OperationName">Part 1</a>: Define the operation name.</li>
+<li><a href="#OperationBehavior">Part 2</a>: Define the operation behavior.</li>
+<li><a href="#OperationHelp">Part 3</a>&nbsp;(Optional): Define the help for the operation.</li>
+</ul>
+<h2><a name="OperationName">Part 1: Defining the Operation Name</a></h2>
+<p>In the CLI for LabVIEW, command line operations have a parent class and each operation is built from a child class of the parent class. To define the name of the operation, you must create a child class of the parent class and specify the name of the child class.</p>
+<p>Complete the following steps to define the name of the operation:</p>
+<ol>
+<li>Navigate to one of the following directories:
+<ul>
+<li><span class="Platform">(Windows)</span>&nbsp;<span class="Monospace">C:\Program Files (x86)\National Instruments\Shared\LabVIEW CLI\Operations</span></li>
+<li><span class="Platform">(macOS)</span>&nbsp;<span class="Monospace">/Library/Application Support/National Instruments/LabVIEW CLI/Operations</span></li>
+<li><span class="Platform">(Linux)</span>&nbsp;<span class="Monospace">/usr/local/natinst/nilvcli/Operations</span></li>
+</ul>
+</li>
+<li>Open <span class="Monospace">Operations.lvproj</span> or <span class="Monospace">Toolkit-Operations.lvproj</span>, depending on whether the operation requires the LabVIEW development system only or additional LabVIEW modules and toolkits.
+<table class="Borderless">
+<tr><td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;To open <span class="Monospace">Toolkit-Operations.lvproj</span>, you must install the following toolkits and library:
+<ul>
+<li>LabVIEW VI Analyzer Toolkit</li>
+<li>LabVIEW Unit Test Framework Toolkit</li>
+<li>UTF JUnit Report library&#8212;Install this library using the <a href="../lvhelp/vipm.html">JKI VI Package Manager (VIPM) software</a>.</li>
+</ul>
+</td></tr></table>
+</li>
+<li>Right-click <strong>My Computer</strong> and select <strong>New&#0187;Class</strong>.</li>
+<li>In the <strong>New Class</strong> window, specify the name of the class, such as <span class="Monospace"><span class="DNL">AddTwoNumbers</span></span>. The class name is the name of the operation you are creating.</li>
+<li>In the project tree, right-click the class that you created and select <strong>Properties</strong>.</li>
+<li>On the <strong>Inheritance</strong> page, click <strong>Change Parent Class</strong>.</li>
+<li>Select <strong>CoreOperation.lvclass</strong>, click <strong>Inherit from Selected</strong>, and click <strong>OK</strong>.</li>
+</ol>
+<h2><a name="OperationBehavior">Part 2: Defining the Operation Behavior</a></h2>
+<p>To define the behavior of the operation,  you must override the methods of the class you created in the previous section and add code in one of the overridden methods.</p>
+<p>Complete the following steps to define the behavior of the operation:</p>
+<ol>
+<li>In the project tree, right-click the class that you created in the previous section and select <strong>New&#0187;VI for Override</strong>.</li>
+<li>In the <strong>New Override</strong> window, select <span class="Monospace">GetHelp.vi</span> and <span class="Monospace">RunOperation.vi</span>, and click <strong>OK</strong>.</li>
+<li>Save the project. When prompted, save the class and the overridden methods in a folder with the same name as the operation.
+<table class="Borderless">
+<tr><td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;NI recommends that you put the folder in one of the following directories so that you do not need to specify the path to the folder using the <span class="Monospace"><span class="DNL">&#8722;AdditionalOperationDirectory</span></span> argument when running the operation.
+<ul>
+<li><span class="Platform">(Windows)</span>&nbsp;<span class="Monospace">C:\Program Files (x86)\National Instruments\Shared\LabVIEW CLI\Operations</span></li>
+<li><span class="Platform">(macOS)</span>&nbsp;<span class="Monospace">/Library/Application Support/National Instruments/LabVIEW CLI/Operations</span></li>
+<li><span class="Platform">(Linux)</span>&nbsp;<span class="Monospace">/usr/local/natinst/nilvcli/Operations</span></li>
+</ul></td></tr></table></li>
+<li>Open the block diagram of the <span class="Monospace">RunOperation.vi</span> method.</li>
+<li><a href="remove_rewire_objects.html">Remove and rewire</a> the subVI.</li>
+<li>Add code to define the behavior of the operation and save your changes. Do not modify the connector pane, as illustrated in the following figure.<br><br>
+<img src="noloc_env_cli_define_behavior_conpane.gif"><br><br>
+<table class="Bordered"><tr><th class="Bordered">Terminal</th><th class="Bordered">Data Type</th><th class="Bordered">Description</th></tr><tr><td class="Bordered"><img src="noloc_eps_callout_1.gif"></td><td class="Bordered"><img src="cLabVIEW_Objectlvclass.gif"></td><td class="Bordered">LabVIEW object of the class that you created in the previous section.</td></tr><tr><td class="Bordered"><img src="noloc_eps_callout_2.gif"></td><td class="Bordered"><img src="c1dstr.gif"></td><td class="Bordered">Arguments that users enter in the CLI for LabVIEW when running this operation. Each string in the array represents an argument.</td></tr><tr><td class="Bordered"><img src="noloc_eps_callout_3.gif"></td><td class="Bordered"><img src="iLabVIEW_Objectlvclass.gif"></td><td class="Bordered">LabVIEW object of the class that you created in the previous section.</td></tr><tr><td class="Bordered"><img src="noloc_eps_callout_4.gif"></td><td class="Bordered"><img src="ii32.gif"></td><td class="Bordered">A code that the CLI for LabVIEW returns to the calling application, such as a Jenkins application. For example, you can configure the CLI for LabVIEW to return 0 if the operation runs successfully and -1 if an error occurs.</td></tr><tr><td class="Bordered"><img src="noloc_eps_callout_5.gif"></td><td class="Bordered"><img src="istr.gif"></td><td class="Bordered">Output of the operation or error messages to display in the CLI for LabVIEW console or to save to the log file.</td></tr></table>
+<br>
+Refer to <span class="Monospace">RunOperation.vi</span> in one of the following directories for an example of defining the behavior of the <span class="DNL">AddTwoNumbers</span> operation, which adds two input numbers and returns the sum in the output.
+<ul>
+<li><span class="Platform">(Windows)</span>&nbsp;<span class="Monospace">C:\Users\Public\Documents\National Instruments\LabVIEW CLI\Examples\AddTwoNumbers</span></li>
+<li><span class="Platform">(macOS)</span>&nbsp;<span class="Monospace">/Library/Application Support/National Instruments/LabVIEW CLI/Examples/AddTwoNumbers</span></li>
+<li><span class="Platform">(Linux)</span>&nbsp;<span class="Monospace">/usr/local/natinst/nilvcli/Examples/AddTwoNumbers</span></li>
+</ul>
+</li>
+</ol>
+
+<h2><a name="OperationHelp">Part 3: Defining the Help for the Operation</a></h2>
+<p>To help users get started using the operation, you can document the operation by modifying the <span class="Monospace">GetHelp.vi</span> method that you created in the previous section. Users can then access the documentation by executing the <span class="Monospace"><span class="DNL">LabVIEWCLI�-OperationName</span> &lt;<span class="Italic">operation name</span>&gt; <span class="DNL">-Help</span></span> command.</p>
+<p>Complete the following steps to document the operation:</p>
+<ol>
+<li>Open the <span class="Monospace">GetHelp.vi</span> method from the project tree.</li>
+<li>On the front panel, create a string control named <strong><span class="DNL">Help</span></strong> and enter the documentation in this control.</li>
+<li>Right-click the <strong><span class="DNL">Help</span></strong> control and select <strong>Data Operation�Make Current Value Default</strong> to set the current text as the default value of this control. Repeat this step each time you edit the text.</li>
+<li>On the block diagram, <a href="remove_rewire_objects.html">remove and rewire</a> the subVI.</li>
+<li>Wire the objects in the following way, where <span class= "Italic"><span class="DNL">AddTwoNumbers</span></span> is the operation name, and save your changes.<br><br>
+<img src="noloc_bd_cli_addnum_help.gif">
+</li>
+</ol>
+</body>
+</html>

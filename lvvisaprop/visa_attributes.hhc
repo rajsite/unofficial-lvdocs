@@ -1,0 +1,1062 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML//EN"><HTML xmlns:ni="http://natinst.com/Translate">
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta name="GENERATOR" content="Microsoft&amp;reg; HTML Help Workshop 4.1"><!-- Sitemap 1.0 -->
+</HEAD>
+<BODY><OBJECT type="text/site properties"><param name="FrameName" value="right">
+<param name="Window Styles" value="0x0225">
+<param name="comment" value="title:Online Help">
+<param name="comment" value="base:index.htm"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VISA Resource">
+<param name="Local" value="../lvvisaprop/VISA_object.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event">
+<param name="Local" value="../lvvisaprop/Event_Class.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Version Information:Resource Manufacturer Identification">
+<param name="Local" value="../lvvisaprop/Event_Class_3FFF0175.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Version Information:Resource Manufacturer Name">
+<param name="Local" value="../lvvisaprop/Event_Class_BFFF0174.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Version Information:Version of Implementation">
+<param name="Local" value="../lvvisaprop/Event_Class_3FFF0003.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Version Information:Version of Specification">
+<param name="Local" value="../lvvisaprop/Event_Class_3FFF0170.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Clear Event">
+<param name="Local" value="../lvvisaprop/Clear_Event.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:Event Type">
+<param name="Local" value="../lvvisaprop/Clear_Event_3FFF4010.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Generic Event">
+<param name="Local" value="../lvvisaprop/Generic_Event.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:Event Type">
+<param name="Local" value="../lvvisaprop/Generic_Event_3FFF4010.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:Interrupt Status ID">
+<param name="Local" value="../lvvisaprop/Generic_Event_3FFF4023.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:PXI/PCI Received Interrupt Data">
+<param name="Local" value="../lvvisaprop/Generic_Event_3FFF4241.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:PXI/PCI Received Interrupt Sequence">
+<param name="Local" value="../lvvisaprop/Generic_Event_3FFF4240.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:Received CIC State">
+<param name="Local" value="../lvvisaprop/Generic_Event_3FFF4193.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:Received Interrupt Level">
+<param name="Local" value="../lvvisaprop/Generic_Event_3FFF4041.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:Received Trigger ID">
+<param name="Local" value="../lvvisaprop/Generic_Event_3FFF4012.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:Signal Processor Status ID">
+<param name="Local" value="../lvvisaprop/Generic_Event_3FFF4011.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:Status">
+<param name="Local" value="../lvvisaprop/Generic_Event_3FFF4025.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:USB Received Interrupt Size">
+<param name="Local" value="../lvvisaprop/Generic_Event_3FFF41B0.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB CIC Event">
+<param name="Local" value="../lvvisaprop/GPIB_CIC_Event.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:Event Type">
+<param name="Local" value="../lvvisaprop/GPIB_CIC_Event_3FFF4010.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:Received CIC State">
+<param name="Local" value="../lvvisaprop/GPIB_CIC_Event_3FFF4193.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Listen Event">
+<param name="Local" value="../lvvisaprop/GPIB_Listen_Event.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:Event Type">
+<param name="Local" value="../lvvisaprop/GPIB_Listen_Event_3FFF4010.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Talk Event">
+<param name="Local" value="../lvvisaprop/GPIB_Talk_Event.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:Event Type">
+<param name="Local" value="../lvvisaprop/GPIB_Talk_Event_3FFF4010.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI Interrupt Event">
+<param name="Local" value="../lvvisaprop/PXI_Interrupt_Event.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:Event Type">
+<param name="Local" value="../lvvisaprop/PXI_Interrupt_Event_3FFF4010.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:PXI/PCI Received Interrupt Data">
+<param name="Local" value="../lvvisaprop/PXI_Interrupt_Event_3FFF4241.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:PXI/PCI Received Interrupt Sequence">
+<param name="Local" value="../lvvisaprop/PXI_Interrupt_Event_3FFF4240.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Service Request Event">
+<param name="Local" value="../lvvisaprop/Service_Request_Event.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:Event Type">
+<param name="Local" value="../lvvisaprop/Service_Request_Event_3FFF4010.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Trigger Event">
+<param name="Local" value="../lvvisaprop/Trigger_Event.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:Event Type">
+<param name="Local" value="../lvvisaprop/Trigger_Event_3FFF4010.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:Received Trigger ID">
+<param name="Local" value="../lvvisaprop/Trigger_Event_3FFF4012.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Interrupt Event">
+<param name="Local" value="../lvvisaprop/USB_Interrupt_Event.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:Event Type">
+<param name="Local" value="../lvvisaprop/USB_Interrupt_Event_3FFF4010.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:Status">
+<param name="Local" value="../lvvisaprop/USB_Interrupt_Event_3FFF4025.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:USB Received Interrupt Size">
+<param name="Local" value="../lvvisaprop/USB_Interrupt_Event_3FFF41B0.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI Signal Event">
+<param name="Local" value="../lvvisaprop/VXI_Signal_Event.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:Event Type">
+<param name="Local" value="../lvvisaprop/VXI_Signal_Event_3FFF4010.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:Signal Processor Status ID">
+<param name="Local" value="../lvvisaprop/VXI_Signal_Event_3FFF4011.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Interrupt Event">
+<param name="Local" value="../lvvisaprop/VXI_VME_Interrupt_Event.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:Event Type">
+<param name="Local" value="../lvvisaprop/VXI_VME_Interrupt_Event_3FFF4010.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:Interrupt Status ID">
+<param name="Local" value="../lvvisaprop/VXI_VME_Interrupt_Event_3FFF4023.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:Received Interrupt Level">
+<param name="Local" value="../lvvisaprop/VXI_VME_Interrupt_Event_3FFF4041.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Sysfail Event">
+<param name="Local" value="../lvvisaprop/VXI_VME_Sysfail_Event.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:Event Type">
+<param name="Local" value="../lvvisaprop/VXI_VME_Sysfail_Event_3FFF4010.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Sysreset Event">
+<param name="Local" value="../lvvisaprop/VXI_VME_Sysreset_Event.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Event Information:Event Type">
+<param name="Local" value="../lvvisaprop/VXI_VME_Sysreset_Event_3FFF4010.html"></OBJECT></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="I/O Session">
+<param name="Local" value="../lvvisaprop/I_O_Session.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Maximum Queue Length">
+<param name="Local" value="../lvvisaprop/I_O_Session_3FFF0005.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Resource Class">
+<param name="Local" value="../lvvisaprop/I_O_Session_BFFF0001.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Resource Lock State">
+<param name="Local" value="../lvvisaprop/I_O_Session_3FFF0004.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Resource Name">
+<param name="Local" value="../lvvisaprop/I_O_Session_BFFF0002.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Timeout Value">
+<param name="Local" value="../lvvisaprop/I_O_Session_3FFF001A.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:User Data">
+<param name="Local" value="../lvvisaprop/I_O_Session_3FFF0007.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Interface Information:Interface Description">
+<param name="Local" value="../lvvisaprop/I_O_Session_BFFF00E9.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Interface Information:Interface Number">
+<param name="Local" value="../lvvisaprop/I_O_Session_3FFF0176.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Interface Information:Interface Type">
+<param name="Local" value="../lvvisaprop/I_O_Session_3FFF0171.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Version Information:Resource Manufacturer Identification">
+<param name="Local" value="../lvvisaprop/I_O_Session_3FFF0175.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Version Information:Resource Manufacturer Name">
+<param name="Local" value="../lvvisaprop/I_O_Session_BFFF0174.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Version Information:Version of Implementation">
+<param name="Local" value="../lvvisaprop/I_O_Session_3FFF0003.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Version Information:Version of Specification">
+<param name="Local" value="../lvvisaprop/I_O_Session_3FFF0170.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="FireWire Instr">
+<param name="Local" value="../lvvisaprop/FireWire_Instr.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="FireWire Settings:Destination Upper Offset">
+<param name="Local" value="../lvvisaprop/FireWire_Instr_3FFF01F0.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="FireWire Settings:Lower Chip ID">
+<param name="Local" value="../lvvisaprop/FireWire_Instr_3FFF01F4.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="FireWire Settings:Source Upper Offset">
+<param name="Local" value="../lvvisaprop/FireWire_Instr_3FFF01F1.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="FireWire Settings:Upper Chip ID">
+<param name="Local" value="../lvvisaprop/FireWire_Instr_3FFF01F5.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="FireWire Settings:Vendor ID">
+<param name="Local" value="../lvvisaprop/FireWire_Instr_3FFF01F3.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="FireWire Settings:Window Upper Offset">
+<param name="Local" value="../lvvisaprop/FireWire_Instr_3FFF01F2.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Manufacturer Name">
+<param name="Local" value="../lvvisaprop/FireWire_Instr_BFFF0072.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Model Name">
+<param name="Local" value="../lvvisaprop/FireWire_Instr_BFFF0077.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Destination Increment Count">
+<param name="Local" value="../lvvisaprop/FireWire_Instr_3FFF0041.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Source Increment Count">
+<param name="Local" value="../lvvisaprop/FireWire_Instr_3FFF0040.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Window Access">
+<param name="Local" value="../lvvisaprop/FireWire_Instr_3FFF00C3.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Window Base Address">
+<param name="Local" value="../lvvisaprop/FireWire_Instr_3FFF0098.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Window Size">
+<param name="Local" value="../lvvisaprop/FireWire_Instr_3FFF009A.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB BoardInterface">
+<param name="Local" value="../lvvisaprop/GPIB_BoardInterface.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Allow DMA Transfers">
+<param name="Local" value="../lvvisaprop/GPIB_BoardInterface_3FFF001E.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Addressed State">
+<param name="Local" value="../lvvisaprop/GPIB_BoardInterface_3FFF005C.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:CIC State">
+<param name="Local" value="../lvvisaprop/GPIB_BoardInterface_3FFF005E.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:HS488 Cable Length">
+<param name="Local" value="../lvvisaprop/GPIB_BoardInterface_3FFF0069.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Line ATN State">
+<param name="Local" value="../lvvisaprop/GPIB_BoardInterface_3FFF0057.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Line NDAC State">
+<param name="Local" value="../lvvisaprop/GPIB_BoardInterface_3FFF0062.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Line REN State">
+<param name="Local" value="../lvvisaprop/GPIB_BoardInterface_3FFF0181.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Line SRQ State">
+<param name="Local" value="../lvvisaprop/GPIB_BoardInterface_3FFF0067.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Primary Address">
+<param name="Local" value="../lvvisaprop/GPIB_BoardInterface_3FFF0172.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Secondary Address">
+<param name="Local" value="../lvvisaprop/GPIB_BoardInterface_3FFF0173.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:System Controller State">
+<param name="Local" value="../lvvisaprop/GPIB_BoardInterface_3FFF0068.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Device Status Byte">
+<param name="Local" value="../lvvisaprop/GPIB_BoardInterface_3FFF0189.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:File Append Enable">
+<param name="Local" value="../lvvisaprop/GPIB_BoardInterface_3FFF0192.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:IO Protocol">
+<param name="Local" value="../lvvisaprop/GPIB_BoardInterface_3FFF001C.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Send End Enable">
+<param name="Local" value="../lvvisaprop/GPIB_BoardInterface_3FFF0016.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Termination Character">
+<param name="Local" value="../lvvisaprop/GPIB_BoardInterface_3FFF0018.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Termination Character Enable">
+<param name="Local" value="../lvvisaprop/GPIB_BoardInterface_3FFF0038.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Instr">
+<param name="Local" value="../lvvisaprop/GPIB_Instr.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Allow DMA Transfers">
+<param name="Local" value="../lvvisaprop/GPIB_Instr_3FFF001E.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Line REN State">
+<param name="Local" value="../lvvisaprop/GPIB_Instr_3FFF0181.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Primary Address">
+<param name="Local" value="../lvvisaprop/GPIB_Instr_3FFF0172.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Readdressing">
+<param name="Local" value="../lvvisaprop/GPIB_Instr_3FFF001B.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Secondary Address">
+<param name="Local" value="../lvvisaprop/GPIB_Instr_3FFF0173.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Unaddressing">
+<param name="Local" value="../lvvisaprop/GPIB_Instr_3FFF0184.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:File Append Enable">
+<param name="Local" value="../lvvisaprop/GPIB_Instr_3FFF0192.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:IO Protocol">
+<param name="Local" value="../lvvisaprop/GPIB_Instr_3FFF001C.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Send End Enable">
+<param name="Local" value="../lvvisaprop/GPIB_Instr_3FFF0016.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Termination Character">
+<param name="Local" value="../lvvisaprop/GPIB_Instr_3FFF0018.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Termination Character Enable">
+<param name="Local" value="../lvvisaprop/GPIB_Instr_3FFF0038.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Instr">
+<param name="Local" value="../lvvisaprop/Instr.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="FireWire Settings:Destination Upper Offset">
+<param name="Local" value="../lvvisaprop/Instr_3FFF01F0.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="FireWire Settings:Lower Chip ID">
+<param name="Local" value="../lvvisaprop/Instr_3FFF01F4.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="FireWire Settings:Source Upper Offset">
+<param name="Local" value="../lvvisaprop/Instr_3FFF01F1.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="FireWire Settings:Upper Chip ID">
+<param name="Local" value="../lvvisaprop/Instr_3FFF01F5.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="FireWire Settings:Vendor ID">
+<param name="Local" value="../lvvisaprop/Instr_3FFF01F3.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="FireWire Settings:Window Upper Offset">
+<param name="Local" value="../lvvisaprop/Instr_3FFF01F2.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Allow DMA Transfers">
+<param name="Local" value="../lvvisaprop/Instr_3FFF001E.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Manufacturer Identification">
+<param name="Local" value="../lvvisaprop/Instr_3FFF00D9.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Manufacturer Name">
+<param name="Local" value="../lvvisaprop/Instr_BFFF0072.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Model Code">
+<param name="Local" value="../lvvisaprop/Instr_3FFF00DF.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Model Name">
+<param name="Local" value="../lvvisaprop/Instr_BFFF0077.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Slot">
+<param name="Local" value="../lvvisaprop/Instr_3FFF00E8.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Trigger Identifier">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0177.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Line REN State">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0181.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Primary Address">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0172.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Readdressing">
+<param name="Local" value="../lvvisaprop/Instr_3FFF001B.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Secondary Address">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0173.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Unaddressing">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0184.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Interface Information:Interface Number of Parent">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0101.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:File Append Enable">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0192.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:IO Protocol">
+<param name="Local" value="../lvvisaprop/Instr_3FFF001C.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Is 488.2 Compliant">
+<param name="Local" value="../lvvisaprop/Instr_3FFF019F.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Send End Enable">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0016.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Suppress End Enable">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0036.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Termination Character">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0018.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Termination Character Enable">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0038.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Express Settings:Actual Link Width">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0243.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Express Settings:D-Star Bus Number">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0244.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Express Settings:D-Star Set">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0245.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Express Settings:Is PCI Express">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0240.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Express Settings:Maximum Link Width">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0242.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Express Settings:Slot Link Width">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0241.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Bus Number">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0205.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Device Number">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0201.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Function Number">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0202.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR0 Address Base">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0221.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR0 Address Size">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0231.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR0 Address Type">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0211.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR1 Address Base">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0222.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR1 Address Size">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0232.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR1 Address Type">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0212.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR2 Address Base">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0223.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR2 Address Size">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0233.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR2 Address Type">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0213.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR3 Address Base">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0224.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR3 Address Size">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0234.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR3 Address Type">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0214.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR4 Address Base">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0225.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR4 Address Size">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0235.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR4 Address Type">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0215.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR5 Address Base">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0226.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR5 Address Size">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0236.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR5 Address Type">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0216.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PXI Chassis Number">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0206.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Slot Local Bus Left">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0208.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Slot Local Bus Right">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0209.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Slot Path">
+<param name="Local" value="../lvvisaprop/Instr_BFFF0207.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Star Trigger Bus Number">
+<param name="Local" value="../lvvisaprop/Instr_3FFF020B.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Star Trigger Line">
+<param name="Local" value="../lvvisaprop/Instr_3FFF020C.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Trigger Bus Number">
+<param name="Local" value="../lvvisaprop/Instr_3FFF020A.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Destination Increment Count">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0041.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Source Increment Count">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0040.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Window Access">
+<param name="Local" value="../lvvisaprop/Instr_3FFF00C3.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Window Base Address">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0098.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Window Size">
+<param name="Local" value="../lvvisaprop/Instr_3FFF009A.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Allow Transmit">
+<param name="Local" value="../lvvisaprop/Instr_3FFF01BE.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Baud Rate">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0021.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Break Length">
+<param name="Local" value="../lvvisaprop/Instr_3FFF01BD.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Data Bits">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0022.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Discard NUL Characters">
+<param name="Local" value="../lvvisaprop/Instr_3FFF00B0.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:End Mode for Reads">
+<param name="Local" value="../lvvisaprop/Instr_3FFF00B3.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:End Mode for Writes">
+<param name="Local" value="../lvvisaprop/Instr_3FFF00B4.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Error Replacement Character">
+<param name="Local" value="../lvvisaprop/Instr_3FFF00BE.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Flow Control">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0025.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Flow Control XOFF Character">
+<param name="Local" value="../lvvisaprop/Instr_3FFF00C2.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Flow Control XON Character">
+<param name="Local" value="../lvvisaprop/Instr_3FFF00C1.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Is Port Connected">
+<param name="Local" value="../lvvisaprop/Instr_3FFF01BB.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Modem Line Settings:Break State">
+<param name="Local" value="../lvvisaprop/Instr_3FFF01BC.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Modem Line Settings:Line CTS State">
+<param name="Local" value="../lvvisaprop/Instr_3FFF00AE.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Modem Line Settings:Line DCD State">
+<param name="Local" value="../lvvisaprop/Instr_3FFF00AF.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Modem Line Settings:Line DSR State">
+<param name="Local" value="../lvvisaprop/Instr_3FFF00B1.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Modem Line Settings:Line DTR State">
+<param name="Local" value="../lvvisaprop/Instr_3FFF00B2.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Modem Line Settings:Line RI State">
+<param name="Local" value="../lvvisaprop/Instr_3FFF00BF.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Modem Line Settings:Line RTS State">
+<param name="Local" value="../lvvisaprop/Instr_3FFF00C0.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Number of Bytes at Serial Port">
+<param name="Local" value="../lvvisaprop/Instr_3FFF00AC.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Parity">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0023.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Stop Bits">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0024.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Wire Mode">
+<param name="Local" value="../lvvisaprop/Instr_3FFF01BF.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="TCP/IP Settings:Computer Hostname">
+<param name="Local" value="../lvvisaprop/Instr_BFFF0196.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="TCP/IP Settings:Dot-Notation Address">
+<param name="Local" value="../lvvisaprop/Instr_BFFF0195.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="TCP/IP Settings:Keep-Alive Packets">
+<param name="Local" value="../lvvisaprop/Instr_3FFF019B.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="TCP/IP Settings:LAN Device Name">
+<param name="Local" value="../lvvisaprop/Instr_BFFF0199.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="TCP/IP Settings:No Packet Delay">
+<param name="Local" value="../lvvisaprop/Instr_3FFF019A.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Settings:Maximum Interrupt Size">
+<param name="Local" value="../lvvisaprop/Instr_3FFF01AF.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Settings:Serial Number">
+<param name="Local" value="../lvvisaprop/Instr_BFFF01A0.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Settings:USB Interface Number">
+<param name="Local" value="../lvvisaprop/Instr_3FFF01A1.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Settings:USB Protocol">
+<param name="Local" value="../lvvisaprop/Instr_3FFF01A7.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Destination Access Privilege">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0039.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Destination Byte Order">
+<param name="Local" value="../lvvisaprop/Instr_3FFF003A.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Fast Data Channel:Channel Mode">
+<param name="Local" value="../lvvisaprop/Instr_3FFF000F.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Fast Data Channel:Channel Number">
+<param name="Local" value="../lvvisaprop/Instr_3FFF000D.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Fast Data Channel:Use Channel Pairs">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0013.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Immediate Servant">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0100.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Mainframe Logical Address">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0070.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Source Access Privilege">
+<param name="Local" value="../lvvisaprop/Instr_3FFF003C.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Source Byte Order">
+<param name="Local" value="../lvvisaprop/Instr_3FFF003D.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Supported VXI Trigger Lines">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0194.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:VXI Commander Logical Address">
+<param name="Local" value="../lvvisaprop/Instr_3FFF006B.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:VXI Device Class">
+<param name="Local" value="../lvvisaprop/Instr_3FFF006C.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:VXI Logical Address">
+<param name="Local" value="../lvvisaprop/Instr_3FFF00D5.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:VXI Memory Address Space">
+<param name="Local" value="../lvvisaprop/Instr_3FFF00DE.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:VXI Memory Base Address">
+<param name="Local" value="../lvvisaprop/Instr_3FFF00AD.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:VXI Memory Size">
+<param name="Local" value="../lvvisaprop/Instr_3FFF00DD.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Window Access Privilege">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0045.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Window Byte Order">
+<param name="Local" value="../lvvisaprop/Instr_3FFF0047.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI Backplane">
+<param name="Local" value="../lvvisaprop/PXI_Backplane.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Manufacturer Name">
+<param name="Local" value="../lvvisaprop/PXI_Backplane_BFFF0072.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Model Name">
+<param name="Local" value="../lvvisaprop/PXI_Backplane_BFFF0077.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Trigger Identifier">
+<param name="Local" value="../lvvisaprop/PXI_Backplane_3FFF0177.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Destination Trigger Bus Number">
+<param name="Local" value="../lvvisaprop/PXI_Backplane_3FFF020E.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PXI Chassis Number">
+<param name="Local" value="../lvvisaprop/PXI_Backplane_3FFF0206.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Source Trigger Bus Number">
+<param name="Local" value="../lvvisaprop/PXI_Backplane_3FFF020D.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Trigger Bus Number">
+<param name="Local" value="../lvvisaprop/PXI_Backplane_3FFF020A.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI Instr">
+<param name="Local" value="../lvvisaprop/PXI_Instr.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Allow DMA Transfers">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF001E.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Manufacturer Identification">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF00D9.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Manufacturer Name">
+<param name="Local" value="../lvvisaprop/PXI_Instr_BFFF0072.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Model Code">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF00DF.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Model Name">
+<param name="Local" value="../lvvisaprop/PXI_Instr_BFFF0077.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Slot">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF00E8.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Trigger Identifier">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0177.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Express Settings:Actual Link Width">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0243.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Express Settings:D-Star Bus Number">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0244.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Express Settings:D-Star Set">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0245.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Express Settings:Is PCI Express">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0240.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Express Settings:Maximum Link Width">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0242.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Express Settings:Slot Link Width">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0241.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Bus Number">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0205.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Device Number">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0201.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Function Number">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0202.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR0 Address Base">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0221.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR0 Address Size">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0231.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR0 Address Type">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0211.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR1 Address Base">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0222.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR1 Address Size">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0232.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR1 Address Type">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0212.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR2 Address Base">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0223.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR2 Address Size">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0233.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR2 Address Type">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0213.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR3 Address Base">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0224.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR3 Address Size">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0234.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR3 Address Type">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0214.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR4 Address Base">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0225.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR4 Address Size">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0235.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR4 Address Type">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0215.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR5 Address Base">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0226.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR5 Address Size">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0236.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PCI Resources:BAR5 Address Type">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0216.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:PXI Chassis Number">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0206.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Slot Local Bus Left">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0208.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Slot Local Bus Right">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0209.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Slot Path">
+<param name="Local" value="../lvvisaprop/PXI_Instr_BFFF0207.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Star Trigger Bus Number">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF020B.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Star Trigger Line">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF020C.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI/PCI Settings:Trigger Bus Number">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF020A.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Destination Increment Count">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0041.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Source Increment Count">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0040.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Window Access">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF00C3.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Window Base Address">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF0098.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Window Size">
+<param name="Local" value="../lvvisaprop/PXI_Instr_3FFF009A.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="PXI MemAcc">
+<param name="Local" value="../lvvisaprop/PXI_MemAcc.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Destination Increment Count">
+<param name="Local" value="../lvvisaprop/PXI_MemAcc_3FFF0041.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Source Increment Count">
+<param name="Local" value="../lvvisaprop/PXI_MemAcc_3FFF0040.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Window Access">
+<param name="Local" value="../lvvisaprop/PXI_MemAcc_3FFF00C3.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Window Base Address">
+<param name="Local" value="../lvvisaprop/PXI_MemAcc_3FFF0098.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Window Size">
+<param name="Local" value="../lvvisaprop/PXI_MemAcc_3FFF009A.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Instr">
+<param name="Local" value="../lvvisaprop/Serial_Instr.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Allow DMA Transfers">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF001E.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:File Append Enable">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF0192.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:IO Protocol">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF001C.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Send End Enable">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF0016.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Suppress End Enable">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF0036.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Termination Character">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF0018.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Termination Character Enable">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF0038.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Allow Transmit">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF01BE.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Baud Rate">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF0021.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Break Length">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF01BD.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Data Bits">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF0022.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Discard NUL Characters">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF00B0.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:End Mode for Reads">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF00B3.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:End Mode for Writes">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF00B4.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Error Replacement Character">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF00BE.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Flow Control">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF0025.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Flow Control XOFF Character">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF00C2.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Flow Control XON Character">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF00C1.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Is Port Connected">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF01BB.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Modem Line Settings:Break State">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF01BC.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Modem Line Settings:Line CTS State">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF00AE.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Modem Line Settings:Line DCD State">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF00AF.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Modem Line Settings:Line DSR State">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF00B1.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Modem Line Settings:Line DTR State">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF00B2.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Modem Line Settings:Line RI State">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF00BF.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Modem Line Settings:Line RTS State">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF00C0.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Number of Bytes at Serial Port">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF00AC.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Parity">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF0023.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Stop Bits">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF0024.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Serial Settings:Wire Mode">
+<param name="Local" value="../lvvisaprop/Serial_Instr_3FFF01BF.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="TCP/IP Instr">
+<param name="Local" value="../lvvisaprop/TCP_IP_Instr.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:File Append Enable">
+<param name="Local" value="../lvvisaprop/TCP_IP_Instr_3FFF0192.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Send End Enable">
+<param name="Local" value="../lvvisaprop/TCP_IP_Instr_3FFF0016.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Termination Character">
+<param name="Local" value="../lvvisaprop/TCP_IP_Instr_3FFF0018.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Termination Character Enable">
+<param name="Local" value="../lvvisaprop/TCP_IP_Instr_3FFF0038.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="TCP/IP Settings:Computer Hostname">
+<param name="Local" value="../lvvisaprop/TCP_IP_Instr_BFFF0196.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="TCP/IP Settings:Dot-Notation Address">
+<param name="Local" value="../lvvisaprop/TCP_IP_Instr_BFFF0195.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="TCP/IP Settings:Keep-Alive Packets">
+<param name="Local" value="../lvvisaprop/TCP_IP_Instr_3FFF019B.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="TCP/IP Settings:LAN Device Name">
+<param name="Local" value="../lvvisaprop/TCP_IP_Instr_BFFF0199.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="TCP/IP Settings:No Packet Delay">
+<param name="Local" value="../lvvisaprop/TCP_IP_Instr_3FFF019A.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="TCP/IP Socket">
+<param name="Local" value="../lvvisaprop/TCP_IP_Socket.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:File Append Enable">
+<param name="Local" value="../lvvisaprop/TCP_IP_Socket_3FFF0192.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:IO Protocol">
+<param name="Local" value="../lvvisaprop/TCP_IP_Socket_3FFF001C.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Send End Enable">
+<param name="Local" value="../lvvisaprop/TCP_IP_Socket_3FFF0016.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Suppress End Enable">
+<param name="Local" value="../lvvisaprop/TCP_IP_Socket_3FFF0036.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Termination Character">
+<param name="Local" value="../lvvisaprop/TCP_IP_Socket_3FFF0018.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Termination Character Enable">
+<param name="Local" value="../lvvisaprop/TCP_IP_Socket_3FFF0038.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="TCP/IP Settings:Computer Hostname">
+<param name="Local" value="../lvvisaprop/TCP_IP_Socket_BFFF0196.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="TCP/IP Settings:Dot-Notation Address">
+<param name="Local" value="../lvvisaprop/TCP_IP_Socket_BFFF0195.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="TCP/IP Settings:Keep-Alive Packets">
+<param name="Local" value="../lvvisaprop/TCP_IP_Socket_3FFF019B.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="TCP/IP Settings:No Packet Delay">
+<param name="Local" value="../lvvisaprop/TCP_IP_Socket_3FFF019A.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="TCP/IP Settings:Port Number">
+<param name="Local" value="../lvvisaprop/TCP_IP_Socket_3FFF0197.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Instr">
+<param name="Local" value="../lvvisaprop/USB_Instr.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Manufacturer Identification">
+<param name="Local" value="../lvvisaprop/USB_Instr_3FFF00D9.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Manufacturer Name">
+<param name="Local" value="../lvvisaprop/USB_Instr_BFFF0072.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Model Code">
+<param name="Local" value="../lvvisaprop/USB_Instr_3FFF00DF.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Model Name">
+<param name="Local" value="../lvvisaprop/USB_Instr_BFFF0077.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:IO Protocol">
+<param name="Local" value="../lvvisaprop/USB_Instr_3FFF001C.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Is 488.2 Compliant">
+<param name="Local" value="../lvvisaprop/USB_Instr_3FFF019F.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Send End Enable">
+<param name="Local" value="../lvvisaprop/USB_Instr_3FFF0016.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Termination Character">
+<param name="Local" value="../lvvisaprop/USB_Instr_3FFF0018.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Termination Character Enable">
+<param name="Local" value="../lvvisaprop/USB_Instr_3FFF0038.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Settings:Maximum Interrupt Size">
+<param name="Local" value="../lvvisaprop/USB_Instr_3FFF01AF.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Settings:Serial Number">
+<param name="Local" value="../lvvisaprop/USB_Instr_BFFF01A0.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Settings:USB Interface Number">
+<param name="Local" value="../lvvisaprop/USB_Instr_3FFF01A1.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Settings:USB Protocol">
+<param name="Local" value="../lvvisaprop/USB_Instr_3FFF01A7.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Raw">
+<param name="Local" value="../lvvisaprop/USB_Raw.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Manufacturer Identification">
+<param name="Local" value="../lvvisaprop/USB_Raw_3FFF00D9.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Manufacturer Name">
+<param name="Local" value="../lvvisaprop/USB_Raw_BFFF0072.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Model Code">
+<param name="Local" value="../lvvisaprop/USB_Raw_3FFF00DF.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Model Name">
+<param name="Local" value="../lvvisaprop/USB_Raw_BFFF0077.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:IO Protocol">
+<param name="Local" value="../lvvisaprop/USB_Raw_3FFF001C.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Suppress End Enable">
+<param name="Local" value="../lvvisaprop/USB_Raw_3FFF0036.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Termination Character">
+<param name="Local" value="../lvvisaprop/USB_Raw_3FFF0018.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Termination Character Enable">
+<param name="Local" value="../lvvisaprop/USB_Raw_3FFF0038.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Settings:Alternate Setting">
+<param name="Local" value="../lvvisaprop/USB_Raw_3FFF01A8.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Settings:Bulk-In Pipe">
+<param name="Local" value="../lvvisaprop/USB_Raw_3FFF01A3.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Settings:Bulk-In Pipe Status">
+<param name="Local" value="../lvvisaprop/USB_Raw_3FFF01AD.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Settings:Control Pipe">
+<param name="Local" value="../lvvisaprop/USB_Raw_3FFF01B0.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Settings:End Mode for Reads">
+<param name="Local" value="../lvvisaprop/USB_Raw_3FFF01A9.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Settings:Interrupt-In Pipe">
+<param name="Local" value="../lvvisaprop/USB_Raw_3FFF01A4.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Settings:Interrupt-In Pipe Status">
+<param name="Local" value="../lvvisaprop/USB_Raw_3FFF01AE.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Settings:Maximum Interrupt Size">
+<param name="Local" value="../lvvisaprop/USB_Raw_3FFF01AF.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Settings:Number of Interfaces">
+<param name="Local" value="../lvvisaprop/USB_Raw_3FFF01AA.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Settings:Number of Pipes">
+<param name="Local" value="../lvvisaprop/USB_Raw_3FFF01AB.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Settings:Out Pipe">
+<param name="Local" value="../lvvisaprop/USB_Raw_3FFF01A2.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Settings:Out Pipe Status">
+<param name="Local" value="../lvvisaprop/USB_Raw_3FFF01AC.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Settings:Serial Number">
+<param name="Local" value="../lvvisaprop/USB_Raw_BFFF01A0.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Settings:USB Class">
+<param name="Local" value="../lvvisaprop/USB_Raw_3FFF01A5.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Settings:USB Interface Number">
+<param name="Local" value="../lvvisaprop/USB_Raw_3FFF01A1.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Settings:USB Protocol">
+<param name="Local" value="../lvvisaprop/USB_Raw_3FFF01A7.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="USB Settings:USB Subclass">
+<param name="Local" value="../lvvisaprop/USB_Raw_3FFF01A6.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI Servant">
+<param name="Local" value="../lvvisaprop/VXI_Servant.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Allow DMA Transfers">
+<param name="Local" value="../lvvisaprop/VXI_Servant_3FFF001E.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Device Status Byte">
+<param name="Local" value="../lvvisaprop/VXI_Servant_3FFF0189.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:File Append Enable">
+<param name="Local" value="../lvvisaprop/VXI_Servant_3FFF0192.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Send End Enable">
+<param name="Local" value="../lvvisaprop/VXI_Servant_3FFF0016.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Termination Character">
+<param name="Local" value="../lvvisaprop/VXI_Servant_3FFF0018.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Termination Character Enable">
+<param name="Local" value="../lvvisaprop/VXI_Servant_3FFF0038.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:VXI Commander Logical Address">
+<param name="Local" value="../lvvisaprop/VXI_Servant_3FFF006B.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:VXI Logical Address">
+<param name="Local" value="../lvvisaprop/VXI_Servant_3FFF00D5.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:VXI/VME System Failure State">
+<param name="Local" value="../lvvisaprop/VXI_Servant_3FFF0094.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/GPIB-VXI Backplane">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_Backplane.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Trigger Identifier">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_Backplane_3FFF0177.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Primary Address">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_Backplane_3FFF0172.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Secondary Address">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_Backplane_3FFF0173.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Interface Information:Interface Number of Parent">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_Backplane_3FFF0101.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Asserted VXI Trigger Lines">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_Backplane_3FFF008D.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Asserted VXI/VME Interrupt Lines">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_Backplane_3FFF008B.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Mainframe Logical Address">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_Backplane_3FFF0070.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Supported VXI Trigger Lines">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_Backplane_3FFF0194.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:VXI/VME System Failure State">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_Backplane_3FFF0094.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/GPIB-VXI MBD Instr">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Allow DMA Transfers">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF001E.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Manufacturer Identification">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF00D9.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Manufacturer Name">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_BFFF0072.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Model Code">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF00DF.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Model Name">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_BFFF0077.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Slot">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF00E8.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Trigger Identifier">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF0177.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Line REN State">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF0181.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Primary Address">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF0172.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Readdressing">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF001B.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Secondary Address">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF0173.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Unaddressing">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF0184.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Interface Information:Interface Number of Parent">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF0101.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:File Append Enable">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF0192.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:IO Protocol">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF001C.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Is 488.2 Compliant">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF019F.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Send End Enable">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF0016.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Suppress End Enable">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF0036.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Termination Character">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF0018.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Message Based Settings:Termination Character Enable">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF0038.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Destination Increment Count">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF0041.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Source Increment Count">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF0040.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Window Access">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF00C3.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Window Base Address">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF0098.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Window Size">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF009A.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Destination Access Privilege">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF0039.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Destination Byte Order">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF003A.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Fast Data Channel:Channel Mode">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF000F.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Fast Data Channel:Channel Number">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF000D.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Fast Data Channel:Use Channel Pairs">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF0013.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Immediate Servant">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF0100.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Mainframe Logical Address">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF0070.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Source Access Privilege">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF003C.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Source Byte Order">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF003D.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Supported VXI Trigger Lines">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF0194.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:VXI Commander Logical Address">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF006B.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:VXI Device Class">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF006C.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:VXI Logical Address">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF00D5.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:VXI Memory Address Space">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF00DE.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:VXI Memory Base Address">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF00AD.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:VXI Memory Size">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF00DD.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Window Access Privilege">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF0045.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Window Byte Order">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_MBD_Instr_3FFF0047.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/GPIB-VXI/VME MemAcc">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_MemAcc.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Allow DMA Transfers">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_MemAcc_3FFF001E.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Line REN State">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_MemAcc_3FFF0181.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Primary Address">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_MemAcc_3FFF0172.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Secondary Address">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_MemAcc_3FFF0173.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Interface Information:Interface Number of Parent">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_MemAcc_3FFF0101.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Destination Increment Count">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_MemAcc_3FFF0041.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Source Increment Count">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_MemAcc_3FFF0040.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Window Access">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_MemAcc_3FFF00C3.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Window Base Address">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_MemAcc_3FFF0098.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Window Size">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_MemAcc_3FFF009A.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Destination Access Privilege">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_MemAcc_3FFF0039.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Destination Byte Order">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_MemAcc_3FFF003A.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Source Access Privilege">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_MemAcc_3FFF003C.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Source Byte Order">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_MemAcc_3FFF003D.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:VXI Logical Address">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_MemAcc_3FFF00D5.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Window Access Privilege">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_MemAcc_3FFF0045.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Window Byte Order">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_MemAcc_3FFF0047.html"></OBJECT></LI>
+</UL>
+</LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/GPIB-VXI/VME RBD Instr">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr.html"></OBJECT><UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Allow DMA Transfers">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF001E.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Manufacturer Identification">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF00D9.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Manufacturer Name">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_BFFF0072.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Model Code">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF00DF.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Model Name">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_BFFF0077.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Slot">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF00E8.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="General Settings:Trigger Identifier">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF0177.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Line REN State">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF0181.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Primary Address">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF0172.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="GPIB Settings:Secondary Address">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF0173.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Interface Information:Interface Number of Parent">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF0101.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Destination Increment Count">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF0041.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Source Increment Count">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF0040.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Window Access">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF00C3.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Window Base Address">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF0098.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Register Based Settings:Window Size">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF009A.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Destination Access Privilege">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF0039.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Destination Byte Order">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF003A.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Immediate Servant">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF0100.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Mainframe Logical Address">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF0070.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Source Access Privilege">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF003C.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Source Byte Order">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF003D.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Supported VXI Trigger Lines">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF0194.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:VXI Commander Logical Address">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF006B.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:VXI Device Class">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF006C.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:VXI Logical Address">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF00D5.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:VXI Memory Address Space">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF00DE.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:VXI Memory Base Address">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF00AD.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:VXI Memory Size">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF00DD.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Window Access Privilege">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF0045.html"></OBJECT></LI>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="VXI/VME Settings:Window Byte Order">
+<param name="Local" value="../lvvisaprop/VXI_GPIB-VXI_VME_RBD_Instr_3FFF0047.html"></OBJECT></LI>
+</UL>
+</LI>
+</UL>
+</LI>
+</UL>
+</LI>
+</UL>
+</BODY>
+</HTML>

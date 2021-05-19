@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Configuring Access Options in Project Libraries</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Configuring Access Options in Project Libraries</h1>
+
+<p class="Body">You can configure access settings for items and folders that a <a href="../lvconcepts/Project_Libraries.html">LabVIEW project library</a> owns as public or private. If you set an item as private and <a href="Library_Passwords.html">lock the project library</a>, the item is not visible in the project library or in palettes. You cannot use a private VI as a subVI in other VIs or applications that the project library does not own, even if the project library is unlocked.</p>
+<p class="Body">Determine which items in the project library you want to set as public and which as private. Public items might include palette VIs, XControls, instrument drivers, and other tools you want users to find and use. Private items might include support VIs, copyrighted files, or items you might want to edit later without taking the risk of breaking users' code.</p>
+<p class="Body">You can set the access of a <a href="../lvconcepts/Project_Libraries.html#Project_Sublibraries">project sublibrary</a> file (<span class="Monospace">.lvlib</span>) as private within the owning project library, but when you edit the project sublibrary itself, items the sublibrary owns retain public or private access settings.</p><p class="Body">Complete the following steps to configure access options in a project library.</p>
+<ol>
+	<li>Right-click the project library icon in the <a href="../lvconcepts/Using_LabVIEW_Projects.html">Project Explorer</a> window or stand-alone project library window and select <strong>Properties</strong> from the shortcut menu to display the <a href="../lvdialog/Library_Props_DB.html">Project Library Properties</a> dialog box.</li>
+	<li>From the <a href="../lvdialog/Item_Lib_Page.html">Item Settings</a> page, click an item in the <strong>Contents</strong> tree to select it. The current access settings for the item appear in the <strong>Access Scope</strong> box. Click one of the following radio buttons in the <strong>Access Scope</strong> box to apply to the item.
+	<ul>
+		<li><strong>Public</strong>&#8212;The item is visible when users view the project library. Other VIs and applications can call public VIs.</li>
+		<li><strong>Community</strong>&#8212;This item is visible when users view the project library. Only <a href="../lvconcepts/Creating_Classes.html#Friends">friends</a> and VIs within the project library can call community VIs. Designate a VI as a friend of a library to give the VI the ability to call any member of the library that is in community scope.</li>
+		<li><strong>Private</strong>&#8212;The item does not appear visible when users view the project library or palettes if you lock the project library. Other VIs and applications that the project library does not own cannot call a private VI.</li>
+		<li><strong>Not specified</strong>&#8212;This option appears only when you select a folder. The folder does not have access items specified. Access is public. By default, folders in a project library do not have access specified, which means the folders are publicly accessible.</li>
+	</ul></li></ol>
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td>
+<strong>Note</strong>&nbsp;&nbsp;If you specify access options for a folder, the access setting applies to all items in the folder and overrides access options for individual items in the folder.</td></tr>
+</table>
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;You can set individual instances of a polymorphic VI as private and set the primary polymorphic VI as public. The polymorphic VI does not break even though instance VIs are private. Setting instance VIs as private is useful if you want users to access instances only through the polymorphic VI selector, so you can edit instance order without causing user problems.</td></tr>
+</table>
+<ol start="3">
+	<li>Click the <strong>OK</strong> button to incorporate the changes into the project library and close the dialog box.</li>
+</ol>
+<p class="Body">Items set as private appear in the <strong>Project Explorer</strong> window with a private icon <img src="noloc_env_ol_private.gif">. If you lock the project library, private items do not appear in the <strong>Project Explorer</strong> window.</p>
+<p class="Body">You also can use the <a href="../lvprop/Library_SetSourceScope.html">Source Scope:Set</a> method to configure access options programmatically.</p>
+
+
+
+</body>
+</html>

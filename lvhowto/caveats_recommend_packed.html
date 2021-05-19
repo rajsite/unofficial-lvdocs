@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+
+<title>Caveats and Recommendations for Packed Project Libraries</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Caveats and Recommendations for Packed Project Libraries</h1>
+					<p class="Body">The following list describes some of the caveats and recommendations to consider when you build a <a href="../lvconcepts/packed_libraries.html">packed project library</a>:</p>
+<ul>
+<li>If a VI calls a packed project library compiled for one target and you <a href="../lvconcepts/packed_libraries.html#Compatibility_Packed_Library">open the VI on another target</a> that has a different operating system, the packed project library fails to load.</li>
+<li>When you <a href="../lvconcepts/packed_libraries.html#Packed_Project_Library_Builds">create a debug build</a> for a packed library, you can view the block diagram of each VI. Even though you can use the block diagrams to debug issues, you cannot edit the VI or save changes to the packed library. Save changes to a VI from the LabVIEW project with the project library. If you want to update the packed library, you must rebuild the library.</li>
+<li>Include only related VIs in a packed library. When you open a VI in a packed library, all VIs in the packed library load. If you include non-related VIs, load time increases because more VIs need more time to load.</li>
+<li>To link to a palette when you build a packed library, save the palette in the same version, target, and operating system as the packed library.</li>
+<li><!-- begin child: ../lvdialog/Source_Settings_Packed_Page.html-->LabVIEW includes dependencies of the top-level library in the packed library, but they do not export with the build and are not visible in the packed library.<!-- end child: ../lvdialog/Source_Settings_Packed_Page.html--> To export the dependencies of a packed library, place the dependencies in the top-level project library before building the packed library.</li>
+<li>If an <a href="../lvconcepts/packed_libraries.html#Exported_VIs_Packed_Project_Library">exported VI</a> has a connector pane with inputs or outputs of type definitions or classes, include the type definitions or classes in the top-level project library. When you right-click a project library and select <strong>Replace with</strong> from the shortcut menu, LabVIEW does not replace type definitions and classes, only exported items of the packed library. As a result, VIs in the packed library might break when you replace the project library with the packed library.</li>
+<li>After you create a project library in a LabVIEW project, <a href="converting_packed_libraries.html">create a separate LabVIEW project for the project library</a> before you build the packed library. If you build the packed library in the same LabVIEW project where you create the project library and you replace the project library with the packed library, you cannot rebuild the packed library.</li>
+<li class="checkFile lvtextmathmain"><span class="Platform">(MathScript RT Module)</span> Packed libraries do not support <a href="../gmath/MathScript_Node.html">MathScript Nodes</a>. LabVIEW returns an error when building a packed library that contains a MathScript Node.</li>
+</ul>
+
+
+
+</body>
+</html>

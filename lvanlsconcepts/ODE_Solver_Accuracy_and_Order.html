@@ -1,0 +1,63 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>ODE Solver Accuracy and Order</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-1FF6BE7D-79DE-4162-AB5B-9865AF7576EB" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">ODE Solver Accuracy and Order</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 
+            		 
+            		 You can measure the error introduced into a differential equation solution per time step, which is known as the local error.
+            You also can measure the maximum difference between the computed solution and the exact solution, which is known as the global
+            error. 
+            	 
+         </p> 
+         	 
+         <p>The amount the error changes depends on the order of the ODE solver you use. If you reduce the step size of an ODE solver
+            by a factor of &#955;, then the local error is reduced by approximately &#955;<sup><em>n</em> + 1</sup>, where <em>n</em> is the order of the ODE solver. Depending on the application, the global error might be reduced by approximately &#955;<em>n</em>. Reducing the error by any amount corresponds to improving the accuracy by the same amount. 
+            	 
+         </p> 
+         	 
+         <p>For a first-order ODE solver, if you apply the solver once with a step size of 0.1 and then apply the solver with a step size
+            of 0.05, you might reduce the global error by approximately 2 times (&#955; = 2, <em>n</em> = 1). This reduction in error doubles the accuracy. If you use a second-order ODE solver under the same conditions, the second
+            run might reduce the global error by approximately 4 times (&#955; = 2, <em>n</em> = 2). In this case, the reduction in error quadruples the accuracy of the simulation. 
+            	 
+         </p> 
+         	 
+         <p> As these examples show, high-order ODE solvers usually are more accurate than low-order ODE solvers. In general, you can
+            use fewer time steps and larger step sizes with a high-order ODE solver to get the accuracy you need. Using fewer time steps
+            decreases the effects of round-off in the solution and potentially reduces the amount of time needed to compute the solution.
+            
+            	 
+         </p> 
+         	 
+         <p>However, high-order ODE solvers typically require more computational resources, such as processing power and memory, per time
+            step than low-order ODE solvers. If you have limited computational resources, consider using a low-order ODE solver and smaller
+            step sizes. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Solving_ODEs.html" shape="rect">Solving Ordinary Differential Equations</a></div>
+         </div>
+         <div class="relinfo"><strong>Related information</strong><br clear="none"><div><a href="../gmath/ODE_VIs.html" shape="rect">Differential Equations VIs</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

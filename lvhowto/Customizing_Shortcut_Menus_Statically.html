@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+<title>Customizing Run-Time Shortcut Menus for Controls Statically</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Customizing Run-Time Shortcut Menus for Controls Statically</h1>
+
+<p class="Body">Complete the following steps to customize a run-time shortcut menu for a control statically.</p>
+
+<ol>
+<li>Right-click a control and select <strong>Advanced&#0187;Run-Time Shortcut Menu&#0187;Edit</strong> from the shortcut menu to display the <a href="../lvdialog/Menu_Editor_for_Shortcut_MenusDB.html">Shortcut Menu Editor</a> dialog box.</li>
+</ol>
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;Controls or indicators with customized run-time shortcut menus that you add into an array shell use the shortcut menu of the array.</td></tr></table>
+<ol start="2">
+
+<li>Select <strong>Custom</strong> from the <strong>Menu Type</strong> pull-down menu of the  dialog box.</li>
+
+<li>Select <strong>User Item</strong> from the <strong>Item Type</strong> pull-down menu. To add LabVIEW default menu items to a custom run-time shortcut menu, select <a href="../lvdialog/Application_Item_Tags_SCMenus.html">Application Item</a> and select the LabVIEW shortcut menu items you want.</li>
+
+<li>In the <strong>Item Name</strong> text box, type the text you want for this item. The same text appears in the <strong>Item Tag</strong> field. You can modify the tag name to give the shortcut menu item a unique identifier. The block diagram uses the tag name to identify the shortcut menu item programmatically. Shortcut menu item tags can have the same name as shortcut menu item names.</li>
+
+<li>Click the blue plus button <img src="noloc_env_bluplus.gif"> on the toolbar to add more items to the shortcut menu. Click the red  button <img src="noloc_env_redx.gif"> to delete items.</li>
+
+<li>Select <strong>File&#0187;Save</strong>. In the dialog box that appears, select whether you want to save the shortcut menu with the control or save the shortcut menu to a file. If you select <strong>Save to file</strong>, the  dialog box appears, allowing you to name the shortcut menu and select a location on disk to save to. When you load the VI, the customized shortcut menu automatically loads.</li>
+
+<li><a href="Runtime_Shortcut_Menu_Handling.html">Configure a Shortcut Menu Selection (User) event</a> to handle the selection of the items.</li></ol>
+
+<p class="Body">You can arrange the shortcut menu hierarchy in the  dialog box by clicking the arrow buttons on the toolbar, using the hierarchy manipulation options in the <strong>Edit</strong> menu, or by dragging and dropping. You can expand or collapse hierarchies by clicking the submenu glyphs or by choosing from the expand or collapse options in the <strong>Edit</strong> menu. To add separators, select <strong>Separator</strong> in the <strong>Item Type</strong> pull-down menu.</p>
+
+
+
+
+</body>
+</html>

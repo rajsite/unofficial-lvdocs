@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Creating a VI Icon</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Creating a VI Icon</h1>
+
+<p class="Body">Create an icon to represent a VI or <a href="../lvconcepts/Custom_Cont_Ind_Type.html">custom control</a> graphically. Use the <a href="../lvdialog/Icon_Editor.html">Icon Editor</a> dialog box to create or edit icons.</p>
+
+<p class="Body"><!-- start_parent = ../lvconcepts/Creating_Icons_Overview.html-->You can use banners to identify related VIs. National Instruments recommends <a href="../lvhowto/Creating_VI_Icon.html#save_banner">creating and saving a banner as a template</a>. You then can use this template for a related VI icon and <a href="../lvhowto/Creating_VI_Icon.html#create_from_template">modify the body of the VI icon</a> to provide information about the specific VI.<!-- end_parent = ../lvconcepts/Creating_Icons_Overview.html--></p>
+
+<p class="Body">If you want to create an icon for an object in a library, <a href="../lvhowto/Creating_Library_Icon.html">create a library icon</a> instead of using an icon template. LabVIEW applies a library icon to the icon of all objects in the library.</p>
+
+<a name="save_banner"></a><h2>Saving a Banner as a Template</h2>
+
+<p class="Body">Complete the following steps to save a banner as an icon template for a VI.</p>
+
+<ol>
+<li>Double-click the icon in the upper right corner of the front panel window or block diagram window, or right-click the icon and select <strong>Edit Icon</strong> from the shortcut menu, to display the <strong>Icon Editor</strong> dialog box.</li>
+<li>Press the &lt;Ctrl-A&gt; keys to select all <a href="../lvconcepts/Using_Layers.html">user layers</a> of the icon, and press the &lt;Delete&gt; key to delete the selection. The default icon is a single user layer called <strong>VI Icon</strong>.</li>
+<li>On the <strong>Templates</strong> page, select the <span class="Monospace">_blank.png</span> icon template from the <strong>VI&#0187;Frameworks</strong> category. You can browse templates by category or by keyword.</li>
+<li>Use the Fill tool on the right side of the <strong>Icon Editor</strong> dialog box to fill the banner of the icon with a color.</li>
+<li>Use the Text tool to enter text in the banner of the icon. While the text is active, you can move the text by pressing the arrow keys.</li>
+<li>Select <strong>File&#0187;Save As&#0187;Template</strong> to display the <a href="../lvdialog/Save_Icon_As_DB.html">Save Icon As</a> dialog box and save the icon as a template for later use. LabVIEW saves icon templates as 256-color <span class="Monospace">.png</span> files.</li>
+</ol>
+
+<a name="create_from_template"></a><h2>Creating a VI Icon from a Template</h2>
+
+<p class="Body">Complete the following steps to create a VI icon that uses the template you created.</p>
+
+<ol>
+<li>Press the &lt;Ctrl-A&gt; keys to select all <a href="../lvconcepts/Using_Layers.html">user layers</a> of the icon, and press the &lt;Delete&gt; key to delete the selection.</li>
+<li>On the <strong>Templates</strong> page, select the template you created. You can browse templates by category or by keyword.</li>
+<li>On the <strong>Icon Text</strong> page, enter up to four lines of icon text for the body of the icon. You can configure the font, alignment, size, and color of the text. If you place a checkmark in the <strong>Center text vertically</strong> checkbox, the <strong>Icon Editor</strong> dialog box centers the icon text vertically within the body of the icon.</li>
+<li>On the <strong>Glyphs</strong> page, drag and drop glyphs onto the <strong>Preview</strong> area.<br/><br/>Press the &lt;F&gt; key or the &lt;R&gt; key to flip a glyph horizontally or rotate a glyph clockwise, respectively, as you move the glyph. You also can double-click a glyph to place the glyph in the top-left corner of the icon. You can browse glyphs by category or by keyword.</li>
+<li>Use the Move tool to move any glyph. Each glyph is on a separate layer and therefore moves separately. Notice that the rest of the icon becomes dimmed when you select a glyph so you can identify which selection you are moving.</li>
+<li>Use the <a href="../lvdialog/Icon_Editor_Editing_Tools.html">editing tools</a> on the right side of the <strong>Icon Editor</strong> dialog box to edit the icon further if necessary.<br /><br />The <strong>Icon Editor</strong> dialog box creates a new user layer for each non-consecutive use of the editing tools. Select <strong>Layers&#0187;Create New Layer</strong> to create a new user layer during consecutive uses of the editing tools.
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif" /></td><td><strong>Note</strong>��You cannot modify the icon template or icon text with the editing tools on the right side of the <strong>Icon Editor</strong> dialog box. Use the <strong>Templates</strong> page and the <strong>Icon Text</strong> page to modify the icon template and icon text, respectively.</td></tr></table>
+</li>
+<li>(Optional) Select <strong>Layers&#0187;Show Layers Page</strong> to display the <strong>Layers</strong> page. Use this page to configure the name, opacity, visibility, and order of the layers of the icon.</li>
+<li>Click the <strong>OK</strong> button to save the icon information with the VI and close the <strong>Icon Editor</strong> dialog box.</li>
+</ol>
+
+<p class="Body"><!-- start_parent = ../lvconcepts/Creating_Icons_Overview.html-->You also can <a href="../lvhowto/Dragging_and_Dropping_VIs.html">drag a graphic from anywhere in the file system</a> and drop it in the upper right corner of the front panel window to use the graphic as a VI icon. You can drag and drop <span class="Monospace">.png</span>, <span class="Monospace">.bmp</span>, or <span class="Monospace">.jpg</span> files.<!-- end_parent = ../lvconcepts/Creating_Icons_Overview.html--></p>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif" /></td><td><strong>Note</strong>��If you modify an icon by dragging and dropping a graphic from the file system, LabVIEW creates a <a href="../lvconcepts/Using_Layers.html">user layer</a> called <strong>VI Icon</strong> for the graphic and deletes any other existing icon information from the <a href="../lvdialog/Icon_Editor.html">Icon Editor</a> dialog box.</td></tr></table>
+
+<p class="Body">You also can use the <a href="../lvprop/VI_Set_VI_Icon.html">VI Icon:Set From File</a> method to set the VI icon from an image programmatically. LabVIEW creates a user layer called <strong>VI Icon</strong> for the image and deletes any other existing icon information from the <strong>Icon Editor</strong> dialog box.</p>
+
+</body>
+</html>

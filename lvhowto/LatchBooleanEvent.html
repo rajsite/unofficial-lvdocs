@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4210Eeventshlp -->
+
+<title>Using Events with Latched Boolean Controls</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Using Events with Latched Boolean Controls</h1>
+
+<p class="Body">When you trigger an event on a Boolean control configured with a <a href="ChangeMechActOfBoolSwitch.html">latching mechanical action</a>, the Boolean control does not reset to its default value until the block diagram reads the terminal on the Boolean control. You must read the terminal inside the event case for the mechanical action to work correctly. As a reminder, a note appears in the <a href="../lvdialog/Edit_Events_Dialog_Box.html">Edit Events</a> dialog box when you configure a <a href="../lvprop/Ctrl_Value_Changed.html">Value Change</a> event on a latched Boolean control.
+</p>
+
+<p class="Body">When you perform an undo operation on a Boolean control configured with a latching mechanical action, the Event structure handles the undo operation as a value change event, which might return unexpected results. You must use a <a href="../glang/Case_Structure.html">Case structure</a> within the event case for the undo operation to work correctly. Use the <span class="Monospace">TRUE</span> case of the Case structure to specify how you want to handle the Boolean control and the <span class="Monospace">FALSE</span> case to specify how you want to handle the undo operation.</p>
+
+<p class="Body">Refer to the <a href="HndlStopLoopBool.html">Handling a Latched Stop Boolean Control in an Event Structure</a> caveat for information about how to handle a latched stop Boolean control.
+</p>
+
+
+
+</body>
+</html>

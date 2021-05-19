@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 1500Elistboxcihlp -->
+
+<title>Creating a Tree Control</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Creating a Tree Control</h1>
+<p class="Body"><!-- Begin parent: ../lvconcepts/Building_the_Front_Panel.xml -->Use the tree control to give users a hierarchical list of items from which to select. You organize the items you enter in the tree control into groups of items, or nodes.<!-- End parent: ../lvconcepts/Building_the_Front_Panel.xml -->
+</p>
+<p class="Body">Complete the following steps to create a tree control.
+</p>
+<ol>
+<li>Add a tree control to the front panel.
+<br><br>
+<SPAN title=" Add to the front panel window "><a href="javascript:placeObjectFP(control26);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObjectFP(control26);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN>
+</li>
+<li>Use the Labeling tool to enter an item name in the tree control and press the &lt;Enter&gt; key. LabVIEW creates a unique tag for the item. <!-- Begin child: lvdialog.chm,Edit_Tree_Nodes.html -->The default tag is the text in the first cell that contains text, starting from the left.<!-- End child: lvdialog.chm,Edit_Tree_Nodes.html --> <!-- Begin child: lvprop.chm,TreeControl_Add_Item.html -->If an existing tag already uses that string, LabVIEW appends a number to the string to create a unique tag for the new item.<!-- End child: lvprop.chm,TreeControl_Add_Item.html --> <!-- Begin parent: ../lvconcepts/Building_the_Front_Panel.xml -->You use this tag to modify items or to gather information about items programmatically.<!-- End parent: ../lvconcepts/Building_the_Front_Panel.xml -->
+</li>
+<li>Repeat step 2 for each item you want to enter. LabVIEW creates each new item at the same hierarchical level as the item above it. If there is no item above the new item, LabVIEW creates the item at the topmost hierarchical level.
+</li>
+<li>Set the hierarchy of the items in the tree control by <a href="Indenting_Tree_Items.html">indenting items</a>.
+</li>
+<li>(Optional) Configure the tree control. You can <a href="Adding_Symbols_to_Listbox.html">add symbols</a> and <a href="../lvdialog/Edit_Tree_Nodes.html">edit</a>, <a href="Disabling_or_Enabling_List.html">disable</a>, and <a href="Deleting_Listbox_Items.html">delete</a> items in a tree control. You also can set the <a href="Setting_Expand_Symbols.html">expand/contract symbol type</a>, <a href="Setting_Case_Sensitivity.html">case sensitivity</a>, and <a href="Setting_Item_Dragging.html">item dragging</a> for a tree control.
+</li>
+<li>(Optional) <a href="Setting_the_Number_of_Sele.html">Set the number of items a user can select</a> in the tree control.
+</li>
+<li><a href="Creating_Case_Structs.html">Create a Case structure</a> to handle the selected item. A tree control with a selection mode set to <strong>0 or 1 Item</strong> or to <strong>1 Item</strong> appears on the block diagram as a string. You can right-click a tree control on the front panel and select <strong>Selection Mode&#0187;Data Type</strong> from the shortcut menu to change the data type. The data value for a single-selection tree control is the unique tag of the currently selected option. If no item is selected, the value is an empty string.
+<br><br>
+A tree control with a selection mode set to <strong>0 or More Items</strong> or to <strong>1 or More Items</strong> appears on the block diagram as an array of strings, where the value(s) in the array represent the currently selected item(s). If no item is selected, the value is an empty array.
+</li>
+</ol>
+<p class="Body">You also can use the <a href="../lvprop/TreeControl_m.html">TreeControl</a> methods to add items to a tree control programmatically.</p>
+
+
+
+</body>
+</html>

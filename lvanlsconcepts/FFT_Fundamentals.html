@@ -1,0 +1,77 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>FFT Fundamentals</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-32F556D5-8526-4186-B89C-B11134759DC6" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">FFT Fundamentals</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 Directly implementing the discrete Fourier transform (DFT) on <em>N</em> data samples requires approximately <em>N</em> complex operations and is a time-consuming process. The fast Fourier transform (FFT) is a fast algorithm for calculating
+            the DFT. The following equation defines the DFT. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./rkset2Ftemp2FFFT_Fundamentals.xml_d2415e31.png"></span></div>
+         </div> 
+         	 
+         <p>The following measurements comprise the basic functions for FFT-based signal analysis: 
+            	 
+         </p> 
+         	 <a name="GUID-32F556D5-8526-4186-B89C-B11134759DC6__UL_39C516D513CC4F2A9F0B9DB0F404D6F3" shape="rect">
+            <!-- --></a><ul id="GUID-32F556D5-8526-4186-B89C-B11134759DC6__UL_39C516D513CC4F2A9F0B9DB0F404D6F3">
+            <li><a name="GUID-32F556D5-8526-4186-B89C-B11134759DC6__LI_D4F1435DAC0F4E88825C7F2E52B6CB61" shape="rect">
+                  <!-- --></a>FFT 
+               		
+            </li>
+            <li><a name="GUID-32F556D5-8526-4186-B89C-B11134759DC6__LI_3E942A877CD9468090B23F8D42009101" shape="rect">
+                  <!-- --></a>Power spectrum 
+               		
+            </li>
+            <li><a name="GUID-32F556D5-8526-4186-B89C-B11134759DC6__LI_2CA7B333B3224867A7A18FAF1523E93E" shape="rect">
+                  <!-- --></a>Cross power spectrum 
+               		
+            </li>
+         </ul> 
+         	 
+         <p>You can use the basic functions as the building blocks for creating additional measurement functions, such as the frequency
+            response, impulse response, coherence, amplitude spectrum, and phase spectrum. 
+            	 
+         </p> 
+         	 
+         <p>The FFT and the power spectrum are useful for measuring the frequency content of stationary or transient signals. The FFT
+            produces the average frequency content of a signal over the total acquisition. Therefore, use the FFT for stationary signal
+            analysis or in cases where you need only the average energy at each frequency line. 
+            	 
+         </p> 
+         	 
+         <p>An FFT is equivalent to a set of parallel filters of bandwidth &#916;<em>f</em> centered at each frequency increment from DC to (<em>F</em><sub><em>s</em></sub>/2) - (<em>F</em><sub><em>s</em></sub>/<em>N</em>). Therefore, frequency lines also are known as frequency bins or FFT bins. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="FrequencyAnalysis.html" shape="rect">Frequency Analysis</a></div>
+         </div>
+         <div class="relinfo relconcepts"><strong>Related concepts</strong><br clear="none"><div><a href="Power_Spect.html" shape="rect">Power Spectrum</a></div>
+            <div><a href="Cross_Power_Spect.html" shape="rect">Cross Power Spectrum</a></div>
+            <div><a href="Discrete_Fourier_Transform.html" shape="rect">Discrete Fourier Transform (DFT)</a></div>
+         </div>
+         <div class="relinfo"><strong>Related information</strong><br clear="none"><div><a href="../lvanls/FFT.html" shape="rect">FFT VI</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

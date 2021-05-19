@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 1200Ebooleancihlp -->
+
+<title>Changing the Mechanical Action of a Boolean Object</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Changing the Mechanical Action of a Boolean Object</h1>
+
+<p class="Body"><!-- begin parent = UM 1200Ebooleanci -->Boolean controls have six types of mechanical action that allow you to customize Boolean objects to create front panel windows that more closely resemble the behavior of physical instruments.<!-- end parent = UM 1200Ebooleanci --></p>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;When you assign a keyboard shortcut to the mechanical action of a Boolean control, the keyboard toggles the value. For example, when you assign a keyboard shortcut to a Boolean control and set the keyboard shortcut to one of the latching mechanical actions, the button unlatches when read.</td></tr></table>
+
+<p class="Body">Complete the following steps to change the mechanical action of a Boolean control.</p>
+
+<ol><li>Add a Boolean control, such as a push button, to the front panel window.
+<br><br>
+<SPAN title=" Add to the front panel window "><a href="javascript:placeObjectFP(control6);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObjectFP(control6);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li>
+
+<li>Right-click the Boolean control and select <strong>Properties</strong> from the shortcut menu to display the <strong>Boolean Properties</strong> dialog box.</li>
+
+<li>Click the <strong>Operation</strong> tab of the <strong>Boolean Properties</strong> dialog box.</li>
+
+<li>Select a <a href="../lvconcepts/Boolean_Controls_and_Indicators.html">button behavior</a> appropriate to the application from the <strong>Button behavior</strong> list. An explanation of the behavior appears in the <strong>Behavior Explanation</strong> section, and you can test the selected behavior in the <strong>Preview Selected Behavior</strong> section.
+<br><br>
+In the icons that appear in the <strong>Behavior Explanation</strong> section, <span class="Monospace">M</span> represents the motion of the mouse button when you operate the control, <span class="Monospace">V</span> represents the output value of the control, and <span class="Monospace">RD</span> represents the point in time the VI reads the control.</li>
+</ol>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;You cannot use any latch action for objects with a local variable. If you configure your Boolean value with a latching mechanical action, the <a href="../lvprop/Control_Value.html">Value</a> property and the <a href="../lvprop/Ctrl_Value_Signaling.html">Value (Signaling)</a> property return an error when the VI is in a non-idle state, such as when the VI is running or reserved to run. Due to race conditions that can occur when you have a Boolean value with latching mechanical action, you cannot programmatically read Boolean values that are set with a latching mechanical action.
+</td></tr></table>
+
+
+<p class="Body">Refer to the Mechanical Action VI in the <span class="Monospace">labview\examples\Controls and Indicators\Boolean</span> directory for an example of Boolean control mechanical actions.</p>
+<p class="Body"><a href="javascript:openVI('examples%5C%5CControls%20and%20Indicators%5C%5CBoolean%5C%5CMechanical%20Action.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(3755);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</p>
+
+
+
+
+
+</body>
+</html>

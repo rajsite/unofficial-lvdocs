@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Configuring Source Control with LVCompare.exe</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Configuring Source Control with LVCompare.exe</h1>
+
+					<p class="Body">You can configure a third-party <a href="../lvconcepts/Using_Source_Code.html">source control</a> provider to use <span class="Monospace">LVCompare.exe</span> as the default comparison tool. <span class="Monospace">LVCompare.exe</span> is equivalent to the <a href="../lvdialog/Compare_VIs_Dialog_Box.html">Compare VIs</a> dialog box. Use <span class="Monospace">LVCompare.exe</span> to compare differences between two VIs interactively. </p>
+					<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;<span class="Monospace">LVCompare.exe</span> is available only in the LabVIEW Professional Development System.</td></tr></table>
+					<p class="Body">Complete the following steps to configure a third-party source control provider to use <span class="Monospace">LVCompare.exe</span> as the default comparison tool.</p>
+					<ol>
+		<li>Make sure the computer on which you are running LabVIEW also includes a third-party source control provider. Consult the source control administrator for additional assistance.</li>
+		<li>Direct the source control provider to <span class="Monospace">LVCompare.exe</span>. LabVIEW installs <span class="Monospace">LVCompare.exe</span> in different directories depending on the platform, and directories might vary depending on the configuration of the computer:
+							<ul>
+							<li> <span class="Platform">(Windows)</span> <span class="Monospace">C:\Program Files\National Instruments\Shared\LabVIEW Compare\LVCompare.exe</span></li>
+							<li> <span class="Platform">(macOS)</span> <span class="Monospace">/Library/Application Support/National Instruments/LabVIEW Compare/LVCompare.app/Contents/MacOS/LVCompare</span></li>
+							<li> <span class="Platform">(Linux)</span> <span class="Monospace">/usr/local/bin/LVCompare</span></li>
+							</ul>
+						</li>
+		<li>Use the following syntax to configure any arguments that <span class="Monospace">LVCompare.exe</span> needs. <br><br>
+<span class="Monospace">lvcompare.exe</span> &lt;<span class="Monospace-Italic">absolute path to VI 1</span>&gt; &lt;<span class="Monospace-Italic">absolute path to VI 2</span>&gt; [<span class="Monospace-Italic">-lvpath</span> &lt;<span class="Monospace-Italic">path to LabVIEW</span>&gt;][<span class="Monospace-Italic">-noattr</span>][<span class="Monospace-Italic">-nofp</span>][<span class="Monospace-Italic">-nofppos</span>][<span class="Monospace-Italic">-nobd</span>][<span class="Monospace-Italic">-nobdcosm</span>][<span class="Monospace-Italic">-nobdpos</span>]
+<p class="Body">The arguments have the following meanings:</p>
+			<ul>
+			<li><span class="Monospace">lvpath</span> is the path to the version of LabVIEW you want to use for the comparison operation.</li></ul>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If you do not specify which version of LabVIEW to use for the comparison operation, LabVIEW uses the currently registered version of LabVIEW. <span class="Platform">(macOS)</span> LabVIEW uses the latest version of LabVIEW on the computer. <span class="Platform">(Linux)</span> LabVIEW uses the last installed version of LabVIEW.</td>
+</tr>
+</table>
+			<ul><li><span class="Monospace">-noattr</span> means do not compare VI attributes.</li>
+			<li><span class="Monospace">-nofp</span> means do not compare the front panels.</li>
+			<li><span class="Monospace">-nofppos</span> means do not compare the size or position of front panel objects.</li>
+			<li><span class="Monospace">-nobd</span> means do not compare the block diagrams.</li>
+			<li><span class="Monospace">-nobdcosm</span> means do not compare the appearance of block diagram objects.</li>
+			<li><span class="Monospace">-nobdpos</span> means do not compare the size or position of block diagram objects.</li>
+			</ul>							
+							</li></ol>
+			<p class="Indent2">For example, to configure the third-party source control provider to use LabVIEW 2009 to compare VIs but not compare cosmetic, size, or position differences, use the following command line.<br><br>
+<span class="Monospace">"C:\Program Files\National Instruments\Shared\LabVIEW Compare\LVCompare.exe" $1 $2 -lvpath "C:\Program Files\National Instruments\LabVIEW 2009\LabVIEW.exe" -nobdcosm -nobdpos -nofppos</span><br><br>
+where <span class="Monospace">$1</span> and <span class="Monospace">$2</span> are variables the third-party source control provider defines for the paths to the VIs you want to compare.</p>
+		<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;You also can enter this command directly in the command line to launch <span class="Monospace">LVCompare.exe</span>.</td>
+</tr>
+</table>
+						<ol start="4">
+					<li>(Optional) Complete any remaining steps to configure the third-party source control provider. For example, some source control providers allow you to specify comparison tools for particular file extensions. If the source control provider allows you to specify a comparison tool, specify <span class="Monospace">LVCompare.exe</span> for the <span class="Monospace">.vi</span> file extension. Consult the documentation for the source control provider for more information.</li>
+						</ol>
+
+
+						
+
+	
+						
+
+
+</body>
+</html>

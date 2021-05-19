@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+
+<title>Copying and Pasting Objects</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Copying and Pasting Objects</h1>
+
+<p class="Body">You can copy and paste objects in two ways. You can <a href="Selecting_Objects.html">select an object</a> and select <strong>Edit&#0187;Copy</strong> and <strong>Edit&#0187;Paste</strong>, or you can clone the object.</p>
+
+<p class="Body">Complete the following steps to clone an object.</p>
+<ol>
+<li>Press the &lt;Ctrl&gt; key while you use the Positioning tool to click the object.
+<span class="Platform">(macOS)</span> Press the &lt;Option&gt; key. <span class="Platform">(Linux)</span> Press the &lt;Alt&gt; key.</li>
+<li>Continue pressing the key while you drag the copy to a new location.</li>
+</ol>
+
+<p class="Body"><span class="Platform">(Linux)</span> You also can clone objects by clicking the object with the middle mouse button and dragging the object to a new location.</p>
+
+<p class="Body">When you clone or copy objects that have labels, LabVIEW copies the name of the original object and appends a number.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;<!-- begin parent: ../lvdevconcepts/Creating_Documentation.xml-->If you copy the object to another VI, you also copy the description. You might need to change the description for the new object.<!-- end parent: ../lvdevconcepts/Creating_Documentation.xml--></td></tr></table>
+
+<p class="Body">When you clone or you copy a block diagram terminal, a new terminal appears on the block diagram. LabVIEW does not copy the <a href="../glang/Local_Variable.html">local variables</a>, control references, <a href="../glang/Property_Node.html">Property Nodes</a>, and <a href="../glang/Invoke_Node.html">Invoke Nodes</a> of the original terminal.</p>
+
+<p class="Body">If you copy and paste a local variable or control reference, LabVIEW also copies the terminal. If you clone a local variable or control reference, LabVIEW creates a new reference to the original terminal.</p>
+
+<p class="Body">When you copy front panel controls from the block diagram and paste them onto the block diagram of a new VI, the front panel placement differs from that of the original VI. LabVIEW places the front panel objects in the upper left corner to avoid overlapping or appearing in a non-visible region.</p>
+
+<p class="Body">If you copy and paste an <a href="Creating_Property_Nodes.html">implicitly linked Property Node or Invoke Node</a>, LabVIEW disconnects the node from the terminal. If you clone an implicitly linked node, LabVIEW creates a new implicitly linked node. If you clone the node by dragging it to a new VI, LabVIEW disconnects the node from the terminal. You can <a href="Link_Nodes_to_Terms.html">relink the node</a> to the terminal.</p>
+
+<p class="Body">You can copy selected objects between VIs by dragging them from one VI and placing them on another VI.</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If you copy a subVI, the Clipboard <img src="noloc_env_clipboard.gif"> appears in the <a href="../lvdialog/Hierarchy_Window.html">VI Hierarchy</a> window. Note that a subVI you copy might remain in memory in the Clipboard when you do not expect a VI to be in memory.</td>
+</tr>
+</table>
+
+
+
+</body>
+</html>

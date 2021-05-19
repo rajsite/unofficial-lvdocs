@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 6100Ecommhlp -->
+
+<title>Publishing VIs and Stand-Alone Applications on the Web</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Publishing VIs and Stand-Alone Applications on the Web</h1>
+<!-- begin parent = ../lvconcepts/Networking_in_LabVIEW.xml KM -->
+<p class="Body">Use the LabVIEW <a href="Enabling_and_Configuring_t.html">Web Server</a> to publish images of front panels from a VI or a stand-alone application to the Web. By default, after you enable the Web Server, all VIs and applications are visible to all Web browsers. However, you can <a href="AllowingDenyingWebBrowser.html">control browser access</a> to the published front panels and <a href="SpecifyingWhichVIareVis.html">configure which VIs are visible</a> on the Web. To display front panels on the Web, the VIs must be in memory on the computer.</p><!-- end parent = ../lvconcepts/Networking_in_LabVIEW.xml KM -->
+<p class="Body">The Web Server can generate images of front panels in the JPEG and PNG image formats. <!-- begin child = ../lvconcepts/Printing_VIs.html-->The JPEG format compresses graphics well but can lose some graphic detail. This format works best for photos. For line art, front panels, and block diagrams, JPEG compression can result in fuzzy graphics and uneven colors. The PNG format also compresses graphics well, although not always as well as the JPEG format. However, PNG compression does not lose any detail.<!-- end child = ../lvconcepts/Printing_VIs.html--></p>
+
+<p class="Body">Use the <a href="../lvdialog/Web_Publishing_Tool_DB.html">Web Publishing Tool</a> to create an HTML document and <a href="Creating_HTML_Documents_an.html">embed static or animated images of the front panel</a> or to embed a front panel in an HTML document so a client computer can <a href="ViewFPRmtlyUsngBrwsr.html">view and control the front panel remotely</a>. You also can embed static images of the front panel in an <a href="Embedding_a_Front_Panel_Im.html">existing HTML document</a>. To deploy an HTML document with the application, <a href="../lvhowto/Enabling_the_Web_Server_in.html">enable</a> and configure the Web Server in a stand-alone application.</p>
+
+<p class="Body">Use the <strong>Snapshot</strong> option in the Web Publishing Tool to return a static image of the front panel of a VI currently in memory on the server computer. Use the <strong>Monitor</strong> option in the Web Publishing Tool to return an animated image of the front panel of a VI or application currently in memory on the server computer. Use the <strong>Embedded</strong> option in the Web Publishing Tool to embed a front panel in an HTML document so a client computer can view and control the front panel remotely.</p>
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td>
+
+<strong>Note</strong>&nbsp;&nbsp;The front panel of the VI or application you want to publish might be large. It takes the Web Server longer to create a large image, which can slow the execution of the VI. Also, a large image takes a significant amount of time to transmit to the browser, especially over a slow modem connection. Therefore, make sure the front panels of VIs and applications you want to publish are a reasonable size.</td></tr></table>
+
+<p class="Body">After you publish a VI or an application, you can <a href="../lvhowto/CtrlngFPRmtlyUsngBrwsr.html">control the application or front panel remotely</a> or view either <a href="../lvhowto/ViewFPRmtlyUsngBrwsr.html">using a browser</a> or <a href="../lvhowto/ViewFrntPnlRmtlyUsngLV.html">using LabVIEW</a>.</p>
+
+<p class="Body">You can also <a href="javascript:WWW(WWW_Example)">share VIs</a> with registered users on <span class="Monospace">ni.com</span>.</p>
+
+
+
+</body>
+</html>

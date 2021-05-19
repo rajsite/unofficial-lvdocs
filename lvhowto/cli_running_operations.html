@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+
+<title>Running Operations Using the Command Line Interface for LabVIEW</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Running Operations Using the Command Line Interface for LabVIEW</h1>
+
+<p>You can run <a href="../lvconcepts/cli_predefined_operations.html">a predefined set of operations</a> in LabVIEW by executing commands using the command line interface (CLI) for LabVIEW. For example, use the CLI for LabVIEW to automate the build process of LabVIEW applications. You can also run <a href="cli_creating_operations.html">custom operations</a> that you create in LabVIEW. Refer to the <em>LabVIEW Readme</em>, located in the <span class="Monospace">labview\readme</span> directory, for a list of known issues that you may encounter when running operations using the CLI for LabVIEW.</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;The CLI for LabVIEW is available as a separate package. Refer to the  <a href="javascript:WWW(WWW_CLIDOWNLOAD)">NI website</a> for more information about  downloading the CLI for LabVIEW and compatible versions of LabVIEW.</td>
+</tr>
+</table>
+
+<p>Before running an operation using the CLI for LabVIEW, configure LabVIEW to communicate with the CLI for LabVIEW by selecting <strong>Tools&#0187;Options&#0187;VI Server</strong> and placing a checkmark in the <strong>TCP/IP</strong> checkbox.</p>
+<p>To run an operation using the CLI for LabVIEW, execute a command with one or more of the following arguments. Required arguments are in bold.</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;All the arguments are case-sensitive.</td>
+</tr>
+</table>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="tip.gif" alt="Tip"></td>
+<td><strong>Tip</strong>&nbsp;&nbsp;To learn more about getting started using the CLI for LabVIEW, execute the <span class="monospace"><span class="DNL">LabVIEWCLI -Help</span></span> command. To learn more about a specific operation, execute the <span class="Monospace"><span class="DNL">LabVIEWCLI�-OperationName</span> &lt;<span class="Italic">operation name</span>&gt; <span class="DNL">-Help</span></span> command. For example, execute the <span class="Monospace"><span class="DNL">LabVIEWCLI�-OperationName RunVI -Help</span></span> command to learn more about the <a href="../lvconcepts/cli_predefined_operations.html#RunVI"><span class="DNL">RunVI</span></a> operation.</td>
+</tr>
+</table>
+<table class="Bordered">
+<tr><th class="Bordered">Argument</th><th class="Bordered">Description</th><th class="Bordered">Example</th></tr>
+<tr><td class="Bordered"><span class="Monospace-Bold"><span class="DNL">LabVIEWCLI -OperationName</span></span></td><td class="Bordered">Runs the specified operation.<br>If the operation has additional arguments, append the arguments after the operation name.</td><td class="Bordered"><span class="Monospace"><span class="DNL">LabVIEWCLI -OperationName RunVI -VIPath "C:\Demo Project\RunVI.vi"</span></span></td></tr>
+<tr><td class="Bordered" nowrap><span class="Monospace"><span class="DNL">-AdditionalOperationDirectory</span></span></td><td class="Bordered">Specifies the directory that stores the necessary files for the operation.<br>This argument is required only if you run a custom operation and the necessary files for the operation are not stored in one of the following default directories:
+<ul>
+<li><span class="Platform">(Windows)</span>&nbsp;<span class="Monospace">C:\Program Files (x86)\National Instruments\Shared\LabVIEW CLI\Operations</span></li>
+<li><span class="Platform">(macOS)</span>&nbsp;<span class="Monospace">/Library/Application Support/National Instruments/LabVIEW CLI/Operations</span></li>
+<li><span class="Platform">(Linux)</span>&nbsp;<span class="Monospace">/usr/local/natinst/nilvcli/Operations</span></li>
+	</ul>
+</td><td class="Bordered"><span class="Monospace">-AdditionalOperationDirectory "C:\CLI Operations"</span></td></tr>
+<tr><td class="Bordered"><span class="Monospace"><span class="DNL">-LabVIEWPath</span></span></td><td class="Bordered">Specifies the LabVIEW version to use to run the operation.<br>This argument is required on macOS and Linux but optional on Windows. On Windows, the default value is the version of LabVIEW that was most recently used on the machine.</td><td class="Bordered"><span class="Monospace"><span class="DNL">-LabVIEWPath "C:\Program Files (x86)\National Instruments\LabVIEW 2018\LabVIEW.exe"</span></span></td></tr>
+<tr><td class="Bordered"><span class="Monospace"><span class="DNL">-PortNumber</span></span></td><td class="Bordered">Specifies the port of the VI server. <br>This argument is required if the port number under <strong>Tools&#0187;Options&#0187;VI Server&#0187;TCP/IP</strong> is not 3363.</td><td class="Bordered"><span class="Monospace"><span class="DNL">-PortNumber 3378</span></span></td></tr>
+<tr><td class="Bordered"><span class="Monospace"><span class="DNL">-LogFilePath</span></span></td><td class="Bordered">Specifies the path of the CLI for LabVIEW log file. <br>The default value is the path to the temporary location.</td><td class="Bordered"><span class="Monospace"><span class="DNL">-LogFilePath "C:\temp\log.txt"</span></span></td></tr>
+<tr><td class="Bordered"><span class="Monospace"><span class="DNL">-LogToConsole</span></span></td><td class="Bordered">Specifies whether to save the output to both the console and the log file.<br>The value for this argument must be one of the following:<ul><li>true</li><li>false</li></ul>The default value is <span class="DNL">true</span>.</td><td class="Bordered"><span class="Monospace"><span class="DNL">-LogToConsole false</span></span></td></tr>
+<tr><td class="Bordered"><span class="Monospace"><span class="DNL">-Verbosity</span></span></td><td class="Bordered">Specifies the level of details to include in the log file.<br>The value for this argument must be one of the following:<ul><li>Minimal</li><li>Default</li><li>Detailed</li><li>Diagnostic</li></ul>The default value is <span class="DNL">Default</span>.</td><td class="Bordered"><span class="Monospace"><span class="DNL">-Verbosity Detailed</span></span></td></tr>
+</table>
+
+</body>
+</html>

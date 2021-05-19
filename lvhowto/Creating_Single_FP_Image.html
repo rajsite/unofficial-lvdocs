@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 5800Evidocprinthlp -->
+
+<title>Generating Images of Individual Front Panel Objects</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Generating Images of Individual Front Panel Objects
+</h1>
+<p class="Body">Use the Get Image method to generate an image of a single front panel object. Use the <a href="../lvreport/App_Ctrl_Image_to_Report.html">Append Control Image to Report</a> VI to append an image of a front panel object to a report.
+</p>
+<p class="Body">Complete the following steps to use the Get Image method to generate an image of a single front panel object.
+</p>
+<ol>
+<li>On the block diagram, right-click the terminal of the control or indicator for which you want to generate an image and select <strong>Create&#0187;Invoke Node&#0187;</strong><a href="../lvprop/Ctrl_Get_Image.html">Get Image</a> from the shortcut menu to create an <a href="../glang/Invoke_Node.html">Invoke Node</a>.
+</li>
+<li>Right-click the <strong>Image Depth</strong> input and select <strong>Create&#0187;Constant</strong> from the shortcut menu to create a numeric constant.
+</li>
+<li>Enter <span class="Monospace">1</span>, <span class="Monospace">4</span>, <span class="Monospace">8</span>, or <span class="Monospace">24</span> in the numeric constant and press the &lt;Enter&gt; key to set the color depth of the image.
+<br><br>
+<table class="Bordered"><tr><th class="Bordered Left-Align">Value</th>
+<th class="Bordered Left-Align">Definition</th></tr>
+<tr><td class="Bordered">1</td>
+<td class="Bordered">1-bit, black and white image</td></tr>
+<tr><td class="Bordered">4</td>
+<td class="Bordered">4-bit, 16-color image</td></tr>
+<tr><td class="Bordered">8</td>
+<td class="Bordered">8-bit, 256-color image</td></tr>
+<tr><td class="Bordered">24</td>
+<td class="Bordered">24-bit, true-color image</td></tr>
+</table>
+</li>
+<li>(Optional) Specify a background color for the image by wiring a <a href="../glang/Color_Box_Constant.html">color box constant</a> or a numeric color value to the <strong>BG Color</strong> input.
+</li>
+<li>Add one of the following VIs to the block diagram:
+<ul>
+<li>Add the <a href="../lvpict/Write_JPEG_File.html">Write JPEG File</a> VI to save the image in the JPEG format.
+<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object217);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object217);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN>
+</li>
+<li>Add the <a href="../lvpict/Write_PNG_File.html">Write PNG File</a> VI to save the image in the PNG format.
+<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object218);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object218);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN>
+</li>
+<li>Add the <a href="../lvpict/Write_BMP_File.html">Write BMP File</a> VI to save the image in the BMP format.
+<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object212);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object212);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN>
+</li>
+</ul>
+</li>
+<li>Wire the <strong>Image Data</strong> output of the Invoke Node to the <strong>image data</strong> input of the graphic format VI.
+</li>
+<li>Right-click the <strong>path to <em>format</em> file</strong> input of the graphic format VI and select <strong>Create&#0187;Control</strong> from the shortcut menu, where <strong><em>format</em></strong> is the graphic format of the image.
+</li>
+<li>In the <strong>path to <em>format</em> file</strong> front panel control, enter a path that includes the directory where you want to save the image and a filename for the image.
+</li>
+</ol>
+<p class="Body">Run the VI to save the image to the directory you entered.
+</p>
+<p class="Body">The following block diagram saves an image of a waveform chart to the PNG format.
+</p>
+<p class="Anchor"><img src="loc_bd_printfpimage.gif">
+</p>
+<p class="Body">You also can <a href="Creating_Control_Reference.html">create a subVI that contains the Invoke Node</a> and wire a control reference to the subVI.
+</p>
+
+
+
+</body>
+</html>

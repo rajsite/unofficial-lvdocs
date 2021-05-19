@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>FCopy (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>FCopy (LabVIEW Manager Function)</h1>
+<p class="Code">MgErr FCopy(oldPath, newPath);</p>
+<h2>Purpose</h2>
+<p class="Body">Copies a file, preserving the type, creator, and access rights. The file to be copied must not be open. If an error occurs, the new file is not created.</p>
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>oldPath</strong></td>
+<td class="Bordered"><span class="Monospace">Path</span></td>
+ <td class="Bordered">Path of the file or directory you want to copy.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>newPath</strong></td>
+<td class="Bordered"><span class="Monospace">Path</span></td>
+ <td class="Bordered">Path, including filename, where you want to store the new file.</td></tr>
+</table>
+<h2>Return Value</h2>
+<p class="Body"><span class="Monospace">MgErr</span>, which can contain the following errors. If you receive errors from <a href="LabVIEW_Manager_Functions.html">LabVIEW Manager functions</a>, most error names correspond to LabVIEW error codes.</p>
+<table class="Bordered">
+<tr><th class="Bordered Left-Align">Value</th>
+<th class="Bordered Left-Align">Corresponding Error Code or Description</th></tr>
+<tr><td class="Bordered"><span class="Monospace">noErr</span></td><td class="Bordered">No error.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">mgArgErr</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">1</a></td></tr>
+<tr><td class="Bordered"><span class="Monospace">mFullErr</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">2</a></td></tr>
+<tr><td class="Bordered"><span class="Monospace">fIsOpen</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">5</a></td></tr>
+<tr><td class="Bordered"><span class="Monospace">fIOErr</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">6</a></td></tr>
+<tr><td class="Bordered"><span class="Monospace">fNotFound</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">7</a></td></tr>
+<tr><td class="Bordered"><span class="Monospace">fNoPerm</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">8</a></td></tr>
+<tr><td class="Bordered"><span class="Monospace">fDiskFull</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">9</a></td></tr>
+<tr><td class="Bordered"><span class="Monospace">fDupPath</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">10</a></td></tr>
+<tr><td class="Bordered"><span class="Monospace">fTMFOpen</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">11</a></td></tr>
+</table>
+
+</body>
+</HTML>

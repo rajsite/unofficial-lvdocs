@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 6100Ecommhlp -->
+
+<title>Syntax for the VIs Lists</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Syntax for the VIs Lists</h1>
+<p class="Body">Each entry in the <strong>Visible</strong> and <strong>Exported VIs</strong> lists describes a VI name or a VI path and can contain wildcard characters. The Web and VI Servers compare entries that contain path separators against VI paths and compare entries that do not contain path separators against VI names only.
+</p>
+<p class="Body">Use the following wildcard characters when specifying entries in the <strong>Visible</strong> and <strong>Exported VIs</strong> lists. </p>
+
+<table class="Bordered"><tr><th class="Bordered">Wildcard</th>
+<th class="Bordered">Action</th></tr>
+
+<tr><td class="Bordered"><span class="Monospace">?</span></td>
+<td class="Bordered">Matches exactly one arbitrary character except for the path separator.</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">*</span></td>
+<td class="Bordered">Matches zero or more arbitrary characters except for the path separator.</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">**</span></td>
+<td class="Bordered">Matches zero or more arbitrary characters including the path separator.</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">\</span></td>
+<td class="Bordered">Cancels the interpretation of special characters.</td></tr>
+</table>
+
+<p class="Body">The permission for an entry later in the list overrides previous permissions. You can click and drag an entry in the list to change the order.
+</p>
+<p class="Body">For example, if you deny access to all VI front panels in <span class="Monospace">c:\labview\server</span>, but after that entry you give access to <span class="Monospace">c:\labview\server\local.vi</span>, that VI is still visible, because the entry later in the list overrides the first entry.
+</p>
+<p class="Body">In general, you should use the <span class="Monospace">*</span> wildcard to set up general allowances or denials, and follow those entries with more specific entries that reverse part of the previous permission. For best performance, place the most frequently matched entries toward the bottom of the list.
+</p>
+<p class="Body">The following example illustrates how to use the wildcards correctly.</p>
+
+<table class="Bordered"><tr><th colspan="2" class="Bordered">VIs List Entry</th>
+<th class="Bordered">Permission Status</th></tr>
+
+<tr><td class="Bordered"><img src="checkmark.gif"></td><td class="Bordered">
+*</td>
+<td class="Bordered">Allows access to all VIs.</td></tr>
+
+<tr><td class="Bordered"><img src="checkmark.gif"></td><td class="Bordered">
+<span class="Monospace">c:\labview\server\*</span></td>
+<td class="Bordered">Allows access to all VIs in <span class="Monospace">c:\labview\server</span>.</td></tr>
+
+<tr><td class="Bordered"><img src="checkmark.gif"></td><td class="Bordered">
+<span class="Monospace">c:\labview\test\**</span></td>
+<td class="Bordered">Allows access to all VIs in <span class="Monospace">c:\labview\test</span> and its subdirectories.</td></tr>
+
+<tr><td class="Bordered">X</td><td class="Bordered">
+<span class="Monospace">c:\labview\test\private.vi</span></td>
+<td class="Bordered">Denies access to this VI even though the previous entry allows access.</td></tr>
+
+<tr><td class="Bordered"><img src="checkmark.gif"></td><td class="Bordered">
+<span class="Monospace">srvr_*.vi</span></td>
+<td class="Bordered">Allows access to any VI that begins with the string <span class="Monospace">srvr_</span> and ends with the string <span class="Monospace">.vi</span>.</td></tr>
+
+<tr><td class="Bordered">X</td><td class="Bordered">
+<span class="Monospace">Are You Finished\?.vi</span></td>
+<td class="Bordered">Denies access to <span class="Monospace">Are You Finished?.vi</span>.</td></tr>
+
+<tr><td class="Bordered">X</td><td class="Bordered">
+<span class="Monospace">Open?.vi</span></td>
+<td class="Bordered">Denies access to all VIs named <span class="Monospace">Open</span><span class="Monospace-Italic"><em>?</em></span> where <span class="Monospace-Italic"><em>?</em></span> represents one arbitrary character except for the path separator.</td></tr></table>
+
+
+
+
+</body>
+</html>

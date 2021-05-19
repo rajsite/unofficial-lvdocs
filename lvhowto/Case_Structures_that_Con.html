@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 3800Evihiersubvihlp -->
+
+<title>Avoiding SubVI Selections That Contain Terminals inside Structures</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Avoiding SubVI Selections That Contain Terminals inside Structures</h1>
+
+<p class="Body">When you <a href="CreatingSubVIsfromVISelec.html">create a subVI from a selection</a>, avoid including a structure that contains a block diagram terminal in the selection. If you create a subVI from the selection, LabVIEW displays a dialog box that warns you of the potential problem and prompts you to continue or cancel the conversion.</p>
+
+<p class="Body">If you create a subVI from a <a href="../glang/For_Loop.html">For Loop</a> or a <a href="../glang/While_Loop.html">While Loop</a> that contains a block diagram terminal, the functionality of the original VI might change. Because the terminal remains on the original block diagram and the terminal is wired to the new subVI, the subVI does not update the value of the terminal on every iteration of the loop inside the subVI. The value of the terminal updates only after all iterations of the loop execute and the subVI finishes running.</p>
+
+<p class="Body">Also, if you create a subVI from a <a href="../glang/Case_Structure.html">Case structure</a> that contains an output terminal, the functionality of the original VI might change. Because the output terminal remains on the original block diagram and the indicator is wired to the new subVI, LabVIEW always writes a value to the indicator after the subVI runs. Before you created the subVI, LabVIEW wrote a value to the indicator only when the case containing the indicator executed. If you create a subVI from the Case structure, you must edit the subVI to pass a value to the indicator in all cases.</p>
+
+
+
+</body>
+</html>

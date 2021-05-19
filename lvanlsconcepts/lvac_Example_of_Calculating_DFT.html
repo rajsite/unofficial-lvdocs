@@ -1,0 +1,112 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Example of Calculating Discrete Fourier Transform</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-05D65E4C-8EF1-491C-B5CD-4B552AD107C8" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Example of Calculating Discrete Fourier Transform</h1> 
+      
+      <div> 
+         	 
+         <div class="p"> 
+            		This topic provides an example of using the following equation to calculate the discrete Fourier transform (DFT) for a DC
+            signal. 
+            <div class="fignone"><a name="GUID-05D65E4C-8EF1-491C-B5CD-4B552AD107C8__LOC_EQ_DISCRETE_FOURIER_TRANSFORM_DFT_B" shape="rect">
+                  <!-- --></a><div class="mathml-block"><span><img src="./_Example_of_Calculating_DFT.xml_d9124e19.png"></span></div>
+            </div> 
+            	 
+         </div> 
+         	 
+         <p>This example uses the following assumptions: 
+            	 
+         </p> 
+         	 <a name="GUID-05D65E4C-8EF1-491C-B5CD-4B552AD107C8__UL_E0543B46FC7641EAB9564013BA7F504C" shape="rect">
+            <!-- --></a><ul id="GUID-05D65E4C-8EF1-491C-B5CD-4B552AD107C8__UL_E0543B46FC7641EAB9564013BA7F504C">
+            <li><a name="GUID-05D65E4C-8EF1-491C-B5CD-4B552AD107C8__LI_4C16CC7864434E0DB54E8D6C259C99BE" shape="rect">
+                  <!-- --></a><em>X</em>[0] corresponds to the DC component, or the average value, of the signal. 
+               		
+            </li>
+            <li><a name="GUID-05D65E4C-8EF1-491C-B5CD-4B552AD107C8__LI_6794DD7ED9BC435CB7168105A859631A" shape="rect">
+                  <!-- --></a>The DC signal has a constant amplitude of +1 V. 
+               		
+            </li>
+            <li><a name="GUID-05D65E4C-8EF1-491C-B5CD-4B552AD107C8__LI_74A1D813845E442BB8CE45F1BB483FEB" shape="rect">
+                  <!-- --></a>The number of samples is four samples. 
+               		
+            </li>
+            <li><a name="GUID-05D65E4C-8EF1-491C-B5CD-4B552AD107C8__LI_B2CD7A18FDA14874B54756EA01F819E3" shape="rect">
+                  <!-- --></a>Each of the samples has a value +1, as shown in the following figure. 
+               		  
+               <p><br clear="none"><a name="GUID-05D65E4C-8EF1-491C-B5CD-4B552AD107C8__IMAGE_B61E3176869047E48B661A5FD15EBEF1" shape="rect">
+                     <!-- --></a><img id="GUID-05D65E4C-8EF1-491C-B5CD-4B552AD107C8__IMAGE_B61E3176869047E48B661A5FD15EBEF1" src="GUID-3D671729-CD50-4FE8-9085-9BB64FBA3F9F-help-web.png"><br clear="none"> 
+                  		  
+               </p> 
+               		
+            </li>
+            <li><a name="GUID-05D65E4C-8EF1-491C-B5CD-4B552AD107C8__LI_BC9DAEC8A4A244D9946F0B72B94460CF" shape="rect">
+                  <!-- --></a>The resulting time sequence for the four samples is given by the following equation. 
+               		  
+               <p><em>x</em>[0] = <em>x</em>[1] = <em>x</em>[2] = <em>x</em>[3] = 1 
+                  		  
+               </p> 
+               		
+            </li>
+         </ul> 
+         	 
+         <p>The DFT calculation makes use of Euler's identity, which is given by the following equation. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./_Example_of_Calculating_DFT.xml_d9124e178.png"></span></div>
+         </div> 
+         	 
+         <p>If you use the following equation to calculate the DFT of the sequence shown in the previous figure and use Euler's identity,
+            
+            	 
+         </p>
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./_Example_of_Calculating_DFT.xml_d9124e229.png"></span></div>
+         </div> 
+         	 
+         <p>you get the following equations. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./_Example_of_Calculating_DFT.xml_d9124e342.png"></span></div>
+         </div>
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./_Example_of_Calculating_DFT.xml_d9124e455.png"></span></div>
+         </div>
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./_Example_of_Calculating_DFT.xml_d9124e656.png"></span></div>
+         </div>
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./_Example_of_Calculating_DFT.xml_d9124e841.png"></span></div>
+         </div> 
+         	 
+         <p>where <em>X</em>[0] is the DC component and <em>N</em> is the number of samples. 
+            	 
+         </p> 
+         	 
+         <p>Therefore, except for the DC component, all other values for the sequence are zero, which is as expected. However, the calculated
+            value of <em>X</em>[0] depends on the value of <em>N</em>. Because in this example <em>N</em> = 4, <em>X</em>[0] = 4. If <em>N</em> = 10, the calculation results in <em>X</em>[0] = 10. This dependency of <em>X</em>[ ] on <em>N</em> also occurs for the other frequency components. Therefore, you usually divide the DFT output by <em>N</em> to obtain the correct magnitude of the frequency component. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Discrete_Fourier_Transform.html" shape="rect">Discrete Fourier Transform (DFT)</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

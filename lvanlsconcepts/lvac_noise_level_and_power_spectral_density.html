@@ -1,0 +1,70 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Computing Noise Level and Power Spectral Density</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-CB803ED2-381D-4967-9EA8-3062A4432B74" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Computing Noise Level and Power Spectral Density</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 The measurement of noise levels depends on the bandwidth of the measurement. When looking at the noise floor of a power
+            spectrum, you are looking at the narrowband noise level in each fast Fourier transform (FFT) bin. Therefore, the noise floor
+            of a given power spectrum depends on the &#916;<em>f</em> of the spectrum, which is in turn controlled by the sampling rate and the number of points in the data set. In other words,
+            the noise level at each frequency line is equivalent to the noise level obtained using a &#916;<em>f</em> Hz filter centered at that frequency line. Therefore, for a given sampling rate, doubling the number of data points acquired
+            reduces the noise power that appears in each bin by 3 dB. Theoretically, discrete frequency components have zero bandwidth
+            and therefore do not scale with the number of points or frequency range of the FFT. 
+            	 
+         </p> 
+         	 
+         <p>To compute the signal-to-noise ratio (SNR), compare the peak power in the frequencies of interest to the broadband noise level.
+            Compute the broadband noise level in V<sub>rms</sub><sup>2</sup> by summing all the power spectrum bins, excluding any peaks and the DC component, and dividing the sum by the equivalent
+            noise bandwidth of the window. 
+            	 
+         </p> 
+         	 
+         <p>Because of noise-level scaling with &#916;<em>f</em>, spectra for noise measurement often are displayed in a normalized format called power or amplitude spectral density. The
+            power or amplitude spectral density normalizes the power or amplitude spectrum to the spectrum measured by a 1 Hz-wide square
+            filter, a convention for noise-level measurements. The level at each frequency line is equivalent to the level obtained using
+            a 1 Hz filter centered at that frequency line. 
+            	 
+         </p> 
+         	 
+         <p>You can use the following equation to compute the power spectral density. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./_and_power_spectral_density.xml_d19661e48.png"></span></div>
+         </div> 
+         	 
+         <p>You can use the following equation to compute the amplitude spectral density. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./_and_power_spectral_density.xml_d19661e90.png"></span></div>
+         </div> 
+         	 
+         <p>The spectral density format is appropriate for random or noise signals. The spectral density format is not appropriate for
+            discrete frequency components because discrete frequency components theoretically have zero bandwidth. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Computations_on_the_Spectrum.html" shape="rect">Computations on the Spectrum</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

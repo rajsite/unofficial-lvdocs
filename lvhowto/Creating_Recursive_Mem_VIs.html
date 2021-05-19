@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Creating a Recursive VI</title>
+</head>
+<BODY> 
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Creating a Recursive VI</h1>
+<p class="Body"><!--begin parent- ../lvconcepts/Recursive_VIs.html-->You can configure a VI to be <a href="../lvconcepts/Recursive_VIs.html">recursive</a>, meaning the VI can call itself from its own block diagram or from the block diagram of subVIs. Recursive VIs are useful if you want to operate multiple times on the output of the same process.<!--end parent- ../lvconcepts/Recursive_VIs.html--></p>
+<p class="Body">Complete the following steps to make a VI recursive.</p>
+<ol>
+<li>Open the VI you want to make recursive.</li>
+<li>Select <strong>Shared clone reentrant execution</strong> on the <a href="../lvdialog/Execution.html">Execution</a> page of the <a href="../lvdialog/VI_Properties_Dialog_Box.html">VI Properties</a> dialog box.</li>
+
+<li>Call the recursive VI from its own block diagram or from the block diagram of a subVI.</li>
+</ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;LabVIEW allows up to 15,000 recursive calls on 32-bit platforms and up to 35,000 recursive calls on 64-bit platforms. To avoid too many recursive calls, consider calling the recursive VI in a <a href="../glang/Case_Structure.html">Case</a> structure. </td>
+</tr>
+</table>
+
+
+</body>
+</html>

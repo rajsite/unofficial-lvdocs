@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+<title>Limiting Tree Control Item Selection to Siblings</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Limiting Tree Control Item Selection to Siblings</h1>
+<p class="Body"><!--begin_child id = upgrade tag="siblings"--><!-- Begin child: ../lvhowto/Selecting_Listbox_Items.html-->By default, LabVIEW limits the interactive selection of multiple items in a tree control to items that share the same parent. To allow the selection of items with different parents, right-click the tree control and remove the checkmark from the <strong>Selection Mode&#0187;Limit Multiselect to Siblings</strong> item in the shortcut menu.<!-- End child: ../lvhowto/Selecting_Listbox_Items.html--> You also can use the <a href="../lvprop/TC_Sibling_Multiselect.html">Sibling Multiselect</a> property to programmatically limit the selection of multiple items to siblings or to allow the selection of items with different parents.<!--end_child id = upgrade tag="siblings"--></p>
+<p class="Body">If you limit the interactive selection of multiple items to siblings, you still can select items with different parents programmatically by using a <a href="../glang/Local_Variable.html">local variable</a> or setting the <a href="../lvprop/Ctrl_Value_LV_Var.html">Value</a> property of the tree control. However, you then cannot add new items to the selection interactively.</p>
+<p class="Body">If you enable the <strong>Limit Multiselect to Siblings</strong> shortcut menu item, but there are multiple non-sibling items already selected, subsequent selection behavior might not be intuitive. If you reset the selection to something valid, the selection behavior returns to normal.</p>
+
+
+
+</body>
+</html>

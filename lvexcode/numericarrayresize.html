@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>NumericArrayResize (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>NumericArrayResize (LabVIEW Manager Function)</h1>
+<p class="Code">MgErr NumericArrayResize (int32 typeCode, int32 numDims, Uhandle *dataHP, size_t totalNewSize)</p>
+<h2>Purpose</h2>
+<p class="Body">Resizes a data handle that refers to a numeric array. This routine also accounts for alignment issues. It does not set the array dimension field. If <strong>*dataHP</strong> is <span class="Monospace">NULL</span>, LabVIEW allocates a new array handle in <strong>*dataHP</strong>.</p>
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>typeCode</strong></td>
+<td class="Bordered"><span class="Monospace">int32</span></td>
+ <td class="Bordered">Data type for the array you want to resize.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>numDims</strong></td>
+<td class="Bordered"><span class="Monospace">int32</span></td>
+ <td class="Bordered">Number of dimensions in the data structure to which the handle refers.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>*dataHP</strong></td>
+<td class="Bordered"><span class="Monospace">UHandle</span></td>
+ <td class="Bordered">Pointer to the handle you want to resize.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>totalNewSize</strong></td>
+<td class="Bordered"><span class="Monospace">size_t</span></td>
+ <td class="Bordered">New number of elements to which the handle refers.</td></tr>
+</table>
+<h2>Return Value</h2>
+<p class="Body"><span class="Monospace">MgErr</span>, which can contain the following errors. If you receive errors from <a href="LabVIEW_Manager_Functions.html">LabVIEW Manager functions</a>, most error names correspond to LabVIEW error codes.</p>
+<table class="Bordered">
+<tr><th class="Bordered Left-Align">Value</th>
+<th class="Bordered Left-Align">Corresponding Error Code or Description</th></tr>
+<tr><td class="Bordered"><span class="Monospace">noErr</span></td><td class="Bordered">No error.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">mZoneErr</span></td><td class="Bordered">Handle or pointer not in specified zone.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">mFullErr</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">2</a></td></tr>
+</table>
+
+<h2>Possible Values for this Type Code Input</h2>
+
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Data Type</th><th class="Bordered Left-Align">Type Code (numbers in hexadecimal)</th></tr>
+ <tr>
+ <td class="Bordered">8-bit integer</td>
+ <td class="Bordered">01 or iB</td></tr>
+ <tr>
+ <td class="Bordered">16-bit integer</td>
+ <td class="Bordered">02 or iW</td></tr>
+ <tr>
+ <td class="Bordered">32-bit integer</td>
+ <td class="Bordered">03 or iL</td></tr>
+ <tr>
+ <td class="Bordered">64-bit integer</td>
+ <td class="Bordered">04 or iQ</td></tr>
+ <tr>
+ <td class="Bordered">8-bit unsigned integer</td>
+ <td class="Bordered">05 or uB</td></tr>
+ <tr>
+ <td class="Bordered">16-bit unsigned integer</td>
+ <td class="Bordered">06 or uW</td></tr>
+ <tr>
+ <td class="Bordered">32-bit unsigned integer</td>
+ <td class="Bordered">07 or uL</td></tr>
+ <tr>
+ <td class="Bordered">64-bit unsigned integer</td>
+ <td class="Bordered">08 or uQ</td></tr>
+ <tr>
+ <td class="Bordered">Single-precision, floating-point number</td>
+ <td class="Bordered">09 or fs</td></tr>
+ <tr>
+ <td class="Bordered">Double-precision, floating-point number</td>
+ <td class="Bordered">0A or fD</td></tr>
+ <tr>
+ <td class="Bordered">Extended-precision, floating-point number</td>
+ <td class="Bordered">0B or fX</td></tr>
+ <tr>
+ <td class="Bordered">Complex single-precision, floating-point number</td>
+ <td class="Bordered">0C or cS</td></tr>
+ <tr>
+ <td class="Bordered">Complex double-precision, floating-point number</td>
+ <td class="Bordered">0D or cD</td></tr>
+ <tr>
+ <td class="Bordered">Complex extended-precision, floating-point number</td>
+ <td class="Bordered">0E or cX</td></tr>
+</table>
+
+</body>
+</HTML>

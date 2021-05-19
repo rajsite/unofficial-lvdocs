@@ -1,0 +1,194 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Choosing the Correct Smoothing Window</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-B8ACDEEA-3160-4FB8-B414-5036C8324000" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Choosing the Correct Smoothing Window</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 Selecting a smoothing window is not a simple task. Each smoothing window has its own characteristics and suitability for
+            different applications. To choose a smoothing window, you must estimate the frequency content of the signal. If the signal
+            contains strong interfering frequency components distant from the frequency of interest, choose a smoothing window with a
+            high side lobe roll-off rate. If the signal contains strong interfering signals near the frequency of interest, choose a smoothing
+            window with a low maximum side lobe level. 
+            	 
+         </p> 
+         	 
+         <p>If the frequency of interest contains two or more signals very near to each other, spectral resolution is important. In this
+            case, it is best to choose a smoothing window with a very narrow main lobe. If the amplitude accuracy of a single frequency
+            component is more important than the exact location of the component in a given frequency bin, choose a smoothing window with
+            a wide main lobe. If the signal spectrum is rather flat or broadband in frequency content, use the rectangular window, or
+            no window. In general, the Hanning window is satisfactory in 95% of cases. It has good frequency resolution and reduced spectral
+            leakage. If you do not know the nature of the signal but you want to apply a smoothing window, start with the Hanning window.
+            
+            	 
+         </p> 
+         	 
+         <p>The following table lists different types of signals and the appropriate windows that you can use with them. 
+            	 
+         </p> 
+         	 <a name="GUID-B8ACDEEA-3160-4FB8-B414-5036C8324000__TABLE_C239AA43EF104E998E59154A04B1BB99" shape="rect">
+            <!-- --></a><table class="rowsep colsep frametop framebottom frameleft frameright  " id="GUID-B8ACDEEA-3160-4FB8-B414-5036C8324000__TABLE_C239AA43EF104E998E59154A04B1BB99">
+            <thead align="left">
+               <tr>
+                  <th align="center" valign="bottom"> Type of Signal 
+                     				
+                  </th>
+                  <th align="center" valign="bottom"> Window 
+                     				
+                  </th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td align="left"> Transients whose duration is shorter than the length of the window 
+                     				
+                  </td>
+                  <td align="left"> Rectangular 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Transients whose duration is longer than the length of the window 
+                     				
+                  </td>
+                  <td align="left"> Exponential, Hanning 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> General-purpose applications 
+                     				
+                  </td>
+                  <td align="left"> Hanning 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Spectral analysis (frequency-response measurements) 
+                     				
+                  </td>
+                  <td align="left"> Hanning (for random excitation), Rectangular (for pseudorandom excitation) 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Separation of two tones with frequencies very close to each other but with widely differing amplitudes 
+                     				
+                  </td>
+                  <td align="left"> Kaiser-Bessel 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Separation of two tones with frequencies very close to each other but with almost equal amplitudes 
+                     				
+                  </td>
+                  <td align="left"> Rectangular 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Accurate single-tone amplitude measurements 
+                     				
+                  </td>
+                  <td align="left"> Flat top 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Sine wave or combination of sine waves 
+                     				
+                  </td>
+                  <td align="left"> Hanning 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Sine wave and amplitude accuracy is important 
+                     				
+                  </td>
+                  <td align="left"> Flat top 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Narrowband random signal (vibration data) 
+                     				
+                  </td>
+                  <td align="left"> Hanning 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Broadband random (white noise) 
+                     				
+                  </td>
+                  <td align="left"> Rectangular 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Closely spaced sine waves 
+                     				
+                  </td>
+                  <td align="left"> Rectangular, Hamming 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Excitation signals (hammer blow) 
+                     				
+                  </td>
+                  <td align="left"> Force 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Response signals 
+                     				
+                  </td>
+                  <td align="left"> Exponential 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Unknown content 
+                     				
+                  </td>
+                  <td align="left"> Hanning 
+                     				
+                  </td>
+               </tr>
+            </tbody>
+         </table> 
+         	 
+         <p>Initially, you might not have enough information about the signal to select the most appropriate smoothing window for the
+            signal. You might need to experiment with different smoothing windows to find the best one. Always compare the performance
+            of different smoothing windows to find the best one for the application. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Smoothing_Windows.html" shape="rect">Smoothing Windows</a></div>
+         </div>
+         <div class="relinfo relconcepts"><strong>Related concepts</strong><br clear="none"><div><a href="Spectral_Leakage.html" shape="rect">Spectral Leakage</a></div>
+            <div><a href="Char_Smoothing_Windows.html" shape="rect">Characteristics of Different Smoothing Windows</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

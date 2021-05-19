@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4200Estructureshlp -->
+
+<title>Configuring Parallel For Loop Iterations to Tweak Performance</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Configuring Parallel For Loop Iterations to Tweak Performance</h1>
+<p class="Body">When you <a href="../lvhowto/Enabling_Parallel_For_Loop_Iterations.html">enable parallel For Loop iterations</a>, you can tweak performance programmatically using the parallel instances (<strong>P</strong>) and chunk size (<strong>C</strong>) terminals. The default configurations of the terminals produce optimal performance improvements in most cases, so programmatic configuration is rarely necessary. However, you can use the parallel instances and chunk size terminals to customize a configuration different from the default.</p>
+
+<h2>Using the Parallel Instances Terminal to Tweak Performance</h2>
+<p class="Body">After you enable parallel For Loop iterations, the parallel instances terminal appears inside the For Loop. Wire a numeric value to the parallel instances terminal to programmatically configure the number of parallel instances to execute. At compile time, LabVIEW generates a number of parallel instances equal to the minimum of the value provided in the <strong>Number of generated parallel loop instances</strong> field of the <a href="../lvdialog/For_Loop_Iteration_DB.html">For Loop Iteration Parallelism</a> dialog box and the value wired to the input of the parallel instances terminal. Processors execute parallel instances simultaneously to improve performance.</p> 
+<p class="Body">If you leave the input of the parallel instances terminal unwired, LabVIEW automatically detects the number of logical processors in the computer and uses it as the default parallel instances terminal value. In most cases, optimal performance occurs when the number of executed parallel instances is equal to the number of processors in the computer, so you should usually leave the input of the parallel instances terminal unwired.</p>
+<p class="Body">If code in a For Loop performs any waiting operation, optimal performance occurs when the number of loop instances executed is greater than the number of logical processors, called oversubscribing. For example, if a parallel For Loop instance waits to acquire data from external hardware, oversubscribing allows a processor to execute a second parallel instance while it waits on the first. When a parallel For Loop instance executes at the same time as other computationally intensive code, undersubscribing, or executing a number of loop instances less than the number of logical processors, results in optimal performance. For example, if a For Loop and a subVI execute simultaneously, undersubscribing limits the processing resources devoted to the For Loop and reserves resources for other operations.</p>
+
+<h2>Using the Chunk Size Terminal to Specify a Custom Iteration Schedule</h2>
+<p class="Body">LabVIEW partitions loop iterations into chunks consisting of loop iterations. With parallel iterations enabled, processors execute chunks simultaneously to improve execution speed. By default, LabVIEW schedules chunks by size from larger to smaller. Executing larger chunks first decreases scheduling overhead, while executing smaller chunks last decreases processor idleness. You should programmatically configure chunk size only if the For Loop would benefit from an iteration schedule different from the default, such as a schedule that executes smaller chunks before larger chunks.</p>
+
+<p class="Body">After you enable parallel For Loop iterations, complete the following steps to programmatically configure the iteration schedule using the chunk size terminal:</p>
+<ol>
+<li>Right-click the For Loop and select <strong>Configure Iteration Parallelism</strong>. LabVIEW displays the <a href="../lvdialog/For_Loop_Iteration_DB.html">For Loop Iteration Parallelism Dialog Box</a>.</li>
+<li>In the <strong>Iteration partitioning schedule</strong> section, select <strong>Specify partitioning with chunk size (C) terminal</strong>. The chunk size terminal appears below the parallel instances terminal.</li>
+<li>Wire a numeric value or an array of numeric values to the chunk size terminal.</li>
+</ol>
+<p class="Body">When you wire a numeric value to the chunk size terminal, the value specifies the number of iterations to include in each chunk. Wiring an array of numeric values provides more precise control over chunk size. Each value in the array specifies the number of iterations to include in a chunk, with the first chunk beginning at index 0.</p>
+			<table class="Borderless">
+<tr><td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If you wire an array with too many chunk sizes, LabVIEW ignores the extra values. If you wire too few chunk sizes, the last element in the array determines the size of the remaining chunks.</td></tr></table>
+
+
+</body>
+</html>

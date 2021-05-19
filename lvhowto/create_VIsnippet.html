@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Reusing Snippets of Code</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Reusing Snippets of Code</h1>
+
+					<p class="Body">You can save snippets of code, or a VI snippet, from the block diagram to reuse later or to share with other LabVIEW users. LabVIEW embeds the code into a <span class="Monospace">.png</span> image file. The image shows a picture of your code and contains the actual code you specify.</p>
+					<p class="Body">Complete the following steps to reuse a snippet of code from the block diagram.</p>
+					<ol>
+						<li>Select a section of code on the block diagram.</li></ol>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;Do not select a section of code that contains an unsaved subVI. If you include a subVI in the section of code, you first must save the subVI on disk.</td>
+</tr>
+</table>
+
+					<ol start="2"><li>Select <strong>Edit&#0187;Create VI Snippet from Selection</strong>.</li>
+						<li>In the dialog box that appears, select or browse to the directory where you want to save the VI snippet.</li>
+						<li>Click the <strong>OK</strong> button.</li>
+						<li><span class="Platform">(Windows and macOS)</span> (Optional) Drag the <span class="Monospace">.png</span> file from the directory where you saved it and drop it onto the block diagram. LabVIEW drops the actual code that is in the file and automatically wires controls and indicators to wires in the section of code that have loose ends. </li>
+
+						<li>(Optional) Share the <span class="Monospace">.png</span> file with other LabVIEW users in one of the following ways.
+						<ul><li>Attach the file to any Web document such as an email. <span class="Platform">(Windows and macOS)</span> Other users can download the file and then drag and drop the file onto the block diagram to use the code.</li>
+						<li>Embed the image in an HTML page such as a message forum. <span class="Platform">(Windows and macOS)</span> Other users can drag the image onto the block diagram to use the code.</li></ul>
+						</li>
+					</ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;<span class="Platform">(Linux)</span> You can save and share VI snippets to show images of code, but you cannot drag and drop VI snippets onto the block diagram to use the code.</td>
+</tr>
+</table>
+<p class="Body">LabVIEW does not embed subVIs in the <span class="Monospace">.png</span> file. Any subVIs called in the VI snippet must be present on the computer when a user drops the <span class="Monospace">.png</span> file onto the block diagram. Otherwise, the VI snippet contains broken code.</p>
+
+<p class="Body">When you open a VI snippet <span class="Monospace">.png</span> file with image editing software, LabVIEW displays the version of LabVIEW in which the VI snippet was saved in the upper right-hand corner of the image. To use the code of a VI snippet, the version of LabVIEW you are running must be the same as or later than the version of LabVIEW in which the VI snippet was saved.</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If you save a VI snippet <span class="Monospace">.png</span> file with the image editing software, that software might remove the code from the <span class="Monospace">.png</span> file. If you then add the <span class="Monospace">.png</span> file to the block diagram, only the image appears on the block diagram, not the code. To avoid losing the code, do not save the <span class="Monospace">.png</span> file with the image editing software.
+</td>
+</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 6100Ecommhlp -->
+<title>Setting Up the Application Web Server for Web Services</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Setting Up the Application Web Server for Web Services</h1>
+<p>To host your Web services on the Application Web Server, you need to set up the web server before you run or publish the Web services.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;For more information about concepts in this topic, refer to the <a href="../lvconcepts/WebServices.html">Web services introduction</a> and <a href="../lvhowto/Build_Web_Service.html">tutorial</a>. LabVIEW Web services are available only in the LabVIEW Full Development System and the LabVIEW Professional Development System.</td>
+</tr>
+</table>
+
+<p class="Body">Complete the following steps to enable and configure the <a href="../lvconcepts/ws_web_server.html">Application Web Server</a> for hosting Web services that are not part of a LabVIEW stand-alone application. If you use the NI Web Server to host Web services, refer to <a href="../lvhowto/ws_setup_niws.html">Setting Up the NI Web Server for Web Services</a> for detailed instructions.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;The web server that hosts Web services included with a stand-alone application is automatically enabled.</td>
+</tr>
+</table>
+<!--START parent topic::Build_Web_Service.html-->
+<ol>
+<li>Open a web browser.</li>
+<li>In the browser, enter a URL for the target on which you want to enable the Application Web Server. The URL must conform to the following syntax:
+<ul>
+<li>To set up the Application Web Server on the local host system, enter the following URL: <br><span class="Monospace">http://localhost:3582</span>.</li>
+<li>To set up the Application Web Server on a remote target system, right-click the target in a LabVIEW project, select <strong>Properties</strong>, and browse to the <a href="../lvdialog/Web_Server_Config_Options.html">Web Server</a> page. Click the <strong>Configure Web Application Server</strong> button. If the button is disabled, ensure the Application Web Server is installed on the target. 
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="tip.gif" alt="Tip"></td>
+<td><strong>Tip</strong>&nbsp;&nbsp;You also can enter the following URL in a Web browser: <br><span class="Monospace">http://</span><span class="Monospace-italic">[remote device IP address]</span> where <span class="Monospace-italic">[remote device IP address]</span> is the IP address of the remote device.</td>
+</tr>
+</table></li>
+</ul>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;Because NI Web-based Configuration &amp; Monitoring requires Microsoft Silverlight, you might need to browse to the URL with Microsoft Internet Explorer, which provides better compatibility with Microsoft Silverlight.</td>
+</tr>
+</table>
+</li>
+
+<li>Click <strong>Login</strong> and enter a username and password to gain access to NI Web-based Configuration &amp; Monitoring for the system. If you have not established security settings for NI Web-based Configuration &amp; Monitoring on the system, enter the username <span class="monospace">Admin</span> and a blank password to gain access using the default credentials.</li>
+<li>Click the <strong>Web Server Configuration</strong> button to display the <strong>Web Server Configuration</strong> page.</li>
+<li>Click <strong>Help</strong> for information about enabling and configuring the Application Web Server.</li>
+</ol>
+
+<p class="Body">The Application Web Server runs as an independent system service. You can enable and run the Application Web Server without running LabVIEW on the host system.</p>
+
+<h3>Related Information</h3>
+<p class="Body"><a href="../lvconcepts/ws_web_server.html">Hosting Web Services</a></p>
+<p class="Body"><a href="../lvhowto/NI_WebConfig.html">NI Web-based Configuration &amp; Monitoring</a></p>
+	
+</body>
+</html>

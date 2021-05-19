@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 1800Erefnumcihlp -->
+
+<title>Switching Between Strictly Typed and Weakly Typed Control Refnums</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Switching Between Strictly Typed and Weakly Typed Control Refnums
+</h1>
+<p class="Body"><!--begin parent=../lvconcepts/Programmatically_Controlling_VIs.xml NK-->Strictly typed control refnums accept only control refnums of exactly the same data type. <a href="../lvconcepts/Controlling_Front_Panel_Objects.html#Strictly_Typed_and_Weakly_Typed_Control_Refnums">Weakly typed control refnums</a> are more flexible in the type of data they accept.<!--end parent=../lvconcepts/Programmatically_Controlling_VIs.xml NK--></p>
+
+<p class="Body">There are five ways to switch between a strictly typed control refnum and a weakly typed control refnum.</p>
+<ul>
+
+<li>Right-click a strictly typed control refnum and remove the checkbox from the <strong>Include Data Type</strong> item in the shortcut menu to make it weakly typed.</li>
+
+<li>Right-click a weakly typed control refnum and select <strong>Include Data Type</strong> from the shortcut menu to make it strictly typed. This method does not work when the class of data is too general, such as GObject or General.</li>
+
+<li>Right-click a strictly typed control refnum and select <strong>Select Ctrl Type</strong> from the shortcut menu to change the class and disable the <strong>Include Data Type</strong> option, which makes the control refnum weakly typed.</li>
+
+<li>Right-click a strictly typed control refnum and select <strong>Select VI Server Class</strong> from the shortcut menu to select a generic control class, such as <strong>Generic</strong>, <strong>GObject&#0187;GObject</strong>, or <strong>GObject&#0187;Control&#0187;Control</strong>. Generic control classes cannot be strictly typed.</li>
+
+<li>Drag a control into the front panel control refnum control to remove the original control and create a strictly typed control refnum. A red star in the lower left corner of the control refnum control indicates the control reference is strictly typed. Press the &lt;Ctrl&gt; key as you drag a control into the control refnum control to keep the original control and create a strictly typed control refnum. <span class="Platform">(macOS)</span> Press the &lt;Option&gt; key. <span class="Platform">(Linux)</span> Press the &lt;Alt&gt; key.</li>
+
+</ul>
+
+
+
+
+
+</body>
+</html>

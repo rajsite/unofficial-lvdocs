@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 1100Enumericcihlp -->
+
+<title>Adding Text Labels to Numeric Objects with Scale</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Adding Text Labels to Numeric Objects with Scale
+</h1>
+<p class="Body">You can add text labels to slide or rotary objects for uses such as associating strings with integer values and selecting specific integer values.
+</p>
+<p class="Body">Complete the following steps to create text labels on numeric objects with scales.
+</p>
+<ol>
+<li>Right-click the slide or rotary object and select <strong>Text Labels</strong> from the shortcut menu. The default text labels, <strong>min</strong> and <strong>max</strong>, appear on the scale. A text display also appears and displays the text labels.</li>
+<li>Use the Labeling tool to edit the labels.</li>
+<li>Right-click the text display and select <strong>Visible Items&#0187;Digital Display</strong> from the shortcut menu to display the numeric values associated with the text labels you create. These values always start at zero for the minimum value of the scale and increase by one for each text label.</li>
+<li>Complete the following steps to add more text labels and corresponding markers to the scale.
+<ol class="List-abc">
+<li>Right-click the text display and select <strong>Edit Items</strong> from the shortcut menu to display the <a href="../lvpage/pp_Edit_Items_DB.html">Edit Items</a> page of the <strong>Slide Properties</strong> dialog box or the <strong>Knob Properties</strong> dialog box.</li>
+<li>Double-click in an empty cell in the <strong>Items</strong> column and enter the string you want to display next to the scale marker. You also can place the cursor in a cell that already contains a string, click the <strong>Insert</strong> button to create an empty row above the cell, and enter a string in the new cell.</li>
+<li>(Optional) If the <a href="Selecting_Non_Uniform_Scal.html">marker spacing is arbitrary</a>, you can assign a specific numeric value to each item by removing the checkmark from the <strong>Sequential values</strong> checkbox and entering the numeric value you want to use. By default, after you enter a string in the <strong>Items</strong> column, LabVIEW adds a numeric value for the marker to the corresponding cell in the <strong>Values</strong> column. LabVIEW assigns sequential values that correspond to the order of the items in the list, starting with a value of 0 for the first item. </li>
+<li>Click the <strong>OK</strong> button.</li>
+</ol>
+</li>
+</ol>
+
+<p class="Body">You can edit the text label for a marker by placing the cursor in the text display, editing the label, and pressing the &lt;Ctrl-Enter&gt; keys. <span class="Platform">(macOS)</span> Press the &lt;Option-Enter&gt; keys. <span class="Platform">(Linux)</span> Press the &lt;Alt-Enter&gt; keys.</p>
+
+<p class="Body">You also can use the <a href="../lvprop/NumrcWithScl_Txt_Labels.html">Text Labels[]</a> property to edit text labels programmatically.</p>
+
+<p class="Body">You can right-click the text display and select <strong>Disable Item</strong> from the shortcut menu to disable a text label and marker so you cannot select the item at run time.</p>
+
+
+
+</body>
+</html>

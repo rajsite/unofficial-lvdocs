@@ -1,0 +1,127 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>The Finite Difference Method for the Laplace Equation</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-13F60CD7-10E9-4277-ACE8-AFB4925A85C7" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">The Finite Difference Method for the Laplace Equation</h1> 
+      
+      <div> 
+         	 
+         <p>You can use the finite difference method to solve the following Laplace equation with the following domain and conditions:
+            
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./rence_method_for_laplace_eq.xml_d15164e15.png"></span></div>
+         </div> 
+         	 
+         <p>The unit squared defines the equation and the boundary defines the Dirichlet condition. Use the following steps to solve the
+            equation numerically with the finite difference method. 
+            	 
+         </p> 
+         	 
+         <div class="section"><a name="GUID-13F60CD7-10E9-4277-ACE8-AFB4925A85C7__SECTION_2D6056C45BAC46F09680520CBB6B32F9" shape="rect">
+               <!-- --></a><h2 class="sectiontitle">Step One</h2> 
+            		 
+            		
+            <p>Separate the square domain with the uniform mesh grid of {<em>x</em><sub>0</sub>, <em>x</em><sub>1</sub>, ..., <em>x</em><sub><em>n</em></sub>} x {<em>y</em><sub>0</sub>, <em>y</em><sub>1</sub>, ..., <em>y</em><sub><em>n</em></sub>} where <em>x</em><sub>0</sub> and <em>y</em><sub>0</sub> are 0 and <em>x</em><sub><em>n</em></sub> and <em>y</em><sub><em>n</em></sub> are 1. You can evaluate the value of the unknown function on discrete boundary points with the Dirichlet condition. 
+               		
+            </p> 
+            		
+            <p>The following figure shows the mesh grid when <em>n</em> is 10. 
+               		
+            </p> 
+            		<br clear="none"><a name="GUID-13F60CD7-10E9-4277-ACE8-AFB4925A85C7__IMAGE_D964BCC5DD694E459C53683C457393A9" shape="rect">
+               <!-- --></a><img id="GUID-13F60CD7-10E9-4277-ACE8-AFB4925A85C7__IMAGE_D964BCC5DD694E459C53683C457393A9" src="GUID-FF5EC71C-2A18-4082-A8CD-5884C8BA5538-help-web.png"><br clear="none"> 
+            	 
+         </div> 
+         	 
+         <div class="section"><a name="GUID-13F60CD7-10E9-4277-ACE8-AFB4925A85C7__SECTION_8D1511A7B8C64577A45E5917299862ED" shape="rect">
+               <!-- --></a><h2 class="sectiontitle">Step Two</h2> 
+            		 
+            		
+            <p>Approximate the Laplace equation by the second order central difference scheme. The Laplace equation becomes 
+               		
+            </p> 
+            <div class="fignone">
+               <div class="mathml-block"><span><img src="./rence_method_for_laplace_eq.xml_d15164e299.png"></span></div>
+            </div> 
+            		
+            <p>or 
+               		
+            </p> 
+            <div class="fignone">
+               <div class="mathml-block"><span><img src="./rence_method_for_laplace_eq.xml_d15164e439.png"></span></div>
+            </div> 
+            		
+            <p>where <em>u</em><sub><em>i</em></sub><sub><em>j</em></sub> denotes the value of <em>u</em> on point (<em>x</em><sub><em>i</em></sub>, <em>y</em><sub><em>j</em></sub>). The second formula is also known as the five-point formula because it is a linear combination of the values of <em>u</em> evaluated on five points. 
+               		
+            </p> 
+            	 
+         </div> 
+         	 
+         <div class="section"><a name="GUID-13F60CD7-10E9-4277-ACE8-AFB4925A85C7__SECTION_75E9313D5D504314907EC5D35F7C989F" shape="rect">
+               <!-- --></a><h2 class="sectiontitle">Step Three</h2> 
+            		 
+            		
+            <p>Formulate the Laplace equation by combining all difference equations of <em>u</em><sub><em>i</em></sub><sub><em>j</em></sub>. Because the boundary condition specifies the values of <em>u</em> on the boundary, you can move the values to the right side of the equation, which generates this side of the equation. If
+               the condition is Neumann, approximate the value of <em>u</em> on the boundary with its normal derivative. 
+               		
+            </p> 
+            		
+            <p>When <em>n</em> is 4, you have the following 9-by-9 linear equation: 
+               		
+            </p> 
+            <div class="fignone">
+               <div class="mathml-block"><span><img src="./rence_method_for_laplace_eq.xml_d15164e591.png"></span></div>
+            </div> 
+            		
+            <table>
+               <tr>
+                  <td><img alt="Note" src="note.gif"></td>
+                  <td><a name="GUID-13F60CD7-10E9-4277-ACE8-AFB4925A85C7__GUID-3ECA52B7-F59A-4FC4-AD86-60E95C340A03" shape="rect">
+                        <!-- --></a><span class="notetitle">Note&nbsp;&nbsp;</span> Only the nine internal points are the unknown values. 
+                     		
+                  </td>
+               </tr>
+            </table> 
+            	 
+         </div> 
+         	 
+         <div class="section"><a name="GUID-13F60CD7-10E9-4277-ACE8-AFB4925A85C7__SECTION_5AA1600B99C14EDAB558E2B50C86CEBD" shape="rect">
+               <!-- --></a><h2 class="sectiontitle">Step Four</h2> 
+            		 
+            		
+            <p>Solve the 9-by-9 linear equation to get the approximate solution of the Laplace equation on a mesh grid, shown as follows.
+               
+               		
+            </p> 
+            		<br clear="none"><a name="GUID-13F60CD7-10E9-4277-ACE8-AFB4925A85C7__IMAGE_0FB05E932A6F45B2BDC202C9649DB9E5" shape="rect">
+               <!-- --></a><img id="GUID-13F60CD7-10E9-4277-ACE8-AFB4925A85C7__IMAGE_0FB05E932A6F45B2BDC202C9649DB9E5" src="GUID-F6366329-B847-42DF-83BB-AB6586E0D583-help-web.png"><br clear="none"> 
+            		
+            <p>The coefficient matrix of the linear equation, which you deduce on a uniform mesh grid from the PDE, has a special structure,
+               such as the tri-diagonal or banded tri-diagonal structures. A compact storage scheme always stores the coefficient matrix,
+               meaning you can use fast solvers for the linear equation with the structured coefficient matrix. 
+               		
+            </p> 
+            	 
+         </div> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="lvac_finite_difference_method.html" shape="rect">The Finite Difference Method</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

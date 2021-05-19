@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4200Estructureshlp -->
+
+<title>Performance Considerations for Parallel For Loop Iterations</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Performance Considerations for Parallel For Loop Iterations
+</h1>
+<p class="Body">In some cases, <a href="../lvhowto/Parallel_Iterations.html">enabling parallel iterations</a> on a For Loop may not result in significant performance improvements. Use the following guidelines to optimize the performance benefits of a For Loop running with parallel iterations:</p> 
+<ul>
+<li>Enabling parallel loop iterations adds execution overhead. Do not enable parallel loop iterations on For Loops that are not computationally intensive. You can only improve performance if that overhead is countered by a decrease in execution time.</li>
+<li>If you have a group of nested For Loops, enable parallel iterations on only the outer loop.</li>
+<li><a href="../lvconcepts/Multitasking_in_LabVIEW.html#Synchronous_Blocking_Nodes">Blocking nodes</a>, such as the <a href="../glang/Write_Characters_To_File.html">Write to Text File</a> function and non-reentrant subVI calls, can limit the parallelism between loop iterations. Avoid using blocking nodes in a For Loop running with parallel iterations.</li>
+</ul>
+
+<p class="Body">Refer to the <a href="javascript:WWW(WWW_ParForLoop)">white paper</a> at <span class="Monospace">ni.com</span> to learn more about improving performance with parallel loop iterations.</p>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Scaling Smoothing Windows</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-B7E7E37D-515D-4B31-99FE-9B14F86B8726" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Scaling Smoothing Windows</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 Applying a smoothing window to a time-domain signal multiplies the time-domain signal by the length of the smoothing window
+            and introduces distortion effects due to the smoothing window. The smoothing window changes the overall amplitude of the signal.
+            When applying multiple smoothing windows to the same signal, scaling each smoothing window by dividing the windowed array
+            by the coherent gain of the window results in each window yielding the same spectrum amplitude result within the accuracy
+            constraints of the window. The following figures are the result of applying scaled smoothing windows to the time-domain signal.
+            
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-B7E7E37D-515D-4B31-99FE-9B14F86B8726__IMAGE_9EE7A0AFD1D944A19034B145AFF89DC8" shape="rect">
+            <!-- --></a><img id="GUID-B7E7E37D-515D-4B31-99FE-9B14F86B8726__IMAGE_9EE7A0AFD1D944A19034B145AFF89DC8" src="GUID-AE61E8BB-A5A4-4999-8179-88CC9523162E-help-web.png"><br clear="none"> 
+         	 <br clear="none"><a name="GUID-B7E7E37D-515D-4B31-99FE-9B14F86B8726__IMAGE_C1F1C019066D4762818AB3233DA57119" shape="rect">
+            <!-- --></a><img id="GUID-B7E7E37D-515D-4B31-99FE-9B14F86B8726__IMAGE_C1F1C019066D4762818AB3233DA57119" src="GUID-1FEC79C1-098B-435F-83A8-D80C318E8BCE-help-web.png"><br clear="none"> 
+         	 
+         <p>An FFT is equivalent to a set of parallel filters with each filter having a bandwidth equal to &#916;<em>f</em>. Because of the spreading effect of a smoothing window, the smoothing window increases the effective bandwidth of an FFT
+            bin by an amount known as the equivalent noise-power bandwidth (ENBW) of the smoothing window. The power of a given frequency
+            peak equals the sum of the adjacent frequency bins around the peak increased by a scaling factor equal to the ENBW of the
+            smoothing window. You must take the scaling factor into account when you perform computations based on the power spectrum.
+            
+            	 
+         </p> 
+         	 
+         <p>The following table lists the scaling factor, also known as coherent gain, the ENBW, and the worst-case peak amplitude accuracy
+            caused by off-center components for several popular smoothing windows. 
+            	 
+         </p> 
+         	 <a name="GUID-B7E7E37D-515D-4B31-99FE-9B14F86B8726__TABLE_C96ECC6A130544429059CFE609BD22A6" shape="rect">
+            <!-- --></a><table class="rowsep colsep frametop framebottom frameleft frameright  " id="GUID-B7E7E37D-515D-4B31-99FE-9B14F86B8726__TABLE_C96ECC6A130544429059CFE609BD22A6">
+            <thead align="left">
+               <tr>
+                  <th align="center" valign="bottom"> Window 
+                     				
+                  </th>
+                  <th align="center" valign="bottom"> Scaling Factor (Coherent Gain) 
+                     				
+                  </th>
+                  <th align="center" valign="bottom"> ENBW 
+                     				
+                  </th>
+                  <th align="center" valign="bottom"> Worst-Case Amplitude Error (dB) 
+                     				
+                  </th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td align="left"> Rectangular (none) 
+                     				
+                  </td>
+                  <td align="left">1.00 
+                     				
+                  </td>
+                  <td align="left">1.00 
+                     				
+                  </td>
+                  <td align="left">3.92 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Hanning 
+                     				
+                  </td>
+                  <td align="left">0.50 
+                     				
+                  </td>
+                  <td align="left">1.50 
+                     				
+                  </td>
+                  <td align="left">1.42 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Hamming 
+                     				
+                  </td>
+                  <td align="left">0.54 
+                     				
+                  </td>
+                  <td align="left">1.36 
+                     				
+                  </td>
+                  <td align="left">1.75 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Blackman-Harris 
+                     				
+                  </td>
+                  <td align="left">0.42 
+                     				
+                  </td>
+                  <td align="left">1.71 
+                     				
+                  </td>
+                  <td align="left">1.13 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Exact Blackman 
+                     				
+                  </td>
+                  <td align="left">0.43 
+                     				
+                  </td>
+                  <td align="left">1.69 
+                     				
+                  </td>
+                  <td align="left">1.15 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Blackman 
+                     				
+                  </td>
+                  <td align="left">0.42 
+                     				
+                  </td>
+                  <td align="left">1.73 
+                     				
+                  </td>
+                  <td align="left">1.10 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> Flat Top 
+                     				
+                  </td>
+                  <td align="left">0.22 
+                     				
+                  </td>
+                  <td align="left">3.77 
+                     				
+                  </td>
+                  <td align="left">&lt;0.01 
+                     				
+                  </td>
+               </tr>
+            </tbody>
+         </table> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Smoothing_Windows.html" shape="rect">Smoothing Windows</a></div>
+         </div>
+         <div class="relinfo relconcepts"><strong>Related concepts</strong><br clear="none"><div><a href="FFT_Fundamentals.html" shape="rect">FFT Fundamentals</a></div>
+            <div><a href="Power_Spect.html" shape="rect">Power Spectrum</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

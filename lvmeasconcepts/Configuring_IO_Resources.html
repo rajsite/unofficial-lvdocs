@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 1500Elistboxcihlp -->
+
+<title>Configuring DAQ Devices, Instruments, and Other Devices</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Configuring DAQ Devices, Instruments, and Other Devices
+</h1>
+<p class="Body">You can configure DAQ devices, instruments, and other devices to control the device or instrument using an <a href="../lvhowto/I_O_Controls.html">I/O control</a>. After you configure the device or instrument, configure the I/O control <!-- begin parent: Configuring_IO_Controls--> to pass Traditional NI-DAQ (Legacy) virtual channels, NI-DAQmx resources (such as tasks, channels, and scales), IVI logical names, VISA resource names, FieldPoint I/O points, or Motion resource names to I/O VIs to communicate with an instrument or a measurement device.<!-- end parent: Configuring_IO_Controls-->
+</p>
+<p class="Body">The NI-DAQ driver software provides LabVIEW with a high-level interface to National Instruments DAQ devices. Driver software, such as NI-DMM, NI-SCOPE, NI-FGEN, and NI-SWITCH, provides LabVIEW with high-level interfaces to modular instrumentation. Use driver software such as NI-488.2, NI-VISA, and Interchangeable Virtual Instruments (IVI) to communicate with stand-alone instruments. The LabVIEW VIs call into the driver software, which communicates with the measurement devices. Refer to the <em>DAQ Getting Started Guide</em> for more information about installing NI-DAQmx.</p>
+<h2>Configuring Devices and Instruments Using MAX and the DAQ Assistant (Windows)
+</h2>
+<p class="Body">You can use MAX to configure the following items:
+</p> 
+<ul>
+<li>Traditional NI-DAQ (Legacy) virtual channels</li>
+<li>IVI logical names</li>
+<li>VISA resource names</li>
+<li>FieldPoint I/O points</li>
+<li>Motion resource names</li>
+</ul> 
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;You can access MAX on multiple platforms, but LabVIEW supports the DAQ Assistant on Windows only. You cannot use Traditional NI-DAQ (Legacy) on Windows Vista. Refer to the <em>NI-DAQ Readme</em> for more information about platforms supported by NI-DAQ software.</td>
+</tr>
+</table>
+<p class="Body">To launch MAX, you can select <strong>Tools&#0187;Measurement &amp; Automation Explorer</strong> or double-click the <strong>NI MAX</strong> icon on the desktop. You also can create a new Traditional NI-DAQ (Legacy) virtual channel from the front panel by right-clicking the traditional DAQ channel control and selecting <strong>New Channel</strong> from the shortcut menu.</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;The <strong>Measurement &amp; Automation Explorer</strong> option is available only if you install Measurement &amp; Automation Explorer.</td>
+</tr>
+</table>
+<p class="Body">You can right-click an IVI logical name, FieldPoint IO point, VISA resource name, or Motion resource name control and select <strong>Allow Undefined Names</strong> from the shortcut menu to enter logical names you have not configured in MAX or another configuration utility. You also can use the <a href="../lvprop/IVILogNme_Allow_Und_Nms.html">Allow Undefined Names</a> property to programmatically configure the IVI logical name control to accept undefined IVI logical names.
+</p>
+<p class="Body">You can right-click the VISA resource name or Motion resource name control and select <strong>Allow Multiple Names</strong> from the shortcut menu to configure the controls to allow the user to enter more than one resource name.
+</p>
+<p class="Body">The DAQ Assistant allows you to create and configure the following for NI-DAQmx.
+</p>
+<ul>
+<li>Tasks</li>
+<li>Global channels</li> 
+<li>Scales</li>
+</ul>
+<p class="Body">Refer to the <em>Using NI-DAQmx Name Controls</em> book for more information about configuring tasks, channels, and scales for NI-DAQmx.
+</p>
+
+<h2>Configuring Devices and Instruments Using Other Utilities (Mac OS X and Linux)
+</h2>
+<p class="Body">You can use the configuration utilities for the instrument. Refer to the instrument documentation for information about the configuration utilities. You also can configure I/O controls to pass VISA resource names that have not been configured.</p>
+
+
+
+</body>
+</html>

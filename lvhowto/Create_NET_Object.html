@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Creating .NET Objects on the Block Diagram</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Creating .NET Objects on the Block Diagram</h1>
+
+<p class="Body">You can use LabVIEW to access objects associated with third party .NET servers. You can create either visible or invisible .NET objects on the block diagram and set properties, methods, or handle events for the objects. For example, you can place a .NET container on the block diagram and then place a button within the container that accesses a third party browser. Complete the following steps to create and configure a .NET object on the block diagram.</p>
+
+<h2>Step 1: Configure the Constructor Node</h2>
+<p>Add the Constructor Node to the block diagram to launch the <strong>Select .NET Constructor</strong> dialog box. Then select an assembly, objects, and constructors for a .NET object.</p>
+
+<p>Refer to the following list for important details about configuring each component of the <strong>Select .NET Constructor</strong> dialog box:</p>
+<ul>
+<li><strong>Assembly</strong>&#8212;This component lists all public assemblies in the Global Assembly Cache. To access private assemblies, click the <strong>Browse</strong> button. When you search private assemblies, note that .NET assemblies are .dll file types. After you select a private assembly, the assembly appears in the <strong>Assembly</strong> pull-down menu the next time you launch this dialog box.
+  <table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If you move a VI that uses a private assembly to a different folder or machine, you either must move the associated private .NET assembly files to a subdirectory that LabVIEW can search, or you must save the files in the Global Assembly Cache (GAC). If you build a VI that uses a private assembly into a shared library or stand-alone application, LabVIEW copies the associated private .NET assembly files to the data subdirectory in the same directory as the library or application.</td>
+</tr>
+</table>
+</li>
+<li><strong>Objects</strong>&#8212;The assembly you choose in the previous step determines the available objects classes. After you select a class of objects, the constructors for that class appear in the <strong>Constructors</strong> section of the <strong>Select .NET Constructor</strong> dialog box.</li>
+<li><strong>Constructors</strong>&#8212;After you select a constructor, click the <strong>OK</strong> button. LabVIEW then displays the name of the class you selected on the Constructor Node.</li>
+</ul>
+
+<h2>Step 2: Configure Properties, Methods, or Events for the .NET Object</h2>
+<ol>
+<li>The .NET Constructor Node creates a reference to an instance of a .NET object. Once you have that reference, you can act on the .NET object. To act on the object, wire the <strong>new reference</strong> output of the Constructor Node to a Property Node, Invoke Node, or Register Event Callback and set properties, set methods, or handle events for the object. 
+</li>
+
+<li>Use the Close Reference function to close the reference to the .NET object and relinquish the memory resource LabVIEW allocated to that object.</li>
+</ol>
+
+<h2>Tips and Troubleshooting Information</h2>
+<ul>
+<li>.NET CLR 4.0 installs with LabVIEW. If you want to load .NET 2.0 mixed-mode assemblies, you must use a .NET 2.0 configuration file.</li>
+<li>If you encounter problems loading a particular assembly or accessing objects in an assembly, debug the assembly call or use the .NET Assemblies in Memory dialog box to verify that the correct version of the assembly is in memory.</li>
+</ul>
+
+<h3>Related Information</h3>
+<p><a href="../lvhowto/configuring_clr_version.html">Loading .NET 2.0, 3.0, and 3.5 Assemblies in LabVIEW</a></p>
+<p><a href="../lvconcepts/net_defaults.html">Requirements for Using .NET Assemblies in LabVIEW</a></p>
+<p><a href="../lvconcepts/Using__NET_with_LabVIEW.html">Using .NET with LabVIEW</a></p>
+<p><a href="../lvhowto/Creating_Property_Nodes.html">Creating Properties and Methods</a></p>
+<p><a href="../lvhowto/Reg_Hndl_AX_Evnts.html">Registering Handling .NET and ActiveX Events</a></p>
+
+
+
+
+
+
+</body>
+</html>

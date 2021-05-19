@@ -1,0 +1,404 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD>
+<BODY>
+<OBJECT type="text/site properties">
+	<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Advanced (PID and Fuzzy Logic)">
+		<param name="Local" value="PIDAdvanced.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Advanced Autotuning (PID and Fuzzy Logic)">
+		<param name="Local" value="pid_advanced_autotuning.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Autotuning (PID and Fuzzy Logic)">
+		<param name="Local" value="PID_with_Autotuning.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Autotuning (Temperature) (PID and Fuzzy Logic)">
+		<param name="Local" value="pid_autotuning_temperature.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Autotuning Design (PID and Fuzzy Logic)">
+		<param name="Local" value="pid_autotuning_design.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Control & Simulation VIs and functions">
+		<param name="Local" value="Control_Sim_Pal.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Control Input Filter (PID and Fuzzy Logic)">
+		<param name="Local" value="PIDConInputFilter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Create Antecedent (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Create_Antecedent.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Create Consequent (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Create_Consequent.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Create Membership Function (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Create_Membership_Function.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Create Rule (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Create_Rule.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Create Variable (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Create_Variable.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Edit Description dialog box (PID and Fuzzy Logic)">
+		<param name="Local" value="Edit_Description_DB.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Edit Variable dialog box (PID and Fuzzy Logic)">
+		<param name="Local" value="Fuzzy_Edit_Variable_DB.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="EGU to Percentage (PID and Fuzzy Logic)">
+		<param name="Local" value="PIDEGUtoPercent.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="error codes">
+		<param name="See Also" value="error codes">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Fuzzy Logic VIs (PID and Fuzzy Logic)">
+			<param name="Local" value="PIDFuzzy_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="PID advanced control">
+			<param name="Local" value="PID_Advanced_errors.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FL Create Antecedent (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Create_Antecedent.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FL Create Consequent (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Create_Consequent.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FL Create Membership Function (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Create_Membership_Function.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FL Create Rule (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Create_Rule.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FL Create Variable (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Create_Variable.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FL Fuzzy Controller (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Fuzzy_Controller.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FL Get Membership Function (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Get_Membership_Function.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FL Get Membership Function Names (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Get_Membership_Function_Names.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FL Get Number of Membership Functions (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Get_Number_of_Membership_Functions.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FL Get Number of Rules (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Get_Number_of_Rules.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FL Get Number of Variables (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Get_Number_of_Variables.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FL Get Rule (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Get_Rule.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FL Get Rules as Text (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Get_Rules_as_Text.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FL Get Variable (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Get_Variable.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FL Get Variable Names (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Get_Variable_Names.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FL Integrate Rule (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Integrate_Rule.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FL Load Fuzzy System (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Load_Fuzzy_System.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FL New Fuzzy System (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_New_Fuzzy_System.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FL Plot Variable (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Plot_Variable.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FL Save Fuzzy System (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Save_Fuzzy_System.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FL Set Membership Function (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Set_Membership_Function.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FL Set Rule (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Set_Rule.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="FL Set Variable (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Set_Variable.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Fuzzy Controller (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Fuzzy_Controller.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Fuzzy Logic VIs">
+		<param name="Local" value="FuzzyLogicTitle.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Fuzzy Logic VIs (PID and Fuzzy Logic)">
+		<param name="See Also" value="Fuzzy Logic VIs (PID and Fuzzy Logic)">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error codes">
+			<param name="Local" value="PIDFuzzy_Error_Codes.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="fuzzy system parameters (PID and Fuzzy Logic)">
+			<param name="Local" value="fuzzy_system_parameters.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Fuzzy System Designer (PID and Fuzzy Logic)">
+		<param name="Local" value="Fuzzy_System_Designer_DB.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="menus (PID and Fuzzy Logic)">
+			<param name="Local" value="Fuzzy_System_Designer_menus.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="fuzzy systems (PID and Fuzzy Logic)">
+		<param name="See Also" value="fuzzy systems (PID and Fuzzy Logic)">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="parameters (PID and Fuzzy Logic)">
+			<param name="Local" value="fuzzy_system_parameters.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Gain Schedule (PID and Fuzzy Logic)">
+		<param name="Local" value="PIDGainSchedule.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Get Membership Function (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Get_Membership_Function.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Get Membership Function Names (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Get_Membership_Function_Names.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Get Number of Membership Functions (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Get_Number_of_Membership_Functions.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Get Number of Rules (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Get_Number_of_Rules.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Get Number of Variables (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Get_Number_of_Variables.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Get Rule (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Get_Rule.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Get Rules as Text (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Get_Rules_as_Text.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Get Variable (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Get_Variable.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Get Variable Names (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Get_Variable_Names.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Lead-Lag (PID and Fuzzy Logic)">
+		<param name="Local" value="PIDLead_Lag.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Load Fuzzy System (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Load_Fuzzy_System.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Membership VIs">
+		<param name="Local" value="Membership_VIs.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="New Fuzzy System (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_New_Fuzzy_System.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Online Autotuning (PID and Fuzzy Logic)">
+		<param name="Local" value="pid_online_autotuning.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Output Rate Limiter (PID and Fuzzy Logic)">
+		<param name="Local" value="PIDOutRateLimit.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Percentage to EGU (PID and Fuzzy Logic)">
+		<param name="Local" value="PIDPercenttoEGU.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID (PID and Fuzzy Logic)">
+		<param name="Local" value="PID_VI.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID Advanced (PID and Fuzzy Logic)">
+		<param name="Local" value="PIDAdvanced.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID Advanced Autotuning (PID and Fuzzy Logic)">
+		<param name="Local" value="pid_advanced_autotuning.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID and Fuzzy Logic">
+		<param name="See Also" value="PID and Fuzzy Logic Toolkit">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="PID advanced control error codes">
+			<param name="Local" value="PID_Advanced_errors.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="fuzzy logic error codes">
+			<param name="Local" value="PIDFuzzy_Error_Codes.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID Autotuning (PID and Fuzzy Logic)">
+		<param name="Local" value="PID_with_Autotuning.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID Autotuning (Temperature) (PID and Fuzzy Logic)">
+		<param name="Local" value="pid_autotuning_temperature.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID Autotuning Design (PID and Fuzzy Logic)">
+		<param name="Local" value="pid_autotuning_design.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID Control Input Filter (PID and Fuzzy Logic)">
+		<param name="Local" value="PIDConInputFilter.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID EGU to Percentage (PID and Fuzzy Logic)">
+		<param name="Local" value="PIDEGUtoPercent.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID Gain Schedule (PID and Fuzzy Logic)">
+		<param name="Local" value="PIDGainSchedule.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID Lead-Lag (PID and Fuzzy Logic)">
+		<param name="Local" value="PIDLead_Lag.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID Online Autotuning (PID and Fuzzy Logic)">
+		<param name="Local" value="pid_online_autotuning.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID Output Rate Limiter (PID and Fuzzy Logic)">
+		<param name="Local" value="PIDOutRateLimit.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID Percentage to EGU (PID and Fuzzy Logic)">
+		<param name="Local" value="PIDPercenttoEGU.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID Setpoint Profile (PID and Fuzzy Logic)">
+		<param name="Local" value="PID_Setpoint_Profile.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID Structure Conversion (PID and Fuzzy Logic)">
+		<param name="Local" value="pid_structure_conversion.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PID VIs">
+		<param name="Local" value="PIDTitle.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Plot Variable (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Plot_Variable.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Pre-Generate Rules dialog box (PID and Fuzzy Logic)">
+		<param name="Local" value="PreGenerate_Rules_DB.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Rules VIs">
+		<param name="Local" value="Rules_VIs.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Save Fuzzy System (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Save_Fuzzy_System.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Set Membership Function (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Set_Membership_Function.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Set Rule (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Set_Rule.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Set Variable (PID and Fuzzy Logic)">
+		<param name="Local" value="FL_Set_Variable.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Setpoint Profile (PID and Fuzzy Logic)">
+		<param name="Local" value="PID_Setpoint_Profile.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Structure Conversion (PID and Fuzzy Logic)">
+		<param name="Local" value="pid_structure_conversion.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Variables VIs">
+		<param name="Local" value="Variables_VIs.html">
+		</OBJECT>
+
+</UL>
+</BODY>
+</HTML>

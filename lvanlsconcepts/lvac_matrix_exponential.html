@@ -1,0 +1,115 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Matrix Exponential</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-8EA06051-E3F3-475F-9EF2-203E1C184C34" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Matrix Exponential</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 The following equation defines the exponential of a matrix: 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./emp2Flvac_matrix_exponential.xml_d18854e20.png"></span></div>
+         </div> 
+         	 
+         <p>where <em>I</em> is the identity matrix. 
+            	 
+         </p> 
+         	 
+         <p>To obtain the exponential of a diagonal matrix, you can calculate the exponential of each diagonal element of the matrix.
+            For example, if 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./emp2Flvac_matrix_exponential.xml_d18854e119.png"></span></div>
+         </div> 
+         	 
+         <p>then 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./emp2Flvac_matrix_exponential.xml_d18854e209.png"></span></div>
+         </div> 
+         	 
+         <p>Thus, a common method of calculating the exponential of a matrix is first to diagonalize the matrix and then to calculate
+            the exponential of each diagonal element of the new matrix. For example, consider the following: 
+            	 
+         </p> 
+         	 <a name="GUID-8EA06051-E3F3-475F-9EF2-203E1C184C34__UL_77B603094A3F44949FF7EE57B109B60B" shape="rect">
+            <!-- --></a><ul id="GUID-8EA06051-E3F3-475F-9EF2-203E1C184C34__UL_77B603094A3F44949FF7EE57B109B60B">
+            <li><a name="GUID-8EA06051-E3F3-475F-9EF2-203E1C184C34__LI_D1C680EFD46A46BFA4BDD6F9459FADD1" shape="rect">
+                  <!-- --></a>&#955; is a diagonal matrix whose diagonal elements are the eigenvalues of matrix <em>A</em> 
+               		
+            </li>
+            <li><a name="GUID-8EA06051-E3F3-475F-9EF2-203E1C184C34__LI_01639D820E7D45F2BC93719440256D05" shape="rect">
+                  <!-- --></a> &#955; equals <em>V</em><sup>-1</sup><em>A</em><em>V</em>, where <em>V</em> is the matrix composed of the eigenvectors of matrix <em>A</em> 
+               		
+            </li>
+         </ul> 
+         	 
+         <p>If the previous two requirements are true, you can use the following equation to calculate the exponential of <em>A</em>: 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./emp2Flvac_matrix_exponential.xml_d18854e351.png"></span></div>
+         </div> 
+         	 
+         <p>If you cannot diagonalize a matrix, you can use the Pade approximation method to obtain the exponential of the matrix. Because
+            the derivatives of <em>e</em><sup><em>x</em></sup> are all ones at the zero point, you easily can calculate the derivatives you need for the Pade approximation method. 
+            	 
+         </p> 
+         	 
+         <p>The exponential of a matrix satisfies the following properties: 
+            	 
+         </p> 
+         	 <a name="GUID-8EA06051-E3F3-475F-9EF2-203E1C184C34__UL_9EB592AC0270434CBC95AC1D496D43DE" shape="rect">
+            <!-- --></a><ul id="GUID-8EA06051-E3F3-475F-9EF2-203E1C184C34__UL_9EB592AC0270434CBC95AC1D496D43DE">
+            <li><a name="GUID-8EA06051-E3F3-475F-9EF2-203E1C184C34__LI_9F91A9CA93EB42659E9D75EADCAACA92" shape="rect">
+                  <!-- --></a> <em>e</em><sup>0</sup> = <em>I</em>, where 0 is a zero matrix whose elements are zeros 
+               		
+            </li>
+            <li><a name="GUID-8EA06051-E3F3-475F-9EF2-203E1C184C34__LI_69B812F765A24B7786B86A2A8419B8E9" shape="rect">
+                  <!-- --></a> <em>e</em><sup><em>X</em></sup><em>e</em><sup>-X</sup> = <em>I</em> 
+               		
+            </li>
+            <li><a name="GUID-8EA06051-E3F3-475F-9EF2-203E1C184C34__LI_31D2AA3256ED43299F332F6CB3FECEBE" shape="rect">
+                  <!-- --></a>If <em>X</em><em>Y</em> = <em>Y</em><em>X</em>, then <em>e</em><sup><em>X</em> + <em>Y</em></sup> = <em>e</em><sup><em>X</em></sup> <em>e</em><sup><em>Y</em></sup> 
+               		
+            </li>
+            <li><a name="GUID-8EA06051-E3F3-475F-9EF2-203E1C184C34__LI_A69B53172CD04ACB9113F6CCF2F24537" shape="rect">
+                  <!-- --></a>For any matrix <em>X</em>, <em>e</em><sup><em>X</em></sup> is invertible and (<em>e</em><sup><em>X</em></sup>)<sup>-1</sup> = <em>e</em><sup>-X</sup> 
+               		
+            </li>
+            <li><a name="GUID-8EA06051-E3F3-475F-9EF2-203E1C184C34__LI_DAA540F8FFEA401AB699F4AD9EE67786" shape="rect">
+                  <!-- --></a>If <em>Y</em> is invertible, then exp(<em>Y</em><em>X</em><em>Y</em><sup>-1</sup>) = <em>Y</em>exp(<em>X</em>)<em>Y</em><sup>-1</sup> 
+               		
+            </li>
+            <li><a name="GUID-8EA06051-E3F3-475F-9EF2-203E1C184C34__LI_43B3677FFCF8484F9BFA2E1F364E6AF3" shape="rect">
+                  <!-- --></a>exp(<em>X</em>*) = (exp(<em>X</em>))*, where <em>X</em>* is the transpose of the real matrix <em>X</em>, or the conjugate transpose of the complex matrix <em>X</em>. 
+               		
+            </li>
+         </ul> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Matrix_Ops_Eigen_Problems.html" shape="rect">Basic Matrix Operations</a></div>
+         </div>
+         <div class="relinfo"><strong>Related information</strong><br clear="none"><div><a href="../gmath/Pade_Approximation.html" shape="rect">Pade Approximation VI</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>SecsToDate (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>SecsToDate (LabVIEW Manager Function)</h1>
+<p class="Code">void SecsToDate(secs, dateRecordP);</p>
+<h2>Purpose</h2>
+<p class="Body">Converts the seconds since 12:00 a.m., Friday, January 1, 1904, Universal Time [01-01-1904 00:00:00] into a data structure containing numerical information about the date, including the year (<span class="Monospace">1600</span> through <span class="Monospace">3000</span>), the month (<span class="Monospace">1</span>&nbsp;through <span class="Monospace">12</span>), the day of the year (<span class="Monospace">1</span> through <span class="Monospace">366</span>), the day of the month (<span class="Monospace">1</span>&nbsp;through <span class="Monospace">31</span>), the day of the week (<span class="Monospace">1</span> through <span class="Monospace">7</span>), the hour (<span class="Monospace">0</span> through <span class="Monospace">23</span>), the minute (<span class="Monospace">0</span> through <span class="Monospace">59</span>), and the second (<span class="Monospace">0</span> through <span class="Monospace">59</span>), and a value indicating whether the time specified uses daylight savings time.</p>
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>secs</strong></td>
+<td class="Bordered"><span class="Monospace">uInt32</span></td>
+ <td class="Bordered">Seconds since 12:00 a.m., Friday, January 1, 1904, Universal Time [01-01-1904 00:00:00].</td></tr>
+ <tr>
+ <td class="Bordered"><strong>dateRecordP</strong></td>
+ <td class="Bordered"><span class="Monospace">DateRec&nbsp;*</span></td>
+ <td class="Bordered">Pointer to a <span class="Monospace">DateRec</span> structure. <span class="Monospace">SecsToDate</span> stores the converted date in the&nbsp;fields of the date structure referred to by <strong>dateRecordP</strong>. This parameter is a <a href="../lvexcodeconcepts/LabVIEW_Manager_Routines.html#Pointers_as_Parameters">pointer</a>.</td></tr>
+</table>
+
+</body>
+</HTML>

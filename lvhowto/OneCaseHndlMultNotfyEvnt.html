@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4201Eeventshlp -->
+
+<title>One Case Handling Multiple Notify Events</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<H1>One Case Handling Multiple Notify Events</H1> 
+
+<p class="Body">A single case in an <a href="../glang/Event_Structure.html">Event</a> structure can handle multiple notify events. However, if the events are not the same type, only the event data fields common to all events that the case handles appear on the left side of the case. If you handle multiple <a href="../lvprop/Ctrl_Value_Changed.html">Value Change</a> events for controls with different data types in the same case, the <strong>OldVal</strong> and <strong>NewVal</strong> event data fields return variant data.</p>
+
+<p>If a single case in an Event structure handles multiple notify events for objects of different <a href="../lvprop/event_source.html">VI Server classes</a>, the reference type is the common parent class of all objects. For example, if you configure a single case in the Event structure to handle events for a numeric control and a color ramp control, the type of the control reference of the event source is Numeric because the numeric and color ramp controls are in the Numeric class. You also cannot configure a single event case to handle an event on a dynamically registered DAQmx task and an event from some other event source, such as a LabVIEW control.</p>
+
+
+</body>
+</html>

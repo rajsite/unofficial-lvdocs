@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 5800Evidocprinthlp -->
+
+<title>Configuring VI Calls</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Configuring VI Calls</h1>
+
+<p class="Body">You can use the <a href="../lvdialog/Call_Configuration.html">VI Call Configuration</a> dialog box to configure when to load a subVI.</p>
+
+<p class="Body">Complete the following steps to configure a VI call.</p>
+<ol>
+<li>Place a VI on the block diagram.</li>
+<li>Right-click the VI and select <strong>Call Setup</strong> from the shortcut menu to display the <strong>VI Call Configuration</strong> dialog box.</li></ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;<!-- Start child: ../lvdialog/Call_Configuration.html-->This item is available only for VIs open in an <a href="../lvconcepts/Application_Instances.html">application instance</a> that supports VI Server calls&#8212;not for functions, Express VIs, polymorphic VIs, or VIs open in an application instance that does not support VI Server calls, such as FPGA targets.<!--End child: ../lvdialog/Call_Configuration.html--></td></tr></table>
+<ol start="3">
+<li>Select one of the following options to configure when the subVI loads:
+<ul>
+<li><strong>Load with callers</strong>&#8212;Loads the subVI at the same time the caller VI loads. This behavior is identical to how a subVI loads.</li>
+<li><strong>Reload for each call</strong>&#8212;Loads the subVI when the caller VI makes the call to the subVI if the subVI is not already in memory. <!-- Start child: ../lvdialog/Call_Configuration.html-->This option does not guarantee that the subVI stays in memory after the call.<!--End child: ../lvdialog/Call_Configuration.html--></li>
+<li><strong>Load and retain on first call</strong>&#8212;Loads the subVI only the first time the caller VI makes the call to the subVI. <!-- Start child: ../lvdialog/Call_Configuration.html-->If you have a large caller VI, you can save load time and memory by selecting the <strong>Load and retain on first call</strong> option in the dialog box. When you select this option, the subVI does not load until the caller VI needs it.<!--End child: ../lvdialog/Call_Configuration.html-->
+<br><br>
+If you select the <strong>Reload for each call</strong> option or the <strong>Load and retain on first call</strong> option, LabVIEW continues to load the subVI if the block diagram of the caller VI is in memory. If you open the caller VI in edit mode, LabVIEW loads the block diagram of the caller VI and therefore loads the subVI as well. To avoid loading the subVI, do not open the block diagram of the caller VI.  Call the caller VI as a subVI, and close the front panel and block diagram window of the caller VI.</li></ul></li>
+</ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;Selecting <strong>Reload for each call</strong> or <strong>Load and retain on first call</strong> replaces the subVI with a <a href="../glang/Call_By_Reference_Node.html">Call by Reference</a> node that is configured to call the subVI. Symbols on the <strong>Call by Reference</strong> node correspond to the mode that you select. If you choose either of these options you will no longer be able to find the subVI. These options remove the static link to the subVI.</td></tr></table>
+
+<ol start="4">
+<li>Click the <strong>OK</strong> button to save the calling configuration.</li>
+</ol>
+
+
+
+</body>
+</html>

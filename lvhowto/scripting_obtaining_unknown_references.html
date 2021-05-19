@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<link rel="STYLESHEET" type="text/css" href="expandable_tree.css"><script src="common.js" type="text/javascript"></script><script src="dynamicjumps.js" type="text/javascript"></script><script src="expandable_tree.js" type="text/javascript"></script><title>Obtaining References to Objects in an Unknown Target VI Using VI Scripting</title>
+</head>
+<body>
+<h1>Obtaining References to Objects in an Unknown Target VI Using VI Scripting</h1>
+<p><strong>Requires:</strong> <a href="enabling_vi_scripting.html">VI Scripting</a></p>
+<p>You can use VI Scripting to inspect or modify target VIs whose contents are not known until run time. As in any VI Scripting application, you must obtain references to the objects that you want to manipulate in the target VI. However, because you do not know the contents of the target VI until run time, you cannot use the <a href="../glang/Open_VI_Object_Reference.html">Open VI Object Reference</a> function to locate the objects by their label. Instead, you can use the <a href="../glang/TRef_Traverse_for_References.html">Traverse for GObjects</a> VI to identify groups of objects that are members of the same class. Then, you can iterate through the returned array of objects to determine which objects you want to manipulate.</p>
+
+<p class="Body"></p>
+
+<a name="whatYouNeed"></a><h2>What to Use</h2>
+<p>This VI Scripting task requires the following objects:</p>
+<table class="Usage">
+	<col class="Object"/>
+	<col class="Spacer"/>
+	<col class="Object"/>
+	<col class="Spacer"/>
+	<col class="Object"/>
+	<tr><td><a href="../glang/TRef_Traverse_for_References.html">Traverse for GObjects</a></td>
+		<td></td>
+		<td><a href="../glang/To_More_Specific_Class.html#Output0">To More Specific Class</a></td>
+		<td></td>
+		<td><a href="../glang/Close_LV_Object_Reference.html">Close Reference</a></td>
+	</tr>
+	<tr><td><img src="noloc_bd_TraverseForGObjects.gif"></td>
+		<td></td>
+		<td><img src="noloc_bd_ToMoreSpecificClass.gif"></td>
+		<td></td>
+		<td><img src="noloc_bd_CloseReference.gif"></td>
+	</tr>
+	<tr>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object5261);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN></td><td> 
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object5261);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object747);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN></td><td> 
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object747);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object709);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN></td><td> 
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object709);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+	</tr>
+</table>
+
+		
+<a name="how"></a><h2>What to Do</h2>
+<p><strong>Before you start:</strong> Open the Obtaining Unknown Object References VI in the <span class="Monospace">labview\examples\Application Control\VI Scripting\Finding and Modifying Objects</span> directory for an example that illustrates each step of the following procedure.</p>
+<a href="javascript:openVI('examples%5C%5CApplication%20Control%5C%5CVI%20Scripting%5C%5CFinding%20and%20Modifying%20Objects%5C%5CObtaining%20Unknown%20Object%20References.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open Example
+<p>Expand the procedure for more information about this specific example.</p>
+
+
+<input type="button" onclick="openAll()" value="Expand All"><input type="button" onclick="closeAll()" value="Collapse All">
+
+
+<ol>
+	<li><a href="../lvhowto/scripting_obtaining_vi_reference.html">Obtain a reference to the target VI</a> that contains the objects you want to inspect or edit.
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the <a href="../glang/Open_VI_Reference.html">Open VI Reference</a> function provides a reference to the VI specified by the <strong>Path to target VI</strong> control. This implementation enables the user to apply the scripting VI to any target VI just by specifying a different VI path. Furthermore, the scripting VI can be converted to a subVI if the user wants to programmatically apply it to a set of VIs.</p></div>
+</li>
+	<li>Determine the class and location of the objects whose references you want to obtain.
+		<ol>
+			<li>Containing VI&#8212;Wire this reference to the <strong>VI Refnum</strong> input of the Traverse for GObjects VI.
+			</li>
+			<li>Location within VI&#8212;Within the target VI, objects can be located on a front panel, on a block diagram, in a cluster, or on the diagram of a structure such as a For Loop or Case structure. You must specify which of these locations you want the Traverse for GObjects VI to search by creating a constant from the <strong>Traverse Target</strong> input.
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the scripting VI needs to manipulate control terminals, which are block diagram objects. Therefore, the scripting VI specifies <span class="Monospace">BD</span> as the container for the scripting VI to search.</p>
+				<table class="Borderless">
+					<tr>
+						<td class="Icon"><img src="note.gif" alt="Note"></td>
+						<td><strong>Note</strong>&nbsp;&nbsp;If the objects of interest are in a cluster or a diagram of a structure, select <span class="Monospace">Other</span> from the enumerated list of possibilities for the <strong>Traverse Target</strong> input. In both cases, wire the reference for the container cluster or diagram to the <strong>Other Refnum</strong> input of the Traverse for GObjects VI.
+						</td>
+					</tr>
+				</table></div>
+			</li>
+			<li>Class name of the object&#8212;Refer to the <a href="../lvconcepts/anatomy.html">anatomies of common VI objects</a> to determine the class name of the objects you want to manipulate.
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, because the scripting VI is obtaining references to control terminals, the scripting VI uses the class name of control terminals, ControlTerminal.</p></div>
+			</li>
+		</ol>
+	</li>
+	<li>Use the <a href="../glang/TRef_Traverse_for_References.html">Traverse for GObjects</a> VI to obtain references to the desired objects by wiring the information from step 2 to the Traverse for GObjects VI.</li>
+
+	<li>Iterate through the returned array of references to manipulate individual objects.
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the scripting VI uses a <a href="../glang/For_Loop.html">For Loop</a> to gain access to each element in the <strong>References</strong> array.</p></div>
+	</li>		
+	<li>Use the <a href="../glang/To_More_Specific_Class.html">To More Specific Class</a> function to cast each returned reference to a more specific class. The Traverse for GObjects VI returns an array of GObject references rather than references that are members of the class specified by the <strong>Class Name</strong> input. However, you can safely use the <a href="../glang/To_More_Specific_Class.html">To More Specific Class</a> function to cast the returned references to the class specified by <strong>Class Name</strong>. When you cast a reference to a more specific class, you can call more specific properties or methods on the reference.
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the scripting VI casts each returned reference to a ControlTerminal. This cast is necessary because the goal of making the control terminal labels visible can be accomplished only by setting the <a href="../lvprop/Deco_Vis.html">ControlTerminal:Label.Visible</a> property to <span class="Monospace">TRUE</span>, and the Label.Visible property is not available for GObjects. This cast does not produce an error because the Traverse for GObjects VI had  searched specifically for ControlTerminal objects.</p></div>
+	</li>
+
+	<li>Wire the reference to a <a href="../glang/Property_Node.html">Property Node</a> or <a href="../glang/Invoke_Node.html">Invoke Node</a> to get or set information about the referenced object.
+<p class="expanded"><span class="expandable-underline">Example Details</span></p>		<div class="expandable-section-open"><p>In the example, the scripting VI uses a Property Node to set the Label.Visible property of each ControlTerminal reference to <span class="Monospace">TRUE</span>, thereby making the label of the corresponding control terminal visible.</p></div>
+	</li>
+	
+
+	
+	<li>Use the <a href="../glang/Close_LV_Object_Reference.html">Close Reference</a> function to close each open object reference when you are finished using it.
+
+	</li>
+</ol>
+
+<a name="bestpractices"></a><h2>Caveats and Recommendations</h2>
+<ul>
+	<li><strong>Check the class of each reference when necessary</strong>&#8212;If you wire the name of a parent class to the Traverse for GObjects VI, you obtain an array of references that share a parent class but may not be members of the same child class. For example, if you use the Traverse for GObjects VI to search for all objects that are members of the Loop class, the VI returns references to both ForLoops and WhileLoops. You can use one of the following two approaches to check the class of a reference:
+		<ul>
+			<li>Use the <a href="../glang/To_More_Specific_Class.html">To More Specific Class</a> function to try to cast the reference to a specific class. If the function does not return an error, the reference matches the specific class.</li>
+			<li>Compare the <a href="../lvprop/Gen_Class_Name.html">Class Name</a> property of an individual returned reference with the class name that you want to match.</li>
+		</ul>
+	</li>
+	<li><strong>Close all references that you open</strong>&#8212;An excessive number of open references negatively impacts the performance of a VI.  Read about <a href="../lvhowto/scripting_closing_references.html">closing VI and object references</a> for more performance details.
+	</li>
+</ul>
+
+<a name="examples"></a><h2>Additional Examples</h2>
+<p class="Body">Refer to the Using Traverse VI in the <span class="Monospace">labview\examples\Application Control\VI Scripting\Finding and Modifying Objects</span> directory for an example of using the Traverse for GObjects VI.</p>
+<p class="Body"><a href="javascript:openVI('examples%5C%5CApplication%20Control%5C%5CVI%20Scripting%5C%5CFinding%20and%20Modifying%20Objects%5C%5CUsing%20Traverse.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(1443);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples&nbsp;</p>
+
+</body>
+</html>
+
+

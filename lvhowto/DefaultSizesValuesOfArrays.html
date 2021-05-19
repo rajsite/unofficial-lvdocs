@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4500Earrayclustershlp -->
+
+<title>Default Sizes and Values of Arrays</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Default Sizes and Values of Arrays
+</h1>
+<p class="Body">You cannot limit the size of an array to a fixed number of elements. However, when you <a href="Setting_Array_Default_Valu.html">set the default values of an array</a> control, you can set the default size. You set the default values and array size when you create the array control.
+</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td><td><strong>Note</strong>&nbsp;&nbsp; Do not make the default size of the array larger than necessary. If you set a large default size for an array, the default data for each element of the array saves with the VI and increases the size of the VI on disk.</td></tr></table>
+
+<h2>Configuring an Array Control for Use in a VI</h2>
+<p class="Body">An array shell without a data object is undefined and has no data type. The VI will remain broken until you assign a data type by placing a control or indicator in the array shell. 
+</p>
+<p class="Body">When you place a control or indicator in the array shell, the empty array assumes the data type of the control or indicator. After you assign a data type to an array, you can use it in a VI regardless of whether the array is empty. The length of the empty array is 0, and the array elements are dimmed. You might place an empty array in a top-level VI that calls a subVI to populate the array. </p>
+<p class="Body">For example, the following image displays an empty array shell about to receive a numeric data type.</p><img src="loc_fp_config_array.gif">
+
+<h2>Default Value Types of an Array</h2>
+<p class="Body">A front panel array control has the following two default values:
+</p>
+<ul>
+<li><strong>Default value for defined elements&#8211;</strong>This value is the value of the array when the VI is loaded and is similar to the default value of any other front panel control. The values of the elements in the array compose the default value. The default array value also provides subVIs with a value when the calling VI does not specify a value for the array.</li>
+<li><strong>Default value for undefined elements&#8211;</strong>This value is used to pad the array when the array expands. For example, if you set the array index beyond the defined portion of the array and enter a value for an undefined element, the elements between the defined portion of the array and the new elements you define are set to the default value for undefined elements.</li>
+</ul>
+
+
+
+
+</body>
+</html>

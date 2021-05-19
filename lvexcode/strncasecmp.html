@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>StrNCaseCmp (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>StrNCaseCmp (LabVIEW Manager Function)</h1>
+<p class="Code">int32 StrNCaseCmp(s1, s2, n);</p>
+<h2>Purpose</h2>
+<p class="Body">Lexically compares two strings to determine whether one is less than, equal to, or greater than the other, limiting the comparison to <strong>n</strong> characters. This comparison ignores differences in case.</p>
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>s1</strong></td>
+<td class="Bordered"><span class="Monospace">CStr</span></td>
+ <td class="Bordered">Pointer to a C string.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>s2</strong></td>
+<td class="Bordered"><span class="Monospace">CStr</span></td>
+ <td class="Bordered">Pointer to a C string.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>n</strong></td>
+<td class="Bordered"><span class="Monospace">size_t</span></td>
+ <td class="Bordered">Maximum number of characters you want to compare.</td></tr>
+</table>
+<h2>Return Value</h2>
+<p class="Body"><span class="Monospace">&lt;0</span>, <span class="Monospace">0</span>, or <span class="Monospace">&gt;0</span> if <strong>s1</strong> is less than, equal to, or greater than <strong>s2</strong>, respectively. Returns <span class="Monospace">&lt;0</span> if <strong>s1</strong> is an initial substring of <strong>s2</strong>.</p>
+
+</body>
+</HTML>

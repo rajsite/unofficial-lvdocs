@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>NIGetOneErrorCode (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>NIGetOneErrorCode (LabVIEW Manager Function)</h1>
+<p class="Code">LVBoolean NIGetOneErrorCode(errCode, *errText);</p>
+<h2>Purpose</h2>
+<p class="Body">Converts a numeric error code to the associated <a href="../lvhowto/Find_Error_Descriptions.html">text description</a>.  This function recognizes error codes from any installed National Instruments product.</p>
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>errCode</strong></td>
+<td class="Bordered"><span class="Monospace">int32</span></td>
+ <td class="Bordered">Numeric error code.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>*errText</strong></td>
+ <td class="Bordered"><span class="Monospace">LStrHandle&nbsp;*</span></td>
+ <td class="Bordered">Address at which <span class="Monospace">NIGetOneErrorCode</span> stores the error code description.  This parameter is a <a href="../lvexcodeconcepts/LabVIEW_Manager_Routines.html#Pointers_as_Parameters">pointer</a>.</td></tr>
+</table>
+<h2>Return Value</h2>
+<p class="Body"><span class="Monospace">LVBoolean</span>, which can contain the following values.</p>
+<table class="Bordered">
+<tr><th class="Bordered Left-Align">Value</th>
+<th class="Bordered Left-Align">Description</th></tr>
+<tr><td class="Bordered"><span class="Monospace">0</span></td><td class="Bordered">This function did not find the value of <strong>errCode</strong> in any of the error text files.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">1</span></td><td class="Bordered">This function found the value of <strong>errCode</strong> in one of the error text files.</td></tr>
+</table>
+
+</body>
+</HTML>

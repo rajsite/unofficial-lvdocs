@@ -1,0 +1,107 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Designing FIR Filters by Windowing</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-8050E3C0-E4B3-4FC6-9946-B27EC047165E" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Designing FIR Filters by Windowing</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 Windowing is the simplest technique for designing FIR filters because of its conceptual simplicity and ease of implementation.
+            Designing FIR filters by windowing takes the inverse FFT of the desired magnitude response and applies a smoothing window
+            to the result. The smoothing window is a time domain window. 
+            	 
+         </p> 
+         	 
+         <p>To design an FIR filter by windowing, you first decide on an ideal frequency response and calculate the impulse response of
+            the ideal frequency response. You then truncate the impulse response to produce a finite number of coefficients. To meet the
+            linear-phase constraint, maintain symmetry about the center point of the coefficients. Finally, you apply a symmetric smoothing
+            window. 
+            	 
+         </p> 
+         	 
+         <p>Truncating the ideal impulse response results in the Gibbs phenomenon. The Gibbs phenomenon appears as oscillatory behavior
+            near cut-off frequencies in the FIR filter frequency response. You can reduce the effects of the Gibbs phenomenon by using
+            a smoothing window to smooth the truncation of the ideal impulse response. By tapering the FIR coefficients at each end, you
+            can decrease the height of the side lobes in the frequency response. However, decreasing the side lobe heights causes the
+            main lobe to widen, resulting in a wider transition band at the cut-off frequencies. 
+            	 
+         </p> 
+         	 
+         <p> Selecting a smoothing window requires a trade-off between the height of the side lobes near the cut-off frequencies and the
+            width of the transition band. Decreasing the height of the side lobes near the cut-off frequencies increases the width of
+            the transition band. Decreasing the width of the transition band increases the height of the side lobes near the cut-off frequencies.
+            
+            	 
+         </p> 
+         	 
+         <p>Designing FIR filters by windowing has the following disadvantages: 
+            	 
+         </p> 
+         	 <a name="GUID-8050E3C0-E4B3-4FC6-9946-B27EC047165E__UL_D8DE12E9C3D84D0496F259348B277995" shape="rect">
+            <!-- --></a><ul id="GUID-8050E3C0-E4B3-4FC6-9946-B27EC047165E__UL_D8DE12E9C3D84D0496F259348B277995">
+            <li><a name="GUID-8050E3C0-E4B3-4FC6-9946-B27EC047165E__LI_53172646BF8D48DF8CFA0D54115A1811" shape="rect">
+                  <!-- --></a>Inefficiency 
+               		
+            </li>
+            <li><a name="GUID-8050E3C0-E4B3-4FC6-9946-B27EC047165E__LI_4E546F2B920B483CAC53AD2A59DDCF12" shape="rect">
+                  <!-- --></a>Windowing results in unequal distribution of ripple 
+               		
+            </li>
+            <li><a name="GUID-8050E3C0-E4B3-4FC6-9946-B27EC047165E__LI_107601B124D444CC8914BC79FA4A77A8" shape="rect">
+                  <!-- --></a>Windowing results in a wider transition band than other design techniques 
+               		
+            </li>
+            <li><a name="GUID-8050E3C0-E4B3-4FC6-9946-B27EC047165E__LI_837BD5D7708F48F9A57A3CC21AEA4B9D" shape="rect">
+                  <!-- --></a>Difficulty in specification 
+               		
+            </li>
+            <li><a name="GUID-8050E3C0-E4B3-4FC6-9946-B27EC047165E__LI_6310E4293D5D4D7EB6F4E7B91B46BE13" shape="rect">
+                  <!-- --></a>Windowing increases the difficulty of specifying a cut-off frequency that has a specific attenuation 
+               		
+            </li>
+            <li><a name="GUID-8050E3C0-E4B3-4FC6-9946-B27EC047165E__LI_21A5A6D4938844EEB6E998416B0ED7E2" shape="rect">
+                  <!-- --></a>Filter designers must specify the ideal cut-off frequency 
+               		
+            </li>
+            <li><a name="GUID-8050E3C0-E4B3-4FC6-9946-B27EC047165E__LI_644E37B77E6F4596A967C91C22E98C36" shape="rect">
+                  <!-- --></a>Filter designers must specify the sampling frequency 
+               		
+            </li>
+            <li><a name="GUID-8050E3C0-E4B3-4FC6-9946-B27EC047165E__LI_9DC39166DC5048128823E91E5C951944" shape="rect">
+                  <!-- --></a>Filter designers must specify the number of taps 
+               		
+            </li>
+            <li><a name="GUID-8050E3C0-E4B3-4FC6-9946-B27EC047165E__LI_65070519300F43AB80EAF020973AE2C5" shape="rect">
+                  <!-- --></a>Filter designers must specify the window type 
+               		
+            </li>
+         </ul> 
+         	 
+         <p>Designing FIR filters by windowing does not require a large amount of computational resources. Therefore, windowing is the
+            fastest technique for designing FIR filters. However, windowing is not necessarily the best technique for designing FIR filters.
+            
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="lvac_design_fir_filters.html" shape="rect">Designing FIR Filters</a></div>
+         </div>
+         <div class="relinfo relconcepts"><strong>Related concepts</strong><br clear="none"><div><a href="Choosing_Smoothing_Window.html" shape="rect">Choosing the Correct Smoothing Window</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

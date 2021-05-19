@@ -1,0 +1,80 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Magnitude and Phase Information</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-BFAF3475-F91C-40C5-9EA0-238688D994E9" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Magnitude and Phase Information</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 <em>N</em> samples of the input signal result in <em>N</em> samples of the discrete Fourier transform (DFT). That is, the number of samples in both the time and frequency representations
+            is the same. The following equation shows that regardless of whether the input signal <em>x</em>[<em>i</em>] is real or complex, <em>X</em>[<em>k</em>] is always complex, although the imaginary part may be zero. 
+            	 
+         </p>
+         <div class="fignone"><a name="GUID-BFAF3475-F91C-40C5-9EA0-238688D994E9__LOC_EQ_DISCRETE_FOURIER_TRANSFORM_DFT_B" shape="rect">
+               <!-- --></a><div class="mathml-block"><span><img src="./itude_and_Phase_Information.xml_d9443e39.png"></span></div>
+         </div> 
+         	 
+         <p>In other words, every frequency component has a magnitude and phase. 
+            	 
+         </p> 
+         	 
+         <p>Normally the magnitude of the spectrum is displayed. The magnitude is the square root of the sum of the squares of the real
+            and imaginary parts. 
+            	 
+         </p> 
+         	 
+         <p>The phase is relative to the start of the time record or relative to a single-cycle cosine wave starting at the beginning
+            of the time record. Single-channel phase measurements are stable only if the input signal is triggered. Dual-channel phase
+            measurements compute phase differences between channels so if the channels are sampled simultaneously, triggering usually
+            is not necessary. 
+            	 
+         </p> 
+         	 
+         <p>The phase is the arctangent of the ratio of the imaginary and real parts and is usually between &#960; and -&#960; radians, or 180 and
+            -180 degrees. 
+            	 
+         </p> 
+         	 
+         <p>For real signals (<em>x</em>[<em>i</em>] real), such as those you obtain from the output of one channel of a DAQ device, the DFT is symmetric with properties given
+            by the following equations. 
+            	 
+         </p>
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./itude_and_Phase_Information.xml_d9443e170.png"></span></div>
+         </div>
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./itude_and_Phase_Information.xml_d9443e207.png"></span></div>
+         </div> 
+         	 
+         <p>The magnitude of <em>X</em>[<em>k</em>] is even symmetric, and phase(<em>X</em>[<em>k</em>]) is odd symmetric. An even symmetric signal is symmetric about the <em>y</em>-axis, and an odd symmetric signal is symmetric about the origin. The following figure shows even and odd symmetry. 
+            	 
+         </p><br clear="none"><a name="GUID-BFAF3475-F91C-40C5-9EA0-238688D994E9__IMAGE_A99E157F93A44596A3503D2546CC6169" shape="rect">
+            <!-- --></a><img id="GUID-BFAF3475-F91C-40C5-9EA0-238688D994E9__IMAGE_A99E157F93A44596A3503D2546CC6169" src="GUID-EAFE9B37-B051-43AC-B521-7B56E55EB7AE-help-web.png"><br clear="none"> 
+         	 
+         <p>Because of this symmetry, the <em>N</em> samples of the DFT contain repetition of information. Because of this repetition of information, only half of the samples
+            of the DFT actually need to be computed or displayed because you can obtain the other half from this repetition. If the input
+            signal is complex, the DFT is asymmetrical, and you cannot use only half of the samples to obtain the other half. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Discrete_Fourier_Transform.html" shape="rect">Discrete Fourier Transform (DFT)</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>QSort (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>QSort (LabVIEW Manager Function)</h1>
+<p class="Code">void QSort(arrayp, n, elmtSize, compareProcP());</p>
+<h2>Purpose</h2>
+<p class="Body">Sorts an array of an arbitrary data type using the QuickSort algorithm. In addition to passing the array you want to sort to this routine, you also pass a comparison procedure that this sort routine then uses to compare elements in the array.</p>
+<p class="Body">The comparison routine should return a number less than zero if <strong>a</strong> is less than <strong>b</strong>, zero if <strong>a</strong> is equal to <strong>b</strong>, and a number greater than zero if <strong>a</strong> is greater than <strong>b</strong>.</p>
+<p class="Body">You should declare the comparison routine to have the following parameters and return type:</p>
+<p class="Code">int32 compareProcP(UPtr a, UPtr b);</p>
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>arrayp</strong></td>
+<td class="Bordered"><span class="Monospace">UPtr</span></td>
+ <td class="Bordered">Pointer to an array of data.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>n</strong></td>
+<td class="Bordered"><span class="Monospace">int32</span></td>
+ <td class="Bordered">Number of elements in the array you want to sort.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>elmtSize</strong></td>
+<td class="Bordered"><span class="Monospace">int32</span></td>
+ <td class="Bordered">Size in bytes of an array element.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>compareProcP</strong></td>
+<td class="Bordered"><span class="Monospace">CompareProcPtr</span></td>
+ <td class="Bordered">Comparison routine you want <span class="Monospace">QSort</span> to use to compare array elements. <span class="Monospace">QSort</span> passes this routine the addresses of two elements that it needs to compare.</td></tr>
+</table>
+
+</body>
+</HTML>

@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+<title>Optimizing Execution Speed for Built Applications</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Optimizing Execution Speed for Built Applications</h1>
+<p>After you finish developing and testing a VI or built application, you can configure settings in the LabVIEW environment and the build specification to maximize the execution speed of the application. You must wait until you finish development because these configurations can slow or prevent editing and debugging.</p>
+
+<p>The following procedure improves execution speed by ensuring that LabVIEW uses full compiler optimizations to build the application.</p>
+
+<ol>
+	<li><strong>Open the build specification.</strong>
+		<br>Right-click the build specification to display the Properties dialog box.</li>
+	<li><strong>Ensure the Enable Debugging option for the build specification does not contain a checkmark.</strong>
+		<br>On the <strong>Advanced</strong> page of the dialog box, remove the checkmark from the <strong>Enable debugging</strong> checkbox. This global debugging setting allows LabVIEW to evaluate the debugging setting on individual VIs in the build specification. Therefore, in order to later disable debugging on the individual VIs in the build specification, you must not enable debugging in this global setting.</li>
+	<li><strong>Disable debugging in the build specification for each VI.</strong>
+		<br>Disabling debugging for each VI improves the execution speed of the application. Additionally, the debugging setting sometimes causes LabVIEW to recompile the VI, which is necessary to apply updated compiler settings that affect execution speed. The rest of this procedure ensures that you confirm these settings and force recompilation to occur.
+		<ol>
+			<li>On the <strong>Source File Settings</strong> page of the dialog box, select each VI and click the <strong>Customize VI Properties</strong> button.</li>
+			<li>Remove the checkmark from the <strong>Use VI Property</strong> checkbox next to <strong>Allow debugging</strong>.</li>
+			<li>Remove the checkmark from the <strong>Allow debugging</strong> checkbox.</li>
+		</ol>
+	</li>
+	<li><strong>Disable debugging in the build specification for dependencies.</strong>
+		<br>Disabling debugging for dependencies ensures that dependency VIs benefit from the same execution speed and recompilation effects as the other VIs in the build specification.
+		<ol>
+			<li>On the <strong>Source File Settings</strong> page of the dialog box, select <strong>Dependencies</strong> and click the <strong>Customize VI Properties</strong> button. If the <strong>Customize VI Properties</strong> button is disabled, place a checkmark in the <strong>Set VI properties for all contained items</strong> checkbox to enable it.</li>
+			<li>Remove the checkmark from the <strong>Use VI Property</strong> checkbox next to <strong>Allow debugging</strong>.</li>
+			<li>Remove the checkmark from the <strong>Allow debugging</strong> checkbox.</li>
+		</ol>
+	</li>
+	<li><strong>Ensure all source VIs are configured to allow debugging.</strong>
+		<br>By allowing debugging in the source VIs, you create an intentional discrepancy between the VI settings and the build specification settings from steps 3 and 4. This discrepancy ensures that LabVIEW recompiles the VIs when you build the application, thereby applying changes you make to the complexity threshold in later steps.
+		<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;Complete the following steps only if you changed the debugging settings on any individual VIs. LabVIEW allows debugging on VIs by default.</td>
+</tr>
+</table>
+		<ol><li>Open each VI in the build specification and dependencies list.</li>
+			<li>Place a checkmark in the <strong>Allow debugging</strong> checkbox on the <a href="../lvdialog/Execution.html">Execution</a> page of the <a href="../lvdialog/VI_Properties_Dialog_Box.html">VI Properties</a> dialog box.</li>
+		</ol>
+	</li>
+	<li><strong>Configure the build specification to use all additional exclusions.</strong>
+		<br>The additional exclusions improve both the load time and execution speed of the application.
+		<br>On the <strong>Additional Exclusions</strong> page of the <strong>Properties</strong> dialog box for the build specification, place a checkmark in every checkbox.
+	</li>
+	<li>
+		<strong>Use a pre-build VI to set the compiler optimizations threshold before building the application.</strong>
+		<br>Programmatically setting the compiler optimizations threshold in a pre-build VI ensures that the change is present when LabVIEW recompiles the VI during the build process.
+		<ol>
+			<li>On the <strong>Pre/Post Build Actions</strong> page of the <strong>Properties</strong> dialog box for the build specification, click the <strong>Generate VI</strong> button to generate a new pre-build VI with the appropriate connector pane.</li>
+			<li>Close the <strong>Properties</strong> dialog box for the build specification and open the pre-build VI.</li>
+			<li>In the pre-build VI, programmatically set the <a href="../lvscript/Application_Application058Compiler_Threshold.html">Application:Compiler Threshold</a> property to <span class="Monospace">10</span>. You must <a href="../lvhowto/enabling_vi_scripting.html">enable VI Scripting</a> to use the Application:Compiler Threshold property.</li>
+		</ol>
+	</li>
+	<li><strong>Use a post-build VI to restore the compiler optimizations threshold to 5 after building the application.</strong>
+		<br>Programmatically restoring the compiler optimizations threshold in a post-build VI ensures that all other VIs that you develop correctly prioritize between editor responsiveness and VI execution speed.
+		<ol>
+			<li>On the <strong>Pre/Post Build Actions</strong> page of the <strong>Properties</strong> dialog box for the build specification, click the <strong>Generate VI</strong> button to generate a new post-build VI with the appropriate connector pane.</li>
+			<li>Close the <strong>Properties</strong> dialog box for the build specification and open the post-build VI.</li>
+			<li>In the post-build VI, programmatically set the Application:Compiler Threshold property to <span class="Monospace">5</span>.</li>
+		</ol>
+	</li>
+	<li><strong>Build the application.</strong><br>
+		Right-click the build specification and select <strong>Build</strong> from the shortcut menu.
+		<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If LabVIEW runs out of memory while building the application, configure the pre-build VI to use a compiler optimizations threshold of 9 instead of 10. Continue lowering the threshold until LabVIEW does not run out of memory.</td>
+</tr>
+</table>
+	</li>	
+</ol>
+
+
+
+</body>
+</html>

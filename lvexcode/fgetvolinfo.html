@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>FGetVolInfo (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>FGetVolInfo (LabVIEW Manager Function)</h1>
+<p class="Code">MgErr FGetVolInfo(path, vinfo);</p>
+<h2>Purpose</h2>
+<p class="Body">Gets a path specification and information for the volume containing the specified file or directory.</p>
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>path</strong></td>
+<td class="Bordered"><span class="Monospace">Path</span></td>
+ <td class="Bordered">Path of a file or directory contained on the volume from which you want to get information. This path is overwritten with a path specifying the volume containing the specified file or directory. If an error occurs, <strong>path</strong> is undefined.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>vinfo</strong></td>
+ <td class="Bordered"><span class="Monospace">VInfoRec&nbsp;*</span></td>
+ <td class="Bordered">Address at which <span class="Monospace">FgetVolInfo</span> stores the information about the volume. If an error occurs, <strong>vinfo</strong> is undefined. This parameter is a <a href="../lvexcodeconcepts/LabVIEW_Manager_Routines.html#Pointers_as_Parameters">pointer</a>.</td></tr>
+</table>
+
+<p class="Body">The following code describes the volume information record, <span class="Monospace">VInfoRec</span>.</p>
+<table class="Borderless">
+<tr><td colspan="3" rowspan="7"><span class="Monospace">typedef&nbsp;struct&nbsp;{</span></td><td colspan="4"></td></tr>
+<tr><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td><span class="Monospace">uint32</span></td><td> <span class="Monospace">size;</span></td><td><span class="Monospace">/* size in bytes of a volume */</span></td></tr>
+<tr><td></td><td><span class="Monospace">uint32</span></td><td> <span class="Monospace">used;</span></td><td><span class="Monospace">/* number of bytes used on volume */</span></td></tr>
+<tr><td></td><td><span class="Monospace">uint32</span></td><td> <span class="Monospace">free;</span></td><td><span class="Monospace">/* number of bytes available for use on volume */</span></td></tr>
+<tr><td></td><td><span class="Monospace">}</span></td><td colspan="2"><span class="Monospace">VInfoRec;</span></td></tr>
+</table>
+
+
+<h2>Return Value</h2>
+<p class="Body"><span class="Monospace">MgErr</span>, which can contain the following errors. If you receive errors from <a href="LabVIEW_Manager_Functions.html">LabVIEW Manager functions</a>, most error names correspond to LabVIEW error codes.</p>
+<table class="Bordered">
+<tr><th class="Bordered Left-Align">Value</th>
+<th class="Bordered Left-Align">Corresponding Error Code or Description</th></tr>
+<tr><td class="Bordered"><span class="Monospace">noErr</span></td><td class="Bordered">No error.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">mgArgErr</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">1</a></td></tr>
+<tr><td class="Bordered"><span class="Monospace">fIOErr</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">6</a></td></tr>
+</table>
+
+</body>
+</HTML>

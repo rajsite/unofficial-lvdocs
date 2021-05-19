@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 3100Eunitshlp -->
+
+<title>Unit Syntax</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Unit Syntax</h1>
+
+<p class="Body">Use the following syntax when you <a href="Numeric_Units.html">associate units with a numeric control or indicator</a>:</p>
+<ul>
+<li>Any unit can have any SI prefix. The prefix applies only to the unit directly after it.</li>
+<li>Use a space to indicate multiplication. LabVIEW interprets multiple spaces as a single space.</li>
+<li>Use a forward slash (<span class="Monospace">/</span>) to indicate division. If you use spaces around the forward slash, LabVIEW ignores the spaces. The forward slash applies only to the unit directly after it.</li>
+<li>Use a carat (<span class="Monospace">^</span>) to indicate exponentiation. Exponents can be positive or negative integers, except zero (<span class="Monospace">0</span>). The carat applies only to the unit directly before it.</li>
+</ul>
+<p class="Body">The following table displays examples of unit strings with correct syntax and the mathematical equivalent.</p>
+<table class="Bordered">
+<tr>
+<th class="Bordered">Unit String</th>
+<th class="Bordered">Mathematical Equivalent</th>
+</tr>
+<tr>
+<td class="Bordered"><span class="Monospace">ft lb</span></td>
+<td class="Bordered"><span class="Monospace">ft * lb</span></td>
+</tr>
+<tr>
+<td class="Bordered"><span class="Monospace">m/s</span></td>
+<td class="Bordered"><span class="Monospace">m / s</span> (meters divided by seconds)</td>
+</tr>
+<tr>
+<td class="Bordered"><span class="Monospace">m /s/s</span></td>
+<td class="Bordered"><span class="Monospace">m / (s * s)</span></td>
+</tr>
+<tr>
+<td class="Bordered"><span class="Monospace">s^2</span></td>
+<td class="Bordered"><span class="Monospace">s^2</span></td>
+</tr>
+<tr>
+<td class="Bordered"><span class="Monospace">kg m/s</span></td>
+<td class="Bordered"><span class="Monospace">kg * m * s^&#8211;1</span></td>
+</tr>
+</table>
+
+
+
+</body>
+</html>

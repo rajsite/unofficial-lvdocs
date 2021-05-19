@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+<title>Profiling VI Execution Time and Memory Usage</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Profiling VI Execution Time and Memory Usage</h1>
+
+<p class="Body"><!-- Begin parent: DevZone document "Debugging Issues in LabVIEW Real-Time"-->The <a href="../lvdialog/Profile.html">Profile Performance and Memory</a> window is a powerful tool for <a href="../lvconcepts/Using_Profile_Window.html">analyzing</a> how your application uses execution time and memory. With this information, you can identify the specific VIs or parts of VIs you need to optimize. For example, if you notice that a particular subVI takes a long time to execute, you can focus your attention on <a href="../lvconcepts/Using_Profile_Window.html">improving the performance of that VI</a>.<!-- End parent: DevZone document "Debugging Issues in LabVIEW Real-Time"--></p>
+
+<p class="Body">Complete the following steps to profile a VI.</p>
+
+<ol>
+<li>Stop all running VIs.  If you do not stop these VIs, the results that the <strong>Profile Performance and Memory</strong> window displays can be misleading or inconsistent.</li>
+<li>Select <strong>Tools&#0187;Profile&#0187;Performance and Memory</strong> to display the <strong>Profile Performance and Memory</strong> window.</li>
+<li>If you want to collect memory usage information, place a checkmark in the <strong>Profile memory usage</strong> checkbox.  You cannot place a checkmark in this checkbox after starting the profiling session.  <!-- Begin parent: DevZone document "Debugging Issues in LabVIEW Real-Time"-->Collecting information about VI memory use adds a significant amount of overhead to VI execution, which affects the accuracy of any timing statistics you gather during the profiling session. Therefore, you should perform memory profiling separate from time profiling.<!-- End parent: DevZone document "Debugging Issues in LabVIEW Real-Time"--></li>
+<li>Click the <strong>Start</strong> button in the <strong>Profile Performance and Memory</strong> window to begin the collection of performance data.</li>
+<li>Run the VI you want to profile.</li>
+<li>Run the VI to completion, or click the front panel stop button to stop the VI if it is running continuously.  If there is no stop button, click the <strong>Abort Execution</strong> button.</li>
+<li>Click the <strong>Stop</strong> button in the <strong>Profile Performance and Memory</strong> window to end the profiling session.  The tabular display includes the time it took the top-level VI to run, the time it took all subVIs to run, and the total time it took the VI and all subVIs to run within this profiling session.</li></ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;The <strong>Profile Performance and Memory</strong> window measures only CPU usage time.  During wait functions, the CPU is free to process other tasks in the operating system, but the <strong>Profile Performance and Memory</strong> window still measures the small amount of time the CPU takes to initiate and return from the wait.  The <strong>Profile Performance and Memory</strong> window does not measure the CPU usage time for calling by reference or for using control references in Property Nodes separately from the CPU usage time for other nodes.</td>
+</tr>
+</table>
+<ol start="8">
+<li>If you place a checkmark in the <strong>Timing statistics</strong> checkbox, the tabular display includes more statistics about the VI run times.  If you place a checkmark in the <strong>Timing details</strong> checkbox, the tabular display includes several timing categories that can help you determine what operations take the most time.  <!-- Begin parent: LabVIEW Performance and Memory Management application note-->If you place a checkmark in the <strong>Memory usage</strong> checkbox, which is only available if you place a checkmark in the <strong>Profile memory usage</strong> checkbox before you begin the profiling session, you can view information about how your VIs are using memory.<!-- End parent: LabVIEW Performance and Memory Management application note--></li>
+</ol>
+
+<p class="Body">In addition to the <strong>Profile Performance and Memory</strong> window, the <a href="../lvvianalyzerhelp/VI_Analyzer_Toolkit.html" class="checkLink lvvianalyzer">LabVIEW VI Analyzer Toolkit</a> provides tests that check VIs interactively or programmatically for performance, efficiency, and other aspects of LabVIEW programming.</p>
+
+<p class="Body">You also can use the <a href="../lvdetthelp/using_dett.html" class="checkLink lvdettmerge">LabVIEW Desktop Execution Trace Toolkit</a> to monitor code analysis, memory leaks, and other aspects of LabVIEW programming.</p>
+
+</body>
+</html>

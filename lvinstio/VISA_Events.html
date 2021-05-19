@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+
+<title>VISA Events</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>VISA Events</h1>
+<p class="Body">The VIs and functions on the <a href="../lvinstio/Event_Handling_Func_Descr.html">Event Handling</a> palette handle VISA events. To handle VISA events, you must enable event queuing with the <a href="../lvinstio/VISA_Enable_Event.html">VISA Enable Event</a> function. Queues work per session and per event type, so you must enable queuing on every session for which you want to handle events.</p>
+<p>Use the <a href="../lvinstio/VISA_Wait_On_Event.html">VISA Wait on Event</a> function to retrieve events from a queue. If an event of the specified type already has occurred, calling VISA Wait on Event returns that event immediately, regardless of the value you set for the <strong>timeout</strong> parameter.
+</p>
+<p>You also can use VISA Wait on Event to wait for events that currently do not exist in the queue. Execution stops until an event of the specified type arrives or until the VISA Wait on Event function times out. Set a reasonable timeout value to wait for events that currently do not exist in the queue.
+</p> 
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="tip.gif" alt="Tip"></td>
+<td><strong>Tip</strong>&nbsp;&nbsp;To check if the queue contains any events of the type you specified, set <strong>timeout</strong> on the VISA Wait on Event function to 0 (immediate).</td>
+</tr>
+</table> 
+<p>When the VISA Wait on Event function returns an event, the event no longer exists in the queue for the session on which you invoked the wait operation. However, if event queuing is enabled on any other VISA session, the event remains in the queue for that session until it is retrieved.</p>
+<p>Use the <a href="../lvinstio/VISA_Disable_Event.html">VISA Disable Event</a> function to disable event queuing on a specific VISA session. When you call this function, no additional events are added to the queue for the session. However, the queue retains any events that already existed in the queue. You can either retrieve or discard these events. To retrieve the events, use the VISA Wait on Event function. To discard the events, use the <a href="../lvinstio/VISA_Discard_Events.html">VISA Discard Events</a> function.</p>
+<p>The default length of VISA event queues is 50. If the queue is full and a new event arrives, the new event is discarded. Event queues in VISA do not grow dynamically, but you can use the <a href="../lvvisaprop/I_O_Session_3FFF0005.html">General Settings:Maximum Queue Length</a> property to change the size of an event queue programmatically. If you change the queue length on a given session, you must do so before VISA Enable Event is called for the first time.</p> 
+<p>The following table lists the events you can handle with these VIs and functions. This table includes a description of each event along with its supported resource classes, such as GPIB, PXI etc.</p>
+<table class="Borderless">
+<tr><td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;The serial events are valid only on Windows and platforms on which National Instruments supports its ENET-Serial products.</td>
+</tr>
+</table><br>
+
+<table class="Bordered">
+<thead>
+<tr><th class="Bordered">Event Name</th><th class="Bordered">Description</th><th class="Bordered">Resource Classes</th></tr>
+</thead>
+<tbody>
+<tr><td class="Bordered">Service Request</td><td class="Bordered">Notifies the application that a service request was received from the device or interface associated with the given session.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;When you receive this event on an instrument session, you must call <a href="../lvinstio/VISA_Read_STB.html">VISA Read STB</a> to guarantee delivery of future service request events on the given session.</td>
+</tr>
+</table></td><td class="Bordered">GPIB INSTR, GPIB INTFC, GPIB-VXI INSTR, TCPIP INSTR, USB INSTR, VXI INSTR</td></tr>
+<tr><td class="Bordered">Trigger</td><td class="Bordered">Notifies the application that a trigger interrupt was received from the device. This may be either a hardware or software trigger, depending on the interface and the current session settings.</td><td class="Bordered">GPIB INTFC, VXI INSTR, VXI BACKPLANE, VXI SERVANT</td></tr>
+<tr><td class="Bordered">Clear</td><td class="Bordered">Notifies the application that a device clear message was sent to the local controller.</td><td class="Bordered">GPIB INTFC, VXI SERVANT</td></tr>
+<tr><td class="Bordered">VXI Signal</td><td class="Bordered">Notifies the application that a VXIbus signal or VXIbus interrupt was received from the device associated with the given session.</td><td class="Bordered">VXI INSTR</td></tr>
+<tr><td class="Bordered">VXI/VME Interrupt</td><td class="Bordered">Notifies the application that a VXIbus interrupt was received from the device associated with the given session.</td><td class="Bordered">VXI INSTR</td></tr>
+<tr><td class="Bordered">VXI/VME Sysfail</td><td class="Bordered">Notifies the application that the VXI/VME SYSFAIL* line was asserted.</td><td class="Bordered">VXI BACKPLANE</td></tr>
+<tr><td class="Bordered">VXI/VME Sysreset</td><td class="Bordered">Notifies the application that the VXI/VME SYSRESET* line was asserted.</td><td class="Bordered">VXI BACKPLANE, VXI SERVANT</td></tr>
+<tr><td class="Bordered">GPIB CIC</td><td class="Bordered">Notifies the application that the GPIB controller has gained or lost CIC (controller-in-charge) status.</td><td class="Bordered">GPIB INTFC</td></tr>
+<tr><td class="Bordered">GPIB Talk</td><td class="Bordered">Notifies the application that the GPIB controller was addressed to talk.</td><td class="Bordered">GPIB INTFC</td></tr>
+<tr><td class="Bordered">GPIB Listen</td><td class="Bordered">Notifies the application that the GPIB controller has been addressed to listen.</td><td class="Bordered">GPIB INTFC</td></tr>
+<tr><td class="Bordered">PXI Interrupt</td><td class="Bordered">Notifies the application that a PXI interrupt occurred.</td><td class="Bordered">PXI INSTR</td></tr>
+<tr><td class="Bordered">USB Interrupt</td><td class="Bordered">Notifies the application that a USB interrupt has occurred.</td><td class="Bordered">USB INSTR, USB RAW</td></tr>
+<tr><td class="Bordered">Serial Break</td><td class="Bordered">Notifies the application that a break signal was received.</td><td class="Bordered">Serial INSTR</td></tr>
+<tr><td class="Bordered">Serial TermChar</td><td class="Bordered">Notifies the application that the termination character was received. The actual termination character is specified by setting the <a href="../lvvisaprop/Serial_Instr_3FFF0038.html">Message Based Settings:Termination Character Enable</a> property prior to enabling this event. For this event, the setting of the Message Based Settings:Termination Character Enable property is ignored.</td><td class="Bordered">Serial INSTR</td></tr>
+<tr><td class="Bordered">Serial CTS</td><td class="Bordered">Notifies the application that the Clear To Send (CTS) line changed state. If the CTS line changes state quickly several times in succession, not all line state changes necessarily result in event notifications.</td><td class="Bordered">Serial INSTR</td></tr>
+<tr><td class="Bordered">Serial DSR</td><td class="Bordered">Notifies the applications that the Data Set Ready (DSR) line changed state. If the DSR line changes state quickly several times in succession, not all line state changes necessarily result in event notifications.</td><td class="Bordered">Serial INSTR</td></tr>
+<tr><td class="Bordered">Serial DCD</td><td class="Bordered">Notifies the application that the Data Carrier Detect (DCD) line changed state. If the DCD line changes state quickly several times in succession, not all line state changes necessarily result in event notifications.</td><td class="Bordered">Serial INSTR</td></tr>
+<tr><td class="Bordered">Serial RI</td><td class="Bordered">Notifies the application that the Ring Indicator (RI) input signal was asserted.</td><td class="Bordered">Serial INSTR</td></tr>
+<tr><td class="Bordered">Serial Character</td><td class="Bordered">Notifies the application that at least one data byte has been received. Each data character does not necessarily result in an event notification. In other words, if multiple data bytes arrive at once, you may get only one event. After receiving this event, use the <a href="../lvvisaprop/Serial_Instr_3FFF00AC.html">Serial Settings:Number of Bytes at Serial Port</a> property to query the serial port for the number of bytes available.</td><td class="Bordered">Serial INSTR</td></tr>
+</tbody>
+</table>
+
+
+</body>
+</html>

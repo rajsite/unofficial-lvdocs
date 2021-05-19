@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name:  -->
+
+<title>Precedence of Operators in Formula Nodes and Expression Nodes</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Precedence of Operators in Formula Nodes and Expression Nodes
+</h1>
+<p class="Body">The precedence of operators is as follows, from highest to lowest. Operators on the same line all have the same precedence.
+</p>
+
+<table class="Bordered">
+
+<tr><td class="Bordered"><span class="Monospace">**</span></td>
+<td class="Bordered">exponentiation</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">+</span>, <span class="Monospace">-</span>, <span class="Monospace">!</span>, <span class="Monospace">~</span>, <span class="Monospace">++</span>, and <span class="Monospace">&#8211;&#8211;</span></td>
+<td class="Bordered">unary plus, unary negation, logical not, bit complement, pre- and post-increment, pre- and post-decrement<br><br>
+<span class="Monospace">++</span> and <span class="Monospace">&#8211;&#8211;</span> are not available in Expression Nodes.</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">*</span>, <span class="Monospace">/</span>, <span class="Monospace">%</span></td>
+<td class="Bordered">multiplication, division, modulus (remainder)</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">+</span> and <span class="Monospace">&#8211;</span></td>
+<td class="Bordered">addition and subtraction</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">&gt;&gt;</span> and <span class="Monospace">&lt;&lt;</span></td>
+<td class="Bordered">arithmetic shift right and shift left</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">&gt;</span>, <span class="Monospace">&lt;</span>, <span class="Monospace">&gt;=</span>, and <span class="Monospace">&lt;=</span></td>
+<td class="Bordered">greater, less, greater or equal, and less or equal</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">!=</span>  and <span class="Monospace">==</span></td>
+<td class="Bordered">inequality and equality</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">&amp;</span></td>
+<td class="Bordered">bit and</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">^</span></td>
+<td class="Bordered">bit exclusive or</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">&#124;</span></td>
+<td class="Bordered">bit or</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">&amp;&amp;</span></td>
+<td class="Bordered">logical and</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">&#124;&#124;</span></td>
+<td class="Bordered">logical or</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">? :</span></td>
+<td class="Bordered">conditional evaluation</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">= </span><span class="Monospace-Italic"><em>op</em></span><span class="Monospace">=</span></td>
+<td class="Bordered">assignment, shortcut operate and assign<br><br>
+<span class="Monospace-Italic"><em>op</em></span> can be <span class="Monospace">+</span>, <span class="Monospace">&#8211;</span>, <span class="Monospace">*</span>, <span class="Monospace">/</span>, <span class="Monospace">&gt;&gt;</span>, <span class="Monospace">&lt;&lt;</span>, <span class="Monospace">&amp;</span>, <span class="Monospace">^</span>, <span class="Monospace">&#124;</span>, <span class="Monospace">%</span>, or <span class="Monospace">**</span>.<br><br>
+<span class="Monospace">= op=</span> is not available in Expression Nodes.</td></tr></table>
+
+<p class="Body">The assignment operator <span class="Monospace">=</span> is right associative (groups right to left), as is the exponentiation operator <span class="Monospace">**</span>. All other binary operators are left associative.
+</p>
+<p class="Body">The numeric value of TRUE is 1, and FALSE is 0 for output. The logical value of 0 is FALSE, and any nonzero number is TRUE. The logical value of the conditional expression 
+</p>
+<p class="Indent1"><span class="Monospace">&lt;lexpr&gt; ? &lt;texpr&gt;: &lt;fexpr&gt; </span>
+</p>
+<p class="Body">is <span class="Monospace">&lt;texpr&gt;</span> if the logical value of <span class="Monospace">&lt;lexpr&gt;</span> is TRUE and <span class="Monospace">&lt;fexpr&gt;</span> otherwise. 
+</p>
+
+<!-- begin parent: ../lvconcepts/Formulas_and_Equations.xml --><table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;You can use Formula Node most effectively if you are familiar with the C programming language. <em>LabVIEW Help</em> assumes you are familiar with C and does not contain any topics related to programming in C. Refer to <em>The C Programming Language</em> by Brian W. Kernighan and Dennis M. Ritchie or <em>Teach Yourself C</em> by Herbert Schildt for more information.</td>
+</tr>
+</table><!-- end parent: ../lvconcepts/Formulas_and_Equations.xml -->
+
+
+</body>
+</html>

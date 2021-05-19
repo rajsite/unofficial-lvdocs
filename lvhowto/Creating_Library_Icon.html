@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Creating a Library Icon</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Creating a Library Icon</h1>
+
+<p class="Body">Create an icon to represent a <a href="../lvconcepts/Project_Libraries.html">project library</a>, statechart, <a href="../lvconcepts/Creating_Classes.html">class</a>, or <a href="../lvconcepts/Using_LabVIEW_XControls.html">XControl</a> graphically. Use the <a href="../lvdialog/Icon_Editor.html">Icon Editor</a> dialog box to create or edit icons.</p>
+
+<p class="Body"><!-- start_parent = ../lvconcepts/Creating_Icons_Overview.html-->LabVIEW applies a library icon to the icon of all objects in the library. National Instruments recommends <a href="../lvhowto/Creating_Library_Icon.html#create_lib_icon">creating only a banner for the library icon</a>. The icon for each object in the library then includes the banner, and you can <a href="../lvhowto/Creating_Library_Icon.html#create_libobject_icon">modify the body of the icon</a> to provide information about the specific object.<!-- end_parent  = ../lvconcepts/Creating_Icons_Overview.html--></p>
+
+<a name="create_lib_icon"></a><h2>Creating a Project Library Icon</h2>
+
+<p class="Body">Complete the following steps to create an icon for a new project library.</p>
+
+<ol>
+<li>Right-click the project library item in the <a href="../lvconcepts/Using_LabVIEW_Projects.html#Project_Explorer_Window">Project Explorer</a> window and select  <strong>Properties</strong> from the shortcut menu to display the <a href="../lvdialog/Library_Props_DB.html">Project Library Properties</a> dialog box. LabVIEW creates a banner as the default icon for a new project library. Notice the default project library icon in the <strong>VI Icon Template</strong> section of the <a href="../lvdialog/General_Lib_Page.html">General Settings</a> page.</li>
+<li>Click the <strong>Edit Icon</strong> button on the <strong>General Settings</strong> page to display the <strong>Icon Editor</strong> dialog box.</li>
+<li>(Optional) Use the Fill tool on the right side of the <strong>Icon Editor</strong> dialog box to fill the banner of the icon with a different color.</li>
+<li>Use the Text tool to enter text in the banner of the icon. While the text is active, you can move the text by pressing the arrow keys.</li>
+<li>(Optional) Select <strong>File&#0187;Save As&#0187;Template</strong> to display the <a href="../lvdialog/Save_Icon_As_DB.html">Save Icon As</a> dialog box and save the icon as a template for later use. LabVIEW saves icon templates as 256-color <span class="Monospace">.png</span> files.</li>
+<li>Click the <strong>OK</strong> button to save the icon information with the project library and close the <strong>Icon Editor</strong> dialog box. Notice that the <strong>256 Colors</strong> icon on the <strong>General Settings</strong> page of the <strong>Project Library Properties</strong> dialog box displays the icon you created.</li>
+<li>Click the <strong>OK</strong> button to close the <strong>Project Library Properties</strong> dialog box.</li>
+</ol>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="tip.gif"></td>
+<td><strong>Tip</strong>&nbsp;&nbsp;You can use the <strong>Apply Icon to VIs</strong> button in the <a href="../lvdialog/General_Lib_Page.html">General Settings</a> page of the <strong>Project Library Properties</strong> dialog box to automatically apply an existing project library icon to VIs in the project library.</td></tr></table>
+
+<a name="create_libobject_icon"></a><h2>Creating an Icon for a VI in the Project Library</h2>
+
+<p class="Body">Complete the following steps to create an icon for a new VI in the project library.</p>
+
+<ol>
+<li>Right-click the project library item in the <strong>Project Explorer</strong> window and select <strong>New&#0187;VI</strong> from the shortcut menu to create and open a new VI. Notice that the VI icon in the upper right corner of the front panel window includes the project library icon.</li>
+<li>Double-click the VI icon to display the <strong>Icon Editor</strong> dialog box.</li><li>Select  <strong>Layers&#0187;Show Layers Page</strong> to display the <strong>Layers</strong> page if it is not already showing. Notice the following items on this page:
+	<ul>
+	<li>The project library icon appears as a <a href="../lvconcepts/Using_Layers.html">user layer</a> called <strong>NI_Library</strong>.
+	<table class="Borderless"><tr><td class="Icon"><img src="note.gif" /></td><td><strong>Note</strong>��LabVIEW reverts any changes you make to the opacity or visibility of the <strong>NI_Library</strong> user layer the next time you modify the project library icon. If you want to modify the opacity or visibility of the <strong>NI_Library</strong> user layer permanently, apply the changes to the project library icon directly.</td></tr></table>
+	</li>
+	<li>A user layer called <strong>NI_IconNumber</strong> contains a number that indicates how many new VIs, up to nine VIs, you have opened since launching LabVIEW.
+	<table class="Borderless"><tr><td class="Icon"><img src="note.gif" /></td><td><strong>Note</strong>��To disable this numbering, select  <strong>Tools&#0187;Options&#0187;Front Panel</strong> and remove the checkmark from the <strong>Use numbers in icons of new VIs (1 through 9)</strong> checkbox.</td></tr></table>
+	</li>
+	<li>A user layer called <strong>VI Icon</strong> contains a one-pixel black frame for the icon.</li>
+	<li>The VI icon uses the <strong>White w border</strong> template, as shown in the <strong>Icon Template</strong> section of the <strong>Layers</strong> page.</li>
+	</ul>
+</li>
+<li>(Optional) Click the preview of the <strong>NI_IconNumber</strong> user layer and press the &lt;Delete&gt; key to delete the layer.</li>
+<li>On the <strong>Icon Text</strong> page, enter up to four lines of icon text for the body of the icon. You can configure the font, alignment, size, and color of the text. If you place a checkmark in the <strong>Center text vertically</strong> checkbox, the <strong>Icon Editor</strong> dialog box centers the icon text vertically within the body of the icon.</li>
+<li>On the <strong>Glyphs</strong> page, drag and drop glyphs onto the <strong>Preview</strong> area.<br/><br/>Press the &lt;F&gt; key or the &lt;R&gt; key to flip a glyph horizontally or rotate a glyph clockwise, respectively, as you move the glyph. You also can double-click a glyph to place the glyph in the top-left corner of the icon. You can browse glyphs by category or by keyword.</li>
+<li>Use the Move tool to move any glyph. Each glyph is on a separate layer and therefore moves separately. Notice that the rest of the icon becomes dimmed when you select a glyph so you can identify which selection you are moving.</li>
+<li>Use the <a href="../lvdialog/Icon_Editor_Editing_Tools.html">editing tools</a> on the right side of the <strong>Icon Editor</strong> dialog box to edit the icon further if necessary.<br/><br/>The <strong>Icon Editor</strong> dialog box creates a new user layer for each non-consecutive use of the editing tools. Select  <strong>Layers&#0187;Create New Layer</strong> to create a new user layer during consecutive uses of the editing tools.
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif" /></td><td><strong>Note</strong>��You cannot modify the icon template or icon text with the editing tools on the right side of the <strong>Icon Editor</strong> dialog box. Use the <strong>Templates</strong> page and the <strong>Icon Text</strong> page to modify the icon template and icon text, respectively.</td></tr></table>
+</li>
+<li>Use the <strong>Layers</strong> page to configure the name, opacity, visibility, and order of the layers of the icon.</li>
+<li>Click the <strong>OK</strong> button to save the icon information with the VI and close the <strong>Icon Editor</strong> dialog box.</li>
+</ol>
+
+</body>
+</html>

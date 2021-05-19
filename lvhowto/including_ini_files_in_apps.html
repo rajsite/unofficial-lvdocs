@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+
+<title>Using a Configuration File with a Stand-Alone Application</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Using a Configuration File with a Stand-Alone Application</h1>
+<p class="Body">You can use a LabVIEW configuration file or another, custom, configuration file with a LabVIEW stand-alone application.</p>
+<a name="labview"></a><h2>LabVIEW Configuration Files</h2>
+<p class="Body">If you select to use the LabVIEW configuration file with a stand-alone application, LabVIEW creates a configuration file that includes a subset of the configuration tokens that appear in the LabVIEW configuration file in the <span class="Monospace">labview</span> directory. You can configure additional build specification settings using the <a href="../lvdialog/Build_App_or_DLL_DB.html">Application Properties</a> dialog box. For example, if you select <strong>Enable debugging</strong> from the <a href="../lvdialog/App_Settings_Tab.html">Advanced</a> page of the <strong>Application Properties</strong> dialog box, LabVIEW adds debugging tokens to the configuration file of the stand-alone application.</p>
+
+<p class="Body">Complete the following steps to use the LabVIEW configuration file in a stand-alone application.</p>
+
+<ol>
+<li>In the <a href="../lvconcepts/Using_LabVIEW_Projects.html#Project_Explorer_Window">Project Explorer</a> window, right-click <strong>Build Specifications</strong> and select <strong>New&#0187;Application</strong> from the shortcut menu. If you previously created a build specification for the application, double-click the build in the <strong>Project Explorer</strong> window to edit the build.</li>
+<li>On the <strong>Advanced</strong> page of the <strong>Application Properties</strong> dialog box, ensure that the <strong>Use custom configuration file</strong> checkbox is not enabled.</li>
+<li>(Optional) Make other selections on the <strong>Advanced</strong> page. Some of these changes add configuration tokens to the configuration file of the stand-alone application.</li>
+<li>Click the <strong>OK</strong> button to apply the changes and close the dialog box.</li>
+</ol>
+
+<a name="custom"></a><h2>Custom Configuration Files</h2>
+<p class="Body">If you use a custom configuration file with a stand-alone application, LabVIEW uses the configuration file you specify as a template. LabVIEW adds additional tokens to the configuration file you specify depending on the options you select in the <strong>Application Properties</strong> dialog box. For example, if you select <strong>Enable debugging</strong> from the <strong>Advanced</strong> page of the <strong>Application Properties</strong> dialog box, LabVIEW adds debugging tokens to the custom configuration file you included.</p>
+
+<p class="Body">Complete the following steps to use a custom configuration file in a stand-alone application.</p>
+
+
+<ol>
+<li>In the <strong>Project Explorer</strong> window, right-click <strong>Build Specifications</strong> and select <strong>New&#0187;Application</strong> from the shortcut menu. If you previously created a build specification for the application, double-click the build in the <strong>Project Explorer</strong> window to edit the build.</li>
+<li>On the <strong>Advanced</strong> page of the <strong>Application Properties</strong> dialog box, place a checkmark in the <strong>Use custom configuration file</strong> checkbox. The <a href="../lvdialog/Select_RTF_DB.html">Select Project File</a> dialog box appears.</li>
+<li>Select the configuration file you want to include from the <strong>Files in Project</strong> list.
+<br><br>If the file you want to include is not in the project, complete the following steps.
+<ol>
+ <li>Click the <strong>Add</strong> button. A file dialog box appears.</li>
+ <li>Browse to the file you want to include and click the <strong>Add</strong> button. The dialog boxes close and the file you selected appears in the <strong>Configuration file in project</strong> text box on the <strong>Advanced</strong> page of the <strong>Application Properties</strong> dialog box.</li>
+</ol>
+</li>
+<li>(Optional) Make other selections on the <strong>Advanced</strong> page. Some of these changes add configuration tokens to the custom configuration file.</li>
+<li>Click the <strong>OK</strong> button to apply the changes and close the dialog box.</li>
+</ol>
+
+
+
+
+</body>
+</html>

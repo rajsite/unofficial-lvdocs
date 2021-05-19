@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Original filename: Gmathmaster.txt -->
+
+<title>Mathematics Example 2: Linear Combinations</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Mathematics Example 2: Linear Combinations
+</h1>
+
+<p class="Body">Suppose that you have collected samples from a transducer (<strong>Y Values</strong>) and you want to solve for the coefficients of the model:
+</p>
+<p class="Indent1"><em>y</em> = <em>b</em><sub>0</sub> + <em>b</em><sub>1</sub>sin(<img src="omega.gif"><em>x</em>) + <em>b</em><sub>2</sub>cos(<img src="omega.gif"><em>x</em>) + <em>b</em><sub>3</sub><em>x</em><sup>2</sup></p>
+<p class="Body">To build <strong>H</strong>, you set each column to the independent functions evaluated at each <em>x</em> value. Assuming there are 100 <em>x</em> values, the following equation gives <strong>H</strong>.
+</p>
+<p class="Indent1"><img src="noloc_eq_gelslf7.gif"></p>
+<p class="Body">Given that you have the independent <strong>X Values</strong> and observed <strong>Y Values</strong>, the following block diagram demonstrates how to build <strong>H</strong> and use the <a href="General_LS_Linear_Fit.html">General Linear Fit</a> VI.
+</p>
+<p class="Anchor"><img src="loc_bd_genlslf3.gif">
+</p>
+<p class="Body">The general linear fit problem can be described as follows.
+</p>
+<p class="Body">Given a set of observation data, find a set of coefficients that fit the linear model given by the following equation.
+</p>
+<p class="Indent1"><a name="equation1"><img src="noloc_eq_gelslf8.gif"></a> (1)</p>
+<p class="Body">where <em>b</em> is the set of <strong>Coefficients</strong>, <em>n</em> is the number of elements in <strong>Y Values</strong> and the number of rows of <strong>H</strong>, and <em>k</em> is the number of <strong>Coefficients</strong>.
+</p>
+<p class="Body"><em>x</em><sub><em>ij</em></sub> is your observation data, which is contained in <strong>H</strong>.
+</p>
+<p class="Indent1"><img src="noloc_eq_gelslf9.gif"></p>
+<p class="Body">Equation (<a href="#equation1">1</a>) also can be written as <em>Y</em>=<em>HB</em>.
+</p>
+<p class="Body">This is a multiple linear regression model, which uses several variables <em>x</em><sub><em>i</em>0</sub>, <em>x</em><sub><em>i1</em></sub>, &#8230;, <em>x</em><sub><em>ik</em>&#8211;1</sub> to predict one variable <em>y</em><sub><em>i</em></sub>. In contrast, the <a href="Linear_Fit.html">Linear Fit</a>, <a href="Exponential_Fit.html">Exponential Fit</a>, and <a href="General_Polynomial_Fit.html">General Polynomial Fit</a> VIs are all based on a single predictor variable, which uses one variable to predict another variable.
+</p>
+<p class="Body">In most cases, we have more observation data than coefficients. The equations in (<a href="#equation1">1</a>) may not have the solution. The fit problem becomes to find the coefficients B that minimize the difference between the observed data <em>y</em><sub><em>i</em></sub> and the predicted value <em>z</em><sub><em>i</em></sub>
+</p>
+<p class="Indent1"><img src="noloc_eq_gelslf11.gif"></p>
+<p class="Body">The General Linear Fit VI uses the least chi-square plane method to obtain the coefficients in (<a href="#equation1">1</a>), that is, finding the solution B which minimizes the quantity:</p>
+<p class="Indent1"><img src="noloc_eq_gelslf12.gif"> (2)</p>
+<p class="Body">where</p>
+<p class="Indent1"><img src="noloc_eq_gelslf13a.gif"></p>
+<p class="Body">In this equation, <img src="sigma.gif"> is the <strong>Standard Deviation</strong>. If the measurement errors are independent and normally distributed with constant standard deviation, <img src="sigma.gif"><sub><em>i</em></sub> = <img src="sigma.gif">, the preceding equation is also the least-square estimation.
+</p>
+<p class="Body">There are different ways to minimize <img src="chi.gif"><sup>2</sup>.
+</p>
+<p class="Body">One way to minimize <img src="chi.gif"><sup>2</sup> is to set the partial derivatives of <img src="chi.gif"><sup>2</sup> to zero with respect to <em>b</em><sub>0</sub>, <em>b</em><sub>1</sub>, &#8230;, <em>b</em><sub>k &#8211; 1</sub>.</p>
+<p class="Indent1"><img src="noloc_eq_gelslf16.gif"></p>
+<p class="Body">The preceding equations can be derived to:</p>
+<p class="Indent1"><img src="noloc_eq_gelslf17.gif"> (3)</p>
+
+<p class="Body"><img src="noloc_eq_gelslf18.gif"> is the transpose of <strong>H</strong><sub>0</sub>.</p>
+<p class="Body">Equation (3) is also called a normal equation of the least-square problems. You can solve them using LU or Cholesky factorization algorithms, but the solution from the normal equations is susceptible to round-off error.
+</p>
+<p class="Body">An alternative, and preferred, way to minimize <img src="chi.gif"><sup>2</sup> is to find the least-square solution of equations</p>
+<p class="Indent1"><em>H</em><sub>0</sub><em>B</em> = <em>Y</em><sub>0</sub></p>
+
+<p class="Body">You can use QR or SVD factorization to find the solution, <em>B</em>. For QR factorization, you can choose the Householder, Givens, and Givens2 (also called fast Givens) algorithms.</p>
+<p class="Body">Different algorithms can give you different precision, and in some cases, if one algorithm cannot solve the equation, perhaps another algorithm can. You can try different algorithms to find the best one based on your observation data.
+</p>
+<p class="Body">The following equation computes the <strong>Covariance</strong> matrix <em>C</em>.</p>
+<p class="Indent1"><img src="noloc_eq_gelslf20.gif"></p>
+
+<p class="Body">The following equation gives <strong>Best Fit</strong> <em>Z</em>.</p>
+<p class="Indent1"><img src="noloc_eq_gelslf21.gif"></p>
+
+<p class="Body">The following equation gives <strong>mse</strong>.</p>
+<p class="Indent1"><img src="loc_eq_gelslf22.gif"></p>
+
+<p class="Body">The polynomial fit that has a single predictor variable can be thought of as a special case of multiple regression. If the observation data sets are {<em>x</em><sub>i</sub>, <em>y</em><sub>i</sub>} where <em>i</em> = 0, 1, ..., <em>n</em> &#8211; 1, the following equation gives the model for polynomial fit.
+</p>
+<table class="Borderless"><tr><td><img src="noloc_eq_gelslf24.gif"></td><td>(4)</td></tr></table>
+
+<p class="Body"><em>i</em> = 0, 1, 2,..., <em>n</em> &#8211; 1.</p>
+
+<p class="Body">Combining equations (<a href="#equation1">1</a>) and (4) results in the following relationships.
+</p>
+<p class="Indent1"><em>x</em><sub>i0</sub> = <em>x</em><sub>i</sub><sup>0</sup>, <em>x</em><sub>i1</sub> = <em>x</em><sub>i</sub>, <em>x</em><sub>i2</sub> = <em>x</em><sub>1</sub><sup>2</sup>, &#8230;<em>x</em><sub>ik&#8211;1</sub> = <em>x</em><sub>i</sub><sup>k&#8211;1</sup></p>
+
+<p class="Body">In this case, you can build <strong>H</strong> as follows:
+</p>
+<p class="Indent1"><img src="noloc_eq_gelslf26.gif"></p>
+
+<p class="Body">Instead of using <em>x</em><sub>ij</sub> = <em>x</em><sub>j</sub><sup>i</sup>, you also can choose another function formula to fit the data sets {<em>x</em><sub>i</sub>, <em>y</em><sub>i</sub>}. In general, you can select <em>x</em><sub>ij</sub> = f<sub>j</sub>(<em>x</em><sub>i</sub>). Here, f<sub>j</sub>(<em>x</em><sub>i</sub>) is the function model that you choose to fit your observation data. In polynomial fit, f<sub>j</sub>(<em>x</em><sub>i</sub>) = <em>x</em><sub>i</sub><sup>j</sup>.
+</p>
+<p class="Body">In general, you can build <strong>H</strong> as follows:
+</p>
+<p class="Indent1"><img src="noloc_eq_gelslf31.gif"></p>
+
+<p class="Body">The following equation gives your fit model.
+</p>
+<p class="Indent1"><em>y</em><sub>i</sub> = <em>b</em><sub>0</sub>f<sub>0</sub>(<em>x</em>) + <em>b</em><sub>1</sub>f<sub>1</sub>(<em>x</em>) + &#8230; + <em>b</em><sub>k&#8211;1</sub>f<sub>k&#8211;1</sub>(<em>x</em>)</p>
+
+
+
+
+</body>
+
+</html>

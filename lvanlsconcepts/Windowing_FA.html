@@ -1,0 +1,64 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Windowing and FFT</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-2955EBE9-2AFC-4FE4-B440-EC17DF6CB1F0" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Windowing and FFT</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 
+            		 In practical applications, you obtain only a finite number of samples of the signal. The fast Fourier transform (FFT) assumes
+            that this time record repeats. If you have an integral number of cycles in the time record, the repetition is smooth at the
+            boundaries. However, in practical applications, you usually have an incomplete number of cycles. In the case of an incomplete
+            number of cycles, the repetition results in discontinuities at the boundaries. These artificial discontinuities were not originally
+            present in the signal and result in a smearing or leakage of energy from the actual frequency to all other frequencies. This
+            phenomenon is spectral leakage. The amount of leakage depends on the amplitude of the discontinuity, with a larger amplitude
+            causing more leakage. 
+            	 
+         </p> 
+         	 
+         <p>A signal that is exactly periodic in the time record is composed of sine waves with exact integral cycles within the time
+            record. Such a perfectly periodic signal has a spectrum with energy contained in exact frequency bins. 
+            	 
+         </p> 
+         	 
+         <p>A signal that is not periodic in the time record has a spectrum with energy split or spread across multiple frequency bins.
+            The FFT spectrum models the time domain as if the time record repeated itself forever. It assumes that the analyzed record
+            is just one period of an infinitely repeating periodic signal. 
+            	 
+         </p> 
+         	 
+         <p>Because the amount of leakage is dependent on the amplitude of the discontinuity at the boundaries, you can use windowing
+            to reduce the size of the discontinuity and reduce spectral leakage. Windowing consists of multiplying the time-domain signal
+            by another time-domain waveform, known as a window, whose amplitude tapers gradually and smoothly towards zero at edges. The
+            result is a windowed signal with very small or no discontinuities and therefore reduced spectral leakage. You can choose from
+            among many different types of windows. The one you choose depends on the application and some prior knowledge of the signal
+            you are analyzing. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="FrequencyAnalysis.html" shape="rect">Frequency Analysis</a></div>
+         </div>
+         <div class="relinfo relconcepts"><strong>Related concepts</strong><br clear="none"><div><a href="Choosing_Smoothing_Window.html" shape="rect">Choosing the Correct Smoothing Window</a></div>
+            <div><a href="Spectral_Leakage.html" shape="rect">Spectral Leakage</a></div>
+            <div><a href="Smoothing_Windows.html" shape="rect">Smoothing Windows</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 6100Ecommhlp -->
+
+<title>Writing Front Panel Data Using the dstp, opc, ftp, http, or file Protocol</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Writing Front Panel Data Using the dstp, opc, ftp, http, or file Protocol</h1>
+<p class="Body"><!--begin parent:lvhowto.chm-Controlling_a_Front_Panel.html-->Using <a href="../lvconcepts/SV_Binding_SVs.html">front panel data binding</a> to control a front panel control remotely through the <a href="../lvconcepts/NI_PSP.html">Shared Variable Engine</a> provides faster and more reliable data transmission than <span class="Monospace">dstp</span> as well as seamless connections to <a href="../lvconcepts/NI_PSP.html">shared variables</a> and <a href="../lvconcepts/NI_PSP.html">NI Publish-Subscribe Protocol (NI-PSP)</a> data items.<!--end parent--></p>
+
+<p class="Body">Complete the following steps to write front panel <a href="../lvconcepts/Using_DataSocket_Technology.html#Data_Formats_Supported_by_the_DataSocket_VI_and_Functions">data</a> using the <span class="Monospace">opc</span>, <span class="Monospace">ftp</span>, or <span class="Monospace">http</span> protocols on Windows, and the <span class="Monospace">dstp</span> and <span class="Monospace">file</span> protocols on all LabVIEW-supported platforms.</p>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td>
+<strong>Note</strong>&nbsp;&nbsp;You must install the DataSocket Server to write front panel data using the <span class="Monospace">dstp</span> protocol. Writing data from the front panel might result in data loss. If you want to write all front panel data instead of only the most recent data, use the <a href="../lvcomm/DataSocket_Write.html">DataSocket Write</a> function to <a href="OpenClose_DS_Conct_Prog.html">write live data programmatically</a>.</td></tr></table>
+
+<ol>
+<li>If you are using a <span class="Monospace">dstp</span> connection, launch and configure the DataSocket Server. If you are using an <span class="Monospace">opc</span>, <span class="Monospace">ftp</span>, <span class="Monospace">http</span>, or <span class="Monospace">file</span> connection, skip to step 2. Launch the DataSocket Server from the <span class="Monospace">National Instruments</span> directory.</li>
+<li>Right-click a front panel object and select <strong>Properties</strong> from the shortcut menu to display the <a href="../lvhowto/ConfigControlsandIndicator.html">Properties</a> dialog box for the object.</li>
+<li>On the <strong>Data Binding</strong> page of the <strong>Properties</strong> dialog box, <!--begin child:lvhowto.chm-Controlling_a_Front_Panel.html-->select <strong>DataSocket</strong> from the <strong>Data Binding Selection</strong> pull-down menu.</li>
+<li>On Windows, enter an <span class="Monospace">opc</span>, <span class="Monospace">ftp</span>, or <span class="Monospace">http</span> <a href="../lvconcepts/Using_DataSocket_Technology.html#Specifying_a_URL">URL</a>, or on all LabVIEW-supported platforms enter a <span class="Monospace">file</span> or <span class="Monospace">dstp</span> <strong>URL</strong> in the <strong>Path</strong> text box. You also can select <strong>DSTP Server</strong> or <strong>File System</strong> on all LabVIEW-supported platforms from the <strong>Browse</strong> pull-down menu to navigate to a URL.</li><!--end child-->
+<!--begin child:lvhowto.chm-Controlling_a_Front_Panel.html-->
+<li>Select <strong>Read/Write</strong> from the <strong>Access Type</strong> pull-down menu.</li>
+<li>Click the <strong>OK</strong> button.</li><!--end child-->
+<li>On the block diagram, <a href="../lvhowto/Creating_While_Loops.html">create a While Loop</a> to configure the VI to run continuously.</li>
+<li>Run the VI. LabVIEW writes the data from the front panel object to the server destination you entered in the URL. While the VI is running, if the connection to the DataSocket Server is successful, a small green indicator appears next to the front panel object on the VI. If the connection is not successful, a small red indicator appears. Before LabVIEW attempts to connect to the server, a small transparent indicator appears. A status message also appears if you move the cursor over the indicator. You can hide this indicator by right-clicking the front panel object and selecting <strong>Visible Items&#0187;DataSocket LED</strong> from the shortcut menu when the VI is not running. You also can use the <a href="../lvprop/Ctrl_DatSockLEDVis.html">DataSocket:LED Visible</a> property to hide the indicator programmatically.</li>
+</ol>
+
+
+
+</body>
+</html>

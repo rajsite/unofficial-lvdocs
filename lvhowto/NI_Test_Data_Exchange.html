@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 5600Efileiohlp -->
+<title>TDM/TDMS Files</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>TDM/TDMS Files</h1>
+
+<p class="Body">To reduce the need to design and maintain your own file format for measurement data, National Instruments defines the flexible technical data management (TDM) data model, which is accessible through LabVIEW, LabWindows&trade;/CVI&trade;, Measurement Studio, SignalExpress, and DIAdem. The TDM data model also enables you to write well-organized data regardless of which third-party products you are using.</p>
+
+<p class="Body">The TDM data model supports the following two file formats:</p>
+
+<ul>
+<li><span class="Platform">(Windows) </span><strong>TDM</strong>&#8212;The TDM file format saves the raw data that the measurement hardware acquires and the meta data in separate files. Meta data can be the name and unit of a measurement channel, the name of the test engineer, and other information. The meta data is in the XML format with the <span class="Monospace">.tdm</span> extension. The raw data is in a compact binary format with the <span class="Monospace">.tdx</span> extension.</li>
+<li><strong>TDM Streaming (TDMS)</strong>&#8212;The TDMS file format saves both the raw data and the meta data in the binary format in one file with the <span class="Monospace">.tdms</span> extension.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;When creating or opening a <span class="Monospace">.tdms</span> file, LabVIEW might automatically create a <span class="Monospace">.tdms_index</span> file. LabVIEW uses the <span class="Monospace">.tdms_index</span> file to speed up random access to the <span class="Monospace">.tdms</span> file. The <span class="Monospace">.tdms_index</span> file is optional in TDMS applications. If you have disk space limitations, configure the TDMS Open function to stop generating this file.</td>
+</tr>
+</table>
+</li>
+</ul>
+
+<p class="Body">The TDM data model structures the meta data into groups and channels, and adds user-defined properties. You can identify whether an element in a file is a group, a channel, or a property.</p>
+
+<h3>Related Information</h3>
+<p class="Body"><a href="../lvconcepts/fileio_tdms_model.html">TDM Data Model</a></p>
+<p class="Body"><a href="../lvconcepts/fileio_tdms_tdm.html">TDM versus TDMS</a></p>
+<p class="Body"><a href="javascript:WWW(WWW_IntegrateTDMS)">Integrating TDMS in Third-Party Products</a></p>
+</body>
+</html>

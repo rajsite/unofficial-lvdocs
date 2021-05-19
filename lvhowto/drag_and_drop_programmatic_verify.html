@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Step 5: Verify that the Drop Target Can Accept the Drag Data</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Step 5: Verify that the Drop Target Can Accept the Drag Data</h1>
+<p class="Body">To determine the expected result of a drop operation and to indicate the result to the user, verify that the drop target can accept the drag data. By default, LabVIEW changes the cursor to indicate that if the drop occurs now, the drop target updates with the drag data.</p>
+<h2>What to Use</h2>
+<p class="Body">Use the following block diagram objects to verify that the drop target can accept the drag data:</p>
+<table class="Usage">
+	<col class="Object"> 
+	<col class="Spacer"> 
+	<col class="Object"> 
+	<tr>
+	<td><a href="../glang/Search_1D_Array.html">Search 1D Array</a></td>
+		<td></td>
+		<td><a href="../glang/Not_Equal.html">Not Equal?</a></td>
+	</tr>
+	<tr>
+		<td><img src="noloc_bd_searcharray.gif"></td>
+		<td></td>
+		<td><img src="noloc_bd_notequal.gif"></td>
+	</tr>
+	<tr>
+	<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object337);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object337);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object473);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object473);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+	</tr>
+</table>
+<h2>What to Do</h2>
+<p class="Body">Create the following block diagram to verify that the drop target can accept the drag data.</p>
+<img src="loc_bd_dragdropverify.gif">
+<p class="Body">The following list describes important details about the previous block diagram.</p>
+<table>
+	<tr>
+		<td><img src="noloc_eps_callout_1.gif"></td>
+		<td>The <strong>Available Data Names</strong> parameter provides an array of strings containing the custom data names you pass to the Start Drag method in the Mouse Leave event.</td>
+	</tr>
+	<tr>
+		<td><img src="noloc_eps_callout_2.gif"></td>
+		<td>Search the <strong>Available Data Names</strong> for the custom data name you want the drop target to accept. If the Search 1D Array function finds the data name, the drag data is acceptable.</td>
+	</tr>
+</table>
+
+<p class="Body">After you verify that the drop target can accept the drag data, <a href="drag_and_drop_programmatic_update.html">update the drop target with the drag data</a>.</p>
+
+</body>
+</html>

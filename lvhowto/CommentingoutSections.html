@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 3500Edebugginghlp -->
+
+<title>Disabling Sections of Block Diagrams</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Disabling Sections of Block Diagrams
+</h1>
+<!-- begin parent = ../lvconcepts/Running_and_Debugging_VIs.xml -->
+<p class="Body">You can run a VI with a section of the block diagram disabled, similar to commenting out a section of code in a text-based programming language. 
+</p>
+<!-- end parent = ../lvconcepts/Running_and_Debugging_VIs.xml  -->
+
+<p class="Body">Complete the following steps to run a VI with a section of the block diagram disabled.
+</p>
+<ol>
+
+<li>Place a <a href="../glang/Diagram_Disable_Structure.html">Diagram Disable</a> structure around the nodes you want to disable. The default subdiagram is <strong>Disabled</strong>.
+</li>
+<!-- begin child: ../glang/Diagram_Disable_Structure.html -->
+<li>In the <strong>Enabled</strong> subdiagram, include any code that you want to enable in place of the code in the <strong>Disabled</strong> subdiagram. </li>
+<li>Run the VI. Notice that only the code in the <strong>Enabled</strong> subdiagram is run.</li>
+</ol>
+
+<p class="Body">To execute the section of the block diagram you disabled, select the <strong>Disabled</strong> subdiagram, right-click the structure border, and select <strong>Remove Diagram Disable Structure</strong> from the shortcut menu.</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;When you select <strong>Remove Diagram Disable Structure</strong>, LabVIEW deletes objects in all subdiagrams except for the visible subdiagram.</td></tr></table>
+<!-- end child: ../glang/Diagram_Disable_Structure.html -->
+<p class="Body">Refer to the Diagram Disable Structure VI in the <span class="monospace">labview\examples\Structures\Disable Structures</span> directory for an example of using the Diagram Disable structure.</p>
+
+<p class="Body"><a href="javascript:openVI('examples%5C%5CStructures%5C%5CDisable%20Structures%5C%5CDiagram%20Disable%20Structure.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(3154);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</p>
+
+ 
+
+
+</body>
+</html>

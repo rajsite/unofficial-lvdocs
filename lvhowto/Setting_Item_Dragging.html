@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+<title>Configuring Run-Time Drag-and-Drop Behavior for Text-Based Controls</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Configuring Run-Time Drag-and-Drop Behavior for Text-Based Controls</h1>
+<p class="Body">To enable users to drag and drop data between text-based controls in a VI, such as string, path, listbox, multicolumn listbox, and tree controls, you must configure drag-and-drop behavior for those controls. You can configure the drag-and-drop behavior of text-based controls in the following ways:</p>
+<ul>
+	<li><a href="#dragging">Allow dragging from the control during run time.</a></li>
+	<li><a href="#dropping">Allow dropping in the control during run time.</a></li>
+	<li><a href="#movecopy">Select between moving and copying data from the control.</a></li>
+	<li><a href="#other">Allow dropping in controls other than the control from which the drag originated.</a></li>
+	<li><a href="#dragparent">Allow dragging of parent items in tree controls.</a></li>
+	<li><a href="#dropparent">Allow items dropped in tree controls to drop as parent items.</a></li>
+</ul>
+<p class="Body">Enable multiple drag-and-drop settings simultaneously to configure specific behavior for text-based controls. For example, to enable dragging from a listbox to a tree control, you must allow dragging on the listbox, allow data from the listbox to drop in controls other than the listbox, and allow dropping in the tree control.</p>
+<h2><a name="dragging"></a>Allow Dragging from the Control during Run Time</h2>
+					<table class="Bordered">
+						<tr>
+							<td class="Bordered"><strong>Control</strong></td>
+							<td class="Bordered"><strong>Shortcut Menu Item</strong></td>
+							<td class="Bordered"><strong>Property</strong></td>
+						</tr>
+						<tr>
+							<td class="Bordered">String</td>
+							<td class="Bordered"><strong>Advanced&#0187;Allow Dragging</strong></td>
+							<td class="Bordered"><a href="../lvprop/String_Allow_Dragging.html">String Properties: Allow Dragging</a></td>
+						</tr>
+						<tr>
+							<td class="Bordered">Listbox</td>
+							<td class="Bordered"><strong>Drag and Drop&#0187;Allow Dragging</strong></td>
+							<td class="Bordered"><a href="../lvprop/ListBox_Allow_ItemDrag.html">Listbox Properties: Drag/Drop:Allow Dragging</a></td>
+						</tr>
+						<tr>
+							<td class="Bordered">Multicolumn Listbox</td>
+							<td class="Bordered"><strong>Drag and Drop&#0187;Item Dragging&#0187;Allow Dragging</strong></td>
+							<td class="Bordered"><a href="../lvprop/MultColLB_Allow_Item_Drag.html">Multicolumn Listbox Properties: Drag/Drop:Allow Dragging</a></td>
+						</tr>
+						<tr>
+							<td class="Bordered">Tree</td>
+							<td class="Bordered"><strong>Drag and Drop&#0187;Allow Dragging</strong></td>
+							<td class="Bordered"><a href="../lvprop/TC_Allow_Item_Dragging.html">Tree Properties: Drag/Drop:Allow Dragging</a></td>
+						</tr>
+					</table>
+<h2><a name="dropping"></a>Allow Dropping in the Control during Run Time</h2>
+					<table class="Bordered">
+						<tr>
+							<td class="Bordered"><strong>Control</strong></td>
+							<td class="Bordered"><strong>Shortcut Menu Item</strong></td>
+							<td class="Bordered"><strong>Property</strong></td>
+						</tr>
+						<tr>
+							<td class="Bordered">String</td>
+							<td class="Bordered"><strong>Advanced&#0187;Allow Dropping</strong></td>
+							<td class="Bordered"><a href="../lvprop/String_Allow_Drop.html">String Properties: Allow Dropping</a></td>
+						</tr>
+						<tr>
+							<td class="Bordered">Path</td>
+							<td class="Bordered"><strong>Advanced&#0187;Allow Dropping</strong></td>
+							<td class="Bordered"><a href="../lvprop/Path_Allow_Drop.html">Path Properties: Allow Dropping</a></td>
+						</tr>
+						<tr>
+							<td class="Bordered">Listbox</td>
+							<td class="Bordered"><strong>Drag and Drop&#0187;Allow Dropping</strong></td>
+							<td class="Bordered"><a href="../lvprop/ListBox_Allow_Dropping.html">Listbox Properties: Drag/Drop:Allow Dropping</a></td>
+						</tr>
+						<tr>
+							<td class="Bordered">Multicolumn Listbox</td>
+							<td class="Bordered"><strong>Drag and Drop&#0187;Allow Dropping</strong></td>
+							<td class="Bordered"><a href="../lvprop/MultColLB_Allow_Dropping.html">Multicolumn Listbox Properties: Drag/Drop:Allow Dropping</a></td>
+						</tr>
+						<tr>
+							<td class="Bordered">Tree</td>
+							<td class="Bordered"><strong>Drag and Drop&#0187;Item Dragging&#0187;Allow Dropping</strong></td>
+							<td class="Bordered"><a href="../lvprop/TreeControl_Allow_Dropping.html">Tree Properties: Drag/Drop:Allow Dropping</a></td>
+						</tr>
+					</table>
+<h2><a name="movecopy"></a>Select between Moving and Copying Data from the Control</h2>
+					<table class="Bordered">
+						<tr>
+							<td class="Bordered"><strong>Control</strong></td>
+							<td class="Bordered"><strong>Shortcut Menu Item</strong></td>
+							<td class="Bordered"><strong>Property</strong></td>
+						</tr>
+						<tr>
+							<td class="Bordered">Listbox</td>
+							<td class="Bordered"><ul>
+																<li><strong>Drag and Drop&#0187;Drag Mode&#0187;Move Only</strong></li>
+																<li><strong>Drag and Drop&#0187;Drag Mode&#0187;Copy Only</strong></li>
+																<li><strong>Drag and Drop&#0187;Drag Mode&#0187;Copy or Move</strong></li>
+																</ul></td>
+							<td class="Bordered"><a href="../lvprop/ListBox_Drag_Mode.html">Listbox Properties: Drag/Drop:Drag Mode</a></td>
+						</tr>
+						<tr>
+							<td class="Bordered">Multicolumn Listbox</td>
+							<td class="Bordered"><ul>
+																<li><strong>Drag and Drop&#0187;Drag Mode&#0187;Move Only</strong></li>
+																<li><strong>Drag and Drop&#0187;Drag Mode&#0187;Copy Only</strong></li>
+																<li><strong>Drag and Drop&#0187;Drag Mode&#0187;Copy or Move</strong></li>
+																</ul></td>
+							<td class="Bordered"><a href="../lvprop/MultColLB_Drag_Mode.html">Multicolumn Listbox Properties: Drag/Drop:Drag Mode</a></td>
+						</tr>
+						<tr>
+							<td class="Bordered">Tree</td>
+							<td class="Bordered"><ul>
+																<li><strong>Drag and Drop&#0187;Drag Mode&#0187;Move Only</strong></li>
+																<li><strong>Drag and Drop&#0187;Drag Mode&#0187;Copy Only</strong></li>
+																<li><strong>Drag and Drop&#0187;Drag Mode&#0187;Copy or Move</strong></li>
+																</ul></td>
+							<td class="Bordered"><a href="../lvprop/TreeControl_Drag_Mode.html">Tree Properties: Drag/Drop:Drag Mode</a></td>
+						</tr>
+					</table>
+<h2><a name="other"></a>Allow Dropping in Controls Other Than the Control from Which the Drag Originated</h2>
+					<table class="Bordered">
+						<tr>
+							<td class="Bordered"><strong>Control</strong></td>
+							<td class="Bordered"><strong>Shortcut Menu Item</strong></td>
+							<td class="Bordered"><strong>Property</strong></td>
+						</tr>
+						<tr>
+							<td class="Bordered">Listbox</td>
+							<td class="Bordered"><strong>Drag and Drop&#0187;Item Dragging&#0187;Allow Drag Drop Outside Control</strong></td>
+							<td class="Bordered"><a href="../lvprop/ListBox_AlwDrgDrpOutCtrl.html">Listbox Properties: Drag/Drop:Allow Drag and Drop Outside Control</a></td>
+						</tr>
+						<tr>
+							<td class="Bordered">Multicolumn Listbox</td>
+							<td class="Bordered"><strong>Drag and Drop&#0187;Item Dragging&#0187;Allow Drag Drop Outside Control</strong></td>
+							<td class="Bordered"><a href="../lvprop/MultColLBAlwDrgDrpOutCtl.html">Multicolumn Listbox Properties: Drag/Drop:Allow Drag and Drop Outside Control</a></td>
+						</tr>
+						<tr>
+							<td class="Bordered">Tree</td>
+							<td class="Bordered"><strong>Drag and Drop&#0187;Item Dragging&#0187;Allow Drag Drop Outside Control</strong></td>
+							<td class="Bordered"><a href="../lvprop/TC_AlwDragDropOutCtrl.html">Tree Properties: Drag/Drop:Allow Drag and Drop Outside Control</a></td>
+						</tr>
+					</table>
+<h2><a name="dragparent"></a>Allow Dragging of Parent Items in Tree Controls</h2>
+					<table class="Bordered">
+						<tr>
+							<td class="Bordered"><strong>Control</strong></td>
+							<td class="Bordered"><strong>Shortcut Menu Item</strong></td>
+							<td class="Bordered"><strong>Property</strong></td>
+						</tr>
+						<tr>
+							<td class="Bordered">Tree</td>
+							<td class="Bordered"><strong>Drag and Drop&#0187;Item Dragging&#0187;Allow Dragging of Parent Items</strong></td>
+							<td class="Bordered"><a href="../lvprop/TreeCtrl_Drag_Hierarchy.html">Tree Properties: Drag/Drop:Allow Dragging of Parent Items</a></td>
+						</tr>
+					</table>
+					<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If you drag a parent item with child items from a tree control to another text-based control, only the parent item drops. Parent and child items drop only if you drop the items in another tree control.</td>
+</tr>
+</table>
+<h2><a name="dropparent"></a>Allow Items Dropped in Tree Controls to Drop as Parent Items</h2>
+					<table class="Bordered">
+						<tr>
+							<td class="Bordered"><strong>Control</strong></td>
+							<td class="Bordered"><strong>Shortcut Menu Item</strong></td>
+							<td class="Bordered"><strong>Property</strong></td>
+						</tr>
+						<tr>
+							<td class="Bordered">Tree</td>
+							<td class="Bordered"><strong>Drag and Drop&#0187;Item Dropping&#0187;Allow Dropping Between Items</strong></td>
+							<td class="Bordered"><a href="../lvprop/TreeCtrl_AlowDragBtwenItms.html">Tree Properties: Drag/Drop:Allow Dropping Between Items</a></td>
+						</tr>
+					</table>
+</body>
+</html>

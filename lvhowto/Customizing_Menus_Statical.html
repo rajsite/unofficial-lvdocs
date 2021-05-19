@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 5900Econfigvihlp -->
+
+<title>Customizing Menus Statically</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Customizing Menus Statically
+</h1>
+<p class="Body">Complete the following steps to customize a menu statically.
+</p>
+<ol>
+
+<li>Select <strong>Edit&#0187;Run-Time Menu</strong> to display the <a href="../lvdialog/Menu_Editor_Dialog_Box.html">Menu Editor</a> dialog box.
+</li>
+<li>Select <strong>Custom</strong> from the <strong>Menu Type</strong> pull-down menu.
+</li>
+<li>In the <strong>Item Type</strong> pull-down menu, select <strong>User Item</strong>. To add LabVIEW default menu items to a custom menu, select <a href="../lvdialog/Application_Item_Tags.html">Application Item</a> and select the LabVIEW menu items you want.
+</li>
+</ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;If you want to use LabVIEW default <a href="Keyboard_Shortcuts.html">keyboard shortcuts</a> in a custom menu, you must add their corresponding default menu items to the custom menu. However, the default keyboard shortcuts for cutting an object, copying an object, pasting an object, displaying the Context Help window, locking the Context Help window, and displaying the LabVIEW Help are included in the custom menu by default.</td></tr></table>
+<ol start="4">
+<li>In the <strong>Item Name</strong> text box, type a menu item name. The menu item name appears in the <strong>Preview</strong> field and the <strong>Item Tag</strong> field. You can modify the tag name to give the menu item a unique identifier. The block diagram uses the tag name to identify the menu item programmatically. Menu item tags can have the same name as menu item names.
+<br><br>
+<span class="Platform">(Windows)</span> In the <strong>Item Name</strong> text box, enter an underscore (<span class="Monospace">_</span>) in front of the letter you want the user to press with the &lt;Alt&gt; key to open the menu from the keyboard. If the item name begins with two underscores (<span class="Monospace">__</span>), LabVIEW removes the leading underscores when the item name appears on the menu but includes all other underscores you entered. Use this feature when menu items contain underscore characters but you do not want any characters to be underlined.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;If you enter two underscores at the beginning of the item name, you prevent LabVIEW from assigning shortcut keys to the &lt;Alt&gt; key, but you can still assign a shortcut key to the item name in the <strong>Shortcut</strong> text box.</td></tr></table>
+</li>
+<li>Place a checkmark in the <strong>Enabled</strong> checkbox to make the item available to the user. Removing the checkmark dims the menu item, making it unavailable to the user.
+</li>
+<li>Place a checkmark in the <strong>Checked</strong> checkbox to cause a checkmark to appear next to the menu item. A checkmark is useful for operations that continuously run until the user removes the checkmark from the menu item.
+</li>
+<li>Create a keyboard shortcut in the <strong>Shortcut</strong> text box. You can use the &lt;F1&gt; to &lt;F24&gt; function keys without using the &lt;Ctrl&gt; key as a modifier key. You must use the &lt;Ctrl&gt; menu key in addition to any other key. <span class="Platform">(macOS)</span> Use the &lt;Command&gt; key. <span class="Platform">(Linux)</span> Use the &lt;Alt&gt; key.</li></ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;<!--begin parent: ../lvconcepts/LabVIEW_Environment.xml-->LabVIEW does not respond to keyboard shortcuts for dimmed menu items.<!--end parent: ../lvconcepts/LabVIEW_Environment.xml--> <span class="Platform">(macOS)</span> Keyboard shortcuts for the function keys work only if the function keys are not assigned as shortcut keys for Expos&#233;.</td></tr></table>
+<ol start="8">
+<li>Click the blue plus button <img src="noloc_env_bluplus.gif"> on the toolbar to add more items to the custom menu. Click the red <span class="MONOSPACE">X</SPAN> button <img src="noloc_env_redx.gif"> to delete items.
+</li>
+<li>Select <strong>File&#0187;Save As</strong> to save the menu file. In the dialog box that appears, name the menu and click the <strong>OK</strong> button. When you load the VI, the customized menu automatically loads.</li>
+<li>Use a <a href="Menu_Selection_Handling.html">Case Structure</a> to execute each menu item.
+</li>
+</ol>
+
+<p class="Body">You can arrange the menu hierarchy in the <strong>Menu Editor</strong> dialog box by clicking the arrow buttons on the toolbar, using the hierarchy manipulation options in the <strong>Edit</strong> menu, or by dragging and dropping. You can expand or collapse hierarchies by clicking the submenu glyphs or by choosing from the expand or collapse options in the <strong>Edit</strong> menu. To add separators, select <strong>Separator</strong> in the <strong>Item Type</strong> pull-down menu.
+</p>
+
+
+
+
+</body>
+</html>

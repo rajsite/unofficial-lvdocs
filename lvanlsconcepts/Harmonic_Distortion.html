@@ -1,0 +1,74 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Harmonic Distortion</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-F147393F-9838-4D4D-9639-C118AE3EED34" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Harmonic Distortion</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 When a signal <em>x</em>(<em>t</em>) of a particular frequency <em>f</em><sub>1</sub> passes through a nonlinear system, the output of the system consists of <em>f</em><sub>1</sub> and its harmonics. The following expression describes the relationship between <em>f</em><sub>1</sub> and its harmonics. 
+            	 
+         </p> 
+         	 
+         <p> <em>f</em><sub>1</sub>, <em>f</em><sub>2</sub> = 2<em>f</em><sub>1</sub>, <em>f</em><sub>3</sub> = 3<em>f</em><sub>1</sub>, <em>f</em><sub>4</sub> = 4<em>f</em><sub>1</sub>, …, <em>f</em><sub><em>n</em></sub> = <em>n</em><em>f</em><sub>1</sub> 
+            	 
+         </p> 
+         	 
+         <p>The degree of nonlinearity of the system determines the number of harmonics and their corresponding amplitudes the system
+            generates. In general, as the nonlinearity of a system increases, the harmonics become higher. As the nonlinearity of a system
+            decreases, the harmonics become lower. 
+            	 
+         </p> 
+         	 
+         <p>The following figure shows an example of a nonlinear system where the output <em>y</em>(<em>t</em>) is the cube of the input signal <em>x</em>(<em>t</em>). 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-F147393F-9838-4D4D-9639-C118AE3EED34__IMAGE_38DEA8AC8E574789AD75861C4CDC9F29" shape="rect">
+            <!-- --></a><img id="GUID-F147393F-9838-4D4D-9639-C118AE3EED34__IMAGE_38DEA8AC8E574789AD75861C4CDC9F29" src="GUID-06E854E8-3EB8-416E-AFCC-927B6A18C583-help-web.png"><br clear="none"> 
+         	 
+         <p>The following equation defines the input for the system shown in the previous figure. 
+            	 
+         </p> 
+         	 
+         <p><em>x</em>(<em>t</em>) = cos(&#969;<em>t</em>)
+            	 
+         </p> 
+         	 
+         <p>The following equation defines the output of the system shown in the previous figure. 
+            	 
+         </p> 
+         	 
+         <p><em>x</em><sup>3</sup>(<em>t</em>) = 0.5cos(&#969;<em>t</em>) + 0.25[cos(&#969;<em>t</em>) + cos(3&#969;<em>t</em>)]
+            	 
+         </p> 
+         	 
+         <p>In the previous equation, the output contains not only the input fundamental frequency &#969; but also the third harmonic 3&#969;. 
+            	 
+         </p> 
+         	 
+         <p>A common cause of harmonic distortion is clipping. Clipping occurs when a system is driven beyond its capabilities. Symmetrical
+            clipping results in odd harmonics. Asymmetrical clipping creates both even and odd harmonics. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Distortion_Meas.html" shape="rect">Distortion Measurements</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

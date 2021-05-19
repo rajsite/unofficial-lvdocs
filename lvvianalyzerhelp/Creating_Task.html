@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Creating and Configuring a VI Analyzer Task</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Creating and Configuring a VI Analyzer Task</h1>
+<!--begin child ../lvvianalyzerhelp/Analyzing _Open_VI.html-->
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;The VI Analyzer functionality this topic describes is available only if you install and activate the LabVIEW VI Analyzer Toolkit or if the <span class="Monospace">LabVIEW Data\VI Analyzer Tests</span> directory contains tests.</td>
+</tr>
+</table>
+<!--end child ../lvvianalyzerhelp/Analyzing _Open_VI.html-->
+<p class="Body">A VI Analyzer task contains information about the tests you want to run and the VIs you want to analyze. Complete the following steps to create a VI Analyzer task.</p>
+
+<ol>
+<li>From the <strong>Tools</strong> menu, select <strong>VI Analyzer&#0187;Analyze VIs</strong>.
+</li>
+<li>In the <a href="Select_Task_DB.html">VI Analyzer - Select Task</a> dialog box, select the <strong>Start a new VI Analyzer task</strong> option and click the <strong>Next</strong> button.
+</li>
+<li>In the <a href="Select_VIs_DB.html">VI Analyzer - Select VIs</a> dialog box, click the <strong>Add Top-level Item</strong> button. Navigate to the LLB, folder, or VI you want to analyze. To select an LLB, double-click the <a href="../lvdialog/File_Dialog_Box.html">VI folder icon</a> to add all VIs contained in the LLB to the VI Analyzer task.
+</li>
+<li>If you selected a folder or LLB to analyze, expand the folders in the <strong>Items to Analyze</strong> hierarchy. Use the <strong>Include/Exclude Item(s)</strong> button to specify the exact VIs you want in the VI Analyzer task. 
+</li>
+<li>Click the <strong>Next</strong> button.
+The <a href="Select_Tests_DB.html">VI Analyzer - Select Tests</a> dialog box allows you to select the tests you want to run. For each test, you can configure settings to determine specific criteria for passing or failing the test. Expand items in the <strong>Tests</strong> hierarchy to see <a href="Test_Descriptions.html">all available VI Analyzer tests</a>.
+</li>
+<li>Select the tests and settings you want for the analysis and click the <strong>Next</strong> button.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="tip.gif"></td>
+<td><strong>Tip</strong>&#160;&#160;Right-click in the <strong>Tests</strong> hierarchy and choose <strong>Deselect all tests</strong> or <strong>Select all tests</strong> to deselect or select all tests.</td>
+</tr>
+</table>
+</li>
+<li>Change the settings in the <a href="Exclude_Tests_DB.html">VI Analyzer - Exclude Tests from VIs</a> dialog box if you want to <a href="Excluding_Tests.html">exclude specific tests from specific VIs</a>. 
+</li>
+<li><a href="Saving_CFG.html">Save the configuration file</a> if you want to reuse the settings with future VI Analyzer tasks.
+</li>
+<li>Click the <strong>Analyze</strong> button. The <strong>Analyzing VIs</strong> dialog box displays the progress of the VI Analyzer task.
+</li>
+</ol>
+<p class="checkFile lvvianalyzer Body">Refer to the <em>Creating and Configuring a VI Analyzer Task</em> section of the <a href="javascript:AcrobatLink('../manuals/VIAnalyzer_User_Guide.pdf');">LabVIEW VI Analyzer Toolkit User Guide</a> for more information about VI Analyzer tasks.
+</p>
+
+</body>
+</html>

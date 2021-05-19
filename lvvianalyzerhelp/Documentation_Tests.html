@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Documentation Tests (VI Analyzer Toolkit)</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Documentation Tests (VI Analyzer Toolkit)</h1>
+<!--begin child ../lvvianalyzerhelp/Block_Diagram_Tests.html-->
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;The VI Analyzer tests are available only if you install and activate the LabVIEW VI Analyzer Toolkit. Refer to the <a href="javascript:WWW(WWW_Analyzer)">NI website</a> for more information about the VI Analyzer Toolkit.</td>
+</tr>
+</table> 
+<!--end child ../lvvianalyzerhelp/Block_Diagram_Tests.html-->
+<p class="Body">Tests in the <span class="DNL">Documentation</span> category of <a href="Test_Descriptions.html">VI Analyzer tests</a> check for documentation issues within VIs. The VI Analyzer groups the <span class="DNL">Documentation</span> tests into the <span class="DNL">Developer</span> and <span class="DNL">User</span> subcategories.
+</p>
+
+<h2><span class="DNL">Developer</span></h2>
+<p class="Body">The tests in the following list ensure that VIs contain documentation that benefits other developers.
+</p>
+<ul>
+<li><strong><span class="DNL">Approved Bookmark Tags</span></strong>&#8212;Verifies that the bookmarks used in the code are from the approved list specified in the configuration for this test.
+</li>
+<li><strong><span class="DNL">Comment Usage</span></strong>&#8212;Checks whether the block diagram contains a minimum user-specified number of comments. The test also can check whether all subdiagrams of multiframe structures, such as Case, Event, and sequence structures, contain at least one comment.
+</li>
+<li><strong><span class="DNL">Label Call Library Nodes</span></strong>&#8212;Checks <a href="../glang/Call_Library_Function.html">Call Library Function Nodes</a> on the block diagram for labels. You can improve the readability of a VI by using the label of a Call Library Function Node to describe the function you are calling in a shared library. The test fails if a Call Library Function Node has no label or the default label.
+</li>
+<li><strong><span class="DNL">Revision History</span></strong>&#8212;Checks for revision history comments. Clear the revision history when you complete a VI so users cannot see developer comments.
+</li>
+</ul>
+<h2><span class="DNL">User</span></h2>
+<p class="Body">The tests in the following list ensure that VIs contain documentation that benefits users.
+</p>
+<ul>
+<li><strong><span class="DNL">Spell Check</span></strong>&#8212;Spell checks VIs, front panels, and block diagrams. In the configuration settings, use the <strong>User Dictionary</strong> page to add words to a list of acceptable words for all VI Analyzer tasks. Use the <strong>Project Dictionary</strong> page to specify a list of acceptable words to use for the current project. 
+</li>
+<li><strong><span class="DNL">VI Documentation</span></strong>&#8212;Checks for text in the VI description, control description, and/or tip strip fields on all controls. 
+</li>
+</ul>
+
+
+</body>
+</html>

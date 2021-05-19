@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<title>Testing and Debugging a Web Service on the Application Web Server (Real-Time, Windows)</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+</head>
+
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Testing and Debugging a Web Service on the Application Web Server (Real-Time, Windows)</h1>
+
+
+<p class="Body">Before you publish a Web service to a target, you might want to test that clients can invoke and communicate with HTTP method VIs and static content as expected. If you notice unexpected behavior or errors, you can correct them and then test the Web service again. </p>
+	
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;For more information about concepts in this topic, refer to the <a href="../lvconcepts/WebServices.html">Web services introduction</a> and <a href="../lvhowto/Build_Web_Service.html">tutorial</a>. LabVIEW Web services are available only in the LabVIEW Full Development System and the LabVIEW Professional Development System.</td>
+</tr>
+</table>
+	
+
+<h2>Workflow for Debugging a Web Service</h2>
+<p class="Body">Testing and debugging a Web service is typically an iterative process you complete in the LabVIEW project that contains the Web service files. Complete the following steps to test and debug a Web service on the Application Web Server:</p>
+	
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;In this topic, you test and debug a Web service on the Application Web Server. You can also test your Web service on the NI Web Server, refer to <a href="../lvhowto/ws_testing.html">Testing and Debugging a Web Service on the NI Web Server</a>.</td>
+</tr>
+</table>	
+	
+	
+
+<ol>
+<li>If the Web service is part of a stand-alone application, open and run any startup VIs for the application from the project. </li>
+<li><span class="Platform">(Windows)</span> Right-click the Web service project item <img src="noloc_env_ws_node.gif"> under <strong>My Computer</strong>�in the project tree and select�<strong>Application Web Server&#0187;Start (Debug Server)</strong>. <br /><br />
+<span class="Platform">(Real-Time)</span> Right-click the Web service project item <img src="noloc_env_ws_node.gif"> the RT target�in the project tree and select <strong>Start (Debug Server)</strong>. <br /><br />
+LabVIEW places the Web service on a debugging server, where it behaves as if published on a target.</li>
+<li>Open HTTP method VIs from the project. Use standard LabVIEW debugging techniques, such as probes, breakpoints, and execution highlighting, to observe their behavior when the client invokes them.</li>
+<li>Invoke an HTTP method VI from a client, such as a web browser, using the URL mapped to the VI. You can find and copy the appropriate URL directly from the project.</li>
+<li>If you notice an error or finish testing the Web service, <span class="Platform">(Windows)</span> right-click the Web service project item in the project tree and select�<strong>Application Web Server&#0187;Stop (Debug Server)</strong>. <span class="Platform">(Real-Time)</span> Right-click the Web service project item�and select <strong>Stop (Debug Server)</strong>. If startup VIs for a LabVIEW stand-alone application are running, you do <em>not</em> have to stop them.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;You cannot edit HTTP method VIs until you stop the debugging session because LabVIEW reserves HTTP method VIs for execution during debugging.</td>
+</tr>
+</table></li>
+<li>Edit the VIs to correct any issues you noticed.</li>
+<li>(Optional) Repeat steps 2-6 to validate your changes to the Web service files.</li>
+</ol>
+
+
+<a name="url"></a><h2>Accessing HTTP Method VIs in Debugging Mode</h2>
+
+<p class="Body">Complete the following steps to determine the URL of an HTTP method VI during a debugging session:</p>
+
+<ol>
+<li>Right-click an HTTP method VI and select <strong>Show Method URL</strong> to display the <a href="../lvdialog/ws_http_method_url_db.html">HTTP Method URL</a>  dialog box. </li>
+<li>In the <strong>Available Servers</strong> pull-down menu, select the item that contains <strong>Local Debugging</strong>, and then click <strong>Copy URL</strong>. The Web service runs in the debugging environment, so you access it on a different server and port than if you had published it to a target.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;The Web service does not respond to any requests from the client if the <strong>HTTP Method URL</strong> dialog box is open.</td>
+</tr>
+</table></li>
+<li>Paste the URL into a standard web browser and replace the <span class="Monospace">{value}</span> variables with numeric values, such as: <span class="Monospace">http://127.0.0.1:8001/TutorialService/Add?b=2&amp;a=3</span>.
+</li>
+</ol>
+
+<h2>Related Information</h2>
+<p class="Body"><a href="../lvconcepts/ws_developing.html">Developing Web Services</a></p>
+<p class="Body"><a href="../lvconcepts/ws_web_server.html#debugging">Debugging Server</a></p>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Measuring and Generating Current</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css"><script src="common.js" type="text/javascript"></script></head>
+<body>
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Measuring and Generating Current</h1>
+        
+        <p class="Body">Many measurement devices can measure and generate current. To measure or generate current with a DAQ device, you need a resistor. Current then can be measured through an analog input connector or generated through an analog output connector. The resistance must be placed in parallel with the connector and the current source. To measure voltage dropped across the resistor and convert it to current, use Ohm's Law.</p>
+
+
+
+<p class="Indent1"><em> I<sub>(A)</sub> = V<sub>(V)</sub> </em>/<em> R<sub>(&#937;)</sub></em></p>
+
+<p class="Body"> where <em> I </em> is the current, <em> V </em> is the voltage, and <em> R </em> is the resistance.</p>
+            
+            <h2>4 to 20 mA Loops</h2>
+            
+<p class="Body">4 to 20 milliamp (4-20 mA) loops are commonly used in measurement systems. 4-20 mA loops couple a dynamic range with a live zero of 4 mA for open circuit detection in a system that does not produce sparks. Other advantages include a variety of compatible hardware, a long operating range, and low cost. 4-20 mA loops have a variety of uses, including digital communications, control applications, and reading remote sensors.</p>
+            
+<p class="Body">The purpose of the 4-20 mA current loop is for the sensor to transmit a signal in the form of a current. In the following illustration, the Level Sensor and Remote Sensor Electronics are typically built into a single unit. An external 24 VDC supply powers the sensor. The sensor regulates the current, which represents the value of what the sensor measures, in this case, the fluid level in a tank.</p>
+<p class="Anchor"><img src="loc_eps_CurrentLoop.gif" alt=""></p>
+            
+            <h2>Current Loop Wiring</h2>
+<p class="Body">The DAQ device reads the voltage drop across the 249 &#937; resistor <em>R<sub>p</sub></em>, using Ohm's Law.</p>
+
+
+<p class="Body">Because the current is 4-20 mA and <em>R<sub>p</sub></em> is 249 &#937;, <em>V</em> ranges from 0.996 V to 4.98 V, which is within the range that DAQ devices can read. Although the equation is useful for calculating the current, the current typically represents a physical quantity you want to measure. In the following illustration, the tank level measures 0 to 50 feet. 4 mA represents 0 feet, and 20 mA represents 50 feet. <em>L</em> is the tank level, and <em>I</em> is the current.</p>
+
+<p class="Anchor"><img src="loc_eps_rltnshp_tnk_crnt.gif" alt=""></p>
+            
+            <h3>Linear Relationship between Tank Level and Current</h3>
+
+<p class="Body">Using the Ohm's Law equation and substituting 0.249 for the value of <em>R<sub>p</sub></em>, you can derive <em>L</em> in terms of measured voltage:</p>
+<p class="Indent3"><img src="loc_eq_9eq2.gif" alt=""></p>
+            
+            
+            
+            
+        
+    <div id="exlinks">
+<h2>Examples</h2>
+<p class="Body">Refer to the following VIs for examples of performing this measurement. You must have a driver installed to find examples for that driver.</p>
+      <h3>NI-DAQmx</h3>
+<p class="Body">You can use the DAQmx - Data Acquisition VIs to perform this measurement. Find related examples:</p>
+<p class="Body"><a href="javascript:findExamples('1915');"><img src="find.gif" border="0"></a>�Current - SW-Timed Input</p>
+<p class="Body"><a href="javascript:findExamples('1916');"><img src="find.gif" border="0"></a>�Current - On Demand Output</p>
+<p class="Body">You also can use the DAQ Assistant Express VI to perform this measurement.</p>
+<p class="Body"><img style="cursor:pointer" src="add.gif" border="0" onclick="placeObject('DAQ%20Assistant');">�Add�
+         <img style="cursor:pointer" src="find.gif" border="0" onclick="findObject('DAQ%20Assistant');">�Find</p>
+      <h3>NI-DMM</h3>
+<p class="Body">You can use the NI-DMM VIs to perform this measurement. Find related examples:</p>
+<p class="Body"><a href="javascript:findExamples('2207');"><img src="find.gif" border="0"></a>�Measuring Current</p>
+<p class="Body"><a href="javascript:findExamples('2207');"><img src="find.gif" border="0"></a>�Generating Current</p>
+      <h3>FieldPoint</h3>
+<p class="Body">You can use the FieldPoint VIs to perform this measurement. Find related examples:</p>
+<p class="Body"><a href="javascript:findExamples('3786');"><img src="find.gif" border="0"></a>�Getting Started</p>
+<p class="Body"><a href="javascript:findExamples('3743');"><img src="find.gif" border="0"></a>�Analyzing and Processing Signals</p>
+    </div>
+</body>
+</html>

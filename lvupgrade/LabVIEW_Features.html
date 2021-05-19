@@ -1,0 +1,972 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>LabVIEW 2020 Features and Changes</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script src="" type="text/javascript" xml:space="preserve"></script></head>
+   <body>
+      <div class="nested0"><a name="GUID-EF1264F4-82BB-4EB6-9915-0428F1E1E1C2" shape="rect">
+            <!-- --></a> 
+         
+         <h1 class="topictitle1"><span>LabVIEW 2020</span> Features and
+            		Changes
+         </h1> 
+         
+         
+         <div>
+            <p> 
+               
+            </p> 
+            	 
+            <p>The Idea Exchange icon 
+               		<a name="GUID-EF1264F4-82BB-4EB6-9915-0428F1E1E1C2__IMAGE_6F74DF444D6B4A1ABA33902AEFAB1FF4" shape="rect">
+                  <!-- --></a><img id="GUID-EF1264F4-82BB-4EB6-9915-0428F1E1E1C2__IMAGE_6F74DF444D6B4A1ABA33902AEFAB1FF4" src="GUID-EFBC5377-1C34-4CF2-B067-DD864929A0DA-5.5x8.5%20-%20a5.png"> denotes a new feature idea that originates from a product feedback suggestion on the <a href="http://digital.ni.com/express.nsf/bycode/ex3gus" target="_blank" shape="rect">NI Idea Exchange</a> discussion forums at 
+               		<span class="filepath">ni.com</span>. 
+               	 
+            </p> 
+            	 
+            <p>Refer to <a href="Upgrade_Issues.html#GUID-3AE67D93-D8A0-4027-9489-4AF5581831AA" shape="rect">Upgrade and Compatibility
+                  				Issues</a> for information about upgrade and compatibility issues specific to
+               			different versions of LabVIEW. Refer to the <span class="filepath">readme.html</span> file in the
+               				<span class="filepath">labview\readme</span> directory for known issues, a partial list of
+               			bugs fixed, additional compatibility issues, and information about late-addition
+               			features in <span>LabVIEW 2020</span>. 
+            </p> 
+            	 
+            <div class="p"><a name="GUID-EF1264F4-82BB-4EB6-9915-0428F1E1E1C2__NEW_FEATURES_LIST" shape="rect">
+                  <!-- --></a><span>LabVIEW 2020</span> includes the following features and changes: <a name="GUID-EF1264F4-82BB-4EB6-9915-0428F1E1E1C2__UL_31479C16E9C24129AB9D3483AE53F3F2" shape="rect">
+                  <!-- --></a><ul id="GUID-EF1264F4-82BB-4EB6-9915-0428F1E1E1C2__UL_31479C16E9C24129AB9D3483AE53F3F2">
+                  <li><a href="LabVIEW_Features.html#GUID-439BBB9C-616A-4D9A-B571-2E1E377D0F41" title="LabVIEW 2020 introduces interfaces. An interface can be thought of as a class without a private data control, but that small difference enables an interface to serve entirely different purposes in software architectures than classes. Specifically, interfaces enable a form of multiple inheritance." shape="rect">Improving Code Flexibility Using LabVIEW Interfaces</a></li>
+                  <li><a href="LabVIEW_Features.html#GUID-CD44B3B0-19B8-4C90-902F-57658C937D5E" title="LabVIEW 2020 provides functionalities for developing LabVIEW Web services and publishing Web services to the NI Web Server, in addition to the Application Web Server that continues to be supported." shape="rect">LabVIEW Web Services Enhancements</a></li>
+                  <li><a name="GUID-EF1264F4-82BB-4EB6-9915-0428F1E1E1C2__LI_CD093963E44D496C9815CED40CD231B4" shape="rect">
+                        <!-- --></a><a href="LabVIEW_Features.html#GUID-6BA6F3BE-448C-45D6-954D-B1FF4CAFB79B" shape="rect">Application Builder Enhancements</a>
+                     				
+                  </li>
+                  <li><a name="GUID-EF1264F4-82BB-4EB6-9915-0428F1E1E1C2__LI_519A8E5420834C81ABEF2D409DECD933" shape="rect">
+                        <!-- --></a><a href="LabVIEW_Features.html#GUID-576DD0C1-2D2F-495B-A603-680D52034CF1" shape="rect">Environment Enhancements</a>
+                     				
+                  </li>
+                  <li><a name="GUID-EF1264F4-82BB-4EB6-9915-0428F1E1E1C2__LI_03BA06A68B6C4A708101C6906AA77127" shape="rect">
+                        <!-- --></a><a href="LabVIEW_Features.html#GUID-366CC1F8-C806-4408-B777-CCB605560A67" shape="rect">Enhancements to the Import Shared Library Wizard</a>
+                     				
+                  </li>
+                  <li><a name="GUID-EF1264F4-82BB-4EB6-9915-0428F1E1E1C2__LI_4F5EA6B0602541C7BD5ED878E9F1C398" shape="rect">
+                        <!-- --></a><a href="LabVIEW_Features.html#GUID-D61B8A05-0C28-47E6-8126-96FF6171AECC" shape="rect">Block Diagram Enhancements</a>
+                     				
+                  </li>
+                  <li><a name="GUID-EF1264F4-82BB-4EB6-9915-0428F1E1E1C2__LI_84CA1A0881884EAEB16691C799D448D4" shape="rect">
+                        <!-- --></a><a href="LabVIEW_Features.html#GUID-BDE7B90F-B15D-4F8D-BE62-014B2B8ACD73" shape="rect">New and Changed VIs and Functions</a>
+                     				
+                  </li>
+                  <li><a href="LabVIEW_Features.html#GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE" shape="rect">New and Changed Properties, Methods, and Events</a>
+                     				
+                  </li>
+               </ul>
+               		
+            </div> 
+            
+         </div> 
+         
+         <div class="nested1" xml:lang="en-US"><a name="GUID-439BBB9C-616A-4D9A-B571-2E1E377D0F41" shape="rect">
+               <!-- --></a>
+            
+            <h2 class="topictitle2">Improving Code Flexibility Using LabVIEW Interfaces</h2>
+            
+            
+            <div>
+               <p><span>LabVIEW 2020</span> introduces interfaces. An <dfn class="term">interface</dfn> can be thought of as a class without a private data control, but that small difference enables an interface to serve entirely
+                  different purposes in software architectures than classes. Specifically, interfaces enable a form of multiple inheritance.
+               </p>
+               
+               <p>An interface declares a role that an object can play without defining how to perform that role. By inheriting from an interface,
+                  a class declares that its objects fulfill that role, and the class becomes responsible for specifying how the behaviors are
+                  performed. When a class inherits from multiple interfaces, its objects can be passed into multiple software modules requiring
+                  different roles.
+               </p>
+               
+               <p>The following project includes the Tool class with several child classes of different tools. The project also includes the
+                  Lever interface. You can see that the Tools class has a control that defines the data in the class, whereas the Lever interface
+                  does not have a control because interfaces do not have private data. A class is represented by a solid cube (<a name="GUID-439BBB9C-616A-4D9A-B571-2E1E377D0F41__IMAGE_CKL_3XX_NJB" shape="rect">
+                     <!-- --></a><img id="GUID-439BBB9C-616A-4D9A-B571-2E1E377D0F41__IMAGE_CKL_3XX_NJB" src="GUID-6A6C5CEA-4B21-4E91-A435-958F1C61B88E-5.5x8.5%20-%20a5.png">). An interface is represented by the faces of a cube (<a name="GUID-439BBB9C-616A-4D9A-B571-2E1E377D0F41__IMAGE_BKR_MXX_NJB" shape="rect">
+                     <!-- --></a><img id="GUID-439BBB9C-616A-4D9A-B571-2E1E377D0F41__IMAGE_BKR_MXX_NJB" src="GUID-2516188E-F6B7-4894-9B6D-BFEA41FEB2A8-5.5x8.5%20-%20a5.png">). Interfaces and classes use the same file extension <span class="filepath">.lvclass</span>.
+               </p>
+               <br clear="none"><a name="GUID-439BBB9C-616A-4D9A-B571-2E1E377D0F41__IMAGE_T1X_QXX_NJB" shape="rect">
+                  <!-- --></a><div class="imageleft"><img id="GUID-439BBB9C-616A-4D9A-B571-2E1E377D0F41__IMAGE_T1X_QXX_NJB" src="GUID-09FBA30A-934A-4AC9-AF99-7A3F1A4D9699-5.5x8.5%20-%20a5.png"></div><br clear="none">
+               
+               <p>The following image illustrates the inheritance relationship among the Tool classes, the House Key class, and the Lever interface.
+                  The Tool class and the Lever interface both inherit from LabVIEW Object. In addition to having their own methods and methods
+                  of their respective parent classes, the Prying Tool class and the Flathead class also inherit from the Lever interface because
+                  they both can be used as a lever. They inherit the methods of the Lever interface. Since Lever is an interface rather than
+                  a class, this multiple inheritance is legal. The three unrelated classes (Prying Tool, Flathead, House Key) have a common
+                  ancestor (Lever) other than LabVIEW Object.
+               </p>
+               <br clear="none"><a name="GUID-439BBB9C-616A-4D9A-B571-2E1E377D0F41__IMAGE_W2C_WXX_NJB" shape="rect">
+                  <!-- --></a><div class="imageleft"><img id="GUID-439BBB9C-616A-4D9A-B571-2E1E377D0F41__IMAGE_W2C_WXX_NJB" src="GUID-941C572D-1A73-47A2-BEAC-CE992F44A50F-5.5x8.5%20-%20a5.png"></div><br clear="none">
+               
+               <p>You can create an interface in the following ways:</p>
+               <a name="GUID-439BBB9C-616A-4D9A-B571-2E1E377D0F41__UL_O1F_3WD_5JB" shape="rect">
+                  <!-- --></a><ul id="GUID-439BBB9C-616A-4D9A-B571-2E1E377D0F41__UL_O1F_3WD_5JB">
+                  <li>Right-click <strong>My Computer</strong> in the <span class="wintitle">Project Explorer</span> window and select <span class="menucascade"><strong>New�</strong><strong>Interface</strong></span> from the shortcut menu.
+                  </li>
+                  <li>Select <span class="menucascade"><strong>File�</strong><strong>New</strong></span> and select <span class="menucascade"><strong>Other Files�</strong><strong>Interface</strong></span> from the <strong>Create New</strong> list.
+                  </li>
+                  <li>Use the <span>LabVIEW Class:Create Interface</span> method.
+                  </li>
+               </ul>
+               
+               <p>Refer to the <cite>New and Changed Properties, Methods, and Events</cite> section for more information about the new properties and methods for interfaces.
+               </p>
+               
+               <p>Refer to the following projects for examples of using interfaces:</p>
+               <a name="GUID-439BBB9C-616A-4D9A-B571-2E1E377D0F41__UL_X4X_QWD_5JB" shape="rect">
+                  <!-- --></a><ul id="GUID-439BBB9C-616A-4D9A-B571-2E1E377D0F41__UL_X4X_QWD_5JB">
+                  <li><span class="filepath">labview\examples\Object-Oriented Programming\Basic Interfaces\Basic Interfaces.lvproj</span></li>
+                  <li><span class="filepath">labview\examples\Object-Oriented Programming\Actors and Interfaces\Actors and Interfaces.lvproj</span></li>
+               </ul>
+               
+            </div>
+            
+            <div>
+               <div class="relinfo"><strong>Related information</strong><br clear="none"><div><a href="../lvconcepts/lv_interfaces.html" shape="rect">LabVIEW Interfaces</a></div>
+                  <div><a href="../lvupgrade/LabVIEW_Features.html#GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE" shape="rect">New and Changed Properties, Methods, and Events</a></div>
+                  <div><a href="../lvprop/Application_LabVIEW_Class058Create_Interface.html" shape="rect">LabVIEW Class:Create Interface</a></div>
+               </div>
+            </div>
+            
+         </div>
+         <div class="nested1" xml:lang="en-US"><a name="GUID-CD44B3B0-19B8-4C90-902F-57658C937D5E" shape="rect">
+               <!-- --></a>
+            
+            <h2 class="topictitle2">LabVIEW Web Services Enhancements</h2>
+            
+            
+            <div>
+               <p>LabVIEW 2020 provides functionalities for developing LabVIEW Web services and publishing
+                  Web services to the NI Web Server, in addition to the Application Web Server that continues
+                  to be supported.
+               </p>
+               
+               <p>The NI Web Server is a production-grade web server that can host user-authored services,
+                  such as LabVIEW Web services, and SystemLink services created by NI. The NI Web Server
+                  protects web applications against common web security threats, provides high scalability
+                  to many enterprise-grade data services, and allows device management.
+               </p>
+               
+               <table class="noteTable">
+                  <tr>
+                     <td><img alt="Note" src="note.gif"></td>
+                     <td><a name="GUID-CD44B3B0-19B8-4C90-902F-57658C937D5E__GUID-17163436-E469-4E5D-887B-CB347FEAD02C" shape="rect">
+                           <!-- --></a><span class="notetitle">Note&nbsp;&nbsp;</span> The NI Web Server supports Windows (64-bit) only. The Application Web Server supports
+                        both Windows (32-bit and 64-bit) and RT targets.
+                     </td>
+                  </tr>
+               </table>
+               
+               <p>You can publish a Web service to the NI Web Server through a stand-alone application,
+                  package, or package installer. You can establish secure communication between Web
+                  clients and LabVIEW Web services by enabling Secure Sockets Layer (SSL) encryption on
+                  the NI Web Server or assigning different privileges to each user role.
+               </p>
+               
+               <p>The default response format to a Web client changes from an XML to a JSON string. If you
+                  want to create user interfaces to visualize data and interact with Web services through
+                  a web browser, integrate WebVIs into Web services.
+               </p>
+               
+               <p><a name="GUID-CD44B3B0-19B8-4C90-902F-57658C937D5E__WSEHANCEMENTS" shape="rect">
+                     <!-- --></a>For more information about WebVIs, refer to the <a href="http://www.ni.com/r/nxgweb" target="_blank" shape="rect">LabVIEW NXG Web Module Manual</a>.
+               </p>
+               
+               <p><a name="GUID-CD44B3B0-19B8-4C90-902F-57658C937D5E__WEBSERVICEOVERVIEW" shape="rect">
+                     <!-- --></a></p>
+               
+            </div>
+            
+            <div>
+               <div class="relinfo"><strong>Related information</strong><br clear="none"><div><a href="../lvconcepts/WebServices.html" shape="rect">Overview: Web-Based Communication with a LabVIEW
+                        							Application</a></div>
+                  <div><a href="../lvhowto/web_service_tutorial.html" shape="rect">Tutorial: Creating and Publishing a LabVIEW Web Service to the NI
+                        							Web Server</a></div>
+                  <div><a href="../lvupgrade/LabVIEW_Features.html#GUID-5B34A087-2D2F-4E93-89CF-686565F170E9" shape="rect">Web Services Dialog Box Enhancements</a></div>
+                  <div><a href="../lvupgrade/LabVIEW_Features.html#GUID-A068C12B-E5FF-4B7E-A1E2-6CAE5D0AD1A7" shape="rect">New and Changed Web Services VIs</a></div>
+                  <div><a href="../lvconcepts/ws_portal.html" shape="rect">Communicating with a LabVIEW Application from Web
+                        							Clients</a></div>
+                  <div><a href="http://www.ni.com/r/nxgweb" target="_blank" shape="rect">LabVIEW NXG Web Module Manual</a></div>
+               </div>
+            </div>
+            
+         </div>
+         <div class="nested1" xml:lang="en-US"><a name="GUID-6BA6F3BE-448C-45D6-954D-B1FF4CAFB79B" shape="rect">
+               <!-- --></a> 
+            
+            <h2 class="topictitle2">Application Builder Enhancements</h2> 
+            
+            
+            <div>
+               <p> 
+                  
+               </p> 
+               	 
+               <p><span>LabVIEW 2020</span>
+                  			includes the following enhancements to the LabVIEW Application Builder and build
+                  			specifications: 
+               </p> 
+               
+               		
+               <div class="section"><a name="GUID-6BA6F3BE-448C-45D6-954D-B1FF4CAFB79B__SECTION_JDT_KX1_FJB" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">(Windows)
+                     				Repairing Packages
+                  </h3>
+                  <p>If an installation does not run correctly, you can
+                     				repair the package in NI Package Manager. In LabVIEW, you can configure a custom
+                     				repair action to execute when NI Package Manager repairs the package. To create a
+                     				custom repair action, on the<span class="wintitle"> Advanced</span> page of the
+                     					<span class="wintitle">Package Properties</span> dialog box, right-click in the
+                     					<strong>Custom actions</strong> table and select <strong>Add Repair
+                        					Action</strong>. You can choose from the following options: 
+                  </p><a name="GUID-6BA6F3BE-448C-45D6-954D-B1FF4CAFB79B__UL_XVW_NX1_FJB" shape="rect">
+                     <!-- --></a><ul id="GUID-6BA6F3BE-448C-45D6-954D-B1FF4CAFB79B__UL_XVW_NX1_FJB">
+                     <li><strong>Pre-repair</strong>�Specifies the action to execute before
+                        					repairing the current package. 
+                     </li>
+                     <li><strong>Post-repair</strong>�Specifies the action to execute after
+                        					repairing the current package.
+                     </li>
+                     <li><strong>Post-repair all</strong>�Specifies the action to execute after
+                        					repairing all packages.
+                     </li>
+                  </ul>
+               </div>
+               		
+               <div class="section"><a name="GUID-6BA6F3BE-448C-45D6-954D-B1FF4CAFB79B__SECTION_A322066115CE4FE38413889A20147618" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle"> Miscellaneous Application Builder
+                     				Enhancements
+                  </h3>
+                  			
+                  			
+                  <p>The <span class="wintitle">Feed</span> page of the <span class="wintitle">Package Properties</span>
+                     				dialog box includes the following new options: 
+                  </p><a name="GUID-6BA6F3BE-448C-45D6-954D-B1FF4CAFB79B__UL_ZRY_R5W_DJB" shape="rect">
+                     <!-- --></a><ul id="GUID-6BA6F3BE-448C-45D6-954D-B1FF4CAFB79B__UL_ZRY_R5W_DJB">
+                     <li><strong>Include all dependencies in feed</strong>�Specifies whether to add
+                        					all dependencies of a package or only the package to the feed.
+                     </li>
+                     <li><strong>Append package version to feed location</strong>�Specifies whether
+                        					to include the package version in the feed. LabVIEW appends a subfolder with the
+                        					package version to the feed location.
+                     </li>
+                     <li><strong>Include all dependencies in SystemLink feed</strong>�Specifies
+                        					whether to publish all dependencies of a package or only the package to the
+                        					SystemLink feed.
+                     </li>
+                  </ul>
+                  <p>These options are available for Windows only.</p>
+                  		
+               </div> 
+               
+            </div> 
+            
+            <div>
+               <div class="relinfo"><strong>Related information</strong><br clear="none"><div><a href="../lvdialog/build_package_advanced.html" shape="rect">Advanced Page (Package Properties Dialog Box)</a></div>
+                  <div><a href="../lvdialog/build_package_feed.html" shape="rect">Feed Page (Package Properties Dialog Box)</a></div>
+                  <div><a href="../lvdialog/build_package_attributes.html" shape="rect">Package Page (Package Properties Dialog Box)</a></div>
+               </div>
+            </div>
+            
+         </div>
+         <div class="nested1" xml:lang="en-US"><a name="GUID-576DD0C1-2D2F-495B-A603-680D52034CF1" shape="rect">
+               <!-- --></a> 
+            
+            <h2 class="topictitle2">Environment Enhancements</h2> 
+            
+            
+            <div>
+               <p> 
+                  
+               </p> 
+               	 
+               <p><span>LabVIEW 2020</span>
+                  			includes the following enhancements to the LabVIEW environment: 
+               </p> 
+               		
+               <div class="section"><a name="GUID-576DD0C1-2D2F-495B-A603-680D52034CF1__SECTION_RFD_5PS_LJB" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Improvements to Selecting a List Item</h3>
+                  <p>In <span>LabVIEW 2020</span>, you can change the value of a list item in a ring control, enum,
+                     				or I/O control or constant by using the <span class="wintitle">Select Item</span> dialog box.
+                     				Right-click the control or constant on the front panel or constant on the block
+                     				diagram and select <strong>Select Item</strong>. This dialog box replaces the
+                     					<strong>Select Item</strong> shortcut menu item. 
+                  </p><br clear="none"><a name="GUID-576DD0C1-2D2F-495B-A603-680D52034CF1__IMAGE_IC4_ZPS_LJB" shape="rect">
+                     <!-- --></a><div class="imageleft"><img id="GUID-576DD0C1-2D2F-495B-A603-680D52034CF1__IMAGE_IC4_ZPS_LJB" src="GUID-DCA1B1F1-7A0B-4F11-9149-7CAB49900CBF-5.5x8.5%20-%20a5.png" height="176" width="254"></div><br clear="none"></div>
+               		
+               <div class="section"><a name="GUID-576DD0C1-2D2F-495B-A603-680D52034CF1__SECTION_YY4_CQS_LJB" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Improvements to Moving between Subdiagrams</h3>
+                  <p>In <span>LabVIEW 2020</span>, you can change
+                     				the visible frame of a Case, Event, or Conditional Disable structure by using the
+                     					<span class="wintitle">Show Case</span> dialog box. Right-click on the structure border
+                     				and select <strong>Show Case</strong>. This dialog box replaces the
+                     					<strong>Show Case</strong> shortcut menu item.
+                  </p><br clear="none"><a name="GUID-576DD0C1-2D2F-495B-A603-680D52034CF1__IMAGE_CDT_DQS_LJB" shape="rect">
+                     <!-- --></a><div class="imageleft"><img id="GUID-576DD0C1-2D2F-495B-A603-680D52034CF1__IMAGE_CDT_DQS_LJB" src="GUID-44306CF6-C420-400E-B5E7-C0CA4001DD51-5.5x8.5%20-%20a5.png" height="176" width="254"></div><br clear="none"></div>
+               		
+               <div class="section"><a name="GUID-576DD0C1-2D2F-495B-A603-680D52034CF1__SECTION_U32_HQS_LJB" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Improvements to Rearranging Cases or Subdiagrams</h3>
+                  <p><a name="GUID-576DD0C1-2D2F-495B-A603-680D52034CF1__IMAGE_AFQ_2LH_4JB" shape="rect">
+                        <!-- --></a><img id="GUID-576DD0C1-2D2F-495B-A603-680D52034CF1__IMAGE_AFQ_2LH_4JB" src="GUID-EFBC5377-1C34-4CF2-B067-DD864929A0DA-5.5x8.5%20-%20a5.png"> The
+                     					<span class="wintitle">Rearrange Cases</span> dialog box has been redesigned and includes
+                     				the following new functionalities: 
+                  </p><a name="GUID-576DD0C1-2D2F-495B-A603-680D52034CF1__UL_E3N_KQS_LJB" shape="rect">
+                     <!-- --></a><ul id="GUID-576DD0C1-2D2F-495B-A603-680D52034CF1__UL_E3N_KQS_LJB">
+                     <li>Rearrange multiple cases</li>
+                     <li>Delete one or more cases</li>
+                     <li>Sort only selected cases within the case list</li>
+                     <li>Resize the dialog box</li>
+                  </ul><br clear="none"><a name="GUID-576DD0C1-2D2F-495B-A603-680D52034CF1__IMAGE_BTV_THH_4JB" shape="rect">
+                     <!-- --></a><div class="imageleft"><img id="GUID-576DD0C1-2D2F-495B-A603-680D52034CF1__IMAGE_BTV_THH_4JB" src="GUID-86DE59E8-AEBB-4CD7-BF08-EC20D4A07AA7-5.5x8.5%20-%20a5.png" height="305" width="462"></div><br clear="none"><cite>[Idea submitted by NI Discussion Forums member Intaris.]</cite>
+                  		
+               </div>
+               		
+               <div class="section"><a name="GUID-576DD0C1-2D2F-495B-A603-680D52034CF1__SECTION_EHV_QQS_LJB" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Clearing
+                     				Data for Variant Data Types
+                  </h3>
+                  <p><a name="GUID-576DD0C1-2D2F-495B-A603-680D52034CF1__IMAGE_PJL_RKH_4JB" shape="rect">
+                        <!-- --></a><img id="GUID-576DD0C1-2D2F-495B-A603-680D52034CF1__IMAGE_PJL_RKH_4JB" src="GUID-EFBC5377-1C34-4CF2-B067-DD864929A0DA-5.5x8.5%20-%20a5.png"> To
+                     				clear data for a variant data type, right-click the variant control or indicator and
+                     				select <span class="menucascade"><strong>Data Operations�</strong><strong>Clear Data</strong></span>. 
+                  </p><cite>[Idea submitted by NI Discussion Forums member
+                     				altenbach.]</cite></div>
+               		
+               <div class="section"><a name="GUID-576DD0C1-2D2F-495B-A603-680D52034CF1__SECTION_XDJ_HMK_4JB" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Improvements to Displaying Errors</h3>
+                  <p><span>LabVIEW 2020</span> changes the way a VI or library reports errors when the VI or library is error-free but has a broken dependency. In LabVIEW
+                     2019 and earlier, the <span class="wintitle">Error list</span> window displays an error about the immediate dependency of the VI or library. Double-click the error to open the immediate
+                     dependency. In <span>LabVIEW 2020</span>, the <span class="wintitle">Error list</span> window displays the error: <samp class="sysout">ROOT CAUSE: Dependency is broken</samp>. Double-click the error to open the broken dependency that causes the error.
+                  </p>
+               </div>
+               		
+               <div class="section"><a name="GUID-576DD0C1-2D2F-495B-A603-680D52034CF1__SECTION_J4T_5QS_LJB" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Launching
+                     				the Cluster Size Dialog Box
+                  </h3>
+                  <p><a name="GUID-576DD0C1-2D2F-495B-A603-680D52034CF1__IMAGE_CRF_SKH_4JB" shape="rect">
+                        <!-- --></a><img id="GUID-576DD0C1-2D2F-495B-A603-680D52034CF1__IMAGE_CRF_SKH_4JB" src="GUID-EFBC5377-1C34-4CF2-B067-DD864929A0DA-5.5x8.5%20-%20a5.png"> In
+                     				addition to right-clicking, you can double-click the <span>Array to
+                        					Cluster</span> function to open the <span class="wintitle">Cluster Size</span> dialog
+                     				box. 
+                  </p><cite>[Idea submitted by NI Discussion Forums member
+                     				PalanivelThiruvenkadam.]</cite></div>
+               		
+               <div class="section"><a name="GUID-576DD0C1-2D2F-495B-A603-680D52034CF1__SECTION_O4D_N3N_QJB" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Displaying
+                     				the Last Item in a Ring Control
+                  </h3>
+                  <p>You can hide the last item in a ring
+                     				control so that users cannot select the item while the VI runs. To show or hide the
+                     				last item,&#8239;right-click the ring control and select&#8239;<strong>Show/Hide Last Item
+                        					When Running</strong>. You can also use the <span>Last Value
+                        					Hidden</span> property to show or hide the last item in a ring control
+                     				programmatically. 
+                  </p>
+               </div> 
+               
+            </div> 
+            
+            <div class="nested2" xml:lang="en-US"><a name="GUID-5B34A087-2D2F-4E93-89CF-686565F170E9" shape="rect">
+                  <!-- --></a> 
+               
+               <h3 class="topictitle3">Dialog Box Enhancements</h3> 
+               
+               
+               <div>
+                  <p> 
+                     
+                  </p>
+                  		
+                  		
+                  <p><span>LabVIEW 2020</span> includes the following new and updated dialog boxes for configuring
+                     			settings for LabVIEW Web services.
+                  </p>
+                  		<a name="GUID-5B34A087-2D2F-4E93-89CF-686565F170E9__GUID-C5432350-9D42-4126-950C-30B4FBB40B9E" shape="rect">
+                     <!-- --></a><ul id="GUID-5B34A087-2D2F-4E93-89CF-686565F170E9__GUID-C5432350-9D42-4126-950C-30B4FBB40B9E">
+                     <li>The <span class="wintitle">Web Service Properties</span> dialog box includes the following
+                        					changes:<a name="GUID-5B34A087-2D2F-4E93-89CF-686565F170E9__UL_LPJ_3HK_WJB" shape="rect">
+                           <!-- --></a><ul id="GUID-5B34A087-2D2F-4E93-89CF-686565F170E9__UL_LPJ_3HK_WJB">
+                           <li><strong>NI Web Server Privileges</strong>�Use this new page to create
+                              						and define privileges for a Web service.
+                           </li>
+                           <li><strong>HTTP Method VI Settings</strong>�Use the new <strong>NI Web
+                                 							Server</strong> tab to configure privileges required to invoke the
+                              						HTTP Method VI. The <strong>Security</strong> tab is renamed
+                              							<strong>Application Web Server</strong>, on which you configure
+                              						permissions associated with the Application Web Server.
+                           </li>
+                        </ul>
+                     </li>
+                     <li>The <span class="wintitle">Package Properties</span> dialog box includes the new
+                        					<strong>Web Services</strong> page, which you can use to configure the
+                        				available Web services to include with a package.
+                     </li>
+                     <li>The <strong>Web Services</strong> page of the <span class="wintitle">Application
+                           					Properties</span> dialog box includes the new <strong>NI Web
+                           					Server</strong> option. You can specify NI Web Server as the web server for
+                        				hosting Web services included in a stand-alone application by selecting this
+                        				option.
+                     </li>
+                     <li>LabVIEW 2020 reorganizes the options on the <strong>Web Server</strong> page
+                        				of the <span class="wintitle">Options</span> dialog box to allow you to configure access to
+                        				Web services depending on whether you use the NI Web Server or Application Web
+                        				Server.
+                     </li>
+                  </ul>
+                  		
+                  <p>The <span class="wintitle">Inheritance</span> page of the <span class="wintitle">Class Properties</span>
+                     			dialog box includes the following changes:
+                  </p>
+                  		<a name="GUID-5B34A087-2D2F-4E93-89CF-686565F170E9__UL_UGC_1GK_4JB" shape="rect">
+                     <!-- --></a><ul id="GUID-5B34A087-2D2F-4E93-89CF-686565F170E9__UL_UGC_1GK_4JB">
+                     <li>New <strong>Parent Interfaces</strong> section�Use this section to define the
+                        				interfaces that the class inherits from.
+                     </li>
+                     <li>The <strong>Inheritance Hierarchy</strong> section is renamed <strong>Parent Class
+                           					Hierarchy</strong>.
+                     </li>
+                     <li>The <strong>Change Inheritance</strong> option is renamed <strong>Change
+                           					Parent Class</strong>.
+                     </li>
+                  </ul>
+                  	
+               </div> 
+               
+               <div>
+                  <div class="relinfo"><strong>Related information</strong><br clear="none"><div><a href="../lvdialog/ws_niws_priv_page.html" shape="rect">NI Web Server Privileges Page (Web Service Properties Dialog
+                           							Box)</a></div>
+                     <div><a href="../lvdialog/ws_http_method_page.html" shape="rect">HTTP Method VI Settings Page (Web Service Properties Dialog
+                           							Box)</a></div>
+                     <div><a href="../lvdialog/build_package_ws.html" shape="rect">Web Services Page (Package Properties Dialog Box)</a></div>
+                     <div><a href="../lvdialog/web_services_stand_alone.html" shape="rect">Web Services Page (Application Properties Dialog Box)</a></div>
+                     <div><a href="../lvdialog/Web_Server_Config_Options.html" shape="rect">Web Server Page (Options Dialog Box)</a></div>
+                     <div><a href="../lvdialog/C_Inherit_Lib_Page.html" shape="rect">Inheritance Page (Class Properties Dialog Box)</a></div>
+                  </div>
+               </div>
+               
+            </div>
+         </div>
+         <div class="nested1" xml:lang="en-US"><a name="GUID-366CC1F8-C806-4408-B777-CCB605560A67" shape="rect">
+               <!-- --></a>
+            
+            <h2 class="topictitle2">Enhancements to the Import Shared Library
+               Wizard
+            </h2>
+            
+            
+            <div>
+               <p></p>
+               
+               <p>On the <span class="wintitle">Configure VIs and Controls</span> page of the Import Shared Library wizard,
+                  use the following new options to apply settings to multiple parameters and functions: 
+               </p>
+               <a name="GUID-366CC1F8-C806-4408-B777-CCB605560A67__UL_KH3_PBW_FJB" shape="rect">
+                  <!-- --></a><ul id="GUID-366CC1F8-C806-4408-B777-CCB605560A67__UL_KH3_PBW_FJB">
+                  <li><strong>Apply to All Matching Parameters</strong>�Applies the type settings of
+                     the current parameter to all function parameters that match the declaration in the
+                     header file.
+                  </li>
+                  <li><strong>Apply to All</strong>�Applies the calling convention of the current
+                     function to all functions in the shared library.
+                  </li>
+               </ul>
+               
+            </div>
+            
+            <div>
+               <div class="relinfo"><strong>Related information</strong><br clear="none"><div><a href="../lvdialog/DLL_config_VIs.html" shape="rect">Configure VIs and Controls Page (Import Shared Library
+                        							Wizard)</a></div>
+               </div>
+            </div>
+            
+         </div>
+         <div class="nested1" xml:lang="en-US"><a name="GUID-D61B8A05-0C28-47E6-8126-96FF6171AECC" shape="rect">
+               <!-- --></a> 
+            
+            <h2 class="topictitle2">Block Diagram Enhancements</h2> 
+            
+            
+            <div>
+               <p> 
+                  
+               </p> 
+               	 
+               <p><span>LabVIEW 2020</span>
+                  includes the following enhancements to the block diagram and related functionality: 
+               </p> 
+               
+               
+               <div class="section"><a name="GUID-D61B8A05-0C28-47E6-8126-96FF6171AECC__SECTION_SVM_JRS_LJB" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Cleaning
+                     Up Broken Wire Branches
+                  </h3>
+                  <p><a name="GUID-D61B8A05-0C28-47E6-8126-96FF6171AECC__IMAGE_BJB_DJH_4JB" shape="rect">
+                        <!-- --></a><img id="GUID-D61B8A05-0C28-47E6-8126-96FF6171AECC__IMAGE_BJB_DJH_4JB" src="GUID-EFBC5377-1C34-4CF2-B067-DD864929A0DA-5.5x8.5%20-%20a5.png"> In previous
+                     versions of LabVIEW, a broken wire branch causes the entire wire to display as broken and
+                     removing the wire branch removes the entire wire. In <span>LabVIEW 2020</span>,
+                     only broken wire branches display as broken. When you remove broken wires by selecting <span class="menucascade"><strong>Edit�</strong><strong>Remove Broken Wire</strong></span> or pressing &lt;Ctrl-B&gt;, LabVIEW removes only broken wire branches.
+                     LabVIEW removes the entire wire if all branches are broken. 
+                  </p><br clear="none"><div class="imageleft"><img src="GUID-227AC418-7F1F-4ED8-92E3-F38213F573B7-5.5x8.5%20-%20a5.png" height="298" width="465"></div><br clear="none"><cite>[Idea
+                     submitted by NI Discussion Forums member altenbach.]</cite></div>
+               
+               <div class="section"><a name="GUID-D61B8A05-0C28-47E6-8126-96FF6171AECC__GUID-6E13F74D-B28A-4D20-A405-24AC93CA8D77" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Hiding the Event Data Node</h3>
+                  <p><a name="GUID-D61B8A05-0C28-47E6-8126-96FF6171AECC__IMAGE_JXT_CJH_4JB" shape="rect">
+                        <!-- --></a><img id="GUID-D61B8A05-0C28-47E6-8126-96FF6171AECC__IMAGE_JXT_CJH_4JB" src="GUID-EFBC5377-1C34-4CF2-B067-DD864929A0DA-5.5x8.5%20-%20a5.png"> In an <span>Event Structure</span>, you can show or hide
+                     the <span>Event Data Node</span> for a case when all data items are unused.
+                     Right-click the structure border and select <span class="menucascade"><strong>Visible Items�</strong><strong>Event Data Node for This Case</strong></span> to show or hide the <span>Event Data Node</span>. 
+                  </p><cite>[Idea
+                     submitted by NI Discussion Forums member Broken_Arrow.]</cite></div>
+               
+               <div class="section"><a name="GUID-D61B8A05-0C28-47E6-8126-96FF6171AECC__GUID-33F5C130-600B-4A29-B217-C807604FA173" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Hiding the Iteration Terminal in
+                     Loops
+                  </h3>
+                  <p><a name="GUID-D61B8A05-0C28-47E6-8126-96FF6171AECC__IMAGE_LYL_X3H_4JB" shape="rect">
+                        <!-- --></a><img id="GUID-D61B8A05-0C28-47E6-8126-96FF6171AECC__IMAGE_LYL_X3H_4JB" src="GUID-EFBC5377-1C34-4CF2-B067-DD864929A0DA-5.5x8.5%20-%20a5.png"> In <span>For
+                        Loops</span> and <span>While Loops</span>, you can choose to show or hide the
+                     iteration terminal. Right-click the loop border and select <strong>Iteration
+                        Terminal</strong> to show or hide the terminal. You cannot hide the iteration terminal
+                     if the terminal is wired.
+                  </p><cite>[Idea submitted by NI Discussion Forums member
+                     somebody_that_i_used_to_k.]</cite></div>
+               
+               <div class="section"><a name="GUID-D61B8A05-0C28-47E6-8126-96FF6171AECC__GUID-07E05E62-5A95-4170-9F01-F9EA95E218DE" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Swapping Wire Positions When Only One Input
+                     is Wired
+                  </h3>
+                  <p><a name="GUID-D61B8A05-0C28-47E6-8126-96FF6171AECC__IMAGE_R2S_X3H_4JB" shape="rect">
+                        <!-- --></a><img id="GUID-D61B8A05-0C28-47E6-8126-96FF6171AECC__IMAGE_R2S_X3H_4JB" src="GUID-EFBC5377-1C34-4CF2-B067-DD864929A0DA-5.5x8.5%20-%20a5.png"> In previous
+                     versions of LabVIEW, you can swap wire positions on a function that has two inputs and both
+                     inputs are wired. In <span>LabVIEW 2020</span>, you can swap wire positions on the function when only one input is
+                     wired. Press the &lt;Ctrl&gt; key while clicking the wired input to swap wire
+                     positions.
+                  </p><cite>[Idea submitted by NI Discussion Forums member altenbach and
+                     tst.]</cite></div>
+               
+               <div class="section"><a name="GUID-D61B8A05-0C28-47E6-8126-96FF6171AECC__GUID-2EC75239-47DA-4D8C-822C-BC057250EDE6" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Setting Text on Icons</h3>
+                  <p><a name="GUID-D61B8A05-0C28-47E6-8126-96FF6171AECC__IMAGE_BBN_DJH_4JB" shape="rect">
+                        <!-- --></a><img id="GUID-D61B8A05-0C28-47E6-8126-96FF6171AECC__IMAGE_BBN_DJH_4JB" src="GUID-EFBC5377-1C34-4CF2-B067-DD864929A0DA-5.5x8.5%20-%20a5.png"> In <span>LabVIEW 2020</span>, you can quickly create an icon that contains text by using
+                     the <span class="wintitle">Quick Drop</span> keyboard shortcut &lt;Ctrl-K&gt;. When you press
+                     &lt;Ctrl-Space&gt; and then &lt;Ctrl-K&gt;, LabVIEW adds the filename of the VI as text in
+                     the icon. LabVIEW truncates the text if it is too long.
+                  </p>
+                  <p>You also can right-click the
+                     VI icon and select <strong>Set Icon to VI Name</strong>.
+                  </p>
+                  <p>You can customize the
+                     text by pressing &lt;Ctrl-Space&gt;, typing the text you want to appear in the icon, and
+                     then pressing &lt;Ctrl-K&gt;.
+                  </p><cite>[Idea submitted by NI Discussion Forums member
+                     tst.]</cite></div>
+               
+               <div class="section"><a name="GUID-D61B8A05-0C28-47E6-8126-96FF6171AECC__GUID-5B3C4E41-5B82-49F4-8575-8EE288F83DE5" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Displaying Context Help for Objects in Quick
+                     Drop
+                  </h3>
+                  <p><a name="GUID-D61B8A05-0C28-47E6-8126-96FF6171AECC__IMAGE_INX_DJH_4JB" shape="rect">
+                        <!-- --></a><img id="GUID-D61B8A05-0C28-47E6-8126-96FF6171AECC__IMAGE_INX_DJH_4JB" src="GUID-EFBC5377-1C34-4CF2-B067-DD864929A0DA-5.5x8.5%20-%20a5.png"> The
+                     <span class="wintitle">Context Help</span> window displays information about the object you select
+                     in the <span class="wintitle">Quick Drop</span> dialog box.
+                  </p><cite>[Idea submitted by NI Discussion
+                     Forums member elset191.]</cite></div>
+               
+               <div class="section"><a name="GUID-D61B8A05-0C28-47E6-8126-96FF6171AECC__GUID-1E9EF12F-6FA2-4989-9529-8F49E872D09A" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Improvements to Wiring Terminals for Objects
+                     Inserted from Quick Drop
+                  </h3>
+                  <p><a name="GUID-D61B8A05-0C28-47E6-8126-96FF6171AECC__IMAGE_BRS_Y3H_4JB" shape="rect">
+                        <!-- --></a><img id="GUID-D61B8A05-0C28-47E6-8126-96FF6171AECC__IMAGE_BRS_Y3H_4JB" src="GUID-EFBC5377-1C34-4CF2-B067-DD864929A0DA-5.5x8.5%20-%20a5.png"> Objects you add
+                     on the selected wire using <strong>Quick Drop</strong> have improved default wiring.
+                     When you use the <strong>Quick Drop</strong> keyboard shortcut &lt;Ctrl-I&gt;, LabVIEW
+                     wires the object to the most appropriate terminals. The following functions have improved
+                     wiring: 
+                  </p><a name="GUID-D61B8A05-0C28-47E6-8126-96FF6171AECC__GUID-FE97A7A8-B9D6-487C-9245-B5C7A9C74A9A" shape="rect">
+                     <!-- --></a><ul id="GUID-D61B8A05-0C28-47E6-8126-96FF6171AECC__GUID-FE97A7A8-B9D6-487C-9245-B5C7A9C74A9A">
+                     <li>Binary numeric functions, such as Add, Subtract, Multiple, and Divide</li>
+                     <li>Binary Boolean functions, such as And, Or, Exclusive Or, Not And, Not Or, Not Exclusive
+                        Or, and Implies
+                     </li>
+                     <li>Binary Comparison functions, such as Equal?, Not Equal?, Greater?, Less?, Greater Or
+                        Equal?, Less Or Equal?
+                     </li>
+                     <li>Compound Arithmetic</li>
+                     <li>Get Variant Attribute</li>
+                     <li>String functions, such as Match Pattern, Search and Replace String, and Search/Split
+                        String
+                     </li>
+                     <li>Array functions, such as Delete From Array, Insert Into Array</li>
+                     <li>Quotient &amp; Remainder</li>
+                     <li>Select</li>
+                     <li>Insert Into Map</li>
+                     <li>Insert Into Set</li>
+                  </ul>
+                  <cite>[Idea submitted by NI Discussion Forums member D*.]</cite></div>
+               
+            </div> 
+            
+         </div>
+         <div class="nested1" xml:lang="en-US"><a name="GUID-BDE7B90F-B15D-4F8D-BE62-014B2B8ACD73" shape="rect">
+               <!-- --></a> 
+            
+            <h2 class="topictitle2">New and Changed VIs and Functions</h2> 
+            
+            
+            <div>
+               <p> 
+                  
+               </p> 
+               	 
+               <p><a name="GUID-BDE7B90F-B15D-4F8D-BE62-014B2B8ACD73__NEWVISFUNCTIONS" shape="rect">
+                     <!-- --></a><span>LabVIEW 2020</span> includes the following new and changed VIs and functions. 
+               </p> 
+               
+            </div> 
+            
+            <div class="nested2" xml:lang="en-US"><a name="GUID-A068C12B-E5FF-4B7E-A1E2-6CAE5D0AD1A7" shape="rect">
+                  <!-- --></a> 
+               
+               <h3 class="topictitle3">New VIs and Functions</h3> 
+               
+               
+               <div>
+                  <p> 
+                     
+                  </p>
+                  		
+                  		
+                  <div class="section"><a name="GUID-A068C12B-E5FF-4B7E-A1E2-6CAE5D0AD1A7__SECTION_MWW_WSV_VJB" shape="rect">
+                        <!-- --></a><h4 class="sectiontitle">Web
+                        				Services VIs
+                     </h4>
+                     <p>The <span>Web Services</span> palette is
+                        				reorganized and includes the following new subpalettes:
+                     </p><a name="GUID-A068C12B-E5FF-4B7E-A1E2-6CAE5D0AD1A7__UL_YDT_YSV_VJB" shape="rect">
+                        <!-- --></a><ul id="GUID-A068C12B-E5FF-4B7E-A1E2-6CAE5D0AD1A7__UL_YDT_YSV_VJB">
+                        <li><span>Application Web Server</span>�Contains VIs that specifically
+                           					support Web services deployed to the Application Web Server, including VIs to
+                           					configure Embedded Server Pages (ESP) scripting, encrypt and decrypt data
+                           					transfers, and manage HTTP sessions on the Application Web Server.
+                        </li>
+                        <li><span>NI Web Server</span>�Contains the new <span>Get Auth
+                              						Details for NI Web Server</span> VI, which returns the authentication
+                           					details for the NI Web Server.
+                        </li>
+                     </ul>
+                  </div>
+                  		
+                  <div class="section"><a name="GUID-A068C12B-E5FF-4B7E-A1E2-6CAE5D0AD1A7__SECTION_97F918B4C75C4474A163C5047A27824C" shape="rect">
+                        <!-- --></a><h4 class="sectiontitle">WebSockets VIs</h4>
+                     			
+                     			
+                     <p> The <span>Data Communication</span> palette includes a link to install
+                        					<span>WebSockets</span> VIs for streaming data to or from web user
+                        				interfaces. On the <span>Data Communication</span> palette, click
+                        					<strong>Install WebSockets Add-on</strong> to install the WebSockets
+                        				Toolkit from the <span>JKI VI Package Manager (VIPM)</span>. The
+                        					<span>WebSockets</span> VIs appear on the <span class="menucascade"><strong>Data Communication�</strong><strong>WebSockets</strong></span> palette. 
+                     </p>
+                     			
+                     <p><cite>[Special thanks to Sam Sharp, author of the WebSockets add-on.]</cite>
+                        			
+                     </p>
+                     		
+                  </div>
+                  		
+                  <div class="section"><a name="GUID-A068C12B-E5FF-4B7E-A1E2-6CAE5D0AD1A7__SECTION_ZBQ_VNW_RKB" shape="rect">
+                        <!-- --></a><h4 class="sectiontitle">Multiple
+                        				Errors VIs
+                     </h4>
+                     <p>The <span>Dialog &amp; User Interface</span>
+                        				palette includes the new <span>Multiple Errors</span> subpalette. Use
+                        				the <span>Multiple Errors</span> VIs to convert an error cluster into
+                        				different formats or to manipulate the attributes of an error cluster.
+                     </p>
+                  </div>
+                  		
+                  <div class="section"><a name="GUID-A068C12B-E5FF-4B7E-A1E2-6CAE5D0AD1A7__SECTION_DDP_GL5_XJB" shape="rect">
+                        <!-- --></a><h4 class="sectiontitle">Transport
+                        				Layer Security Functions
+                     </h4>
+                     <p>The <span>TCP</span> palette includes
+                        				the new <span>Transport Layer Security (TLS)</span> palette. The TLS
+                        				protocol presents an interface similar to the Transmission Control Protocol (TCP)
+                        				and is encrypted and authenticated on top of TCP. LabVIEW TLS support reuses the
+                        					<span>TCP</span> functions. LabVIEW supports TLS version 1.2.
+                        					<span>TLS</span> functions do not support FPGA
+                        			targets.
+                     </p>
+                  </div> 
+                  	 
+                  <div class="section"><a name="GUID-A068C12B-E5FF-4B7E-A1E2-6CAE5D0AD1A7__SECTION_56DBE8B3B5394F76A2BA77D260760C65" shape="rect">
+                        <!-- --></a><h4 class="sectiontitle">Miscellaneous New VIs and
+                        				Functions
+                     </h4>
+                     			
+                     			
+                     <p><span>LabVIEW 2020</span> includes the following miscellaneous new VIs and functions: 
+                     </p><a name="GUID-A068C12B-E5FF-4B7E-A1E2-6CAE5D0AD1A7__UL_6FF8D1EB469E48F7B0D8596C42BA303A" shape="rect">
+                        <!-- --></a><ul id="GUID-A068C12B-E5FF-4B7E-A1E2-6CAE5D0AD1A7__UL_6FF8D1EB469E48F7B0D8596C42BA303A">
+                        <li><a name="GUID-A068C12B-E5FF-4B7E-A1E2-6CAE5D0AD1A7__LI_72CD4BB7F9E84981A58CC9AFF19418D9" shape="rect">
+                              <!-- --></a>The following VIs can compute message
+                           					digest algorithms: <a name="GUID-A068C12B-E5FF-4B7E-A1E2-6CAE5D0AD1A7__UL_AZB_TVR_SJB" shape="rect">
+                              <!-- --></a><ul id="GUID-A068C12B-E5FF-4B7E-A1E2-6CAE5D0AD1A7__UL_AZB_TVR_SJB">
+                              <li> The new <span>File Checksum</span> VI on the
+                                 								<span>Advanced File</span> palette computes the message
+                                 							digest on the contents of a file. 
+                              </li>
+                              <li> The the new <span>Byte Array Checksum</span> VI on the
+                                 								<span>Data Manipulation</span> palette computes the
+                                 							message digest on a byte array.
+                              </li>
+                           </ul>LabVIEW can compute the following message digest algorithms:<a name="GUID-A068C12B-E5FF-4B7E-A1E2-6CAE5D0AD1A7__UL_IMS_PTZ_LJB" shape="rect">
+                              <!-- --></a><ul id="GUID-A068C12B-E5FF-4B7E-A1E2-6CAE5D0AD1A7__UL_IMS_PTZ_LJB">
+                              <li>SHA-256</li>
+                              <li>SHA-224</li>
+                              <li>SHA-512</li>
+                              <li>SHA-384</li>
+                              <li>SHA-512/256</li>
+                              <li>SHA-512/224</li>
+                              <li>SHA3-224</li>
+                              <li>SHA3-256</li>
+                              <li>SHA3-384</li>
+                              <li>SHA3-512</li>
+                           </ul>
+                        </li>
+                        <li>The new <span>Get Memory Status</span> VI on the <span>Memory
+                              						Control</span> palette returns the amount of physical memory that your
+                           					LabVIEW process uses. This VI also returns the status of system-wide memory
+                           					usage.
+                        </li>
+                        <li>The new <span>Create NI GUID</span> VI on the <span>Additional
+                              						String</span> palette generates a globally unique identifier (GUID)
+                           					string.
+                        </li>
+                        <li>The new <span>Range Limits for Type</span> VI on the
+                           						<span>Numeric</span> palette returns the maximum and minimum
+                           					values of the input data type.
+                        </li>
+                        <li>The new <span>Enum to Arrays of Enum</span> VI on the
+                           						<span>Conversion</span> palette creates an array of enums with
+                           					the same number of elements as values in the enum.
+                        </li>
+                        <li>The new <span>Get LabVIEW Class Parent And Member VI Information</span>
+                           					VI on the <span>Data Type Parsing</span> palette retrieves parent
+                           					and member VI information of the LabVIEW class or interface stored in a
+                           					variant.
+                        </li>
+                     </ul>
+                     		
+                  </div> 
+                  
+               </div> 
+               
+               <div>
+                  <div class="relinfo"><strong>Related information</strong><br clear="none"><div><a href="../lvcomm/web_services_appws.html" shape="rect">Application Web Server VIs</a></div>
+                     <div><a href="../lvcomm/web_services_niws.html" shape="rect">NI Web Server VIs</a></div>
+                     <div><a href="../lvcomm/get_auth_details_niws.html" shape="rect">Get Auth Details for NI Web Server</a></div>
+                     <div><a href="../glang/multiple_errors.html" shape="rect">Multiple Errors VIs</a></div>
+                     <div><a href="../lvcomm/tls_functions.html" shape="rect">Transport Layer Security (TLS) Functions</a></div>
+                     <div><a href="../glang/file_checksum.html" shape="rect">File Checksum</a></div>
+                     <div><a href="../glang/byte_array_checksum.html" shape="rect">Byte Array Checksum</a></div>
+                     <div><a href="../glang/get_memory_status.html" shape="rect">Get Memory Status</a></div>
+                     <div><a href="../glang/create_ni_guid.html" shape="rect">Create NI GUID</a></div>
+                     <div><a href="../glang/range_limits_for_type.html" shape="rect">Range Limits for Type</a></div>
+                     <div><a href="../glang/enum_to_array_of_enums.html" shape="rect">Enum to Array of Enums</a></div>
+                     <div><a href="../glang/get_labview_class_parent_information.html" shape="rect">Get LabVIEW Class Parent And Member VI Information</a></div>
+                  </div>
+               </div>
+               
+            </div>
+            <div class="nested2" xml:lang="en-US"><a name="GUID-413FE0D9-1FAB-41E2-997B-202B78BF538B" shape="rect">
+                  <!-- --></a> 
+               
+               <h3 class="topictitle3">Changed VIs and Functions</h3> 
+               
+               
+               <div>
+                  <p> 
+                     
+                  </p> 
+                  	 
+                  <p><span>LabVIEW 2020</span>
+                     includes the following changed VIs and functions: 
+                  </p>
+                  <a name="GUID-413FE0D9-1FAB-41E2-997B-202B78BF538B__UL_U5S_Y5S_LJB" shape="rect">
+                     <!-- --></a><ul id="GUID-413FE0D9-1FAB-41E2-997B-202B78BF538B__UL_U5S_Y5S_LJB">
+                     <li>The default data type of the <strong>name or relative path</strong> input of the
+                        <span>Build Path</span> function is changed from string to path. When you create a
+                        control or constant from this input, the data type is a path. This input still also accepts
+                        a string.
+                     </li>
+                     <li>The <span>To More Specific Class</span> and <span>To More Generic Class</span> functions add support for interfaces. Use these functions to cast a wire of one class or interface type to another class
+                        or interface type.
+                     </li>
+                     <li>The <span>Assert Same or Descendant Type</span> VI adds support for interfaces.
+                        This VI breaks the calling VI unless the input data is the same as or is a descendant of the
+                        input class or interface.
+                     </li>
+                     <li>The <span>Call Parent Method</span> node is renamed <span>Call Parent Class Method</span>. Use this node to call the nearest ancestor implementation of a class method.
+                     </li>
+                     <li>The <span>TDMS File Viewer</span> VI and <span class="wintitle">TDMS File Viewer</span>
+                        dialog box are redesigned to be more intuitive. You can display data from a
+                        <span class="filepath">.tdms</span> file and change visualization settings all in a single page
+                        instead of switching between multiple tabs.
+                     </li>
+                     <li>In previous versions of LabVIEW, the <span>Merge Errors</span> function always
+                        returns the first error or warning in the input error clusters. In LabVIEW 2020, you can
+                        configure the function to return an error cluster that combines all of the input errors and
+                        warnings by right-clicking the function and selecting <span class="menucascade"><strong>Retain All Errors</strong></span>.
+                     </li>
+                  </ul> 
+                  
+               </div> 
+               
+               <div>
+                  <div class="relinfo"><strong>Related information</strong><br clear="none"><div><a href="../glang/Build_Path.html" shape="rect">Build Path</a></div>
+                     <div><a href="../glang/To_More_Specific_Class.html" shape="rect">To More Specific Class</a></div>
+                     <div><a href="../glang/To_More_Generic_Class.html" shape="rect">To More Generic Class</a></div>
+                     <div><a href="../glang/assert_same_or_descendant_type.html" shape="rect">Assert Same or Descendant Type</a></div>
+                     <div><a href="../glang/UDClass.html" shape="rect">Call Parent Class Method</a></div>
+                     <div><a href="../glang/TDMS_File_Viewer.html" shape="rect">TDMS File Viewer VI</a></div>
+                     <div><a href="../glang/merge_errors_function.html" shape="rect">Merge Errors Function</a></div>
+                  </div>
+               </div>
+               
+            </div>
+         </div>
+         <div class="nested1" xml:lang="en-US"><a name="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE" shape="rect">
+               <!-- --></a> 
+            
+            <h2 class="topictitle2">New and Changed Properties, Methods, and Events</h2> 
+            
+            
+            <div>
+               <p> 
+                  
+               </p>
+               
+               <p><a name="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__NEWVISFUNCTIONS" shape="rect">
+                     <!-- --></a><span>LabVIEW 2020</span> includes the following new and changed properties, methods, and events.
+               </p>
+               
+               
+               <div class="section"><a name="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__SECTION_SMZ_LF3_YJB" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">New Properties, Methods, and Events</h3>
+                  <p><span>LabVIEW 2020</span> includes the following new properties, methods, and events: 
+                  </p><a name="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_30DA6B4F7BD241BB98D79F52CD8F2535" shape="rect">
+                     <!-- --></a><ul id="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_30DA6B4F7BD241BB98D79F52CD8F2535">
+                     <li>The <span>LVClassLibrary</span> class includes the following new properties and methods:<a name="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_OQZ_H23_YJB" shape="rect">
+                           <!-- --></a><ul id="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_OQZ_H23_YJB">
+                           <li>Parent Interfaces</li>
+                           <li>Parent Libraries</li>
+                           <li>Is Interface</li>
+                           <li>Write Parent Interfaces</li>
+                           <li>Write Parent Library Paths</li>
+                           <li>Add Parent Interface</li>
+                           <li>Remove Parent Interface</li>
+                        </ul>
+                     </li>
+                     <li>The <span>Application</span> class includes the following new properties and method:<a name="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_NCP_Y5X_PJB" shape="rect">
+                           <!-- --></a><ul id="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_NCP_Y5X_PJB">
+                           <li>Palettes:Controls Names</li>
+                           <li>Palettes:Functions Names</li>
+                           <li>LabVIEW Class:Create Interface</li>
+                        </ul>
+                     </li>
+                     <li>The <span>VI</span> class includes the following new property and method:<a name="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_JTT_BVX_PJB" shape="rect">
+                           <!-- --></a><ul id="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_JTT_BVX_PJB">
+                           <li>Execution:Retain Wire Values</li>
+                           <li>Control VI Apply Changes</li>
+                        </ul>
+                     </li>
+                     <li>The <span>GObject</span> class includes the following new properties: <a name="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_D24_HVX_PJB" shape="rect">
+                           <!-- --></a><ul id="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_D24_HVX_PJB">
+                           <li>Grouped</li>
+                           <li>Group Member Refs[]</li>
+                           <li>Locked</li>
+                        </ul>
+                     </li>
+                     <li>The <span>Array</span> class and <span>Array Constant</span> class include the following new property:<a name="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_YMS_KVX_PJB" shape="rect">
+                           <!-- --></a><ul id="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_YMS_KVX_PJB">
+                           <li>Index Rect</li>
+                        </ul>
+                     </li>
+                     <li>The <span>Path</span> class includes the following new property:<a name="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_XBC_MVX_PJB" shape="rect">
+                           <!-- --></a><ul id="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_XBC_MVX_PJB">
+                           <li>Browse Button Rect</li>
+                        </ul>
+                     </li>
+                     <li>The <span>Ring</span> class includes the following new properties: <a name="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_N4L_NVX_PJB" shape="rect">
+                           <!-- --></a><ul id="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_N4L_NVX_PJB">
+                           <li>Last Value Hidden</li>
+                           <li>Flavor</li>
+                        </ul>
+                     </li>
+                     <li>The <span>TreeControl</span> class includes the following new property:<a name="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_FD5_PVX_PJB" shape="rect">
+                           <!-- --></a><ul id="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_FD5_PVX_PJB">
+                           <li>Focus Item</li>
+                        </ul>
+                     </li>
+                     <li>The <span>MulticolumnListbox</span> class includes the following new properties:<a name="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_BXB_RVX_PJB" shape="rect">
+                           <!-- --></a><ul id="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_BXB_RVX_PJB">
+                           <li>Selected Cell </li>
+                           <li>Bulk Cells:Font Colors </li>
+                           <li>Bulk Cells:Background Colors </li>
+                        </ul>
+                     </li>
+                     <li>The <span>Project</span> class includes the following new method:<a name="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_VJD_ZJP_HKB" shape="rect">
+                           <!-- --></a><ul id="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_VJD_ZJP_HKB">
+                           <li>Item From Item ID</li>
+                        </ul>
+                     </li>
+                     <li>The <span>Numeric</span> class, <span>NumericConstant</span> class, and <span>OverridableParameterTerminal</span> class include the new properties for configuring fixed-point behavior for numeric controls and constants and fixed-point
+                        output configuration on math primitives.
+                     </li>
+                     <li>The <span>Ring</span> class, <span>Enum</span> class, and <span>ComboBox</span> class include the following new events:<a name="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_YWD_XVX_PJB" shape="rect">
+                           <!-- --></a><ul id="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_YWD_XVX_PJB">
+                           <li>Operate Menu Activation</li>
+                           <li>Operate Menu Dismissed</li>
+                        </ul>
+                     </li>
+                     <li>The <span>Control</span> class includes the following new event:<a name="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_VHN_ZVX_PJB" shape="rect">
+                           <!-- --></a><ul id="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_VHN_ZVX_PJB">
+                           <li>Shortcut Menu Dismissed </li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+               
+               <div class="section"><a name="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__SECTION_KXF_SF3_YJB" shape="rect">
+                     <!-- --></a><h3 class="sectiontitle">Changed Methods</h3>
+                  <p><span>LabVIEW 2020</span> includes the following changed methods: 
+                  </p><a name="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_T5P_VF3_YJB" shape="rect">
+                     <!-- --></a><ul id="GUID-13178931-B7D3-40CD-974E-4A99F39B5DCE__UL_T5P_VF3_YJB">
+                     <li>The <strong>Consider Parent Classes</strong> parameter of the
+                        <span>LVClassLibrary:Has Implementation?</span> method is renamed
+                        <strong>Consider Parents</strong>. This method returns an error if the class
+                        inherits multiple methods of the same name from parent interfaces and does not provide its
+                        own override.
+                     </li>
+                     <li>The <span>Library:Source Scope:Set and Propagate</span> method includes
+                        the new <strong>skip prompt?</strong> parameter. Use this parameter to specify
+                        whether to ask before applying the access scope setting to all override VIs when the item
+                        is a dynamic dispatch VI.
+                     </li>
+                  </ul>
+               </div> 
+               
+            </div> 
+            
+         </div>
+      </div>
+   </body>
+</html>

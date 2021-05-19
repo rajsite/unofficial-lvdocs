@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+
+<title>Building Configuration Dialog Box VIs</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Building Configuration Dialog Box VIs</h1>
+
+<p class="Body">After you <a href="../lvconcepts/Creating_Express_VIs.html">create</a> a new <a href="../lvconcepts/ExpressVIs.html">Express VI</a> with the <a href="../lvdialog/Express_VI_Creator_DB.html">Express VI Creator</a> wizard and design the <a href="../lvconcepts/Design_Source_VIs.html">source VI</a>, you can <a href="Build_User_Interface.html#build_config_DB_FP">design the front panel</a> of the <a href="../lvconcepts/Design_Config_DB_VIs.html">configuration dialog box VI</a> to complete the user interface and then <a href="Build_User_Interface.html#build_config_DB_BD">modify the provided block diagram template</a> to configure the run-time behavior of the Express VI.</p>
+
+<a name="build_config_DB_FP"></a><p class="Body">Complete the following steps to build the front panel of a configuration dialog box VI. <!-- begin parent: ../lvconcepts/Building_the_Block_Diagram.xml-->Also use the <a href="../lvdevconcepts/checklist.html">LabVIEW style checklist</a> and other <a href="../lvdevconcepts/lvdevconcepts_main.html">development guidelines</a> when building the user interface.<!-- end parent: ../lvconcepts/Building_the_Block_Diagram.xml--></p>
+
+<ol>
+<li>Open the configuration dialog box VI from the <a href="../lvdialog/Create_Edit_Express_VI_DB.html">Create or Edit Express VI</a> dialog box.</li>
+<li>Place controls and indicators that you want to appear in the configuration dialog box in the <strong>Main Selection</strong> frame of the front panel, except for the <strong>OK</strong>, <strong>Cancel</strong>, and <strong>Help</strong> buttons.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If you <a href="../lvhowto/Convert_VI_to_Express.html">created the Express VI from a standard VI</a>, the controls and indicators from the standard VI that you selected as <a href="../lvconcepts/Exp_VI_Terminals.html">configurable</a> appear automatically on the front panel.</td>
+</tr>
+</table>
+</li>
+<li>Resize the front panel to display only the <strong>Main Selection</strong> frame and the <strong>OK</strong>, <strong>Cancel</strong>, and <strong>Help</strong> buttons. The configuration dialog box maintains this setting after you save the VI.</li>
+<li>Save the configuration dialog box VI.</li>
+</ol>
+
+<a name="build_config_DB_BD"></a><p class="Body">Complete the following steps to build the block diagram of a configuration dialog box VI.</p>
+
+<ol>
+<li>In the Initialize section of the block diagram, specify the configurable parameters for the Express VI in the <strong>Control Data</strong> array. Each element in the <strong>Control Data</strong> array has three fields.
+	<ol>
+	<!-- begin parent: ../lvconcepts/Building_the_Block_Diagram.xml--><li>In the first field, <strong>Ctl Type</strong>, specify the type of the control, such as a front panel control, a constant, the Express VI title, or a dynamic data type control, in the source VI.</li>
+	<li>In the second field, <strong>SourceVI Ctl Label</strong>, enter the label of the control as it appears on the front panel of the source VI.
+	<table class="Borderless">
+	<tr>
+	<td class="Icon"><img src="note.gif" alt="Note"></td>
+	<td><strong>Note</strong>&nbsp;&nbsp;You must enter the exact string, including the correct case, as it appears in the control label in the source VI. To ensure accuracy, copy and paste from the front panel label in the source VI.</td>
+	</tr>
+	</table>
+	</li>
+	<li>In the third field, <strong>ConfigDiag Ctl Label</strong>, enter the label of the control as it appears on the front panel of the configuration dialog box VI. An empty string indicates the label is the same as the source VI label.</li><!-- end parent: ../lvconcepts/Building_the_Block_Diagram.xml-->
+	</ol>
+</li>
+<li>Configure the Main While Loop section of the block diagram to handle user interface feedback such as 
+updating graphs or using radio buttons. The Event structure in this section is for any code related to direct user events such as value changes.</li>
+<li>In the Reconfigure section of the block diagram, specify the <a href="../lvconcepts/Exp_VI_Terminals.html">expandable terminals</a> for the Express VI in the <strong>Terminals to Grow</strong> array.</li>
+<li>Save and close the configuration dialog box VI.</li>
+</ol>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If you run the configuration dialog box VI by itself instead of launching it from the Express VI, you receive an error message. Disregard this error, which occurs because you are not running the VI as part of the Express VI.</td>
+</tr>
+</table>
+
+
+
+</body>
+</html>

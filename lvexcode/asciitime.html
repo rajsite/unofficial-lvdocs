@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>ASCIITime (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>ASCIITime (LabVIEW Manager Function)</h1>
+<p class="Code">CStr ASCIITime(secs);</p>
+<h2>Purpose</h2>
+<p class="Body">Returns a pointer to a string representing the date and time of day corresponding to <em>t</em> seconds after 12:00 a.m., Friday, January 1, 1904, Universal Time [01-01-1904 00:00:00]. This function uses the same date format as that returned by the <a href="datecstring.html">DateCString</a> function using a mode of <span class="Monospace">2</span>. The date is followed by a space. The time is in the same format as that returned by the <a href="timecstring.html">TimeCString</a> function using a mode of <span class="Monospace">0</span>. For example, this function might return <span class="Monospace">Tuesday, Dec 22, 1992 5:30</span>. Date formats vary with your system configuration.</p>
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>secs</strong></td>
+<td class="Bordered"><span class="Monospace">uInt32</span></td>
+ <td class="Bordered">Seconds since 12:00 a.m., Friday, January 1, 1904, Universal Time [01-01-1904 00:00:00].</td></tr>
+</table>
+<h2>Return Value</h2>
+<p class="Body">The date and time as a C string.</p>
+
+</body>
+</HTML>

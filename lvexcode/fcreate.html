@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>FCreate (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>FCreate (LabVIEW Manager Function)</h1>
+<p class="Code">MgErr FCreate(fdp, path, permissions, openMode, denyMode, group);</p>
+<h2>Purpose</h2>
+<p class="Body">Creates a file with the name and location specified by <strong>path</strong> and with the specified <strong>permissions</strong>, and opens it for writing and reading, as specified by <strong>openMode</strong>. If the file already exists, the function returns an error.</p>
+<p class="Body">You can use <strong>denyMode</strong> to control concurrent access to the file from within LabVIEW. You can use the <strong>group</strong> parameter to assign the file to a Linux group. LabVIEW ignores <strong>group</strong> on Windows and Mac OS X.</p>
+<p class="Body">If the function creates the file, the resulting file descriptor is stored in the address referred to by <strong>fdp</strong>. If an error occurs, the function stores <span class="Monospace">0</span> in the address referred to by <strong>fdp</strong> and returns an error.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;Before you call this function, ensure that you understand how to use <a href="../lvexcodeconcepts/LabVIEW_Manager_Routines.html#Pointers_as_Parameters">pointers as parameters</a>.</td></tr></table>
+
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>fdp</strong></td>
+ <td class="Bordered"><span class="Monospace">File&nbsp;*</span></td>
+ <td class="Bordered">Address at which <span class="Monospace">FCreate</span> stores the file descriptor for the new file. If <span class="Monospace">FCreate</span> fails, it stores <span class="Monospace">0</span> in the address <strong>fdp</strong>. This parameter is a <a href="../lvexcodeconcepts/LabVIEW_Manager_Routines.html#Pointers_as_Parameters">pointer</a>.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>path</strong></td>
+ <td class="Bordered"><span class="Monospace">Path</span></td>
+ <td class="Bordered">Path of the file you want to create.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>permissions</strong></td>
+ <td class="Bordered"><span class="Monospace">int32</span></td>
+ <td class="Bordered"><a href="permissions_for_files_directories.html">Permissions</a> to assign to the new file.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>openMode</strong></td>
+ <td class="Bordered"><span class="Monospace">int32</span></td>
+ <td class="Bordered">Access mode to use in opening the file. The&nbsp;following values are defined in the file <span class="Monospace">extcode.h</span>.
+ <UL>
+ <li><span class="Monospace">openReadOnly</span>&#8212;Open for reading.</li>
+ <li><span class="Monospace">openWriteOnly</span>&#8212;Open for writing.</li>
+ <li><span class="Monospace">openReadWrite</span>&#8212;Open for both reading and writing.</li>
+ </UL></td></tr>
+ <tr>
+ <td class="Bordered"><strong>denyMode</strong></td>
+ <td class="Bordered"><span class="Monospace">int32</span></td>
+ <td class="Bordered">Mode that determines what level of concurrent access to the file is allowed. The following values are defined in the file <span class="Monospace">extcode.h</span>.
+ <UL>
+ <li><span class="Monospace">denyReadWrite</span>&#8212;Prevents others from reading from and writing to the file while it is open.</li>
+ <li><span class="Monospace">denyWriteOnly</span>&#8212;Prevents others from writing to the file only while it is open.</li>
+ <li><span class="Monospace">denyNeither</span>&#8212;Allows others to read from and write to the file while it is open.</li>
+ </UL></td></tr>
+ <tr>
+ <td class="Bordered"><strong>group</strong></td>
+ <td class="Bordered"><span class="Monospace">PStr</span></td>
+ <td class="Bordered">Linux group you want to assign to the new file.</td></tr>
+</table>
+
+<h2>Return Value</h2>
+<p class="Body"><span class="Monospace">MgErr</span>, which can contain the following errors. If you receive errors from <a href="LabVIEW_Manager_Functions.html">LabVIEW Manager functions</a>, most error names correspond to LabVIEW error codes.</p>
+<table class="Bordered">
+<tr><th class="Bordered Left-Align">Value</th>
+<th class="Bordered Left-Align">Corresponding Error Code or Description</th></tr>
+<tr><td class="Bordered"><span class="Monospace">noErr</span></td><td class="Bordered">No error.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">mgArgErr</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">1</a></td></tr>
+<tr><td class="Bordered"><span class="Monospace">fIsOpen</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">5</a>. This error is returned only on Mac OS X. Windows returns <span class="Monospace">fIOErr</span>.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">fIOErr</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">6</a></td></tr>
+<tr><td class="Bordered"><span class="Monospace">fNoPerm</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">8</a></td></tr>
+<tr><td class="Bordered"><span class="Monospace">fDupPath</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">10</a></td></tr>
+<tr><td class="Bordered"><span class="Monospace">fTMFOpen</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">11</a></td></tr>
+</table>
+
+</body>
+</HTML>

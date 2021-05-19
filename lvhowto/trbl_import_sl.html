@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+<title>Troubleshooting the Import Shared Library Wizard</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Troubleshooting the Import Shared Library Wizard</h1>
+					<p class="Body">The following are some common issues you might face while <a href="../lvexcodeconcepts/importing_shared_library.html">using the Import Shared Library wizard</a>. If the suggested solutions do not help you, you may need to <a href="../lvexcodeconcepts/Debug_DLLs_and_DLL_Calls.html">debug the shared library</a>.</p>
+					<h2>The Wizard Cannot Locate any Functions</h2>
+					<p class="Body">The <strong>Functions</strong> list on the <a href="../lvdialog/DLL_select_func.html">Select Functions to Convert</a> page of the <a href="../lvdialog/import_library_wizard.html">Import Shared Library</a> wizard lists all the functions in the shared library file you specify. If no functions appear after the wizard parses the header file, check that the path to the shared library file is correct and that the library contains functions.</p>
+					<h2>The Wizard Locates Functions that It Cannot Import</h2>	
+					<p class="Body">The <strong>Import Shared Library</strong> wizard lists all the functions in the shared library file you specify, but it can import only those functions that the wizard can parse correctly from the header file. The warnings that appear when you select a function in the <strong>Functions</strong> list on the <strong>Select Functions to Convert</strong> page can help you determine possible problems. Check that the header file contains all the necessary function declarations. Each function declaration must include the <a href="../lvexcodeconcepts/Calling_External_APIs.html">calling convention</a>, the data type of the return value, and defined parameters. To correct the header file, you can edit the file directly or use the <a href="../lvdialog/DLL_config_paths.html">Configure Include Paths and Preprocessor Definitions</a> page of the wizard to add symbol definitions.</p>
+	<p class="Body">The following example code from a header file only compiles <span class="Monospace">functionA</span> if you define <span class="Monospace">WIN32</span>:</p>
+	<p class="Body"><span class="Monospace">#ifdef WIN32</span><br />
+	<span class="Monospace">int functionA(int para);</span><br />
+	<span class="Monospace">#endif</span></p>
+	<p class="Body">If you want LabVIEW to import <span class="Monospace">functionA</span> but the header file does not define <span class="Monospace">WIN32</span>, you can either edit the header file directly to define <span class="Monospace">WIN32</span>, or you can define <span class="Monospace">WIN32</span> in the <strong>Import Shared Library</strong> wizard. To define <span class="Monospace">WIN32</span> in the wizard, enter <span class="Monospace">WIN32</span> in the <strong>Preprocessor Definitions</strong> text box on the <strong>Configure Include Paths and Preprocessor Definitions</strong> page.</p>
+	<p class="Body">The following example code shows another function in a header file. In this situation, you did not define <span class="Monospace">NIAPI</span>, so LabVIEW does not recognize the symbol:</p>
+		<p class="Body"><span class="Monospace">NIAPI int functionA(intpara);</span></p>
+		<p class="Body">If you want LabVIEW to import the function, you can add <span class="Monospace">NIAPI=_stdcall</span> to the <strong>Preprocessor Definitions</strong> text box to define <span class="Monospace">NIAPI</span>.</p>
+	<h2>The Wizard Cannot Locate Declared Functions</h2>
+	<p class="Body">The <strong>Functions</strong> list only shows functions that appear in the shared library file. If the header file contains declarations for functions that are not in the shared library file, the wizard does not list those functions. To see all the functions declared in the header file regardless of whether they exist in the shared library file, place a checkmark in the <strong>Shared library is not on the local machine</strong> checkbox on the <a href="../lvdialog/DLL_select_dll.html">Select Shared Library and Header File</a> page of the wizard. The wizard then lists all the functions declared in the header file when you return to the <strong>Select Functions to Convert</strong> page. Be sure to remove the checkmark from this checkbox before you generate the wrapper VIs.</p>
+	<h2>The Wizard Cannot Locate Nested Header Files</h2>
+	<p class="Body">If the header file you specify contains nested header files, you must provide the paths to the nested files in the <strong>Include Paths</strong> text box on the <strong>Configure Include Paths and Preprocessor Definitions</strong> page of the wizard. If you do not specify include paths for nested header files, the wizard cannot parse the header file correctly.</p>
+
+
+
+</body>
+</html>

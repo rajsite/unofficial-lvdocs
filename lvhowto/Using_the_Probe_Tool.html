@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 3500Edebugginghlp -->
+
+<title>Using the Probe Tool</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Using the Probe Tool
+</h1>
+<!-- begin parent = um 3500Edebugging KM -->
+<p class="Body">Use the Probe tool to check intermediate values on a wire as a VI runs. Use the Probe tool if you have a complicated block diagram with a series of operations, any one of which might return incorrect data. Use the Probe tool with <a href="Execution_Highlighting.html">execution highlighting</a>, <a href="Single_Step_Mode.html">single-stepping</a>, and <a href="Breakpoints.html">breakpoints</a> to determine if and where data is incorrect. <!--Begin child: ../lvtextmathmain/probe_ms_node.html-->If data is available, the probe immediately updates and displays the data during execution highlighting, single-stepping, or when you pause at a breakpoint.<!--End child: ../lvtextmathmain/probe_ms_node.html--> When execution pauses at a node because of single-stepping or a breakpoint, you also can probe the wire that just executed to see the value that flowed through that wire.
+</p>
+<p class="Body">You can create a <a href="Creating_Custom_Probes.html">custom probe</a>, use <a href="Using_Supplied_Probe.html">supplied probes</a>, or use an <a href="Using_Control_Probe.html">indicator to view the probed data</a>.</p>
+<p class="checkFile lvtextmathmain Body"><span class="Platform">(MathScript RT Module)</span> You also can <a href="../lvtextmathmain/probe_ms_node.html">use a LabVIEW MathScript probe</a> to view the data in a script in a <a href="../gmath/MathScript_Node.html">MathScript Node</a> as a VI runs.</p>
+<!-- end parent = um 3500Edebugging KM -->
+<p class="Body">Complete the following steps to use the Probe tool <img src="noloc_env_probe.gif">.
+</p>
+<ol>
+<li>(Optional) If you want a probe to display the data that flowed through the wire at the last VI execution, use the <a href="../lvhowto/Retain_Wire_Values.html">Retain Wire Values</a> option on the block diagram.</li>
+<li>Right-click a wire and select <strong>Probe</strong> from the shortcut menu or select <strong>Custom Probe</strong> and a probe from the shortcut menu. If you have not yet selected a supplied probe or <a href="Creating_Custom_Probes.html">created a custom probe</a>, LabVIEW searches the <span class="Monospace">labview\vi.lib\_probes\default</span> and the <span class="Monospace">labview\user.lib\_probes\default</span> directory and finds a probe that matches the data type of the wire you right-clicked. After you select a custom or default probe, it becomes the default probe for that data type.<br><br>The <a href="../lvdialog/probe_watchwindow.html">Probe Watch Window</a> appears. LabVIEW automatically lists and numbers the probe in the <strong>Probe Watch Window</strong> and displays the same number in a glyph on the wire you clicked.
+<br><br>
+You also can use the Probe tool to click a wire or select <strong>View&#0187;Probe Watch Window</strong> to display the <strong>Probe Watch Window</strong>.
+</li>
+<li>(Optional) Place more probes on other wires and objects in the VI where you expect the data to change. Move the <strong>Probe Watch Window</strong> out of the way if necessary.
+</li>
+<li>Run the VI. The subpanel on the right side of the <strong>Probe Watch Window</strong> displays data passed along the wire. Select the probe with the data you want to see in the subpanel. You can open the probe in a separate <strong>Probe</strong> window by right-clicking the probe in the <strong>Probe Watch Window</strong> and selecting <strong>Open Window</strong> from the shortcut menu. You also can select the probe and click the <strong>Open Separate Probe Window</strong> button on the <strong>Probe Watch Window</strong> toolbar.
+</li>
+<li>(Optional) To locate the subpanel or window that shows the value of the probed wire from the block diagram, right-click the wire associated with the probe and select <strong>Find Probe</strong> from the shortcut menu. A red border highlights the subpanel or <strong>Probe</strong> window.</li>
+<li>Compare the data that appears in the subpanel or <strong>Probe</strong> window to what you expected.
+</li>
+<li>To close a probe, right-click the probe or the VI the probe belongs to in the <strong>Probe Watch Window</strong> and select <strong>Remove</strong> from the shortcut menu. You also can select the probe in the <strong>Probe Watch Window</strong> and click the <strong>Remove Selected Probes</strong> button on the <strong>Probe Watch Window</strong> toolbar. You can select more than one probe or select the VI the probes belong to in order to remove all probes in that VI.  
+
+<br><br>
+All probes close automatically when you close the <strong>Probe Watch Window</strong> or the block diagram.
+</li>
+</ol>
+<p class="Body">You cannot use the <strong>Probe Watch Window</strong> to change data. The probe has no effect on the way a VI runs, aside from custom probes optionally acting as breakpoints. 
+</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;If you want to provide help to users about how to use the custom probe, do not place a <strong>Help</strong> button on the probe because LabVIEW only executes probes when data flows through the wire. Instead, you can provide help by <a href="../lvhowto/Creating_Free_Labels.html">adding text</a> to the front panel of the probe or by <a href="../lvhowto/Creating_VI_and_Object_De.html">adding description and tip information</a> to each front panel control. To provide help for the entire probe, consider placing the controls on a tab control or in a cluster and adding description and tip information for the tab control or cluster.</td></tr></table>
+
+<p class="Body">The following three options are available on the shortcut menu that appears when you right-click the data in the <strong>Probe Display</strong> subpanel of the <strong>Probe Watch Window</strong> or a <strong>Probe</strong> window.
+</p>
+<ul>
+<li><strong>Reinitialize to Default Value</strong>&#8212;Resets the value the <strong>Probe</strong> window displays to its default value.
+</li>
+<li><strong>Copy Data</strong>&#8212;Copies the data for pasting to other controls in the same VI or in other VIs. This option is also available on the shortcut menu that appears when you right-click a probe listed in the <strong>Probe Watch Window</strong>.
+</li>
+<li><strong>Find Wire</strong>&#8212;Finds the associated wire. LabVIEW brings the block diagram that contains that wire to the front and highlights the wire. This option is also available on the shortcut menu that appears when you right-click a probe listed in the <strong>Probe Watch Window</strong>.
+</li>
+</ul>
+
+
+
+</body>
+</html>

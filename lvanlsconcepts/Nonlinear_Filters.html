@@ -1,0 +1,69 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Nonlinear Filters</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-DE1FABB5-3EF5-4D08-920A-67DA5576282B" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Nonlinear Filters</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 Smoothing windows, IIR filters, and FIR filters are linear because they satisfy the superposition and proportionality principles,
+            as shown in the following equation. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./kset2Ftemp2FNonlinear_Filters.xml_d4993e23.png"></span></div>
+         </div> 
+         	 
+         <p>where a and b are constants, <em>x</em>(<em>t</em>) and <em>y</em>(<em>t</em>) are signals, <em>L</em>{•} is a linear filtering operation, and inputs and outputs are related through the convolution operation, as shown by the
+            following two equations: 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./kset2Ftemp2FNonlinear_Filters.xml_d4993e114.png"></span></div>
+         </div> 
+         	 
+         <p>where <em>x</em> is the input sequence to filter, <em>y</em> is the filtered sequence, and <em>h</em> is the FIR filter coefficients. 
+            	 
+         </p>
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./kset2Ftemp2FNonlinear_Filters.xml_d4993e177.png"></span></div>
+         </div> 
+         	 
+         <p>where <em>x</em><sub><em>i</em></sub> is the current input, <em>x</em><sub><em>i</em> - <em>j</em></sub> is the past inputs, and <em>y</em><sub><em>i</em> - <em>k</em></sub> is the past outputs. 
+            	 
+         </p> 
+         	 
+         <p>A nonlinear filter does not satisfy the superposition and proportionality principles. Also, you cannot obtain the output signals
+            of a nonlinear filter through the convolution operation because a set of coefficients cannot characterize the impulse response
+            of the filter. Nonlinear filters provide specific filtering characteristics that are difficult to obtain using linear techniques.
+            
+            	 
+         </p> 
+         	 
+         <p>The median filter, a nonlinear filter, combines lowpass filter characteristics and high-frequency characteristics. The lowpass
+            filter characteristics allow the median filter to remove high-frequency noise. The high-frequency characteristics allow the
+            median filter to detect edges, which preserves edge information. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Digital_Filtering.html" shape="rect">Digital Filtering</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

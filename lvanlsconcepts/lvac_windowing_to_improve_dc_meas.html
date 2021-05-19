@@ -1,0 +1,57 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Windowing to Improve DC Measurements</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-D8211278-C388-4EF0-ACA0-A76E961EFAA0" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Windowing to Improve DC Measurements</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 
+            		 The worst ENOD for a DC signal plus a sine tone occurs when the measurement time is at half-periods of the sine tone. You
+            can greatly reduce these errors due to noninteger number of cycles by using a weighting function before integrating to measure
+            the desired DC value. The most common weighting or window function is the Hanning window, also known as the Hann window. 
+            	 
+         </p> 
+         	 
+         <p>The following figure shows a dramatic increase in accuracy from the use of the Hanning window. The accuracy as a function
+            of the number of sine tone periods is improved from a first-order function to a third-order function. In other words, you
+            can achieve one additional digit of accuracy for every 101/3 = 2.15 times more measurement time using the Hanning window instead
+            of one digit for every 10 times more measurement time without using a window. As in the non-windowing case, the DC level is
+            1.0 V and the single tone peak amplitude is 0.5 V. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-D8211278-C388-4EF0-ACA0-A76E961EFAA0__IMAGE_0EC96FA1F707436CAF349358035249BF" shape="rect">
+            <!-- --></a><img id="GUID-D8211278-C388-4EF0-ACA0-A76E961EFAA0__IMAGE_0EC96FA1F707436CAF349358035249BF" src="GUID-9BF10157-1B6B-4C14-B2BD-687C3F60028B-help-web.png"><br clear="none"> 
+         	 
+         <p> 
+            		 You can use other types of window functions to further reduce the necessary measurement time or greatly increase the resulting
+            accuracy. The following figure shows that the Low Sidelobe (LSL) window can achieve more than six ENOD of worst accuracy when
+            averaging a DC signal over only five periods of the sine tone (same test signal). 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-D8211278-C388-4EF0-ACA0-A76E961EFAA0__IMAGE_30D87B6148C541B4BF0202F9858E2D06" shape="rect">
+            <!-- --></a><img id="GUID-D8211278-C388-4EF0-ACA0-A76E961EFAA0__IMAGE_30D87B6148C541B4BF0202F9858E2D06" src="GUID-64CADE4D-1DCD-4533-A7A1-0B57448BB720-help-web.png"><br clear="none"> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="DC_RMS_Error_Sources.html" shape="rect">Common Error Sources Affecting DC and RMS Measurements</a></div>
+         </div>
+         <div class="relinfo relconcepts"><strong>Related concepts</strong><br clear="none"><div><a href="lvac_hanning.html" shape="rect">Hanning</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

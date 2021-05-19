@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+
+<title>Converting VIs in a LabVIEW Project to a Packed Project Library</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Converting VIs in a LabVIEW Project to a Packed Project Library</h1>
+					<p class="Body">If you determine that you <a href="../lvconcepts/packed_libraries.html">need to build a packed project library</a> for a group of VIs, complete the following steps to convert the VIs for a <a href="../lvdevconcepts/Dev_Large_Applications.html">large application</a> to a packed library.</p>
+<ol>
+<li>Place all VIs for the application in a LabVIEW Project.</li>
+<li>Create a project library for each module, or group of VIs that work together. If you use a subVI among multiple modules, duplicate the subVI for each project library or place all shared subVIs in a separate project library.</li>
+<li>Update VIs that reference subVIs in the project libraries to <a href="../lvconcepts/Avoiding_Incorrect_Dependencies.html">avoid incorrect dependencies</a>. </li>
+<li>Create a separate LabVIEW project for each project library, adding each project library to a LabVIEW project.</li>
+<li>For each LabVIEW project, build a packed library with the project library as the top-level file.</li>
+<li>In the LabVIEW project with all the project libraries, right-click each project library and select <strong>Replace with</strong> from the shortcut menu to <a href="../lvconcepts/replace_item.html">replace each project library</a> with a packed library.</li>
+<li>Remove the original project libraries and VIs from the project.</li>
+</ol>
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif" /></td><td><strong>Note</strong>��If you need to make changes to a file in a packed library, make the change to the VI in the LabVIEW project with that project library. After you save the change, test your changes, rebuild the packed library, and copy the most recent packed library to the LabVIEW project with all the packed libraries.</td></tr></table>
+
+
+</body>
+</html>

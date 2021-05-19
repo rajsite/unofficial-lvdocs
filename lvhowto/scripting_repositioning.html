@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<script type="text/javascript" src="pdf.js"></script>
+<title>Tutorial: Repositioning an Object in a VI Using VI Scripting</title>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<LINK rel="StyleSheet" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Tutorial: Repositioning an Object in a VI Using VI Scripting</h1>
+
+<p class="Body">You can reposition objects on the front panel and block diagram of VIs using VI Scripting. This tutorial repositions an object on the block diagram. Complete the following steps to reposition an object on the block diagram of a VI using VI Scripting.</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;<ul><li>This topic assumes familiarity with the <a href="../lvconcepts/scripting_property_method.html">VI Scripting</a> introduction.</li> <li>You must <a href="enabling_vi_scripting.html">enable VI Scripting</a> to display the VI Scripting VI and functions and use the associated properties and methods.</li></ul>
+</td>
+</tr>
+</table>
+<ol>
+<li>Complete the <a href="scripting_creating_new_VI_objects.html">previous exercise</a> if you have not already completed it. If the untitled VI you created in the previous exercise is still open, close the VI.</li>
+<li>Remove the wires from the <a href="../glang/Close_LV_Object_Reference.html">Close Reference</a> function that closes the VI reference and move the function to the right to make room on the block diagram.</li>
+<li>Add another <a href="../glang/New_VI_Object.html">New VI Object</a> function to the block diagram to create an <a href="../glang/Add.html">Add</a> function on the block diagram of the target VI. Configure the New VI Object function and complete the wiring as shown in the following block diagram. Make sure to close all references. Specify the <strong>owner refnum</strong> as the VI.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object4908);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> 
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object4908);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN><br><br>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="tip.gif" alt="Tip"></td>
+<td><strong>Tip</strong>&nbsp;&nbsp;To specify <span class="Monospace">Function</span> in the class specifier constant, select <strong>Generic&#0187;GObject&#0187;Node&#0187;Function&#0187;Function</strong> from the shortcut menu.</td>
+</tr>
+</table>
+<img src="loc_bd_add_two_objects_scripting.gif">
+</li>
+<li><a href="Saving_Individual_VI_Files.html">Save the VI</a>.</li>
+<li><a href="Running_VIs.html">Run the VI</a>.<br><br>
+LabVIEW creates and opens untitled front panel and block diagram windows. The block diagram contains a For Loop in the upper left-hand corner and an Add function near the bottom of the block diagram. You can place the Add function inside the For Loop by wiring the <strong>object refnum</strong> output of the New VI Object function that creates the For Loop to the <strong>owner refnum</strong> input of the New VI Object function that creates the Add function. Then, you can specify coordinates that fall within the For Loop in the <strong>location</strong> input of the New VI Object function used to create the Add function. However, to examine another option for repositioning block diagram objects, the next steps of the tutorial use the <a href="../lvscript/GObject_Move.html">Move</a> method to move the Add function into the For Loop.
+</li>
+<li>If the untitled VI LabVIEW created is still open, close the VI.</li>
+<li>Remove the wires from all three <a href="../glang/Close_LV_Object_Reference.html">Close Reference</a> functions, and move the functions to the right to make room on the block diagram. Refer to the block diagram in step 13 for a visual reference.</li>
+<li>Add an <a href="../glang/Invoke_Node.html">Invoke Node</a> to the right of the New VI Object function that creates the Add function.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object727);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> 
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object727);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN>
+</li>
+<li>Wire the <strong>object refnum</strong> output of the New VI Object function to the <strong>reference</strong> input of the Invoke Node.</li>
+<li>Click the <strong>Method</strong> terminal of the Invoke Node and select <strong>Move</strong> from the shortcut menu.</li>
+<li>To specify the block diagram object into which you want to move the Add function, wire the <strong>object refnum</strong> output of the New VI Object function that creates the For Loop to the <strong>owner</strong> input of the Invoke Node.</li>
+<li>To specify a location within the For Loop to where you want to move the Add function, right-click the <strong>position</strong> input of the Invoke Node, select <strong>Create&#0187;Constant</strong> from the shortcut menu, and enter <span class="Monospace">75</span> and <span class="Monospace">25</span> as values for the <strong>Left</strong> and <strong>Top</strong> inputs, respectively.</li>
+<li>Complete all wiring to match the following block diagram.<br><br>
+<img src="loc_bd_move_scripting.gif">
+</li>
+<li>Save the VI.</li>
+<li>Run the VI.</li>
+</ol>
+<p class="Body">LabVIEW creates and opens untitled front panel and block diagram windows. The block diagram contains a For Loop in the upper left-hand corner and an Add function inside the For Loop.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;Use the <a href="../lvscript/Generic_Delete.html">Delete</a> method to delete an object using VI Scripting. You also can use the <a href="../lvscript/GObject_Replace.html">Replace</a> method to replace an object. To clean up any broken wires after a delete operation, use the <a href="../lvscript/VI_Block_Diagram058Remove_Bad_Wires.html">Block Diagram:Remove Bad Wires</a> method.</td>
+</tr>
+</table>
+
+<p class="Body">To continue this tutorial, continue to the <a href="wiring_scripting_objects.html">Tutorial: Wiring Objects Using VI Scripting</a> topic.</p>
+
+<script type="text/javascript">
+if(typeof(Print_Link)=="function") {
+Print_Link();
+}
+</script>
+</body>
+</html>

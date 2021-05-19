@@ -1,0 +1,69 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Determining Singularity (Condition Number)</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-7D0A0F68-1A87-463E-8379-50E1F8BAF64B" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Determining Singularity (Condition Number)</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 
+            		 
+            		 
+            		 Whereas the norm of the matrix provides a way to measure the magnitude of the matrix, the condition number of a matrix
+            is a measure of how close the matrix is to being singular. The condition number of a square nonsingular matrix is defined
+            as 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./2Flvac_determine_singularity.xml_d13631e36.png"></span></div>
+         </div> 
+         	 
+         <p>where <em>p</em> can be one of the four norm types previously described. For example, to find the condition number of a matrix <em>A</em>, you can find the 2-norm of <em>A</em>, the 2-norm of the inverse of the matrix <em>A</em>, denoted by <em>A</em><sup>-1</sup>, and then multiply them together. The inverse of a square matrix <em>A</em> is a square matrix <em>B</em> such that <em>A</em><em>B</em> = <em>I</em>, where <em>I</em> is the identity matrix. 
+            	 
+         </p> 
+         	 
+         <p>For example, 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./2Flvac_determine_singularity.xml_d13631e131.png"></span></div>
+         </div> 
+         	 
+         <p>The condition number can vary between 1 and infinity. A matrix with a large condition number is nearly singular, while a matrix
+            with a condition number close to 1 is far from being singular. The matrix <em>A</em> is nonsingular. However, consider the matrix 
+            	 
+         </p> 
+         <div class="mathml-block"><span><img src="./2Flvac_determine_singularity.xml_d13631e269.png"></span></div> 
+         	 
+         <p>The condition number of this matrix is 47,168, and hence the matrix is close to being singular. A matrix is singular if its
+            determinant is equal to zero. However, the determinant is not a good indicator for assessing how close a matrix is to being
+            singular. For the matrix <em>B</em>, the determinant (0.0299) is nonzero. However, the large condition number indicates that the matrix is close to being singular.
+            Remember that the condition number of a matrix is always greater than or equal to one; the latter being true for identity
+            and permutation matrices. A permutation matrix is an identity matrix with some rows and columns exchanged. The condition number
+            is a very useful quantity in assessing the accuracy of solutions to linear systems. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Lin_Sys_and_Matrix_Anls.html" shape="rect">Matrix Analysis</a></div>
+         </div>
+         <div class="relinfo"><strong>Related information</strong><br clear="none"><div><a href="../gmath/Matrix_Norm.html" shape="rect">Matrix Norm VI</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

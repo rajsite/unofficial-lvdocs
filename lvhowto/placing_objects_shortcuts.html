@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Configuring Shortcuts for the Quick Drop Dialog Box</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Configuring Shortcuts for the Quick Drop Dialog Box</h1>
+				<p class="Body">Use the <a href="../lvdialog/quick_drop_shortcut_db.html">Quick Drop Configuration</a> dialog box to specify a shortcut that represents an object. You can assign a shortcut name to an object so that you do not have to enter the entire name of the object in the <a href="../lvdialog/quick_drop_db.html">Quick Drop</a> dialog box.
+				</p>
+				<p class="Body">Complete the following steps to configure shortcuts for the <a href="../lvdialog/quick_drop_db.html">Quick Drop</a> dialog box.</p>
+					
+					<ol><li>Press the &lt;Ctrl-Space&gt; keys or select <strong>View&#0187;Quick Drop</strong> to display the <strong>Quick Drop</strong> dialog box. On Chinese keyboards, press the &lt;Ctrl&#8211;Shift&#8211;Space&gt; keys. <span class="Platform">(macOS)</span> Press the &lt;Command-Shift-Space&gt; keys. <span class="Platform">(Linux)</span> Press the &lt;Alt-Space&gt; keys.</li>
+</ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;You cannot assign shortcuts to LabVIEW project items using the <strong>Quick Drop Configuration</strong> dialog box.</td>
+</tr>
+</table>
+<ol start="2">
+<li>Click the <strong>Configure</strong> button in the <strong>Quick Drop</strong> dialog box to display the <strong>Quick Drop Configuration</strong> dialog box. LabVIEW displays the <strong>Front Panel</strong> or <strong>Block Diagram</strong> page of the dialog box according to the window from which you access the dialog box.
+						</li><li>Type a shortcut in the <strong>Panel Shortcut</strong> or <strong>Diagram Shortcut</strong> text box. For example, enter <span class="Monospace">cs</span> in the <strong>Diagram Shortcut</strong> text box if you want to assign that shortcut to an object that you select, such as a Case structure. 	
+							<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;You cannot use modifier keys, such as the &lt;Ctrl&gt; and &lt;Shift&gt; keys, to create shortcuts for the <strong>Quick Drop</strong> dialog box.</td></tr></table>			
+						</li><li>Select an object from the <strong>Panel Shortcut Object</strong> or <strong>Diagram Shortcut Object</strong> pull-down menu.</li><li>Click the <strong>Add</strong> button to assign the shortcut to the object. The <strong>Front Panel Shortcuts</strong> or <strong>Block Diagram Shortcuts</strong> table lists all the shortcuts you assign.</li><li>(Optional) If you want to remove a shortcut,  select a shortcut from the table and click the <strong>Remove Selected Shortcut(s)</strong> button.</li><li>Click the <strong>OK</strong> button to close the dialog box.</li></ol>
+				<p class="Body">
+					To use the shortcuts you assigned, press the &lt;Ctrl&#8211;Space&gt; keys or select <strong>View&#0187;Quick Drop</strong> to display the <strong>Quick Drop</strong> dialog box. On Chinese keyboards, press the &lt;Ctrl&#8211;Shift&#8211;Space&gt; keys. <span class="Platform">(macOS)</span> Press the &lt;Command&#8211;Shift&#8211;Space&gt; keys. <span class="Platform">(Linux)</span> Press the &lt;Alt&#8211;Space&gt; keys. Enter a shortcut that you assigned to an object. The shortcut and the name of the object, in parentheses, appear in the text box. For example, if you assigned the shortcut <span class="Monospace">cs</span> to a Case structure, enter <span class="Monospace">cs</span> in the text box. The text box displays <span class="Monospace">cs (Case Structure)</span>. Click the block diagram to place the Case structure on the block diagram.</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If you want to transfer the shortcuts you configured for the <strong>Quick Drop</strong> dialog box to another installation of LabVIEW that supports the <strong>Quick Drop</strong> dialog box, copy <span class="Monospace">QuickDropPanelShortcuts</span> and <span class="Monospace">QuickDropDiagramShortcuts</span> from the existing <a href="../lvconcepts/Customizing_Your_Work_Environment.html#Setting_Work_Environment_Options">LabVIEW configuration file</a> and place them in the other LabVIEW configuration file.</td>
+</tr>
+</table>
+
+</body>
+</html>

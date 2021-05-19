@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Step 4: Start the Drag-and-Drop Operation by Providing the Drag Data</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Step 4: Start the Drag-and-Drop Operation by Providing the Drag Data</h1>
+<p class="Body">To transfer data from the drag source to the drop target, you first must store the drag data when the user presses the mouse button and moves the cursor outside the bounds of the drag source. LabVIEW can retrieve the stored drag data later to update the drop target when the user causes the drop operation to occur.</p>
+<h2>What to Use</h2>
+<p class="Body">Use the following block diagram objects to start the drag by providing the drag data:</p>
+<table class="Usage">
+	<col class="Object"> 
+	<col class="Spacer"> 
+	<col class="Object"> 
+	<col class="Spacer"> 
+	<col class="Object">
+	<col class="Spacer"> 
+	<col class="Object">
+	<col class="Spacer"> 
+	<col class="Object">
+	<col class="Spacer"> 
+	<col class="Object">
+		<tr>
+			<td><a href="../glang/Case_Structure.html">Case Structure</a></td>
+			<td></td>
+			<td><a href="../lvprop/Control_Value.html">Value</a></td>
+			<td></td>
+			<td><a href="../glang/To_Variant.html">To Variant</a></td>
+			<td></td>
+			<td><a href="../glang/Bundle.html">Bundle</a></td>
+			<td></td>
+			<td><a href="../glang/Build_Array.html">Build Array</a></td>
+			<td></td>
+			<td><a href="../lvprop/Control_StartDrag.html">Start Drag</a></td>
+		</tr>
+		<tr>
+			<td><img src="loc_bd_casestruct.gif"></td>
+			<td></td>
+			<td><br><br><br><img src="loc_bd_valueprop.gif"></td>
+			<td></td>
+			<td><br><br><br><br><br><img src="noloc_bd_tovariant.gif"></td>
+			<td></td>
+			<td><br><br><br><br><br><img src="noloc_bd_bundle.gif"></td>
+			<td></td>
+			<td><br><br><br><br><br><img src="noloc_bd_buildarray.gif"></td>
+			<td></td>
+			<td><br><br><br><img src="loc_bd_startdrag.gif"></td>
+		</tr>
+		<tr>
+			<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object757);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object757);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+			<td></td>
+			<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object725);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object725);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object937);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object937);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object422);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object422);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object267);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object267);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object727);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object727);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		</tr>
+</table>
+<h2>What to Do</h2>
+<p class="Body">Create the following block diagram to start the drag by providing the drag data.</p>
+<img src="loc_bd_dragdropprovide.gif">
+<p class="Body">The following list describes important details about the previous block diagram.</p>
+<table>
+	<tr>
+		<td><img src="noloc_eps_callout_1.gif"></td>
+		<td>The shift register indicates if the user has pressed the mouse button without releasing it. If the user presses the mouse button within the bounds of the drag source and does not release the button, the shift register value is TRUE. Start the drag by providing the drag data in the <span class="Monospace">True</span> case of the Case structure.</td>
+	</tr>
+	<tr>
+		<td><img src="noloc_eps_callout_2.gif"></td>
+		<td>The Value property refers to the data value of the drag source.</td>
+	</tr>
+	<tr>
+		<td><img src="noloc_eps_callout_3.gif"></td>
+		<td>Convert the data from the Property Node into a form that the Start Drag method can use. The Start Drag method requires drag data as a 1D array of clusters that consist of the variant data and a custom data name you choose.
+			<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;When you choose custom data names, do <em>not</em> begin the data names with the prefix <span class="Monospace">LV_</span>. The <span class="Monospace">LV_</span> prefix is reserved for built-in LabVIEW data types.</td>
+</tr>
+</table></td>
+	</tr>
+	<tr>
+		<td><img src="noloc_eps_callout_4.gif"></td>
+		<td>The Start Drag method stores the array of drag data you create and begins the drag-and-drop operation. To access the drag data at a later time, use the Get Drag Drop Data function.
+		<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;This example implements <a href="Setting_Item_Dragging.html">copy only</a> drag-and-drop behavior. To implement move behavior or move and copy behavior, change the <strong>Drag Mode</strong> parameter of the Start Drag method. You also must use the <a href="../lvprop/Control_Drag_Ended.html">Drag Ended</a> event to control when to clear data from the drag source.
+</td>
+</tr></table></td>
+</tr>
+<tr>
+	<td><img src="noloc_eps_callout_5.gif"></td>
+	<td>The FALSE value returns the shift register to its original state. Provide a FALSE value to the shift register in the <span class="Monospace">True</span> and <span class="Monospace">False</span> cases. The FALSE constant is the only object in the <span class="Monospace">False</span> case of the Case structure, because the <span class="Monospace">False</span> case indicates an aborted drag-and-drop operation.</td>
+</tr>
+</table>
+
+<p class="Body">After you start the drag-and-drop operation by providing the drag data, <a href="drag_and_drop_programmatic_verify.html">verify that the drop target can accept the drag data</a>.</p>
+
+</body>
+</html>

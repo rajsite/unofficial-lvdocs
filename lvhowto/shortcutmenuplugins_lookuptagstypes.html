@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Identifying Refnum Types and Menu Item Tags of Objects</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Identifying Refnum Types and Menu Item Tags of Objects</h1>
+<p>You must specify which front panel or block diagram objects to apply a shortcut menu plug-in. In the type definition of the plug-in, you specify the refnum types of the objects. A single right-click on an object may generate references to more than one refnum type. Use the <strong>Lookup All Shortcut Menu Tags And Types</strong> plug-in to help you identify the affected refnum types. When you right-click an object and select the <strong>Lookup All Shortcut Menu Tags And Types</strong> plug-in, LabVIEW displays a list of refnum types affected by the right-click. Use the refnum types to specify the object your plug-in affects.</p> 
+
+<p>The <strong>Lookup All Shortcut Menu Tags And Types</strong> plug-in also lists the menu item tags for every shortcut menu item. Use the menu item tags to customize where to display your plug-in item in the shortcut menu.</p>
+
+<p>To use the <strong>Lookup All Shortcut Menu Tags And Types</strong> plug-in, copy the following LLB:</p>
+<p><span class="Monospace">labview\resource\plugins\PopupMenus\support\Lookup All Shortcut Menu Tags And Types.llb</span></p>
+<p>Paste the LLB into the following directory:</p>
+<p><span class="Monospace">labview\resource\plugins\PopupMenus\edit time panel and diagram</span></p>
+
+<p>To remove the <strong>Lookup All Shortcut Menu Tags And Types</strong> plug-in from the shortcut menu, delete the <span class="Monospace">Lookup All Shortcut Menu Tags And Types.llb</span> and restart LabVIEW.</p>
+
+<h3>Related Information</h3>
+<p><a href="shortcutmenuplugins_intro.html">Understanding Shortcut Menu Plug-Ins</a></p>
+<p><a href="shortcutmenuplugins_typedef.html">Specifying the Objects that Shortcut Menu Plug-Ins Affect</a></p>
+<p><a href="shortcutmenuplugins_build.html">Building Shortcut Menus Using Plug-Ins</a></p>
+
+</body>
+</html>

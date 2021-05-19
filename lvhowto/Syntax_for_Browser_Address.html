@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 6100Ecommhlp -->
+
+<title>Syntax for Browser Address Lists</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Syntax for Browser Address Lists
+</h1>
+<p class="Body">You can enter an IP address, such as <span class="Monospace">130.164.140.12</span>, or a domain name, such as <span class="Monospace">www.ni.com</span>, in the <strong>Browser Access List</strong> in the <strong>Browser Access</strong> section on the <a href="../lvdialog/Web_Server_Config_Options.html">Web Server</a> page of the <a href="../lvdialog/Options_Dialog_Box.html">Options</a> dialog box or the <strong>Machine access list</strong> in the <a href="../lvdialog/VI_Server_Config_Options.html">VI Server</a> page of the <strong>Options</strong> dialog box.</p>
+
+<p class="Body">Use the <span class="Monospace">*</span> wildcard to specify a group of browser addresses. For example, you can specify all browsers within the domain <span class="Monospace">domain.com</span> with the entry <span class="Monospace">*.domain.com</span>. You can specify all browsers in the subnet whose first two octets are <span class="Monospace">130.164</span> with the entry <span class="Monospace">130.164.*</span>. You can only use the <span class="Monospace">*</span> wildcard at the beginning of a domain name or at the end of an IP address.
+</p>
+<p class="Body">The permission for an entry later in the <strong>Browser Access List</strong> or the <strong>Machine access list</strong> overrides previous permissions. You can click and drag an entry in the list to change the order.
+</p>
+<p class="Body">For example, if you deny access to all browser addresses ending in <span class="Monospace">*.test.site.com</span>, but after that entry you give <span class="Monospace">a.test.site.com</span> and <span class="Monospace">b.test.site.com</span> access, those two browsers still have access, because the entries later in the list override the first entry.
+</p>
+<p class="Body">In general, you should use the <span class="Monospace">*</span> wildcard to set up general allowances or denials, and follow those entries with more specific entries that reverse part of the previous permission. For best performance, place the most frequently matched entries toward the bottom of the list.
+</p>
+<p class="Body">The following example illustrates how to use the <span class="Monospace">*</span> wildcard correctly.</p>
+
+<table class="Bordered"><tr><th colspan="2" class="Bordered">Access List Entry</th>
+<th class="Bordered">Permission Status</th></tr>
+
+<tr><td class="Bordered"><img src="checkmark.gif"></td><td class="Bordered">
+*</td>
+<td class="Bordered">Allows access to all browser addresses.</td></tr>
+
+<tr><td class="Bordered"><img src="checkmark.gif"></td><td class="Bordered">
+*<span class="Monospace">.site.com</span></td>
+<td class="Bordered">Allows access to all browser addresses ending with <span class="Monospace">.site.com</span>.</td></tr>
+
+<tr><td class="Bordered">X</td><td class="Bordered">
+<span class="Monospace">public.site.com</span></td>
+<td class="Bordered">Denies access to this browser address even though previous entry allows access.</td></tr> 
+
+<tr><td class="Bordered">X</td><td class="Bordered">
+*<span class="Monospace">.test.site.com</span></td>
+<td class="Bordered">Denies access to any browser address ending with <span class="Monospace">.test.site.com</span>.</td></tr>
+
+<tr><td class="Bordered"><img src="checkmark.gif"></td><td class="Bordered">
+<span class="Monospace">a.test.site.com</span></td>
+<td class="Bordered">Allows access to this browser address even though previous entry denies access.</td></tr>
+
+<tr><td class="Bordered">X</td><td class="Bordered">
+<span class="Monospace">130.164.123.</span>*</td>
+<td class="Bordered">Denies access to all browser addresses whose IP addresses begin with <span class="Monospace">130.164.123</span>.</td></tr>
+
+<tr><td class="Bordered"><img src="checkmark.gif"></td><td class="Bordered">
+<span class="Monospace">130.164.123.123</span></td>
+<td class="Bordered">Allows access to this browser address even though previous entry denies access.</td></tr></table>
+
+</body>
+</html>

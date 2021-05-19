@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 6700Ecomparisonhlp -->
+
+<title>Comparing Strings</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Comparing Strings
+</h1>
+<!-- begin parent = um 6700Ecomparison KM -->
+<p class="Body"><a href="../glang/Comparison_Functions.html">Comparison</a> functions <a href="../lvconcepts/Comparison_Funcs.html#Comparing_Strings">compare strings</a> according to the values of the <a href="../glang/ASCII_Codes.html">ASCII character codes</a>. The Comparison functions compare strings one element at a time starting with the 0th element until they encounter an inequality or until one string ends. The functions treat the longer string as greater than the shorter string.</p>
+
+<p class="Body">For example, <span class="Monospace">a</span> (with a decimal value of 97) is greater than <span class="Monospace">A</span> (65), which is greater than the numeral <span class="Monospace">0</span> (48), which is greater than the space character (32). LabVIEW compares characters one by one from the beginning of the string until an inequality occurs, at which time the comparison ends. For example, LabVIEW evaluates the strings <span class="Monospace">abcd</span> and <span class="Monospace">abef</span> until it finds <span class="Monospace">c</span>, which is less than the value of <span class="Monospace">e</span>. The presence of a character is greater than the absence of one. Thus, the string <span class="Monospace">abcd</span> is greater than <span class="Monospace">abc</span> because the first string is longer.</p>
+
+<p class="Body">The functions that test the category of a string character, such as the <a href="../glang/Decimal_Digit.html">Decimal Digit?</a> and <a href="../glang/Printable.html">Printable?</a> functions, evaluate only the first character of the string.</p>
+<!-- end parent = um 6700Ecomparison KM -->
+
+
+
+
+</body>
+</html>

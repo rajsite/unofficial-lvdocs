@@ -1,0 +1,92 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Conjugate Direction Search Methods</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-3F7573FA-76E8-4D6C-A805-037EC4060586" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Conjugate Direction Search Methods</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 Conjugate direction methods attempt to find <em>f</em>(<em>x</em>) by defining a direction set of vectors such that minimizing along one vector does not interfere with minimizing along another
+            vector, which prevents indefinite cycling through the direction set. 
+            	 
+         </p> 
+         	 
+         <p>When you minimize a function <em>f</em> along direction <em>u</em>, the gradient of <em>f</em> is perpendicular to <em>u</em> at the line minimum. If <em>P</em> is the origin of a coordinate system with coordinates <em>x</em>, you can approximate <em>f</em> by the Taylor series of <em>f</em>, as shown in the following equation. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./emp2Flvac_conj_direct_search.xml_d11755e57.png"></span></div>
+         </div> 
+         	 
+         <p>where 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./emp2Flvac_conj_direct_search.xml_d11755e215.png"></span></div>
+         </div> 
+         	 
+         <p>and 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./emp2Flvac_conj_direct_search.xml_d11755e261.png"></span></div>
+         </div> 
+         	 
+         <p>The components of matrix <em>A</em> are the second partial derivative matrix of <em>f</em>. Matrix <em>A</em> is the Hessian matrix of <em>f</em> at <em>P</em>. 
+            	 
+         </p> 
+         	 
+         <p>The following equation gives the gradient of <em>f</em>. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./emp2Flvac_conj_direct_search.xml_d11755e342.png"></span></div>
+         </div> 
+         	 
+         <p>The following equation shows how the gradient &#8711;<em>f</em> changes with movement along <em>A</em>. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./emp2Flvac_conj_direct_search.xml_d11755e372.png"></span></div>
+         </div> 
+         	 
+         <p>After the search method reaches the minimum by moving in direction <em>u</em>, it moves in a new direction <em>v</em>. To fulfill the condition that minimization along one vector does not interfere with minimization along another vector, the
+            gradient of <em>f</em> must remain perpendicular to <em>u</em>, as shown in the following equation. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./emp2Flvac_conj_direct_search.xml_d11755e417.png"></span></div>
+         </div> 
+         	 
+         <p>When the previous equation is true for two vectors <em>u</em> and <em>v</em>, <em>u</em> and <em>v</em> are conjugate vectors. When the previous equation is true pairwise for all members of a set of vectors, the set of vectors
+            is a conjugate set. Performing successive line minimizations of a function along a conjugate set of vectors prevents the search
+            method from having to repeat the minimization along any member of the conjugate set. 
+            	 
+         </p> 
+         	 
+         <p>If a conjugate set of vectors contains <em>N</em> linearly independent vectors, performing <em>N</em> line minimizations arrives at the minimum for functions having the quadratic form shown in the equation that approximates
+            <em>f</em> by the Taylor series of <em>f</em>. If a function does not have exactly the form of this equation, repeated cycles of <em>N</em> line minimizations eventually converge quadratically to the minimum. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Nonlinear_Programming.html" shape="rect">Nonlinear Programming</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

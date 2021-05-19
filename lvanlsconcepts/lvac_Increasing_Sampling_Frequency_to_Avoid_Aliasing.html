@@ -1,0 +1,56 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Increasing Sampling Frequency to Avoid Aliasing</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-0AFC14A1-12A3-48F1-9C25-AF0207B375B9" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Increasing Sampling Frequency to Avoid Aliasing</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 According to the Shannon Sampling Theorem, use a sampling frequency at least twice the maximum frequency component in the
+            sampled signal to avoid aliasing. The following figure shows the effects of various sampling frequencies. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-0AFC14A1-12A3-48F1-9C25-AF0207B375B9__IMAGE_BA5320DEED394090862B148C211A2230" shape="rect">
+            <!-- --></a><img id="GUID-0AFC14A1-12A3-48F1-9C25-AF0207B375B9__IMAGE_BA5320DEED394090862B148C211A2230" src="GUID-D2C47C54-D4F0-483C-A6D0-0BE6048A1B7E-help-web.png"><br clear="none"> 
+         	 
+         <p>In case A of the previous figure, the sampling frequency <em>f</em><sub><em>s</em></sub>equals the frequency <em>f</em> of the sine wave. <em>f</em><sub><em>s</em></sub> is measured in samples/second. <em>f</em> is measured in cycles/second. Therefore, in case A, one sample per cycle is acquired. The reconstructed waveform appears
+            as an alias at DC. 
+            	 
+         </p> 
+         	 
+         <p>In case B of the previous figure, <em>f</em><sub><em>s</em></sub> = 7/4<em>f</em>, or 7 samples/4 cycles. In case B, increasing the sampling rate increases the frequency of the waveform. However, the signal
+            aliases to a frequency less than the original signal—three cycles instead of four. 
+            	 
+         </p> 
+         	 
+         <p>In case C of the previous figure, increasing the sampling rate to <em>f</em><sub><em>s</em></sub> = 2<em>f</em> results in the digitized waveform having the correct frequency or the same number of cycles as the original signal. In case
+            C, the reconstructed waveform more accurately represents the original sinusoidal wave than case A or case B. By increasing
+            the sampling rate to well above <em>f</em>, for example, <em>f</em><sub><em>s</em></sub> = 10<em>f</em> = 10 samples/cycle, you can accurately reproduce the waveform. 
+            	 
+         </p> 
+         	 
+         <p>Case D of the previous figure shows the result of increasing the sampling rate to <em>f</em><sub><em>s</em></sub> = 10<em>f</em>. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Aliasing.html" shape="rect">Aliasing</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

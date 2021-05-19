@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Configuring a Camera for a 3D Scene</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Configuring a Camera for a 3D Scene</h1>
+<p class="Body">After you <a href="../lvhowto/Create_3D_Scene.html">create a 3D scene</a>, you can configure how a user-controlled camera interacts with the 3D scene.</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;The following procedure explains how to configure a camera for a 3D scene rendered in a 3D picture control. If you <a href="3D_Scene_Window.html">configure a scene window</a> for viewing the 3D scene, you must use the <a href="../lvprop/SceneWindow_p.html">SceneWindow</a> properties to configure the camera for the scene window programmatically.</td>
+</tr>
+</table>
+<p class="Body">Refer to the 3D Model of Solar System VI in the <span class="monospace">labview\examples\Graphics and Sound\3D Picture Control</span> directory for an example of configuring a camera for a 3D scene window.</p>
+
+<p class="Body"><a href="javascript:openVI('examples%5C%5CGraphics%20and%20Sound%5C%5C3D%20Picture%20Control%5C%5C3D%20Model%20of%20Solar%20System.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(3763);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</p>
+<p>Complete the following steps to configure a camera for a 3D scene rendered in a 3D picture control.</p>
+<ol>
+<li><a href="../lvhowto/Create_3D_Scene.html">Create a 3D scene</a> or open a VI that contains a 3D scene.</li>
+<li>On the front panel, right-click the 3D picture control and move the cursor over <strong>Camera Controller</strong> in the shortcut menu to display the available options.</li>
+<li>Select among the following camera controller options:
+<ul>
+<li><strong>None</strong>&#8212;Disables the camera for the 3D scene.</li>
+<li><strong>Spherical</strong>&#8212;Configures the camera to rotate around a fixed point. The fixed point is the point in the 3D scene at the center of the 3D picture control.</li>
+<li><strong>Flying</strong>&#8212;Configures the camera to fly freely through the 3D scene. If you select this option, be careful not to move the camera so far from the 3D objects that you no longer can see any of the objects.</li>
+<li><strong>Oriented</strong>&#8212;Configures the camera to rotate around a fixed point respective to the z-axis. If you select this option, LabVIEW prevents the camera from tilting to the right or left.</li></ul>
+When you move the camera in the 3D scene, LabVIEW redraws the scene to update the view you see in the 3D picture control.</li>
+<li>(Optional) To disable automatic redrawing, right-click the 3D picture control and select <strong>Camera Controller&#0187;Auto Redraw</strong> from the shortcut menu to remove the checkmark next to the option. Disabling automatic redrawing is useful when you make multiple updates to a 3D scene and do not want the view of the 3D scene to change until you complete all the updates. </li></ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If you disable automatic redrawing, you can use a loop, such as a <a href="../glang/For_Loop.html">For Loop</a> or <a href="../glang/While_Loop.html">While Loop</a>, to update the 3D scene. Enclose the VIs, properties, and methods that compose the 3D scene in the loop. LabVIEW redraws the 3D scene with each iteration of the loop, which updates the view to match the current camera perspective.</td>
+</tr>
+</table>
+<ol start="5">
+<li>Run the VI to generate the 3D scene.</li>
+<li>Use the <a href="../glang/Tools_Palette_Icons.html">Operating tool</a> to click and drag in the 3D picture control and move the camera around the 3D scene. You can zoom in and out of the 3D scene by holding the &lt;Shift&gt; key while using the Operating tool to click and drag. You can reposition the camera in the plane of the screen by holding the &lt;Ctrl&gt; key while using the Operating tool to click and drag. <span class="Platform">(macOS)</span> Press the &lt;Option&gt; key. <span class="Platform">(Linux)</span> Press the &lt;Alt&gt; key.</li>
+</ol>
+<p class="Body">You also can use the <a href="../lvprop/SceneGraphDisplay_Camera_Controller.html">Camera Controller:Type</a> and <a href="../lvprop/SceneGraphDisplay_CamCont_Auto_Inval.html">Camera Controller:Auto Redraw</a> properties to configure camera controller options for a 3D scene rendered in a 3D picture control programmatically.</p>
+
+
+
+
+</body>
+</html>

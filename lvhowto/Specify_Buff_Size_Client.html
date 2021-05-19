@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 6100Ecommhlp -->
+
+<title>Specifying the Buffer Size Using DataSocket Functions</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Specifying the Buffer Size Using DataSocket Functions</h1>
+<p class="Body">Complete the following steps to specify the client-side buffer size using <a href="../lvcomm/DataSocket_VI_Reference.html">DataSocket</a> functions.
+</p>
+<ol><li>Add the <a href="../lvcomm/DataSocket_Open.html">DataSocket Open</a> function to the block diagram.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object1491);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object1491);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li>
+<li>Wire a <span class="Monospace">psp</span> <a href="../lvconcepts/Using_DataSocket_Technology.html#Specifying_a_URL">URL</a> to the <strong>URL</strong> input or wire a <a href="../lvhowto/I_O_Controls.html">shared variable control</a> to the <strong>URL</strong> input.</li>
+<li>Right-click the <strong>mode</strong> input and select <strong>Create&#0187;Constant</strong> from the shortcut menu.</li>
+<li>Click the <strong>mode</strong> constant and select <span class="DNL"><strong>BufferedRead</strong></span>.</li>
+<li>Add a <a href="../glang/Property_Node.html">Property Node</a> to the block diagram.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object725);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object725);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li>
+<li>Right-click the Property Node and select <strong>Select Class&#0187;DataSocket&#0187;DataSocket</strong> from the shortcut menu.</li>
+<li><a href="Resizing_Array_Functions.html">Resize the Property Node</a> and add a terminal.</li>
+<li>Click the first white area of the Property Node and select the <a href="../lvprop/DS_Buff_Max_Bytes.html">Buffer Maximum Bytes</a> property.</li>
+<li>Click the second white area of the Property Node and select the <a href="../lvprop/DS_Buff_Max_Packets.html">Buffer Maximum Packets</a> property.</li>
+<li>Right-click the Property Node and select <strong>Change All To Write</strong> from the shortcut menu.</li>
+<li>Create constants for each property and enter values for each property, such as <span class="Monospace">1024</span> for Buffer Maximum Bytes and <span class="Monospace">25</span> for Buffer Maximum Packets.<br>
+<br><!--begin parent=../lvhowto/Monitor_Buffer_Size.html-->LabVIEW stops filling the client-side buffer when the first buffer size limit is reached for either the Buffer Maximum Bytes property or the Buffer Maximum Packets property.<!--end parent--></li>
+<li>Wire the <strong>connection id</strong> output of the DataSocket Open function to the <strong>reference</strong> input of the Property Node.</li>
+</ol>
+<p class="Body">After you specify the buffer size on the client, you can <a href="Subscribe_DS_Buff_Data.html">read the buffered data</a>.
+</p>
+
+
+
+</body>
+</html>

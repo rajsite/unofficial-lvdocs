@@ -1,0 +1,224 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Frequency Spacing between DFT Samples</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-67859C17-91F0-4C7A-8C1D-3514DC6BB456" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Frequency Spacing between DFT Samples</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 If the sampling interval is &#916;<em>t</em> seconds and the first data sample (<em>k</em> = 0) is at 0 seconds, the <em>k</em>th data sample, where <em>k</em> &gt; 0 and is an integer, is at <em>k</em>&#916;<em>f</em> seconds. Similarly, if the frequency resolution is &#916;<em>f</em> Hz, the <em>k</em>th sample of the DFT occurs at a frequency of <em>k</em>&#916;<em>f</em> Hz. However, this is valid for only up to the first half of the frequency components. The other half represent negative frequency
+            components. 
+            	 
+         </p> 
+         	 
+         <p>Depending on whether the number of samples <em>N</em> is even or odd, you can have a different interpretation of the frequency corresponding to the <em>k</em>th sample of the DFT. For example, let <em>N</em> = 8 and <em>p</em> represent the index of the Nyquist frequency <em>p</em> = <em>N</em>/2 = 4. The following table shows the &#916;<em>f</em> to which each format element of the complex output sequence X corresponds. 
+            	 
+         </p> 
+         	 <a name="GUID-67859C17-91F0-4C7A-8C1D-3514DC6BB456__TABLE_7DB622F641884713A2A660CD946DDDE0" shape="rect">
+            <!-- --></a><table class="rowsep colsep frametop framebottom frameleft frameright  " id="GUID-67859C17-91F0-4C7A-8C1D-3514DC6BB456__TABLE_7DB622F641884713A2A660CD946DDDE0">
+            <thead align="left">
+               <tr>
+                  <th align="center" valign="bottom"> <em>X</em>[<em>p</em>] 
+                     				
+                  </th>
+                  <th align="center" valign="bottom"> &#916;<em>f</em> 
+                     				
+                  </th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td align="left"> <em>X</em>[0] 
+                     				
+                  </td>
+                  <td align="left"> DC 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> <em>X</em>[1] 
+                     				
+                  </td>
+                  <td align="left"> &#916;<em>f</em> 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> <em>X</em>[2] 
+                     				
+                  </td>
+                  <td align="left"> 2&#916;<em>f</em> 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> <em>X</em>[3] 
+                     				
+                  </td>
+                  <td align="left"> 3&#916;<em>f</em> 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> <em>X</em>[4] 
+                     				
+                  </td>
+                  <td align="left"> 4&#916;<em>f</em> (Nyquist frequency) 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> <em>X</em>[5] 
+                     				
+                  </td>
+                  <td align="left"> -3&#916;<em>f</em> 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> <em>X</em>[6] 
+                     				
+                  </td>
+                  <td align="left"> -2&#916;<em>f</em> 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> <em>X</em>[7] 
+                     				
+                  </td>
+                  <td align="left"> -&#916;<em>f</em> 
+                     				
+                  </td>
+               </tr>
+            </tbody>
+         </table> 
+         	 
+         <p>The negative entries in the second column beyond the Nyquist frequency represent negative frequencies, that is, those elements
+            with an index value greater than <em>p</em>. 
+            	 
+         </p> 
+         	 
+         <p>For <em>N</em> = 8, <em>X</em>[1] and <em>X</em>[7] have the same magnitude; <em>X</em>[2] and <em>X</em>[6] have the same magnitude; and <em>X</em>[3] and <em>X</em>[5] have the same magnitude. The difference is that <em>X</em>[1], <em>X</em>[2], and <em>X</em>[3] correspond to positive frequency components, while <em>X</em>[5], <em>X</em>[6], and <em>X</em>[7] correspond to negative frequency components. <em>X</em>[4] is at the Nyquist frequency. 
+            	 
+         </p> 
+         	 
+         <p>The following figure shows the complex output sequence <em>X</em> for <em>N</em> = 8. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-67859C17-91F0-4C7A-8C1D-3514DC6BB456__IMAGE_C26113D0976B43D4A3FF5A8B4B137740" shape="rect">
+            <!-- --></a><img id="GUID-67859C17-91F0-4C7A-8C1D-3514DC6BB456__IMAGE_C26113D0976B43D4A3FF5A8B4B137740" src="GUID-F0D63E5E-29E7-4269-966A-B641B1F9BA7B-help-web.png"><br clear="none"> 
+         	 
+         <p>A representation where you see the positive and negative frequencies is the two-sided transform. 
+            	 
+         </p> 
+         	 
+         <p>When <em>N</em> is odd, there is no component at the Nyquist frequency. The following table lists the values of &#916;<em>f</em> for <em>X</em>[<em>p</em>] when <em>N</em> = 7 and <em>p</em> = (<em>N</em> - 1)/2 = (7 - 1)/2 = 3. 
+            	 
+         </p> 
+         	 <a name="GUID-67859C17-91F0-4C7A-8C1D-3514DC6BB456__TABLE_47FF0ABC70EF4065B8C726F6E1B0A607" shape="rect">
+            <!-- --></a><table class="rowsep colsep frametop framebottom frameleft frameright  " id="GUID-67859C17-91F0-4C7A-8C1D-3514DC6BB456__TABLE_47FF0ABC70EF4065B8C726F6E1B0A607">
+            <thead align="left">
+               <tr>
+                  <th align="left"> <em>X</em>[<em>p</em>] 
+                     				
+                  </th>
+                  <th align="left"> &#916;<em>f</em> 
+                     				
+                  </th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td align="left"> <em>X</em>[0] 
+                     				
+                  </td>
+                  <td align="left"> DC 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> <em>X</em>[1] 
+                     				
+                  </td>
+                  <td align="left"> &#916;<em>f</em> 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> <em>X</em>[2] 
+                     				
+                  </td>
+                  <td align="left"> 2&#916;<em>f</em> 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> <em>X</em>[3] 
+                     				
+                  </td>
+                  <td align="left"> 3&#916;<em>f</em> 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> <em>X</em>[4] 
+                     				
+                  </td>
+                  <td align="left"> -3&#916;<em>f</em> 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> <em>X</em>[5] 
+                     				
+                  </td>
+                  <td align="left"> -2&#916;<em>f</em> 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left"> <em>X</em>[6] 
+                     				
+                  </td>
+                  <td align="left"> -&#916;<em>f</em> 
+                     				
+                  </td>
+               </tr>
+            </tbody>
+         </table> 
+         	 
+         <p>For <em>N</em> = 7, <em>X</em>[1] and <em>X</em>[6] have the same magnitude; <em>X</em>[2] and <em>X</em>[5] have the same magnitude; and <em>X</em>[3] and <em>X</em>[4] have the same magnitude. However, <em>X</em>[1], <em>X</em>[2], and <em>X</em>[3] correspond to positive frequencies, while <em>X</em>[4], <em>X</em>[5], and <em>X</em>[6] correspond to negative frequencies. Because <em>N</em> is odd, there is no component at the Nyquist frequency. 
+            	 
+         </p> 
+         	 
+         <p>The following figure shows the complex output sequence <em>X</em>[<em>p</em>] for <em>N</em> = 7. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-67859C17-91F0-4C7A-8C1D-3514DC6BB456__IMAGE_420077CAAC734667B766923A9733ACCA" shape="rect">
+            <!-- --></a><div class="imageleft"><img id="GUID-67859C17-91F0-4C7A-8C1D-3514DC6BB456__IMAGE_420077CAAC734667B766923A9733ACCA" src="GUID-733EF816-FD2D-46EF-B989-40062766F2FE-help-web.png"></div><br clear="none"> 
+         	 
+         <p>The previous figure also shows a two-sided transform because it represents the positive and negative frequencies. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Discrete_Fourier_Transform.html" shape="rect">Discrete Fourier Transform (DFT)</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

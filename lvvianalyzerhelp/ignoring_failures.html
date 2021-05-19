@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Ignoring Test Failures (VI Analyzer Toolkit)</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+</head>
+
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Ignoring Test Failures (VI Analyzer Toolkit)</h1>
+<!--begin child ../lvvianalyzerhelp/writing_vian_test.html-->
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&#160;&#160;The VI Analyzer functionality this topic describes is available only if you install and activate the LabVIEW VI Analyzer Toolkit. Refer to the <a href="javascript:WWW(WWW_Analyzer)">NI website</a> for more information about the VI Analyzer Toolkit.</td>
+</tr>
+</table>
+<!--end child ../lvvianalyzerhelp/writing_vian_test.html-->
+
+<p class="Body">You can ignore test failures for VIs and block diagram objects. When you ignore one or more tests for a particular object or a VI, the VI Analyzer will not return a failure for that object or VI for the specified test(s).</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&#160;&#160;You cannot ignore failures for front panel objects or for VIs that do not have block diagrams, such as control VIs and global VIs.</td>
+</tr>
+</table>
+
+<p class="Body">To ignore a failure for an entire VI, <a href="../lvhowto/Creating_Free_Labels.html">create a free label</a> on the block diagram of the VI and add the hashtag <span class="DNL"><span class="Monospace"><strong>#via_ignore</strong></span></span>&nbsp;<span class="Monospace">[test]</span> to create a bookmark. The VI Analyzer ignores results from the <a href="../lvvianalyzerhelp/Test_Descriptions.html">VI Analyzer test</a> you specify in <span class="Monospace">[test]</span>. You can specify multiple test names in the free label to ignore multiple tests. To ignore a failure for a block diagram object, attach the free label with the <span class="DNL"><span class="Monospace"><strong>#via_ignore</strong></span></span> bookmark to the object whose failure you want to ignore.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="tip.gif"></td>
+<td><strong>Tip</strong>&#160;&#160;In the <a href="../lvvianalyzerhelp/Results_Window_DB.html">VI Analyzer Results Window</a>, double-click the occurrence to open the VI where a test failed. In the VI, right-click on the object that failed and select <strong>Create�#via_ignore Bookmark</strong>. LabVIEW automatically creates a bookmark that contains the test name to ignore.</td>
+</tr>
+</table>
+
+<p class="Body">In the following figure, the VI Analyzer ignores three test results.</p>
+<img src="noloc_bd_via_ignore.gif">
+<p class="Body">The <span class="DNL">Broken VI</span> and <span class="DNL">Enable Debugging</span> tests will not return a failure for the entire VI. The <span class="DNL">Wire Bends</span> test will not return a failure for the wire attached to the <span class="DNL"><span class="Monospace"><strong>#via_ignore</strong></span></span>&nbsp;<span class="Monospace">Wire Bends</span> free label.</p>
+
+<p class="Body">You can ignore results for the VI Analyzer tests that ship with LabVIEW. For <a href="../lvvianalyzerhelp/writing_vian_test.html">custom VI Analyzer tests</a>, you can ignore results for tests you create that return the UID property of objects that fail. You cannot ignore results for tests you create using the legacy <span class="Monospace-Italic">test</span><span class="Monospace"> RD.vi</span>.</p>		
+
+</body>
+</html>

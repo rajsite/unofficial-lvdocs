@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Merging VIs</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Merging VIs</h1>
+
+<p class="Body">Use the <strong>Select VIs to Merge</strong> dialog box to automatically or interactively resolve differences between an original VI and two revisions of the original VI. Given the original VI and two revisions based on the original VI, LabVIEW can resolve and merge changes into a separate merged VI. If differences between the two VIs conflict, you can interactively resolve the changes using the <strong>Merge VIs</strong> dialog box.</p>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;The <strong>Merge VIs</strong> dialog box is available only with the LabVIEW Professional Development System.</td></tr></table>
+
+					<p class="Body">Complete the following steps to automatically or interactively merge two VIs.</p>
+					<ol>
+					<li>Because LabVIEW cannot load two VIs with the same name, you must rename the VIs you want to merge.</li>
+					<li>Select <strong>Tools&#0187;Merge&#0187;Merge VIs</strong> to display the <a href="../lvdialog/merge_VIs_db.html">Select VIs to Merge</a> dialog box.</li>
+					<li><!--begin child: ../lvhowto/merging_LLBs.html-->Click the <strong>Browse</strong> button next to the <!--end child--><strong>Base VI</strong> text box, navigate to the original VI, and click <strong>OK</strong>.</li>
+					<li><!--begin child: ../lvhowto/merging_LLBs.html-->Click the <strong>Browse</strong> button next to the <!--end child--><strong>Their VI</strong> text box, navigate to the first VI you want to merge, and click <strong>OK</strong>.</li>
+					<li><!--begin child: ../lvhowto/merging_LLBs.html-->Click the <strong>Browse</strong> button next to the <!--end child--><strong>Your VI</strong> text box, navigate to the second VI you want to merge, and click <strong>OK</strong>.</li>
+					<li><!--begin child: ../lvhowto/merging_LLBs.html-->(Optional) Select options from the Merge options section to configure how LabVIEW merges elements of the <!--end child-->VIs.</li>
+					<li><!--begin child: ../lvhowto/merging_LLBs.html-->Click the <strong>Merge</strong> button.<!--end child--> The <strong>Merge front panels</strong> window, <strong>Merge block diagrams</strong> window, a merged VI, and the <a href="../lvdialog/merge_conflict_db.html">Merge VIs</a> dialog box appear.</li>
+					<li>By default, LabVIEW collapses each change in the <strong>Unresolved conflicting change(s)</strong> field. Click the expand/contract symbol next to each change to view the details of that change.</li>
+					<li>For each change, select the detail of either <strong>Your VI</strong> or <strong>Their VI</strong> by clicking the description of the change under the <strong>Yours</strong> or <strong>Theirs</strong> subcategories. LabVIEW puts an <span class="Monospace-Italic">X</span> next to each unresolved change.</li>
+</ol>
+							<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>  Most changes are circled in red on either the <strong>Front panel changes</strong> window, the <strong>Block diagram changes</strong> window, or in the untitled merged VI.</td></tr></table>
+<ol start="10">
+					<li><!--begin child: ../lvhowto/merging_LLBs.html-->Click the <strong>Choose Base</strong>, <strong>Choose Theirs</strong>, or <strong>Choose Yours</strong> button to select the change you want to accept and add to the merged <!--end child-->VI. As you resolve each change, a checkmark appears next to the change.</li>
+					<li><!--begin child: ../lvhowto/merging_LLBs.html-->After you resolve all changes, click the <strong>Close</strong> button to close the <!--end child--><strong>Merge VIs</strong><!--begin child: ../lvhowto/merging_LLBs.html--> dialog box and click the <strong>Save</strong> button to save the merged <!--end child-->VI.</li>
+					</ol>
+					<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;To merge changes from <strong>Their VI</strong> with changes from <strong>Your VI</strong>, there must be a common intersection in <strong>Base VI</strong>. For example, a tunnel must exist in <strong>Base VI</strong> so that <strong>Merge VIs</strong> knows that the matching tunnels in <strong>Their VI</strong> and <strong>Your VI</strong> also match each other.</td>
+</tr>
+</table>
+					<p class="Body">You also can configure a third-party <a href="../lvconcepts/Using_Source_Code.html">source control</a> provider to <a href="../lvhowto/ConfigMerge_ThirdParty.html">use LVMerge.exe</a> as the default merge application. <span class="Monospace">LVMerge.exe</span> is equivalent to the <strong>Select VIs to Merge</strong> dialog box.</p>
+					<p class="Body">To merge LLBs, you can use the <a href="../lvdialog/merge_LLBs_db.html">Select LLBs to Merge</a> <!--begin child: ../lvhowto/merging_LLBs.html-->dialog box to automatically or interactively resolve differences between different versions of <!--end child-->an LLB.</p>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 1500Elistboxcihlp -->
+
+<title>Selecting Listbox and Tree Control Items at Run Time</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Selecting Listbox and Tree Control Items at Run Time</h1>
+
+<p class="Body">Use the following ways to select items in a listbox or tree control while a VI is in run mode:</p>
+<ul>
+<li>Click an item. In a multiple-selection listbox or tree control, press the &lt;Ctrl&gt; key and click additional items to select more than one item. <span class="Platform">(macOS)</span> Press the &lt;Command&gt; key. <span class="Platform">(Linux)</span> Press the &lt;Alt&gt; key.<br><br>
+Press the &lt;Shift&gt; key and click an item above or below the current item to select all items between the current item and the second item you selected.</li></ul>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;<!-- Begin parent: ../lvhowto/Limiting_Sibling_Select.html-->By default, LabVIEW <a href="../lvhowto/Limiting_Sibling_Select.html">limits</a> the interactive selection of multiple items in a tree control to items that share the same parent. To allow the selection of items with different parents, right-click the tree control and remove the checkmark from the <strong>Selection Mode&#0187;Limit Multiselect to Siblings</strong> item in the shortcut menu.<!-- End parent: ../lvhowto/Limiting_Sibling_Select.html--> </td>
+</tr>
+</table>
+
+<ul><li>Click an item, then press and hold the &lt;Ctrl&gt; key and use the up and down arrow keys to navigate through listbox or tree control items. <span class="Platform">(macOS)</span> Press the &lt;Command&gt; key. <span class="Platform">(Linux)</span> Press the &lt;Alt&gt; key. Press the spacebar to add an item with focus to the list of selected items. While still holding the &lt;Ctrl&gt; key, press the spacebar again to remove the item with focus from the list of selected items.</li>
+<li>Type part of the name of the item you want to select. <!-- Begin parent: ../lvconcepts/Building_the_Front_Panel.xml -->Use the left and right arrow keys to go to the previous or next items that match the characters you type.<!-- End parent: ../lvconcepts/Building_the_Front_Panel.xml --></li>
+</ul>
+
+<p class="Body">In a listbox or tree control with a selection mode that allows you to select 0 items, press the &lt;Ctrl&gt; key and click an item to deselect it. <span class="Platform">(macOS)</span> Press the &lt;Command&gt; key. <span class="Platform">(Linux)</span> Press the &lt;Alt&gt; key.</p>
+
+<table class="Borderless">
+	<tr>
+		<td class="Icon">
+			<img src="note.gif"/>
+		</td>
+		<td>
+			<strong>Note</strong>&nbsp;&nbsp;If you assign &lt;PageUp&gt;, &lt;PageDown&gt;, &lt;Home&gt;, or &lt;End&gt; as a shortcut key in the <strong>Key Navigation</strong> page of the <strong>Properties</strong> dialog box for a control, you no longer can use that key to select items in a listbox.</td>
+	</tr>
+</table>
+
+
+
+</body>
+</html>

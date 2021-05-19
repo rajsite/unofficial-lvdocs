@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script type="text/javascript">var noFeedbackLink = true;</script>
+<script src="common.js" type="text/javascript"></script>
+
+<title>Publishing a Web Service through a Package (Windows)</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Publishing a Web Service through a Package (Windows)</h1>
+<p><strong>Parent Topic</strong>: <a href="../lvconcepts/ws_distributing.html">Publishing Web Services</a></p>
+<p>You can publish a Web service to the NI Web Server through an <a href="../lvhowto/creating_packages.html">NI package</a> (<span class="Monospace">.nipkg</span>). The Web service starts/stops running after you install/remove the package.</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;For more information about concepts in this topic, refer to the�<a href="../lvconcepts/WebServices.html">Web services introduction</a>�and�<a href="../lvhowto/web_service_tutorial.html">tutorial</a>. LabVIEW Web services are available only in the LabVIEW Full Development System and the LabVIEW Professional Development System.</td>
+</tr>
+</table>
+<p>Complete the following steps to publish a Web service through an NI package:</p>
+<ol>
+	<li>Include the Web service in a package:
+		<ol>
+			<li>Right-click <strong>Build Specifications</strong> in the�<a href="../lvdialog/Project_Explorer_Window.html">Project Explorer</a>�window and select�<strong>New</strong>&#0187;<strong>Package</strong> to launch the�<a href="../lvdialog/build_package_db.html">Package Properties</a>�dialog box.</li>
+			<li>On the�<strong>Web Services</strong>�page, place a checkmark in the checkbox for the Web service you want to include.</li>
+			<li>(Optional) On the <strong>Package Installer</strong> page, place a checkmark in the <strong>Create a Package Installer</strong> checkbox to build your distribution into a package installer file (<span class="Monospace">.exe</span>).</li>
+			<li>(Optional) On the <strong>Feed</strong> page, choose whether to add your package to a local feed or publish the package to a feed on a SystemLink server.</li>
+		</ol>
+	</li>
+	<li>Build the package that contains the Web service:
+		<ol>
+			<li>Click <strong>Build</strong> and the <a href="../lvdialog/build_status.html">Build Status</a> dialog box appears.</li>
+			<li>When LabVIEW completes building the package, click <strong>Explore</strong> to open the destination directory where LabVIEW saves the package file(s).</li>
+		</ol>
+	</li>
+	<li>Install the package on the target computer so that the Web service starts running on the target computer:
+		<ol>
+			<li>Double-click the package (<span class="Monospace">.nipkg</span>) in the destination directory and install the package through NI Package Manager. When the installation is complete, the Web service is published to the NI Web Server on the local computer.
+			<table class="Borderless">
+			<tr>
+			<td class="Icon"><img src="note.gif"></td>
+			<td>
+			<strong>Note</strong>&nbsp;&nbsp;Publishing Web services to the NI Web Server requires administrator privilege.</td>
+			</tr>
+			</table>
+			</li>
+			<li>Close the�LabVIEW project. Published Web services run on the LabVIEW Runtime and do not depend on the LabVIEW Development System.</li>
+		</ol>
+	</li>
+</ol>
+<h2>When Do I Create a Package Installer?</h2>
+<p>A package installer includes all package dependencies so that the target can install the package without network access or any NI software. If you want to publish the Web service to a computer that does not have an internet connection or any necessary software for installing the package and running the Web service, such as NI Package Manager and the LabVIEW Runtime, you need to create a package installer.</p>
+<h2>When Do I Add the Web Service to a Feed?</h2>
+<p>On the deployment target, you can subscribe to a feed to find and install the package and receive update notifications from NI Package Manager or NI SystemLink via network access. NI recommends using feeds when distributing multiple packages that have dependencies on one another.</p>
+<h3>Related Information</h3>
+<p><a href="javascript:WWW(WWW_NIPMInstallFeed)">Installing Packages from a Feed</a></p>
+<p><a href="javascript:WWW(WWW_SystemLinkDeploying)">Deploying Applications to Clients on a Server</a></p>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Noise Generation</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-381B6AFA-2275-4B4F-BBF4-865E51C0C7F3" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Noise Generation</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 
+            		 You can use noise signals to perform frequency response measurements or to simulate certain processes. Several types of
+            noise are typically used, namely uniform white noise, Gaussian white noise, and periodic random noise. 
+            	 
+         </p> 
+         	 
+         <p> 
+            		 The term white in the definition of noise refers to the frequency domain characteristic of noise. Ideal white noise has
+            equal power per unit bandwidth, resulting in a flat power spectral density across the frequency range of interest. Thus, the
+            power in the frequency range from 100 Hz to 110 Hz is the same as the power in the frequency range from 1,000 Hz to 1,010
+            Hz. In practical measurements, achieving the flat power spectral density requires an infinite number of samples. Thus, when
+            making measurements of white noise, the power spectra are usually averaged, with more number of averages resulting in a flatter
+            power spectrum. 
+            	 
+         </p> 
+         	 
+         <p> 
+            		 The terms uniform and Gaussian refer to the probability density function (PDF) of the amplitudes of the time-domain samples
+            of the noise. For uniform white noise, the PDF of the amplitudes of the time domain samples is uniform within the specified
+            maximum and minimum levels. In other words, all amplitude values between some limits are equally likely or probable. Thermal
+            noise produced in active components tends to be uniform white in distribution. The following figure shows the distribution
+            of the samples of uniform white noise. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-381B6AFA-2275-4B4F-BBF4-865E51C0C7F3__IMAGE_A25583774A0B4063B8332BC11432DA5E" shape="rect">
+            <!-- --></a><img id="GUID-381B6AFA-2275-4B4F-BBF4-865E51C0C7F3__IMAGE_A25583774A0B4063B8332BC11432DA5E" src="GUID-CA3491B8-D69A-4855-BC82-E5557C99334F-help-web.png" alt="loc_fp_uniform_white_noise.gif"><br clear="none"> 
+         	 
+         <p> 
+            		 For Gaussian white noise, the PDF of the amplitudes of the time domain samples is Gaussian. If uniform white noise is passed
+            through a linear system, the resulting output is Gaussian white noise. The following figure shows the distribution of the
+            samples of Gaussian white noise. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-381B6AFA-2275-4B4F-BBF4-865E51C0C7F3__IMAGE_6343AF3A76FD4993985159465247E803" shape="rect">
+            <!-- --></a><img id="GUID-381B6AFA-2275-4B4F-BBF4-865E51C0C7F3__IMAGE_6343AF3A76FD4993985159465247E803" src="GUID-AF170E7A-AD24-40B5-A76C-CC9981708042-help-web.png" alt="loc_fp_gaussian_white_noise.gif"><br clear="none"> 
+         	 
+         <p> 
+            		 
+            		 Periodic random noise (PRN) is a summation of sinusoidal signals with the same amplitudes but with random phases. PRN consists
+            of all sine waves with frequencies that can be represented with an integral number of cycles in the requested number of samples.
+            Because PRN contains only integral-cycle sinusoids, you do not need to window PRN before performing spectral analysis. PRN
+            is self-windowing and therefore has no spectral leakage. 
+            	 
+         </p> 
+         	 
+         <p>PRN does not have energy at all frequencies as white noise does but has energy only at discrete frequencies that correspond
+            to harmonics of a fundamental frequency. The fundamental frequency is equal to the sampling frequency divided by the number
+            of samples. However, the level of noise at each of the discrete frequencies is the same. 
+            	 
+         </p> 
+         	 
+         <p>You can use PRN to compute the frequency response of a linear system with one time record instead of averaging the frequency
+            response over several time records, as you must for non-periodic random noise sources. The following figure shows the spectrum
+            of PRN and the averaged spectra of white noise. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-381B6AFA-2275-4B4F-BBF4-865E51C0C7F3__IMAGE_7405FD8FED2B43A5993B506D79F12C5E" shape="rect">
+            <!-- --></a><img id="GUID-381B6AFA-2275-4B4F-BBF4-865E51C0C7F3__IMAGE_7405FD8FED2B43A5993B506D79F12C5E" src="GUID-75E62D28-3A08-443E-940E-E8B232CC193B-help-web.png" alt="loc_fp_psd_of_white_noise_and_prn.gif"><br clear="none"> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Signal_Gen.html" shape="rect">Signal Generation</a></div>
+         </div>
+         <div class="relinfo relconcepts"><strong>Related concepts</strong><br clear="none"><div><a href="Freq_Resp_Meas.html" shape="rect">Frequency Response Measurements</a></div>
+            <div><a href="Spectral_Leakage.html" shape="rect">Spectral Leakage</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

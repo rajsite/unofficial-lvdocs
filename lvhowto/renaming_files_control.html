@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+	
+	<title>Renaming Files in Source Control</title>
+	<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+	
+
+
+</head>
+
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Renaming Files in Source Control</h1>
+
+<p class="Body">Source control stores revision history based on the name of a file. As a result, to preserve the revision history when you modify the name of a file, follow the renaming process of the <a href="../lvconcepts/Selecting_a_SCC_Provider.html">source control provider</a>.</p>
+
+<p class="Body">Renaming a file can cause the file to lose <a href="../lvconcepts/Avoiding_Incorrect_Dependencies.html">links to dependencies</a>. To avoid this problem, complete the following steps when you rename a file in source control.</p>
+
+<ol><li>Open the LabVIEW project that contains the file you want to rename. The project must be open so that LabVIEW can detect when you rename a file.</li>
+<li><a href="../lvhowto/Checking_Out_Files.html">Check out</a> all project files from the source control provider.</li>
+<li>Rename the file with the renaming process of the source code control provider.</li>
+<li>Return to the LabVIEW project and press the &#60;F5&#62; key to refresh the project. The file you renamed has a warning that indicates you renamed it.</li>
+<li>Right-click the file and select <strong>Replace with</strong> from the shortcut menu.</li>
+<li>Navigate to and select the new version of the file.</li></ol>
+
+
+
+
+</body>
+</html>

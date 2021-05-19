@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Original filename: Gmathmaster.txt -->
+
+<title>Formula Parsing VIs in More Detail</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Formula Parsing VIs in More Detail
+</h1>
+
+<p class="Body">A <a href="Advanced_Formula_VIs.html">Formula Parsing</a> VI scans an input string and interprets this string as a formula, or a collection of formulas. Then, the Formula Parsing VI transforms the formulas into numeric calculations and outputs the results. The Formula Parsing VI routines deal only with real numbers.
+</p>
+<p class="Body">The following are three main kinds of formula routines:
+</p>
+<ul>
+
+<li>The VIs representing the functionality of the <a href="../glang/Formula_Node.html">Formula Node</a> (<a href="Eval_Formula_Node.html">Eval Formula Node</a>, <a href="Parse_Formula_Node.html">Parse Formula Node</a>, and <a href="Eval_Parsed_Formula_Node.html">Eval Parsed Formula Node</a> VIs)
+</li>
+<li>The VIs analyzing a simple string as one formula (<a href="Eval_Formula_String.html">Eval Formula String</a>, <a href="Parse_Formula_String.html">Parse Formula String</a>, and <a href="Eval_Parsed_Formula_String.html">Eval Parsed Formula String</a> VIs)
+</li>
+<li>The VIs producing whole sets of function values (<a href="Eval_Sing_Variable_Array.html">Eval Single-Variable Array</a>, <a href="Eval_Sing_Variable_Scalar.html">Eval Single-Variable Scalar</a>, and <a href="Eval_Multi_Variable_Scalar.html">Eval Multi-Variable Scalar</a> VIs)
+</li>
+</ul>
+
+<p class="Body">The first two categories of Formula Parsing VIs can be further divided into two subcategories, the <em>direct</em> form and the <em>indirect</em> form. As an example, the direct version of the Eval Formula Node VI is represented by the following block diagram.
+</p>
+<p class="Body"><img src="loc_bd_intro2.gif">
+</p>
+<p class="Body">On the other hand, the indirect form splits evaluation explicitly into parsing and evaluation steps.  The following illustration shows a simple example. You can use the indirect form in larger applications where the efficiency of this two-step process, parsing and then evaluating, outweighs the additional complexity and logic.
+</p>
+<p class="Body"><img src="loc_bd_intro3.gif">
+</p>
+<p class="Body">There are differences in the <a href="Dif_Pars_Math_VIs_FormNode.html">behavior of the parser</a> if you are using <a href="Mathematics.html">Mathematics</a> VIs or the Formula Node. Refer to <a href="../lvhowto/Formula_Node_and_Express.html">Formula Node and Expression Node Functions</a> for functions you can use with Formula Parsing VIs.</p>
+
+
+
+</body>
+
+</html>

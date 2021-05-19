@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Measuring Angular Displacement</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css"><script src="common.js" type="text/javascript"></script></head>
+<body>
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Measuring Angular Displacement</h1>
+        
+        <p class="Body">Angular displacement is movement around an axis, such as the angular motion of the shaft of a motor.  An angular displacement sensor is a device whose output signal represents the rotation of the shaft; it cannot measure the physical displacement of the whole shaft.  One type of sensor used to measure angular displacement is a <a href="../measfunds/rvdts.html">rotary variable differential transformer (RVDT)</a>.  Another type of sensor used to measure angular displacement is a resolver, which is a rotating transformer that can measure 360� of rotation.</p>
+
+<p class="Body">On M Series devices, C Series devices, and NI-TIO-based devices, you can use the counters to <a href="../mxcncpts/configdisplacmeas.html">perform displacement measurements</a> with <a href="../measfunds/quadencoders.html">quadrature encoders</a>, or angular encoders.  You can measure angular position with X1, X2, and X4 angular encoders.  You can choose to do either a  single-point or a buffered sample clock displacement measurement.  </p>
+
+<p class="Body">You also can measure velocity with angular encoders, but you need to use a sample clock with a fixed frequency. To measure velocity, use the following formula: </p>
+
+<p class="Indent1"><em>V = D/T</em></p>
+<p class="Body">where <em>V</em> is the average velocity, <em>D</em> is the distance, and <em>T</em> is time. </p>
+
+<p class="Body">The counter measures the position of the encoder using the A and B signals, which are offset by 90�.  The counter also supports the <a href="../measfunds/zindexing.html">Z index</a>, which provides a precise reference point and is available on some encoders.</p>
+
+        
+        
+    <div id="exlinks">
+<h2>Examples</h2>
+<p class="Body">Refer to the following VIs for examples of performing this measurement. You must have a driver installed to find examples for that driver.</p>
+      <h3>NI-DAQmx</h3>
+<p class="Body">You can use the DAQmx - Data Acquisition VIs to perform this measurement. Find related examples:</p>
+<p class="Body"><a href="javascript:findExamples('1917');"><img src="find.gif" border="0"></a>�Counter - Read Encoder</p>
+<p class="Body">You also can use the DAQ Assistant Express VI to perform this measurement.</p>
+<p class="Body"><img style="cursor:pointer" src="add.gif" border="0" onclick="placeObject('DAQ%20Assistant');">�Add�
+         <img style="cursor:pointer" src="find.gif" border="0" onclick="findObject('DAQ%20Assistant');">�Find</p>
+    </div>
+</body>
+</html>

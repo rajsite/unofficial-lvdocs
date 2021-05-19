@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+	
+	<title>Comparing Files in Source Control</title>
+	<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+	
+
+
+</head>
+
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+	<h1>Comparing Files in Source Control</h1>
+
+<p class="Body">You can use LabVIEW to compare a local version of a file in source control with the latest version from the source control provider. Comparing files is useful when you are working on a large project in which files might change frequently. You can perform this operation on only one file at a time.
+</p>
+<p class="Body"><!-- begin parent: ../lvconcepts/Using_Source_Code.html-->You can use a <a href="../lvhowto/Organizing_Items_Project.html">sort option</a> to organize items within a project. The sort option you select does not alter the organization of the project on disk, which allows you to merge and compare fewer changes when you submit the project to source control.<!-- end parent: ../lvconcepts/Using_Source_Code.html--></p>
+<p class="Body">If you select a VI to compare, LabVIEW displays the results in the <a href="../lvdialog/Differences_Dialog_Box.html">Differences</a> dialog box.</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;If LabVIEW and the third-party source control provider are not compatible, LabVIEW launches the default comparison tool of the third-party source control provider. Perforce SCM and Rational ClearCase are not compatible with the procedure LabVIEW uses to complete a graphical differencing of VIs. Refer to the <a href="javascript:WWW(WWW_Clearcase)">KnowledgeBase</a> for more information about comparing VIs using Rational ClearCase.</td></tr></table>
+
+<p class="Body">Complete the following steps to compare two VIs in source control.
+</p>
+<ol>
+<li>If you are in a LabVIEW project, right-click the VI you want to compare and select <strong>Show Differences</strong> from the shortcut menu to display the <a href="../lvdialog/VI_Compare_Options_DB.html">VI Compare Options</a> dialog box.
+<br><br>
+If you are working on individual VIs outside a project, open the VI you want to compare. Select <strong>Tools&#0187;Source Control&#0187;Show Differences</strong> to display the <a href="../lvdialog/VI_Compare_Options_DB.html">VI Compare Options</a> dialog box.</li>
+</ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;If the VI contains any unsaved changes, the <a href="../lvdialog/SCC_Save_DB.html">Unsaved Files</a> dialog box appears and prompts you to save changes before continuing with the compare operation.</td></tr></table>
+<ol start="2">
+<li>Select the options you want to include in the comparison.</li><li>Click the <strong>Compare</strong> button. When the comparison is complete, LabVIEW displays the differences between the two VIs.
+</li></ol>
+<p class="Body">Complete the following steps to compare two non-VI files in source control. You can compare non-VI files only within a project.
+</p>
+<ol>
+<li>From the project, right-click the file you want to compare and select <strong>Show Differences</strong> from the shortcut menu. The default comparison tool of the source control provider launches.
+</li>
+<li>When the comparison is complete, the third-party provider displays the differences between the two files.
+</li></ol>
+
+
+
+</body>
+</html>

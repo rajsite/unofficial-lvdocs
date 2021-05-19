@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 1900Edialogcihlp -->
+
+<title>Creating Tab Controls</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Creating Tab Controls
+</h1>
+<!-- begin parent = um 1400Earrclusterci KM -->
+<p class="Body">You can use tab controls to overlap front panel controls and indicators in a smaller area. A tab control consists of pages and tabs. Add front panel objects to the pages of the tab control and use the tab as the selector to display each page.
+</p>
+<!-- end parent = um 1400Earrclusterci KM -->
+<p class="Body">Complete the following steps to create a tab control.
+</p>
+<ol>
+
+<li>Add a tab control to the front panel window.<br><br>
+<SPAN title=" Add to the front panel window "><a href="javascript:placeObjectFP(control23);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObjectFP(control23);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN>
+</li>
+<li>To switch between pages, use the Operating tool to click the tab for the page you want. You also can switch between pages by right-clicking a tab and selecting <strong>Swap Pages</strong> or <strong>Go To Other Page</strong> from the shortcut menu.
+</li>
+<li>Add any front panel objects to the active page. A page is active when the tab for that page is flush with the page and the objects on the page are visible. <!-- begin parent = um 1400Earrclusterci KM -->Terminals for controls and indicators you add to the tab control appear as any other block diagram terminal.<!-- end parent = um 1400Earrclusterci KM --> 
+</li>
+</ol>
+<table class="Borderless"><tr><td class="Icon"><img src="tip.gif"></td><td><strong>Tip</strong>&nbsp;&nbsp;When you add objects to a tab control page, frequently go to the block diagram window and arrange the newly added terminals. When you add several objects to a tab control, the terminals on the block diagram can become cluttered.</td></tr>
+</table>
+<p class="Body"><!-- begin parent = um 1400Earrclusterci KM -->On the block diagram, the tab control is an enumerated control or indicator.<!-- end parent = um 1400Earrclusterci KM --> As a control, you can pass the value of the active page to other block diagram nodes. As an indicator, you can wire nodes to control which page is displayed. You do not need to wire the tab control terminal for the tab control to operate.</p>
+<table class="Borderless"><tr><td class="Icon"><img src="tip.gif"></td><td><strong>Tip</strong>&nbsp;&nbsp;You can wire the enumerated control terminal of the tab control to the selector of a <a href="../glang/Case_Structure.html">Case structure</a> to produce cleaner block diagrams. With this method, you associate each page of the tab control with a subdiagram in the Case structure. You add the control and indicator terminals from each page of the tab control&#8212;as well as the block diagram nodes and wires associated with those terminals&#8212;into the subdiagrams of the Case structure. If you need a component of a VI to run continuously, even when its controls are hidden, do not use a Case structure, because the structure executes only one case at a time.</td></tr></table>
+
+
+
+</body>
+</html>

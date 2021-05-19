@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 5900Econfigvihlp -->
+
+<title>Opening SubVI Front Panels During Execution</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Opening SubVI Front Panels During Execution
+</h1>
+<p class="Body">A single front panel sometimes is too restrictive to present numerous options or displays. To solve this problem, organize VIs so the top-most VI presents high-level options, and subVIs present related options.
+</p>
+<table class="Borderless"><tr><td class="Icon"><img src="tip.gif"></td><td><strong>Tip</strong>&nbsp;&nbsp;You also can use <a href="Creating_Tab_Controls.html">tab controls</a> to make the front panel more usable.</td></tr></table>
+
+
+
+<p class="Body">When LabVIEW calls a subVI, ordinarily the subVI runs without opening its front panel. If you want a single instance of the subVI to open its front panel when called, use the <a href="../lvdialog/SubVI_Node_Setup_DB.html">SubVI Node Setup</a> dialog box.
+</p>
+<p class="Body">If you want every instance of the subVI to open its front panel when called, use the <a href="../lvdialog/VI_Properties_Dialog_Box.html">VI Properties</a> dialog box.
+</p>
+<h2>Single Instance
+</h2>
+<p class="Body">Complete the following steps to have a single instance of a subVI front panel open when called.
+</p>
+<ol>
+
+<li>Place a <a href="../lvconcepts/Creating_SubVIs.html">subVI</a> on the block diagram.
+</li>
+<li>Right-click the subVI and select <strong>SubVI Node Setup</strong> from the shortcut menu.
+</li>
+<li>Place checkmarks in the <strong>Show front panel when called</strong> and <strong>Close afterwards if originally closed</strong> checkboxes.
+</li>
+<li>Click the <strong>OK</strong> button.
+</li>
+<li>Run the top-level VI. The subVI front panel appears when the top-level VI calls it.
+</li>
+</ol>
+
+<h2>Every Instance
+</h2>
+<p class="Body">Complete the following steps to have every instance of a subVIs front panel open when called.
+</p>
+<ol>
+
+<li>Double-click the subVI to open it and select <strong>File&#0187;VI Properties</strong> to display the <a href="../lvdialog/VI_Properties_Dialog_Box.html">VI Properties</a> dialog box.
+</li>
+<li>Select <a href="../lvdialog/Window_Properties.html">Window Appearance</a> from the <strong>Category</strong> pull-down menu.
+</li>
+<li>Click the <strong>Customize</strong> button and place checkmarks in the <strong>Show front panel when called</strong> and <strong>Close afterwards if originally closed</strong> checkboxes.
+</li>
+<li>Click the <strong>OK</strong> button.</li>
+<li>Save and close the subVI.</li>
+<li>Run the top-level VI. Every instance of the subVI front panel opens when called.</li>
+</ol>
+
+<p class="Body">You also can use the <a href="../lvprop/VI_ExeShw_FP_On_Call.html">Show Front Panel On Call</a> and the <a href="../lvprop/VI_ExeShw_FP_On_Load.html">Show Front Panel On Load</a> properties to display the front panel programmatically.</p>
+
+
+
+</body>
+</html>

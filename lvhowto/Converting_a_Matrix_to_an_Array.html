@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 3500Edebugginghlp -->
+
+<title>Converting a Matrix to an Array</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Converting a Matrix to an Array</h1>
+<p class="Body">You can convert a matrix to a 2D array and use <a href="../glang/Array_Functions.html">Array</a> functions to manipulate the matrix values. 
+ Complete the following steps to convert a matrix to a 2D array.</p>
+<ol>
+<li>Add a real matrix or complex matrix control to the front panel.
+
+<ul><li><p class="Body">Real matrix</p>
+<SPAN title=" Add to the front panel window "><a href="javascript:placeObjectFP(control50);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObjectFP(control50);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Find</SPAN></li>
+<li><p class="Body">Complex matrix</p>
+<SPAN title=" Add to the front panel window "><a href="javascript:placeObjectFP(control49);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObjectFP(control49);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Find</SPAN></li></ul></li>
+
+<li>Add the <a href="../glang/Matrix_To_Array.html">Matrix To Array</a> function to the block diagram.
+<br><br><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object3328);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object3328);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Find</SPAN></li>
+<li>Wire a matrix to the Matrix To Array function.</li>
+<li>Right-click the Matrix To Array function and select <strong>Create&#0187;Indicator</strong> from the shortcut menu to create a 2D array indicator.</li>
+<li>Run the VI from the front panel. The array indicator displays the contents of the array.</li>
+</ol>
+<p class="Body">You can store a matrix of a single row or column in a 1D array. However, LabVIEW cannot determine the dimensions of a matrix until run time.
+The 2D array the Matrix To Array function returns has the same element type, real or complex, as the matrix you wired to the Matrix To Array function. You also can <a href="Converting_an_Array_to_a_Matrix.html">convert an array to a matrix</a>.</p>
+
+
+</body>
+</html>

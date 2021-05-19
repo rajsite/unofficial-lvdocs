@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 1800Erefnumcihlp -->
+
+<title>Types of Refnum Controls</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Types of Refnum Controls
+</h1>
+<p class="Body">LabVIEW includes the following <a href="Refnum_Controls_and_Indica.html">refnum controls</a> located on the <strong>Refnum</strong> palette:
+</p>
+
+<table class="Borderless">
+<tr><td class="Icon"><img src="noloc_env_dotnetref.gif"></td><td><strong>.NET Refnum</strong>&#8212;Use this refnum to launch the <a href="../lvdialog/Select_Net_ConstDB.html">Select .NET Constructor</a> dialog box and select an assembly in the Global Assembly Cache (GAC) or navigate to a private assembly.</td>
+</tr>
+<tr><td class="Icon"><img src="noloc_env_appref.gif"></td><td><strong>Application Refnum</strong>&#8212;Used with the VI Server. Use this refnum control when you open a reference to a LabVIEW application and you want to pass the reference as a parameter to another VI. By passing this refnum to the VI Server, you can control the behavior and read properties of the application.
+<br><br>
+You can right-click an application refnum control and select <strong>Select VI Server Class</strong> from the shortcut menu to change the data type of the control&#8212;an application, a VI, a control or indicator, or a strictly typed VI.
+<br><br>
+You can drag any control and drop it on an application refnum to specify the type of control to which it refers.</td>
+</tr>
+<tr><td class="Icon"><img src="noloc_env_autoref.gif"></td><td><strong>Automation Refnum</strong>&#8212;Used with the <a href="../lvcomm/ActiveX_Client_Functions.html">ActiveX</a> functions. Use this type of refnum when you open a reference to an ActiveX Server Object and you want to pass it as a parameter to another VI. To specify the type of the refnum, right-click it and select <strong>Select ActiveX Class&#0187;Browse</strong> from the shortcut menu to display the <a href="../lvdialog/Select_Obj_From_Type_Lib.html">Select Object From Type Library</a> dialog box and browse the list of available ActiveX Server applications.</td>
+</tr>
+<tr><td class="Icon"><img src="noloc_env_bt_refnum.gif"></td><td><strong>Bluetooth Network Connection Refnum</strong>&#8212;Used with the <a href="../lvcomm/Bluetooth_VIs.html">Bluetooth</a> VIs and functions. Use this type of refnum to open a connection to a Bluetooth device.</td>
+</tr>
+<tr><td class="Icon"><img src="noloc_env_byteref.gif"></td><td><strong>Byte Stream File Refnum</strong>&#8212;Used with text or binary byte stream files. Use this type of refnum when you open or create a file in one VI but want to perform I/O operations on the file in another VI. You must have a refnum control on the front panel of the VI that performs I/O operations and a refnum indicator on the front panel of the VI that opens or creates the file.</td>
+</tr>
+<tr><td class="Icon"><img src="noloc_env_cntrlref.gif"></td><td><strong>Control Refnum</strong>&#8212;Used with the VI Server. Use this refnum control when you open a reference to a front panel control or indicator and you want to pass the reference as a parameter to another VI. By passing this refnum to the VI Server, you can control the behavior and properties of the control.
+<br><br>
+You can right-click a control refnum control and select <strong>Select VI Server Class</strong> from the shortcut menu to specify the data type of the control&#8212;an application, a VI, a control or indicator, or a strictly typed VI.
+<br><br>
+Right-click a control refnum control on the front panel and select <strong>Show Icon</strong> from the shortcut menu to view the refnum as an icon. Right-click the refnum on the front panel and select <strong>Show Control</strong> on the shortcut menu to view the refnum as a control. Note that the control is for display only.
+<br><br>
+You can drag any control and drop it on a control refnum to specify the type of control to which it refers.</td>
+</tr>
+<tr><td class="Icon"><img src="noloc_env_dataref.gif"></td><td><strong>Data Log File Refnum</strong>&#8212;Used with <a href="../lvconcepts/Creating_Datalog_Files.html">datalog files</a>. Because datalog files have an inherent structure, the Data Log File Refnum passes the refnum and a description of the file type to and from calling VIs. Place a control inside the refnum to define the structure of the file. For a file that contains numbers, create a datalog refnum that contains a number. If each record in the file contains a pair of numbers, place a cluster inside the refnum and place two numeric controls inside the cluster.
+<br><br>
+You can drag any control and drop it on a data log file refnum to specify the data type of the datalog file.</td>
+</tr>
+<tr><td class="Icon"><img src="noloc_env_dsocref.gif"></td><td><strong>DataSocket Refnum</strong>&#8212;Used with <a href="../lvcomm/DataSocket_VI_Reference.html">DataSocket</a> functions. Use this type of refnum when you want to <a href="OpenClose_DS_Conct_Prog.html">open a reference to a data connection</a> and you want to pass it as a parameter to another VI. To specify the type of the refnum, right-click it and select <strong>Select DataSocket Class</strong> from the shortcut menu to browse to the DataSocket class.</td>
+</tr>
+<tr><td class="Icon"><img src="noloc_env_eventref.gif"></td><td><strong>Event Callback Refnum</strong>&#8212;Use this refnum to unregister or re-register the event callback. You also can use this refnum to pass the event callback registration to a subVI.</td>
+</tr>
+<tr><td class="Icon"><img src="noloc_env_irdaref.gif"></td><td><strong>IrDA Network Connection Refnum</strong>&#8212;Used with the <a href="../lvcomm/IrDA_VIs.html">IrDA</a> functions. Use this type of refnum when you want to open a connection to an IrDA device.</td>
+</tr>
+<tr><td class="Icon"><img src="noloc_env_menuref.gif"></td><td><strong>Menu Refnum</strong>&#8212;Used with the <a href="../glang/Menu_Functions.html">Menu</a> functions. Use this type of refnum when you want to pass a VI menu reference to a subVI.</td>
+</tr>
+<tr><td class="Icon"><img src="noloc_env_occurref.gif"></td><td><strong>Occurrence Refnum</strong>&#8212;Used with the <a href="../glang/Occurrence_Functions.html">Occurrence</a> functions. Use this type of refnum when you generate an occurrence in one VI but want to set or wait for the occurrence in another VI.</td>
+</tr>
+<tr><td class="Icon"><img src="noloc_env_netref.gif"></td><td><strong>TCP Network Connection Refnum</strong>&#8212;Used with the <a href="../lvcomm/TCP_VI_Descriptions.html">TCP</a> VIs and functions. Use this type of refnum when you open a network connection in one VI but want to perform I/O operations on the network connection in another VI.</td>
+</tr>
+<tr><td class="Icon"><img src="noloc_env_udpref.gif"></td><td><strong>UDP Network Connection Refnum</strong>&#8212;Used with the <a href="../lvcomm/UDP_VI_Descriptions.html">UDP</a> VI and functions. Use this type of refnum when you want to uniquely identify a UDP socket. You can pass the UDP socket reference to a subVI so the subVI can use the socket.</td>
+</tr>
+<tr><td class="Icon"><img src="noloc_env_viref.gif"></td><td><strong>VI Refnum</strong>&#8212;Used with the VI Server. Use this refnum control when you open a reference to a VI and you want to pass the reference as a parameter to another VI. By passing this refnum to the VI Server, you can control the behavior and properties of the VI. 
+<br><br>
+Use VI refnum controls to pass a VI refnum from one VI to another. The Open VI Reference function requires a <a href="create_strict_type_refnum.html">strictly typed VI refnum control</a> as a type specifier input when you want a strictly typed reference to a VI. In this case, the value of the refnum control is unimportant. The function uses only the  type.
+<br><br>
+You can drag any control and drop it on a VI refnum to specify the type of control to which it refers.</td>
+</tr>
+</table>
+
+<p class="Body">The following refnums are not located on the <a href="Refnum_Controls_and_Indica.html">Refnum</a> palette:
+</p>
+<ul>
+<li><strong>Config Data Refnum</strong>&#8212;Used with the <a href="../glang/Configuration_File_VIs.html">Configuration File</a> VIs when you want to open a configuration file in one VI and read from it or write to it in another VI.
+<br><br>
+Right-click a <strong>refnum</strong> input terminal of a Configuration File VI and select <strong>Create&#0187;Control</strong> from the shortcut menu to create this refnum control. Creating a config data refnum control does not create a config data reference. You must use the <a href="../glang/Open_Config_Data.html">Open Config Data</a> VI to create a config data reference.
+</li>
+<li><strong>IMAQ Session Refnum</strong>&#8212;Used with the Image Acquisition VIs.
+</li>
+<li><strong>Motion Refnum</strong>&#8212;Used with the <a href="../nimclvfb/dt/eng/generated/SoftMotion_Functions.html" class="checkLink nimclvfb">NI SoftMotion</a> VIs and functions.</li>
+<li><strong>Notifier Refnum</strong>&#8212;Used with the <a href="../glang/Notification_VIs.html">Notifier Operations</a> functions when you want to suspend the execution of a block diagram until you receive data from another section of the block diagram or from another VI running on the same computer.
+<br><br>
+Right-click a <strong>refnum</strong> input terminal of a Notifier Operations function and select <strong>Create&#0187;Control</strong> from the shortcut menu to create this refnum control. Creating a notifier refnum control does not create a notifier reference. You must use the <a href="../glang/Create_Notifier.html">Obtain Notifier</a> function to create a notifier reference.
+<br><br>
+Right-click a notifier refnum on the front panel and select <strong>Show Icon</strong> from the shortcut menu to view the refnum as an icon. Right-click the refnum on the front panel and select <strong>Show Control</strong> on the shortcut menu to view the refnum as a control. Note that the control is for display only.
+<br><br>
+You can drag any control and drop it on a notifier out refnum to specify the data type of the notifier.</li>
+<li><strong>Queue Refnum</strong>&#8212;Used with the <a href="../glang/Queue_VIs.html">Queue Operations</a> functions when you want to store data in a queue, which you can later retrieve as individual elements or as an array of all the data elements.
+<br><br>
+Right-click a <strong>refnum</strong> input terminal of a Queue Operations function and select <strong>Create&#0187;Control</strong> from the shortcut menu to create this refnum control. Creating a queue refnum control does not create a queue reference. You must use the <a href="../glang/Create_Queue.html">Obtain Queue</a> function to create a queue reference.
+<br><br>
+Right-click a queue refnum on the front panel and select <strong>Show Icon</strong> from the shortcut menu to view the refnum as an icon. Right-click the refnum on the front panel and select <strong>Show Control</strong> on the shortcut menu to view the refnum as a control. Note that the control is for display only.
+<br><br>
+You can drag any control and drop it on a queue refnum to specify the data type of the queue.
+</li>
+<li><strong>Rendezvous Refnum</strong>&#8212;Used with the <a href="../glang/Rendezvous_VIs.html">Rendezvous</a> VIs when you want to create a rendezvous in one VI and wait at the rendezvous in another VI.
+<br><br>
+Right-click a <strong>refnum</strong> input terminal of a Rendezvous VI and select <strong>Create&#0187;Control</strong> from the shortcut menu to create this refnum control. Creating a rendezvous refnum control does not create a valid rendezvous reference. You must use the <a href="../glang/Create_Rendezvous.html">Create Rendezvous</a> VI to create a rendezvous reference.</li>
+<li><strong>Semaphore Refnum</strong>&#8212;Used with the <a href="../glang/Semaphore_VIs.html">Semaphore</a> VIs when you want to prevent two VIs or two sections of the same VI from executing in parallel.
+<br><br>
+Right-click a <strong>refnum</strong> input terminal of a Semaphore VI and select <strong>Create&#0187;Control</strong> from the shortcut menu to create this refnum control. Creating a semaphore refnum control does not create a valid reference to a semaphore. You must use the <a href="../glang/obtain_sem_ref.html">Obtain Semaphore Reference</a> VI to create a reference to a semaphore.</li>
+<li><strong>Shared Variable Refnum</strong>&#8212;Used with the <a href="../lvprop/Variable_p.html">Variable</a> properties to configure shared variables programmatically.
+<br><br>
+Right-click the <strong>Variable Reference</strong> output of a <a href="../lvprop/ProjectItem_Var_Reference.html">Variable Reference</a> property and select <strong>Create&#0187;Control</strong> from the shortcut menu to create this refnum control.</li>
+
+<li><strong>TDMS File Refnum</strong>&#8212;Used with the <a href="../glang/TDM_Streaming_Functions.html">TDMS Streaming</a> VIs and functions to read and write waveforms and waveform properties to binary measurement files (<span class="Monospace">.tdms</span>).
+<br><br>
+Right-click the <strong>tdms file</strong> input of a <a href="../glang/TDMS_File_Read.html">TDMS Read</a> function and select <strong>Create&#0187;Control</strong> from the shortcut menu to create this refnum control. Creating a tdms file control does not create a tdms file reference. You must use the <a href="../glang/TDMS_File_Open.html">TDMS Open</a> function to create a tdms file reference.</li>
+
+<li><strong>Data Value Refnum</strong>&#8212;Used with the <a href="../glang/In_Place_Element_Structure.html">In Place Element</a> structure when you want to operate on a data value without requiring the LabVIEW compiler to copy the data values and maintain those values in memory.
+<br><br>
+Right-click the <strong>Data Value Reference</strong> output of the In Place Element structure to create this refnum control. Creating a data value refnum control does not create a <a href="../lvconcepts/external_data_val_ref.html">data value reference</a>. You must use the <a href="../glang/new_data_value_reference.html">New Data Value Reference</a> function to create a data value reference.
+<br><br>
+Right-click a data value refnum on the front panel and select <strong>Show Icon</strong> from the shortcut menu to view the refnum as an icon. Right-click the refnum on the front panel and select <strong>Show Control</strong> on the shortcut menu to view the refnum as a control. Note that the control is for display only.</li>
+<li><strong>External Data Value Refnum</strong>&#8212;Used with the <a href="../glang/In_Place_Element_Structure.html">In Place Element</a> structure when you want to operate on an external data value without incurring a data copy to bring the data into LabVIEW. Creating an external data value refnum control does not create an <a href="../lvconcepts/external_data_val_ref.html#EDVR">external data value reference</a>. You must get the external data value reference from a device driver that supports external data value references. <br><br>To change a data value reference to an external data value reference, right-click the data value reference and select <strong>External</strong> from the shortcut menu. You also can use the <a href="../lvscript/DataValRefNum_IsExternal.html">Is External</a> property to change a data value reference to an external data value reference programmatically.  <br/><br/>Right-click an external data value refnum on the front panel and select <strong>Show Icon</strong> from the shortcut menu to view the refnum as an icon. Right-click the refnum on the front panel and select <strong>Show Control</strong> on the shortcut menu to view the refnum as a control. Note that the control is for display only.</li>
+<li><strong>Variable Refnum</strong>&#8212;Used with the <a href="../lvcomm/Shared_Variable_Reference.html">Shared Variable</a> functions and the <a href="../lvprop/DynVar_Props_Meths.html">Variable</a> properties and methods to find, read, and write shared variables programmatically.
+<br><br>
+Right-click the <strong>shared variable refnum in</strong> input terminal of a Shared Variable function to create this refnum control.</li>
+</ul>
+
+</body>
+</html>

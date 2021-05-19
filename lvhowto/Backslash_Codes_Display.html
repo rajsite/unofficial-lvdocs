@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4400Estringshlp -->
+
+<title>Backslash ('\') Codes Display</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Backslash ('\') Codes Display
+</h1>
+<p class="Body"><!-- begin parent = ../lvconcepts/File_I_O.xml KM -->Right-click a string constant, control, or indicator and select <strong>'\' Codes Display</strong> from the shortcut menu to instruct LabVIEW to interpret characters that immediately follow a backslash (\) as a code for non-displayable characters.<!-- end parent = ../lvconcepts/File_I_O.xml KM --> The backslash mode is useful for debugging VIs and for sending non-displayable characters to instruments, serial ports, and other devices. The following list shows how LabVIEW interprets these codes.</p>
+
+<table class="Bordered"><tr><th class="Bordered">Code</th>
+<th class="Bordered">LabVIEW Interpretation</th></tr>
+
+<tr><td class="Bordered"><span class="Monospace">\00 &#8211; \FF</span></td>
+<td class="Bordered">Hex value of an 8-bit character; must be uppercase</td></tr>
+<tr><td class="Bordered"><span class="Monospace">\b</span></td>
+<td class="Bordered">Backspace (ASCII <span class="Monospace">BS</span>, equivalent to <span class="Monospace">\08</span>)</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">\f</span></td>
+<td class="Bordered">Form feed (ASCII <span class="Monospace">FF</span>, equivalent to <span class="Monospace">\0C</span>)</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">\n</span></td>
+<td class="Bordered">Linefeed (ASCII <span class="Monospace">LF</span>, equivalent to <span class="Monospace">\0A</span>)&#8212;The <a href="../glang/Format_Into_File.html">Format Into File</a> function automatically converts this code into the platform-dependent end-of-line character.
+</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">\r</span></td>
+<td class="Bordered">Carriage return (ASCII <span class="Monospace">CR</span>, equivalent to <span class="Monospace">\0D</span>)</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">\t</span></td>
+<td class="Bordered">Tab (ASCII <span class="Monospace">HT</span>, equivalent to <span class="Monospace">\09</span>)</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">\s</span></td>
+<td class="Bordered">Space (equivalent to <span class="Monospace">\20</span>)</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">\\</span></td>
+<td class="Bordered">Backslash (ASCII <span class="Monospace">\</span>, equivalent to <span class="Monospace">\5C</span>)</td></tr>
+
+</table>
+
+<p class="Body">Use uppercase letters for hexadecimal characters and lowercase letters for special characters, such as form feed and backspace. 
+</p>
+<p class="Body">LabVIEW interprets the sequence <span class="Monospace">\BFare</span> as <em>hex BF</em> followed by the word <em>are</em>. It interprets <span class="Monospace">\bFare</span> and <span class="Monospace">\bfare</span> as a backspace followed by the words <em>Fare</em> and <em>fare</em>. In the sequence <span class="Monospace">\Bfare</span>, <span class="Monospace">\B</span> is not the backspace code, and <span class="Monospace">\Bf</span> is not a valid hex code. In a case like this, when a backslash is followed by only part of a valid hex character, LabVIEW assumes a <span class="Monospace">0</span> follows the backslash, so LabVIEW interprets <span class="Monospace">\B</span> as <em>hex 0B</em>. Any time a backslash is not followed by a valid hex character, LabVIEW ignores the backslash character.
+</p>
+<p class="Body">You can enter some non-displayable characters listed in the previous table from the keyboard, such as a carriage return, into a string control regardless of whether you select <strong>'\' Codes Display</strong>. However, if you enable the backslash mode when the display window contains text, LabVIEW redraws the display to show the backslash representation of any non-displayable characters and the <span class="Monospace">\</span> character itself.
+</p>
+<p class="Body">Complete the following steps to practice using the <strong>'\' Codes Display</strong> shortcut menu item.
+</p>
+<ol>
+
+<li>Add a string control to the front panel window. The default mode is <a href="Normal_Display.html">Normal Display</a>.
+<br><br>
+<SPAN title=" Add to the front panel window "><a href="javascript:placeObjectFP(control5);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObjectFP(control5);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN>
+</li>
+<li><a href="Resizing_Objects.html">Resize</a> the string control to display multiple lines of text and enter the following string:
+<br><br>
+<span class="Monospace">LEFT</span>
+<br><br>
+<span class="Monospace">\RIGHT\3F</span>
+</li>
+<li>Right-click the string control and select <strong>'\' Codes Display</strong> from the shortcut menu. The string appears as follows because the carriage return after <span class="Monospace">LEFT</span> and the backslash characters around <span class="Monospace">RIGHT</span> are shown in backslash form.
+<br><br>
+<span class="Monospace">LEFT\n\\RIGHT\\3F</span>
+</li>
+<li>Repeat step 1 to add a new string control to the front panel window.
+</li>
+<li>Right-click the new string control and select <strong>'\' Codes Display</strong> from the shortcut menu.
+</li>
+<li><a href="Resizing_Objects.html">Resize</a> the string control to display multiple lines of text and enter  the following string:
+<br><br>
+<span class="Monospace">LEFT</span>
+<br><br>
+<span class="Monospace">\RIGHT\3F</span>
+</li>
+<li>Right-click the string control and select <a href="Normal_Display.html">Normal Display</a> from the shortcut menu. The string appears as follows because LabVIEW originally interpreted <span class="Monospace">\r</span> as a carriage return and now prints one. <span class="Monospace">\3F</span> is the ASCII representation of the question mark (<span class="Monospace">?</span>).
+<br><br>
+<span class="Monospace">LEFT</span>
+<br><br>
+<span class="Monospace">RIGHT?</span>
+</li>
+<li>Right-click the string control again and select <strong>'\' Codes Display</strong> from the shortcut menu. The string appears as follows:
+<br><br>
+<span class="Monospace">LEFT\nRIGHT?</span>
+</li>
+</ol>
+<p class="Body">Indicators behave the same way. Notice that the data in the string does not change from one mode to the other. Only the displayed representation of certain characters changes. 
+</p>
+
+
+
+
+</body>
+</html>

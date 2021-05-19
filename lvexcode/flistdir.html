@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>FListDir (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>FListDir (LabVIEW Manager Function)</h1>
+<p class="Code">MgErr FListDir(path, list, typeH);</p>
+<h2>Purpose</h2>
+<p class="Body">Determines the contents of a directory.</p>
+<p class="Body">The function fills the handle passed in <strong>list</strong> with a <a href="../lvexcodeconcepts/Manager_Data_Types.html#Concatenated_Pascal_String_(CPStr)">CPStr</a>, where the <strong>cnt</strong> field specifies the number of concatenated Pascal strings that follow in the <span class="Monospace">str[]</span> field. If <strong>typeH</strong> is not <span class="Monospace">NULL</span>, the function fills the handle passed in <strong>typeH</strong> with the file type information for each filename or directory name stored in <strong>list</strong>.</p>
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>path</strong></td>
+<td class="Bordered"><span class="Monospace">Path</span></td>
+ <td class="Bordered">Path of the directory whose contents you want to determine.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>list</strong></td>
+<td class="Bordered"><span class="Monospace">CPStrHandle</span></td>
+ <td class="Bordered">Handle in which <span class="Monospace">FListDir</span> stores a series of concatenated Pascal strings, preceded by a 4-byte integer field, <strong>cnt</strong>, that indicates the number of items in the buffer.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>typeH</strong></td>
+<td class="Bordered"><span class="Monospace">FileType</span></td>
+ <td class="Bordered">Handle in which <span class="Monospace">FListDir</span> stores a series of <span class="Monospace">FileType</span> records. If <strong>typeH</strong> is not <span class="Monospace">NULL</span>, <span class="Monospace">FListDir</span> stores one <span class="Monospace">FileType</span> record in <strong>typeH</strong> for each Pascal string in list. The <em>n</em><sup>th</sup> <span class="Monospace">FileType</span> in <strong>typeH</strong> denotes the file type information about the file or directory named in the <em>n</em><sup>th</sup> string in <strong>list</strong>.</td></tr>
+</table>
+
+<p class="Body">The following code shows the file type record.</p>
+<p class="Code">typedef struct {</p>
+<p class="Code1">int32 flags;</p>
+<p class="Code1">int32 type;</p>
+<p class="Code">} FileType;</p>
+<p class="Body">Only the least significant four bits of <span class="Monospace">flags</span> contain useful information. The remaining bits are reserved for use by LabVIEW. You can test these four bits using the following four masks:</p>
+<p class="Code">#define kIsFile 0x01</p>
+<p class="Code">#define kRecognizedType 0x02</p>
+<p class="Code">#define kIsLink 0x04</p>
+<p class="Code">#define kFIsInvisible 0x08</p>
+<p class="Body">The <span class="Monospace">kIsFile</span> bit is set if the item described by the file type record is a file. Otherwise, <span class="Monospace">kIsFile </span>is clear. The <span class="Monospace">kRecognizedType</span> bit is set if the item described is a file for which you can determine a 4-character file type. Otherwise, <span class="Monospace">kRecognizedType </span>is clear. The <span class="Monospace">kIsLink</span> bit is set if the item described is a Linux link or Mac OS X alias. Otherwise, <span class="Monospace">kIsLink </span>is clear. The <span class="Monospace">kFIsInvisible</span> bit is set if the item described does not appear in a file dialog box. Otherwise, <span class="Monospace">kFIsInvisible </span>is clear.</p>
+<p class="Body">The value of <span class="Monospace">type</span> is defined only if the <span class="Monospace">kRecognizedType</span> bit is set in <span class="Monospace">flags</span>. In this case, <span class="Monospace">type</span> is the 4-character file type of the file described by the file type record. This 4-character file type is provided by the file system on Mac OS X and is computed by examining the filename extension on other systems.</p>
+<h2>Return Value</h2>
+<p class="Body"><span class="Monospace">MgErr</span>, which can contain the following errors. If you receive errors from <a href="LabVIEW_Manager_Functions.html">LabVIEW Manager functions</a>, most error names correspond to LabVIEW error codes.</p>
+<table class="Bordered">
+<tr><th class="Bordered Left-Align">Value</th>
+<th class="Bordered Left-Align">Corresponding Error Code or Description</th></tr>
+<tr><td class="Bordered"><span class="Monospace">noErr</span></td><td class="Bordered">No error.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">mgArgErr</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">1</a></td></tr>
+<tr><td class="Bordered"><span class="Monospace">mFullErr</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">2</a></td></tr>
+<tr><td class="Bordered"><span class="Monospace">fIOErr</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">6</a></td></tr>
+<tr><td class="Bordered"><span class="Monospace">fNotFound</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">7</a></td></tr>
+<tr><td class="Bordered"><span class="Monospace">fNoPerm</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">8</a></td></tr>
+</table>
+
+</body>
+</HTML>

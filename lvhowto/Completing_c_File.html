@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+      <title>Completing the .c File</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Completing the .c File</h1>
+<p class="Body">After you <a href="Building_Function_Prototype.html">build a function prototype</a> to build a shared library from a text-based programming language, complete the <span class="Monospace">.c</span> file.</p>
+<p class="Body">The <a href="../glang/Call_Library_Function.html">Call Library Function Node</a> generates the following source code skeleton in <span class="Monospace">myshared.c</span>:</p>
+<p class="Body"><span class="Monospace">/* Call Library source File */</span></p>
+<p class="Body"><span class="Monospace">#include &quot;extcode.h&quot;</span></p>
+<p class="Body"><span class="Monospace">int32_t avg_num(float a[], int32_t size, float *avg);</span></p>
+<p class="Body"><span class="Monospace">int32_t avg_num(float a[], int32_t size, float *avg)</span></p>
+<p class="Indent3"><span class="Monospace">{</span></p>
+<p class="Indent3"><span class="Monospace">/* Insert code here */</span></p>
+<p class="Indent3"><span class="Monospace">}</span></p>
+
+<p class="Body">Replace the <span class="Monospace">/* Insert code here */</span> spacer with the following function code, making sure to place the code within the pair of curly braces:</p>
+
+<p class="Indent2"><span class="Monospace">int i;</span></p>
+<p class="Indent2"><span class="Monospace">float sum = 0;</span></p>
+<p class="Indent2"><span class="Monospace">if(a != NULL)</span></p>
+<p class="Indent3"><span class="Monospace">{</span></p>
+<p class="Indent3"><span class="Monospace">for(i=0; i &lt; size; i++)</span></p>
+<p class="Indent4"><span class="Monospace">sum = sum + a[i];</span></p>
+<p class="Indent3"><span class="Monospace">}</span></p>
+<p class="Indent2"><span class="Monospace">else</span></p>
+<p class="Indent3"><span class="Monospace">return (1);</span></p>
+<p class="Indent2"><span class="Monospace">*avg = sum / size;</span></p>
+<p class="Indent2"><span class="Monospace">return (0);</span></p>
+
+<h2>Required Libraries</h2>
+<p class="Body">This simple example requires the <span class="Monospace">extcode.h</span> header file for a few simple data types. <span class="Monospace">extcode.h</span> provides access to a set of LabVIEW manager functions that perform simple and complex operations, ranging from low-level byte manipulation to routines for sorting data and managing memory. When you build more complex shared libraries, you must include header files for all related libraries. For example, a Windows shared library project might need to include <span class="Monospace">windows.h</span>.</p>
+<p class="Body">When you want to use the LabVIEW manager functions inside a shared library, you must include the <span class="Monospace">labviewv.lib</span> library file in the compiled project. This file appears in the <span class="Monospace">labview\cintools</span> directory.</p>
+
+<p>You need the LabVIEW manager functions if you intend to do any of the following tasks:</p>
+<ul>
+<li>Allocate, free, or resize arrays, strings, or other data structures that are passed into or out of the library from LabVIEW.</li>
+<li>Work with LabVIEW path data types.</li>
+<li>Work with file refnums inside the library.</li>
+<li>Use any of the <a href="../lvexcode/support_manager_functions.html">Support Manager</a> functions.</li>
+</ul>
+<p class="Body">Refer to the <a href="../lvexcode/LabVIEW_Manager_Functions.html">LabVIEW Manager</a> functions for more information about the manager functions.</p> 
+<p class="Body">After you complete the <span class="Monospace">.c</span> file, <a href="../lvexcodeconcepts/Ex_1_Call_a_Shared_Library.html">build the library project</a> in an external IDE.</p>
+
+
+</body>
+</html>

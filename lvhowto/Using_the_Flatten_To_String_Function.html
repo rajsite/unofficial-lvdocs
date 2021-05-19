@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+<title>Using the Flatten To String Function</title>
+</head>
+<body bgcolor="#ffffff">
+
+<h1>Using the Flatten To String Function</h1>
+
+<p class="Body">The <a href="../glang/Flatten_To_String.html">Flatten To String</a> function takes LabVIEW data and converts it into a string. This string, when used in conjunction with the various communication functions or I/O functions, can be stored in a file or database or be sent to other computers.</p>
+
+<p class="Body">The string created by the Flatten To String function is a LabVIEW string. If the <strong>prepend array or string size?</strong> input of the Flatten To String function is TRUE, the LabVIEW string has a 4-byte number, which is a 32-bit, signed integer data type, at the beginning of the string that specifies the length of the string. Specifying the length of the string enables a LabVIEW string to include <span class="Monospace">NULL</span> characters, such as the ASCII character zero (0). If a LabVIEW string is passed to external code and used as a C string, <span class="Monospace">NULL</span> characters embedded in the string might cause problems because C strings are interpreted as terminating at the first <span class="Monospace">NULL</span> character.</p>
+
+<p class="Body">To pass the flattened form of LabVIEW data to C code, convert the flattened LabVIEW data from a binary string format to an alphanumeric string format. For example, suppose your string consists of the following five characters:</p>
+
+<p class="Code">* character 35 (#)</p>
+<p class="Code">* character 65 (A)</p>
+<p class="Code">* character 0 (NULL)</p>
+<p class="Code">* character 50 (2)</p>
+<p class="Code">* character 107 (k)</p>
+
+<p class="Body">Complete the following steps to convert the preceding five characters from a binary string format to an alphanumeric string format.</p>
+
+<ol>
+<li>Convert the decimal values of the five characters into hexadecimal values.
+<p class="Body">35d = 0x23</p>
+<p class="Body">65d = 0x41</p>
+<p class="Body">0d = 0x00</p>
+<p class="Body">50d = 0x32</p>
+<p class="Body">107d = 0x6B</p>
+</li>
+<li>Write down the actual alphanumeric characters for the hexadecimal values and include only a single <span class="Monospace">NULL</span> value at the end.
+
+<p class="Code">* character 50 (2)</p>
+<p class="Code">* character 51 (3)</p>
+<p class="Code">* character 52 (4)</p>
+<p class="Code">* character 49 (1)</p>
+<p class="Code">* character 48 (0)</p>
+<p class="Code">* character 48 (0)</p>
+<p class="Code">* character 51 (3)</p>
+<p class="Code">* character 50 (2)</p>
+<p class="Code">* character 54 (6)</p>
+<p class="Code">* character 66 (B)</p>
+<p class="Code">* character 0 (NULL)</p>
+</li>
+</ol>
+<p class="Body">Converting from a binary string format to an alphanumeric string format doubles the size of the string. However, converting to an alphanumeric format preserves the information in the string when you use the string in an environment where you have to replace LabVIEW strings with C strings.</p>
+
+
+
+
+
+</body>
+</html>

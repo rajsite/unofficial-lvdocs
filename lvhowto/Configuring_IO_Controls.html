@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 1500Elistboxcihlp -->
+
+<title>Configuring I/O Controls</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Configuring I/O Controls</h1>
+<p class="Body">Configure I/O controls <!-- begin child: lvhowto.chm,Configuring_IO_Resources.html -->to pass Traditional NI-DAQ (Legacy) virtual channels, NI-DAQmx resources (such as tasks, channels, and scales), IVI logical names, VISA resource names, FieldPoint I/O points, or Motion resource names to I/O VIs to communicate with an instrument or a measurement device. <!-- end child: lvhowto.chm,Configuring_IO_Resources.html--> </p>
+<ol>
+<li>Add one of the I/O controls from the <strong>I/O</strong> palette to the front panel.</li>
+<li>Click the arrow in the I/O control and select a resource you configured. If the I/O control does not have items available in the pull-down menu, you must <a href="../lvmeasconcepts/Configuring_IO_Resources.html">configure the resource</a> associated with the control.</li>
+<li>Display the block diagram.</li>
+<li>Wire the I/O terminal to the I/O input of an I/O VI that communicates with a measurement device, instrument, or other device.</li>
+</ol>
+
+<p class="Body">You also can configure the shared variable control to select a shared variable for use in VIs.</p>
+
+<ol>
+<li>Add the shared variable control from the <strong>I/O</strong> palette to the front panel.</li>
+<li>Click the down arrow on the right side of the shared variable control to select a shared variable. All deployed shared variables in the currently open project appear in the pull-down menu.<br><br>
+If you want to use a shared variable that is not in the currently open project, click the down arrow and select <strong>Browse</strong>. Browse for a deployed shared variable in a different project or on a different computer.</li>
+<li>Display the block diagram.</li>
+<li>Wire the shared variable control to the <strong>connection in</strong> input of <a href="../lvcomm/DataSocket_Read.html">DataSocket Read</a> and <a href="../lvcomm/DataSocket_Write.html">DataSocket Write</a> functions.</li>
+</ol>
+
+<p class="Body">Refer to the respective <a href="../lvhelp/LabVIEW_Toolkits.html">toolkit, module, or driver</a> documentation for more information about LabVIEW add-ons.</p>
+
+</body>
+</html>

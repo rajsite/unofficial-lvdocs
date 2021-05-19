@@ -1,0 +1,121 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Magnitude (Norms) of Matrices</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-88771348-8C84-41DA-A9FD-E08C188A4B63" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Magnitude (Norms) of Matrices</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 
+            		 
+            		 You must develop a notion of the magnitude of vectors and matrices to measure errors and sensitivity in solving a linear
+            system of equations. As an example, these linear systems can be obtained from applications in control systems and computational
+            fluid dynamics. In two dimensions, for example, you cannot compare two vectors <em>x</em> = [<em>x</em>1 <em>x</em>2] and <em>y</em> = [<em>y</em>1 <em>y</em>2] because you might have <em>x</em><sub>1</sub> &gt; <em>y</em><sub>1</sub> but <em>x</em><sub>2</sub> &lt; <em>y</em><sub>2</sub>. A vector norm is a way to assign a scalar quantity to these vectors so that they can be compared with each other. It is
+            similar to the concept of magnitude, modulus, or absolute value for scalar numbers. 
+            	 
+         </p> 
+         	 
+         <p>There are several ways to compute the norm of a vector. These include the 2-norm (Euclidean norm), the 1-norm, the Frobenius
+            norm (F-norm), and the Infinity norm (inf-norm). Each norm has its own physical interpretation. Consider a unit ball containing
+            the origin. The Euclidean norm of a vector is simply the factor by which the ball must be expanded or shrunk in order to encompass
+            the given vector exactly, as shown in the following figure. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-88771348-8C84-41DA-A9FD-E08C188A4B63__IMAGE_CC309946FFEF494189EF0A5EB8202095" shape="rect">
+            <!-- --></a><img id="GUID-88771348-8C84-41DA-A9FD-E08C188A4B63__IMAGE_CC309946FFEF494189EF0A5EB8202095" src="GUID-7A8AEC44-2A0B-4FF4-83ED-3C3EEEBDD919-help-web.png"><br clear="none"> 
+         	 
+         <p>Part a of the previous figure shows a unit ball of radius = 1 unit. Part b shows a vector of length <span class="mathml-inline"><span><img src="./kset2Ftemp2Flvac_mag_matrices.xml_d18516e79.png"></span></span>. As shown in Part c of the previous figure, the unit ball must be expanded by a factor of <span class="mathml-inline"><span><img src="./kset2Ftemp2Flvac_mag_matrices.xml_d18516e115.png"></span></span> before it can exactly encompass the given vector. Hence, the Euclidean norm of the vector is <span class="mathml-inline"><span><img src="./kset2Ftemp2Flvac_mag_matrices.xml_d18516e125.png"></span></span>. 
+            	 
+         </p> 
+         	 
+         <p>The norm of a matrix is defined in terms of an underlying vector norm. It is the maximum relative stretching that the matrix
+            does to any vector. With the vector 2-norm, the unit ball expands by a factor equal to the norm. On the other hand, with the
+            matrix 2-norm, the unit ball might become an ellipsoidal (ellipse in 3D), with some axes longer than others. The longest axis
+            determines the norm of the matrix. 
+            	 
+         </p> 
+         	 
+         <p>Some matrix norms are much easier to compute than others. The 1-norm is obtained by finding the sum of the absolute value
+            of all the elements in each column of the matrix. The largest of these sums is the 1-norm. In mathematical terms, the 1-norm
+            is simply the maximum absolute column sum of the matrix. If the size of matrix <em>A</em> is <em>m</em>-by-<em>n</em>, then the following equation is true: 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./kset2Ftemp2Flvac_mag_matrices.xml_d18516e153.png"></span></div>
+         </div> 
+         	 
+         <p>For example, 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./kset2Ftemp2Flvac_mag_matrices.xml_d18516e220.png"></span></div>
+         </div> 
+         	 
+         <p>then 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./kset2Ftemp2Flvac_mag_matrices.xml_d18516e252.png"></span></div>
+         </div> 
+         	 
+         <p>The inf-norm of a matrix is the maximum absolute row sum of the matrix. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./kset2Ftemp2Flvac_mag_matrices.xml_d18516e298.png"></span></div>
+         </div> 
+         	 
+         <p>In this case, you add the magnitudes of all elements in each row of the matrix. The maximum value that you get is the inf-norm.
+            For the example matrix <span class="mathml-inline"><span><img src="./kset2Ftemp2Flvac_mag_matrices.xml_d18516e363.png"></span></span>, 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./kset2Ftemp2Flvac_mag_matrices.xml_d18516e393.png"></span></div>
+         </div> 
+         	 
+         <p>The Frobenius norm of a matrix is the square root of the sum of the absolute squares of all elements, as shown in the following
+            equation. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./kset2Ftemp2Flvac_mag_matrices.xml_d18516e436.png"></span></div>
+         </div> 
+         	 
+         <p>For the example matrix <span class="mathml-inline"><span><img src="./kset2Ftemp2Flvac_mag_matrices.xml_d18516e518.png"></span></span>, 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./kset2Ftemp2Flvac_mag_matrices.xml_d18516e548.png"></span></div>
+         </div> 
+         	 
+         <p>For a complex matrix, the absolute value is the module of the element. 
+            	 
+         </p> 
+         	 
+         <p>The 2-norm is the most difficult to compute because it is defined as the largest singular value of the matrix. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Lin_Sys_and_Matrix_Anls.html" shape="rect">Matrix Analysis</a></div>
+         </div>
+         <div class="relinfo relconcepts"><strong>Related concepts</strong><br clear="none"><div><a href="Matrix_Factorization.html" shape="rect">Matrix Factorization</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

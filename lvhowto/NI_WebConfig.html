@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<title>Monitoring and Configuring a Remote Device from a Web Browser</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+</head>
+
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Monitoring and Configuring a Remote Device from a Web Browser</h1>
+<p class="Body">After NI Web-based Configuration &amp; Monitoring is installed on a remote device, such as an RT target, you can use a Web browser to monitor and configure the device.</p>
+
+<p class="Body"><span class="Platform">(Real-Time Module)</span> Use the <strong>LabVIEW Real-Time Software Wizard</strong> in NI Measurement &amp; Automation Explorer (MAX) to determine whether NI Web-based Configuration &amp; Monitoring is installed on an RT target and to install the software if necessary.</p>
+
+<table class="Borderless">
+<tr>
+<td class="button"><img src="note.gif"></td>
+<td><strong>Note</strong>��You must install Microsoft Silverlight to use NI Web-based Configuration &amp; Monitoring. If you have not installed Microsoft Silverlight, NI Web-based Configuration &amp; Monitoring prompts you to do so.</td>
+</tr>
+</table>
+
+<h2>Accessing the Configuration Page</h2>
+
+<p class="Body">Use one of the following methods to access NI Web-based Configuration &amp; Monitoring for a remote device:</p>
+
+<ul>
+	<li>In the <strong>Project Explorer</strong> window, right-click the device and select <strong>Utilities&#0187;View in Browser</strong> from the shortcut menu.</li>
+	<li>In a Web browser, enter the URL <span class="Monospace">http://[remote device IP address]</span> where <span class="Monospace">[remote device IP address]</span> is the actual IP address of the remote device.</li>
+	<li>On the <a href="WS_Enable_Web_Server.html">local host system</a>, click the <strong>Configure Web Application Server</strong> button on the <a href="../lvdialog/Web_Server_Config_Options.html">Web Server</a> page of the <a href="../lvdialog/Options_Dialog_Box.html">Options</a> dialog box.</li>
+	<li>Visit <span class="Monospace">ni.com</span> and enter the Info Code <a href="javascript:WWW(WWW_NB_FAQ)">NetworkBrowserHelp</a> to download and run the NI Network Browser. Click the name of the remote device in the list of remote devices. If you have a firewall enabled, the firewall might display a dialog box asking whether you want to unblock the NI Network Browser. The NI Network Browser cannot function correctly unless you unblock it.</li>
+	<li><span class="Platform">(NI Linux Real-Time)</span> If you enable SSH on your controller, you can log in to a target using SSH or a serial connection. Refer to the <a href="../lvrtconcepts/RT_RTLinux.html" class="checkLink lvrtconcepts">Real-Time Module on NI Linux Real-Time Targets</a> topic for further details.</li>
+</ul>
+
+<h2>Logging into the Configuration Page</h2>
+
+<p class="Body">NI Web-based Configuration &amp; Monitoring uses a permission-based security model. By default, each remote device includes a single user with the following name and password:</p>
+
+<ul>
+	<li><strong>User name</strong>&#8212;<span class="Monospace">Admin</span></li>
+	<li><strong>Password</strong>&#8212;<span class="Monospace">&lt;blank&gt;</span></li>
+</ul>
+
+<p class="Body">After you access the NI Web-based Configuration &amp; Monitoring application for a remote device, complete the following steps to log in for the first time:</p>
+
+
+
+<ol>
+	<li>Click the <strong>Login</strong> button in the top-right corner of the page.</li>
+	<li>Enter <span class="Monospace">Admin</span> in the <strong>User name</strong> field.</li>
+	<li>Leave the <strong>Password</strong> field blank.</li>
+	<li>Click the <strong>OK</strong> button.</li>
+</ol>
+
+<p class="Body">Complete the following steps to change a user's password:</p>
+<table class="Borderless">
+<tr>
+<td class="button"><img src="note.gif"></td>
+<td><strong>Note</strong> The <strong>Password</strong> field is case-sensitive. <span class="Platform">(NI Linux Real-Time)</span> You must change your password to a non-blank password to log in using SSH or a serial connection.</td>
+</tr>
+</table>
+<ol>
+	<li>Navigate to the <strong>Security Configuration</strong> page.</li>
+	<li>Click the <strong>Users</strong> tab on the left side of this page.</li>
+	<li>Enter and confirm the new password and click <strong>OK</strong>.</li>
+	<li>Click <strong>Save</strong> to save changes.</li>
+	</ol>
+
+<h2>Monitoring and Configuring the Device</h2>
+
+<p class="Body">After you log in, click <strong>Help</strong> on each page of NI Web-based Configuration &amp; Monitoring for information about monitoring and configuring the device.</p>
+
+</body>
+</html>

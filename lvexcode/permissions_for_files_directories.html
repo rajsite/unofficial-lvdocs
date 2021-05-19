@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>Permissions for Files and Directories</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>Permissions for Files and Directories</H1>
+<p class="Body">The <a href="file_manager_functions.html">file manager</a> uses the <span class="Monospace">int32</span> data type to describe permissions for files and directories. The manager uses only the least significant nine bits of the <span class="Monospace">int32</span>.</p>
+<p class="Body"><span class="Platform">(Linux)</span> The nine bits of permissions correspond exactly to nine Linux permission bits governing read, write, and execute permissions for user, group, and others. The following illustration shows permission bits on Linux.</p>
+<img src="loc_eps_permission.gif" alt="" border="0">
+
+<P class="Body"><span class="Platform">(Windows)</span> The file manager ignores permissions for directories. For files, the manager uses only bit 7 (the Linux user write permission bit). If this bit is clear, the file is read-only. Otherwise, you can write to the file.</p>
+<P class="Body"><span class="Platform">(OS X)</span> The file manager uses all nine bits for directories (folders). The manager uses the bits that control read, write, and execute permissions, respectively, on Linux to control See Files, Make Changes, and See Folders access rights, respectively, on Mac OS X.</p>
+
+</body>
+</HTML>

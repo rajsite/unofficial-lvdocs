@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4500Earrayclustershlp -->
+
+<title>Displaying an Array in a Table</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Displaying an Array in a Table
+</h1>
+<p class="Body">The index display of a 1D array identifies the left-most visible element.
+</p>
+<p class="Body">By default, a new array is a 1D array. The element display shows the single element the index display contains. However, you also can display the array as a table of elements by resizing the array shell. 
+</p>
+<p class="Body">Complete the following steps to create a 2D numeric array, display it in a table, and use the index displays to alter the display.
+</p>
+<ol>
+<li>Add an array shell to the front panel window. An array shell includes an index display on the left, an element display on the right, and an optional label.
+<br><br>
+<SPAN title=" Add to the front panel window "><a href="javascript:placeObjectFP(control16);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObjectFP(control16);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN>
+</li>
+<li>If the <strong>Controls</strong> palette is not already visible, right-click the element display to display the <strong>Controls</strong> palette. 
+</li>
+<li>Add a numeric control to the array shell.
+<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObjectFP(control1);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObjectFP(control1);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN>
+</li>
+<li>Right-click the index display and select <strong>Add Dimension</strong> from the shortcut menu to create a 2D numeric array in single-element form. A single-element array displays only one element. Keep both index values at 0 for now. The top index refers to rows, and the bottom index refers to columns.
+</li>
+<li>Move the Positioning tool over one of the four corners surrounding the element in the single-element array. The Positioning tool changes shape and resizing handles appear.
+</li>
+<li>Use the Positioning tool to resize the element display to add or subtract elements in the array. Resize the array to have two rows and three columns. You also can resize an individual element display. When you resize an element display, all other elements resize to match the one you changed.
+</li>
+<li>Use the Labeling tool or the Operating tool to assign values to each numeric control in the array. Assign values 1 through 3 to the first row, 4 through 6 to the second row, and so on.
+</li>
+<li>An index display starts at zero. You use the index display to identify the coordinates of the upper left-visible element. Manipulate the index displays the same way you operate a <a href="../lvconcepts/Numeric_Controls_and_Indicators.html">numeric control</a>. Increment the row and column index controls to see how they specify a particular element in the array. The specified element always appears in the upper-left element display. 
+</li>
+</ol>
+<p class="Body">Think of a 2D array as a row of columns. The upper display of the two boxes on the left is the row index and the lower display is the column index. The combined display to the right of the row and column displays shows the value at the specified position. 
+</p>
+<p class="Body">The number of indexes required to locate an item of data determines the dimension of an array.
+</p>
+<p class="Body">You operate an element of the array in the same manner as you operate a control or indicator of the same type.
+</p>
+
+
+
+</body>
+</html>

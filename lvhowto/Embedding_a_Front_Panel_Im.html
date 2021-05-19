@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 6100Ecommhlp -->
+
+<title>Embedding a Front Panel Image in an Existing HTML Document</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+
+<h1>Embedding a Front Panel Image in an Existing HTML Document</h1>
+<p class="Body">National Instruments recommends you use the <a href="../lvdialog/Web_Publishing_Tool_DB.html">Web Publishing Tool</a> to <a href="Creating_HTML_Documents_an.html">create an HTML document and embed static or animated images of the front panel</a> or to embed a front panel in an HTML document so a client computer can <a href="ViewFPRmtlyUsngBrwsr.html">view and control the front panel remotely</a>.</p>
+
+<p class="Body">However, if you already have an HTML document, complete the following steps to embed a static image of a front panel in the existing HTML document. Store the HTML document in the <a href="root_directory.html">Web Server root directory</a>. Refer to <a href="Syntax_Examples.html">Web Server Syntax Examples</a> for examples of embedding VIs in HTML documents.</p>
+
+<ol>
+<li>Copy the following HTML code into the existing HTML document:
+<p class="Indent1"><span class="Monospace">&lt;IMG SRC=&quot;http://</span><span class="Monospace-Italic"><em>web.server.addr</em></span><span class="Monospace">/.</span><span class="Monospace-Italic"><em>snap</em></span><span class="Monospace">?</span><span class="Monospace-Italic"><em>VI_Name</em></span><span class="Monospace">[&amp;type=png][&amp;depth=24][&amp;quality=80][&amp;compression=</span>&#8211;<span class="Monospace">1][&amp;refresh=60][&amp;full=off]&quot;&gt;</span></p></li>
+
+<li>Replace <span class="Monospace-Italic"><em>web.server.addr</em></span> with the address of the LabVIEW Web Server.</li>
+
+<li>Replace <span class="Monospace-Italic"><em>VI_Name</em></span> with the name of the VI.
+
+<p class="Body">A question mark separates the URL from the VI name. Parameters in brackets <span class="Monospace">[ ]</span> are optional.</p></li>
+
+<li>(Optional) You can add the following parameters to specify attributes for the image.<br><br>
+
+<table class="Bordered">
+<tr><th class="Bordered Left-Align">Parameter</th><th class="Bordered Left-Align">Description</th></tr>
+
+<tr><td class="Bordered"><strong><span class="dnl">VI_Name</span></strong></td>
+<td class="Bordered">Name of the VI front panel to view. <strong>VI_Name</strong> is the top-level VI in stand-alone applications. Encode the VI name according to standard URL naming conventions. For example, replace non-alphanumeric characters with <span class="Monospace">%</span><span class="Monospace-Italic"><em>xx</em></span>, where <span class="Monospace-Italic"><em>xx</em></span> is the hexadecimal value of the character. You also can use a plus (<span class="Monospace">+</span>) sign to replace spaces.</td></tr>
+
+<tr><td class="Bordered"><strong><span class="dnl">type</span></strong> </td>
+<td class="Bordered">Image type, either PNG or JPEG. If no <strong>type</strong> is specified, the default is <span class="Monospace">png</span>. If the browser does not support PNG, the default is <span class="Monospace">jpeg</span>.</td></tr>
+
+<tr><td class="Bordered"><strong><span class="dnl">depth</span></strong></td> 
+<td class="Bordered">Depth of the color in the image. <strong>depth</strong> can be <span class="Monospace">1</span>, <span class="Monospace">4</span>, <span class="Monospace">8</span>, or <span class="Monospace">24</span> bits. If no <strong>depth</strong> is specified, the default is the color depth of the monitor.</td></tr>
+
+<tr><td class="Bordered"><strong><span class="dnl">quality</span></strong></td> 
+<td class="Bordered">Image quality and memory size of the JPEG front panel image. This parameter is applicable only when <strong>type</strong> is <span class="Monospace">jpeg</span>. <strong>quality</strong> can be between <span class="Monospace">0</span> and <span class="Monospace">100</span>. If no <strong>quality</strong> is specified, the default is <span class="Monospace">80</span>.</td></tr>
+
+<tr><td class="Bordered"><strong><span class="dnl">compression</span></strong></td>
+<td class="Bordered">Compression level used for compressing PNG images. This parameter is applicable only when <strong>type</strong> is <span class="Monospace">png</span>. <strong>compression</strong> can be between &#8211;<span class="Monospace">1</span> and <span class="Monospace">9</span>, where <span class="Monospace">0</span> indicates no compression. <span class="Monospace">1</span> indicates less compression, but faster speed, and <span class="Monospace">9</span> indicates high compression, but slower speed. Compression levels <span class="Monospace">3</span> through <span class="Monospace">6</span> perform as well as level <span class="Monospace">9</span> and perform fewer calculations than level <span class="Monospace">9</span>. If no <strong>compression</strong> is specified, the default is &#8211;<span class="Monospace">1</span>, which uses best combination of speed and compression.</td></tr>
+
+<tr><td class="Bordered"><strong><span class="dnl">refresh</span></strong></td>
+<td class="Bordered">Maximum age in seconds of a cached image. If a cached image is older than <strong>refresh</strong> seconds, a new image is generated.</td></tr>
+
+<tr><td class="Bordered"><strong><span class="dnl">full</span></strong></td> 
+<td class="Bordered">Specifies whether to return the image of all controls or just the part visible in the window. Set <strong>full</strong> to <span class="Monospace">on</span> to indicate all controls and <span class="Monospace">off</span> to indicate the window content. If no <strong>full</strong> is specified, the default is <span class="Monospace">off</span>.</td></tr></table></li></ol>
+
+<p class="Body">To view the front panel image, <!--begin parent=lvhelp.chm, ViewFPRmtlyUsngBrwsr.html-->type the IP address or computer name of the server followed by the name of the HTML file in the URL of a Web browser. For example, <span class="Monospace">http://ipaddress/filename.html</span>.<!--end parent=lvhelp.chm, ViewFPRmtlyUsngBrwsr.html--></p>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;To display VI front panels on the Web, the VIs must be in memory on the computer.</td></tr></table>
+
+
+
+
+</body>
+</html>

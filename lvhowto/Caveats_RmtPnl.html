@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 6000Eviserverhlp -->
+
+<title>Errors When Connecting to Remote Front Panels</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Errors When Connecting to Remote Front Panels</h1>
+<p class="Body">The following table lists errors that might occur when you <a href="ViewFrntPnlRmtlyUsngLV.html">connect to remote front panels in LabVIEW</a> or in a <a href="ViewFPRmtlyUsngBrwsr.html">Web browser</a>.</p>
+
+<table class="Bordered">
+<tr><th class="Bordered Left-Align">Error</th>
+<th class="Bordered Left-Align">Solution</th></tr>
+<tr><td class="Bordered"><span class="Monospace-Bold">Invalid server IP address</span></td>
+<td class="Bordered">Contact the server administrator to get the correct IP address or name of the computer to which you want to connect.</td>
+</tr>
+<tr><td class="Bordered"><span class="Monospace-Bold">Remote panel connection refused by specified server</span></td><td class="Bordered">The server administrator must <a href="Enabling_and_Configuring_t.html">enable the LabVIEW Web Server</a>. Verify that the <strong>Server IP Address</strong> and <strong>Port</strong> you entered in the <a href="../lvdialog/Remote_Panel_Dialog_Box.html">Connect to Remote Panel</a> dialog box are correct.</td>
+</tr>
+<tr><td class="Bordered"><span class="Monospace-Bold">Client does not have access to remote panel server</span></td><td class="Bordered">The server administrator must <a href="AllowingDenyingWebBrowser.html">specify the IP addresses</a> for all potential clients wanting to view or control a remote front panel. If the server administrator does not specify any IP addresses, LabVIEW allows all clients to access remote front panels.</td>
+</tr>
+<tr><td class="Bordered"><span class="Monospace-Bold">Remote panel protocol version incompatible</span></td><td class="Bordered"><!--begin child=LV_Fundamentals.pdf, 6100Ecomm-->The client and server computers must be running the same version of LabVIEW. If you are using a browser to view and control a remote front panel, you must <a href="../lvconcepts/Using_the_LV_Run_Time_Eng.html">use a version of the LabVIEW Run-Time Engine</a> compatible with the version of LabVIEW on the server computer. Also, contact the server administrator to verify that the HTML document <a href="Embed_VI_In_HTML_Doc.html">specifies the correct version</a> of the LabVIEW Run-Time Engine.<!--end child=LV_Fundamentals.pdf, 6100Ecomm--></td>
+</tr>
+<tr><td class="Bordered"><span class="Monospace-Bold">LabVIEW client version is incompatible with LabVIEW server version</span></td><td class="Bordered">You must use a version of LabVIEW compatible with the version of LabVIEW on the server computer. If you are using a browser to view and control a remote front panel, you must <a href="../lvconcepts/Using_the_LV_Run_Time_Eng.html">use a version of the LabVIEW Run-Time Engine</a> compatible with the version of LabVIEW on the server computer. Also, contact the server administrator to verify that the HTML document <a href="Embed_VI_In_HTML_Doc.html">specifies the correct version</a> of the LabVIEW Run-Time Engine.</td>
+</tr>
+<tr><td class="Bordered"><span class="Monospace-Bold">Server does not support Remote Panels</span></td><td class="Bordered">Make sure you entered the IP address or computer name of the server correctly.</td>
+</tr>
+<tr><td class="Bordered"><span class="Monospace-Bold">Remote panel server failed to send requested VI</span></td><td class="Bordered">A memory or network problem occurred. This error might occur if you try to connect to a large front panel. Try to connect to the front panel again, or request that the server administrator modify the front panel so it uses less memory.<br><br>This error also might occur if you deploy a VI to a Real-time target without the Web Server enabled, and subsequently enable the Web Server. The error occurs because the deployed VI does not have a front panel in this case, since LabVIEW only preserves the front panel of a VI deployed to a Real-Time target when the Web server is enabled. This behavior is for performance optimization.</td>
+</tr>
+<tr><td class="Bordered"><span class="Monospace-Bold">Client does not have access to specified VI</span></td><td class="Bordered">The server administrator must <a href="SpecifyingWhichVIareVis.html">specify the VIs</a> that clients can view or control.</td>
+</tr>
+<tr><td class="Bordered"><span class="Monospace-Bold">Requested VI is not loaded into memory on the server computer</span></td><td class="Bordered">A VI is considered to be in memory whenever the VI is open on the server machine. The VI does not have to be running. Also, make sure the VI name you entered matches the host machine exactly, including the .vi extension.</td>
+</tr>
+</table>
+
+
+
+</body>
+</html>

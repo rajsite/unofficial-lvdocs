@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Original filename: comptool.txt -->
+
+<title>Comparing VIs and VI Hierarchies</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+	
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Comparing VIs and VI Hierarchies</h1>
+
+<p class="Body">The <strong>Compare VIs</strong> dialog box, also called graphical differencing, helps you track changes in an application by comparing multiple versions of a VI. This becomes especially important as a project grows and involves more developers.</p>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;The <strong>Compare VIs</strong> dialog box is available only in the LabVIEW Professional Development System.</td></tr></table>
+
+<p class="Body">You can select options to control the types of differences you want to detect and view. For example, you can filter out cosmetic changes such as objects being moved or resized. When you compare the VIs, a window displays a summary of the differences. If you select an item from the summary, LabVIEW displays and highlights the differences between the two VIs.</p>
+
+<p class="Body">Complete the following steps to compare two VIs.</p>
+
+<ol>
+<li>Because LabVIEW cannot load two VIs with the same name, you must rename one of your VIs to compare them.  Renaming the VIs does not affect the name of the subVIs. If you <a href="Comparing_VI_Hierarchies.html">compare two hierarchies of VIs</a>, LabVIEW temporarily renames the top-level VI.</li>
+<li>Select <strong>Tools&#0187;Compare&#0187;Compare VIs</strong> from the front panel or block diagram menu of a VI to display the <a href="../lvdialog/Compare_VIs_Dialog_Box.html">Compare VIs</a> dialog box.</li>
+<li>Click the <strong>Select</strong> button to open the <a href="../lvdialog/Select_a_VI_DB.html">Select a VI</a> dialog box and select a VI by name. You can select only VIs that are already loaded into memory.</li>
+<li><a href="VI_Comparison_Options.html">Select comparison options</a> by placing checkmarks in the appropriate checkboxes in the <strong>Compare</strong> field.</li>
+<li>Click the <strong>Compare</strong> button.</li>
+</ol>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;Use the same steps to compare private data controls of LabVIEW classes. You must place each version of the class in a different project and enter the project paths into the <strong>VIs to Compare</strong> text fields using the following syntax: <span class="Monospace">ProjectName.lvproj\My Computer\ClassName.lvclass:ClassName.ctl</span>.</td>
+</tr>
+</table>
+
+<p class="Body">Comparing very large VIs can be time consuming. You can cancel the comparison of two VIs in the <strong>Comparison Progress</strong> dialog box.</p>
+<p class="Body">The progress bar indicates the steps in the comparison algorithm, not the number of differences left to find. When the comparison is complete, LabVIEW <a href="Showing_Differences.html">displays</a> the front panels and block diagrams of the two VIs with the <a href="../lvdialog/Differences_Dialog_Box.html">Differences</a> dialog box.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;<a href="../lvhowto/ConfigLVComp_ThirdParty.html">LVCompare.exe</a> also uses the <strong>Compare VIs</strong> dialog box to compare VIs using a third-party source control provider or to compare VIs from the command line.</td>
+</tr>
+</table>
+
+<p class="Body">After the comparison is complete, you can create a VI comparison report by clicking <strong>Create Report</strong> in the <strong>Differences</strong> dialog box. In the <a href="../lvdialog/create_report_db.html">Create Report</a> dialog box, select a report type and specify a path to save the report as a web page (<span class="Monospace">.xml</span>), as a text file (<span class="Monospace">.txt</span>), <span class="Platform">(Windows)</span> or as a Microsoft Word document (<span class="Monospace">.doc</span>).</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp; 
+	<ul>
+    	<li>The path for saving the comparison report must be a local directory instead of a network path.</li>
+        <li>You must have Microsoft Word installed before you create a Microsoft Word report.</li>
+    </ul></td>
+</tr>
+</table>
+<p class="Body">You also can create a comparison report when <a href="../lvhowto/Comparing_VI_Hierarchies.html">you compare VI hierarchies</a>.</p>
+
+</body>
+</html>

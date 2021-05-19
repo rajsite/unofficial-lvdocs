@@ -1,0 +1,84 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Anti-Aliasing Filters</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-4ADF69A1-A33A-4CEB-8AD7-818F9C5F7B3B" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Anti-Aliasing Filters</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 
+            		 
+            		 In the digital domain, you cannot distinguish alias frequencies from the frequencies that actually lie between 0 and the
+            Nyquist frequency. Even with a sampling frequency equal to twice the Nyquist frequency, pickup from stray signals, such as
+            signals from power lines or local radio stations, can contain frequencies higher than the Nyquist frequency. Frequency components
+            of stray signals above the Nyquist frequency might alias into the desired frequency range of a test signal and cause erroneous
+            results. Therefore, you need to remove alias frequencies from an analog signal before the signal reaches the A/D converter.
+            
+            	 
+         </p> 
+         	 
+         <p>Use an anti-aliasing analog lowpass filter before the A/D converter to remove alias frequencies higher than the Nyquist frequency.
+            A lowpass filter allows low frequencies to pass but attenuates high frequencies. By attenuating the frequencies higher than
+            the Nyquist frequency, the anti-aliasing analog lowpass filter prevents the sampling of aliasing components. An anti-aliasing
+            analog lowpass filter should exhibit a flat passband frequency response with a good high-frequency alias rejection and a fast
+            roll-off in the transition band. Because you apply the anti-aliasing filter to the analog signal before it is converted to
+            a digital signal, the anti-aliasing filter is an analog filter. 
+            	 
+         </p> 
+         	 
+         <p>The following figure shows both an ideal anti-alias filter and a practical anti-alias filter. The following information applies
+            to the following figure: 
+            	 
+         </p> 
+         	 <a name="GUID-4ADF69A1-A33A-4CEB-8AD7-818F9C5F7B3B__UL_B5071DB417714998971E2EBE1CECBC5A" shape="rect">
+            <!-- --></a><ul id="GUID-4ADF69A1-A33A-4CEB-8AD7-818F9C5F7B3B__UL_B5071DB417714998971E2EBE1CECBC5A">
+            <li><a name="GUID-4ADF69A1-A33A-4CEB-8AD7-818F9C5F7B3B__LI_2EEB548FD4294852B2361B2D66BEE830" shape="rect">
+                  <!-- --></a><em>f</em><sub>1</sub> is the maximum input frequency. 
+               		
+            </li>
+            <li><a name="GUID-4ADF69A1-A33A-4CEB-8AD7-818F9C5F7B3B__LI_BAA8A0BB43BB4DF7921564F8A2B9A01C" shape="rect">
+                  <!-- --></a>Frequencies less than <em>f</em><sub>1</sub> are desired frequencies. 
+               		
+            </li>
+            <li><a name="GUID-4ADF69A1-A33A-4CEB-8AD7-818F9C5F7B3B__LI_B5B4C0FBB42C42E39BC5A4D9DB743ACD" shape="rect">
+                  <!-- --></a>Frequencies greater than <em>f</em><sub>1</sub> are undesired frequencies. 
+               		
+            </li>
+         </ul> 
+         	 <br clear="none"><a name="GUID-4ADF69A1-A33A-4CEB-8AD7-818F9C5F7B3B__IMAGE_5F882ADE29FA461F84AEE817D2DF81C7" shape="rect">
+            <!-- --></a><img id="GUID-4ADF69A1-A33A-4CEB-8AD7-818F9C5F7B3B__IMAGE_5F882ADE29FA461F84AEE817D2DF81C7" src="GUID-74FD3F1E-57F9-4CC6-98C0-3FCD84AD2587-help-web.png"><br clear="none"> 
+         	 
+         <p>An ideal anti-alias filter, shown in part a of the previous figure, passes all the desired input frequencies and cuts off
+            all the undesired frequencies. However, an ideal anti-alias filter is not physically realizable. 
+            	 
+         </p> 
+         	 
+         <p>Part b of the previous figure shows actual anti-alias filter behavior. Practical anti-alias filters pass all frequencies less
+            than <em>f</em><sub>1</sub> and cut off all frequencies greater than <em>f</em><sub>2</sub>. The region between <em>f</em><sub>1</sub> and <em>f</em><sub>2</sub> is the transition band, which contains a gradual attenuation of the input frequencies. Although you want to pass only signals
+            with frequencies less than <em>f</em><sub>1</sub>, the signals in the transition band might cause aliasing. Therefore, in practice, use a sampling frequency greater than two
+            times the highest frequency in the transition band. Using a sampling frequency greater than two times the highest frequency
+            in the transition band means <em>f</em><sub><em>s</em></sub> might be more than 2<em>f</em><sub>1</sub>. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Aliasing.html" shape="rect">Aliasing</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

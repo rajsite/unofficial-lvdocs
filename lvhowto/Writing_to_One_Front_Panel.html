@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4600Elocalglobvarhlp -->
+
+<title>Writing to One Front Panel Object from Two Block Diagram Locations</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Writing to One Front Panel Object from Two Block Diagram Locations
+</h1>
+<p class="Body">You can use a local variable to update a single front panel indicator from more than one location on the block diagram. For example, if you have a VI with two While Loops, you can update a front panel indicator to display which loop is currently executing. The following illustration shows the front panel for such a VI.
+</p>
+<p class="Anchor"><img src="loc_fp_locx2.gif"> 
+</p>
+<p class="Body">On the block diagram, place the indicator terminal in Loop 1 and a local variable instance of the indicator in Loop 2, as shown in the following illustration. Notice that this example also uses a local variable instance of the <strong>Run</strong> control to control the execution of both While Loops. You also can use a local variable to allow a single front panel button to control two parallel While Loops in a single VI. A wire does not connect the loops, and they execute simultaneously.
+</p>
+<p class="Anchor"><img src="loc_bd_locx2.gif"> 
+</p>
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;You cannot associate a local variable with a Boolean control or indicator that has its <a href="ChangeMechActOfBoolSwitch.html">mechanical action</a> set to latch when pressed or released.</td></tr></table>
+
+
+
+
+
+
+
+</body>
+</html>

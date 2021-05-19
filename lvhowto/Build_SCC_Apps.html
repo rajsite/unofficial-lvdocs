@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Building Stand-Alone Applications with Source Control VIs</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Building Stand-Alone Applications with Source Control VIs</h1>
+
+<p class="Body">You can include Source Control VIs when you build stand-alone applications and shared libraries with the Application Builder tools.
+</p>
+<p class="Body">Include the following steps when you build an application or shared library with Source Control VIs:
+</p>
+<ul>
+<li>Add the LabVIEW project library and its folder dependencies for the source control provider you configured to the LabVIEW project from which you are building the application or shared library. If you use the Perforce command line interface with LabVIEW, add <span class="Monospace">NI_SCC_P4CMD.lvlib</span> located in the <span class="Monospace">labview\vi.lib\SourceControl\Providers\P4CMD</span> directory. If you use a Windows-based source control provider, add <span class="Monospace">NI_SCC_WinCI.lvlib</span> located in the <span class="Monospace">labview\vi.lib\SourceControl\Providers\WinCI</span> directory.
+</li>
+<li>Add <span class="Monospace">NI_SCC_ConnSrv.lvlib</span> and its dependencies located in the <span class="Monospace">labview\vi.lib\SourceControl\sccconnsrv</span> directory to the LabVIEW project from which you are building the application or shared library. <span class="Monospace">NI_SCC_ConnSrv.lvlib</span> is the project library for the source control server.
+</li>
+<li>If you are building a stand-alone application, add the folder under each source control project library to the <strong>Always Included</strong> listbox on the <strong>Source Files</strong> page of the <strong>Application Properties</strong> dialog box. For example, if you use <span class="Monospace">NI_SCC_WinCI.lvlib</span>, then add the <span class="Monospace">WinCI</span> folder to the <strong>Always Included</strong> listbox.</li>
+<li>If you are building a shared library, add the folder under each source control project library to the <strong>Always Included</strong> listbox on the <strong>Source Files</strong> page of the <strong>Shared Library Properties</strong> dialog box. For example, if you use <span class="Monospace">NI_SCC_WinCI.lvlib</span>, then add the <span class="Monospace">WinCI</span> folder to the <strong>Always Included</strong> listbox.</li>
+</ul>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;Refer to the NI KnowledgeBase at <a href="javascript:WWW(WWW_KB)">ni.com/kb</a> for more information about copying source control configuration information from the <span class="Monospace">labview\labview.ini</span> file to the <span class="Monospace">.ini</span> file of the application you are building.</td></tr></table>
+
+<h3>Related Information</h3>
+<p><a href="../glang/Source_Control_VIs.html">Source Control VIs</a></p>
+<p><a href="../lvhowto/Configuring_SCC.html">Configuring LabVIEW to Use Source Control</a></p>
+<p><a href="../lvdialog/Source_Files_Tab.html">Source Files Page (Application Properties Dialog Box)</a></p>
+<p><a href="../lvdialog/Source_Files_DLL_Page.html">Source Files Page (Shared Library Properties Dialog Box)</a></p>
+
+</body>
+</html>

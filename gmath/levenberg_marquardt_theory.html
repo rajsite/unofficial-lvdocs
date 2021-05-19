@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+
+<title>Creating the Formula String or Fitting Model to Specify a Nonlinear Function</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Creating the Formula String or Fitting Model to Specify a Nonlinear Function</h1>
+<p class="Body">The <a href="../gmath/Nonlinear_Curve_Fit.html">Nonlinear Curve Fit</a> VI assumes that you have prior knowledge of the nonlinear relationship between the independent variable <em>x</em> and dependent variable <em>y</em>, as shown in the equation below.</p>
+
+<p class="Indent1"><em>Y</em> = <em>f</em>(<em>X</em>;<em>a</em><sub>1</sub>, <em>a</em><sub>2</sub>, ..., <em>a<sub>M</sub></em>)</p>
+
+<p class="Body">where <em>M</em> is the number of unknown coefficients.</p>
+<p class="Body">The Levenberg-Marquardt algorithm determines the set of coefficients (<em>a</em><sub>1</sub>, <em>a</em><sub>2</sub>, ..., <em>a<sub>M</sub></em>) that best fits the observations. The <strong>best fit coefficients</strong> minimize the following equation, which describes the distance between the curve and the fitted model.</p>
+
+<p class="Indent1"><img src="noloc_eq_levenberg_1.gif"></p>
+
+<p class="Body">where <em>N</em> is the length of <strong>Y</strong> and <em>y<sub>i</sub></em>, <em>x<sub>i</sub></em> and <em>w<sub>i</sub></em> are the <em>i</em>-th element of <strong>Y</strong>, <strong>X</strong> and <strong>Weight</strong>, respectively.</p>
+
+<p class="Body">You can use a <a href="../lvhowto/Formula_Node_and_Express.html">formula string</a> or a model VI with the Nonlinear Curve Fit VI to specify the nonlinear function <em>Y</em> = <em>f</em>(<em>X</em>;<em>a</em><sub>1</sub>, <em>a</em><sub>2</sub>, ..., <em>a<sub>M</sub></em>).</p>
+
+<p class="Body">In the Nonlinear Curve Fit LM Formula String instance of the Nonlinear Curve Fit VI, you can describe the nonlinear function <em>f</em> in <strong>model description</strong>. The following block diagram shows how to define <em>f</em> according to the following equation:</p>
+
+<p class="Indent1"><em>f(x)</em> = <em>a</em>1 + <em>a</em>2*<em>x</em> + <em>a</em>3*<em>x</em><sup>2</sup></p>
+
+<p class="Body">where <em>x</em> is the independent variable and <em>a</em>1, <em>a</em>2, and <em>a</em>3 are three unknown coefficients.</p>
+
+<p class="Anchor"><img src="loc_bd_levenberg_2.gif"></p>
+
+<p class="Body">In the Nonlinear Curve Fit LM instance of the Nonlinear Curve Fit VI, you must provide a model VI with the connector pattern shown in the following illustration.</p>
+
+<p class="Anchor"><img src="loc_env_levenberg_3.gif"></p>
+
+<p class="Body">Then create a reference to the model VI and wire the reference to the <strong>f(x,a)</strong> input of the Nonlinear Curve Fit VI.</p>
+
+<p class="Body">The model VI accepts <em>X</em> and the set of coefficients (<em>a</em><sub>1</sub>, <em>a</em><sub>2</sub>, ..., <em>a<sub>M</sub></em>) as inputs and returns <em>f</em>(<em>X</em>;<em>a</em><sub>1</sub>, <em>a</em><sub>2</sub>, ..., <em>a<sub>M</sub></em>) and a 2D array of the partial derivatives with respect to the coefficients.</p>
+
+<p class="Body">The following example describes the layout of the partial derivative matrix of a function with three coefficients and n <em>X</em> values.</p>
+
+<p class="Indent1"><img src="noloc_eq_levenberg_5.gif"></p>
+
+<p class="Body">The number of columns in the matrix is equal to the number of coefficients, while the number of rows in the matrix is equal to the number of <em>X</em> values.</p>
+
+<p class="Body">The calculation of the partial derivatives is optional. If you do not calculate the derivatives in the model VI and you wire an empty array indicator to the <strong>f'(X,a)</strong> output, the Nonlinear Curve Fit VI calculates the derivatives numerically.</p>
+
+
+</body>
+
+</html>

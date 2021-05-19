@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 3500Edebugginghlp -->
+
+<title>Suspending Execution</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Suspending Execution
+</h1>
+<!-- begin parent = um 3500Edebugging KM -->
+<p class="Body">Suspend execution of a subVI to edit values of controls and indicators, to control the number of times the subVI runs before returning to the caller, or to go back to the beginning of the execution of the subVI. You can cause all calls to a subVI to start with execution suspended, or you can suspend a specific call to a subVI.
+</p>
+<p class="Body">Complete the following steps to suspend all calls to a subVI.
+</p>
+<ol>
+
+<li>Open the subVI.
+</li>
+<li>Select <strong>Operate&#0187;Suspend when Called</strong>.
+</li>
+</ol>
+
+<p class="Body">The subVI automatically suspends when another VI calls it. If you select this menu item when <a href="Single_Step_Mode.html">single-stepping</a>, the subVI does not suspend immediately. The subVI suspends when it is called.
+</p>
+
+<p class="Body">When you select <strong>View&#0187;</strong><a href="../lvdialog/Hierarchy_Window.html">VI Hierarchy</a>, a VI configured to suspend when called appears with a green exclamation point (<span class="Monospace">!</span>). A suspended VI appears with a red exclamation point.
+</p>
+
+<p class="Body">Complete the following steps to suspend execution at a specific subVI call.
+</p>
+<ol>
+
+<li>Right-click the subVI node and select <strong>SubVI Node Setup</strong> from the shortcut menu. The <a href="../lvdialog/SubVI_Node_Setup_DB.html">SubVI Node Setup</a> dialog box appears.
+</li>
+<li>Place a checkmark in the <strong>Suspend when called</strong> checkbox and click the <strong>OK</strong> button.
+</li>
+</ol>
+
+<p class="Body">You also can use the <a href="../lvprop/VI_ExeSuspend_On_Call.html">Suspend On Call</a> property to suspend a VI programmatically.</p>
+
+<!-- end parent = um 3500Edebugging KM -->
+
+
+<p class="Body">After you suspend execution of a subVI, you can perform the following tasks:
+</p>
+<ul>
+
+<li>Click the <strong>Return to Caller</strong> button at the top left of the subVI front panel to return to the caller VI. The <strong>Return to Caller</strong> button appears when a suspended subVI is not running. Notice that you can return to a caller VI without running the current VI. If you want to run the current VI, click the <a href="../glang/LabVIEW_Toolbar.html">Run button</a> before you return to the caller.</li>
+<li>Run the subVI as many times as you want before returning to the caller VI. Click the  <strong>Run</strong> button or select <strong>Operate&#0187;Run</strong>. To go back to the beginning of the execution of the subVI when the subVI is running, click the <strong>Skip to Beginning</strong> button at the top left of the subVI block diagram.</li>
+<li>Change the control or indicator values if you want to return different values to the caller VI. You can set values of indicators only when a suspended VI is not running. Click the <strong>Return to Caller</strong> button at the top left of the subVI front panel to send the indicator values of the subVI to the caller VI.</li>
+</ul>
+
+
+
+
+
+</body>
+</html>

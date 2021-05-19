@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Wiring Tunnels Automatically in Structures with Multiple Cases</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Wiring Tunnels Automatically in Structures with Multiple Cases</h1>					
+
+<p>Complete the following steps to wire input and output tunnels automatically on any <a href="../lvconcepts/case_sequence_inplace_disable.html">structure that can contain multiple cases</a> except the <a href="../glang/Flat_Sequence.html">Stacked Sequence</a> structure.</p>
+					<ol>
+						<li>After wiring the input and output tunnel in one case of the structure, right-click the output tunnel to display the <strong>Linked Input Tunnel</strong> shortcut menu.</li>
+						<li>Select one of the following wiring options from the <strong>Linked Input Tunnel</strong> shortcut menu.
+							<ul>
+								<li><strong>Create &amp; Wire Unwired Cases</strong>&#8212;LabVIEW automatically wires the tunnels in any existing cases that you have not wired previously. LabVIEW also wires the tunnels in any new cases you create.</li>
+								<li><strong>Create</strong>&#8212;LabVIEW automatically wires the tunnels in any new cases you create. Existing cases remain unwired.</li>
+							</ul>								
+							
+							The tunnel selector cursor appears.</li>			
+					</ol>
+					<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;LabVIEW disables these options if there are no tunnels to which you can link.</td>
+</tr>
+</table>
+					<ol start="3">
+						<li>Click the input tunnel you want to associate with, or link to, the output tunnel. White triangle glyphs appear on the input and output tunnels to indicate they are linked.</li></ol>
+					
+					<p class="Body">If you selected <strong>Create &amp; Wire Unwired Cases</strong>, notice that LabVIEW wires the tunnels in all existing cases. If you <a href="../lvhowto/Adding_Subdiagrams.html">add a subdiagram</a>, or case, to the structure, LabVIEW wires the tunnels in the new cases. If you selected <strong>Create</strong>, notice that LabVIEW wires the tunnels only in new cases you add. Existing cases remain unwired.</p>
+							
+					<p class="Body">Right-click a linked output tunnel and select <strong>Linked Input Tunnel&#0187;Find</strong> to locate the corresponding input tunnel. Right-click a linked output tunnel and select <strong>Linked Input Tunnel&#0187;Clear</strong> to remove the association between the input and output tunnels. LabVIEW disables these options if the tunnel you select does not have a linked input tunnel.</p>
+					<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If you right-click a linked output  tunnel and select <strong>Use Default If Unwired</strong>, LabVIEW removes the association between the input and output tunnels.</td>
+</tr>
+</table>
+
+
+</body>
+</html>

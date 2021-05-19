@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Measuring Temperature</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css"><script src="common.js" type="text/javascript"></script></head>
+<body>
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Measuring Temperature</h1>
+        
+        <table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt=""></td>
+<td>
+<strong>Note</strong>��Temperature measurements may require you to condition the signal. 
+The conditioning requirements depend on your sensor.
+Refer to the <a href="../measfunds/sensoroverview.html">Overview of Temperature Sensor Types</a> for an explanation of sensor types and conditioning requirements.</td>
+</tr>
+</table> 
+            
+<h2>Using a Thermocouple to Measure Temperature</h2>
+            
+<p class="Body">A popular way to measure temperature with a DAQ device is to use a <a href="../measfunds/thermocouples.html">thermocouple</a>, as shown in the following illustration, because thermocouples are inexpensive, easy to use, and easy to obtain.  Thermocouples produce a voltage that varies based on temperature. Using a thermocouple, you can measure a voltage and use a formula to convert the voltage measurement to temperature.</p>
+            
+<p class="Anchor"><img src="loc_eps_SimpleTempSys1.gif" alt=""></p>
+            
+<p class="Body">The typical wiring for a thermocouple, as shown in the following illustration, uses  a resistor, R, only if the thermocouple is not grounded at any other point. If, for example, the thermocouple tip were already grounded, using a resistor would cause a ground loop and result in erroneous readings.</p>
+            
+<p class="Anchor"><img src="loc_eps_Therm_Wiring.gif" alt=""></p>
+
+<p class="Body">You also can measure temperature using <a href="../measfunds/rtd.html">Resistance Temperature Detectors (RTD)</a> and <a href="../measfunds/thermistors.html">Thermistors</a>.</p>
+
+        
+        
+    <div id="exlinks">
+<h2>Examples</h2>
+<p class="Body">Refer to the following VIs for examples of performing this measurement. You must have a driver installed to find examples for that driver.</p>
+      <h3>NI-DAQmx</h3>
+<p class="Body">You can use the DAQmx - Data Acquisition VIs to perform this measurement. Find related examples:</p>
+<p class="Body"><a href="javascript:findExamples('1915');"><img src="find.gif" border="0"></a>�Thermocouple - SW-Timed Input</p>
+<p class="Body">You also can use the DAQ Assistant Express VI to perform this measurement.</p>
+<p class="Body"><img style="cursor:pointer" src="add.gif" border="0" onclick="placeObject('DAQ%20Assistant');">�Add�
+         <img style="cursor:pointer" src="find.gif" border="0" onclick="findObject('DAQ%20Assistant');">�Find</p>
+      <h3>FieldPoint</h3>
+<p class="Body">You can use the FieldPoint VIs to perform this measurement. Find related examples:</p>
+<p class="Body"><a href="javascript:findExamples('3790');"><img src="find.gif" border="0"></a>�Advanced FieldPoint</p>
+<p class="Body"><a href="javascript:findExamples('3743');"><img src="find.gif" border="0"></a>�Analyzing and Processing Signals</p>
+    </div>
+</body>
+</html>

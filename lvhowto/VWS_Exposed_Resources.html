@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Resources Exposed by the Variable Web Service</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Resources Exposed by the Variable Web Service</h1>
+
+<p class="Body">The variable Web service exposes the following resources:</p>
+<p class="Body"><strong>VariableObject</strong> � A collection of <code>VariableObject</code> types containing the following properties:</p>
+<ul>
+	<li><code>Url</code> [string] � The dynamic API URL of the <code>VariableObject</code>. The <code>Url</code> property uniquely identifies the <code>VariableObject</code>.</li>
+	<li><code>Type</code> [string] � The type of the <code>VariableObject</code>. The available types are <code>"container"</code> and <code>"variable"</code>.</li>
+	<li><code>Name</code> [string] � The name of the <code>VariableObject</code>.</li>
+	<li><code>Children</code> [<code>VariableObject</code>[]] � An array of <code>VariableObjects</code> representing the children of the current <code>VariableObject</code>. This property is deferred by default. Use the $expand parameter to represent this property inline.</li>
+</ul>
+
+<p class="Body"><strong>Variable</strong> � Inherits <code>VariableObject</code> and adds the following properties:</p>
+<ul>
+	<li><code>Access</code> [string] � The <code>Access</code> permission of the <code>Variable</code>. The available permissions are <code>"Read"</code>, <code>"Write"</code>, and <code>"Read/Write"</code>.</li>
+	<li><code>DataType</code> [string] � The data type of the <code>Variable</code>. The variable Web service supports primitive types and arrays of primitive types. For complex data types, use the serialized XML string or JSON string as the value of the <code>Value</code> property.</li>
+	<li><code>VariableValue</code> [string] � The additional properties of the current <code>Variable</code>. This property is deferred by default. Use the $expand parameter to represent this property inline.</li>
+</ul>
+<p class="Body"><strong>VariableValue</strong> � Contains the following additional <code>Variable</code> properties:</p>
+<ul>
+	<li><code>Url</code> [string] � The dynamic API URL of the corresponding <code>Variable</code>. The <code>Url</code> property uniquely identifies the <code>VariableValue</code>.</li>
+	<li><code>Access</code> [string] � The <code>Access</code> permission of the <code>Variable</code>. The available permissions are <code>"Read"</code>, <code>"Write"</code>, and <code>"Read/Write"</code>.</li>
+	<li><code>Quality</code> [int64] � The raw quality bits of the <code>Variable</code>.</li>
+	<li><code>ErrorStatus</code> [int32] � The error status code of the <code>Variable</code>.</li>
+	<li><code>DataType</code> [string] � The data type of the <code>Variable</code>. The variable Web service supports primitive types and arrays of primitive types. For complex data types, use the serialized XML string or JSON string as the value of the <code>Value</code> property.</li>
+	<li><code>Value</code> [string] � The string version of the <code>Value</code> of the <code>Variable</code>.</li>
+	<li><code>Timestamp</code> [string] � The string representation of the <code>Variable</code> timestamp in <code>Date Time</code> format.<br />
+		<ul>
+			<li>JSON � A serialized string representing milliseconds after 1970/1/1 0:0:0, UTC time.</li>
+			<li>XML � A string formatted according to <a href="javascript:WWW(WWW_IETF)">RFC 3339</a>. For example, <code>2011-05-25T17:04:30</code></li>
+		</ul>
+	</li>
+</ul>
+<p class="Body"><strong>VariableValueGroup</strong> � Used to get variable updates and batch read variables, this user-created group contains the following properties:</p>
+	<ul>
+		<li><code>Id</code> [string] � The ID of the group. The <code>Id</code> property uniquely identifies the <code>VariableValueGroup</code>.</li>
+		<li><code>Timeout</code> [int32] � The number of milliseconds of inactivity that closes the variable connection. The value of this property is <code>-1</code>, representing no timeout, by default.</li>
+		<li><code>VariableValues</code> [<code>VariableValue</code>[]] � The list of <code>VariableValues</code> included in the <code>VariableValueGroup</code>. This property is deferred by default. Use the $expand parameter to represent this property inline.</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Computing the Amplitude and Phase Spectrums</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-E4A94B5B-34B9-4A52-B082-2C9D4AE88BF6" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Computing the Amplitude and Phase Spectrums</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 The power spectrum shows power as the mean squared amplitude at each frequency line but includes no phase information.
+            Because the power spectrum loses phase information, you might want to use the fast Fourier transform (FFT) to view both the
+            frequency and the phase information of a signal. 
+            	 
+         </p> 
+         	 
+         <p>The phase information the FFT provides is the phase relative to the start of the time-domain signal. Therefore, you must trigger
+            from the same point in the signal to obtain consistent phase readings. A sine wave shows a phase of -90° at the sine wave
+            frequency. A cosine wave shows a 0° phase. Usually, the primary area of interest for analysis applications is either the relative
+            phases between components or the phase difference between two signals acquired simultaneously. You can view the phase difference
+            between two signals by using some of the advanced FFT functions. 
+            	 
+         </p> 
+         	 
+         <p>The FFT produces a two-sided spectrum in complex form with real and imaginary parts. You must scale and convert the two-sided
+            spectrum to polar form to obtain magnitude and phase. The frequency axis of the polar form is identical to the frequency axis
+            of the two-sided power spectrum. The amplitude of the FFT is related to the number of points in the time-domain signal. Use
+            the following equations to compute the amplitude and phase versus frequency from the FFT. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./Compute_Amp_Phase_Spectrums.xml_d1420e31.png"></span></div>
+         </div>
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./Compute_Amp_Phase_Spectrums.xml_d1420e59.png"></span></div>
+         </div> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./Compute_Amp_Phase_Spectrums.xml_d1420e121.png"></span></div>
+         </div> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./Compute_Amp_Phase_Spectrums.xml_d1420e151.png"></span></div>
+         </div> 
+         	 
+         <p>where the arctangent function returns values of phase between -&#960; and +&#960;, a full range of 2&#960; radians. 
+            	 
+         </p> 
+         	 
+         <p>The two-sided amplitude spectrum actually shows half the peak amplitude at the positive and negative frequencies. To convert
+            to the single-sided form, multiply each frequency, other than DC, by two and discard the second half of the array. The units
+            of the single-sided amplitude spectrum are then in quantity peak and give the peak amplitude of each sinusoidal component
+            making up the time-domain signal. 
+            	 
+         </p> 
+         	 
+         <p>To obtain the single-sided phase spectrum, discard the second half of the array. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="FrequencyAnalysis.html" shape="rect">Frequency Analysis</a></div>
+         </div>
+         <div class="relinfo relconcepts"><strong>Related concepts</strong><br clear="none"><div><a href="FreqResp_Network_Anls.html" shape="rect">Frequency Response and Network Analysis</a></div>
+            <div><a href="Power_Spect.html" shape="rect">Power Spectrum</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

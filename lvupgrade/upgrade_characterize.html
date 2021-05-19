@@ -1,0 +1,107 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>2. Test and Record the Existing Behavior of Your VIs</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script src="" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-C93002D1-F129-4EEE-B5A1-4D812264433B" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">2. Test and Record the Existing Behavior of Your VIs</h1> 
+      
+      
+      <div>
+         <p> 
+            
+         </p> 
+         	 
+         <div class="section"><a name="GUID-C93002D1-F129-4EEE-B5A1-4D812264433B__CONTEXT_A9DBAC7924FD4D85B7E8CA698D5D8513" shape="rect">
+               <!-- --></a> 
+            		
+            <p>When you upgrade VIs, differences between the previous
+               				version of LabVIEW and <span>LabVIEW 2020</span> can
+               				occasionally change the behavior of the VIs. If you test the VIs in both versions,
+               				you can compare the results to detect behavior changes specifically caused by
+               				upgrading. Therefore, verify that you have current results for any of the following
+               				tests: 
+            </p> 
+            	 
+         </div> 
+         	 <a name="GUID-C93002D1-F129-4EEE-B5A1-4D812264433B__STEPS-UNORDERED_19F4B0DD843440F59FD269F89242737A" shape="rect">
+            <!-- --></a><ul id="GUID-C93002D1-F129-4EEE-B5A1-4D812264433B__STEPS-UNORDERED_19F4B0DD843440F59FD269F89242737A">
+            <li class="stepexpand"><a name="GUID-C93002D1-F129-4EEE-B5A1-4D812264433B__MASS_COMPILE_LOGS" shape="rect">
+                  <!-- --></a> 
+               		  <span>Mass compile logs that identify the existence of broken VIs 
+                  		  </span> 
+               		   Mass compiling your VIs before you upgrade is particularly useful if multiple people contribute to the development of
+               the VIs or if you suspect that some of the VIs have not been compiled recently. To generate this mass compile log, place a
+               checkmark in the 
+               			 <strong>Log Results</strong> checkbox of the 
+               			 <span class="wintitle">Mass Compile</span> dialog box. 
+               		   
+               		
+            </li>
+            <li class="stepexpand"><a name="GUID-C93002D1-F129-4EEE-B5A1-4D812264433B__STEP_335F775122BE437B933702BE5112C4EA" shape="rect">
+                  <!-- --></a> 
+               		  <span>Unit tests that verify whether individual VIs perform their intended functions correctly 
+                  		  </span> 
+               		
+            </li>
+            <li class="stepexpand"><a name="GUID-C93002D1-F129-4EEE-B5A1-4D812264433B__STEP_A521D649B90B4729AF1120803232AF0B" shape="rect">
+                  <!-- --></a> 
+               		  <span>Integration tests that verify whether a project or group of subVIs work together as expected 
+                  		  </span> 
+               		
+            </li>
+            <li class="stepexpand"><a name="GUID-C93002D1-F129-4EEE-B5A1-4D812264433B__STEP_DC23486CFB194571A9CE2E9CCB324460" shape="rect">
+                  <!-- --></a> 
+               		  <span>Deployment tests that verify whether VIs behave as expected when deployed to a target, such as a desktop or FPGA target 
+                  		  </span> 
+               		
+            </li>
+            <li class="stepexpand"><a name="GUID-C93002D1-F129-4EEE-B5A1-4D812264433B__STEP_B4A3F587297347D1975488A1A2A91839" shape="rect">
+                  <!-- --></a> 
+               		  <span>Performance tests that benchmark CPU usage, memory usage, and code execution speed 
+                  		  </span> 
+               		   You can use the 
+               			 <span class="wintitle">Profile Performance and Memory</span> window to obtain estimates of the average execution speeds of the VIs. 
+               		   
+               		
+            </li>
+            <li class="stepexpand"><a name="GUID-C93002D1-F129-4EEE-B5A1-4D812264433B__STEP_C6B8758260ED4C88A19951BC3F9CFF03" shape="rect">
+                  <!-- --></a> 
+               		  <span> Stress tests that verify whether the VIs handle unexpected data correctly 
+                  		  </span> 
+               		    
+               			 
+               <table class="noteTable">
+                  <tr>
+                     <td><img alt="Note" src="note.gif"></td>
+                     <td><a name="GUID-C93002D1-F129-4EEE-B5A1-4D812264433B__GUID-8988C2E6-35FD-4C7E-80C0-76C24305C9BF" shape="rect">
+                           <!-- --></a><span class="notetitle">Note&nbsp;&nbsp;</span> If you changed any VIs as the result of testing, back up the new versions of the VIs before proceeding. 
+                        			 
+                     </td>
+                  </tr>
+               </table> 
+               		   
+               		    
+               		   
+               		
+            </li>
+         </ul> 
+         
+      </div> 
+      
+      <div>
+         <div class="relinfo"><strong>Related information</strong><br clear="none"><div><a href="../lvhowto/mass_compiling_vis.html" shape="rect">Mass Compiling VIs</a></div>
+            <div><a href="../lvdialog/Mass_Compile_DB.html" shape="rect">Mass Compile Dialog Box</a></div>
+            <div><a href="../lvdevconcepts/Testing_Guidelines.html" shape="rect">Testing Applications</a></div>
+            <div><a href="../lvdevconcepts/Performance_Benchmarking.html" shape="rect">Performance Benchmarking</a></div>
+            <div><a href="../lvconcepts/Using_Profile_Window.html" shape="rect">Using the Profile Performance and Memory Window</a></div>
+            <div><a href="../lvupgrade/upgrade_backup.html" shape="rect">1. Back Up Your VIs and Machine Configuration</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

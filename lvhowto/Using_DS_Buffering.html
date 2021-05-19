@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 6100Ecommhlp -->
+
+<title>Using Buffering with DataSocket Functions</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Using Buffering with DataSocket Functions</h1>
+
+<p class="Body">Complete the following steps to enable <a href="../lvconcepts/Buffering_Data.html">client-side buffering</a> using <a href="../lvcomm/DataSocket_VI_Reference.html">DataSocket</a> functions. You must complete these steps for each client connection you establish.</p>
+
+<ol>
+<li><a href="OpenClose_DS_Conct_Prog.html">Open a data connection</a>.</li>
+<li><a href="Specify_Buff_Size_Client.html">Specify the buffer size</a> for the data client.</li>
+<li><a href="Subscribe_DS_Buff_Data.html">Read the buffered data</a> a server writes.</li><li> <a href="Monitor_Buffer_Size.html">Monitor the buffer size</a>.</li>
+<li><a href="OpenClose_DS_Conct_Prog.html">Close the data connection</a>.</li>
+<li><a href="Setting_Up_Error_I_O_in_VI.html">Wire all error in and error out terminals</a> on the block diagram.</li>
+</ol>
+
+<p class="Body">You also can enable buffering when sharing <a href="../lvconcepts/Using_DataSocket_Technology.html#Data_Formats_Supported_by_the_DataSocket_VI_and_Functions">data</a> using the DataSocket functions by adding the string <span class="Monospace">?maxbytes=1000&amp;maxpackets=10</span>, to the end of the URL, where <span class="Monospace">1000</span> is the maximum number of bytes the buffer contains and <span class="Monospace">10</span> is the maximum number of packets the buffer contains.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;Buffering applies only when you <a href="Reading_Live_Data_Programm.html">use the DataSocket Read function</a> to read data a server writes. Buffering is not available when you use <a href="Subscribing_to_Front_Panel.html">front panel DataSocket data binding</a> to read data a server writes. Buffering is available for <a href="../lvconcepts/SV_FP_Binding.html">front panel data binding</a> through the <a href="../lvconcepts/NI_PSP.html">Shared Variable Engine</a> if you bind controls to shared variables with buffering enabled on the <a href="../lvdialog/network_page.html">Network</a> page of the <strong>Shared Variable Properties</strong> dialog box.</td>
+</tr>
+</table>
+
+<p class="Body">The following example uses buffering with DataSocket functions.</p>
+
+<p class="Anchor"><img src="loc_bd_buffdsexe.gif"></p>
+
+
+
+</body>
+</html>

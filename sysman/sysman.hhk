@@ -1,0 +1,887 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD>
+<BODY>
+<OBJECT type="text/site properties">
+	<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="accessing variables programmatically">
+		<param name="Local" value="programmatic_access.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Acknowledge All Alarms and Events dialog box">
+		<param name="Local" value="ack_all_alm.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Acknowledge Selected Alarms and Events dialog box">
+		<param name="Local" value="ack_slct_alm.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="acknowledging">
+		<param name="See Also" value="acknowledging">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="alarms and events">
+			<param name="Local" value="ack_alarmevent.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Actions menu">
+		<param name="Local" value="action_menu_sman.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add New User/Group/Host dialog box (DSC)">
+		<param name="Local" value="DSC_Add_New_Host_DB.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add Process dialog box">
+		<param name="Local" value="sm_addprocess_db.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add System to My Systems dialog box">
+		<param name="Local" value="sm_addsystem_db.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Remove Variables dialog box">
+		<param name="Local" value="EPICS_add_remove_var.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Advanced Attribute Settings dialog box">
+		<param name="Local" value="DSC_Adv_Attributes_Setting.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Alarm probe view (DSC)">
+		<param name="Local" value="sm_alarmprobe_db.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Alarm Properties dialog box (DSC)">
+		<param name="Local" value="alm_prop.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Alarming page (DSC)">
+		<param name="Local" value="alarms_page.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="alarms">
+		<param name="See Also" value="alarms">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="acknowledging (DSC)">
+			<param name="Local" value="ack_alarmevent.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="configuring (DSC)">
+			<param name="Local" value="Config_Alm_in_NISM.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="monitoring (DSC)">
+			<param name="Local" value="monitor_alarmevent.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Alarms and Events view">
+		<param name="Local" value="alm_evnt_view.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Alerts probe view">
+		<param name="Local" value="rt_alerts.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Alias Manager dialog box">
+		<param name="Local" value="sman_Alias_Man_DB.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Browse for Variable dialog box">
+		<param name="Local" value="sm_browse_for_variable.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="certificates">
+		<param name="See Also" value="certificates">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="certificate authorities">
+			<param name="Local" value="Send_CA_SSL.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="certificate signing requests">
+			<param name="Local" value="Creating_CSR_SSL.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="self-signed certificates">
+			<param name="Local" value="Creating_Cert_SSL.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="components">
+		<param name="See Also" value="components">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="I/O servers">
+			<param name="Local" value="components_ioserver.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="processes">
+			<param name="Local" value="components_process.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="shared or network variables">
+			<param name="Local" value="components_variables.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Shared Variable Engine">
+			<param name="Local" value="components_SVE.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="systems">
+			<param name="Local" value="components_system.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Configure Alarm Printer I/O Server dialog box (DSC)">
+		<param name="Local" value="DSC_Config_Alarm_Printer.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Configure Custom VI - On Input Change I/O Server dialog box (DSC)">
+		<param name="Local" value="DSC_OnInputChangeConfigDB.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Configure Custom VI - Periodic I/O Server dialog box (DSC)">
+		<param name="Local" value="PeriodicIOConfig.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Configure Data Set Marking I/O Server dialog box (DSC)">
+		<param name="Local" value="DSC_DataSetMarking_DB.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Configure EPICS Client I/O Server dialog box (DSC)">
+		<param name="Local" value="Config_EPICS_DB.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Configure EPICS Server I/O Server dialog box (DSC or Real-Time)">
+		<param name="Local" value="Config_EPICS_Serv_DB.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Configure Fixed Point dialog box">
+		<param name="Local" value="sm_config_fp.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Configure Modbus I/O Server dialog box (DSC or Real-Time)">
+		<param name="Local" value="DSC_Config_Modbus_Instance.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Configure Modbus Slave I/O Server dialog box (DSC or Real-Time)">
+		<param name="Local" value="DSC_Config_Modbus_Slave.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Configure OPC Client I/O Server dialog box (DSC)">
+		<param name="Local" value="config_opc_client.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Configure Web Services Security view">
+		<param name="Local" value="configure_ws_security.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="configuring alarms (DSC)">
+		<param name="Local" value="Config_Alm_in_NISM.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="conventions in this help file">
+		<param name="Local" value="Conventions.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="copyright">
+		<param name="Local" value="Copyright.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CPU/Memory probe view (NI Scan Engine)">
+		<param name="Local" value="cpu_mem_probe.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Create a Certificate Signing Request dialog box">
+		<param name="Local" value="create_cert_ssl.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Create a Self-Signed Certificate dialog box">
+		<param name="Local" value="create_selfsigned_ssl.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Create New I/O Server dialog box (DSC or Real-Time)">
+		<param name="Local" value="sm_createiosvr_db.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="creating">
+		<param name="See Also" value="creating">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="certificate signing requests">
+			<param name="Local" value="Creating_CSR_SSL.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="historical trends (DSC)">
+			<param name="Local" value="mon_his_trend_NISM.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="network variables">
+			<param name="Local" value="create_shared_vars.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="processes">
+			<param name="Local" value="create_process.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="self-signed certificates">
+			<param name="Local" value="Creating_Cert_SSL.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="shared variables">
+			<param name="Local" value="create_shared_vars.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CSR">
+		<param name="Local" value="Creating_CSR_SSL.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Custom VI-based Server - On Input Change Wizard (DSC)">
+		<param name="Local" value="OnInputChangePathToVI.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Custom VI-based Server - Periodic Wizard (DSC)">
+		<param name="Local" value="PeriodicWizard_Step1.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="customizing workspace">
+		<param name="Local" value="cust_workspace.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="data item">
+		<param name="See Also" value="data item">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="editing">
+			<param name="Local" value="edt_data_itm.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="monitoring">
+			<param name="Local" value="mon_data_itm.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Date Time probe view">
+		<param name="Local" value="set_date_time.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Description page (Shared Variable Properties dialog box)">
+		<param name="Local" value="sm_descript_page.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="diagnostic tools (NI resources)">
+		<param name="Local" value="Technical_Support_Resources.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="documentation">
+		<param name="See Also" value="documentation">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="customer feedback on">
+			<param name="Local" value="sysman.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="NI resources">
+			<param name="Local" value="Technical_Support_Resources.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="related to this help file">
+			<param name="Local" value="Related_Documentation.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="editing">
+		<param name="See Also" value="editing">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="network variables">
+			<param name="Local" value="create_shared_vars.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="shared variables">
+			<param name="Local" value="create_shared_vars.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Event Properties dialog box">
+		<param name="Local" value="evnt_prop.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="events">
+		<param name="See Also" value="events">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="acknowledging">
+			<param name="Local" value="ack_alarmevent.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="monitoring">
+			<param name="Local" value="monitor_alarmevent.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="examples (NI resources)">
+		<param name="Local" value="Technical_Support_Resources.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="export compliance information">
+		<param name="Local" value="Export_Compliance.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="faults">
+		<param name="See Also" value="faults">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Scan Engine">
+			<param name="Local" value="Clearing_Faults.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="feedback on documentation">
+		<param name="Local" value="sysman.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="File menu">
+		<param name="Local" value="file_menu_sman.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Filter Options dialog box">
+		<param name="Local" value="flt_crtr.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="help (technical support)">
+		<param name="Local" value="Technical_Support_Resources.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="help file">
+		<param name="See Also" value="help file">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="conventions">
+			<param name="Local" value="Conventions.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="introduction">
+			<param name="Local" value="sysman.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="legal statements">
+			<param name="Local" value="Important_Information.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="navigating">
+			<param name="Local" value="Navigating.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="printing">
+			<param name="Local" value="Printing_This_Help_File.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="related documentation">
+			<param name="Local" value="Related_Documentation.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="searching">
+			<param name="Local" value="Searching.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="using">
+			<param name="Local" value="info.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Help menu">
+		<param name="Local" value="help_menu_sman.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="I/O servers">
+		<param name="Local" value="components_ioserver.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="I/O Variable probe view (NI Scan Engine)">
+		<param name="Local" value="iov_probe.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="I/O variables">
+		<param name="See Also" value="I/O variables">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="forcing">
+			<param name="Local" value="Forcing_IO.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Initial Value page (DSC)">
+		<param name="Local" value="initial_value_page.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="KnowledgeBase">
+		<param name="Local" value="Technical_Support_Resources.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="legal statements">
+		<param name="See Also" value="legal statements">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="copyright">
+			<param name="Local" value="Copyright.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="patents">
+			<param name="Local" value="Patents.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="trademarks">
+			<param name="Local" value="Trademarks.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="warning regarding use of NI products">
+			<param name="Local" value="Warning_NI.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="warranty">
+			<param name="Local" value="Warranty.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="logging historical data (DSC)">
+		<param name="Local" value="NISM_enable_logging.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Logging page (DSC)">
+		<param name="Local" value="logging_page.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="menus">
+		<param name="See Also" value="menus">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Actions">
+			<param name="Local" value="action_menu_sman.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="File">
+			<param name="Local" value="file_menu_sman.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Help">
+			<param name="Local" value="help_menu_sman.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="View">
+			<param name="Local" value="view_menu_sman.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="modes">
+		<param name="See Also" value="modes">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Scan Engine">
+			<param name="Local" value="Setting_Mode.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="modifying">
+		<param name="See Also" value="modifying">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="data item">
+			<param name="Local" value="edt_data_itm.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="network variables">
+			<param name="Local" value="create_shared_vars.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="shared variables">
+			<param name="Local" value="create_shared_vars.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="monitoring">
+		<param name="See Also" value="monitoring">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="alarms (DSC)">
+			<param name="Local" value="monitor_alarmevent.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="data item">
+			<param name="Local" value="mon_data_itm.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="events">
+			<param name="Local" value="monitor_alarmevent.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="historical trends (DSC)">
+			<param name="Local" value="mon_his_trend_NISM.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="shared or network variables">
+			<param name="Local" value="using_watchlist.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="trend view">
+			<param name="Local" value="Trendview.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="watch list">
+			<param name="Local" value="using_watchlist.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="my systems">
+		<param name="See Also" value="my systems">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="adding">
+			<param name="Local" value="sm_addsystem_db.html">
+			</OBJECT>
+	</UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="National Instruments">
+		<param name="See Also" value="National Instruments">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="legal statements">
+			<param name="Local" value="Important_Information.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="support and services">
+			<param name="Local" value="Technical_Support_Resources.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="warning regarding use of products">
+			<param name="Local" value="Warning_NI.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="navigating help">
+		<param name="Local" value="Navigating.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Network page">
+		<param name="Local" value="sm_network_page.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="network variables">
+		<param name="Local" value="components_variables.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="NI">
+		<param name="See Also" value="NI">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="(see National Instruments)">
+			<param name="See Also" value="National Instruments">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="NI Security Login dialog box">
+		<param name="Local" value="sm_securitylogin_db.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Open CSR probe view">
+		<param name="Local" value="open_csr_db.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="overview">
+		<param name="Local" value="sysman_overview.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="patents">
+		<param name="Local" value="Patents.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="printing help topics">
+		<param name="Local" value="Printing_This_Help_File.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Probe Location dialog box">
+		<param name="Local" value="sm_probelocation_db.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Process probe view">
+		<param name="Local" value="sm_processprobe_db.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="processes">
+		<param name="Local" value="components_process.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="creating">
+			<param name="Local" value="create_process.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="programming examples (NI resources)">
+		<param name="Local" value="Technical_Support_Resources.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Real-Time FIFO page">
+		<param name="Local" value="sm_rt_fifo_page.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="registering">
+		<param name="See Also" value="registering">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="remote computers">
+			<param name="Local" value="Reg_Netwk_PC_NISM.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="remote computers">
+		<param name="Local" value="Reg_Netwk_PC_NISM.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="removing">
+		<param name="See Also" value="removing">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="network variables">
+			<param name="Local" value="create_shared_vars.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="shared variables">
+			<param name="Local" value="create_shared_vars.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="resources">
+		<param name="See Also" value="resources">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="real-time target">
+			<param name="Local" value="Monitoring_Resources.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Scaling page">
+		<param name="Local" value="sm_scale_page.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Scan Engine probe view (NI Scan Engine)">
+		<param name="Local" value="scan_engine_probe.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="searching help files">
+		<param name="Local" value="Searching.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Security page (DSC)">
+		<param name="Local" value="security_db.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Security Settings dialog box">
+		<param name="Local" value="ni_acl_db.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Select Computer dialog box">
+		<param name="Local" value="select_comp_DB.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Select Processes dialog box">
+		<param name="Local" value="slct_prcs.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="self-signed certificate">
+		<param name="Local" value="Creating_Cert_SSL.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Server Certificates probe view">
+		<param name="Local" value="server_cert_db.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Settings dialog box">
+		<param name="Local" value="sm_settings_db.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Shared Variable Engine">
+		<param name="Local" value="components_SVE.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="starting or stopping on Vista">
+			<param name="Local" value="SVE_Vista.html">
+			</OBJECT>
+	</UL>	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Shared Variable Engine Time Server Configuration dialog box">
+		<param name="Local" value="conf_tmsvr.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Shared Variable Properties dialog box">
+		<param name="Local" value="sm_sharedvar_props_db.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Description page">
+			<param name="Local" value="sm_descript_page.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Network page">
+			<param name="Local" value="sm_network_page.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Scaling page">
+			<param name="Local" value="sm_scale_page.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Variable page">
+			<param name="Local" value="sm_variable_page.html">
+			</OBJECT>
+	</UL>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="shared variables">
+		<param name="Local" value="components_variables.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="software (NI resources)">
+		<param name="Local" value="Technical_Support_Resources.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SSL">
+		<param name="See Also" value="SSL">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="certificate authority">
+			<param name="Local" value="Send_CA_SSL.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="certificate signing request">
+			<param name="Local" value="Creating_CSR_SSL.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="self-signed certificate">
+			<param name="Local" value="Creating_Cert_SSL.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="support (technical)">
+		<param name="Local" value="Technical_Support_Resources.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="system manager">
+		<param name="See Also" value="system manager">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="overview">
+			<param name="Local" value="sysman_overview.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="systems">
+		<param name="Local" value="components_system.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="technical support">
+		<param name="Local" value="Technical_Support_Resources.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="time servers">
+		<param name="See Also" value="time servers">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="synchronizing">
+			<param name="Local" value="setting_time_sync.html">
+			</OBJECT>
+	</UL><LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="trademarks">
+		<param name="Local" value="Trademarks.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="training and certification (NI resources)">
+		<param name="Local" value="Technical_Support_Resources.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="trend view">
+		<param name="Local" value="Trendview.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="troubleshooting (NI resources)">
+		<param name="Local" value="Technical_Support_Resources.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Update Deadband page (DSC)">
+		<param name="Local" value="update_deadband_db.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Variable page">
+		<param name="Local" value="sm_variable_page.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Variable probe view">
+		<param name="Local" value="sm_variableprobe_db.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="VI States probe view">
+		<param name="Local" value="vi_states.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="View menu">
+		<param name="Local" value="view_menu_sman.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="warning regarding use of NI products">
+		<param name="Local" value="Warning_NI.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="warranty">
+		<param name="Local" value="Warranty.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="watch list">
+		<param name="Local" value="using_watchlist.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Web resources">
+		<param name="Local" value="Technical_Support_Resources.html">
+		</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Web Server probe view">
+		<param name="Local" value="sm_webserverprobe_db.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Web Server URL Mapping view">
+		<param name="Local" value="web_server_route_db.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Web Service probe view">
+		<param name="Local" value="sm_webserviceprobe_db.html">
+		</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="workspace">
+		<param name="See Also" value="workspace">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="customizing">
+			<param name="Local" value="cust_workspace.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="restoring">
+			<param name="Local" value="save_workspace.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="saving">
+			<param name="Local" value="save_workspace.html">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY>
+</HTML>

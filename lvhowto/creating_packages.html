@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4100Ebuildingexehlp -->
+
+<title>Creating Packages for Distribution</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Creating Packages for Distribution</h1>
+
+<p class="Body">You can create packages and deploy them to clients through NI Package Manager or SystemLink.</p>
+<p class="Body">Before creating packages, create a source distribution, packed project library, shared library, .NET assembly, or executable to include in your packages.</p>
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;You cannot distribute stand-alone VIs.</td></tr>
+</table>
+
+<ol>
+<li>In the�<a href="../lvdialog/Project_Explorer_Window.html">Project Explorer</a> window, right-click�<strong>Build Specifications</strong>�and select�<strong>New&#0187;Package</strong>.</li>
+<li>In the <a href="../lvdialog/build_package_db.html">Package Properties</a> dialog box, under�<strong>Information</strong>, enter the name you want to use for your package in�<strong>Package name</strong>.�The package name must be all lowercase and contain no spaces. NI Package Manager and other packages use this name to reference the package you create.</li>
+<li>Under�<strong>Destinations</strong>, set up any destination folders where you plan to install the package in the client.</li>
+<li>Under�<strong>Source Files</strong>, specify which files or build specification outputs you want to install.</li>
+<li><span class="platform">(Windows)</span> Under�<strong>Shortcuts</strong>, you can add a shortcut to the Startup menu if you want your application to run as soon as the system starts up. You can also add a shortcut to the Desktop or Program Menu on Windows.�By default, LabVIEW adds a shortcut in the Windows Program menu for each application included in the package.</li>
+<li>Under�<strong>Package</strong>, specify the display name and synopsis for your package.�The display name is what users will see in the Package Manager or NI SystemLink when they install your package. The synopsis is the first line of the description that users see before they click on a package to see its full description.</li>
+<li>Under�<strong>Dependencies</strong>, specify dependencies on any currently installed packages.
+	<ol>
+		<li>Configure the relationship of the dependency. You can define a dependency as�<strong>required</strong>,�<strong>recommended</strong>, or�<strong>suggested</strong>�and specify version ranges.</li>
+		<li>To prompt the user to install your package when they install a related package, place a checkmark in the�<strong>Include enhanced relationship</strong> checkbox.</li>
+	</ol>
+</li>
+<li>Under�<strong>Version Information</strong>, specify the version of your package and what version you want to display to the user.�If you remove the display version, the user sees the full version in the Package Manager.
+</li>
+<li>Under�<strong>Advanced</strong>, set your package to run executables or scripts while it installs or uninstalls.�For example, you can specify whether the process for installing or uninstalling the package waits for a certain action to complete.</li>
+<li>(Optional) Under <strong>Package Installer</strong>, place a checkmark in the <strong>Create a Package Installer</strong> checkbox to build your distribution into a package installer file (<span class="monospace">.exe</span>).</li>
+<li>(Optional) Under <strong>Feed</strong>, choose whether to add your package to a local feed or publish the package to a feed on the SystemLink server.</li>
+<li>Click�<strong>Build</strong>.�A�<span class="platform">(Windows)</span> <span class="monospace">.nipkg</span>�file or <span class="platform">(NI Linux Real-Time)</span> <span class="monospace">.ipk</span> file appears in the destination you specified.</li>
+</ol>
+
+<p class="Body">You can distribute the package to clients through Package Manager or SystemLink. <span class="platform">(Windows)</span> Your clients can use Package Manager or SystemLink to subscribe to a feed to find and install your packages. <span class="platform">(NI Linux Real-Time)</span> Your clients can install packages through SystemLink or from the command line on the NI Linux Real-Time target. Package Manager does not support <span class="monospace">.ipk</span> files.
+</p>
+
+<h3>Related Information</h3>
+<p><a href="javascript:WWW(WWW_NIPMManual)">NI Package Manager</a></p>
+<p><a href="javascript:WWW(WWW_SystemLinkManual)">NI SystemLink</a></p>
+<p><a href="../lvconcepts/distributions.html">Types of Distributions</a></p>
+
+
+</body>
+</html>

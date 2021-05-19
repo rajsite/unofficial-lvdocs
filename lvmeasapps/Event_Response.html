@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Event Response</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css"><script src="common.js" type="text/javascript"></script></head>
+<body>
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Event Response</h1>
+        
+        <p class="Body">In a <a href="../measfunds/cntrloverview.html">control</a>  application, an event is the same as an occurrence. This occurrence leads to an action, or a response. An example is monitoring the temperature of an engine. When the temperature rises too high, the engine slows down. The event, in this case, would be the temperature rising above a predetermined level, and the response would be the engine slowing down. Another example comes from manufacturing. In a manufacturing line, a system senses when a part is in front of a station (the event) and takes a reading or manipulates the part (the response). If the system does not sense and respond to the presence of that part in a set amount of time, the manufacturing line creates defective parts.</p>
+
+<p class="Body">When creating an event response application, make sure you consider the amount of  time needed to respond to the event. For example, if the device controls the temperature of your home, the <a href="../mxcncpts/timctrlloops.html">time</a> to react to events (changes in temperature) is less critical than if the device controls a nuclear reactor. If the application is not time critical, the application does not need to be deterministic, meaning that you do not need the LabVIEW Real-Time Module or a real-time controller.</p>
+
+            <p class="Body">The relative priority of the task is important as well. Because LabVIEW is  multi-threaded, you can separate the application into tasks, each with its own priority. By setting priorities, time-critical tasks can take precedence over non-time-critical tasks.  The time-critical task must periodically yield processor resources to the lower-priority tasks so they can execute. By properly separating the time-critical task from lower priority tasks, you can reduce application <a href="../measfunds/jitteroverview.html">jitter</a>.</p> 
+            <p class="checkFile lvrthelp Body"> Refer to the <em>LabVIEW Real-Time Help</em> for more information about <a href="../lvrtconcepts/Deterministic_Apps_VI_Priorities.html">assigning priorities to tasks</a>.</p>
+        
+    </body>
+</html>

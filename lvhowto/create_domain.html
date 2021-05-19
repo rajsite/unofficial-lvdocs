@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Creating a Local Domain (Windows)</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Creating a Local Domain (Windows)</h1>
+<p class="Body">Use the <a href="using_dom_acct_man.html">Domain Account Manager</a> to create and <a href="../lvhowto/destroy_domain.html">destroy</a> a local domain, <a href="../lvhowto/migrate_domain.html">export and import a local domain</a>, <a href="../lvhowto/add_domain.html">add and remove network domains</a>, <a href="../lvhowto/create_ldomain.html">import a Lookout account</a>, and manage domain <a href="../lvhowto/create_user.html">users</a> and <a href="../lvhowto/create_group.html">groups</a>.</p>
+<p class="Body">Complete the following steps to use the <strong>Domain Account Manager</strong> to create a local domain on a computer.</p>
+<ol>
+						<li>Select <strong>Tools&#0187;Security&#0187;Domain Account Manager</strong> to display the <strong>Domain Account Manager</strong>.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If a local domain already exists on the computer, the <strong>Domain Account Manager</strong> loads the local domain automatically. To create a new local domain, first destroy the existing local domain.</td>
+</tr>
+</table>
+</li>
+						<li>Select <strong>File&#0187;New&#0187;Local Domain</strong> or right-click the domain list and select <strong>New Local Domain</strong> from the shortcut menu to display the <a href="../lvdialog/Domain_Manager_Domain_Properties_DB.html">Domain Properties</a> dialog box.</li>
+						<li>Click the <strong>General</strong> tab and enter a name for the domain in the <strong>Domain</strong> text box. </li>
+						<li>Click the <strong>Passwords</strong> tab and configure the minimum and maximum lengths of passwords and the password expiration date.</li>
+					</ol><table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;The password length and expiration date apply as the default setting for all user accounts in the domain.</td></tr></table><ol start="5">
+						<li>Click the <strong>Access Control</strong> tab and add machines or IP addresses to the <strong>Grant List</strong> or <strong>Deny List</strong>. <strong>Select list to activate</strong> specifies which list the domain is currently using.</li>
+						<li>Click the <strong>OK</strong> button to display the <a href="../lvdialog/Domain_Manager_Change_Password_DB.html">Change Password</a> dialog box.</li>
+						<li>Enter a password for the Administrator account and click the <strong>OK</strong> button. By default, the user name for the account that you are creating is <span class="Monospace">Administrator</span>. </li>
+					</ol>
+					<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;The <strong>Domain Account Manager</strong> creates a list of built-in users and groups when you create a local domain. The built-in users include Administrator and Guest, and the built-in groups include Administrators, Guests, and Operators.</td></tr></table>
+
+
+</body>
+</html>

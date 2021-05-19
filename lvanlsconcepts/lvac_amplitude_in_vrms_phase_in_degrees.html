@@ -1,0 +1,68 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Calculating Amplitude in Vrms and Phase in Degrees</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-47438B13-2EC9-464B-8765-A2B7AF7AFB83" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Calculating Amplitude in V<sub>rms</sub> and Phase in Degrees
+      </h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 To view the amplitude spectrum in volts rms (V<sub>rms</sub>), divide the non-DC components by the square root of two after converting the spectrum to the single-sided form. Because
+            you multiply the non-DC components by two to convert from the two-sided amplitude spectrum to the single-sided amplitude spectrum,
+            you can calculate the rms amplitude spectrum directly from the two-sided amplitude spectrum by multiplying the non-DC components
+            by the square root of two and discarding the second half of the array. The following equations show the entire computation
+            from a two-sided fast Fourier transform (FFT) to a single-sided amplitude spectrum. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./de_in_vrms_phase_in_degrees.xml_d9831e31.png"></span></div>
+         </div>
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./de_in_vrms_phase_in_degrees.xml_d9831e103.png"></span></div>
+         </div> 
+         	 
+         <p>where <em>i</em> is the frequency line number, or array index, of the FFT of <em>A</em>. 
+            	 
+         </p> 
+         	 
+         <p>The magnitude in V<sub>rms</sub> gives the rms voltage of each sinusoidal component of the time-domain signal. 
+            	 
+         </p> 
+         	 
+         <p>The amplitude spectrum is closely related to the power spectrum. You can compute the single-sided power spectrum by squaring
+            the single-sided rms amplitude spectrum. Conversely, you can compute the amplitude spectrum by taking the square root of the
+            power spectrum. 
+            	 
+         </p> 
+         	 
+         <p>Use the following equation to view the phase spectrum in degrees. 
+            	 
+         </p> 
+         	 
+         <p>Phase Spectrum in Degrees = (180/&#960;)Phase FFT(<em>A</em>)
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Compute_Amp_Phase_Spectrums.html" shape="rect">Computing the Amplitude and Phase Spectrums</a></div>
+         </div>
+         <div class="relinfo relconcepts"><strong>Related concepts</strong><br clear="none"><div><a href="Power_Spect.html" shape="rect">Power Spectrum</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

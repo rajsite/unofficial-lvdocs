@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Selecting Built-In Errors from the Error Ring</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Selecting Built-In Errors from the Error Ring</h1>
+<p class="Body">Complete the following steps to select <a href="../lverror/lverror_intro.html">built-in</a> errors from the <a href="../glang/Error_Ring_Constant.html">Error Ring</a>.</p>
+
+<ol>
+<li>Add the <a href="../glang/Error_Ring_Constant.html">Error Ring</a> to the block diagram.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object238);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object238);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li>
+<li>Click the drop-down arrow <img src="noloc_cfg_dropdown.gif"> to display the <a href="../lvdialog/select_error_db.html">Select Error</a> dialog box.</li>
+<li>In the <strong>Error Code Range</strong> drop-down listbox, specify the error code category you want to use. You also can <a href="../lvhowto/cust_errors_from_error_ring.html">create a custom error message</a> for a one-time use from this dialog box.</li>
+<li>Select the error from the list that appears.</li>
+<li>Use the radio buttons to configure the Error Ring to return either an error or a warning.</li><li>Remove the checkmark from the <strong>Include Call Chain</strong> checkbox if you do not want to include the call chain information in the error cluster. If you include the call chain, the error description displays the chain of callers from the current VI to the top-level VI, which is useful when determining where in the VI hierarchy the error occurred. <span class="Platform">(Real-Time Module)</span> Exclude the call chain to reduce jitter in real-time applications.</li>
+<li>Click <strong>OK</strong>.</li>
+</ol>
+
+<p class="Body">After you configure the Error Ring, you can adjust the configuration without returning to the dialog box.</p>
+<ul>
+<li>Click the two icons on the Error Ring to toggle the error/warning setting and the include/exclude call chain setting, respectively.</li>
+<li>Right-click the Error Ring and select <strong>Generate Error</strong>, <strong>Generate Warning</strong>, <strong>Include Call Chain</strong>, or <strong>Exclude Call Chain</strong> from the shortcut menu to affect the relevant configuration.</li>
+<li>Right-click the Error Ring and select <strong>Visible Items&#0187;Error Explanation Text</strong> from the shortcut menu to show or hide the error description.</li></ul>
+
+</body>
+</html>

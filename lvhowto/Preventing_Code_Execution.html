@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4200Estructureshlp -->
+
+<title>Preventing Code Execution in the First While Loop Iteration</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Preventing Code Execution in the First While Loop Iteration</h1>
+
+<p class="Body">Because a VI checks the conditional terminal at the end of each iteration, the <a href="../lvconcepts/while_loops_concepts.html">While Loop</a> always executes at least one time.</p>
+
+<p class="Body">Complete the following steps to create a While Loop that tests the condition and does not execute any code if the condition is FALSE on the first iteration.</p>
+
+<ol><li>Add a <a href="../glang/While_Loop.html">While Loop</a> to the block diagram and drag out a rectangular region.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object762);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object762);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li>
+
+<li>Add a <a href="../glang/Case_Structure.html">Case</a> structure inside the While Loop and drag out a rectangular region inside the While Loop.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object757);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object757);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li>
+
+<li>Create a Boolean control to control the VI.<ol>
+<li>Right-click the selector terminal of the Case structure and select <strong>Create Control</strong> from the shortcut menu to create a Boolean control.</li>
+
+<li>Wire the Boolean control to the conditional terminal of the While Loop. To keep the wiring neat, move the conditional terminal below the Boolean control and create a wire branch from the existing wire segment.</li></ol></li>
+
+<li><a href="Changing_the_Continuation.html">Change the behavior</a> of the conditional terminal to <strong>Continue if True</strong>.</li>
+
+<li>Add the <a href="../glang/Random_Number_0_1.html">Random Number (0-1)</a> function inside the <strong>True</strong> case.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object102);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object102);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li>
+
+<li>Add a waveform chart to the front panel.
+<br><br>
+<SPAN title=" Add to the front panel window "><a href="javascript:placeObjectFP(control15);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObjectFP(control15);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li>
+
+<li>On the block diagram, wire the Random Number (0-1) function to the waveform chart. Make sure that both the function and the chart terminal are inside the case you selected.
+<p class="Anchor"><img src="loc_bd_pvntcdexe.gif"></p></li></ol>
+
+<p class="body">Complete the following steps to verify that the While Loop operates correctly and to run the VI.
+</p>
+<ol><li>Examine the front panel. Notice that the default value of the Boolean control is OFF.
+</li>
+<li>Click the <strong>Run</strong> button a few times to run the VI. Notice that the chart does not display any values. The While Loop executes once, but the Case structure does not execute while the Boolean control is set to OFF.
+</li>
+<li>With the Operating tool, click the <strong>Boolean</strong> button to ON.
+</li>
+<li>Click the <strong>Run</strong> button. The While Loop executes continuously, generating random numbers and displaying them on the chart.
+</li>
+<li>Click the <strong>Boolean</strong> button to stop the VI.
+</li>
+</ol>
+
+
+
+
+</body>
+</html>

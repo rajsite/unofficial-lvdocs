@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4800Egraphchartoptionshlp -->
+
+<title>Configuring the X- and Y-Axes on a Graph or Chart</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Configuring the X- and Y-Axes on a Graph or Chart
+</h1>
+<p class="Body">Right-click the x- or y-scale of a <a href="../lvconcepts/Types_of_Graphs_and_Charts.html">graph or chart</a> and select one of the following shortcut menu options to configure the x- or y-axis. You also can access these options by right-clicking the graph or chart and selecting from the <strong>X Scale</strong> or <strong>Y Scale</strong> shortcut menus. You also can use the <a href="../lvprop/GrphChrt_X_Scl.html">X Scale</a> and <a href="../lvprop/GrphChrt_Y_Scl.html">Y Scale</a> properties to select a scale programmatically.</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;The following shortcut menu options do not apply to 3D graphs.</td>
+</tr>
+</table>
+<ul>
+<li><strong>Marker Spacing</strong>&#8212;Uses <strong>Uniform</strong> (default) or <strong>Arbitrary</strong> marker spacing. <!--being parent = ../lvhelp/Scales_of_Slide_and_Rotary.html-->By default, scale markers are uniform, or evenly spaced. By selecting arbitrary marker spacing, you can indicate specific inner markers for a scale. <a href="Selecting_Non_Uniform_Scal.html">Arbitrary marker spacing</a> is useful for marking a few specific points on a slide or rotary control, such as a set point or threshold.<!--end parent = ../lvhelp/Scales_of_Slide_and_Rotary.html-->
+</li>
+<li><strong>Add Marker</strong>&#8212;<a href="Adding_Markers_Graphs.html">Adds a marker</a> to the scale. This option is not available if <strong>Marker Spacing</strong> is <strong>Uniform</strong>.
+</li>
+<li><strong>Delete Marker</strong>&#8212;<a href="Adding_Markers_Graphs.html">Deletes a marker</a> from the scale. This option is not available if <strong>Marker Spacing</strong> is <strong>Uniform</strong>, and if the scale contains only the two end markers.
+</li>
+<li><strong>Formatting</strong>&#8212;Displays a dialog box you can use to <a href="Changing_Format_of_Graphs.html">format</a> the x- or y-axis.
+</li>
+<li><strong>Style</strong>&#8212;Sets the style for the marks on the scale.
+</li>
+<li><strong>Mapping</strong>&#8212;Select <strong>Linear</strong> (default) or <strong>Logarithmic</strong>.
+</li>
+<li><strong>AutoScale X</strong> or <strong>AutoScale Y</strong>&#8212;<a href="../lvconcepts/Customizing_Graphs_and_Charts.html#Autoscaling">Autoscales</a> the x- or y-scales based on the data you wire to them.
+</li>
+<li><strong>Loose Fit</strong>&#8212;Place a checkmark next to this option to round the end markers to a multiple of the increment used for the scale.
+</li>
+<li><strong>Visible Scale Label</strong>&#8212;Displays the Scale Label.
+</li>
+<li><strong>Expand Digital Buses</strong>&#8212;Displays digital waveform data as individual data lines. This option is available only for digital waveform graphs. You also can use the <a href="../lvprop/GrphScl_ExpdDigiBus.html">Expand Digital Buses</a> property to set how the data is displayed programmatically.
+</li>
+<li><strong>Swap Sides</strong>&#8212;Moves the scale to the opposite side of the display. This option is useful if you have two scales on one side of the graph or chart.
+</li>
+</ul>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;After you configure the x- or y-scale on a graph or chart, you can select <strong>Advanced&#187;Reset Scale Layout</strong> from the shortcut menu to reset the position of the x- or y-scales.</td>
+</tr>
+</table>
+<ul>
+<li><strong>Duplicate Scale</strong>&#8212;Copies the scale and  <a href="AddingMultipleXandYScales.html">adds it as a new scale</a> to the graph or chart.
+</li>
+<li><strong>Delete Scale</strong>&#8212;Deletes the scale. This option is available only if the graph or chart has multiple x- or y-scales. 
+</li>
+</ul>
+
+<p class="Body">You also can use the <a href="../lvprop/GraphChart_p.html">GraphChart</a>, <a href="../lvprop/GraphScale_p.html">GraphScale</a>, and <a href="../lvprop/Scale_p.html">Scale</a> properties to configure the X- or Y-scales of a graph or chart programmatically.</p>
+
+
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 5200Edigitalgraphshlp -->
+
+<title>Building Digital Tables</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Building Digital Tables</h1>
+<p class="Body">Digital tables contain data that you can plot on a digital waveform graph. You can build a digital table manually, convert analog data to digital data, or acquire a digital signal to create a digital table. Complete the following steps to build or modify a table of digital data.
+</p>
+<ol>
+<li>Add a Build Digital Data function to the block diagram.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object3737);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object3737);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li>
+<li>(Optional) If you want to modify existing digital data, wire the <strong>digital data</strong> input.</li>
+<li>Right-click the <strong>data</strong> input and select <strong>Create&#0187;Constant</strong> or <strong>Create&#0187;Control</strong> from the shortcut menu.</li>
+<li>Enter values in the 2D <strong>data</strong> array.<br><br>Each row in the 2D array represents a single binary value for one sample of data with the most significant bit of data in the first column and the least significant bit of data in the last column. Each value represents a specific digital data state. Valid values include 0-7, as indicated by the following table. <br><br>
+<!-- begin parent: ../lvconcepts/Building_th_Front_Panel.xml -->
+<table class="Bordered">
+				<tr>
+				<td class="Bordered" align="center"><strong>Value</strong></td>
+				<td class="Bordered" align="center"><strong>Digital Data State</strong></td>
+				<td class="Bordered" align="center"><strong>Description</strong></td>
+				</tr>
+				<tr> 
+					<td class="Bordered">0</td>
+					<td class="Bordered">0 (Drive Low)</td>
+					<td class="Bordered">Force logic low. Drive to the low voltage level (V<sub>OL</sub>).</td>
+					</tr>
+					<tr>
+						<td class="Bordered">1</td>
+						<td class="Bordered">1 (Drive High)</td>
+						<td class="Bordered">Force logic high. Drive to the high voltage level (V<sub>OH</sub>).</td>
+					</tr>
+				<tr>
+					<td class="Bordered">2</td>
+					<td class="Bordered">Z (Force Off)</td>
+					<td class="Bordered">Force logic high impedance. Turn the driver off.</td>
+					</tr>
+					<tr>
+						<td class="Bordered">3</td>
+						<td class="Bordered">L (Compare Low)</td>
+						<td class="Bordered">Compare logic low (edge). Compare for a voltage level lower than the low voltage threshold.</td>
+					</tr>
+					<tr>
+						<td class="Bordered">4</td>
+						<td class="Bordered">H (Compare High)</td>
+						<td class="Bordered">Compare logic high (edge). Compare for a voltage level higher than the high voltage threshold.</td>
+					</tr>
+					<tr>
+						<td class="Bordered">5</td>
+						<td class="Bordered">X (Compare Unknown)</td>
+						<td class="Bordered">Compare logic unknown. Do not compare.</td>
+					</tr>
+					<tr>
+						<td class="Bordered">6</td>
+						<td class="Bordered">T (Compare Off)</td>
+						<td class="Bordered">Compare logic high impedance (edge). Compare for a voltage level between the low voltage threshold (V<sub>OL</sub>) and the high voltage threshold (V<sub>OH</sub>).</td>
+					</tr>
+					<tr>
+						<td class="Bordered">7</td>
+						<td class="Bordered">V (Compare Valid)</td>
+						<td class="Bordered">Compare logic valid level (edge). Compare for a voltage level either lower than the low voltage threshold (V<sub>OL</sub>) or higher than the high voltage threshold (V<sub>OH</sub>).</td>
+					</tr></table><!-- end parent: ../lvconcepts/Building_th_Front_Panel.xml --> </li></ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If you wire an array constant to the <strong>data</strong> input, you can use the digital ring constant to simplify entering digital data in the array. The digital ring constant allows you to select from the 8 digital data states.<br><br> 
+To use the digital ring constant, right-click a value in the array and select <strong>Replace</strong> from the shortcut menu to display a temporary version of the <strong>Functions</strong> palette. Navigate to the <strong>Digital Waveform</strong> palette and select the digital ring constant. LabVIEW converts any numeric values you previously entered to their corresponding digital data states.</td>
+</tr>
+</table>
+<ol start="5">
+<li>(Optional) If you want to compress the digital data, wire the <strong>transitions</strong> input to define non-incremental transitions. The <strong>transitions</strong> array must contain the same number of rows as the <strong>data</strong> array. Expand the node to display an unwired input. Click the input and place a checkmark next to <strong>transitions</strong> to display the <strong>transitions</strong> input.</li>
+<li>Right-click the <strong>digital data</strong> output and select <strong>Create&#0187;Indicator</strong> from the shortcut menu to create an empty digital table.</li>
+<li>Run the VI to display the data in the digital table.</li></ol>
+
+<h3>Related Information</h3>
+<p><a href="../lvconcepts/IO_Controls_and_Indicators.html#Digital_Tables">Digital Tables</a></p>
+<p><a href="../lvhowto/Graphing_Digital_Data.html">Graphing Digital Data</a></p>
+<p><a href="../lvwave/Analog_to_Digital_WF.html">Analog to Digital VI</a></p>
+<p><a href="../lvmeasconcepts/Creating_DAQ_App.html">Creating a Typical DAQ Application</a></p>
+<p><a href="../lvconcepts/Types_of_Graphs_and_Charts.html#Digital_Waveform_Graphs">Digital Waveform Graphs</a></p>
+</body>
+</html>

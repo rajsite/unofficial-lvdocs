@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Edge Counting</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css"><script src="common.js" type="text/javascript"></script></head>
+<body>
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Edge Counting</h1>
+        
+        <p class="Body">Edge counting is when a device counts rising or falling edges using a counter channel. You can choose to do either single point or buffered sample clock edge counting. </p>
+
+<p class="Body">The following illustration shows an example of edge counting in which the <a href="../mxcncpts/counterparts.html">counter</a> in a device counts five edges on the input terminal.</p>
+
+<p class="Anchor"><img src="loc_eps_event_counting.gif" alt=""></p>
+
+<p class="Body">With buffered edge counting, the device latches the number of edges counted onto each active edge of the sample clock and stores the number in the buffer.  There is no built-in clock for buffered edge counting, so you must supply an external sample clock. </p>
+<p class="Anchor"><img src="loc_eps_cumulatEvent.gif" alt=""></p>
+        
+        
+    <div id="exlinks">
+<h2>Examples</h2>
+<p class="Body">Refer to the following VIs for examples of performing this measurement. You must have a driver installed to find examples for that driver.</p>
+      <h3>NI-DAQmx</h3>
+<p class="Body">You can use the DAQmx - Data Acquisition VIs to perform this measurement. Find related examples:</p>
+<p class="Body"><a href="javascript:findExamples('1917');"><img src="find.gif" border="0"></a>�Counter - Count Edges</p>
+<p class="Body">You also can use the DAQ Assistant Express VI to perform this measurement.</p>
+<p class="Body"><img style="cursor:pointer" src="add.gif" border="0" onclick="placeObject('DAQ%20Assistant');">�Add�
+         <img style="cursor:pointer" src="find.gif" border="0" onclick="findObject('DAQ%20Assistant');">�Find</p>
+    </div>
+</body>
+</html>

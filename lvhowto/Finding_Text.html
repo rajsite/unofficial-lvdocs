@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 9900Efindhlp -->
+
+<title>Finding and Replacing Text in VIs</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Finding and Replacing Text in VIs</h1>
+
+<p class="Body">You can <a href="../lvhowto/Finding_VIs_ObjectsText.html">search VIs</a> for text in the front panel window, block diagram window, VI revision history, and VI and object descriptions and replace the existing text with another piece of text. You also can find and replace text in the <a href="../lvdialog/Call_Lib_Function_DB.html">configuration</a> of a <a href="../glang/Call_Library_Function.html">Call Library Function Node</a>.</p>
+
+<p class="checkFile lvscconcepts Body"><span class="Platform">(Statechart)</span> You can find text in the <a href="../lvscconcepts/SC_C_TGA.html#Guard">guard</a> and <a href="../lvscconcepts/SC_C_TGA.html#Action">action</a> code of a <a href="../lvscconcepts/SC_C_Intro.html">statechart</a>. You can find and replace text in the <a href="../lvscconcepts/SC_C_Editor.html">Statechart Editor</a> window.</p>
+
+<p class="Body">Complete the following steps to find and replace text in the VIs in an application instance.</p>
+
+<ol>
+<li><!--start parent  = ../lvhowto/Finding_VIs_ObjectsText.html  tag="display_find"-->Select <strong>Edit</strong><strong>&#0187;</strong><strong>Find and Replace</strong> to display the <a href="../lvdialog/Find.html">Find</a> dialog box.<!--end parent  = ../lvhowto/Finding_VIs_ObjectsText.html  tag="display_find"--> You also can select a piece of text in the current VI and select <strong>Edit</strong><strong>&#0187;</strong><strong>Find and Replace</strong> to display the <strong>Find</strong> dialog box with the text preselected for the search.</li>
+<li>Click the <strong>Text</strong> button.</li>
+<li>From the <strong>Application Instance</strong> selection menu, select the <a href="../lvconcepts/Application_Instances.html">application instance</a> in which you want to search for the text. <!--start parent  = ../lvhowto/Finding_VIs_and_other_Obje.html  tag="default_instance"-->The default application instance is the application instance from which you opened the <strong>Find</strong> dialog box.<!--end parent  = ../lvhowto/Finding_VIs_and_other_Obje.html  tag="default_instance"--></li>
+<li>Enter the text you want to find in the <strong>Type in the word(s) to search for</strong> text box.</li>
+<li>Click the <strong>More Options</strong> button to display the <a href="../lvdialog/Text_Search_Options.html">Text Search Options</a> dialog box and configure where LabVIEW searches for the text.</li>
+<li><!--start parent  = ../lvhowto/Finding_VIs_and_other_Obje.html  tag="search_scope"-->Configure the scope of the search from the <strong>Search Scope</strong> pull-down menu.<!--end parent  = ../lvhowto/Finding_VIs_and_other_Obje.html  tag="search_scope"--></li>
+<li>Click the <strong>Find</strong> button. The <a href="../lvdialog/Search_Results.html">Search Results</a> window lists all instances of the text that LabVIEW found. If only one instance is found, LabVIEW highlights the result on the front panel window or block diagram and the Search Results window in not displayed.</li>
+<li>Select an entry in the <strong>Search Results</strong> list and click the <strong>Go To</strong> button to find the text in the VI. You also can double-click the entry in the <strong>Search Results</strong> list to find the text in the VI.</li>
+<li>In the <strong>Replace with</strong> list, enter the text with which you want to replace the original text or select a previous text entry.</li>
+<li>To replace all instances of the original text with the new text, click the <strong>Replace All</strong> button. To replace only selected instances of the original text with the new text, select the instances you want to replace from the <strong>Search Results</strong> list and then click the <strong>Replace Selected</strong> button. After you replace a piece of text, you can select the corresponding entry in the <strong>Search Results</strong> list to find the new text in the VI.</li>
+</ol>
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;<!-- Begin child: lvdialog, Search Results Window -->A strikeout icon <img src="noloc_env_strikeout.gif"> appears next to an entry in the <strong>Search Results</strong> list if LabVIEW cannot replace that instance. For example, you cannot replace the text in a <a href="../glang/Property_Node.html">Property Node</a> or an <a href="../glang/Invoke_Node.html">Invoke Node</a>. You also cannot replace text in running VIs. If you click the <strong>Replace All</strong> or <strong>Replace Selected</strong> buttons, LabVIEW replaces all instances except those marked with a strikeout icon.<!-- End child: lvdialog, Search Results Window --></td></tr></table>
+
+
+
+</body>
+</html>

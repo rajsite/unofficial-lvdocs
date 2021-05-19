@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Original filename: Gmathmaster.txt -->
+
+<title>Mathematics VIs Examples</title>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<link media="print" rel="stylesheet" type="text/css" href="print.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Mathematics VIs Examples
+</h1>
+
+<p class="Body">Study the mathematics examples to learn some of the possible theoretical and practical applications of the <a href="Mathematics.html">Mathematics</a> VIs. These examples are located in <span class="Monospace">labview\examples\math</span> and are grouped into the following LLBs:</p>
+
+
+<ul>
+
+<li>Refer to the <span class="Monospace">labview\examples\Mathematics</span> directory for examples of mathematics.</li>
+
+<li>Refer to the <span class="Monospace">labview\examples\Mathematics\Optimization</span> directory for examples related to optimization.
+</li>
+<li>Refer to the <span class="Monospace">labview\examples\Signal Processing\Transforms</span> directory for examples applied to signal processing.
+</li>
+</ul>
+
+<p class="Body">Also, many of the Mathematics VIs have example text on the front panel of the VI showing how to input various parameters. Double-click the VI icon to open the front panel of the VI and view the text.
+</p>
+<h2>Using the Mathematics VIs</h2>
+<p class="Body">The following examples provide possible applications for the Mathematics VIs. In many applications, being able to enter formulas directly on the front panel is extremely useful. This is possible using the <a href="Advanced_Formula_VIs.html">Formula Parsing</a> VIs. The first two examples below describe some typical scenarios where you might use the Formula Parsing VIs.
+</p>
+<h2>Example 1</h2>
+<p class="Body">Given a set of measurements (<em>x</em><sub><em>i</em></sub>, <em>y</em><sub><em>i</em></sub>) where <em>i</em> = 0, 1, &#8230;, <em>n</em> &#8211; 1 fit the set of data points into a model equation, such as the following.
+</p>
+<p class="Indent1"><em>Y </em>= <em>a</em>sin(<em>bX</em>) + <em>c</em>cos(<em>dX</em>)</p>
+
+<p class="Body">or
+</p>
+<p class="Indent1"><em>Y</em> = <em>a</em> + <em>bX</em> + <em>c</em>exp(<em>dX</em>)</p>
+
+<p class="Body">or more generally
+</p>
+<p class="Indent1"><em>Y</em> = <em>f</em>(<EM>X</EM>, <em>a</em>, <em>b</em>, &#8230;, <em>c</em>)</p>
+
+<p class="Body">(where <em>a</em>, <em>b</em>, &#8230;, <em>c</em> are the unknown model parameters)
+</p>
+<p class="Body">LabVIEW can calculate such optimal system parameters as
+</p>
+<p class="Indent1"><img src="noloc_eq_06chapb1.gif"></p>
+
+<p class="Body">LabVIEW uses the Levenberg Marquardt method to solve this minimization problem. Before now, the model equation had to be fixed in the Formula Node before running the program. With the Formula Parsing VIs, you can input the model equation on the front panel.
+</p>
+<h2>Example 2</h2>
+<p class="Body">Another typical example consists of the following three-step process.
+</p>
+
+<ol>
+<li>Collect a set of discrete measurements<br><br>
+<p class="Indent1">(<em>x</em><sub><em>i</em></sub>, <em>y</em><sub><em>i</em></sub>, <em>z</em><sub><em>i</em></sub>)</p>
+for <em>i</em> = 0, 1, &#8230;, <em>n</em> &#8211; 1</li>
+
+<li>Fit this set based on a model such as<br><br>
+<p class="Indent1">(<em>x</em><sub><em>i</em></sub>, <em>y</em><sub><em>i</em></sub>, <em>z</em><sub><em>i</em></sub>)</p>
+for <em>i</em> = 0, 1, &#8230;, <em>n</em> &#8211; 1</li>
+
+<li>Determining those points (<em>x, y</em>) with<br><br>
+<p class="Indent1"><em>z</em> = <em>f</em>(<em>x</em>, <em>y</em>, <em>a</em>, <em>b</em>, &#8230;, <em>c</em>) = 0<br><br></p>
+or<br><br>
+<p class="Indent1"><em>z</em> = <em>f</em>(<em>x</em>, <em>y</em>, <em>a</em>, <em>b</em>, &#8230;, <em>c</em>) = max!<br><br></p>
+or<br><br>
+<p class="Indent1"><em>z</em> = <em>f</em>(<em>x</em>, <em>y</em>, <em>a</em>, <em>b</em>, &#8230;, <em>c</em>) = min!</p></li>
+</ol>
+
+<p class="Body">An easy way to input discrete measurements on a LabVIEW front panel makes calculating the roots, minima, and maxima for a general model simple for your end user. Notice that at the beginning of the previous process, the correct formula <em>Z</em> = <em>f</em>(<em>X</em>, <em>Y</em>, <em>a</em>, <em>b</em>, &#8230;, <em>c</em>) is not known.
+</p>
+<h2>Example 3
+</h2>
+<p class="Body">Another application for the Mathematics VIs is to help control an x-y step motor or a robot control that positions objects in 2D or 3D space during run time. The path of the object can be calculated with these VIs.
+</p>
+<p class="Body">Another 2D and 3D application of the Mathematics VIs is for surface description. Wings of airplanes, among other parts of machines and instruments in the real technical world, can be described by mathematical curves and surfaces. In nondestructive testing, such as using ultrasound, eddy currents, or X-rays, a pre-scan of the structure under test is initially done and followed by a more accurate scan in areas where the measured and expected values differ.
+</p>
+<p class="Body">Taking a set of coarse measurements as a preparatory step is necessary because it is virtually impossible to store the measurements of all the curves and surfaces of an entire structure. The pre-scan of the wing of a plane is then followed by a more accurate scan of a smaller part of this wing. Because the Formula Parsing VIs can handle formulas on the front panel, you can use them to calculate the 2D and 3D curves of the wing in an effective manner.
+</p>
+<h2>Example 4
+</h2>
+<p class="Body">The study of solutions of differential equations, especially parameter studies, is not only a question of appropriate numeric algorithms such as the Euler method, Runge Kutta method, or the Cash Karp method, but also a question of formula manipulation. With the Mathematics VIs you can manipulate differential equations on the front panel. Refer to the <span class="Monospace">labview\examples\Mathematics</span> for examples of this approach to solving differential equations.</p>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<!-- Unit name: 4100Ebuildingexehlp -->
+
+<title>Configuring Web Services Security when Using the Application Web Server (Real-Time, Windows)</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Configuring Web Services Security when Using the Application Web Server (Real-Time, Windows)</h1>
+
+
+<p class="Body">You can use <a href="../lvconcepts/SSL_Security.html">Transport Layer Security (TLS)</a>, previously known as Secure Sockets Layer (SSL), encryption, user and group permissions, and API keys to establish secure communication between Web clients and LabVIEW Web services. </p>
+
+<p class="Body">Complete the following procedures to establish the different methods of Web services security:</p>
+
+<ul>
+<li><a href="#URLPermissions">Assigning Permissions to Web Service Files</a></li>
+<li><a href="#serversecurity">Configuring API Key Security</a></li>
+</ul>
+
+
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;
+<ul>
+<li>In this topic, you configure the security settings for Application Web Server. If you use the NI Web Server to host Web services, refer to <a href="../lvhowto/ws_security_niws.html">Configuring Web Services Security when Using the NI Web Server</a> for detailed instructions.</li>
+<li>Access <a href="NI_WebConfig.html">NI Web-based Configuration &amp; Monitoring</a> and click <strong>Help</strong> on the <strong>Security Configuration</strong> page for information about establishing additional methods of Web services security.</li>
+</ul></td>
+</tr>
+</table>
+
+
+<hr>
+
+	
+<a name="URLPermissions"></a><h2>Assigning Permissions to Web Service Files</h2>		
+	
+	<p class="Body">You can require a specific permission for the following types of files:</p>
+	<ul>
+		<li><strong>HTTP method VIs</strong>&#8212;Set permissions that apply to individual VIs.</li>
+		<li><strong>Public static files</strong>&#8212;Set permissions that apply to all public static files in the Web service.</li>
+	</ul>
+	
+	<p class="Body">Complete the following steps to configure a Web service to accept only HTTP requests from Web clients with valid permissions:</p>
+	<ol>
+	<li>Right-click the Web service project item <img src="noloc_env_ws_node.gif"> in the project tree and select <strong>Properties</strong> to display the <strong>Web Service Properties</strong> dialog box.</li>
+	<li>Browse to the page that applies to the type of file you want to configure:
+		<ul>
+			<li>For HTTP method VIs, browse to the <a href="../lvdialog/ws_http_method_page.html">HTTP Method VI Settings</a> page, select a VI from the <strong>Web Service VI</strong> table, and click the <strong>Application Web Server</strong> tab in <strong>Web Service VI Properties</strong>.</li>
+			<li>For public static files, browse to the <a href="../lvdialog/ws_service_page.html">Service Settings</a> page and the <strong>Static Documents</strong> section.</li>
+		</ul>
+	 </li>
+	<li>In the <strong>Required permissions</strong> table, add the name of a permission you previously created in the <strong>Security Configuration</strong> page of NI Web-based Configuration &amp; Monitoring.</li>
+	</ol>
+
+	<h3>Accessing Web Service Files with Permissions</h3>		
+	
+	<p class="Body">A Web client must provide a valid username and password whenever the client submits an HTTP request for a file protected by permissions. The username and password must correspond to a user in the NI Web-based Configuration &amp; Monitoring utility that has been granted the same permission added for the HTTP method VI or public static file.</p>
+
+	<p class="Body">Use the <a href="../lvcomm/HTTP_client_openhandle.html">OpenHandle</a> VI to provide a <strong>username</strong> and <strong>password</strong> for HTTP requests made by a Web client built in LabVIEW.</p>
+
+<hr>
+
+<a name="serversecurity"></a><h2>Configuring API Key Security</h2>
+
+<p class="Body">You also can use API keys to restrict which clients can send <a href="../lvconcepts/Interacting_VIs_WS.html">HTTP requests</a> to HTTP method VIs. An API key is a string of seemingly random characters that consists of two parts, an access ID and a secret ID. The access ID works similarly to a username, and the secret ID works similarly to a password intended only for authorized clients.</p>
+
+<p class="Body">You can configure a single API key that applies to all Web services running on any web server, including the Application Web Server, web servers for embedded applications, and the Web service debugging server. You first must configure an access ID and secret ID for the Web Server to generate API keys. Then you must enable API key security for each URL mapping that you want to protect.</p>
+
+<a name="APIonServer"></a><h3>Configuring API Key Security on the Web Server</h3>
+
+<p class="Body">To establish an access ID and secret ID on the Application Web Server, launch the NI Web-based Configuration &amp; Monitoring utility and navigate to the <strong>Web Server Configuration</strong> page. Use the <strong>Web Services API Key</strong> tab to generate, apply, and reset API keys.</p>
+
+
+<a name="methodsecurity"></a><h3>Securing URL Mappings with API Key Security</h3>
+<p class="Body">Complete the following steps to enable API key security for an HTTP method VI in a Web service:</p>
+<ol>
+	<li>Right-click the Web service project item <img src="noloc_env_ws_node.gif"> in the project tree and select <strong>Properties</strong> to display the <strong>Web Service Properties</strong> dialog box.</li>
+	<li>On the <a href="../lvdialog/ws_http_method_page.html">HTTP Method VI Settings</a> page, select a VI from the <strong>Web Service VI</strong> table, and click the�<strong>Application Web Server</strong>�tab in the�<strong>Web Service VI Properties</strong>.</li>
+<li>Place a checkmark in the <strong>Require API key</strong> checkbox.</li>
+</ol>	
+	
+<a name="accessingAPIKey"></a><h3>Accessing URL Mappings with API Key Security</h3>
+<p class="Body">When you establish an API key and enable that API key for an HTTP method VI, any HTTP request from a Web client that corresponds to the VI must contain the correct API key. You can use the <a href="../lvcomm/HTTP_client_setapikey.html">SetAPIKey</a> VI to configure a Web client built in LabVIEW to provide an API key when making HTTP requests.</p>
+	
+<h3>Related Information</h3>
+<p class="Body"><a href="../lvconcepts/ws_web_server.html">Hosting Web Services</a></p>
+</body>
+</html>

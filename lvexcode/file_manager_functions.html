@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>File Manager Functions</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>File Manager Functions</H1>
+<p class="Body">The file manager functions can create, open and close files, write data to files, and read data from files. In addition, file manager routines can create directories, determine characteristics of files and directories, and copy files. </p>
+<p class="Body">The file manager defines the <span class="Monospace">Path</span> data type for use in describing paths to files and directories. The data structure for the <span class="Monospace">Path</span> data type is private. Use file manager routines to create and manipulate the <span class="Monospace">Path</span> data type.</p>
+
+<!-- Begin child: ../lvexcode/support_manager_functions.html    ../lvexcode/memory_manager_functions.html-->
+<p class="Body">You must <a href="../lvexcode/LabVIEW_Manager_Functions.html">include the appropriate header and library files</a> to use these functions in a shared library.</p>
+<!-- End child: ../lvexcode/support_manager_functions.html    ../lvexcode/memory_manager_functions.html-->
+
+<P class="Body">You can perform the following operations by using the functions listed.</p>
+<ul>
+ <li> Current position mark, positioning
+ 
+ <ul class="List-Hyphen">
+ 	<li><a href="fmseek.html">FMSeek</a></li>
+	<li><a href="fmtell.html">FMTell</a></li>
+ </ul>
+ </li>
+ <li>Default access rights information, getting
+ <ul class="List-Hyphen">
+ 	<li><a href="fgetdefgroup.html">FGetDefGroup</a></li>
+ </ul>
+ </li>
+ <li>Directory contents, creating and determining
+ <ul class="List-Hyphen">
+ 	<li><a href="flistdir.html">FListDir</a></li>
+ 	<li><a href="fnewdir.html">FNewDir</a></li>
+ </ul>
+ </li>
+ <li>End-of-file mark, positioning
+ <ul class="List-Hyphen">
+ 	<li><a href="fgeteof.html">FGetEOF</a></li>
+	<li><a href="fseteof.html">FSetEOF</a></li>
+ </ul>
+ </li>
+ <li>File data to disk, flushing
+ <ul class="List-Hyphen">
+ 	<li><a href="fflush.html">FFlush</a></li>
+ </ul>
+ </li>
+ <li>File operations, performing basic
+ <ul class="List-Hyphen">
+ 	<li><a href="fcreate.html">FCreate</a></li>
+ 	<li><a href="fcreatealways.html">FCreateAlways</a></li>
+ 	<li><a href="fmclose.html">FMClose</a></li>
+ 	<li><a href="fmopen.html">FMOpen</a></li>
+ 	<li><a href="fmread.html">FMRead</a></li>
+ 	<li><a href="fmwrite.html">FMWrite</a></li>
+ </ul>
+ </li>
+ <li>File range, locking
+ <ul class="List-Hyphen">
+ 	<li><a href="flockorunlockrange.html">FLockOrUnlockRange</a></li>
+ </ul>
+ </li>
+ <li>File refnums, manipulating
+ <ul class="List-Hyphen">
+ 	<li><a href="fdisposerefnum.html">FDisposeRefNum</a></li>
+ 	<li><a href="fisarefnum.html">FIsARefNum</a></li>
+	<li><a href="fnewrefnum.html">FNewRefNum</a></li>
+	<li><a href="frefnumtofd.html">FRefNumToFD</a></li>
+	<li><a href="frefnumtopath.html">FRefNumToPath</a></li>
+ </ul>
+ </li>
+ <li>File, directory, and volume information determination
+ <ul class="List-Hyphen">
+ 	<li><a href="fexists.html">FExists</a></li>
+	<li><a href="fgetaccessrights.html">FGetAccessRights</a></li>
+	<li><a href="fgetinfo.html">FGetInfo</a></li>
+	<li><a href="fgetvolinfo.html">FGetVolInfo</a></li>
+	<li><a href="fsetaccessrights.html">FSetAccessRights</a></li>
+	<li><a href="fsetinfo.html">FSetInfo</a></li>
+ </ul>
+ </li>
+ <li>Filenames and patterns, matching
+ <ul class="List-Hyphen">
+ 	<li><a href="fstrfitspat.html">FStrFitsPat</a></li>
+ </ul>
+ </li>
+ <li>Files and directories, moving and deleting
+ <ul class="List-Hyphen">
+ 	<li><a href="fmove.html">FMove</a></li>
+	<li><a href="fremove.html">FRemove</a></li>
+ </ul>
+ </li>
+ <li>Files, copying
+ <ul class="List-Hyphen">
+ 	<li><a href="fcopy.html">FCopy</a></li>
+ </ul>
+ </li>
+ <li>Path type, determining
+ <ul class="List-Hyphen">
+ 	<li><a href="fgetpathtype.html">FGetPathType</a></li>
+	<li><a href="fisapathoftype.html">FIsAPathOfType</a></li>
+	<li><a href="fsetpathtype.html">FSetPathType</a></li>
+ </ul>
+ </li>
+ <li>Path, extracting information
+ <ul class="List-Hyphen">
+ 	<li><a href="fdepth.html">FDepth</a></li>
+	<li><a href="fdirname.html">FDirName</a></li>
+	<li><a href="fname.html">FName</a></li>
+	<li><a href="fnameptr.html">FNamePtr</a></li>
+	<li><a href="fvolname.html">FVolName</a></li>
+ </ul>
+ </li>
+ <li>Paths, comparing
+ <ul class="List-Hyphen">
+ 	<li><a href="fisapath.html">FIsAPath</a></li>
+	<li><a href="fisapathornotapath.html">FIsAPathOrNotAPath</a></li>
+	<li><a href="fisemptypath.html">FIsEmptyPath</a></li>
+	<li><a href="fpathcmp.html">FPathCmp</a></li>
+ </ul>
+ </li>
+ <li>Paths, converting to and from other representations
+ <ul class="List-Hyphen">
+ 	<li><a href="farrtopath.html">FArrToPath</a></li>
+	<li><a href="fflattenpath.html">FFlattenPath</a></li>
+	<li><a href="fpathtoarr.html">FPathToArr</a></li>
+	<li><a href="fpathtoazstring.html">FPathToAZString</a></li>
+	<li><a href="fpathtodsstring.html">FPathToDSString</a></li>
+	<li><a href="fstringtopath.html">FStringToPath</a></li>
+	<li><a href="ftexttopath.html">FTextToPath</a></li>
+	<li><a href="funflattenpath.html">FUnFlattenPath</a></li>
+ </ul>
+ </li>
+ <li>Paths, creating
+ <ul class="List-Hyphen">
+ 	<li><a href="faddpath.html">FAddPath</a></li>
+	<li><a href="fappendname.html">FAppendName</a></li>
+	<li><a href="fapppath.html">FAppPath</a></li>
+	<li><a href="femptypath.html">FEmptyPath</a></li>
+	<li><a href="fmakepath.html">FMakePath</a></li>
+	<li><a href="fnotapath.html">FNotAPath</a></li>
+	<li><a href="frelpath.html">FRelPath</a></li>
+ </ul>
+ </li>
+ <li>Paths, disposing
+ <ul class="List-Hyphen">
+ 	<li><a href="fdestroypath.html">FDestroyPath</a></li>
+ </ul>
+ </li>
+ <li>Paths, duplicating
+ <ul class="List-Hyphen">
+ 	<li><a href="fpathcpy.html">FPathCpy</a></li>
+	<li><a href="fpathtopath.html">FPathToPath</a></li>
+ </ul>
+ </li>
+</ul>
+
+</body>
+</HTML>
+
+

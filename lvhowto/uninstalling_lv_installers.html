@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+<title>Uninstalling LabVIEW-Built Installers</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Uninstalling LabVIEW-Built Installers</h1>
+<p class="Body">You can use the command line window to uninstall a LabVIEW-built installer and the files it installs. Complete the following steps to uninstall a LabVIEW-built installer.</p>
+
+<ol>
+	<li>Open the command line window and change to the directory containing the NIUninstaller, or the <span class="Monospace">uninst.exe</span> file. The <span class="Monospace">uninst.exe</span> file is in the <span class="Monospace">C:\Program Files\National Instruments\Shared\NIUninstaller</span> directory <span class="Platform">(Windows 64-bit)</span> <span class="Monospace">C:\Program Files (x86)\National Instruments\Shared\NIUninstaller</span>.</li>
+<li>Enter the following command to uninstall the installer.<br><br>
+<span class="Monospace">uninst.exe /qb /x &quot;<em>product name</em>&quot;</span><br><br>
+	where <span class="Monospace"><em>product name</em></span> is the name of the product you want to uninstall. 
+</li>
+</ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;<span class="Monospace"><em>product name</em></span> is case insensitive. Use the product name that appears in the Programs applet in the Control Panel to ensure the correct name. Also, enclose a product name that contains spaces in quotation marks.</td>
+</tr>
+</table>
+
+<p class="Body">You can also uninstall a LabVIEW-built installer using the Programs applet in the Control Panel. Uninstalling the installer using the Programs applet does not remove NI components that were installed with the installer. You must uninstall the NI components separately.</p>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<link rel="STYLESHEET" type="text/css" href="expandable_tree.css"><script src="common.js" type="text/javascript"></script><script src="dynamicjumps.js" type="text/javascript"></script><script src="expandable_tree.js" type="text/javascript"></script><title>Changing the Surface Appearance of a 3D Object</title>
+</head>
+<body>
+<h1>Changing the Surface Appearance of a 3D Object</h1>
+<p>By default, new 3D objects have solid, single-colored surfaces. To change the appearance, you must apply a <a href="../lvconcepts/3D_Pic_Control.html#3D_Textures">texture</a> to the 3D object. A texture is a 2D image that you wrap around a 3D object.</p>
+
+<a name="toUse"></a><h2>What to Use</h2>
+<p>Use the following block diagram objects to change the surface appearance of a 3D object:</p>
+<div class="Usage">
+<table class="Usage">
+	<col class="Object">
+	<col class="Spacer">
+	<col class="Object">
+	<col class="Spacer">
+	<col class="Object">
+	<col class="Spacer">
+	<col class="Object">
+	<col class="Spacer">
+	<col class="Object">
+	<col class="Spacer">
+	<col class="Object">
+	<col class="Spacer">
+	<col class="Object">
+	<tr><td>Reference to 3D Object</td>
+		<td></td>
+		<td><a href="../lvprop/SceneObject_Specials058Texturing.html">Specials:Texturing Property</a></td>
+		<td></td>
+		<td><a href="../lvpict/Texture.html">Texture VI</a></td>
+		<td></td>
+		<td><a href="../lvprop/SceneTexture_Apply_Mode.html">Apply Mode Property</a></td>
+		<td></td>
+		<td><a href="../lvprop/SceneObject_Add_Texture.html">Texture:Set&nbsp;Texture Method</a></td>
+		<td></td>
+		<td>3D Picture Control</td>
+	</tr>
+	<tr><td></td>
+	<td></td>
+	<td><img src="loc_bd_specials_texturing.gif"></td>
+	<td></td>
+	<td><img src="noloc_icon_texture.gif"></td>
+	<td></td>
+	<td><img src="loc_bd_applymode.gif"></td>
+	<td></td>
+	<td><img src="loc_bd_texture_set_texture.gif"></td>
+	<td></td>
+		<td><img src="noloc_bd_3d_picture.gif"></td>
+	</tr>
+	<tr>
+		<td><a href="../lvhowto/Create_3D_Scene.html">Create single 3D object</a>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object725);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object3702);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN><br> </td><td>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object3702);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object727);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN><br> </td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object727);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN><br> </td></tr></table>
+		</td>
+		<td></td>
+		<td><table><tr><td>
+<SPAN title=" Add to the front panel window "><a href="javascript:placeObjectFP(control73);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN><br> </td><td> 
+<SPAN title=" Find on the palette "><a href="javascript:findObjectFP(control73);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></td></tr></table>
+		</td>
+	</tr>
+</table>
+</div>
+
+
+
+<a name="toDo"></a><h2>What to Do</h2>
+<p>Create the following block diagram to programmatically change the appearance of a 3D object. <br>Customize the gray sections for your unique programming goals.</p>
+<img src="loc_bd_3d_texture.gif">
+
+<p>The following list describes important details about the previous diagram:</p>
+<table><tr><td><img src="noloc_eps_callout_1.gif"></td><td>Obtain a reference to the 3D object whose appearance you want to change. Your programming goals determine how you obtain this reference. The most common way to obtain a 3D object reference is to <a href="../lvhowto/Create_3D_Scene.html">create a new 3D object</a>. This example obtains a 3D object reference by creating a new 3D box.</td></tr>
+<tr><td><img src="noloc_eps_callout_2.gif"></td><td>The Specials:Texturing property enables a 3D object to have a texture. If you do not set the Specials:Texturing property to <span class="Monospace">On</span>, you cannot apply texture to a 3D object. If the object to which you want to apply the texture is a <a href="../lvconcepts/3D_Pic_Control.html#3D_Object_Relationships">child of another object</a>, you can set the  Specials:Texturing property to <span class="DNL"><span class="Monospace">Inherit Value</span></span> to inherit the texture settings of the parent object.</td></tr>
+<tr><td><img src="noloc_eps_callout_3.gif"></td><td>Obtain LabVIEW image data that defines the texture you want to appear. Use one of the following ways to obtain LabVIEW image data:
+<ul>
+<li>To convert a standard image format such as JPG to LabVIEW image data, use the appropriate Read VI from the <a href="../lvpict/Graphics_Formats_VIs.html">Graphics Formats</a> palette.</li>
+<li>To access an image that is part of a pre-existing 3D object, use a 3D picture control property or method.</li>
+<li>To define a custom image, create an image cluster.</li>
+</ul>
+This example uses the Read JPEG File VI to convert a JPG file to LabVIEW image data.</td></tr>
+<tr><td><img src="noloc_eps_callout_4.gif"></td><td>The Texture VI converts the LabVIEW image data to a SceneTexture reference. You must convert image data to a SceneTexture reference so that you can interact with SceneTexture <a href="../lvprop/SceneTexture_p.html">properties</a> and <a href="../lvprop/SceneTexture_m.html">methods</a> to change the way that the texture appears on a 3D object.</td></tr>
+
+<tr><td><img src="noloc_eps_callout_5.gif"></td><td>The Apply Mode property specifies how the texture appears on a 3D object. If you do not set the apply mode for the texture, LabVIEW applies the texture with blending, where the image data blends with the background color of the object. If you want the texture to retain the coloration of the original 2D image, set Apply Mode to <span class="DNL"><span class="Monospace">As a Decal</span></span> or <span class="DNL"><span class="Monospace">As a replacement</span></span>. This example uses the Apply Mode property of the texture to specify that the texture image appears with its original colors as a decal.</td></tr>
+
+<tr><td><img src="noloc_eps_callout_6.gif"></td><td>The Texture:Set&nbsp;Texture method assigns a texture to the referenced 3D object.</td></tr>
+
+
+<tr><td><img src="noloc_eps_callout_7.gif"></td><td>Use the SceneObject reference to display or manipulate the new 3D object. You can use this reference to achieve the following goals:
+<ul>
+<li>To display the 3D object&#8212;Create a 3D picture control from the front panel and wire the reference to the associated block diagram terminal.</li>
+<li>To control the size and position of the 3D object&#8212;Wire the reference to one of the <a href="../lvpict/TransformationsVIs.html">Transformation</a> VIs.</li>
+<li>To add the object to multi-object 3D scene&#8212; Use the reference to <a href="../lvhowto/Create_3D_MultiScene.html">create a 3D scene that contains multiple 3D objects</a>.</li>
+<li>To interact with other attributes of the 3D object&#8212; Wire the reference to a SceneObject <a href="../lvprop/SceneObject_p.html">property</a> or <a href="../lvprop/SceneObject_m.html">method</a>. These properties and methods control attributes and behaviors of the 3D object, such as its color, <a href="../lvhowto/3D_Light_Scene.html">light source</a>, and texture.</li>
+</ul>
+This example displays the textured 3D object by using a 3D picture control.</td></tr>
+</table>
+
+
+<a name="caveats"></a><h2>Tips and Troubleshooting Information</h2>
+<ul>
+<li><strong>You can create more complex textures.</strong> Use the SceneTexture properties of the SceneTexture reference to configure other texture settings, such as the <a href="../lvprop/SceneTexture_Filter_Mode.html">filter mode</a>, <a href="../lvprop/SceneTexture_Horizontal_Wrap_Mode.html">horizontal</a> or <a href="../lvprop/SceneTexture_Vertical_Wrap_Mode.html">vertical</a> wrap mode, and <a href="../lvprop/SceneTexture_Transformation.html">transformations</a> to apply to the texture.</li>
+<li><strong>Does the texture unexpectedly appear on multiple 3D objects in the scene?</strong> You may have applied the texture to the parent object in a <a href="../lvhowto/Create_3D_MultiScene.html">hierarchy of 3D objects</a>. Changes to a parent 3D object apply to all children of that object. To fix this problem, apply the texture to the child object reference rather than to the parent object reference.</li>
+<li><strong>Does the texture not appear at all?</strong> The Specials:Texturing property must resolve to the <span class="Monospace">On</span> value, whether because you directly set the property to <span class="Monospace">On</span> or because it inherits the <span class="Monospace">On</span> value from its parent. Verify that you set the Special.Texturing property to an appropriate value.</li>
+<li><strong>Does the 3D picture control appear as a refnum on the front panel?</strong> You must create the 3D picture control from the front panel, not from a terminal on the block diagram. After you create the 3D picture control from the front panel, wire the associated block diagram terminal to a SceneObject reference to display the referenced object.</li>
+<li><strong>Can you not interact with the 3D picture control on the front panel?</strong> You must <a href="../lvhowto/3D_Configure_Camera.html">configure a camera</a> to view a 3D scene from different perspectives.</li>
+<li><strong>Always wire error in and error out terminals.</strong> The example in this topic omits error handling to emphasize programming logic, but error handling enables debugging and controls data flow.</li>
+</ul>
+
+<a name="examples"></a><h2>Examples</h2>
+<p class="Body">Refer to the 3D Model of Solar System VI in the <span class="monospace">labview\examples\Graphics and Sound\3D Picture Control</span> directory for an example of a 3D scene that contains objects with textures.</p>
+
+<p class="Body"><a href="javascript:openVI('examples%5C%5CGraphics%20and%20Sound%5C%5C3D%20Picture%20Control%5C%5C3D%20Model%20of%20Solar%20System.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(3763);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</p>
+
+<a name="related"></a><h2>Related Topics</h2>
+<!--Use any of the following procedures to enhance a 3D object or scene:-->
+
+<ul>
+<li><a href="../lvhowto/Create_3D_Scene.html">Create a 3D scene with one object</a></li>
+<li><a href="Create_3D_MultiScene.html">Create a 3D scene with multiple objects</a></li>
+<li><a href="../lvhowto/3D_Configure_Camera.html">Configure a camera to view the objects</a></li>
+<li><a href="../lvhowto/3D_Light_Scene.html">Configure a light source</a></li>
+<li><a href="../lvhowto/3D_Add_Text.html">Add text</a></li>
+<li><a href="../lvhowto/3D_Scene_Window.html">Create a separate Scene Window</a></li>
+</ul>
+
+</body>
+</html>
+

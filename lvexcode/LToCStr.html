@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>LToCStrN (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>LToCStrN (LabVIEW Manager Function)</h1>
+<p class="Code"> uInt32 LToCStrN(ConstLStrPtr, CStr, uInt32);</p>
+<h2>Purpose</h2>
+<p class="Body">Converts a LabVIEW string to a C string, even if the pointers <strong>source</strong> and <strong>dest</strong> refer to the same memory location. If the length of <strong>source</strong> is greater than <strong>destSize</strong>, this function converts only the first characters that fit into the C string buffer. The function assumes that <strong>destSize</strong> is the size of <strong>dest</strong> in bytes.</p>
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>source</strong></td>
+<td class="Bordered"><span class="Monospace">ConstLStrP</span></td>
+ <td class="Bordered">Pointer to a LabVIEW string.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>dest</strong></td>
+<td class="Bordered"><span class="Monospace">CStr</span></td>
+ <td class="Bordered">Pointer to a C string.</td></tr>
+  <tr>
+ <td class="Bordered"><strong>destSize</strong></td>
+<td class="Bordered"><span class="Monospace">uInt32</span></td>
+ <td class="Bordered">Size of the C string buffer.</td></tr>
+</table>
+<h2>Return Value</h2>
+<p class="Body">The length of the string, truncated to the maximum number of characters specified by <strong>destSize</strong>.</p>
+
+</body>
+</HTML>

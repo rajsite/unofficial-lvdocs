@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+<title>Identifying Buffer Allocations in LabVIEW Applications</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Identifying Buffer Allocations in LabVIEW Applications</h1>
+
+<p>Use the <a href="../lvhelp/profile_buffer_allocations.html">Profile Buffer Allocations</a> window to identify and analyze buffer allocations in a LabVIEW application.</p>
+
+<h2>Identifying Large Buffers</h2>
+<p>To identify the large buffers that an application allocates, click <strong>Start</strong> to start profiling, run a VI or multiple VIs that you want to profile, and click <strong>Stop</strong> to end the profiling session. The <strong>Profile Data</strong> table displays the largest buffer allocations. The number of buffer allocations in the table is no greater than the <strong>Maximum buffers to display</strong>.</p>
+<h2>Analyzing Buffer Allocations</h2>
+<p>To analyze the cause of a buffer allocation, double-click a row in the <strong>Profile Data</strong> table to open the block diagram of the VI that causes the buffer allocation. LabVIEW highlights the node, wire, or tunnel which causes the buffer allocation.</p>
+<h2>Saving and Loading Profiles</h2>
+<p>To save the profiles for analysis, select <strong>File&#0187;Save Profile</strong> to save the profile data to a binary file on the disk. To load the saved profile back into this window, select <strong>File&#0187;Load Profile</strong>. You can also export the profile data to a CSV file  by selecting <strong>File&#0187;Export Table</strong>. You can load the CSV file in either Microsoft Excel or Notepad.</p>
+
+</body>
+</html>

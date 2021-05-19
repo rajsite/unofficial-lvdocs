@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>General Tests (VI Analyzer Toolkit)</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>General Tests (VI Analyzer Toolkit)</h1>
+<!--begin child ../lvvianalyzerhelp/Block_Diagram_Tests.html-->
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;The VI Analyzer tests are available only if you install and activate the LabVIEW VI Analyzer Toolkit. Refer to the <a href="javascript:WWW(WWW_Analyzer)">NI website</a> for more information about the VI Analyzer Toolkit.</td>
+</tr>
+</table> 
+<!--end child ../lvvianalyzerhelp/Block_Diagram_Tests.html-->
+<p class="Body">Tests in the <span class="DNL">General</span> category of <a href="Test_Descriptions.html">VI Analyzer tests</a> analyze aspects of VIs not covered in the <span class="DNL"><a href="Block_Diagram_Tests.html">Block Diagram</a></span>, <span class="DNL"><a href="Documentation_Tests.html">Documentation</a></span>, or <span class="DNL"><a href="Front_Panel_Tests.html">Front Panel</a></span> categories. The VI Analyzer groups the <span class="DNL">General</span> tests into three subcategories: <span class="DNL">File Properties</span>, <span class="DNL">Icon and Connector Pane</span>, and <span class="DNL">VI Properties</span>.
+</p>
+<h2><span class="DNL">File Properties</span></h2>
+<p class="Body">The tests in the following list analyze properties of the VI as a file, such as filename and size.
+</p>
+<ul>
+<li><strong><span class="DNL">SubVI and TypeDef Locations</span></strong>&#8212;Checks that subVIs and type definitions reside in one of an arbitrary number of user-specified locations (paths and LLBs). If you do not specify a location, the test passes. The test does not check Express VIs on a block diagram.
+</li>
+<li><strong><span class="DNL">VI Extension</span></strong>&#8212;Checks the filename extension. The test fails for any VI that does not have a <span class="Monospace">.vi</span> or <span class="Monospace">.vit</span> extension, or for any custom control that does not have a <span class="Monospace">.ctl</span> or <span class="Monospace">.ctt</span> extension. The test is case insensitive.
+</li>
+<li><strong><span class="DNL">VI Name</span></strong>&#8212;Checks the name of a VI for potentially invalid characters.
+</li>
+<li><strong><span class="DNL">VI Saved Version</span></strong>&#8212;Checks that the VI is saved in the most current version of LabVIEW.
+</li>
+<li><strong><span class="DNL">VI Size</span></strong>&#8212;Compares the file size of a VI to the maximum allowable size you specify.
+</li>
+</ul>
+<h2><span class="DNL"><a name="icongen">Icon and Connector Pane</a></span></h2>
+<p class="Body">The tests in the following list analyze VI icon and connector pane style issues.
+</p>
+<ul>
+<li><strong><span class="DNL">Connector Pane Alignment</span></strong>&#8212;Checks that inputs wire to  connector pane terminals on the left side and that outputs wire to connector pane terminals on the right side.
+</li>
+<li><strong><span class="DNL">Connector Pane Pattern</span></strong>&#8212;Checks that the connector pane pattern, regardless of rotation, matches one of the user-specified connector pane patterns.
+</li>
+<li><strong><span class="DNL">Default Icon</span></strong>&#8212;Checks that VI icons of standard and polymorphic VIs are neither default nor empty.
+</li>
+<li><strong><span class="DNL">Error Style</span></strong>&#8212;Checks that error connections appear in the lower-left and lower-right corners of the connector pane. This part of the test runs only if the connector pane wires a single <strong>error in</strong> and a single <strong>error out</strong> terminal. The test also checks whether an error case appears around the contents of the block diagram.
+</li>
+<li><strong><span class="DNL">Full Connector Pane</span></strong>&#8212;Detects whether the connector pane is full. VIs should have extra connector pane terminals available for future expansion.
+</li>
+<li><strong><span class="DNL">Icon Size and Border</span></strong>&#8212;Checks that the icon image is 32 &#215; 32 pixels in size and has a solid border. The test does not check the icons of control or global VIs.
+</li>
+<li><strong><span class="DNL">Polymorphic Terminals</span></strong>&#8212;Checks that terminals on all instances of a polymorphic VI appear in the same position on the connector pane of the instance VI. The test does not analyze broken polymorphic VIs.
+</li>
+<li><strong><span class="DNL">Terminal Connection Type</span></strong>&#8212;Checks that controls and indicators on the connector pane that match user-specified names or patterns include the user-specified terminal connection type, such as required, recommended, or optional.
+</li>
+<li><strong><span class="DNL">Terminal Positions</span></strong>&#8212;Checks that controls and indicators connected to a connector pane that match user-specified names or patterns are located in certain positions.
+</li>
+</ul>
+<h2><span class="DNL"><a name="vigen">VI Properties</a></span></h2>
+<p class="Body">The tests in the following list analyze the overall setup of a VI.
+</p>	
+<ul>
+<li><strong><span class="DNL">Auto Error Handling Enabled</span></strong>&#8212;Returns a failure for any VI with <a href="../lvconcepts/Error_Checking_and_Error_Handling.html">Automatic Error Handling</a> enabled.
+</li>
+<li><strong><span class="DNL">Broken VI</span></strong>&#8212;Checks for broken VIs.
+</li>
+<li><strong><span class="DNL">Built Application Compatibility</span></strong>&#8212;Checks for properties or methods that are not supported in built applications.  Run this test on any VIs you want to build into an application to ensure they will function properly.
+</li>
+<li><strong><span class="DNL">Control VI Type</span></strong>&#8212;Returns a failure if the Control VI Type does not match the user-specified type.
+</li>
+<li><strong><span class="DNL">Driver Usage</span></strong>&#8212;Checks for subVIs, functions, or property nodes that are part of NI driver software packages. This test does not check for Express VIs that are part of the driver software packages.
+</li>
+<li><strong><span class="DNL">Platform Portability</span></strong>&#8212;Checks for potential problems that might occur when you attempt to port a VI from one operating system to another.
+</li>
+<li><strong><span class="DNL">Removed Diagram</span></strong>&#8212;Checks whether the block diagram is present. Do not remove a block diagram from a VI because you cannot recover it. You can <a href="../lvhowto/Creating_Password_Protect.html">password protect a VI</a> if you do not want users to view the block diagram.
+</li>
+<li><strong><span class="DNL">Toolkit Usage</span></strong>&#8212;Checks whether subVIs are NI toolkit VIs. When you distribute a VI that includes toolkit VIs as subVIs, each computer that runs the VI must have the toolkit VIs installed or the VI does not run correctly.
+</li>
+<li><strong><span class="DNL">VI Lock State</span></strong>&#8212;Checks the <a href="../lvhowto/Locking_and_Unlocking_VIs.html">lock state of a VI</a> against the user-specified lock state(s).
+</li>
+</ul>
+
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Example of Exported VI Strings</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Example of Exported VI Strings</h1>
+
+<p class="Body">The following example text demonstrates the contents of a text file that contains exported VI strings. Refer to <a href="../lvhowto/exprt_imprt_vi_strings.html">exporting the VI strings</a> for more information about exporting VI strings.</p>
+
+<p class="Monospace">&lt;VI syntaxVersion=11 LVversion=8508002 revision=13 name=&quot;Demo Recursion.vi&quot;&gt;<br>
+&lt;TITLE&gt;&lt;NO_TITLE name=&quot;Demo Recursion.vi&quot;&gt;&lt;/TITLE&gt;<br>
+&lt;HELP_PATH&gt;&lt;/HELP_PATH&gt;<br>
+&lt;HELP_TAG&gt;&lt;/HELP_TAG&gt;<br>
+&lt;RTM_PATH type=&quot;default&quot;&gt;&lt;/RTM_PATH&gt;<br>
+&lt;DESC&gt;This demo shows how you can create a recursive VI in LabVIEW. Recursion is when a VI uses itself on its own block diagram. Such functionality is useful when implementing VIs to solve problems of the form F(n) = F(n-1) + G(), where the functions may be arbitrarily complex and more direct iterative methods may not be easy to implement. &lt;/DESC&gt;<br>
+&lt;CONTENT&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;GROUPER&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;PARTS&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/PARTS&gt;&lt;/GROUPER&gt;<br>
+&nbsp;&nbsp;&lt;CONTROL ID=80 type=&quot;Numeric&quot; name=&quot;How many times to recurse?&quot;&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;DESC&gt;&lt;/DESC&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TIP&gt;&lt;/TIP&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;PARTS&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;PART ID=82 order=0 type=&quot;Caption&quot;&gt;&lt;LABEL&gt;&lt;STEXT&gt;How many times to recurse?&lt;/STEXT&gt;&lt;/LABEL&gt;&lt;/PART&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/PARTS&gt;<br>
+&nbsp;&nbsp;&lt;/CONTROL&gt;<br>
+&nbsp;&nbsp;&lt;CONTROL ID=81 type=&quot;String&quot; name=&quot;Resulting String&quot;&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;DESC&gt;&lt;/DESC&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TIP&gt;&lt;/TIP&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;PARTS&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;PART ID=11 order=0 type=&quot;Text&quot;&gt;&lt;LABEL&gt;&lt;STEXT&gt;&lt;/STEXT&gt;&lt;/LABEL&gt;&lt;/PART&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;PART ID=82 order=0 type=&quot;Caption&quot;&gt;&lt;LABEL&gt;&lt;STEXT&gt;Resulting String&lt;/STEXT&gt;&lt;/LABEL&gt;&lt;/PART&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/PARTS&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;DEFAULT&gt;&lt;SAME_AS_LABEL&gt;&lt;/DEFAULT&gt;<br>
+&nbsp;&nbsp;&lt;/CONTROL&gt;<br>
+&nbsp;&nbsp;&lt;LABEL&gt;&lt;STEXT&gt;This demo uses recursion -- that is, a VI that calls itself on its own block diagram -- to build a string of numbers. The task itself is trivial and could be easily achieved without using recursion, but the demo will let you see the details of recursion which may be useful for solving harder problems.&lt;LF&gt;<br>
+&lt;LF&gt;<br>
+&lt;FONT style='B'&gt;Instructions:&lt;FONT predef=APPFONT&gt;&lt;LF&gt;<br>
+1. Select the number of times that the demo should recurse.&lt;LF&gt;<br>
+2. Run VI.&lt;LF&gt;<br>
+3. The output will be a string of numbers starting at zero and going up to your input number.&lt;LF&gt;<br>
+&lt;LF&gt;<br>
+Details on how the recursion works may be found on the block diagrams of this VI and its subVIs.&lt;/STEXT&gt;&lt;/LABEL&gt;<br>
+&lt;/CONTENT&gt;<br>
+&lt;BDCONTENT&gt;<br>
+&nbsp;&nbsp;&lt;LABEL&gt;&lt;STEXT&gt;Look in here.&lt;/STEXT&gt;&lt;/LABEL&gt;<br>
+&nbsp;&nbsp;&lt;NODE ID=49 type=&quot;SubVI&quot; subVIName=&quot;Read String.vi&quot;&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;DESC&gt;&lt;/DESC&gt;<br>
+&nbsp;&nbsp;&lt;/NODE&gt;<br>
+&nbsp;&nbsp;&lt;DESC&gt;&lt;/DESC&gt;<br>
+&nbsp;&nbsp;&lt;TIP&gt;&lt;/TIP&gt;<br>
+&nbsp;&nbsp;&lt;PARTS&gt;<br>
+&nbsp;&nbsp;&lt;/PARTS&gt;<br>
+&nbsp;&nbsp;&lt;NODE ID=260 type=&quot;Object Method SubVI&quot; subVIName=&quot;Recurse.vi&quot;&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;DESC&gt;&lt;/DESC&gt;<br>
+&nbsp;&nbsp;&lt;/NODE&gt;<br>
+&lt;/BDCONTENT&gt;<br>
+&lt;/VI&gt;<br>
+</p>
+
+
+
+</body>
+</html>

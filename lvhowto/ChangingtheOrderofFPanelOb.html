@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+
+<title>Setting the Tabbing Order of Front Panel Objects</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<!-- WARNING: This topic has a redirect to it in lvhelp. If you want to delete this file or move it to another CHM, you must update that redirect. -->
+
+<h1>Setting the Tabbing Order of Front Panel Objects</h1>
+
+<!-- begin parent = lvconcepts/Building_the_Front_Panel.xml -->
+<p class="Body">The <a href="../lvconcepts/Configuring_the_Front_Panel.html#Setting_the_Tabbing_Order_of_Front_Panel_Objects">tabbing order</a> determines the order in which LabVIEW selects controls and indicators when the user presses the &lt;Tab&gt; key while a VI runs. The tabbing order also determines the order in which the controls and indicators appear in the records of datalog files you create when you <a href="Front_Panel_Datalogging.html">log the front panel data</a>.<!-- end parent = lvconcepts/Building_the_Front_Panel.xml --> LabVIEW uses the order in which you add objects to the front panel or to the tab control as the default tabbing order.
+</p>
+
+
+<p class="Body">Complete the following steps to change the tabbing order.
+</p>
+<ol>
+<li>Select <strong>Edit&#0187;Set Tabbing Order</strong> to activate the tabbing order edit mode for the front panel. 
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;To set the tabbing order of controls and indicators on a <a href="../lvconcepts/Container_Controls_and_Indicators.html#Tab_Controls">tab control</a> page, right-click the page and select <strong>Reorder Controls In Page</strong> from the shortcut menu.</td>
+</tr>
+</table>
+<br><br>
+The front panel appearance changes in tabbing order edit mode, as shown in the following illustration. The white boxes on the controls and indicators show the current tabbing order. Black boxes show the new tabbing order. These numbers are identical before you make changes. In tabbing order edit mode, all hidden controls appear.<br><br>
+<img src="loc_fp_panlordr.gif"> 
+</li>
+<li>Enter a number in the <strong>Click to set to</strong> field on the toolbar. You cannot enter a number greater than the number of front panel or tab control controls and indicators.
+</li>
+<li>Click an object with the tabbing order cursor to set the place number of the object as the number displayed in the <strong>Click to set to</strong> field on the toolbar. Notice that LabVIEW automatically renumbers the other front panel or tab control objects based on the original tabbing order.
+</li>
+<li>Repeat steps 2 and 3 until all elements are in the order you want.
+</li>
+</ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;LabVIEW skips hidden controls when you tab through a front panel. You do not need to set the order of hidden controls.</td></tr></table>
+<ol start="5">
+<li>When the black boxes display the tabbing order you want, click the <strong>Confirm</strong> button on the toolbar to accept the new tabbing order and exit tabbing order edit mode. Click the <strong>Cancel</strong> button on the toolbar to revert to the old tabbing order and exit the tabbing order edit mode.
+</li>
+<li>Run the VI and press the &lt;Tab&gt; key to navigate the front panel or tab control controls or indicators. Use the left and right arrow keys to navigate the pages of the tab control.
+</li>
+</ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;If you add a splitter bar to the front panel and create panes, the tabbing order of front panel objects does not change. A control in any pane can be the next control in the tabbing order.</td></tr></table>
+
+
+
+</body>
+</html>

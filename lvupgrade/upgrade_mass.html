@@ -1,0 +1,213 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>4. Convert Your VIs and Address Behavior Changes</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script src="" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">4. Convert Your VIs and Address Behavior Changes</h1> 
+      
+      
+      <div>
+         <p> 
+            
+         </p> 
+         	 
+         <div class="section"><a name="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__CONTEXT_21B17989EFDD4038BBE6D6315D2998A4" shape="rect">
+               <!-- --></a> 
+            		
+            <p>Mass compiling your
+               				VIs in <span>LabVIEW 2020</span> converts the VIs to the new version of LabVIEW and creates an error
+               				log to help you identify VIs that are broken. You can use this information in
+               				conjunction with <a href="Upgrade_Issues.html#GUID-3AE67D93-D8A0-4027-9489-4AF5581831AA" shape="rect">Upgrade and
+                  					Compatibility Issues</a> to identify and correct behavior changes associated
+               				with the new version of LabVIEW. 
+            </p> 
+            		
+            <table class="noteTable">
+               <tr>
+                  <td><img alt="Note" src="note.gif"></td>
+                  <td><a name="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__GUID-1C7E9645-8C43-4967-92F6-B79DA89F7F31" shape="rect">
+                        <!-- --></a><span class="notetitle">Note&nbsp;&nbsp;</span> NI recommends that you use source control in LabVIEW to back up VIs and track changes. This allows you to revert to a previous
+                     version of the VIs if you cannot address behavior changes caused by upgrading the VIs. 
+                     		
+                  </td>
+               </tr>
+            </table> 
+            	 
+         </div> 
+         	 
+         <div class="section"><a name="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__SECTION_F44314392B9D47FBA0D906D038CD2E4E" shape="rect">
+               <!-- --></a><h2 class="sectiontitle">a. Mass Compile Your VIs in the
+               				New Version of LabVIEW
+            </h2>
+            			
+            			
+            <p> Mass compiling VIs simultaneously converts and saves the VIs in <span>LabVIEW 2020</span>. However, after mass compiling the VIs, you no longer can open the
+               				VIs in a previous version of LabVIEW without selecting <span class="menucascade"><strong>File�</strong><strong>Save for Previous Version</strong></span> for each VI or project. Therefore, mass compile only the VIs that you
+               				want to convert to the new version of LabVIEW. To help identify any problems that
+               				arose from upgrading, create a mass compile log by placing a checkmark in the
+               					<strong>Log Results</strong> checkbox of the <span class="wintitle">Mass
+                  					Compile</span> dialog box. 
+            </p>
+            			
+            <table class="noteTable">
+               <tr>
+                  <td><img alt="Note" src="note.gif"></td>
+                  <td><a name="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__GUID-D7ED562C-4DCC-4F1D-AAE2-DF51AE0FB9BA" shape="rect">
+                        <!-- --></a><span class="notetitle">Note&nbsp;&nbsp;</span> When you mass compile VIs that
+                     				contain FPGA or real-time resources, the <span class="wintitle">Mass Compile</span> dialog
+                     				box may report the VIs as non-executable VIs. To check for errors, you must open the
+                     				VIs under the FPGA or RT target in a LabVIEW project with the required FPGA or
+                     				real-time resources. 
+                  </td>
+               </tr>
+            </table>
+            			
+            <p><a name="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__MASSCOMPILING_RT" shape="rect">
+                  <!-- --></a> 
+            </p>
+            		
+         </div> 
+         	 
+         <div class="section"><a name="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__SECTION_A95612FDC550476CB7A13F026DFA1576" shape="rect">
+               <!-- --></a><h2 class="sectiontitle">b. Fix Any Broken VIs</h2>
+            			
+            			
+            <p>Differences between your previous version of LabVIEW and <span>LabVIEW 2020</span> can
+               				occasionally cause some VIs to break if they use modified features. To quickly
+               				identify and fix broken VIs in <span>LabVIEW 2020</span>, complete the
+               				following steps: 
+            </p>
+            			<a name="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__OL_0C91483A640043E5A46F3350CB9D234A" shape="rect">
+               <!-- --></a><ol id="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__OL_0C91483A640043E5A46F3350CB9D234A">
+               <li><a name="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__LI_5005D020DAB54C29B692FA74E08714C1" shape="rect">
+                     <!-- --></a>To identify VIs that broke during
+                  					upgrading, compare the mass compile error log you created in the previous step
+                  					to the log you created when testing the existing behavior of the VIs. 
+               </li>
+               <li><a name="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__LI_D2C6A4E9196E4ADB808CAB35459BF5AE" shape="rect">
+                     <!-- --></a>To determine whether updates to LabVIEW
+                  					caused each VI to break, refer to <a href="Upgrade_Issues.html#GUID-3AE67D93-D8A0-4027-9489-4AF5581831AA" shape="rect">Upgrade and Compatibility
+                     						Issues</a>. 
+               </li>
+            </ol>
+            		
+         </div> 
+         	 
+         <div class="section"><a name="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__SECTION_DF20E5E5D1E64AA7BAA9B875B64765AE" shape="rect">
+               <!-- --></a><h2 class="sectiontitle">c. Identify and Correct Behavior Changes</h2> 
+            		 
+            		
+            <p>Although NI invests significant effort to avoid changing the behavior of VIs between different versions of LabVIEW, improvements
+               and bug fixes occasionally do alter the behavior of VIs. To quickly identify whether the new version of LabVIEW changes the
+               behavior of your VIs, use one or more of the following tools: 
+               		
+            </p> 
+            		<a name="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__UL_4842B9F486094CABBBD7A167A65FE0F3" shape="rect">
+               <!-- --></a><ul id="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__UL_4842B9F486094CABBBD7A167A65FE0F3">
+               <li><a name="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__LI_B6803E108DA946FFBD0A63ACF0B2ABC9" shape="rect">
+                     <!-- --></a>Run the VI Analyzer Upgrade Tests�For large sets of VIs, these tests provide an efficient way to identify many behavior changes
+                  caused by upgrading. Complete the following steps to obtain and use these tests: 
+                  			 <a name="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__OL_FAB0A0097B984F80B330301B5A9F7FCD" shape="rect">
+                     <!-- --></a><ol id="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__OL_FAB0A0097B984F80B330301B5A9F7FCD">
+                     <li><a name="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__LI_41B79090A5D448409BBBB5FF2705B2BB" shape="rect">
+                           <!-- --></a>Download the VI Analyzer Upgrade Tests for all versions of LabVIEW later than your previous version. Refer to the NI website
+                        at 
+                        				  <span class="filepath">ni.com/info</span> and enter the Info Code <a href="http://digital.ni.com/express.nsf/bycode/analyzevi" target="_blank" shape="rect">analyzevi</a> to download these tests. 
+                        				
+                     </li>
+                     <li><a name="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__LI_84008DB861FB487CB57BC8A86590EC02" shape="rect">
+                           <!-- --></a>Open and run the tests by selecting 
+                        				  <span class="menucascade"><strong>Tools�</strong><strong>VI Analyzer�</strong><strong>Analyze VIs</strong></span> and starting a new VI Analyzer task. To analyze an entire project at once, select this menu option from the 
+                        				  <span class="wintitle">Project Explorer</span> window rather than from a single VI. 
+                        				
+                     </li>
+                     <li><a name="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__LI_6DA945B96CD54E0BAD6CA7A97B9390C0" shape="rect">
+                           <!-- --></a>Resolve test failures by referring to 
+                        				  <a href="Upgrade_Issues.html#GUID-3AE67D93-D8A0-4027-9489-4AF5581831AA" shape="rect">Upgrade and Compatibility Issues</a> for the version of LabVIEW that corresponds to the tests. 
+                        				
+                     </li>
+                  </ol> 
+                  		  
+               </li>
+               <li><a name="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__LI_28A0F6DD2FCD47F89DBE0714AC3AF3C3" shape="rect">
+                     <!-- --></a>Read the upgrade documentation 
+                  			 <a name="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__UL_179C8B042EF54F019F0BDC8EA90E3B40" shape="rect">
+                     <!-- --></a><ul id="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__UL_179C8B042EF54F019F0BDC8EA90E3B40">
+                     <li><a name="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__LI_69AB639073AD4B8BA71190842D5A822F" shape="rect">
+                           <!-- --></a><a href="Upgrade_Issues.html#GUID-3AE67D93-D8A0-4027-9489-4AF5581831AA" shape="rect">Upgrade and Compatibility Issues</a>�Lists changes that may break or affect the behavior of your VIs. Refer to the subsections for each version of LabVIEW beginning
+                        with your previous version. 
+                        				  
+                        <table class="noteTable">
+                           <tr>
+                              <td><img alt="Tip" src="tip.gif"></td>
+                              <td><a name="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__GUID-DD577993-1139-4E20-91F7-577B471DA2F4" shape="rect">
+                                    <!-- --></a><span class="notetitle">Tip&nbsp;&nbsp;</span> To quickly locate deprecated objects and other objects mentioned in the 
+                                 					 <cite>Upgrade and Compatibility Issues</cite> topic, open your upgraded VIs and select 
+                                 					 <span class="menucascade"><strong>Edit�</strong><strong>Find and Replace</strong></span>. 
+                                 				  
+                              </td>
+                           </tr>
+                        </table> 
+                        				
+                     </li>
+                     <li><a name="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__LI_0F2C7AB57EC047DF9E05FA358B516E45" shape="rect">
+                           <!-- --></a>
+                        							<span>LabVIEW 2020</span> Known Issues list�Lists bugs discovered before
+                        							and throughout the release of <span>LabVIEW 2020</span>.
+                        							Refer to the NI website at <span class="filepath">ni.com/info</span> and enter
+                        							the Info Code <a href="http://digital.ni.com/express.nsf/bycode/lv2020ki" target="_blank" shape="rect">lv2020ki</a> to
+                        							access this list. Refer to the <cite>Upgrade - Behavior Change</cite>
+                        							and <cite>Upgrade - Migration</cite> sections, if available, to identify
+                        							workarounds for any bugs that may affect the behavior of upgraded VIs. 
+                     </li>
+                     <li><a name="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__LI_7BB5C4FF18F04D629D9E012518FD032A" shape="rect">
+                           <!-- --></a>Module and toolkit documentation�Lists upgrade issues specific to some modules and toolkits, such as the LabVIEW FPGA Module
+                        and the LabVIEW Real-Time Module. 
+                        				
+                     </li>
+                     <li><a name="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__LI_3DDAFA6990E44981927E20064ADB4552" shape="rect">
+                           <!-- --></a>Driver readme files�Lists upgrade issues specific
+                        							to each driver. To view the readme for your Driver, go to <a href="http://www.ni.com/manuals" target="_blank" shape="rect">ni.com/manuals</a>. 
+                        <table class="noteTable">
+                           <tr>
+                              <td><img alt="Tip" src="tip.gif"></td>
+                              <td><a name="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__GUID-302BEBF3-9784-4A0A-A63B-BBA1BEE4CFCE" shape="rect">
+                                    <!-- --></a><span class="notetitle">Tip&nbsp;&nbsp;</span> To determine whether
+                                 								a behavior change resulted from a driver update rather than an
+                                 								update to LabVIEW, test your VIs in the previous version of LabVIEW
+                                 								after installing <span>LabVIEW 2020</span>. 
+                              </td>
+                           </tr>
+                        </table>
+                        						
+                     </li>
+                  </ul> 
+                  		  
+               </li>
+               <li><a name="GUID-F9FE2545-2405-4C11-974C-E8DDCB755898__LI_3DEF325B16F54D6CB8286E4CF7774E2E" shape="rect">
+                     <!-- --></a>Run your own tests�Perform the same tests on the
+                  					VIs in <span>LabVIEW 2020</span> that you performed in the previous version and compare
+                  					the results. If you identify new behaviors, refer to the upgrade documentation
+                  					to diagnose the source of the change. 
+               </li>
+            </ul> 
+            	 
+         </div> 
+         
+      </div> 
+      
+      <div>
+         <div class="relinfo"><strong>Related information</strong><br clear="none"><div><a href="../lvupgrade/Upgrade_Issues.html" shape="rect">Upgrade and Compatibility Issues</a></div>
+            <div><a href="../lvhowto/mass_compiling_vis.html" shape="rect">Mass Compiling VIs</a></div>
+            <div><a href="../lvdialog/Mass_Compile_DB.html" shape="rect">Mass Compile Dialog Box</a></div>
+            <div><a href="../lvupgrade/upgrade_characterize.html" shape="rect">2. Test and Record the Existing Behavior of Your VIs</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

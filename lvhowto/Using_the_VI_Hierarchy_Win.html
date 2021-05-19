@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 3800Evihiersubvihlp -->
+
+<title>Viewing the Hierarchy of VIs</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Viewing the Hierarchy of VIs
+</h1>
+<!-- begin parent = um 3800vihiersubvi KM , ../lvconcepts/Creating_VIs_and_SubVIs.xml-->
+<p class="Body">The <a href="../lvdialog/Hierarchy_Window.html">VI Hierarchy</a> window displays a graphical representation of all open LabVIEW projects and targets, as well as the calling hierarchy for all VIs in memory. Use this window to view the subVIs and other nodes that make up the VIs in memory and to search the VI hierarchy.</p>
+<!--begin parent - ../lvconcepts/Creating_VIs_and_SubVIs.xml--><p class="Body">The <strong>VI Hierarchy</strong> window displays the following items:</p>
+<ul><li>Projects and targets</li>
+<li>Static and dynamic subVI calls</li>
+<li>Type definitions</li>
+<li>Global variables</li>
+<li>Shared variables</li>
+<li>LabVIEW classes</li>
+<li>XControls</li>
+<li>Statecharts</li>
+<li>Project libraries (<span class="Monospace">.lvlib</span>)</li>
+<li>Express VIs</li>
+<li>Static VI references</li>
+<li><span class="Platform">(MathScript RT Module)</span> <span class="Monospace">.m</span> files you reference from <a href="../gmath/MathScript_Node.html">MathScript Nodes</a></li>
+</ul><!--begin parent - ../lvconcepts/Creating_VIs_and_SubVIs.xml-->
+
+<p class="Body">The <strong>VI Hierarchy</strong> window displays a top-level icon to represent the main LabVIEW <a href="../lvconcepts/Application_Instances.html">application instance</a>, under which appear all the objects that are not part of a project or are not part of the application instance for a project. If you add a project, the <strong>VI Hierarchy</strong> window displays another top-level icon to represent the project. Each target you add appears under the project.
+</p>
+<!-- end parent = um 3800vihiersubvi KM, ../lvconcepts/Creating_VIs_and_SubVIs.xml -->
+<p class="Body">Complete the following steps to use the <strong>VI Hierarchy</strong> window.
+</p>
+<ol>
+<li>Select <strong>View&#0187;VI Hierarchy</strong> to display the <strong>VI Hierarchy</strong> window.
+</li>
+<li>Select from the following options:
+<ul>
+<!-- begin parent = um 3800vihiersubvi KM -->
+<li>Move the cursor over nodes in the <strong>VI Hierarchy</strong> window to display the name of each node in a tip strip.
+</li>
+<li>Use the Positioning tool to select a VI or subVI node from the <strong>VI Hierarchy</strong> window and drag it to the block diagram. You also can select and copy one or more nodes to the clipboard and paste them on block diagrams.
+</li>
+<li>Double-click a VI or subVI node to display the front panel of that VI.
+</li>
+<li>Hold the &lt;Ctrl&gt; key and double-click a VI or subVI node to display the front panel and block diagram of that VI.</li>
+<!-- end parent = um 3800vihiersubvi KM -->
+<li><a href="Searching_in_the_VI_Hierar.html">Search for a node</a> by name.
+</li>
+<li>Right-click a blank area of the window and select <strong>Show All VIs</strong> from the shortcut menu to show the entire hierarchy.
+</li>
+<li>Right-click a node and select <strong>Highlight Connections</strong> from the shortcut menu to highlight other items in the hierarchy that connect with the current node.</li>
+<li>Right-click a project or a VI and select <strong>Hide All SubVIs</strong> or <strong>Show All SubVIs</strong> from the shortcut menu to alternately hide and show the subVIs in the hierarchy.</li>
+<li>Right-click a project or a VI and select <strong>Show Immediate SubVIs</strong> from the shortcut menu to show the subVIs that immediately connect with a single node. This item is available only if all subVIs are hidden.</li>
+<li>Right-click a node and select <strong>Show VI Hierarchy</strong> from the shortcut menu to display the hierarchy for a single node.</li>
+<li>Right-click a node and select <strong>Show All Callers</strong> from the shortcut menu to highlight all callers of the node you select.</li>
+<li>Right-click a paused VI and select <strong>Show Call Chain</strong> from the shortcut menu to highlight the call chain of the VI. The call chain is the chain of callers from the current VI to the top-level VI. This option is only available while debugging a running VI.</li>
+<li>Use the buttons on the <strong>VI Hierarchy</strong> window <a href="../lvdialog/Hierarchy_Window.html">toolbar</a> to select more ways to view the VI hierarchy.</li>
+</ul></li>
+</ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;The <strong>VI Hierarchy</strong> window is a dynamic view of what is in memory. If you rearrange items in the hierarchy, LabVIEW does not save the new position of items. When you close and reopen the <strong>VI Hierarchy</strong> window, the positions regenerate.</td>
+</tr>
+</table>
+<p class="Body">To display instances of polymorphic VIs in the VI hierarchy, click the red arrow at the bottom of each polymorphic VI icon. The top-level VI indicates that it is linked to the polymorphic VI and to an instance of the polymorphic VI. 
+</p>
+<p class="Body">To switch to the Scrolling tool when <a href="Selecting_a_Tool.html">automatic tool selection is enabled</a>, press the &lt;Ctrl-Shift&gt; keys when the cursor is not over an icon in the window. <span class="Platform">(macOS)</span> Press the &lt;Option-Shift&gt; keys. <span class="Platform">(Linux)</span> Press the &lt;Alt-Shift&gt; keys.
+</p>
+<p class="Body">You also can use the <a href="../lvprop/App_AppAll_VIs_In_Mem.html">Application:All VIs in Memory</a> property to retrieve a list of VIs in memory programmatically.
+</p>
+
+
+
+
+</body>
+</html>

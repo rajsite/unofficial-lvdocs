@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Measuring Digital Frequency</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css"><script src="common.js" type="text/javascript"></script></head>
+<body>
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Measuring Digital Frequency</h1>
+        
+<p class="Body">The digital frequency of a signal is the inverse of the period of a signal. To get the frequency of the signal, take the inverse of the period. The formula for frequency is Frequency  (in Hz) = Counter Timebase Rate (in Hz) / Count.</p>
+ 
+<p class="Body">The Counter Timebase Rate is a known frequency and is usually a built-in time source.  If the counter timebase rate is unknown, you only can make measurements only in terms of ticks of the counter timebase.  This may be the case if you are using an external signal for the counter timebase, and the frequency of the external signal is unknown or aperiodic. </p>
+            
+            <p class="Body">Digital frequency is an example of a time measurement. Refer to <a href="../mxcncpts/configtimemeas.html">Configuring a Time-Based Measurement in NI-DAQmx</a> and <a href="../mxcncpts/twocountermeasmeth.html">Two Counter Measurement Method</a> for more information about measuring time. </p>
+            
+
+        
+    <div id="exlinks">
+<h2>Examples</h2>
+<p class="Body">Refer to the following VIs for examples of performing this measurement. You must have a driver installed to find examples for that driver.</p>
+      <h3>NI-DAQmx</h3>
+<p class="Body">You can use the DAQmx - Data Acquisition VIs to perform this measurement. Find related examples:</p>
+<p class="Body"><a href="javascript:findExamples('1917');"><img src="find.gif" border="0"></a>�Counter - Read Pulse Width and Frequency (On Demand)</p>
+<p class="Body">You also can use the DAQ Assistant Express VI to perform this measurement.</p>
+<p class="Body"><img style="cursor:pointer" src="add.gif" border="0" onclick="placeObject('DAQ%20Assistant');">�Add�
+         <img style="cursor:pointer" src="find.gif" border="0" onclick="findObject('DAQ%20Assistant');">�Find</p>
+    </div>
+</body>
+</html>

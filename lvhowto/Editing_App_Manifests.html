@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+<script src="dynamicjumps.js" type="text/javascript"></script>
+
+
+<title>Working with the Application Manifest</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Working with the Application Manifest</h1>
+<p class="Body">Microsoft highly recommends that the <a href="../lvconcepts/UAC_App_Manifests_and_DgSn.html#Application_Manifests">requested execution level</a> of an application be <span class="Monospace">asInvoker</span>. Therefore, <span class="Monospace">asInvoker</span> is the default requested execution level for all LabVIEW-built applications. However, there might be occasions where you cannot adhere to this recommendation. Complete the following steps to edit the manifest for a stand-alone application, .NET interop assembly, or shared library.</p>
+<a name="editappmanifests"></a><h2>Editing the Application Manifest</h2>
+<ol>
+<li>You must verify that you have installed <span class="Monospace">mt.exe</span> on the computer before you can edit the manifest. Use <span class="Monospace">mt.exe</span> to interact with the manifest using command-line arguments. If <span class="Monospace">mt.exe</span> is not on the computer, download the Software Development Kit from the Microsoft website.</li>
+
+<li>To edit the manifest, you must first retrieve it. Complete the following steps to retrieve the manifest.
+	<ol class="List-abc"><li>Open the command line window.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;On most Windows operating systems, you can access the command line window by selecting <strong>Start&#0187;Run</strong>, entering <span class="Monospace">cmd</span> in the <strong>Open</strong> text box and clicking the <strong>OK</strong> button.</td>
+</tr>
+</table></li>
+	<li>Enter the following command to retrieve the manifest: <span class="Monospace">mt.exe -inputresource:</span><span class="Monospace-Italic">directory path</span><span class="Monospace">\</span><span class="Monospace-Italic">Application Name</span><span class="Monospace">.exe -out:<em><span class="Monospace">Application Name</span></em>.manifest</span> in the command line window where <span class="Monospace-Italic">directory path</span> is the path to the built application and <span class="Monospace-Italic">Application Name</span> is the name of the application.
+	<table class="Borderless">
+	<tr>
+	<td class="Icon"><img src="note.gif" alt="Note"></td>
+	<td><strong>Note</strong>&nbsp;&nbsp;If <span class="Monospace">mt.exe</span> is not in the same directory as the application whose manifest you want to retrieve, you must specify the path to <span class="Monospace">mt.exe</span> in the previous command. </td>
+	</tr>
+	</table></li>	
+	<li>Press the &lt;Enter&gt; key to run the command. The application manifest with the file extension <span class="Monospace">.manifest</span> appears in the same directory as the application.</li></ol>
+    </li>
+<li>Complete the following steps to edit the manifest.
+	<ol>
+	<li>Right-click the manifest in the destination folder and open the file in a text editor or an XML editor.</li>
+	<li>Locate the code <span class="Monospace">&lt;requestedExecutionLevel level=&quot;asInvoker&quot; uiAccess=&quot;false&quot;/&gt;</span>. Change the value <span class="Monospace">asInvoker</span> to <span class="Monospace">requireAdministrator</span> or <span class="Monospace">highestAvailable</span> depending on the execution level you want the built application to have.</li>
+	<li>Save the manifest file.</li>
+	</ol>
+</li>
+</ol>
+
+<a name="validateappmanifests"></a><h2>Validating the Application Manifest</h2>
+<p class="Body">The tags within the <a href="../lvconcepts/UAC_App_Manifests_and_DgSn.html#Application_Manifests">application manifest</a> are case sensitive. It is good practice to validate the changes you make to the manifest after you edit it. However, validating the manifest does not find spelling errors. Complete the following steps to validate the manifest.</p>
+<ol>
+<li>In the command line window, enter the following command to validate the manifest: <span class="Monospace">mt.exe -manifest <em>Application Name</em>.manifest -validate_manifest</span> in the command line window where <span class="Monospace-Italic">Application Name</span> is the name of the application.</li>
+<li>Press the &lt;Enter&gt; key to run the command.</li>
+</ol>
+
+<a name="applyappmanifests"></a><h2>Embedding the Application Manifest</h2>
+<p class="Body">After you edit and validate the application manifest, you can embed the changes when you configure the settings for a <a href= "../lvdialog/Windows_Security_Page.html">stand-alone application</a>, <a href="../lvdialog/windows_security_NET_page.html">.NET interop assembly</a>, or <a href="../lvdialog/windows_security_DLL_page.html">shared library</a>.</p>
+
+<ol>
+<li>On the <strong>Windows Security</strong> page of the <strong>Properties</strong> dialog box, place a checkmark in the <strong>Embed Manifest File</strong> checkbox.</li>
+<li>Specify the manifest file using the <a href= "../lvdialog/Select_RTF_DB.html">Select Project File</a> dialog box.</li>
+</ol>
+
+<p>You also can embed the manifest without using the <strong>Windows Security</strong> page. Complete the following steps to embed the manifest using the command line window.</p>
+<ol>
+<li>In the command line window, enter the command <span class="Monospace">mt.exe -manifest <em>Application Name</em>.manifest -outputresource:<em>directory path</em>\Application Name.exe;#1</span>, where <span class="Monospace-Italic">directory path</span> is the path to the built application and <span class="Monospace-Italic">Application Name</span> is the name of the application.</li>
+<li>Press the &lt;Enter&gt; key to run the command.</li>
+</ol>
+
+</body>
+</html>

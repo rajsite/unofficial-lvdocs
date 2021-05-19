@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Defining the Private Data of a LabVIEW Class</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Defining the Private Data of a LabVIEW Class</h1>
+
+<p class="Body">You can add controls to the cluster in the private data control of a LabVIEW class to create a data type.</p>
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&#160;&#160;You cannot add controls to an interface because interfaces do not contain any private data.</td></tr></table>
+<p>Complete the following steps to define a LabVIEW private data control.</p>
+<ol><li><!--start parent  = howto::/creating_mem_VIs.html  tag="creating_classes"--><a href="creating_lv_classes.html">Create a new LabVIEW class</a> or open an existing class by selecting <strong>File&#0187;Open</strong> and navigating to the class you want to open.<!--end parent  = howto::/creating_mem_VIs.html  tag="creating_classes"--><br><br>The private data control appears underneath the class icon in the <a href="../lvconcepts/Using_LabVIEW_Projects.html#Project_Explorer_Window">Project Explorer</a> window. </li>
+<li>Double-click the private data control. The <a href="../lvconcepts/Custom_Cont_Ind_Type.html#Using_the_Control_Editor_Window">Control Editor</a> window appears.</li>
+<li>Add controls and indicators to the <strong>Cluster of class private data</strong> to define your data type, if necessary.<br><br>
+<!--begin child ../lvconcepts/Creating_Classes.html-->
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;A private data control cannot contain an <a href="../lvconcepts/Using_LabVIEW_XControls.html">XControl</a>.</td>
+</tr>
+</table>
+<!--end child ../lvconcepts/Creating_Classes.html--></li>
+<li>Select <strong>Edit&#0187;Make Current Values Default </strong> to set the default value for the entire cluster. LabVIEW sets the current values in each element as the default value for those elements.<br><br>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;The value you set as the default value of the private data control is the default value for all controls, indicators, and constants of the class type.</td>
+</tr>
+</table></li>
+<li>Save the private data control.</li></ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;LabVIEW saves the private data control inside the <span class="Monospace">.lvclass</span> file. The control does not have a separate file on disk. Saving the private data control with the LabVIEW class definition helps to prevent user errors.</td>
+</tr>
+</table>
+
+
+</body>
+</html>

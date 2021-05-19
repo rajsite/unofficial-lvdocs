@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<link rel="STYLESHEET" type="text/css" href="expandable_tree.css"><script src="common.js" type="text/javascript"></script><script src="dynamicjumps.js" type="text/javascript"></script><script src="expandable_tree.js" type="text/javascript"></script><title>Checking Variants for Known Data Types</title>
+</head>
+<body>
+<h1>Checking Variants for Known Data Types</h1>
+<p>To check if a variant contains a specific data type, use the Data Type Parsing VIs to retrieve data type information. Unlike the Variant to Data function, the Data Type Parsing VIs do not retrieve the actual data stored in the variant. Instead, these VIs return information about the data type, so you do not have to manipulate the stored data to return information about it.</p>
+
+<p>If you know the data type you want to check against the data type stored in a variant, you can use the Data Type Parsing VIs to compare these data types. For example, if an application parses arbitrary front panels to retrieve the values of the controls, you can use the  example in this topic to identify the variant controls that contain error clusters.</p>
+
+<a name="toUse"></a><h2>What to Use</h2>
+<p>Use the following block diagram objects to retrieve  data  type information stored in a variant.</p>
+<table class="Usage">
+	<col class="Object">
+	<col class="Spacer">
+	<col class="Object">
+	<col class="Spacer">
+	<col class="Object">
+	<col class="Spacer">
+	<col class="Object">
+	<col class="Spacer">
+	<col class="Object">
+  <tr><td><a href= "../glang/get_type_information.html">Get Type Information VI</a></td>
+		<td></td>
+		<td><a href="../glang/Case_Structure.html">Case Structure</a></td>
+        <td></td>
+        <td><a href="../glang/get_cluster_information.html">Get Cluster Information VI</a></td>
+  </tr>
+  
+		
+  <tr><td><img src="noloc_icon_get_type.gif"></td>
+	<td></td>
+		<td><img src="loc_bd_casestruct.gif"></td>
+        <td></td>
+        <td><img src="noloc_icon_get_cluster.gif"></td>
+  </tr>
+</table>
+
+
+
+<a name="toDo"></a><h2>What to Do</h2>
+<p>Create the following block diagram to check a variant for a known data type. This example checks and compares the data types stored in a variant to error cluster elements.</p>
+<img src="loc_bd_parsing_data_types.gif">
+<p>The following list describes important details about the previous diagram.</p>
+<table><tr><td><img src="callout_1.gif"></td>
+	<td>Use the Get Type Information VI to return an enum that specifies the data type stored in the variant. In the example, the data type is a cluster.</td>  
+	</tr>
+	<tr>
+		<td><img src="callout_2.gif"></td>
+		<td>Edit the selector label of the Case structure to  correspond to the known  data type. In the example, the label and data type are both "Cluster." </td>
+	</tr>
+	<tr>
+		<td><img src="callout_3.gif"></td>
+		<td>Use the Get Cluster Information VI to return an array containing the cluster element data types. Once you know the data type contained in a variant, you can use data type specific VIs from the Data Type Parsing palette, such as the Get Numeric Information or Get Fixed-Point Information VIs, to return more specific data type information.</td>
+	</tr>
+	
+    <tr>
+		<td><img src="callout_4.gif"></td>
+		<td>Edit the selector label of the inner Case structure to correspond with the known number of elements in the error cluster data type.</td>
+	</tr>
+    <tr>
+		<td><img src="callout_5.gif"></td>
+		<td>Use the Get Type Information VI again to return an enum for each of the three elements in the error cluster. You can then compare the data types of the individual elements and the standard order of these elements to the known data types and order of a LabVIEW error cluster.</td>
+	</tr>
+
+</table>
+<h2>Related Information</h2>
+<p><a href="../glang/Variant_To_Data.html">Variant to Data</a></p>
+<p><a href="../glang/data_type_parsing.html">Data Type Parsing VIs</a></p>
+
+
+</body>
+</html>

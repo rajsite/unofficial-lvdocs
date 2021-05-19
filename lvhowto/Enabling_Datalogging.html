@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 5700Edatalogginghlp -->
+
+<title>Enabling Data Logging</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Enabling Data Logging
+</h1>
+<p class="Body">You can perform data logging automatically or interactively.</p>
+<p class="Body">Complete the following steps to enable automatic data logging.</p>
+
+<ol>
+<!-- begin parent = ../lvconcepts/File_I_O.xml KM -->
+<li>Select <strong>Operate&#0187;Log at Completion</strong> to enable automatic data logging. When automatic data logging is enabled, a checkmark appears next to the <strong>Log at Completion</strong> menu item. Select <strong>Operate&#0187;Log at Completion</strong> again to disable automatic data logging.</li><!-- end parent = ../lvconcepts/File_I_O.xml KM -->
+
+<li>Run the VI.</li>
+</ol>
+
+<p class="Body">You also can use the <a href="../lvprop/VI_Auto_LogLog_at_Finish.html">Log at Finish</a> property to enable automatic data logging programmatically.
+</p>
+<p class="Body">The first time you log front panel data for a VI, LabVIEW prompts you to name the datalog file. You can use any file extension, for example <span class="Monospace">.dat</span> or <span class="Monospace">.txt</span>, for datalog files. LabVIEW logs data each time you run the VI and appends a new record to the datalog file each additional time you run the VI. You cannot overwrite a record after LabVIEW writes it to a datalog file.
+</p>
+<p class="Body">Complete the following steps to perform data logging interactively.
+</p>
+<ol>
+
+<li>Run the VI whose data you want to log.</li>
+<li>Select <strong>Operate&#0187;Data Logging&#0187;Log</strong> after the VI stops running.</li></ol>
+
+<p class="Body">If this is the first time you are logging the front panel data for this VI, LabVIEW prompts you to name the datalog file. Name the file with a <span id="Monospace">.dat</span> file extension.
+</p>
+<!-- begin parent = ../lvconcepts/File_I_O.xml KM -->
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;A waveform chart logs only one data point at a time with front panel data logging. If you wire an array to the chart indicator, the datalog file contains a subset of the array the chart displays.</td></tr></table>
+<!-- end parent = ../lvconcepts/File_I_O.xml KM -->
+
+
+
+
+
+
+</body>
+</html>

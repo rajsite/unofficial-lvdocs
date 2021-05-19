@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Adding LLBs to a Project</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Adding LLBs to a Project</h1>
+<p class="Body">Complete the following steps to add an <a href="../lvconcepts/SavingVIs.html#Advantages_of_Saving_VIs_as_Libraries">LLB</a> to a <a href="../lvconcepts/Using_LabVIEW_Projects.html">LabVIEW project</a> as a folder or as a file in the <a href="../lvconcepts/Using_LabVIEW_Projects.html">Project Explorer</a> window.</p>
+<h2>Adding an LLB to a Project as a Folder</h2>
+<ol>
+<li>Right-click a target or a folder under the target and select <strong>Add&#187;Folder (Snapshot)</strong> from the shortcut menu to add an LLB to the project as a folder. A file dialog box appears.</li> 
+<li>Navigate to the LLB you want to add.</li>
+<li>Click the <strong>Open</strong> button in the file dialog box. The folder appears in the <strong>Project Explorer</strong> window. LabVIEW uses the filename of the LLB to name the folder and adds the VIs in the LLB as items within the new folder.</li> 
+</ol>
+
+<p class="Body"><a href="../lvhowto/Adding_Items_Project.html">Adding</a> or <a href="../lvhowto/Removing_Items_Project.html">removing</a> items from the virtual folder in the <strong>Project Explorer</strong> window does not affect the <span class="Monospace">.llb</span> file on disk. Use the <a href="../lvdialog/VI_Library_Manager_DB.html">LLB Manager</a> window or an <a href="../lvhowto/Adding_Folders_Project.html">auto-populating folder</a> to edit an LLB on disk. Right-click a target or a folder under the target and select <strong>Add&#187;Folder (Auto-populating)</strong> from the shortcut menu to add an LLB to the project as an auto-populating folder.</p>
+
+<h2>Adding an LLB to a Project as a File</h2>
+
+<ol>
+<li>Right-click a target or a folder under the target and select <strong>Add&#187;File</strong> from the shortcut menu to add an LLB to the project as a file. A file dialog box appears.</li>
+<li>Navigate to the LLB you want to add.</li>
+<li>Click the <strong>Add File</strong> button in the file dialog box. The LLB browser opens.</li> 
+<li>Click the open folder icon labeled <strong>VI</strong> with a single period <img src="noloc_env_LLB_Browser.gif"/> in the LLB browser.</li> 
+<li>Click the <strong>Select</strong> button to select the file and close the LLB browser. The file appears in the <strong>Project Explorer</strong> window. When you add an LLB as a file, the VIs in the LLB do not appear in the <strong>Project Explorer</strong> window.</li>
+</ol>
+
+<p class="Body">You also can use the <a href="../lvprop/ProjectItem_Add_Item.html">Add Item</a> method to add an LLB to a project as a folder or as a file programmatically.</p>
+
+</body>
+</html>

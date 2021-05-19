@@ -1,0 +1,101 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Computing the One-Sided Probability</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-BDB11C73-1ED6-4041-A862-0F678830364F" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Computing the One-Sided Probability</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 The following equation defines the one-sided probability of a normally distributed random variable. 
+            	 
+         </p> 
+         	 
+         <p><em>p</em> = Prob(<em>X</em> &#8804; <em>x</em>) 
+            	 
+         </p> 
+         	 
+         <p>where <em>p</em> is the one-sided probability, <em>X</em> is a standard normal distribution with the mean value equal to zero and the variance equal to one, and <em>x</em> is the value. 
+            	 
+         </p> 
+         	 
+         <p>Suppose you measure the heights of 1,000 randomly selected adult males and obtain a data set <em>S</em>. The histogram distribution of <em>S</em> shows many measurements grouped closely about a mean height, with relatively few very short and very tall males in the population.
+            Therefore, you can closely approximate the histogram with the normal distribution. 
+            	 
+         </p> 
+         	 
+         <p>Next, you want to find the probability that the height of a male in a different set of 1,000 randomly chosen males is greater
+            than or equal to 170 cm. You first subtract the mean from 170 cm and scale the difference by the standard deviation to obtain
+            the normalized <em>x</em> value. You then can use the continuous cumulative distribution function (CDF) to compute the one-sided probability <em>p</em> from the normalized <em>x</em> value. 
+            	 
+         </p> 
+         	 
+         <p>The choice of the probability density function is fundamental to obtaining a correct probability value. 
+            	 
+         </p> 
+         	 
+         <p>In addition to the normal distribution method, you can use the following methods to compute <em>p</em>: 
+            	 
+         </p> 
+         	 <a name="GUID-BDB11C73-1ED6-4041-A862-0F678830364F__UL_B84D5D6AE3C34C97BE5508C43D8555D2" shape="rect">
+            <!-- --></a><ul id="GUID-BDB11C73-1ED6-4041-A862-0F678830364F__UL_B84D5D6AE3C34C97BE5508C43D8555D2">
+            <li><a name="GUID-BDB11C73-1ED6-4041-A862-0F678830364F__LI_064B8CECF16B4673B4DE959417B8AFC9" shape="rect">
+                  <!-- --></a>Chi-Square distribution 
+               		
+            </li>
+            <li><a name="GUID-BDB11C73-1ED6-4041-A862-0F678830364F__LI_BBFA315D7A5045BBB2F82D890248EDCB" shape="rect">
+                  <!-- --></a>F distribution 
+               		
+            </li>
+            <li><a name="GUID-BDB11C73-1ED6-4041-A862-0F678830364F__LI_4B989F6FCA4A456F930303AA4015D009" shape="rect">
+                  <!-- --></a>T distribution 
+               		
+            </li>
+         </ul> 
+         	 
+         <p> You also can find <em>x</em> with a known <em>p</em> by using the normal inverse CDF. The normal inverse CDF computes the values <em>x</em> that have the chance of lying in a normally distributed sample for a given <em>p</em>. For example, you might want to find the heights of males that have a 60% chance of lying in a randomly chosen data set.
+            
+            	 
+         </p> 
+         	 
+         <p>In addition to the inverse normal distribution method, you can use the following methods to compute <em>x</em>with a known <em>p</em>: 
+            	 
+         </p> 
+         	 <a name="GUID-BDB11C73-1ED6-4041-A862-0F678830364F__UL_9DA19C6B80184D1D993A730F457574A2" shape="rect">
+            <!-- --></a><ul id="GUID-BDB11C73-1ED6-4041-A862-0F678830364F__UL_9DA19C6B80184D1D993A730F457574A2">
+            <li><a name="GUID-BDB11C73-1ED6-4041-A862-0F678830364F__LI_4EFBC444CE0F42E287452F16ADFD26CD" shape="rect">
+                  <!-- --></a>Inverse Chi-Square distribution 
+               		
+            </li>
+            <li><a name="GUID-BDB11C73-1ED6-4041-A862-0F678830364F__LI_9944C66CDF5E4C10BE61570D48663771" shape="rect">
+                  <!-- --></a>Inverse F distribution 
+               		
+            </li>
+            <li><a name="GUID-BDB11C73-1ED6-4041-A862-0F678830364F__LI_410B40DAAF1146D59574D469AAC0B111" shape="rect">
+                  <!-- --></a>Inverse T distribution 
+               		
+            </li>
+         </ul> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="lvac_normal_dist.html" shape="rect">Normal Distribution</a></div>
+         </div>
+         <div class="relinfo"><strong>Related information</strong><br clear="none"><div><a href="../gmath/Continuous_CDF.html" shape="rect">Continuous CDF VI</a></div>
+            <div><a href="../gmath/Continuous_Inverse_CDF.html" shape="rect">Continuous Inverse CDF VI</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

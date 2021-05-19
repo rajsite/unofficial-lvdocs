@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 5700Edatalogginghlp -->
+
+<title>Logging Front Panel Data</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Logging Front Panel Data</h1>
+<!-- begin parent = ../lvconcepts/File_I_O.xml KM -->
+<p class="Body">Each time a VI runs, <a href="../lvconcepts/Logging_Front_Panel_Data.html">front panel data logging</a> saves the front panel data to a separate datalog file, which is in binary format.<!-- end parent = ../lvconcepts/File_I_O.xml KM --> You can retrieve the data in the following ways:
+</p>
+<ul>
+
+<li>Use the same VI from which you recorded the data to retrieve the data interactively.</li>
+<li>Use the VI <a href="Retrieving_Logged_FP_Data.html">as a subVI</a> to retrieve the data programmatically.</li>
+<li>Use the File I/O VIs and functions to retrieve the data.</li>
+</ul>
+
+<p class="Body">Each VI maintains a log-file binding that records the location of the datalog file where LabVIEW maintains the logged front panel data. Log-file binding is the association between a VI and the datalog file to which you log the VI data.
+</p>
+
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;LabVIEW does not support front panel data logging through remote panels.</td></tr></table>
+
+</body>
+</html>

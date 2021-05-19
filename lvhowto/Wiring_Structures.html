@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 2800Ewiringhlp -->
+
+<title>Wiring Structures</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Wiring Structures
+</h1>
+<p class="Body">You can wire directly from a terminal outside a <a href="../glang/Structures.html">structure</a> to a terminal inside the structure. LabVIEW creates a tunnel where the wire crosses the structure boundary. A tunnel allows data to flow in and out of loops and structures.
+						</p>
+
+<h2>Wiring to Avoid</h2>						
+<p class="Body">Avoid the following when wiring structures:</p>
+<ul>
+<li><a href="Overlapping_Tunnels_1.html">Overlapping tunnels</a>.
+</li>
+<li><a href="Wiring_from_Multiple_Frame.html">Wiring from multiple frames</a> of a <a href="../glang/Flat_Sequence.html">Stacked Sequence structure</a>.
+</li>
+<li><a href="Failing_to_Wire_a_Tunnel.html">Failing to wire a tunnel</a> in all cases of a Case structure.
+</li>
+<li><a href="Assigning_more_than_one_va.html">Assigning more than one value</a> to a sequence local terminal.
+</li>
+
+
+
+</ul>
+<p class="Body">For structures wired to only constants, LabVIEW uses <a href="../lvconcepts/Block_Diagram_Objects.html#ConstantFolding">constant folding</a> to optimize performance. <!--start parent  = lvconcepts.chm::Block_Diagram_Objects.html  tag="structure_behavior"-->You can configure LabVIEW to display hash marks inside constant folded structures by selecting <strong>Tools&raquo;Options&raquo;Block Diagram</strong> and placing a checkmark in the <strong>Show hash marks for constant folded structures</strong> checkbox in the <a href="../lvdialog/Block_Diagram_Options.html">Block Diagram page</a>.</p>
+
+
+
+
+</body>
+</html>

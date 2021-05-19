@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Front Panel Tests (VI Analyzer Toolkit)</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Front Panel Tests (VI Analyzer Toolkit)</h1>
+<!--begin child ../lvvianalyzerhelp/Block_Diagram_Tests.html-->
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;The VI Analyzer tests are available only if you install and activate the LabVIEW VI Analyzer Toolkit. Refer to the <a href="javascript:WWW(WWW_Analyzer)">NI website</a> for more information about the VI Analyzer Toolkit.</td>
+</tr>
+</table> 
+<!--end child ../lvvianalyzerhelp/Block_Diagram_Tests.html-->
+<p class="Body">Tests in the <span class="DNL">Front Panel</span> category of <a href="Test_Descriptions.html">VI Analyzer tests</a> analyze front panel design and style. The VI Analyzer groups the <span class="DNL">Front Panel</span> tests into the <span class="DNL">SubVI</span> and <span class="DNL">User Interface</span> subcategories.
+</p>
+<h2>SubVI</h2>
+<p class="Body">The tests in the following list check the appearance and arrangement of front panel controls on VIs used as subVIs.
+</p>
+<ul>
+<li><strong><span class="DNL">Array Default Values</span></strong>&#8212;Checks charts, graphs, and arrays on a front panel for empty default values. Saving non-empty default values inside charts, graphs, or arrays uses memory unnecessarily. When the VI runs, it overwrites values wired to indicators on the block diagram. If a subVI is using the VI, the VI overwrites values wired to controls connected to the connector pane.
+</li>
+<li><strong><span class="DNL">Cluster Sized to Fit</span></strong>&#8212;Checks that front panel clusters  are set to <strong>Size to Fit</strong>, <strong>Arrange Horizontally</strong>, or <strong>Arrange Vertically</strong>. If you do not select one of these autosizing options, cluster objects might not be visible to the user.
+</li>
+<li><strong><span class="DNL">Control Alignment</span></strong>&#8212;Checks that the alignment of controls on the front panel roughly matches the alignment of controls on the connector pane.
+</li>
+</ul>
+<h2><span class="DNL">User Interface</span></h2>
+<p class="Body">The tests in the following list analyze user interface design.
+</p>
+<ul>
+<li><strong><span class="DNL">Clipped Text</span></strong>&#8212;Checks that any visible text on the front panel is not cut off. This includes text in control labels, control captions, free labels, and text controls such as strings and paths. The test cannot check the text inside listboxes, tables, tree controls, and tab controls.
+</li>
+<li><strong><span class="DNL">Dialog Controls</span></strong>&#8212;Checks that front panel controls are from the System palette. The test ignores controls that do not have a dialog counterpart.
+</li>
+<li><strong><span class="DNL">Duplicate Control Labels</span></strong>&#8212;Checks that controls on the front panel do not share the same label.
+</li>
+<li><strong><span class="DNL">Empty List Items</span></strong>&#8212;Checks listbox, multicolumn listbox, table, and tree controls to ensure that they are empty. The VI populates the contents of these controls when it runs, so saving a VI with contents in these controls uses memory unnecessarily.
+</li>
+<li><strong><span class="DNL">Font Usage</span></strong>&#8212;Checks that front panel controls, indicators, and free labels use user-specified symbolic fonts, such as application, system, or dialog fonts. 
+</li>
+<li><strong><span class="DNL">Overlapping Controls</span></strong>&#8212;Checks that front panel controls do not overlap. The test does not analyze front panel decorations.
+</li>
+<li><strong><span class="DNL">Panel Size and Position</span></strong>&#8212;Checks that a front panel completely resides within the bounds of the screen. The test also checks whether the front panel is larger than the maximum specified width and height. If you are using a multi-monitor system, the test fails if the panel does not reside entirely within the bounds of the primary monitor. This test works only on standard, control, and global VIs.
+</li>
+<li><strong><span class="DNL">Scalar Chart Updates</span></strong>&#8212;Checks for waveform charts that receive individual updates. You can minimize the number of times the front panel updates by wiring array data to the chart terminal rather than scalar data.
+</li>
+<li><strong><span class="DNL">Synchronous Display</span></strong>&#8212;Checks for controls and indicators when you enable the <strong>Synchronous Display</strong> shortcut menu item. Enabling <strong>Synchronous Display</strong> causes the control or indicator to redraw every time LabVIEW updates the value of the object. Most applications do not require such rapid updating.
+</li>
+<li><strong><span class="DNL">Transparent Labels</span></strong>&#8212;Checks that free labels, control labels, and control captions all have transparent backgrounds.
+</li>
+</ul>
+	
+</body>
+</html>

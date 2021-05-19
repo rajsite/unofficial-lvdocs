@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4201Eeventshlp -->
+
+<title>Locking Front Panels</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Locking Front Panels
+</h1>
+<p class="Body">By default, when an event enters a queue, LabVIEW locks the front panel that contains the object that generated that event. LabVIEW keeps the front panel locked until all Event structures finish handling the event. While the front panel is locked, LabVIEW does not process front panel activity but places those interactions in a buffer and handles them when the front panel is unlocked. For example, if an event case launches an application that requires text entry from the user, the user might begin typing before the application appears on the front panel. If the <strong>Lock front panel until the event case for this event completes</strong> option is enabled, once the application launches and appears on the front panel, it processes the key presses in the order in which they occurred. If the <strong>Lock front panel until the event case for this event completes</strong> option is disabled, the key presses might be processed elsewhere on the front panel, since LabVIEW does not queue their execution to depend on the completion of the event case.</p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&#160;&#160;If an event case that locks the front panel takes a significant amount of time to execute, consider using the <a href="../glang/Set_Busy_Cursor.html">Set Busy</a> function or <a href="../lvhowto/Creating_a_Dialog_Box.html">displaying a dialog box</a> to notify the user that the front panel is locked.
+</td>
+</tr>
+</table>
+<p class="Body">Front panel locking does not affect certain actions, such as moving the window, interacting with the scroll bars, and clicking the <strong>Abort Execution</strong> button. </p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="caution.gif"></td>
+<td class="Dark-Red"><strong>Caution</strong>��If no Event structure executes promptly to handle an event and front panel locking is enabled, the user interface of the VI may become unresponsive. If this occurs, click the <strong>Abort Execution</strong> button to stop the VI. You can disable front panel locking by right-clicking the Event structure and removing the checkmark from the <strong>Lock front panel until the event case for this event completes</strong> checkbox in the <a href="../lvdialog/Edit_Events_Dialog_Box.html">Edit Events</a> dialog box. </td>
+</tr>
+</table>
+
+<p class="Body">You can disable front panel locking for notify events so that when an event enters a queue, all controls, including the one that generated the event, still can generate events. When multiple events occur, LabVIEW does not wait until the front panel is unlocked to handle them. Complete the following steps to disable front panel locking.</p>
+<ol>
+<li>Right-click the <a href="../glang/Event_Structure.html">Event structure</a> border and select <a href="../lvdialog/Edit_Events_Dialog_Box.html">Edit Events Handled by This Case</a> from the shortcut menu.</li>
+<li>Remove the checkmark from the <strong>Lock front panel until the event case for this event completes</strong> checkbox.</li>
+</ol>
+<p class="Body"></p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&#160;&#160;You cannot disable this option for filter events, because LabVIEW cannot finish processing a filter event until its case completes. Allowing LabVIEW to process other events while it is handling a filter event could cause events to occur out of order.
+</td>
+</tr>
+</table>
+
+</body>
+</html>

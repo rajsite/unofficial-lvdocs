@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 3500Edebugginghlp -->
+
+<title>Single-Stepping through a VI</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Single-Stepping through a VI
+</h1>
+<!-- begin parent = ../lvconcepts/Debug_Techniques.html -->
+<p class="Body">Single-step through a VI to view each action of the VI on the block diagram as the VI runs. The single-stepping buttons affect execution only in a VI or subVI in single-step mode. You can single-step through subVIs or run them normally.
+</p>
+<!-- end parent = ../lvconcepts/Debug_Techniques.html -->
+<p class="Body">Complete the following steps to single-step through a VI.
+</p>
+<ol>
+
+<li>Click the <strong>Start Single Stepping</strong> button on the block diagram toolbar.
+</li>
+<li>Click one of the following buttons:
+
+<p class="Body"><img src="noloc_env_stepinto.gif">&nbsp;<strong>Step Into</strong>&#8212;Opens a node and pauses. When you click the <strong>Step Into</strong> button again, it executes the first action and pauses at the next action of the subVI or structure. You also can press the &lt;Ctrl&gt; key and the down arrow key. <span class="Platform">(macOS)</span> Press the &lt;Command&gt;-down arrow keys. <span class="Platform">(Linux)</span> Press the &lt;Alt&gt;-down arrow keys.
+</p>
+
+
+<p class="Body"><img src="noloc_env_stepover.gif">&nbsp;<strong>Step Over</strong>&#8212;Executes a node and pauses at the next node. You also can press the &lt;Ctrl&gt; key and the right arrow key. <span class="Platform">(macOS)</span> Press the &lt;Command&gt;-right arrow keys. <span class="Platform">(Linux)</span> Press the &lt;Alt&gt;-right arrow keys.
+</p>
+
+
+<p class="Body"><img src="noloc_env_stepout.gif">&nbsp;<strong>Step Out</strong>&#8212;Finishes executing the current node and pauses. When the VI finishes executing, the <strong>Step Out</strong> button becomes dimmed. You also can press the &lt;Ctrl&gt; key and the up arrow key. <span class="Platform">(macOS)</span> Press the &lt;Command&gt;-up arrow keys. <span class="Platform">(Linux)</span> Press the &lt;Alt&gt;-up arrow keys.
+</p>
+<!-- begin parent = ../lvconcepts/Debug_Techniques.html -->
+<p class="Body">When you single-step through a VI, nodes blink to indicate they are ready to execute. </p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;<span class="Platform">(MathScript RT Module)</span> If the VI contains a <a href="../gmath/MathScript_Node.html">MathScript Node</a>, a blue arrow blinks next to lines of script to indicate they are ready to execute. </td>
+</tr>
+</table>
+
+<p class="Body">Move the cursor over the <strong>Step Over</strong>, <strong>Step Into</strong>, or <strong>Step Out</strong> button to view a tip strip that describes the next step if you click that button. If you single-step through a VI with <a href="../lvhowto/Execution_Highlighting.html">execution highlighting</a> on, an execution glyph appears on the icons of the subVIs that are currently running.</p>
+<!-- end parent = ../lvconcepts/Debug_Techniques.html -->
+</li>
+<li>End single-stepping by clicking the <strong>Step Out</strong> button when a blinking border surrounds the entire block diagram. The stepping buttons are dimmed when single-stepping is no longer active.
+</li>
+</ol>
+
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+<title>Reducing Data Copies with In Place Element Structures</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Reducing Data Copies with In Place Element Structures</h1>
+
+<p class="Body">The <a href="../lvconcepts/In_Place_Element.html">In Place Element</a> structure performs common data manipulation operations in a manner that does not require the LabVIEW compiler to make multiple data value copies or maintain those values in memory. </p>
+					<p class="Body">Complete the following steps to perform data manipulations by configuring an In Place Element structure.</p>
+					
+					<ol><li>Add an <a href="../glang/In_Place_Element_Structure.html">In Place Element</a> structure to the block diagram. <br><br><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object3846);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object3846);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Find</SPAN></li><li>Right-click the border of the In Place Element structure and select the border node you want to use. Each set of border nodes includes a border node on the left side of the structure and a border node on the right side of the structure.</li><li><a href="../lvhowto/Placing_Objects_Inside_Str.html">Add objects inside the In Place Element structure</a> to manipulate the array, cluster, waveform, or variant element. </li><li>Wire all required terminals on the border nodes. Otherwise, the VI is <a href="../lvhowto/Correcting_Broken_VIs.html">broken</a> and will not run.</li></ol>
+					<p class="Body">You can add multiple border nodes of various types to a single In Place Element structure.</p>
+
+
+
+</body>
+</html>

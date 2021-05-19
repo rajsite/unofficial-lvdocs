@@ -1,0 +1,94 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Swept Sine versus Multitone</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-07981F7F-CD31-4CBF-9875-CEFF376F52AB" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Swept Sine versus Multitone</h1> 
+      
+      
+      <div>
+         <p> 
+            
+         </p> 
+         	 
+         <p> 
+            		 
+            		 
+            		 To characterize a system, you often must measure the response of the system at many different frequencies. You can use
+            the following methods to measure the response of a system at many different frequencies: 
+            	 
+         </p> 
+         	 <a name="GUID-07981F7F-CD31-4CBF-9875-CEFF376F52AB__UL_C631800FEC234E229AC957813D4CF778" shape="rect">
+            <!-- --></a><ul id="GUID-07981F7F-CD31-4CBF-9875-CEFF376F52AB__UL_C631800FEC234E229AC957813D4CF778">
+            <li><a name="GUID-07981F7F-CD31-4CBF-9875-CEFF376F52AB__LI_EFC18100FD8C4386A591A1AF208C4FC9" shape="rect">
+                  <!-- --></a>Swept sine continuously and smoothly changes the frequency of a sine wave across a range of frequencies. 
+               		
+            </li>
+            <li><a name="GUID-07981F7F-CD31-4CBF-9875-CEFF376F52AB__LI_468C120114D34C2D8244077DD0BAD71A" shape="rect">
+                  <!-- --></a>Stepped sine provides a single sine tone of fixed frequency as the stimulus for a certain time and then increments the frequency
+               by a discrete amount. The process continues until all the frequencies of interest have been reached. 
+               		
+            </li>
+            <li><a name="GUID-07981F7F-CD31-4CBF-9875-CEFF376F52AB__LI_392F479AB3BD456FBC51D976C39578B8" shape="rect">
+                  <!-- --></a>Multitone provides a signal composed of multiple sine tones. 
+               		
+            </li>
+         </ul> 
+         	 
+         <p>A multitone signal has significant advantages over the swept sine and stepped sine approaches. For a given range of frequencies,
+            the multitone approach can be much faster than the equivalent swept sine measurement, due mainly to settling time issues.
+            For each sine tone in a stepped sine measurement, you must wait for the settling time of the system to end before starting
+            the measurement. 
+            	 
+         </p> 
+         	 
+         <p>The settling time issue for a swept sine can be even more complex. If the system has low-frequency poles and/or zeros or high
+            Q-resonances, the system might take a relatively long time to settle. For a multitone signal, you must wait only once for
+            the settling time. A multitone signal containing one period of the lowest frequency—actually one period of the highest frequency
+            resolution—is enough for the settling time. After the response to the multitone signal is acquired, the processing can be
+            very fast. You can use a single fast Fourier transform (FFT) to measure many frequency points, amplitude and phase, simultaneously.
+            
+            	 
+         </p> 
+         	 
+         <p>The swept sine approach is more appropriate than the multitone approach in certain situations. Each measured tone within a
+            multitone signal is more sensitive to noise because the energy of each tone is lower than that in a single pure tone. For
+            example, consider a single sine tone of amplitude 10 V peak and frequency 100 Hz. A multitone signal containing 10 tones,
+            including the 100 Hz tone, might have a maximum amplitude of 10 V. However, the 100 Hz tone component has an amplitude somewhat
+            less than 10 V. The lower amplitude of the 100 Hz tone component is due to the way that all the sine tones sum. Assuming the
+            same level of noise, the signal-to-noise ratio (SNR) of the 100 Hz component is better for the case of the swept sine approach.
+            In the multitone approach, you can mitigate the reduced SNR by adjusting the amplitudes and phases of the tones, applying
+            higher energy where needed, and applying lower energy at less critical frequencies. 
+            	 
+         </p> 
+         	 
+         <p>When viewing the response of a system to a multitone stimulus, any energy between FFT bins is due to noise or unit-under-test
+            (UUT) induced distortion. The frequency resolution of the FFT is limited by the measurement time. If you want to measure a
+            system at 1.000 kHz and 1.001 kHz, using two independent sine tones is the best approach. Using two independent sine tones,
+            you can perform the measurement in a few milliseconds, while a multitone measurement requires at least one second. The difference
+            in measurement speed is because you must wait long enough to obtain the required number of samples to achieve a frequency
+            resolution of 1 Hz. Some applications, such as finding the resonant frequency of a crystal, combine a multitone measurement
+            for coarse measurement and a narrow-range sweep for fine measurement. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Multitone_Generation.html" shape="rect">Multitone Generation</a></div>
+         </div>
+         <div class="relinfo relconcepts"><strong>Related concepts</strong><br clear="none"><div><a href="FFT_Fundamentals.html" shape="rect">FFT Fundamentals</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

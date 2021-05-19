@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+
+<title>Configuring Output Settings for Numeric Functions</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Configuring Output Settings for Numeric Functions</h1>
+				<p class="Body">The <a href="../glang/Numeric_Functions.html">Numeric</a> functions are <a href="../lvconcepts/Polymorphic_Functions.html">polymorphic functions</a>. When you wire two or more numeric inputs of different representations to a function, the function usually returns the data in the larger, or wider, representation. The functions coerce the smaller representations to the widest representation before execution and LabVIEW places a coercion dot on the terminal where the conversion takes place.</p>
+				<p class="Body">However, you can configure a Numeric function to return a data type you specify. If you select <a href="../lvconcepts/numeric_data.html#Using_FXP">fixed-point representation</a> as the output and remove the checkmark from the <strong>Adapt to source</strong> checkbox on the <a href="../lvpage/pp_Data_Type_DB.html">Data Type</a> page, you manually can configure the encoding of the output and how the function handles overflow and/or rounding conditions. After you remove the checkmark from this checkbox, a <a href="../lvconcepts/Coercion_Dots.html">blue coercion dot</a> appears on the output terminal of the function. In this situation, the width and range of the output type determines whether data loss occurs.</p>
+				<h2>Configuring Output Representation</h2>
+				<p class="Body">Complete the following steps to configure the representation for the output of a Numeric function.</p>
+				<ol><li>Right-click the function and select <strong>Properties</strong> from the shortcut menu to display the <strong>Object Properties</strong> dialog box.</li><li>On the <a href="../lvpage/pp_Output_Config_DB.html">Output Configuration</a> page, click the data type icon in the <strong>Representation</strong> section and select the data type you want to use for the output from the shortcut menu. LabVIEW removes the checkmark from the <strong>Adapt to source</strong> checkbox if the data type you select does not match the data type of the input values.</li><li>If you set <strong>Representation</strong> to <strong>FXP</strong> (<strong>Fixed-point</strong>), continue to the following section. Otherwise, click the <strong>OK</strong> button to close the dialog box and apply the configuration settings.</li></ol>
+				<h2>Configuring Settings for a Fixed-Point Output</h2>
+				<p class="Body">Complete the following steps to configure settings for a fixed-point output.</p>  
+				<ol>
+				<li>Right-click the Numeric function and select <strong>Properties</strong> from the shortcut menu to display the <strong>Object Properties</strong> dialog box.</li><li>On the <strong>Output Configuration</strong> page, click the data type icon in the <strong>Representation</strong> section and select the <strong>FXP</strong> (<strong>Fixed-point</strong>) icon from the shortcut menu. LabVIEW removes the checkmark from the <strong>Adapt to source</strong> checkbox because the fixed-point data type does not match the data type of the input values.</li>
+				<li>Select the <strong>Rounding mode</strong> to specify how the function handles <a href="../lvconcepts/numeric_data.html#FXP_quantization">rounding conditions</a>.</li><li>Select the <strong>Overflow mode</strong> to specify how the function handles <a href="../lvconcepts/numeric_data.html#FXP_overflow">overflow conditions</a>.</li><li>(Optional) Complete the following steps to configure the <strong>Encoding</strong> of the output.
+						<ol><li>Select <strong>Signed</strong> or <strong>Unsigned</strong> to specify whether you want to represent a signed or unsigned number.</li><li>In the <strong>Word length</strong> field, specify the total number of bits you want to use to represent the value of the output.</li><li>In the <strong>Integer word length</strong> field, specify the number of integer bits you want to use to represent the value of the output.</li></ol>
+				</li></ol>
+				<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;Specifying <strong>Encoding</strong> has a lower impact on performance than specifying <strong>Range</strong>. The performance impact of specifying <strong>Range</strong> is minimal. However, the performance impact can be significant if you run a VI that coerces values to a desired range on a target such as FPGA.</td></tr></table>
+				<ol start="6">
+					<li>(Optional) Complete the following steps to configure the <strong>Range</strong> of the output. If you select <strong>Wrap</strong> as the <strong>Overflow mode</strong>, you cannot configure the <strong>Range</strong> of the output because LabVIEW automatically sets the range to fit the encoding.
+						<ol><li>In the <strong>Minimum</strong> field, enter the minimum value to which you want the output to conform.</li><li>In the <strong>Maximum</strong> field, enter the maximum value to which you want the output to conform.</li><li>In the <strong>Delta</strong> field, enter the increment between numbers within the <strong>Range</strong>.</li></ol>
+					</li>
+				</ol>
+				<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;You cannot configure both <strong>Encoding</strong> and <strong>Range</strong> because the settings depend on each other. The settings you configure last are the settings that LabVIEW uses for the fixed-point number.</td></tr></table>
+				<ol start="7">
+				<li>(Optional) Place a checkmark in the <strong>Include overflow status</strong> checkbox to include an <a href="../lvconcepts/numeric_data.html#FXP_overflow">overflow status</a> in the fixed-point output. If one of the inputs of the Numeric function includes an overflow status, the fixed-point output also includes an overflow status, regardless of whether you place a checkmark in this checkbox.</li>
+				<li>Click the <strong>OK</strong> button to close the dialog box and apply the configuration settings.</li>
+				</ol>
+
+
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Group Delay</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-812716AC-B5F1-46D6-B93F-60FAE0CC79F0" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Group Delay</h1> 
+      
+      <div> 
+         	 
+         <p>One common use for the group delay is as a criterion to evaluate the phase nonlinearity of a filter. The following equation
+            defines the group delay: 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./rkset2Ftemp2Flvac_group_delay.xml_d16264e15.png"></span></div>
+         </div> 
+         	 
+         <p>where phase(f) is the phase response. 
+            	 
+         </p> 
+         	 
+         <p>If the phase response is linear, the group delay of the filter is constant, which means each frequency component experiences
+            the same delay. Otherwise, the frequency components have different delays, which cause the smearing phenomenon of the time-domain
+            signal. 
+            	 
+         </p> 
+         	 
+         <p>The following figure compares the effects of a Kaiser FIR lowpass filter and an Elliptic lowpass filter on the same input
+            signal. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-812716AC-B5F1-46D6-B93F-60FAE0CC79F0__IMAGE_010A31AE3BA94CCFB19158B5A65A3C6F" shape="rect">
+            <!-- --></a><img id="GUID-812716AC-B5F1-46D6-B93F-60FAE0CC79F0__IMAGE_010A31AE3BA94CCFB19158B5A65A3C6F" src="GUID-CEEC44BE-BCCF-4086-AD40-AD5E4ACCA91D-help-web.png"><br clear="none"> 
+         	 
+         <p>The first waveform, which is the input signal, is a periodic sinc pattern with an order of 12. 
+            	 
+         </p> 
+         	 
+         <p>The second waveform shows the effects of a Kaiser FIR lowpass filter on the input signal. The Kaiser filter has a linear phase
+            response, so the filter delays the input without distorting the signal. The waveform is similar to the input signal, except
+            for the delay and the attenuation. 
+            	 
+         </p> 
+         	 
+         <p>The third waveform shows the effects of an Elliptic lowpass filter on the input signal. The phase response of the Elliptic
+            filter is nonlinear, so the frequency components experience different delays. Thus, the shape of the waveform is different
+            from the input signal. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Practical__Nonideal__Filters.html" shape="rect">Practical Filters</a></div>
+         </div>
+         <div class="relinfo"><strong>Related information</strong><br clear="none"><div><a href="../lvanls/psp.html" shape="rect">Periodic Sinc Pattern VI</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

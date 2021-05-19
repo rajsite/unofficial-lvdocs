@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4200Estructureshlp -->
+
+<title>Caveats and Recommendations when Using Events in LabVIEW</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Caveats and Recommendations when Using Events in LabVIEW
+</h1> 
+<p class="Body">Because LabVIEW is a graphical programming interface, handling events is different from handling events in other programming languages. The following list describes some of the caveats and recommendations when incorporating events into LabVIEW applications:
+</p>
+<ul>
+<li>Ensure that <a href="../lvhowto/Event_Struct_Outside_Loop.html">Event structures can handle events whenever events occur</a>.
+</li>
+<li>Remember to <a href="../lvhowto/LatchBooleanEvent.html">read the terminal of a latched Boolean control</a> in its Value Change event case.
+</li>
+<li>Use a Case structure to <a href="../lvhowto/LatchBooleanEvent.html">handle undo operations for a latched Boolean control</a>.</li>
+<li>Use caution when you <a href="../lvhowto/OneCaseHndlMultNotfyEvnt.html">configure one case to handle multiple notify events</a>.
+</li>
+<li>You cannot <a href="../lvhowto/OneCaseHndlMultFiltEvnt.html">configure one case to handle multiple filter events</a> with different event data.
+</li>
+<li>If a While Loop that contains an Event structure terminates based on the value of a latched stop Boolean control, remember to <a href="../lvhowto/HndlStopLoopBool.html">handle the latched stop Boolean control</a> in the Event structure.
+</li>
+<li>Consider <a href="../lvhowto/EvntsVsWaitFPAct.html">using the Wait for Front Panel Activity function</a> if you do not need to monitor specific front panel objects programmatically.
+</li>
+<li>User interface events apply only to <a href="../lvhowto/EventsDirectUIOnly.html">direct user interaction</a>.
+</li>
+<li>Avoid <a href="../lvhowto/PromptUserwithDbox.html">using dialog boxes</a> in an event case with the Mouse Down? filter event.
+</li>
+<li>Avoid <a href="../lvhowto/TwoEvntStrctOneLp.html">placing two Event structures in one loop</a>.
+</li>
+<li>Avoid <a href="../lvhowto/Use_One_Event_Struct.html">using multiple Event structures</a> in the same VI.</li>
+<li><!--start parent = ../glang/Register_Events.html tag="dynamic_registration"-->When using <a href="../lvhowto/Dynamic_Register_Event.html">dynamic registration</a>, make sure you have a Register For Events function for each Event structure.<!--end parent = ../glang/Register_Events.html tag="dynamic_registration"-->
+</li>
+<li>If you register for the same event on both a VI and a Control class, LabVIEW generates the VI event first.</li>
+<li>When <a href="../lvhowto/Using_Events_and_Subpanels.html">using subpanel controls</a>, the top-level VI containing the subpanel control handles the event.</li>
+<li>If you need to generate or handle other events while handling the current event, consider using the <a href="../lvcomm/Reg_Event_CallBack.html">Register Event Callback</a> function.</li>
+<li>Use caution when selecting between a <a href="../lvconcepts/Notify_and_Filter_Events.html">notify or filter event</a>. An event case configured to handle a notify event cannot affect if or how LabVIEW processes a user interaction. If you want to modify if or how LabVIEW processes a user interaction, use a filter event.</li>
+<li>Do not use the <a href="../lvprop/VI_Pnl_Closing.html">Panel Close</a> notify event for important shutdown code unless you have taken steps to ensure that the VI does not abort when the panel closes. For example, be sure the application <a href="../lvconcepts/Dynamic_LoadCall_VIs.html">opens a reference</a> to the VI before a user can close the front panel. Alternatively, you can use the <a href="../lvprop/VI_Panel_CloseQ.html">Panel Close?</a> filter event, which occurs before the panel actually closes.</li>
+<li>If no Event structure executes promptly to handle an event and <a href="../lvhowto/Lock_FP.html">front panel locking</a> is enabled, the user interface of the VI may become unresponsive. You must ensure that the Event structure is in a loop that runs often enough to respond to <a href="../lvconcepts/What_Are_Events.html">user interface events</a> in a timely manner or disable front panel locking.</li>
+</ul>
+
+</body>
+</html>

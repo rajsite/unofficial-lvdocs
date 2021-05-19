@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4100Ebuildingexehlp -->
+
+<title>Enabling the Web Server in Stand-Alone Applications</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Enabling the Web Server in Stand-Alone Applications</h1>
+<p class="Body">To <a href="../lvhowto/Creating_HTML_Documents_an.html">embed the front panel</a> of a stand-alone application in an HTML document, <a href="Enabling_and_Configuring_t.html">enable and configure</a> the Web Server in a application as you would in a VI. Include the front panel of the VI and the HTML file in the installation.</p>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td>
+<strong>Note</strong>&nbsp;&nbsp;When you build an application, on the <a href="../lvdialog/VI_Settings_Tab.html">Source File Settings</a> page of the <a href="../lvdialog/Build_App_or_DLL_DB.html">Application Properties</a> dialog box, remove the checkmark from the <strong>Remove front panel</strong> checkbox for the VI you want to publish so that you can embed the front panel in an HTML document.</td></tr></table>
+
+<p class="Body">After you generate the application, the output folder contains both an <span class="Monospace">.ini</span> configuration file and a <span class="Monospace">niwebserver.conf</span> configuration file.</p>
+
+<p class="Body">In the <span class="Monospace">.ini</span> file, add the line <span class="Monospace">WebServer.Enabled=True</span> if it does not already exist. You also can copy the <span class="Monospace">WebServer*</span> preferences from the LabVIEW INI file for the LabVIEW development system to the <span class="Monospace">.ini</span> file for the application. You may need to modify these preferences to be appropriate for the application. </p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;When running the application, make sure no other application, including the LabVIEW development environment, uses the same port.</td>
+</tr>
+</table>
+
+<p class="Body">Use the <span class="Monospace">niwebserver.conf</span> file to configure other Web Server functionality in the application, such as the <a href="../lvhowto/root_directory.html">root directory of the Web Server</a>.</p>
+
+</body>
+</html>

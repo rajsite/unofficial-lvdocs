@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+
+<title>Creating Type Definitions and Strict Type Definitions</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<!--begin child: custcont.pdf--><h1>Creating Type Definitions and Strict Type Definitions
+</h1><!--end child: custcont.pdf-->
+<p class="Body">A <a href="../lvconcepts/Custom_Cont_Ind_Type.html#Type_Definitions_and_Strict_Type_Definitions">type definition or a strict type definition</a> is a custom control or indicator linked to the saved file for that custom control or indicator. <!--begin child: custcont.pdf-->When you save a custom control or indicator as a type definition, any data type changes you make to the type definition affect all instances of the type definition in all the VIs that use it. When you save a custom control or indicator as a strict type definition, any data type and cosmetic changes you make to the strict type definition affect all front panel instances of the strict type definition. <!-- Begin parent: ../lvconcepts/Custom_Cont_Ind_Type.html-->However, if you change a strict type definition, instances <a href="../lvconcepts/Custom_Cont_Ind_Type.html#Using_Type_Definitions_and_Strict_Type_Definitions">placed on block diagrams</a> as constants act as if the link is <em>not</em> strict, and LabVIEW updates the constant only with data type changes.<!-- End parent: ../lvconcepts/Custom_Cont_Ind_Type.html--></p>
+
+<p class="Body">Complete the following steps to create a type definition or a strict type definition.</p>
+<ol><li>Right-click a control, indicator, or constant you want to make a type definition and select <strong>Make Type Def.</strong> from the shortcut menu.</li>
+<li>Right-click the instance of the type definition and select <strong>Open Type Def.</strong> from the shortcut menu to display the <a href="../lvconcepts/Custom_Cont_Ind_Type.html#Using_the_Control_Editor_Window">Control Editor</a> window.</li>
+<li>(Optional) To create a strict type definition, select <strong>Strict Type Def.</strong> from the <strong>Control Type</strong> pull-down menu on the toolbar.</li>
+<li>Make the changes you want to the control or indicator. You can change the size, color, and relative position of the elements of a control or indicator and import images into the control or indicator.</li>
+<li>Select <strong>File&#0187;Apply Changes</strong> to apply the changes to the control or indicator. The <strong>Apply Changes</strong> menu item is available only after you make changes to the control or indicator. If you make changes to a control or indicator and try to close the Control Editor window without selecting <strong>File&#0187;Apply Changes</strong>, LabVIEW displays a message asking if you want to save the changes.</li>
+<li>Select <strong>File&#0187;Save</strong> to save the custom control or indicator as a type definition or a strict type definition. You can save the type definition or strict type definition in a directory or in an <a href="Saving_VIs_in_Existing_Lib.html">LLB</a>.</li></ol><!--end child: custcont.pdf-->
+
+
+
+
+</body>
+</html>

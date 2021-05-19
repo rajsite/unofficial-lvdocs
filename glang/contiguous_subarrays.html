@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<title>Contiguous and Noncontiguous Array Slices</title>
+<link rel="stylesheet" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<h1>Contiguous and Noncontiguous Array Slices</h1>
+<p class="Body">
+					
+To optimize performance, LabVIEW sometimes creates array slices from the arrays you wire to certain <a href="../glang/Array_Functions.html">Array</a> functions. An array slice is an array created from another array, and it contains some of the elements from the original array. 
+LabVIEW expresses an array slice as a <span class="Monospace"><strong>(sub)array</strong></span> in the <a href="../lvdialog/Context_Help_Window.html">Context Help</a> window when you move the cursor over the wire for the resulting array. For example, <span class="Monospace"><strong>(1-D (sub)array of)</strong></span> indicates that the function creates an array slice, while <span class="Monospace"><strong>(1-D array of)</strong></span> indicates the resulting array contains all of the resulting elements. </p>
+
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;The <a href="../lvdialog/Context_Help_Window.html">Context Help</a> window only differentiates between arrays and array slices if you <a href="../lvdialog/Execution.html">allow debugging</a> for the VI on the <strong>Execution</strong> page of the <strong>VI Properties</strong> dialog box. </td></tr></table>
+<p>If LabVIEW creates an array slice, it may create a contiguous array slice, which stores data adjacently, or a noncontiguous array slice, which stores data nonadjacently. If you wire an array slice to the <a href="preallo_read.html">Preallocated Read from Binary File</a> function, you might need to know whether the array slice is contiguous or noncontiguous, because the function provides different levels of <a href="../glang/preallo_read.html#preallocated_support">support</a> that depend on the array you use.</p>
+<h2>Determining Whether LabVIEW Creates a Contiguous or Noncontiguous Array Slice</h2>
+<p><a href="../glang/Array_Functions.html">Array</a> functions in LabVIEW access data in <a href="../lvconcepts/Grouping_Data_with.html#Creating_Multidimensional_Arrays">row-major order</a>. If you arrange the elements of an array in row-major order, then LabVIEW represents that array in memory contiguously. LabVIEW represents the following 2D array in memory contiguously as a 1D line from 0 to 15:    </p>
+<table class="Bordered">
+<tr>
+<td class="Bordered">0</td><td class="Bordered">1</td><td class="Bordered">2</td><td class="Bordered">3</td></tr>
+<tr>
+<td class="Bordered">4</td><td class="Bordered">5</td><td class="Bordered">6</td><td class="Bordered">7</td></tr>
+<tr>
+<td class="Bordered">8</td><td class="Bordered">9</td><td class="Bordered">10</td><td class="Bordered">11</td></tr>
+<tr>
+<td class="Bordered">12</td><td class="Bordered">13</td><td class="Bordered">14</td><td class="Bordered">15</td></tr>
+
+</table>
+
+<p>If you wire the previous array to the <a href="../glang/Index_Array.html">Index Array</a> function and set the <strong>index (row)</strong> input to 0, LabVIEW may return an array or a contiguous array slice. The array slice is contiguous because LabVIEW represents the values in adjacent memory offsets 0, 1, 2, 3. </p>
+<p>If you wire the previous array to the <a href="../glang/Index_Array.html">Index Array</a> function and set the <strong>index (col)</strong> input to 0, LabVIEW may return an array or a noncontiguous array slice. The array slice is noncontiguous because LabVIEW represents the values in nonadjacent memory offsets 0, 4, 8, 12.</p>
+
+
+<p>The following functions might return an array slice. If one of these functions returns an array slice, use the following guidelines to determine whether LabVIEW creates a contiguous or noncontiguous array slice:</p>
+<ul>
+<li><a href="../glang/Array_Subset.html">Array Subset</a>&#8212;If LabVIEW represents the output from this function contiguously in memory, it creates a contiguous array slice.</li>
+<li><a href="../glang/Reverse_1D_Array.html">Reverse 1D Array</a>&#8212;If you wire an array to this function, it creates a noncontiguous array slice. If you wire an already reversed array slice to this function, it creates a contiguous array slice.</li>
+<li><a href="../glang/Split_1D_Array.html">Split 1D Array</a>&#8212;If you wire an array to this function, it creates a contiguous array slice. If you wire a noncontiguous array slice to this function, the resulting array slice is either contiguous or noncontiguous based on how LabVIEW represents the array slice in memory.</li>
+<li><a href="../glang/Transpose_2D_Array.html">Transpose 2D Array</a>&#8212;This function creates a noncontiguous array slice unless you wire an already transposed array to the function.</li>
+<li><a href="../glang/Cluster_To_Array.html">Cluster to Array</a>&#8212;This function creates a contiguous array slice.</li>
+<li><a href="../glang/Index_Array.html">Index Array</a>&#8212;This function creates a contiguous array slice unless you specify to index the array column-wise.</li>
+<li><a href="../glang/Decimate_1D_Array.html">Decimate 1D Array</a>&#8212;This function creates a noncontiguous array slice.</li>
+</ul>
+</body>
+</html>

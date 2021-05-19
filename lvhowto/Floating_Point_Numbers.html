@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 2300Edatatypehlp -->
+
+<title>Floating-Point Numbers</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Floating-Point Numbers
+</h1>
+<p class="Body">Floating-point numbers in LabVIEW conform to the ANSI/IEEE Standard 754-1985. <!-- Begin parent: lvconcepts, Comparison_Functions.xml -->Not all real numbers can be represented in the ANSI/IEEE standard floating-point numbers. Because of this, comparisons using floating-point numbers may yield results you do not expect because of rounding errors.<!-- End parent: lvconcepts, Comparison_Functions.xml --> To avoid inaccurate results, you can round floating-point numbers to integers. For example, if you want the result of a calculation to contain two digits of precision, multiply the floating-point number by 100 and then round the product to an integer before you complete the calculation. You also can check to see whether two floating-point numbers are close to each other instead of equal to each other. For example, if the absolute value of the difference of two floating-point numbers is smaller than a defined tolerance, assume the numbers are equal.</p>
+
+<p>Refer to the <a href="Numeric_Data_Types_Table.html">Numeric Data Types Table</a> for more information about numeric data type bits, digits, and range. There are three types of floating-point numbers.</p>
+
+<table class="Borderless">
+<tr><td class="Icon"><img src="csgl.gif"></td><td><strong>Single-precision (SGL)&#8212;</strong>Single-precision, floating-point numbers have 32-bit IEEE single-precision format. Use single-precision, floating-point numbers when memory savings are important and you will not overflow the range of the numbers.</td></tr>
+
+<tr><td class="Icon"><img src="cdbl.gif"></td><td><strong>Double-precision (DBL)&#8212;</strong>Double-precision, floating-point numbers have 64-bit IEEE double-precision format. Double-precision is the default format for numeric objects. For most situations, use double-precision, floating-point numbers.</td></tr>
+
+<tr><td class="Icon"><img src="cext.gif"></td><td><strong>Extended-precision (EXT)&#8212;</strong>When you save extended-precision numbers to disk, LabVIEW <a href="../lvconcepts/How_LabVIEW_Stores_Data_in_Memory.html">stores</a> them in a platform-independent 128-bit format. In memory, the size and precision vary depending on the platform. Use extended-precision, floating-point numbers only when necessary. The performance of extended-precision arithmetic vary among platforms.</td></tr></table>
+
+<p class="Body">Data Acquisition VIs often return arrays of floating-point numbers.</p>
+
+
+
+
+</body>
+</html>

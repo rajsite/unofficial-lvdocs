@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script type="text/javascript">var noFeedbackLink = true;</script>
+<script src="common.js" type="text/javascript"></script>
+<title>Using WebVIs to Create User Interfaces for Web Services (Windows)</title>
+</head>
+<body>
+	
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Using WebVIs to Create User Interfaces for Web Services (Windows)</h1>
+
+	<p><strong>Parent Topic</strong>: <a href="../lvconcepts/WebServices.html">Overview: Web-Based Communication with a LabVIEW Application</a></p>
+	
+<p>If you want to create user interfaces to visualize data and interact with Web services through a web browser, integrate WebVIs into Web services. WebVIs are specialized VIs that generate HTML, JavaScript, and CSS files after you build them into a web application in LabVIEW NXG. WebVIs can communicate with Web services through HTTP methods and display the data acquired from the Web services.</p>
+
+<p>You must install LabVIEW NXG and the LabVIEW NXG Web Module to use WebVIs. Refer to the <a href="javascript:WWW(WWW_NXG)">LabVIEW NXG Manual</a> and <a href="javascript:WWW(WWW_NXGWeb)">LabVIEW NXG Web Module Manual</a> for detailed information about creating browser-based user interfaces.</p>
+	
+	<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;For more information about concepts in this topic, refer to the�<a href="../lvconcepts/WebServices.html">Web services introduction</a>�and�<a href="../lvhowto/web_service_tutorial.html">tutorial</a>. LabVIEW Web services are available only in the LabVIEW Full Development System and the LabVIEW Professional Development System.</td>
+</tr>
+</table>
+
+<p>Complete the following steps to create a user interface for a Web service by integrating a WebVI:</p>
+<ol>
+	<li>Develop a web application that communicates with the Web service:
+		<ol>
+			<li>Open LabVIEW NXG. </li>
+			<li><a href="javascript:WWW(WWW_NXGWeb)">Create a new web application</a> for communicating data with Web services using WebVIs.</li>
+			<li>Build the web application to generate HTML, JavaScript, CSS, and other files that are included in your application.</li>
+		</ol>
+	</li>
+	<li>Integrate the web application into your Web service:
+	<ol>
+		<li>In LabVIEW, create a public content folder in your Web service project and <a href="../lvhowto/WS_Static_Content.html">integrate static content</a> into the Web service.</li>
+		<li>Copy the entire web application output directory into the public content folder you create.</li>
+		</ol>
+	</li>
+	<li>Check if the user interface works as expected in a web browser. <a href="../lvhowto/ws_testing.html">Test and debug the Web service</a> to fix any unexpected issues.</li>
+	<li><a href="../lvconcepts/ws_distributing.html">Publish the Web service</a> to the NI Web Server.</li>
+</ol>
+
+
+</body>
+</html>

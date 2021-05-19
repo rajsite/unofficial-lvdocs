@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 3500Edebugginghlp -->
+
+<title>Correcting Broken VIs</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Correcting Broken VIs
+</h1>
+<!-- begin parent = um 3500Edebugging KM -->
+<p class="Body">If a VI does not run, it is a broken, or nonexecutable, VI. The <a href="../glang/LabVIEW_Toolbar.html">Run</a> button appears broken when the VI you are creating or editing contains errors. 
+</p>
+<p class="Body">Complete the following steps to find out why a VI is broken.
+</p>
+<ol>
+
+<li>Click the <a href="../glang/LabVIEW_Toolbar.html">broken Run button</a> or select <strong>View&#0187;Error List</strong> to display the <a href="../lvdialog/Error_List_Dialog_Box.html">Error list</a> window, which lists all the errors.
+</li>
+<li>Select the VI you want to correct from the <strong>Items with errors</strong> section, which lists the names of all VIs in memory that have errors.<!-- end parent = um 3500Edebugging KM --> The name of the currently active VI is highlighted when you first open the <strong>Error list</strong> window.
+</li></ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;Broken items appear with a red <img src="noloc_env_bderrorx.gif"> glyph beside the item name. Items that cause errors because they are being edited at the time the error occurs appear with a pencil icon beside the item name. Items that appear with no icons beside the item name broke because an item on which they depend is broken.</td></tr></table>
+<ol start="3">
+<li>(Optional) Place a checkmark in the <strong>Show Warnings</strong> checkbox to show all <a href="Warnings.html">warnings</a>.
+</li>
+<li>Select an error or warning description in the <strong>Error list</strong> window. <!-- begin parent = um 3500Edebugging KM -->The <strong>Details</strong> section describes the errors and in some cases recommends how to correct the errors.
+</li>
+<li>Click the <strong>Help</strong> button to display a topic in the <em>LabVIEW Help</em> that describes the error in detail and includes step-by-step instructions for correcting the error.</li>
+<li>Click the <strong>Show Error</strong> button or double-click the error description to highlight the area on the block diagram or front panel that contains the error.
+</li>
+<!-- end parent = um 3500Edebugging KM -->
+</ol>
+
+<h2>Common Causes of Broken VIs
+</h2>
+<p class="Body">Complete the following steps to check for the most common reasons why a VI is broken while you edit it.
+</p>
+<ol>
+
+<li>Confirm that the block diagram has no <a href="../lvconcepts/Using_Wires.html#Correcting_Broken_Wires">broken wires</a>.
+</li>
+<li>Confirm that you <a href="Wiring_Block_Diagram_Objec.html">wired</a> all block diagram terminals that required wiring.
+</li>
+<li>Determine if a subVI is broken by selecting <strong>View&#0187;Error List</strong> and checking all the entries in the <strong>Items with errors</strong> section for errors. You break a subVI if you edit its connector pane after you place its icon on the block diagram of the VI.
+</li>
+</ol>
+
+<p class="Body">You also can use <a href="../lvconcepts/Debug_Techniques.html">debugging techniques</a> to correct broken VIs.
+</p>
+
+
+
+</body>
+</html>

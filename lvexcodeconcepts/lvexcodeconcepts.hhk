@@ -1,0 +1,382 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD>
+<BODY>
+<OBJECT type="text/site properties">
+	<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="absolute paths">
+		<param name="See Also" value="absolute paths">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="path specifications">
+			<param name="Local" value="File_Manager.html#Conventional">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ANSI versions of functions">
+		<param name="Local" value="Unicode_ANSI_Version_Functs.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Call Library Function Node">
+		<param name="See Also" value="Call Library Function Node">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="array parameters">
+			<param name="Local" value="Array_and_String_Options.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="automating the process of calling shared libraries">
+			<param name="Local" value="import_wizard_advantages.html#Advantages_of_Import_Shared_Library_Wizard">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="configuring">
+			<param name="Local" value="Configuring_the_CLF_Node.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="creating parameter list">
+			<param name="Local" value="Configuring_the_CLF_Node.html#Configuring_Parameters">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="error checking">
+			<param name="Local" value="Configuring_the_CLF_Node.html#Calling_Functions_That_Expect_Other_Data_Types">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="passing resizable data">
+			<param name="Local" value="Array_and_String_Options.html#Alignment_Considerations">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="string parameters">
+			<param name="Local" value="Array_and_String_Options.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="calling">
+		<param name="See Also" value="calling">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="WIN32 API">
+			<param name="Local" value="Ex_3_Call_the_Win32_API.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="external APIs">
+			<param name="Local" value="Calling_External_APIs.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="hardware driver APIs">
+			<param name="Local" value="Ex_2_Call_HW_Driver_API.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="shared libraries">
+			<param name="Local" value="Ex_1_Call_a_Shared_Library.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="creating">
+		<param name="See Also" value="creating">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="VIs from shared libraries">
+			<param name="Local" value="importing_shared_library.html#Importing_Functions_from_a_Shared_Library_File">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="data types">
+		<param name="See Also" value="data types">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="supported by Import Shared Library Wizard">
+			<param name="Local" value="supp_data_ImportDllwiz.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="debugging">
+		<param name="See Also" value="debugging">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Call Library Function Node">
+			<param name="Local" value="Configuring_the_CLF_Node.html#Calling_Functions_That_Expect_Other_Data_Types">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="shared libraries and calls to shared libraries">
+			<param name="Local" value="Debug_DLLs_and_DLL_Calls.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="delaying name">
+		<param name="See Also" value="delaying name">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="operating system messages">
+			<param name="Local" value="Debug_DLLs_and_DLL_Calls.html#Troubleshooting_your_DLL">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DLL functions">
+		<param name="See Also" value="DLL functions">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="executing without interruption">
+			<param name="Local" value="Debug_DLLs_and_DLL_Calls.html#Troubleshooting_your_DLL">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DSSetHandleSize (LabVIEW Manager Function)">
+		<param name="See Also" value="DSSetHandleSize (LabVIEW Manager Function)">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="adjusting handle size">
+			<param name="Local" value="Array_and_String_Options.html#Alignment_Considerations">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="error checking">
+		<param name="See Also" value="error checking">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Call Library Function Node">
+			<param name="Local" value="Configuring_the_CLF_Node.html#Calling_Functions_That_Expect_Other_Data_Types">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="error handling">
+		<param name="See Also" value="error handling">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Call Library Function Node">
+			<param name="Local" value="Configuring_the_CLF_Node.html#Calling_Functions_That_Expect_Other_Data_Types">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="file manager functions">
+		<param name="Local" value="File_Manager.html">
+		</OBJECT>
+	<UL>
+<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="(see also managers)">
+			<param name="See Also" value="managers">
+			</OBJECT>	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="functions">
+		<param name="See Also" value="functions">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ANSI versions">
+			<param name="Local" value="Unicode_ANSI_Version_Functs.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Unicode versions">
+			<param name="Local" value="Unicode_ANSI_Version_Functs.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Import Shared Library wizard">
+		<param name="See Also" value="Import Shared Library wizard">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="advantages over the Call Library Function Node">
+			<param name="Local" value="import_wizard_advantages.html#Advantages_of_Import_Shared_Library_Wizard">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="overview">
+			<param name="Local" value="importing_shared_library.html#Importing_Functions_from_a_Shared_Library_File">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="supported data types for">
+			<param name="Local" value="supp_data_ImportDllwiz.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="importing">
+		<param name="See Also" value="importing">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="functions from shared library files">
+			<param name="Local" value="importing_shared_library.html#Importing_Functions_from_a_Shared_Library_File">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="shared library files">
+			<param name="Local" value="importing_shared_library.html#Importing_Functions_from_a_Shared_Library_File">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="LabVIEW Manager functions">
+		<param name="See Also" value="LabVIEW Manager functions">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="errors">
+			<param name="Local" value="CIN_Function_Errors.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="managers">
+		<param name="See Also" value="managers">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="LabVIEW Manager functions">
+			<param name="Local" value="LabVIEW_Manager_Routines.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="data types">
+			<param name="Local" value="Manager_Data_Types.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="file manager">
+			<param name="Local" value="File_Manager.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="memory manager">
+			<param name="Local" value="Memory_Manager.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="pointers as parameters">
+			<param name="Local" value="LabVIEW_Manager_Routines.html#Pointers_as_Parameters">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="support manager">
+			<param name="Local" value="Support_Manager.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="memory manager functions">
+		<param name="Local" value="Memory_Manager.html">
+		</OBJECT>
+	<UL>
+<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="(see also managers)">
+			<param name="See Also" value="managers">
+			</OBJECT>	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="module definition files">
+		<param name="Local" value="Module_Definition_Files.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="operating system messages">
+		<param name="See Also" value="operating system messages">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="delaying">
+			<param name="Local" value="Debug_DLLs_and_DLL_Calls.html#Troubleshooting_your_DLL">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="parameters">
+		<param name="See Also" value="parameters">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="pointers as parameters">
+			<param name="Local" value="LabVIEW_Manager_Routines.html#Pointers_as_Parameters">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="paths">
+		<param name="See Also" value="paths">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="relative paths on Linux systems">
+			<param name="Local" value="File_Manager.html#Conventional">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="shared libraries">
+		<param name="See Also" value="shared libraries">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="calling from LabVIEW">
+			<param name="Local" value="Shared_Libraries_DLLs.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="calling from LabVIEW (example)">
+			<param name="Local" value="Win_Ex_of_LV_Calls_to_DLLs.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="creating VIs from">
+			<param name="Local" value="importing_shared_library.html#Importing_Functions_from_a_Shared_Library_File">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="importing">
+			<param name="Local" value="Importing_Shared_Libraries.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="importing files to VIs">
+			<param name="Local" value="importing_shared_library.html#Importing_Functions_from_a_Shared_Library_File">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="locating missing libraries">
+			<param name="Local" value="locations_for_shared_libraries.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="module definition files">
+			<param name="Local" value="Module_Definition_Files.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="specifying location on disk">
+			<param name="Local" value="locations_for_shared_libraries.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="support manager functions">
+		<param name="Local" value="Support_Manager.html">
+		</OBJECT>
+	<UL>
+<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="(see also managers)">
+			<param name="See Also" value="managers">
+			</OBJECT>	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Unicode versions of functions">
+		<param name="Local" value="Unicode_ANSI_Version_Functs.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="wizards">
+		<param name="See Also" value="wizards">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Import Shared Library wizard">
+			<param name="Local" value="import_wizard_advantages.html#Advantages_of_Import_Shared_Library_Wizard">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="LabVIEW Instrument Driver Import Wizard">
+			<param name="Local" value="import_wizard_advantages.html#Advantages_of_Import_Shared_Library_Wizard">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="wrapper VIs">
+		<param name="See Also" value="wrapper VIs">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="creating from shared libraries">
+			<param name="Local" value="importing_shared_library.html#Importing_Functions_from_a_Shared_Library_File">
+			</OBJECT>
+	</UL>
+
+</UL>
+</BODY>
+</HTML>

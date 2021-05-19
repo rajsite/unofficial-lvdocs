@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 1900Edialogcihlp -->
+
+<title>Configuring Options for Tab Controls</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Configuring Options for Tab Controls</h1>
+<p class="Body">Configure tab controls by right-clicking a tab on the tab control and selecting from items on the shortcut menu.</p>
+
+<p class="Body">Complete the following steps to configure a tab control.</p>
+
+<ol>
+<li>Right-click a tab on the tab control.</li>
+<li>Select from the following shortcut menu items:
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;This is not a complete list of menu items you see when you right-click a tab on a tab control.</td>
+</tr>
+</table>
+<ul>
+<li><strong>Reorder Controls In Page</strong>&#8212;<a href="ChangingtheOrderofFPanelOb.html">Reorders the objects</a> on the active page for key navigation. LabVIEW disables this item if there are not at least two controls on the page.</li>
+<li><strong>Advanced</strong>&#8212;Select from the following items:
+
+<ul class="List-Hyphen">
+<li><strong>Hide Page</strong>&#8212;Hides the current page. <!-- Begin child: lvprop, Page Visible Property -->If you hide the default page, the next page becomes the default page. If the only visible page is the default page, you cannot hide the default page.<!-- End child: lvprop, Page Visible Property --> You also can use the <a href="../lvprop/Page_Page_Vis.html">Page Visible</a> property to hide a page of the tab control programmatically.</li>
+<li><strong>Page Enabled State</strong>&#8212;Modifies the enabled state of a page of the tab control. Select from <strong>Enabled</strong>, <strong>Disabled</strong>, and <strong>Disabled &amp; Grayed</strong>. You also can use the <a href="../lvprop/Page_Page_Enbld_State.html">Page Enabled State</a> property to modify the enabled state of a page of the tab control programmatically.</li>
+<li><strong>Show Hidden Page</strong>&#8212;Shows a specific hidden page by name. You also can use the <a href="../lvprop/Page_Page_Vis.html">Page Visible</a> property to show a hidden page of the tab control  programmatically.</li>
+<li><strong>Make Page Caption Match Label</strong>&#8212;Remove the checkmark next to this option to change the tab text without changing the page label associated with the page. To display the page label, right-click the tab and select <strong>Visible Items&#0187;Page Labels Display</strong> from the shortcut menu. Page labels correspond to the values of the enumerated type control on the block diagram.</li>
+<li><strong>Auto Grow</strong>&#8212;Increases the tab control size if an object you place on a page is outside the bounds of the tab control.</li>
+<li><strong>Size To Fit</strong>&#8212;The tab control resizes to fit its contents. If you enable this shortcut item, LabVIEW enables the <strong>Auto Grow</strong> item automatically.</li>
+<li><strong>Allow Multiple Colors</strong>&#8212;Allows different colors on the individual pages of a tab control.</li>
+<li><strong>Allow Multiple Rows</strong>&#8212;<!-- Begin child: lvpage.chm,TabControlProperties.html -->Arranges any tabs that extend beyond the width of the tab control into an additional row of tabs.<!-- End child: lvpage.chm,TabControlProperties.html --> Remove the checkmark next to this option to display navigation buttons on the upper right of the tab control. <!-- Begin child: lvpage.chm,TabControlProperties.html -->Use these navigation buttons to scroll through tabs that are not visible.<!-- End child: lvpage.chm,TabControlProperties.html --></li>
+<li><strong>Tab Size</strong>&#8212;Adjusts the size of the tabs. Select from <strong>Size Tabs To Contents</strong>, <strong>Size All Tabs To Largest Tab</strong>, or <strong>Fixed Tab Size</strong>. If you select <strong>Fixed Tab Size</strong>, use the Positioning tool to resize the individual tabs.<br><br>
+Place a checkmark by <strong>Justify Tabs</strong> to stretch each row of tabs to fill the entire width of the tab control. If the tab control has multiple rows of tabs, LabVIEW automatically justifies the tab size.</li>
+<li><strong>Tab Layout</strong>&#8212;Changes whether you can use text and/or images on the tabs of each tab control. You also can use this shortcut menu to add and remove images from the tabs.</li>
+<li><strong>Tab Location</strong>&#8212;Changes the location of the tabs on the tab control.</li></ul></li></ul></li></ol>
+
+<p class="Body"> You also can use the <a href="../lvprop/TabControl_p.html">TabControl</a> and <a href="../lvprop/Page_p.html">Page</a> properties to configure tab controls and individual tab control pages programmatically. You must obtain a reference to a tab control page before you can <a href="Config_Tab_Pages_Prog.html">configure an individual page</a>.</p>
+
+
+
+
+</body>
+</html>

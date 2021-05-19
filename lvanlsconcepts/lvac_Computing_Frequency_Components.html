@@ -1,0 +1,80 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Computing Frequency Components</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-B03474E8-F524-4733-9DBC-28E4456569EB" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Computing Frequency Components</h1> 
+      
+      
+      <div>
+         <p> 
+            
+         </p> 
+         	 
+         <p> 
+            		 Each frequency component is the result of a dot product of the time-domain signal with the complex exponential at that
+            frequency and is given by the following equation. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./puting_Frequency_Components.xml_d8749e23.png"></span></div>
+         </div> 
+         	 
+         <p>The DC component is the dot product of <em>x</em>(<em>n</em>) with [cos(0) - <em>j</em>sin(0)], or with 1.0. 
+            	 
+         </p> 
+         	 
+         <p>The first bin, or frequency component, is the dot product of <em>x</em>(<em>n</em>) with cos(2&#960;<em>n</em>/<em>N</em>) - <em>j</em>sin(2&#960;<em>n</em>/<em>N</em>). Here, cos(2&#960;<em>n</em>/<em>N</em>) is a single cycle of the cosine wave, and sin(2&#960;<em>n</em>/<em>N</em>) is a single cycle of a sine wave. 
+            	 
+         </p> 
+         	 
+         <p>In general, bin <em>k</em> is the dot product of <em>x</em>(<em>n</em>) with <em>k</em> cycles of the cosine wave for the real part of <em>X</em>(<em>k</em>) and the sine wave for the imaginary part of <em>X</em>(<em>k</em>). 
+            	 
+         </p> 
+         	 
+         <p>The use of the FFT for frequency analysis implies two important relationships. 
+            	 
+         </p> 
+         	 
+         <p>The first relationship links the highest frequency that can be analyzed to the sampling frequency and is given by the following
+            equation. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./puting_Frequency_Components.xml_d8749e266.png"></span></div>
+         </div> 
+         	 
+         <p>where <em>F</em><sub>max</sub> is the highest frequency that can be analyzed and <em>f</em><sub><em>s</em></sub> is the sampling frequency. 
+            	 
+         </p> 
+         	 
+         <p>The second relationship links the frequency resolution to the total acquisition time, which is related to the sampling frequency
+            and the block size of the FFT and is given by the following equation. 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./puting_Frequency_Components.xml_d8749e311.png"></span></div>
+         </div> 
+         	 
+         <p>where &#916;<em>f</em> is the frequency resolution, <em>T</em> is the acquisition time, <em>f</em><sub><em>s</em></sub> is the sampling frequency, and <em>N</em> is the block size of the FFT. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="FFT_Fundamentals.html" shape="rect">FFT Fundamentals</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

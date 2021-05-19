@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+<title>Adding Text to a 3D Scene</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Adding Text to a 3D Scene</h1>
+					<p class="Body">You can add text to a <a href="../lvconcepts/3D_Pic_Control.html">3D scene</a> that appears when you generate the scene by creating a text object. Complete the following steps to add text to a 3D scene.</p>
+						<ol><li>Add a 3D picture control to the front panel.
+<br><br><SPAN title=" Add to the front panel window "><a href="javascript:placeObjectFP(control73);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN>
+<SPAN title=" Find on the palette "><a href="javascript:findObjectFP(control73);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN>
+							</li><li>Add the <a href="../lvpict/Create_Object.html">Create Object</a> VI to the block diagram to the left of the 3D picture control terminal.
+								<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object3705);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object3705);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN>
+</li><li>Right-click the <strong>Scene:New Object</strong> output of the Create Object VI and select <strong>Create&#0187;Method for SceneObject Class&#0187;Set Drawable</strong> from the shortcut menu to add the <a href="../lvprop/SceneObject_Set_Drawable.html">Set Drawable</a> method to the block diagram.</li></ol>
+					<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;You also can <a href="../lvhowto/Class_Browser_New.html">use the Class Browser window</a> to browse for and create <a href="../lvconcepts/Manip_App_VI_Settings.html">properties and methods</a>.</td></tr></table>
+							<ol start="4"><li>Wire the <strong>Scene:New Object</strong> output of the Create Object VI to the reference input of the Set Drawable method.</li>
+							<li>Add the <a href="../lvpict/Create_Text.html">Create Text</a> VI to the block diagram to create a new text object.
+<br><br><SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object3957);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object3957);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN>
+</li>
+<li>Right-click the <strong>Text</strong> input of the Create Text VI and select <strong>Create&#0187;Constant</strong> from the shortcut menu to create a new constant.</li>
+<li>Enter the text you want to appear in the 3D scene in the constant you created in the previous step.</li>
+			<li>Right-click the <strong>New Text Refnum</strong> output of the Create Text VI and select <strong>Create&#0187;Property for SceneText Class&#0187;Character Size</strong> from the shortcut menu to add the <a href="../lvprop/SceneText_Character_Size.html">Character Size</a> property to the block diagram.</li>
+							<li>Wire the <strong>New Text Refnum</strong> output of the Create Text VI to the reference input of the Character Size property.</li>
+							<li>Right-click the Character Size property and select <strong>Change To Write</strong> from the shortcut menu.</li>
+							<li>Right-click the <strong>Character Size</strong> input of the Character Size property and select <strong>Create&#0187;Constant</strong> from the shortcut menu to create a new constant.</li>
+<li>Enter a value for the character size in the constant you created in the previous step.</li>
+<li>(Optional) <a href="../lvhowto/Resizing_Array_Functions.html">Expand the Character Size property node</a> to configure additional SceneText properties.</li>
+							<li>Wire the reference output of the Character Size property to the <strong>Drawable</strong> input of the Set Drawable method.</li>
+							<li>Wire the reference output of the Set Drawable method to the 3D picture control terminal. The following block diagram shows a 3D scene that contains the text <span class="Monospace">My Text</span>. The text is set to a character size of 2.</li></ol>
+					<p class="Anchor"><img src="loc_bd_3DSceneText.gif"></p>
+					<ol start="16">
+						<li>(Optional) For more configuration options, delete the wire that connects the Set Drawable method to the 3D picture control terminal and wire the reference output of the Set Drawable method to any <a href="../lvprop/SceneObject_p.html">SceneObject property</a> or <a href="../lvprop/SceneObject_m.html">method</a>.</li></ol>
+					<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;You cannot apply <a href="../lvconcepts/3D_Pic_Control.html#3D_Textures">texture</a> to a text object.</td></tr></table>
+					<ol start="17">
+					<li><a href="../lvhowto/Setting_Up_Error_I_O_in_VI.html">Wire error in and error out terminals</a> on the block diagram.</li> 
+						<li>Run the VI to generate the 3D scene.</li></ol>
+
+
+
+</body>
+</html>

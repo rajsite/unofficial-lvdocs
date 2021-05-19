@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4201Eeventshlp -->
+
+<title>Handling a Latched Stop Boolean Control in an Event Structure</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<H1>Handling a Latched Stop Boolean Control in an Event Structure</H1> 
+
+<p class="Body">You must configure an Event structure case to handle a latched stop Boolean control. When using events with latched Boolean controls, you must place the control inside the event case for the mechanical action of a latched Boolean control to work correctly.  </p>
+<p class="Body">The following example shows the recommended way to handle a latched stop Boolean control in an Event structure. In this example, if a user clicks the <strong>stop</strong> button, the application stops running, and the latched stop Boolean control resets to FALSE.</p>
+<p class="Anchor"><img src="loc_bd_typicaleventstatemach.gif"></p>
+
+<p class="Body">The Event structure is inside a While Loop and a Value Change event case is configured for the latched stop Boolean control. When you run this application, the executions completes in the following order:</p>
+<ol>
+<li>When the user clicks the <strong>stop</strong> button, the value of the latched stop Boolean control changes to TRUE, and the Event structure executes to handle the <span class="Monospace">"stop": Value Change</span> event case.</li>
+<li>The <span class="Monospace">"stop": Value Change</span> event case reads the front panel control, passes a TRUE value to the control terminal, and resets the <strong>stop</strong> button to FALSE.</li>
+<li> The While Loop conditional terminal reads the FALSE value and stops the loop.</li>
+</ol> 
+
+
+<h2>Related Information</h2>
+<p class="Body"><a href="../lvhowto/LatchBooleanEvent.html">Using Events with Latched Boolean Controls</a></p>
+<p class="Body"><a href="../lvhowto/Event_Struct_Outside_Loop.html">Ensure That Event Structures Handle Events whenever Events Occur</a></p>
+<p class="Body"><a href="../lvhowto/CfgEvents.html">Configuring Events Handled by the Event Structure</a></p>
+<p class="Body"><a href="../lvhowto/ChangeMechActOfBoolSwitch.html">Changing the Mechanical Action of a Boolean Object</a></p>
+
+
+
+
+</body>
+</html>

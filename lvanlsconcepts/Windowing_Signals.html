@@ -1,0 +1,152 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Windowing Signals</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-833E9A0C-2D15-4551-9EBD-87370D59E16B" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Windowing Signals</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 
+            		 
+            		 
+            		 Use smoothing windows to improve the spectral characteristics of a sampled signal. When performing Fourier or spectral
+            analysis on finite-length data, you can use smoothing windows to minimize the discontinuities of truncated waveforms, thus
+            reducing spectral leakage. The amount of spectral leakage depends on the amplitude of the discontinuity. As the discontinuity
+            becomes larger, spectral leakage increases, and vice versa. Smoothing windows reduce the amplitude of the discontinuities
+            at the boundaries of each period and act like predefined, narrowband, lowpass filters. 
+            	 
+         </p> 
+         	 
+         <p>The process of windowing a signal involves multiplying the time record by a smoothing window of finite length whose amplitude
+            varies smoothly and gradually towards zero at the edges. The length, or time interval, of a smoothing window is defined in
+            terms of number of samples. Multiplication in the time domain is equivalent to convolution in the frequency domain. Therefore,
+            the spectrum of the windowed signal is a convolution of the spectrum of the original signal with the spectrum of the smoothing
+            window. Windowing changes the shape of the signal in the time domain, as well as affecting the spectrum that you see. 
+            	 
+         </p> 
+         	 
+         <p>The following figure shows convolving the original spectrum of a signal with the spectrum of a smoothing window. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-833E9A0C-2D15-4551-9EBD-87370D59E16B__IMAGE_E3E91D9D7BAB4189AC3ECEA9325E124B" shape="rect">
+            <!-- --></a><img id="GUID-833E9A0C-2D15-4551-9EBD-87370D59E16B__IMAGE_E3E91D9D7BAB4189AC3ECEA9325E124B" src="GUID-38629D9A-9809-4D8D-8BC5-90A8FD1DCA39-help-web.png"><br clear="none"> 
+         	 
+         <p>Even if you do not apply a smoothing window to a signal, a windowing effect still occurs. The acquisition of a finite time
+            record of an input signal produces the effect of multiplying the signal in the time domain by a rectangular window. The rectangular
+            window has a rectangular shape and uniform height. The multiplication of the input signal in the time domain by the rectangular
+            window is equivalent to convolving the spectrum of the signal with the spectrum of the rectangular window in the frequency
+            domain, which has a sinc function characteristic. 
+            	 
+         </p> 
+         	 
+         <p>The following figure shows the result of applying a Hamming window to a time-domain signal. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-833E9A0C-2D15-4551-9EBD-87370D59E16B__IMAGE_56DDBAFDCA54454EB4ABD727CE31E14B" shape="rect">
+            <!-- --></a><img id="GUID-833E9A0C-2D15-4551-9EBD-87370D59E16B__IMAGE_56DDBAFDCA54454EB4ABD727CE31E14B" src="GUID-12EE66D8-D6BA-4AAB-9373-1A0E5A6347A6-help-web.png"><br clear="none"> 
+         	 
+         <p>In the previous figure, the time waveform of the windowed signal gradually tapers to zero at the ends because the Hamming
+            window minimizes the discontinuities along the transition edges of the waveform. Applying a smoothing window to time-domain
+            data before the transform of the data into the frequency domain minimizes spectral leakage. 
+            	 
+         </p> 
+         	 
+         <p>The following figure shows the effects of the following smoothing windows on a signal: 
+            	 
+         </p> 
+         	 <a name="GUID-833E9A0C-2D15-4551-9EBD-87370D59E16B__UL_74982208706841B89C86D0B3BF43C83D" shape="rect">
+            <!-- --></a><ul id="GUID-833E9A0C-2D15-4551-9EBD-87370D59E16B__UL_74982208706841B89C86D0B3BF43C83D">
+            <li><a name="GUID-833E9A0C-2D15-4551-9EBD-87370D59E16B__LI_AA5327EB5BA8477D9DE75659D4605DF1" shape="rect">
+                  <!-- --></a>Rectangular (none) 
+               		
+            </li>
+            <li><a name="GUID-833E9A0C-2D15-4551-9EBD-87370D59E16B__LI_0D019DBD65974AFFADB188697555B10D" shape="rect">
+                  <!-- --></a>Hanning 
+               		
+            </li>
+            <li><a name="GUID-833E9A0C-2D15-4551-9EBD-87370D59E16B__LI_416F22FBCAF142F79540E50A92764DEB" shape="rect">
+                  <!-- --></a>Flat top 
+               		
+            </li>
+         </ul> 
+         	 <br clear="none"><a name="GUID-833E9A0C-2D15-4551-9EBD-87370D59E16B__IMAGE_0F508181B22C4CBE912A10119C43E846" shape="rect">
+            <!-- --></a><img id="GUID-833E9A0C-2D15-4551-9EBD-87370D59E16B__IMAGE_0F508181B22C4CBE912A10119C43E846" src="GUID-AE61E8BB-A5A4-4999-8179-88CC9523162E-help-web.png"><br clear="none"> 
+         	 
+         <p>The data set for the signal in the previous figure consists of an integer number of cycles, 256, in a 1,024-point record.
+            If the frequency components of the original signal match a frequency line exactly, as is the case when you acquire an integer
+            number of cycles, you see only the main lobe of the spectrum. The smoothing windows have a main lobe around the frequency
+            of interest. The main lobe is a frequency-domain characteristic of windows. The rectangular window has the narrowest lobe.
+            The Hanning and flat top windows introduce some spreading. The flat top window has a broader main lobe than the rectangular
+            or Hanning windows. For an integer number of cycles, all smoothing windows yield the same peak amplitude reading and have
+            excellent amplitude accuracy. Side lobes do not appear because the spectrum of the smoothing window approaches zero at &#916;<em>f</em> intervals on either side of the main lobe. 
+            	 
+         </p> 
+         	 
+         <p>The previous figure also shows the values at frequency lines of 254 Hz through 258 Hz for each smoothing window. The amplitude
+            error at 256 Hz equals 0 dB for each smoothing window. The graph shows the spectrum values between 240 Hz and 272 Hz. The
+            actual values in the resulting spectrum array for each smoothing window at 254 Hz through 258 Hz are shown below the graph.
+            &#916;<em>f</em> equals 1 Hz. 
+            	 
+         </p> 
+         	 
+         <p>If a time record does not contain an integer number of cycles, the continuous spectrum of the smoothing window shifts from
+            the main lobe center at a fraction of &#916;<em>f</em> that corresponds to the difference between the frequency component and the fast Fourier transform (FFT) line frequencies.
+            This shift causes the side lobes to appear in the spectrum. In addition, amplitude error occurs at the frequency peak because
+            sampling of the main lobe is off center and smears the spectrum. The following figure shows the effect of spectral leakage
+            on a signal whose data set consists of 256.5 cycles. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-833E9A0C-2D15-4551-9EBD-87370D59E16B__IMAGE_2574C2C3BE494C489F50AC0004F06D2D" shape="rect">
+            <!-- --></a><img id="GUID-833E9A0C-2D15-4551-9EBD-87370D59E16B__IMAGE_2574C2C3BE494C489F50AC0004F06D2D" src="GUID-1FEC79C1-098B-435F-83A8-D80C318E8BCE-help-web.png"><br clear="none"> 
+         	 
+         <p>In the previous figure, for a noninteger number of cycles, the Hanning and flat top windows introduce much less spectral leakage
+            than the rectangular window. Also, the amplitude error is better with the Hanning and flat top windows. The flat top window
+            demonstrates very good amplitude accuracy and has a wider spread and higher side lobes than the Hanning window. 
+            	 
+         </p> 
+         	 
+         <p>The following figure shows the windowed and non-windowed spectrums of a signal composed of the sum of two sinusoids. The frequencies
+            shown are in units of cycles. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-833E9A0C-2D15-4551-9EBD-87370D59E16B__IMAGE_BA3E3F6B44064269BE8B5481E0B852C7" shape="rect">
+            <!-- --></a><img id="GUID-833E9A0C-2D15-4551-9EBD-87370D59E16B__IMAGE_BA3E3F6B44064269BE8B5481E0B852C7" src="GUID-EA05F098-ECC5-45BA-8A0E-86ED43809DAE-help-web.png"><br clear="none"> 
+         	 
+         <p>In the previous figure, the non-windowed spectrum shows leakage that is more than 20 dB at the frequency of the smaller sinusoid.
+            
+            	 
+         </p> 
+         	 
+         <p>You can apply more sophisticated techniques to get a more accurate description of the original time-continuous signal in the
+            frequency domain. However, in most applications, applying a smoothing window is sufficient to obtain a better frequency representation
+            of the signal. 
+            	 
+         </p> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Smoothing_Windows.html" shape="rect">Smoothing Windows</a></div>
+         </div>
+         <div class="relinfo relconcepts"><strong>Related concepts</strong><br clear="none"><div><a href="lvac_flat_top.html" shape="rect">Flat Top</a></div>
+            <div><a href="lvac_hamming.html" shape="rect">Hamming</a></div>
+            <div><a href="lvac_hanning.html" shape="rect">Hanning</a></div>
+            <div><a href="lvac_rectangular_window.html" shape="rect">Rectangular (None)</a></div>
+            <div><a href="Spectral_Leakage.html" shape="rect">Spectral Leakage</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

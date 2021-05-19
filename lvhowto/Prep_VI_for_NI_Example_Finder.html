@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<!-- Unit name: 4200Estructureshlp -->
+
+<title>Preparing Example VIs to Appear in the NI Example Finder</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Preparing Example VIs to Appear in the NI Example Finder</h1>
+					
+<p class="Body">Complete the following steps <!-- Begin child:glang.chm,Tools_Menu.html -->to prepare example VIs you create to <a href="Finding_Example_VIs.html">appear in the NI Example Finder</a><!-- End child:glang.chm,Tools_Menu.html --> and build the data (<span class="Monospace">.bin3</span>) file that stores the task-based browse paths, keywords, and other information about the example VIs you document.  LabVIEW uses the <span class="Monospace">.bin3</span> file to display example VIs in the NI Example Finder.</p>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;Make sure the example VIs you document are not write protected.</td></tr></table>
+
+<ol>
+<li>Select <strong>Tools&#0187;Prepare Example VIs for NI Example Finder</strong> to display the <a href="../lvdialog/Prepare_VIs_for_NIExFndr_db.html">Prepare Example VIs for NI Example Finder</a> dialog box.</li>
+<li>Click the browse button next to the <strong>Start directory for examples</strong> text box, navigate to <!--begin child=lvdialog.chm,Build_Data_File_tab.html-->the directory that contains the example VIs or projects you want to appear in the NI Example Finder<!--end child=lvdialog.chm,Build_Data_File_tab.html-->, and click the <strong>Select Folder</strong> button. </li></ol>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td>
+<strong>Note</strong>&nbsp;&nbsp;<!--begin child=../lvdialog/Prepare_VIs_for_NIExFndr_db.html-->The example VIs you created and the <span class="Monospace">.bin3</span> file must reside in the following subdirectories of the <span class="Monospace">labview</span> directory:
+<ul><li>example VIs&#8212;<span class="Monospace">examples</span>, <span class="Monospace">instr.lib</span>, or <span class="Monospace">user.lib</span>. For example, <span class="Monospace">labview\user.lib\my_examples</span> is an acceptable directory in which to include the example VIs. The example VIs also must reside in a directory structure identical to the directory structure in which they will reside on the user computer.</li>
+<li><span class="Monospace">.bin3</span> file&#08212;<span class="Monospace">examples\exbins</span>, <span class="Monospace">instr.lib</span>, or <span class="Monospace">user.lib</span></li>
+</ul><!--end child-../lvdialog/Prepare_VIs_for_NIExFndr_db.html--></td></tr></table>
+								
+<ol start="3">
+<li>In the <strong>Double-click the example to document</strong> list, navigate to and double-click the example VI you want to document. The VI name appears in the <strong>Documentation</strong> table. <!--begin parent=lvdialog.chm,Prepare_VIs_for_NIExFndr_db.html-->The ADE (application development environment) and version of the ADE in which you created the example VI or project appear in the <strong>Documentation</strong> table when you scroll up. You cannot change the <strong>ADE</strong> and <strong>Version</strong> values. <!--end parent=lvdialog.chm,Prepare_VIs_for_NIExFndr_db.html--></li>
+<li>Add task-based browse paths to the example VI for users to navigate to the example VI by task on the <strong>Browse</strong> page of the NI Example Finder.
+	<ol class="List-abc">
+	<li>In the <strong>Double-click to add a browse path</strong> list, choose an appropriate task-based browse path for the example VI.</li>
+	<li>Navigate to the lowest level of the category, then double-click the gray icon to add the category.</li></ol>
+The task-based browse path appears in the <strong>Documentation</strong> table. You also can <a href="Copy_Browse_Paths_Keywords.html">copy browse paths</a> from one example VI to another. Double-click the browse path in the <strong>Documentation</strong> table to remove the browse path from the example VI.</li>
+<li>(Optional) Repeat step 4 to add more task-based browse paths to the example VI.</li>
+<li>Add keywords to the example VI for users to enter on the <strong>Search</strong> page of the NI Example Finder.
+	<ol class="List-abc">
+	<li>In the <strong>Double-click to add a word</strong> listbox, scroll through the list to find a keyword and double-click the word to add it to the example VI. The keyword appears in the <strong>Documentation</strong> table.</li>
+	<li>Enter a word into the <strong>New keyword</strong> text box and click the <strong>Add New Keyword</strong> button to add a new keyword to the <strong>Double-click to add a word</strong> listbox.</li> 
+	<li>Double-click the new keyword in the <strong>Double-click to add a word</strong> listbox to add the keyword to the example VI. The keyword appears in the <strong>Documentation</strong> table. </li> </ol>
+You also can <a href="Copy_Browse_Paths_Keywords.html">copy keywords</a> from one example VI to another. Double-click the keyword in the <strong>Documentation</strong> table to remove the keyword from the example VI. Select the keyword in the <strong>Double-click to add a word</strong> listbox and click the <strong>Remove Keyword</strong> button to remove a keyword from the list of keywords.</li>
+<li>(Optional) Repeat step 6 to add more keywords to the example VI.
+
+<table class="Borderless"><tr><td class="Icon"><img src="tip.gif"></td><td> <strong>Tip</strong>&nbsp;&nbsp;Click the <strong>Save Documentation</strong> button to save the example VI documentation you have added. After you save the example VI documentation, you can proceed through step 13 or you can close this dialog box and finish documenting the example VI later. Relaunch the <a href="../lvdialog/Prepare_VIs_for_NIExFndr_db.html">Preparing Examples for NI Example Finder</a> dialog box and navigate to the example VI in the <strong>Double-click the example to document</strong> list to edit the example VI documentation you saved. </td></tr></table>
+</li>
+<li>If you have not <a href="CreatingEditing_VI_Desc.html">entered a description</a> for the example VI, enter a description in the <strong>Example description</strong> text box. The description appears in the <strong>Description</strong> text box of the NI Example Finder when a user selects the VI. <!--begin child=lvdialog.chm,Prepare_VIs_for_NIExFndr.html-->If you already <a href="CreatingEditing_VI_Desc.html">entered</a> a description for the example VI on the <a href="../lvdialog/Documentation_Properties.html">Documentation</a> page of the <strong>VI Properties</strong> dialog box, the description appears in the <strong>Example description</strong> text box.<!--end child=lvdialog.chm,Prepare_VIs_for_NIExFndr.html--> </li>
+<li>Click the <strong>Save Documentation</strong> button to save the documentation to the example VI. <!--begin child=lvdialog.chm,Prepare_VI_for_NIExFndr_db.html-->Clicking this button overrides any existing task-based browse paths, keywords, and description you entered in the <strong>Example description</strong> text box or in the example VI on the <strong>Documentation</strong> page of the <strong>VI Properties</strong> dialog box.<!--end child=lvdialog.chm,Prepare_VI_for_NIExFndr_db.html--> </li> 
+<li>(Optional) You also can <a href="Copy_Browse_Paths_Keywords.html">copy the description</a> from one example VI to another.</li>
+<li>Repeat steps 1 through 10 for each VI you want to appear in the NI Example Finder.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;<!-- Begin child:lvdialog.chm, Prepare_VIs_for_NIExFndr.html-->If an example VI is part of a project-based example and that example VI can run independently of the LabVIEW project, you can document both the project and example VI. To document a project, navigate to and select the project file (<span class="Monospace">.lvproj</span>) in the <strong>Double-click the example to document</strong> list.<!-- End child:lvdialog.chm, Prepare_VIs_for_NIExFndr.html--> Complete the steps listed above.</td></tr></table>
+</li>
+<li><!--begin child=lvdialog.chm,Prepare_VIs_for_NIExFnder_db.html-->Build the <span class="Monospace">.bin3</span> file that stores the task-based browse paths, keywords, and other information about example VIs you document.<!--end child=lvdialog.chm,Prepare_VIs_for_NIExFnder_db.html-->
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td>
+<strong>Note</strong>&nbsp;&nbsp;You must add a task-based browse path or a keyword for example VIs you created to appear in the NI Example Finder. If you add only a task-based browse path, the example VIs you created appear only on the <strong>Browse</strong> page of the NI Example Finder. If you add only a keyword, the example VIs you created appear only on the <strong>Search</strong> page of the NI Example Finder.</td></tr></table>
+
+		<ol class="List-abc" style="margin-left: 36.00pt">
+		<li>Click the <strong>Build Data File</strong> tab.</li>
+		<li>Click the browse button next to the <strong>Data file to create (bin3)</strong> text box, and navigate to the directory where you want to save the <span class="Monospace">.bin3</span> file. In order for LabVIEW to locate the <span class="Monospace">.bin3</span> file, you must save it in one of the following locations within the <span class="Monospace">labview</span> directory:
+		<ul>
+			<li>examples\exbins</li>
+			<li>instr.lib</li>
+			<li>user.lib</li>
+		</ul>
+		</li>
+		<li>Enter a meaningful name for the <span class="Monospace">.bin3</span> file and include the file extension. For example, enter <span class="Monospace-Italic">myexamples</span><span class="Monospace">.bin3</span>, where <span class="Monospace-Italic">myexamples</span> is the name of the <span class="Monospace">.llb</span> that contains the example VIs you created. After you enter a name, click the <strong>OK</strong> button.
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;<!-- begin child ../lvhowto/modification_instruction.html-->LabVIEW reserves the following prefixes and you cannot use them when you name the <span class="Monospace">.bin3</span> file: <span class="Monospace">ms</span>, <span class="Monospace">test</span>, <span class="Monospace">lv</span>, <span class="Monospace">daq</span>, <span class="Monospace">cvi</span>, <span class="Monospace">tree</span>, <span class="Monospace">fr</span>, <span class="Monospace">de</span>, <span class="Monospace">ja</span>, <span class="Monospace">vi</span>, <span class="Monospace">im</span>, <span class="Monospace">dsc</span>, <span class="Monospace">rt</span>, <span class="Monospace">_</span>, <span class="Monospace">ko</span>, <span class="Monospace">zh</span>, <span class="Monospace">it</span>, and <span class="Monospace">es</span>.<!-- end child ../lvhowto/modification_instruction.html--></td>
+</tr>
+</table>
+</li>
+		<li>Click the browse button next to the <strong>Directory that contains the examples</strong> text box, navigate to the directory that contains the example VIs you want to appear in the NI Example Finder, and click the <strong>Select Folder</strong> button.</li>
+		<li>Click the <strong>Build File</strong> button to build the data file.</li></ol>
+		</li>
+
+<li>Click the <strong>Done</strong> button to exit the <strong>Prepare Example VIs for NI Example Finder</strong> dialog box.</li></ol>
+
+
+
+</body>
+</html>

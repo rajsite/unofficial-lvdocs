@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+
+<title>Converting an Array to a Matrix</title>
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Converting an Array to a Matrix</h1>
+<p class="Body">You can convert a 1D or 2D array of double-precision or complex numbers to a  <a href="../lvconcepts/Using_Matrices.html">matrix</a> and continue to use array functions to manipulate the matrix values. Complete the following steps to convert an array to a matrix.</p>
+<ol>
+<li>Add a 1D or 2D array of floating-point values to the front panel.
+<br>
+<br>
+<SPAN title=" Add to the front panel window "><a href="javascript:placeObjectFP(control16);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObjectFP(control16);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Find</SPAN><br><br></li>
+<li>Add the <a href="../glang/Array_To_Matrix.html">Array To Matrix</a> function to the block diagram.
+<br>
+<br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object3327);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Add</SPAN> <SPAN title=" Find on the palette "><a href="javascript:findObject(object3327);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a> Find</SPAN><br><br>
+</li>
+<li>Wire the array to the Array To Matrix function.</li>
+<li>Right-click the Array To Matrix function and select <strong>Create&#0187;Indicator</strong> from the shortcut menu to create a matrix indicator.</li>
+<li>Run the VI. The matrix indicator displays the contents of the original array.</li>
+</ol>
+<p class="Body">If you wire a 1D array to the Array to Matrix function, the function copies the array elements to the first column of the matrix. The function converts arrays that contain complex elements to complex matrices and converts all other arrays to real matrices. LabVIEW stores matrix elements with double-precision numerical values. You also can <a href="Converting_a_Matrix_to_an_Array.html">convert a matrix to an array</a>.
+</p>
+
+
+</body>
+</html>

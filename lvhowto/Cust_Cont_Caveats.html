@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 02200Eblockdiagramhlp -->
+
+<title>Caveats and Recommendations when Creating Custom Controls and Indicators</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Caveats and Recommendations when Creating Custom Controls and Indicators</h1>
+<p class="Body">The following list describes some of the caveats and recommendations to consider when you create custom controls and indicators:</p>
+
+<ul><li>Graphics you create on one platform look slightly different when you load them on another platform. For example, a graphic with an irregular shape on a transparent background might have a solid white background on <a href="../lvconcepts/Porting_Among_Platforms.html#Picture_Differences">another platform</a>.</li>
+<li>Customizing a control or indicator in the <a href="../lvconcepts/Custom_Cont_Ind_Type.html#Using_the_Control_Editor_Window">Control Editor</a> window changes only the appearance of the control or indicator, not the behavior of the control or indicator. You cannot use the Control Editor window to change the way a control or indicator displays data. You also cannot use the Control Editor window to change the way a control or indicator behaves when you edit it, such as when you resize it. For example, when you make a ring control taller, the increment and decrement arrows also increase in height. If you move the increment and decrement arrows so they are side by side at the bottom of a ring control, the buttons become taller when the ring control becomes taller.</li>
+
+<li>If you experience irregular editing behavior using a custom control or indicator, use a <a href="Creating_Type_Defs.html">strict type definition</a> to correct this error.</li>
+
+<li>Controls and indicators may customize differently depending on the style of the control or indicator. For example, when you change the color of a modern style numeric control, the color of the increment and decrement buttons change as well. On a silver style numeric control, the color of the increment and decrement buttons do not change.</li>
+</ul>
+</body>
+</html>

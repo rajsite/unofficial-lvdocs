@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<title>Creating XControl Properties</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Creating XControl Properties</h1>
+
+<p class="Body"><a href="../lvconcepts/Using_LabVIEW_XControls.html">XControl</a> properties allow the user of an XControl to configure the XControl programmatically. The user of an XControl uses a <a href="../glang/Property_Node.html">Property Node</a> to get and set XControl properties. LabVIEW calls the <a href="../lvconcepts/Creating_an_XControl_Facade.html">Facade VI</a> after the user gets or sets a custom XControl property. If using the property changes the display state, the Facade VI updates the display state so that the XControl can update its appearance. A <a href="../lvprop/FacadeVI_DsplyStateChng.html">Display State Change</a> event is generated on the Facade VI in this case.</p>
+
+<p class="Body">In the XControl library, each XControl property is represented by one or more VIs, depending on if the property is read-only, write-only, or read/write. Each VI represents the read or write functionality of the property.</p>
+
+<p class="Body">Complete the following steps to add a property to an <a href="../lvconcepts/Using_LabVIEW_XControls.html">XControl library</a>.</p>
+
+<ol>
+<li>Right-click the XControl library and select <strong>New&#0187;Property</strong> from the shortcut menu to display the <a href="../lvdialog/Create_Property_DB.html">Create Property</a> dialog box. Use this dialog box to add a property to the XControl library.<br><br>
+LabVIEW creates a folder with the same name as the property in the XControl library. If you create a read/write property, the property folder contains a VI for reading from the property and a VI for writing to the property. If you create a read-only or write-only property, the property folder contains only one VI for reading from or writing to the property, respectively.</li>
+</ol>
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;The property folder cannot contain more than two VIs.</td></tr></table>
+<ol start="2">
+<li>To edit the property, double-click each VI in the property folder to open the VI that represents read or write functionality of  the property.</li>
+</ol>
+
+<h2>Editing the Read VI</h2>
+
+<p class="Body">The read VI represents the read functionality of an XControl property. The read VI includes display state and container state controls and display state, value, and error indicators. Do not delete or change any of these controls or indicators because LabVIEW uses them to pass in display state and container state to the property and retrieve any error information. By default, the read VI also includes an LED indicator for the value. Replace the LED indicator with an indicator of the appropriate data type to configure the type of data that the property reads.</p>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;<!--begin_child id = lvhowto tag="read_write_data_types"-->If the XControl property is read/write, the data type of the <strong>Value</strong> indicator of the read VI must match the data type of the <strong>Value</strong> control of the write VI.<!--end_child id = lvhowto tag="read_write_data_types"--></td></tr></table>
+
+<p class="Body"><!--begin_child id = lvhowto tag="remove_property_vi"-->To delete the VI, right-click the VI and select <strong>Remove from Project</strong>.<!--end_child id = lvhowto tag="remove_property_vi"--> Right-click the property folder and select <strong>New&#0187;Read VI</strong> to add a read VI to a write-only property.</p>
+
+<h2>Editing the Write VI</h2><p class="Body">The write VI is similar to the read VI. It includes the same display state, container state, and error controls and indicators as the read VI. Do not delete or change any of these controls or indicators because LabVIEW uses them to pass in display state and container state to the property and retrieve any error information and the updated display state. By default, the write VI includes an LED control for the value. Replace the LED control with a control of the appropriate data type to configure the type of data the property writes.</p>
+
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;<!--start parent  = lvhowto  tag="read_write_data_types"-->If the XControl property is read/write, the data type of the <strong>Value</strong> indicator of the read VI must match the data type of the <strong>Value</strong> control of the write VI.<!--end parent  = lvhowto  tag="read_write_data_types"--></td></tr></table>
+
+<p class="Body"><!-- Begin parent: ../lvhowto/Creating_XControl_Methods.html-->To delete the VI, right-click the VI and select <strong>Remove from Project</strong>.<!-- End parent: ../lvhowto/Creating_XControl_Methods.html--> Right-click the property folder and select <strong>New&#0187;Write VI</strong> to add a write VI to a read-only property.</p>
+
+
+</body>
+</html>

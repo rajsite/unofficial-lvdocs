@@ -1,0 +1,140 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>FIR and IIR Filters</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-2E0DFEF3-805E-4EB3-8A83-0E2690976483" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1"> FIR and IIR Filters</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 Because designing digital filters involves making compromises to emphasize characteristics you want over characteristics
+            you do not want, comparing FIR and IIR filters can help guide you in selecting the appropriate filter design for a particular
+            application. 
+            	 
+         </p> 
+         	 
+         <p>IIR filters can achieve the same level of attenuation as FIR filters but with far fewer coefficients. Therefore, an IIR filter
+            can provide a significantly faster and more efficient filtering operation than an FIR filter. 
+            	 
+         </p> 
+         	 
+         <p>You can design FIR filters to provide a linear-phase response. IIR filters provide a nonlinear-phase response. Use FIR filters
+            for applications that require linear-phase responses. Use IIR filters for applications that do not require phase information,
+            such as signal monitoring applications. 
+            	 
+         </p> 
+         	 
+         <p>One difference between FIR and IIR filters is the impulse response, which is finite or infinite, respectively. When you design
+            a filter, you must consider other differences between FIR and IIR filters that might affect the design. For example, FIR filter
+            implementations typically require more multiplications and summations than IIR filters with similar filtering performance.
+            However, because certain computer architectures, for example digital signal processors (DSPs), are frequently better suited
+            to performing FIR filtering, the computation speed of an IIR filter is not necessarily faster than an FIR filter. The following
+            table compares the attributes of causal FIR and IIR filters. 
+            	 
+         </p> 
+         	 <a name="GUID-2E0DFEF3-805E-4EB3-8A83-0E2690976483__TABLE_5B7BE7305CCD4D428AA64D20C27D3934" shape="rect">
+            <!-- --></a><table class="rowsep colsep frametop framebottom frameleft frameright  " id="GUID-2E0DFEF3-805E-4EB3-8A83-0E2690976483__TABLE_5B7BE7305CCD4D428AA64D20C27D3934">
+            <thead align="left">
+               <tr>
+                  <th align="left" width="28.57142857142857%">Attribute 
+                     				
+                  </th>
+                  <th align="left" width="14.285714285714285%">FIR Filter 
+                     				
+                  </th>
+                  <th align="left" width="28.57142857142857%">IIR Filter 
+                     				
+                  </th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td align="left" width="28.57142857142857%">Exact linear phase response 
+                     				
+                  </td>
+                  <td align="left" width="14.285714285714285%">Possible 
+                     				
+                  </td>
+                  <td align="left" width="28.57142857142857%">Not possible 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left" width="28.57142857142857%">Stability 
+                     				
+                  </td>
+                  <td align="left" width="14.285714285714285%">Always stable 
+                     				
+                  </td>
+                  <td align="left" width="28.57142857142857%">Conditionally stable 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left" width="28.57142857142857%">Computational complexity 
+                     				
+                  </td>
+                  <td align="left" width="14.285714285714285%">More computations 
+                     				
+                  </td>
+                  <td align="left" width="28.57142857142857%">Fewer computations 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left" width="28.57142857142857%">Data path precision typically required 
+                     				
+                  </td>
+                  <td align="left" width="14.285714285714285%">Less precision required 
+                     				
+                  </td>
+                  <td align="left" width="28.57142857142857%">Greater precision required 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left" width="28.57142857142857%">Zero-input limit cycles<sup>1</sup> 
+                     				
+                  </td>
+                  <td align="left" width="14.285714285714285%">Cannot produce limit cycles 
+                     				
+                  </td>
+                  <td align="left" width="28.57142857142857%">Might produce limit cycles 
+                     				
+                  </td>
+               </tr>
+               <tr>
+                  <td colspan="3" align="left"><sup>1</sup> "Zero-input limit cycle behavior refers to the effect that the output may continue to oscillate indefinitely with a periodic
+                     pattern while the input remains equal to zero. And it is a consequence either of the nonlinear quantizers in the feedback
+                     loop of IIR filter or of overflow of additions." (Oppenheim and Schafer) 
+                     				
+                  </td>
+               </tr>
+            </tbody>
+         </table> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Digital_Filtering.html" shape="rect">Digital Filtering</a></div>
+         </div>
+         <div class="relinfo relconcepts"><strong>Related concepts</strong><br clear="none"><div><a href="FIR_Filters.html" shape="rect">FIR Filters</a></div>
+            <div><a href="IIR_Filters.html" shape="rect">IIR Filters</a></div>
+            <div><a href="Select_DFD.html" shape="rect">Selecting a Digital Filter Design</a></div>
+            <div><a href="References.html" shape="rect">Signal Processing Related Documentation</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

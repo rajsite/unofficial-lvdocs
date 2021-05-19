@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+
+<title>Changing the Inheritance of a LabVIEW Class or Interface</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Changing the Inheritance of a LabVIEW Class or Interface</h1>
+<p class="Body">By default, all LabVIEW classes and interfaces <a href="../lvconcepts/Creating_Classes.html#LV_Object">inherit from LabVIEW Object</a>. To create classes that inherit from other classes, you must change the inheritance of a class. Complete the following steps to change the inheritance of a LabVIEW class. </p>
+<ol><li><a href="../lvhowto/creating_lv_classes.html">Create two new LabVIEW classes or interfaces</a> or use existing classes or interfaces.</li>
+<li>Right-click the project item for the class or interface whose inheritance you want to change and select <strong>Properties</strong> from the shortcut menu.<br/><br/>The <a href="../lvdialog/C_Library_Props_DB.html">Class/Interface Properties</a> dialog box appears. </li>
+<li>Select <strong>Inheritance</strong> from the <strong>Category</strong> list.<br/><br/>
+						The <strong>Inheritance</strong> page displays the current inheritance of the LabVIEW class or interface. Skip to step 5 if you are changing the inheritance of an interface.</li>
+						<li>Complete the following steps to change the parent class.
+						<ol>
+						<li>Click the <strong>Change Parent Class</strong> button to display the <a href="../lvdialog/Change_Inherit_DB.html">Change Parent Class</a> dialog box.
+						<br>
+						In the <strong>All Classes in Project</strong> list, the diamond glyph indicates the current class whose inheritance you want to change.
+						<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&#160;&#160;The <strong>Change Parent Class</strong> button is not available for interfaces because interfaces always inherit from LabVIEW Object.</td></tr></table>
+						</li>
+						<li>Select the class from which you want the current class to inherit.
+						<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&#160;&#160;<ul>
+						<li>A LabVIEW class cannot inherit from any of its descendants or from any classes that use the class as part of its private data. If you select a class in the <strong>All Classes in Project</strong> list that the LabVIEW class cannot inherit from, LabVIEW displays an invalid glyph next to the class.</li>
+						<li>Avoid inheriting one concrete class from an existing concrete class. Instead, create an interface or an abstract class as the common parent to both concrete classes. If you need to define state transitions for the concrete child classes, create an abstract class as the common parent. Otherwise, create an interface as the common parent.</li>
+						</ul>
+						</td></tr></table>
+						</li>
+						<li>Click the <strong>Inherit From Selected</strong> button.
+						<br>
+						LabVIEW returns to the <strong>Inheritance</strong> page of the <strong>Class/Interface Properties</strong> dialog box and updates the <strong>Parent Class Hierarchy</strong>.</li>
+						</ol>
+						</li>
+						
+						
+						<li>Complete the following steps to change the parent interfaces.
+						<ol>
+						<li>Click the <strong>Change Parent Interfaces</strong> button to display the <a href="../lvdialog/change_parent_interfaces_db.html">Change Parent Interfaces</a> dialog box.</li>
+						<li>Configure the parent interfaces by adding interfaces from the <strong>Available interfaces</strong> list or removing interfaces from the <strong>Inherit from these interfaces</strong> list.
+						<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&#160;&#160;A LabVIEW class or interface cannot inherit from any of its descendants. If you add an interface to the <strong>Inherit from these interfaces</strong> list that the class or interface cannot inherit from, LabVIEW displays an invalid glyph next to the interface.</td></tr></table>
+						</li>
+						<li>Click <strong>OK</strong>. 
+						<br>
+								LabVIEW returns to the <strong>Inheritance</strong> page of the <strong>Class/Interface Properties</strong> dialog box and updates the <strong>Parent Interfaces</strong> list.</li>
+						</ol>
+						</li>
+<li>Click <strong>OK</strong> to save the inheritance configuration and close the <strong>Class/Interface Properties</strong> dialog box.</li></ol>
+
+
+</body>
+</html>

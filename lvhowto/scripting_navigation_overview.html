@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<link rel="STYLESHEET" type="text/css" href="expandable_tree.css"><script src="common.js" type="text/javascript"></script><script src="dynamicjumps.js" type="text/javascript"></script><script src="expandable_tree.js" type="text/javascript"></script><title>Navigating a VI Using VI Scripting</title>
+</head>
+<body>
+
+<h1>Navigating a VI Using VI Scripting</h1>
+<p><strong>Requires:</strong> <a href="enabling_vi_scripting.html">VI Scripting</a></p>
+<p>Because block diagram objects in a VI are connected by terminals and wires, you can use a reference to one object to gain access to other connected objects. You can use this strategy of navigating a target VI in the following situations:</p>
+	<ul>
+		<li>Inspecting or editing connections among objects</li>
+		<li>Obtaining a reference to an object that you cannot access directly with the <a href="../glang/Open_VI_Object_Reference.html">Open VI Object Reference</a> function or the Traverse for GObjects VI</li>
+	</ul>
+<p>If you can connect objects together manually in LabVIEW, LabVIEW most likely provides a property or method that allows you to navigate those connections programmatically. Therefore, all navigation tasks involve obtaining a reference to a starting object and then using the necessary properties and methods to obtain references to the connected objects. You can segment large navigation tasks into the following navigation subtasks:</p>
+<p></p>
+	<ul>
+		<li>Identifying a starting point from which to navigate</li>
+		<li><a href="../lvhowto/scripting_nav_node_to_wire.html">Navigating from a node to a wire</a></li>
+		<li><a href="../lvhowto/scripting_nav_wire_to_node.html">Navigating from a wire to a node</a></li>
+		<li><a href="../lvhowto/scripting_nav_structures.html">Navigating across a structure</a></li>
+		<li>Navigating between a block diagram and its front panel</li>
+	</ul>
+	
+<p>The following example demonstrates how you can combine some of the previous navigation subtasks to solve a larger navigation problem.</p>
+	
+<a name="illustrative"></a><h2>Example Task: Preserving Wiring when Replacing a Function</h2>
+<p>You can write a scripting VI that replaces a One Button Dialog function with a Two Button Dialog function in any target VI. However, after making this replacement, you must ensure that the object that was wired to the <strong>button name</strong> input of the One Button Dialog function is wired to the <strong>T button name</strong> input of the new Two Button Dialog function. The following images illustrate the desired change.</p>
+
+<table border="1">
+	<tr><td>Before</td>
+		<td>After</td>
+	</tr>
+	<tr><td><img src="loc_bd_navigation_terms_target2.gif"></td>
+		<td><img src="loc_bd_nav_target_two_button.gif"></td>
+	</tr>
+</table>
+
+<h3>Why This Example Task Requires Navigation</h3>
+<p>To replace the One Button Dialog function, you need only a reference to the function. However, to ensure that the original wiring persists to the new Two Button Dialog function, you also require a reference to the object that is wired to the <strong>button name</strong> input of the One Button Dialog function. You can obtain this string reference by navigating the connections between the One Button Dialog function and the connected object.</p>
+
+<h3>How to Use Navigation to Complete This Example Task</h3>
+<p>The following outline highlights the navigation subtasks that are necessary to navigate from the One Button Dialog function to the object wired to its <strong>button name</strong> input. Refer to the individual task topics for specific information about how to implement each task.</p>
+<ol>
+	<li><strong>Identify a starting point for navigation</strong>&#8212;You can use the One Button Dialog function as the starting point for navigation because you know that all target VIs of interest have a One Button Dialog function.</li>
+	<li><a href="../lvhowto/scripting_nav_node_to_wire.html">Navigate from a node to a wire</a>&#8212;You can use the reference to the One Button Dialog function to obtain a reference to the wire that connects to the <strong>button name</strong> input of the function.</li>
+	<li><a href="../lvhowto/scripting_nav_wire_to_node.html">Navigate from a wire to a node</a>&#8212;You can use the wire reference to obtain a reference to its source node.</li>
+</ol>
+<p>After completing these three navigation tasks, you have access to all the references you need to complete the task. </p>
+<p class="Body">Refer to the Navigation Overview VI in the <span class="Monospace">labview\examples\Application Control\VI Scripting\Finding and Modifying Objects</span> directory for a full solution to this scripting task.</p>
+<p class="Body"><a href="javascript:openVI('examples%5C%5CApplication%20Control%5C%5CVI%20Scripting%5C%5CFinding%20and%20Modifying%20Objects%5C%5CNavigation%20Overview.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(1443);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</p>
+
+
+</body>
+</html>
+
+

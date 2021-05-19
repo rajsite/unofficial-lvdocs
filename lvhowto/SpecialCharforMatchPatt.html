@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4400Estringshlp -->
+
+<title>Special Characters for Match Pattern</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Special Characters for Match Pattern</h1>
+<p class="Body">Use the following special characters in the <strong>regular expression</strong> input of the Match Pattern function.</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td>
+<strong>Note</strong>&nbsp;&nbsp;The Match Pattern function is compatible with a limited set of regular expressions and does not support character grouping, alternate pattern matching, backreferences, or non-greedy quantification. Instead of the Match Pattern function, use the Match Regular Expression function for more complex pattern matching.</td></tr></table>
+<table class="Bordered"><tr><th class="Bordered">Special Character</th><th class="Bordered">Description</th><th class="Bordered">Example(s)</th></tr>
+
+<tr><td class="Bordered"><span class="Monospace">.</span><br>(period)</td>
+<td class="Bordered">Matches any single character except a newline character. Within square brackets, <span class="Monospace">.</span> is literal.</td>
+<td class="Bordered"><strong>string</strong>: <span class="Monospace">Welcome to LabVIEW.</span><br><strong>regular expression</strong>: <span class="Monospace">t....</span><br><strong>match substring</strong>: <span class="Monospace">to La</span>
+<br><br>If you input <span class="Monospace">[z.]</span> as the regular expression, the period is literal and matches either <span class="Monospace">.</span> or <span class="Monospace">z</span>. In this example, <span class="Monospace">[z.]</span> returns <span class="Monospace">.</span> as the match.</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">*</span></td>
+<td class="Bordered">Marks the single preceding character or character class as one that can appear zero or more times in the input. Because an asterisk can match a pattern that appears zero times, regular expressions that include an asterisk can return an empty string if the whole pattern is marked with an asterisk. This quantifier matches as many characters as possible.</td>
+<td class="Bordered"><strong>string</strong>: <span class="Monospace">Hello LabVIEW!</span><br><strong>regular expression</strong>: <span class="Monospace">el*</span><br><strong>match substring</strong>: <span class="Monospace">ell</span>
+<br><br>Expressions such as <span class="Monospace">w*</span> or <span class="Monospace">(welcome)*</span> match an empty string if the function finds no other matches.</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">+</span></td>
+<td class="Bordered">Marks the single preceding character or character class as one that can appear one or more times in the input. This quantifier matches as many characters as possible.</td>
+<td class="Bordered"><strong>string</strong>: <span class="Monospace">Hello LabVIEW!</span><br><strong>regular expression</strong>: <span class="Monospace">el+</span><br><strong>match substring</strong>: <span class="Monospace">ell</span></td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">?</span></td>
+<td class="Bordered">Marks the single preceding character or character class as one that can appear zero or one time in the input. This quantifier matches as many characters as possible by default.</td>
+<td class="Bordered"><strong>string</strong>: <span class="Monospace">Hello LabVIEW!</span><br><strong>regular expression</strong>: <span class="Monospace">el?</span><br><strong>match substring</strong>: <span class="Monospace">el</span></td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">[]</span></td>
+<td class="Bordered">Creates a character class, which allows you to match any one of a set of characters that you specify. For example, <span class="Monospace">[abc]</span> matches <span class="Monospace">a</span>, <span class="Monospace">b</span>, or <span class="Monospace">c</span>. The Match Pattern function interprets special characters inside square brackets literally, with the following exceptions:
+<table><tr><td><span class="Monospace">-</span>(dash)</td>
+<td>Indicates a range when used between digits, or lowercase or uppercase letters; for example, <span class="Monospace">[0-5]</span>, <span class="Monospace">[a-g]</span>, or <span class="Monospace">[L-Q]</span>.</td></tr>
+<tr><td><span class="Monospace">~</span></td>
+<td>Matches any character, including non-displayable characters, except for the characters or range of characters in brackets. For example, <span class="Monospace">[~0-9]</span> matches any character other than 0 through 9.</td></tr>
+<tr><td><span class="Monospace">^</span></td>
+<td>Matches any displayable character, including the space character, except the characters or range of characters enclosed in the brackets. For example, <span class="Monospace">[^0-9]</span> matches all displayable characters, including the space character, except 0 through 9.</td></tr></table></td>
+<td class="Bordered"><strong>string</strong>: <span class="Monospace">version=14.0.1</span><br>
+  <strong>regular expression</strong>: <span class="Monospace">[0-9]+\.[0-9]+\.[0-9]+</span><br><strong>match substring</strong>: <span class="Monospace">14.0.1</span>
+<br><br>The expression <span class="Monospace">[0-9]</span> matches any digit. The plus sign matches the previous character class, <span class="Monospace">[0-9]</span>, one or more times but as many times as possible. The expression <span class="Monospace">\.</span> matches a literal <span class="Monospace">.</span> character. The plus sign matches the previous character class, <span class="Monospace">[0-9]</span>, one or more times but matches as many times as possible. You can use this regular expression to match a three-part version number.</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">^</span></td>
+<td class="Bordered">If <em>^</em> is the first character of <strong>regular expression</strong>, it anchors the match to the <strong>offset</strong> in <strong>string</strong>. The match fails unless <strong>regular expression</strong> matches that portion of <strong>string</strong> that begins with the character at <strong>offset</strong>. If <span class="Monospace">^</span> is not the first character, it is treated as a regular character.</td>
+<td class="Bordered"><strong>string</strong>: <span class="Monospace">Hello LabVIEW!</span><br><strong>regular expression</strong>: <span class="Monospace">^[^ ]+</span><br><strong>match substring</strong>: <span class="Monospace">Hello</span>
+<br><br>From the beginning of the input string, this regular expression matches as many characters&mdash;other than a space character&mdash;as possible. You can use this regular expression to isolate the first word, numeral, or other character combination of a string.</td></tr>
+
+
+<tr><td class="Bordered"><span class="Monospace">$</span></td>
+<td class="Bordered">If <span class="Monospace">$</span> is the last character of <strong>regular expression</strong>, it anchors the match to the last element of <strong>string</strong>. The match fails unless <strong>regular expression</strong> matches up to and including the last character in the string. If <span class="Monospace">$</span> is not last, it is treated as a regular character.</td>
+<td class="Bordered"><strong>string</strong>: <span class="Monospace">Hello LabVIEW!</span><br><strong>regular expression</strong>: <span class="Monospace">[^ ]+$</span><br><strong>match substring</strong>: <span class="Monospace">LabVIEW!</span>
+<br><br>From the end of the input string, this regular expression matches as many characters&mdash;other than a space character&mdash;as possible. You can use this regular expression to isolate the last word, numeral, or other character combination of a string.</td></tr>
+
+<tr><td class="Bordered"><span class="Monospace">\</span></td>
+<td class="Bordered">Cancels the interpretation of any special character in this list. For example, <span class="Monospace">\?</span> matches a question mark, <span class="Monospace">\.</span> matches a period, and <span class="Monospace">\\</span> matches a backslash. You also can use the following constructions for the space and non-displayable characters:
+
+<table>
+<tr>
+<td><span class="Monospace">\b</span></td>
+<td>backspace</td></tr>
+<tr><td><span class="Monospace">\f</span></td>
+<td>form feed</td></tr>
+<tr><td><span class="Monospace">\n</span></td>
+<td>newline</td></tr>
+<tr><td><span class="Monospace">\s</span></td>
+<td>space</td></tr>
+<tr><td><span class="Monospace">\r</span></td>
+<td>carriage return</td></tr>
+<tr><td><span class="Monospace">\t</span></td>
+<td>tab</td></tr>
+<tr><td><span class="Monospace">\xx</span></td>
+<td>any character, where <span class="Monospace-Italic">xx</span> is the hex code using 0 through 9 and upper case A through F</td></tr></table></td>
+<td class="Bordered"><strong>string</strong>: <span class="Monospace">Welcome<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;&nbsp;&nbsp;the LabVIEW Help!</span><br><strong>regular expression</strong>: <span class="Monospace">come\nto\tthe\sLabVIEW\sHelp\21</span><br><strong>match substring</strong>: &nbsp;<span class="Monospace">come<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;&nbsp;&nbsp;the LabVIEW Help!</span>
+<br><br>The expression <span class="Monospace">come\n</span> matches the literal letters followed by a newline character. The expression <span class="Monospace">to\t</span> matches the literal characters <span class="Monospace">to</span> followed by a tab. The two <span class="Monospace">\s</span> expressions match the spaces between <span class="Monospace">the</span> and <span class="Monospace">LabVIEW</span> and <span class="Monospace">LabVIEW</span> and <span class="Monospace">Help!</span>. The expression <span class="Monospace">\21</span> matches the exclamation point because 21 is the hexadecimal code for an exclamation point.</td>
+</tr>
+</table>
+
+<h3>Related Information</h3>
+	<p><a href="../glang/Match_Pattern.html">Match Pattern Function</a></p>
+	<p><a href="../glang/Match_Regular_Expression.html">Match Regular Expression Function</a></p>
+		
+
+</body>
+</html>

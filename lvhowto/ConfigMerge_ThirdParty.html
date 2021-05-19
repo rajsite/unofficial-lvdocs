@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+<title>Configuring Source Control with LVMerge.exe</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Configuring Source Control with LVMerge.exe</h1>
+					<p class="Body">You can configure a third-party <a href="../lvconcepts/Using_Source_Code.html">source control</a> provider to use <span class="Monospace">LVMerge.exe</span> as the default merge application. <span class="Monospace">LVMerge.exe</span> is equivalent to the <a href="../lvdialog/merge_VIs_db.html">Merge VIs</a> dialog box. Use <span class="Monospace">LVMerge.exe</span> to automatically or interactively resolve differences between an original VI and two revisions of the original VI. </p>
+					<table class="Borderless"><tr><td class="Icon"><img src="note.gif" /></td><td><strong>Note</strong>��<span class="Monospace">LVMerge.exe</span> is available only with the LabVIEW Professional Development System.</td></tr></table>
+					<p class="Body">Complete the following steps to configure a third-party source control provider to use <span class="Monospace">LVMerge.exe</span> as the default merge application.</p>
+					<ol><li>Make sure the computer on which you are running LabVIEW also includes a third-party source control provider, which you should install and configure to meet the requirements of the current software project. Consult your source control administrator for additional assistance.</li><li>Direct the source control provider to <span class="Monospace">LVMerge.exe</span>. LabVIEW installs <span class="Monospace">LVMerge.exe</span> in different locations depending on the platform. The following directories are default installation locations for <span class="Monospace">LVMerge.exe</span>, but may vary depending on the configuration of the local machine:
+							<ul>
+							<li> <span class="Platform">(Windows)</span> <span class="Monospace">C:\Program Files\National Instruments\Shared\LabVIEW Merge\LVMerge.exe</span></li>
+							<li> <span class="Platform">(macOS)</span> <span class="Monospace">/Library/Application Support/National Instruments/LabVIEW Merge/LVMerge.app/Contents/MacOS/LVMerge</span></li>
+							<li> <span class="Platform">(Linux)</span> <span class="Monospace">/usr/local/bin/LVMerge</span></li>
+							</ul>
+						</li><li>(Optional) Configure any arguments that <span class="Monospace">LVMerge.exe</span> needs in the third-party source control provider. The following table lists available arguments.
+							<table class="Bordered">
+						<tr>
+							<td class="Bordered">1 (optional)</td>
+							<td class="Bordered">Specifies path to the version of LabVIEW to use for the merge operation. If you do not supply this argument, the <strong>Merge VIs</strong> dialog box uses the following versions of LabVIEW by default:
+								<ul>
+									<li> <span class="Platform">(Windows)</span> Currently registered LabVIEW</li>
+									<li> <span class="Platform">(macOS)</span> Latest installed version of LabVIEW</li>
+									<li> <span class="Platform">(Linux)</span> Last installed LabVIEW</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td class="Bordered">2</td>
+							<td class="Bordered">Absolute path to a copy of the VI from where you checked it out (<strong>Base VI</strong>).</td>
+						</tr>
+						<tr>
+							<td class="Bordered">3</td>
+							<td class="Bordered">Absolute path to a copy of the latest revision of the VI in source control (<strong>Their VI</strong>).</td>
+						</tr>
+						<tr>
+							<td class="Bordered">4</td>
+							<td class="Bordered">Absolute path to the VI you edited (<strong>Your VI</strong>).</td>
+						</tr>
+						<tr>
+							<td class="Bordered">5</td>
+							<td class="Bordered">Absolute path to which to save the merged VI.</td>
+						</tr>
+							</table>
+							</li>
+							</ol>
+						<p class="Indent2">For example, to specify the version of LabVIEW for the merge operation is LabVIEW 8.6, use the following command line:<br><br><span class="Monospace">LVMerge.exe "C:\Program Files\National Instruments\LabVIEW 8.6\LabVIEW.exe" c:\files\base.vi c:\files\theirs.vi c:\files\yours.vi c:\files\merged.vi</span>.<br><br>In the command line, the first path is optional and leads to the location of the LabVIEW executable.</p>				
+							
+						<ol start="4">
+					<li>(Optional) Complete any remaining steps to configure the third-party source control provider. Consult the documentation for your third-party source control provider for more information.</li>
+						</ol>
+
+						
+
+	
+						
+
+
+
+</body>
+</html>

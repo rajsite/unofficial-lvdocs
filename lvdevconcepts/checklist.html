@@ -1,0 +1,1472 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<link rel="STYLESHEET" type="text/css" href="expandable_tree.css"><script src="common.js" type="text/javascript"></script><script src="dynamicjumps.js" type="text/javascript"></script><script src="expandable_tree.js" type="text/javascript"></script><title>LabVIEW Style Checklist</title>
+</head>
+<body>
+<h1>LabVIEW Style Checklist</h1>
+<p class="Body">
+				
+				
+				Use the following checklists to help you maintain consistent style and quality. You can customize these checklists to fit the specifications of your application.</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>��The LabVIEW VI Analyzer Toolkit provides tests that check VIs interactively or programmatically for style, efficiency, and other aspects of LabVIEW programming. Refer to the <a href="javascript:WWW(WWW_Analyzer)">National Instruments website</a>  to learn more about this LabVIEW toolkit.</td>
+</tr>
+</table>
+<p class="Body"><input type="button" onclick="openAll()" value="Expand All"><input type="button" onclick="closeAll()" value="Collapse All"></p><a name="front_panel_checklist"></a><h2>Front Panel Checklist</h2>
+<div id="front_panel">
+<p class="expanded"><span class="expandable-underline">Show/Hide Checklist</span></p>
+<div class="expandable-section-open">
+<table class="Bordered">
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="meaningful_names"></a>
+					Set default values for controls and indicators.  Default values enable a VI to execute as expected without requiring additional interaction.
+					<div id="meaningful_names_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">Run the VI to verify that controls and indicators with default values do not cause the VI to fail.</p>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>��Avoid setting default values for indicators such as graphs, arrays, and strings. Setting default values for these indicators can use unnecessary disk space.</td>
+</tr>
+</table>
+<p class="Body">If you set default values, you enable a function or VI to handle more options internally without requiring as much user interaction. For example, if you set a default value of 0 for the Write Delimited Spreadsheet VI, LabVIEW uses that default value to automatically present an empty file dialog and prompt for an input.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="default_values"></a>
+						Use <a href="../lvprop/String_Size_to_Text.html">Size to Text</a> for labels so the text rectangle automatically resizes to accommodate the text you enter. By default, <strong>Size to Text</strong> is enabled for one line of text. 
+					<div id="default_values_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">The three standard fonts, <a href="../lvconcepts/Text_Characteristics.html">application, system, and dialog</a>, vary depending on the platform you use. For example, preferences and video driver settings in Windows affect the size of the fonts. Text may appear larger or smaller on different systems. To compensate for font variations, allow extra space for larger fonts and enable the <strong>Size to Text</strong> option on the shortcut menu.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Avoid overlapping the labels, digital displays, or other parts of controls and indicators. Allow for extra space between controls and indicators to account for font changes on different platforms. Overlapped controls and indicators slow down screen updates and can make the control or indicator flicker.</td>
+</tr>
+</table>
+</div>
+</div><a name="user_interface_front_panel_checklist"></a><h2>User Interface Front Panel Checklist</h2>
+<div id="user_interface_front_panel">
+<p class="expanded"><span class="expandable-underline">Show/Hide Checklist</span></p>
+<div class="expandable-section-open">
+<table class="Bordered">
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">
+					Design <a href="../lvconcepts/Designing_User_Interfaces.html">user interface front panels</a> so that operations and results are clear and enhance the usability of the VI or application.
+					</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">
+						Avoid excessive use of color. <a href="../lvconcepts/Configuring_the_Front_Panel.html">Use color logically</a>, sparingly, and consistently, if at all.
+					</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="abort_button"></a>
+							Disable the <strong>Abort</strong> button. Use the system <strong>X</strong> button or <strong>File�Exit</strong> option to safely shutdown resources instead of adding an additional exit button.
+					<div id="abort_button_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">The <strong>Abort Execution</strong> button stops the VI immediately and prevents the VI from finishing the current iteration. If you abort a VI that uses external resources, such as external hardware, resources may remain in an unknown state because they were not reset or released properly.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Hide the toolbar.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">
+						Use one consistent style for all controls. Use system or silver style controls when possible.
+					</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">
+						Use custom controls or strict type definition controls to customize the appearance of a control. Use strict type definition controls only to preserve the exact appearance of a control in each location of use.
+					</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="use_color"></a>
+					(VI Analyzer) Use the standard application, system, and dialog fonts for all user interfaces in the application.
+					<div id="use_color_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">Use the standard font unless you have a specific reason to use a different font. For example, you can use monospace fonts because they are proportionally spaced for string controls and indicators that constrict character use.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a href="../lvhowto/Changing_Data_Ranges_of_Nu.html">Configure numeric inputs</a> to have data ranges that account for potential invalid values that a user may enter.
+					</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="control_arrangement"></a>
+					Arrange controls from top left to bottom right. 
+					<div id="control_arrangement_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">Place controls in the order of typical use. For top-level VIs visible to users, place the most important controls in the most prominent positions. For subVI front panels, place the controls and indicators of the subVI so that they correspond to the connector pane pattern.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a href="../lvconcepts/Designing_User_Interfaces.html">Organize UI elements</a> by proximity, alignment, decorations, and UI features such as tab controls and subpanels.
+					</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="array_style"></a>
+						Use an array style consistent with similar data structures. 
+					<div id="array_style_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">For example, remove the index control and add a scrollbar to make an array style consistent with listbox style.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Configure the front panel to <a href="../lvconcepts/Designing_User_Interfaces.html">fit the monitor resolution</a> used in the application.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="label_use"></a>
+				Use labels to describe the function of controls and indicators. Limit caption use to controls and indicators that require more information than the label conveys or when you want the ability to change the display text of a control programmatically. 
+					<div id="label_use_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">The following table lists the situations to use captions and labels and the corresponding examples.</p>
+<table class="Bordered">
+<tr>
+<th class="Bordered">Situation</th>
+<th class="Bordered">Example</th>
+</tr>
+<tr>
+<td class="Bordered">If the control is visible to the user, use captions to display a long description and add a short label to prevent using valuable space on the block diagram.</td>
+<td class="Bordered">When you label a ring or slide control with options for volts, ohms, or amperes, selecting a caption such as "select units for display" is more usable than the label V/O/A. <a href="../lvconcepts/Manip_App_VI_Settings.html">Use Property Nodes</a> to change captions programmatically.</td>
+</tr>
+<tr>
+<td class="Bordered">If the default value or unit is unusual, include default values and unit information in label names.</td>
+<td class="Bordered">Include the default value of no error in parentheses for the <strong>error in</strong> parameter.</td>
+</tr>
+<tr>
+<td class="Bordered">If you use the VI with the control on multiple platforms, avoid using special characters in control names.</td>
+<td class="Bordered">Use <strong>degF</strong> instead of �<strong>F</strong> because the � symbol might not display correctly on all platforms.</td>
+</tr>
+<tr>
+<td class="Bordered">If you use Boolean controls, use a name to give an indication of which state, TRUE or FALSE, corresponds to the function, such as "ON." Indicate the default state in parenthesis. For checkboxes and radio buttons, the user can click the Boolean text of the control, and the value of the Boolean control changes. Free labels next to a Boolean control can help clarify the meaning of each position on a switch. 
+</td>
+<td class="Bordered">Use free labels such as <strong>Cancel</strong>, <strong>Reset</strong>, and <strong>Initialize</strong> that describe the user action.</td>
+</tr>
+</table>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div><a name="front_panel_dialog_checklist"></a><h2>Front Panel Dialog Checklist</h2>
+<div id="front_panel_dialog">
+<p class="expanded"><span class="expandable-underline">Show/Hide Checklist</span></p>
+<div class="expandable-section-open">
+<table class="Bordered">
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Use the system control style when possible. Using the system control style ensures that the dialogs you create look similar to the dialogs provided by the operating system you use.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">
+				Avoid using scroll bars on front panels that look like dialog windows. Design the dialog box to display all information. Use scroll bars on individual controls and indicators as appropriate.
+					</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">If you use the title bar, provide a meaningful window title that explains the purpose of a dialog.  Avoid using the default VI name as the window title because the VI does not effectively explain the purpose of the dialog.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="front_panel_size"></a>If you use menus, only use menus that are specific to the dialog window. Avoid using default menus.<div id="front_panel_size_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">Default menus provide more options than are necessary and make sense for the particular application. Customize the menu options for an application to enhance its professional appearance.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="dialog_boxes"></a>Limit dialog box use to critical user interactions.<div id="dialog_boxes_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">
+							Use the system controls in dialog boxes to prompt and gather settings and configuration information from the user. You also can use tab controls to group front panel controls and indicators in a smaller area and reduce clutter in a dialog box.</p>
+<p class="Body">Many programs also use dialog boxes to announce messages to the user. However, avoid overusing this type of dialog box. Use a status text window to display less serious warnings.</p>
+<p class="Body">Make sure that all dialogs are either modal to the main application or floating. You can prevent a dialog from staying hidden behind other windows if the dialog is <a href="../lvdialog/Cust_Window_Appearance_DB.html">modal or floating</a>.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Use the system panel background color for dialog user interfaces to maintain consistency.</td>
+</tr>
+</table>
+</div>
+</div><a name="front_panel_conditional_checklist"></a><h2>Conditional Checklist</h2>
+<div id="front_panel_conditional">
+<p class="expanded"><span class="expandable-underline">Show/Hide Checklist</span></p>
+<div class="expandable-section-open">
+<table class="Bordered">
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="Descriptions_and_Tip_Strips"></a>Write descriptions and create tip strips for UI front panels and controls to describe the purpose of an object and give users instructions for using the object.<div id="Descriptions_and_Tip_Strips_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">When you copy an object to another VI, you also copy the description. You may need to change the description for the new object.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="Keyboard_Shortcuts"></a>Set up intuitive keyboard shortcuts and tabbing order for controls.<div id="Keyboard_Shortcuts_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">Some users prefer to use the keyboard instead of a mouse. In some environments, such as a manufacturing plant, only a keyboard is available. Consider including <a href="../lvconcepts/Configuring_the_Front_Panel.html">keyboard shortcuts</a> for VIs even if the use of a mouse is available because keyboard shortcuts add convenience to a VI.</p>
+<p class="Body">Pay attention to the key navigation options for objects on the front panel and set the tabbing order for the objects to read left to right and top to bottom. Set the &lt;Enter&gt; key as the keyboard shortcut for the front panel default control, which is usually the <strong>OK</strong> button. However, if you have a multiline string control on the front panel, you might not want to use the &lt;Enter&gt; key as a shortcut.</p>
+<p class="Body">If the front panel has a <strong>Cancel</strong> button, set the &lt;Esc&gt; key to be the keyboard shortcut. You also can use function keys as navigation buttons to move from screen to screen. If you do this, be sure to use the shortcuts consistently. Select <strong>Edit�Set Tabbing Order</strong> to arrange controls in a logical sequence when the user needs to tab between the controls. For controls that are offscreen, use the <strong>Key Navigation</strong> tab of the <a href="../lvpage/pp_Properties_DB.html">Properties</a> dialog box to skip over the controls when tabbing or to hide the controls.</p>
+<p class="Body">Also consider using the key focus property to set the focus programmatically to a specific control when the front panel opens.</p>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div><a name="non_user_interface_checklist"></a><h2>Non-User Interface Front Panels</h2>
+<div id="non_user_interface">
+<p class="expanded"><span class="expandable-underline">Show/Hide Checklist</span></p>
+<div class="expandable-section-open">
+<table class="Bordered">
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Use the default front panel background color on all VIs.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Use transparent front panel labels to align with current style. Transparent front labels also indicate that users should not interact with that front panel.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Arrange controls and indicators relative to corresponding connector pane terminals.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Use default colors.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Size the front panel to fit the entire toolbar. Display the search bar for ease of use.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Group related input and output data into clusters.  Make the cluster a type definition. If multiple VIs interact with the same clusters, consider using LabVIEW classes instead of clusters.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="lg_sk_type_def_cluster"></a>If a front panel contains a large and skinny type definition cluster, size the panel to fit existing regular controls and include part of the type definition. With a large and skinny type definition cluster, only the width fits in the Minimum Screen Resolution, not the height.<div id="lg_sk_type_def_cluster_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">
+							<img style="display:inline" src="loc_fp_type_def_cluster.gif">
+						</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="lg_ft_type_def_cluster"></a>If a front panel contains a large and fat type definition cluster, include the cluster below the visible screen and a note indicating that the user can scroll down to see it. With a large and fat type definition, neither width nor height fits in the Minimum Screen Resolution.<div id="lg_ft_type_def_cluster_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">
+							<img style="display:inline" src="loc_fp_large_type_def_cluster.gif">
+						</p>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div><a name="block_diagram_checklist"></a><h2>Block Diagram Checklist</h2>
+<div id="block_diagram">
+<p class="expanded"><span class="expandable-underline">Show/Hide Checklist</span></p>
+<div class="expandable-section-open">
+<table class="Bordered">
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="avoid_large_BD"></a>
+						(VI Analyzer) Verify that data flows from left to right, unless you use feedback nodes, and that wires enter from the left and exit to the right. 
+					<div id="avoid_large_BD_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">
+							If you have a reason not to follow this guideline, provide a wire label or a floating comment to explain any exceptions.</p>
+<p class="Body">Use <a href="../lvhowto/Creating_Owned_Labels.html">owned labels</a> to label long wires. Labeling wires is useful for wires coming from shift registers and for long wires that span the entire block diagram.</p>
+<p class="Body">Organize the block diagram and draw wires according to <a href="../lvconcepts/Designing_the_Block_Diagram.html">suggested design guidelines</a>. You also can <a href="../lvhowto/Cleaning_Up_the_Block_Diagram.html">automatically clean up the wires</a> on the block diagram.
+
+						</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="arrange_objects"></a>(VI Analyzer)  Arrange objects symmetrically on the block diagram by aligning and distributing functions, terminals, and constants evenly.<div id="arrange_objects_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">Use the <strong>Align Objects</strong> and <strong>Distribute Objects</strong> pull-down menus on the toolbar to arrange objects the block diagram. When objects are aligned and distributed evenly, you can use straight wires to connect objects together. Using straight wires makes the block diagram easier to read.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">
+					(VI Analyzer) When possible, avoid leaving front panel terminals unwired on the block diagram
+					</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Avoid coloring diagrams. Color can distract users.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">
+						Use default colors for structures, such as Case or Event structures. 
+					</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">
+					Avoid using Flat Sequence structures unless you must use them to define execution order.
+					</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">
+					If possible, arrange parallel loops from top to bottom to represent logical data flow. 
+					</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">
+					Place control and indicator terminals outside of any loops or structures unless values need to be read or updated continuously.  Align control terminals to the far left and indicator terminals to the far right of the block diagram.
+					</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="subVI_icon_on_BD"></a>
+						Make sure the subVI icon, rather than the connector pane, is visible on the block diagram.
+					<div id="subVI_icon_on_BD_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">The subVI icon is more helpful than the connector pane on the block diagram. The VI icon reveals the purpose of the VI. A connector pane only displays how inputs and outputs are connected. Right-click the subVI and select <strong>Visible Items</strong>. Verify that the <strong>Terminals</strong> option does not contain a checkmark. </p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">
+					(VI Analyzer) Display the terminal for front panel objects on the diagram, not the icon, to conserve space and align with current LabVIEW style. Navigate to <strong>Tools�Options</strong> to change the default for this option. You can make exceptions for type definitions. Type definition icons are unique and can display useful information about the VI. To make an exception for a type definition icon, right click the icon and select <strong>Show as Icon</strong>.
+					</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="string_constant_value"></a>
+					(VI Analyzer) Avoid creating a string constant that contains a single, difficult to read value, such as a space, if the value within that constant is meaningful.  
+					<div id="string_constant_value_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">Use the built-in LabVIEW string constants. For example, you can use an empty string as a constant to specify the data type of the elements the queue holds.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="bundle_unbundle"></a>
+						Use the Bundle by Name and Unbundle by Name functions when you access clusters.  Avoid using the unnamed Bundle and Unbundle functions.  
+					<div id="bundle_unbundle_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">The Bundle by Name and Unbundle by Name functions reference elements of a cluster by name instead of cluster order. You can eliminate the challenge of deciphering the purpose of each data element by referencing elements of a cluster by name. You also can reorder elements or add new elements to a cluster without potentially causing a VI to break.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="term_in_structs"></a>
+					If the value of a large type definition constant is the same as the default values of the elements within the type definition cluster, display the type definition cluster constant as an icon on the block diagram.
+					<div id="term_in_structs_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">Otherwise, use the Bundle by Name and Unbundle by Name functions to specify the values of the cluster.  If many elements differ from the default value, wrap the Unbundle by Name or Bundle by Name functions and associated values in a subVI and inline the subVI.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="avoid_local_variables"></a>
+						To save space on the block diagram, avoid displaying more than three or four array elements.  
+					<div id="avoid_local_variables_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">For large arrays that contain many elements, show only three or four elements and update the index so that the last element and first empty element are visible. Also, display the scrollbar for large arrays.</p>
+<p class="Body">
+							<img style="display:inline" src="loc_bd_large_array_elements.gif">
+						</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">
+			Set conditional structures such as Case structures and Event structures wide enough to view the full condition text.  You can make an exception for multiple conditions in the same frame. If you have multiple conditions in the same frame, you can opt to not increase the display size of the structure to show all conditions.
+					</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="short_long_names_invoke_property_nodes"></a>Right click a Property Node or Invoke Node and select <strong>Name Format�Short Names</strong> to make the block diagram more readable. Short names use less space.<div id="short_long_names_invoke_property_nodes_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">The <strong>Long Names</strong> option may be appropriate in certain instances.  For example, use the <strong>Long Names</strong> option for an element if that element shares the same short name with another element. Avoid using the <strong>No Names</strong> option. The <strong>No Names</strong> option does not provide enough information for the user to understand elements or how the code functions. Apply the same reasoning for similar nodes, such as the Invoke Library Node and IP Integration Node.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Save each VI with the most important frame of multi-frame structures displayed. For example, Case and Event structures contain multiple frames.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Remove unused code.</td>
+</tr>
+</table>
+</div>
+</div><a name="LabVIEW_classes_checklist"></a><h2>LabVIEW Classes</h2>
+<div id="LabVIEW_classes">
+<p class="expanded"><span class="expandable-underline">Show/Hide Checklist</span></p>
+<div class="expandable-section-open">
+<table class="Bordered">
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">
+					Name all classes as nouns. For example, name an example class Waveform Reader.lvclass rather than Reads Waveforms.lvclass.
+					</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="avoid_absolute_paths"></a>When <a href="../lvconcepts/Creating_Classes.html">designing classes</a>, follow good software engineering practices from other programming languages. <div id="avoid_absolute_paths_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">For example, avoid inheriting one concrete class from an existing concrete class. Instead, create an abstract class as the common parent to both of the concrete classes.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Name all member VIs of a LabVIEW class as verbs. For example, name an example member VI Read Value VI rather than Value VI.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Avoid  including the name of the class in VI names. For example, if you name a class Special Waveform.lvclass and have a VI that adds two such waveforms together, name that VI Add VI rather than Add Special Waveforms VI.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Use the word "Read" to begin the name of any VI that strictly reads data from the private data of a class. Avoid using the word "Get" or any synonym of "Get."</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Use the word "Write" to begin the name of any VI that strictly bundles data into the private data of a class. Avoid using the word "Set" or any synonym of "Set."</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">
+			Consider supporting the syntax of Property Nodes for <a href="../lvconcepts/Creating_Classes.html#Member_VIs">data accessor</a> VIs. However, accessors that use the syntax of Property Nodes require error terminals and cause significantly more performance burden at run time than data accessor VIs without error terminals. Evaluate and choose appropriately for each class.
+					</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Mark all VIs as private unless you have a specific reason to mark them as public, protected, or community. </td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="wire_patterns_colors"></a>
+					Avoid creating excessive wire patterns and colors if you change the wire appearance of a LabVIEW class wire
+					<div id="wire_patterns_colors_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">The number of colors and patterns in the block diagram window can affect the readability of LabVIEW code. Change the wire appearance of LabVIEW class wires only if necessary to differentiate between other class wires in the block diagram window.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Use dark colors on the exterior of class wires to provide contrast against white background.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="refnum_colors"></a>If the private data of a class contains only refnum types, use the standard refnum color for the class wire. Locate the color named <strong>Refnum Wire</strong> in the <strong>User Colors</strong> dialog box for the LabVIEW color picker. <div id="refnum_colors_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">Best practice requires that any class containing one refnum type should only contain refnum types as elements. Although you can include a mixture of data value reference types and by-value types in a class, the mixture can demonstrate ambiguous behavior when you fork the wire on the diagram. Data value reference types refer to the original element. By-value types create copies of the original element instead of referring directly to the original. Mixing the two types can cause confusing behavior.</p>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div><a name="labels_comments_checklist"></a><h2>Labels and Comments</h2>
+<div id="labels_comments">
+<p class="expanded"><span class="expandable-underline">Show/Hide Checklist</span></p>
+<div class="expandable-section-open">
+<table class="Bordered">
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">
+					(VI Analyzer) Use visible and meaningful labels for all terminals.
+					</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">
+					Use a specific and detailed label or <a href="../lvhowto/Creating_Free_Labels.html">attached comment</a> to document constants that contain non-obvious values
+					</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Use transparent labels.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Use consistent capitalization for labels.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">
+						Use spaces between words in a label.
+					</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">VI Analyzer) Avoid using duplicate labels.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">If an example subVI contains an input and output pair, add a suffix of in to the control and a suffix of out to the indicator. For example, if a VI includes an "input" called object, name the corresponding output "object out."</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Always include the word "in" when creating an <strong>error in</strong> input.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="parenthesis_default_values"></a>Use parenthesis to document the default value and units of a control or indicator.<div id="parenthesis_default_values_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">Avoid using parenthesis for any other purposes. In most cases, you can exclude the default value if it is the same as the default value for the given data type.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Attach free labels on the block diagram to explain code. Use free labels to explain why the code executes the way you configured it to execute, not how the code executes.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Label shift registers and wires when the content is potentially unclear or confusing.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="terminal_lb_style"></a>Use one of two styles consistently for the placement of terminal labels.<div id="terminal_lb_style_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">For the first style, place terminal labels to the left of the terminal for controls and to the right of the terminal for indicators.</p>
+<p class="Body">
+							<img style="display:inline" src="loc_bd_first_term_lb_place.gif">
+						</p>
+<p class="Body">For the second style, left-align terminal labels above the terminal. Use the style you choose consistently within a VI, a library, or a project.</p>
+<p class="Body">
+							<img style="display:inline" src="loc_bd_second_term_lb_place.gif">
+						</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Use carriage returns in free labels only to separate paragraphs. </td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Unless a free label occupies a single line, avoid using the Size to Text method or property for these labels. Instead, size free labels so that all the text is visible. Also, provide extra space at the bottom of a free label to account for font size changes across platforms.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="standard_app_font"></a>Use the standard application font for free labels on all block diagrams. <div id="standard_app_font_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">Use the application font on the block diagram unless you have a specific reason to use a different font.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Use the default free label color for all comments.  You can make exceptions under special circumstances, such as sample projects in LabVIEW 2012 and later. LabVIEW 2012 and later use a new style precedent for comments that display different types of information. </td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">For subdiagram labels, use the default appearance for all structures, such as Case and Event structures.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="third_party_descriptions"></a>For each VI, such as API VIs and examples, designed for third-party use, describe what the VI does in the <strong>VI Description</strong> text box.  Consider describing all VIs in the <strong>VI Description</strong> text box.<div id="third_party_descriptions_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">To test VI the documentation you create for a VI, write and revise a VI description and confirm that the description displays correctly in the <strong>Context Help</strong> window. Describe how to use the VI and any required parameter settings in the <strong>VI Description</strong> text box on the <strong>Documentation</strong> page of the <strong>VI Properties</strong> dialog box.</p>
+<p class="Body">Check the spelling of all words in the <strong>VI Properties</strong> dialog box and on the front panel and block diagram.</p>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div><a name="size_location_checklist"></a><h2>Size and Location</h2>
+<div id="size_location">
+<p class="expanded"><span class="expandable-underline">Show/Hide Checklist</span></p>
+<div class="expandable-section-open">
+<table class="Bordered">
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">
+					To create a visually appealing block diagram, avoid both unnecessary white space and overcrowding of the block diagram.  Provide just enough white space for visual guidance. 
+					</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="large_block_diagrams"></a>Avoid creating large block diagrams.<div id="large_block_diagrams_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">The size of the block diagram window can affect the readability of LabVIEW code. Size the block diagram window no larger than the screen size. Code larger than the window is difficult to read because you must scroll through the window. If the code is too large to fit on one screen, configure the screen to scroll only in one direction to display the rest of the code. If the block diagram requires scrolling, consider using subVIs.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Size the block diagram large enough to fit the entire toolbar. For example, size the block diagram large enough to show the search bar.</td>
+</tr>
+</table>
+</div>
+</div><a name="programming_checklist"></a><h2>Programming Checklist</h2>
+<div id="programming">
+<p class="expanded"><span class="expandable-underline">Show/Hide Checklist</span></p>
+<div class="expandable-section-open">
+<table class="Bordered">
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="type_definitions"></a>
+					Use type definitions, not strict type definitions, to preserve the data type of controls used in more than one place, especially for enumerated type controls and data structures.
+					<div id="type_definitions_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">Use a type definition when you use the same unique control in more than one location or when you have a very large data structure passing between several subVIs.</p>
+<p class="Body">By using a <a href="../lvconcepts/Custom_Cont_Ind_Type.html#Using_Type_Definitions_and_Strict_Type_Definitions">type definition</a> control, LabVIEW automatically propagates changes to the control or the data structure throughout all the VIs and subVIs.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="enumerated_ring_controls"></a>Use enumerated type controls if possible. <div id="enumerated_ring_controls_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">If you use a Boolean control for two options, consider using an enumerated type control instead to potentially expand options in the future.</p>
+<p class="Body">Use an <a href="../lvconcepts/Ring_and_Enumerated_Type_Controls_and_Indicators.html">enumerated type</a> over a ring control.</p>
+<p class="Body">If you must use a ring control, configure it as a strict type definition so that all menu items update for each use.  If you do create a strict type definition, extend the size beyond the longest words to allow for easier expansion of future options. Ring controls allow you to easily interact with front panels if you want to programmatically change the string labels. You also may want to use a ring control instead of a Boolean control. If you change the control to include more than two options, you can easily add options to a ring control.</p>
+<p class="Body">You cannot programmatically change the string labels in an enumerated type control at run time because the string labels are a part of the data type.</p>
+<p class="Body">When you use enumerated type controls, always make a type definition of the control. Creating type definitions prevents you from needing to rewrite the code each time you add or remove an item from an enumerated type control.</p>
+<p class="Body">Enumerated type controls also help make block diagram code easier to read because when you wire an enumerated type control to a <a href="../glang/Case_Structure.html">Case</a> structure, the string labels appear in the selector label of the Case structure.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="case_struc_tunnel"></a>When you use a Case structure, avoid creating a separate tunnel for the wire connected to the selector terminal. Instead, wire the selector terminal inside the structure.
+				<div id="case_struc_tunnel_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">
+							<img style="display:inline" src="loc_bd_case_struc_gen.gif">
+						</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="non_bool_selectors"></a>Avoid placing Boolean outputs prior to a Case structure.   Use non-Boolean selectors instead. If you place Boolean logic inside the structure, you are less likely to encounter a mistake.<div id="non_bool_selectors_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">
+							<img style="display:inline" src="loc_bd_non_bool_case_struc.gif">
+						</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="default_case_enums"></a>Eliminate the default case for Case structures wired to enums. <div id="default_case_enums_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">If you add a new element to an enum wired to the default case of a Case structure, the code executes the default case and can cause an error.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="queues_named_notifiers"></a>Avoid using named queues and named notifiers. <div id="queues_named_notifiers_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">If possible, pass the reference wire in place of using named queues and notifiers. If you must use named queues and named notifiers, avoid name collisions.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="close_reference"></a>If you open a reference, such as an application, control, VI, or file, close the reference by using the Close Reference function. Close the reference in the same VI in which you opened the reference.<div id="close_reference_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">You can use subVIs for opening and closing references.  If you use subVIS to open or close a reference, pair the subVIs up. Use VI names and icons that reflect these pairings.  For example, use pairs of words such as "Open" and "Close" or "Obtain" and "Release."</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="path_controls_constants"></a>Use path controls or constants instead of string controls or constants to specify the location of files or directories.<div id="path_controls_constants_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">Use a path control or indicator to specify the location of a file or directory. Unlike strings, path controls and indicators format paths using the standard syntax for the platform you use. </p>
+<p class="Body">
+							<a href="../lvhowto/Configuring_Browse_Options.html">Set the browse options</a> appropriately for the <strong>Browse</strong> button of path controls. For example, if you need to select a directory, select the <strong>Folders only</strong> and <strong>Existing only</strong> options on the <a href="../lvpage/pp_Browse_Options_DB.html">Browse Options</a> page of the <a href="../lvpage/pp_Properties_DB.html">Properties</a> dialog box.</p>
+<p class="Body">Use a path constant and the path data type to supply a constant path value to the block diagram. The path constant and data type use the platform-specific notation for paths, unlike the string constant and data type.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="absolute_paths"></a>Avoid using absolute paths in VIs. <div id="absolute_paths_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">When possible, either use relative paths and define a root path in your code or determine the root path dynamically at run-time based on system settings or the application location. Ensure that relative file paths work for the operating system on which the code is intended to run.</p>
+<p class="Body">Absolute paths can cause problems when you build an application or run the VI on a different computer. If you must use an absolute path, ensure that you include code to both test that the path exists and to create a path if one does not exist.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Avoid using a variable when you can use a wire to transfer data. Every local variable that reads the data makes a copy of the data. Use <a href="../lvconcepts/Using_Local_and_Global.html">global and local variables</a> only when you cannot use a wire. More specifically, use wires, data value references, or classes instead of functional global variables because you can follow and debug wires more easily than functional global variables.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">When applicable, use the In Place Element structure to clearly convey the movement of data.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Avoid duplicating code. Use subVIs to encapsulate and modularize different parts of your application.  Create each subVI to have a single clear purpose so that the subVI is easy to reuse and test.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a href="../lvdevconcepts/Testing_Guidelines.html#Unit,_Integration,_and_System_Testing">Create test VIs</a> that check error conditions, invalid values, and cancel buttons. Save test VIs in a separate directory so you can reuse them. You also can use the Unit Test Framework Toolkit to perform unit testing on VIs.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Review the VI for efficiency, data copying, and accuracy, especially the parts of the VI without data dependency. Use the <a href="../lvdialog/Show_Buffer_Alloc.html">Show Buffer Allocations</a> window to determine where LabVIEW allocates memory.</td>
+</tr>
+</table>
+</div>
+</div><a name="corner_cases_checklist"></a><h2>Corner Cases Checklist</h2>
+<div id="corner_cases">
+<p class="expanded"><span class="expandable-underline">Show/Hide Checklist</span></p>
+<div class="expandable-section-open">
+<table class="Bordered">
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="synchronization_technicques"></a>
+					Avoid race conditions by using appropriate <a href="../lvconcepts/Suggestions_for_Exec.html">synchronization</a> techniques.
+					<div id="synchronization_technicques_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">You can use synchronization techniques such as queues, data value references, and semaphores to prevent race conditions. You also can use functional global variables to prevent race conditions if the functional global variable protects a critical section containing actions that modify data. If a functional global variable protects sections containing actions that only read and write data, you cannot use the functional global variable to prevent race conditions.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="unsupported_values"></a>Handle all unsupported values appropriately.  <div id="unsupported_values_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">For example, if you create an API, consider returning an error for unsupported inputs.  If you create a user interface, configure the input ranges of controls.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="for_loop_behavior"></a>Ensure that For Loops behave as expected if they execute zero times. <div id="for_loop_behavior_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">Use a shift register if necessary to pass a value through the loop in this situation. If you wire a value or a reference to pass through a For Loop, <a href="../lvconcepts/shift_registers_concepts.html">use shift registers instead of tunnels.</a>
+						</p>
+<p class="Body">
+							<img style="display:inline" src="loc_bd_for_loop_shift_reg.gif">
+						</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Only select <strong>Use Default if Unwired</strong> on tunnels of Case and Event structures when confident that adding new cases or events in the future will not introduce a bug in the program.  When in doubt, avoid using this feature</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Verify that you can easily identify the number of times a For Loop executes. Avoid using both Auto-indexing and the N terminal to govern iterations of the same For Loop. If you use more than one of these options, you can cause confusion about how many times the loop executes.  Also, be cautious when <a href="javascript:WWW(WWW_FORLOOPIT)">auto-indexing on multiple arrays of different sizes</a>. </td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Avoid creating clusters that contain multiple elements of the same name.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="execute_multiple_platforms"></a>Take special care when creating VIs to execute on multiple platforms.<div id="execute_multiple_platforms_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">If possible, avoid using VIs that only execute properly on a specific platform.  Instead, place platform specific functionality inside of a conditional disable structure specific to a target.</p>
+<p class="Body">VIs that contain Call Library Function Nodes are platform specific. VIs that call shared libraries using a Call Library Function Node are platform dependent and only work on different platforms if you have a corresponding library for each platform. If you move a VI that contains a Call Library Function Node to another platform, you must update the node to specify the shared library compiled for the new platform.</p>
+<p class="Body">You also can use the <a href="../glang/Conditional_Disable_Structure.html">Conditional Disable</a> structure to configure platform-specific code. Configure these VIs as source only to increase compatibility with source control.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="arbitrary_time_delays"></a>If you use an infinite timeout, provide a mechanism to programmatically abort the wait.<div id="arbitrary_time_delays_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">Avoid using arbitrary timing delays and assuming that important events execute during those delays.  Also, avoid proceeding without verifying that a relevant event occurred. If you must use a delay, provide a comment about how you determined the duration of the delay.</p>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div><a name="error_handling_checklist"></a><h2>Error Handling Checklist</h2>
+<div id="error_handling">
+<p class="expanded"><span class="expandable-underline">Show/Hide Checklist</span></p>
+<div class="expandable-section-open">
+<table class="Bordered">
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="error_handling_technicques"></a>
+					Handle errors <a href="../lvconcepts/Error_Checking_and_Error_Handling.html">appropriately.</a><div id="error_handling_technicques_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">Carefully consider every place you report a potential error inside the code.  Add comments to explain any potentially confusing decisions about error placement.</p>
+<p class="Body">Use a consistent error handling strategy. Make sure the program can deal with all error conditions and invalid values. Determine the actions for errors, such as log, terminate, and notify user.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Disable automatic error handling for all VIs, including new VIs. Automatic error handling stops execution in the event of an error and waits on an input before continuing. This automatic stopping can cause problems in a deployed system or application.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="error_priority"></a>Give priority to errors that occurred first. These errors likely caused any subsequent errors. <div id="error_priority_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">When passing errors through loops, use shift registers instead of tunnels to maintain warnings. Give the first errors priority when merging errors unless there is a specific reason for not doing so.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="error_case_structures"></a>Use a Case structure for VIs that include <strong>error in</strong> and <strong>error out</strong> parameters to distinguish between the error and no error conditions.<div id="error_case_structures_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">Make exceptions for code that should execute even upon encountering an incoming error or for VIs that need performance optimization in the <strong>No Error</strong> case. Use VI documentation and/or comments to document exceptions.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Consider creating a custom error file to contain all the error descriptions for an application.</td>
+</tr>
+</table>
+</div>
+</div><a name="performance_checklist"></a><h2>Performance Checklist</h2>
+<div id="performance">
+<p class="expanded"><span class="expandable-underline">Show/Hide Checklist</span></p>
+<div class="expandable-section-open">
+<table class="Bordered">
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">
+					Always keep performance in mind when designing a VI.  When you must decide between additional performance, ease of development, or code maintenance, choose the tradeoff most appropriate for the specific project.
+					</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Unless necessary, avoid including code that reallocates memory inside of loops, such as code that contains the Build Array or Concatenate Strings functions. Reallocating memory inside of loops can cause slow performance.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Avoid unnecessary type coercions. Type coercions can allocate memory and cause slow performance.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Avoid unnecessary data copies, especially if the data is large.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Consider placing code that opens and closes resources, such as DAQ or File I/O code, outside of loops.  Repeatedly opening and closing references inside of a loop is inefficient. </td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="limit_execution_speed"></a>(VI Analyzer) Include code to limit the execution speed of continuously running loops.<div id="limit_execution_speed_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">By default, While Loops execute as quickly as possible and use all available CPU resources during execution.  You can use a blocking mechanism, such as a Wait function or timeout value, to make sure a While Loop executes only as often as needed to preserve system resources.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="monitor_UI_interaction"></a>(VI Analyzer) Use an Event Structure to monitor UI interaction where appropriate. <div id="monitor_UI_interaction_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">Avoid polling front panel controls when you can use a <a href="../lvprop/Ctrl_Value_Changed.html">Value Change</a> event in an Event structure more appropriately. Avoid using time consuming code inside of the Event structure. Consider using something similar to producer-consumer pattern in the application. Place the control terminal for a Value Change event configured for a control in the Value Change event case.  </p>
+<p class="Body">The following illustration shows a situation in which you can acceptably place the control terminal as a stop button outside the event structure. </p>
+<p class="Body">
+							<img style="display:inline" src="loc_bd_ctrl_term_stop.gif">
+						</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Resize Event Data Nodes to contain only data being used.  If the node is not used, resize the node to one element and move it to a corner of the frame.</td>
+</tr>
+</table>
+</div>
+</div><a name="block_diagram_conditional_checklist"></a><h2>Conditional Checklist</h2>
+<div id="block_diagram_conditional">
+<p class="expanded"><span class="expandable-underline">Show/Hide Checklist</span></p>
+<div class="expandable-section-open">
+<table class="Bordered">
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Use inlining and subroutine priority strategically to improve <a href="../lvconcepts/VI_Execution_Speed.html#SubVI_Overhead">execution speeds</a>.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Consider configuring <a href="../lvhowto/Configuring_Parallel_For_Loop_Iterations.html">parallel For Loop iterations</a> to make minor adjustments to performance.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Use a <a href="javascript:WWW(WWW_DIFFCTRLLVVPN)">local variable</a> instead of the Value property to update a front panel object. </td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) If you perform many updates to the front panel, use the <a href="../glang/get_ctrl_val_by_index.html">Get Control Values by Index</a> function and <a href="../glang/set_ctrl_val_by_index.html">Set Control Values by Index</a> functions.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Use the <a href="../lvhowto/Using_In_Place_Element.html">In Place Element Structure</a> for <a href="../glang/inplace_array.html">Array Index / Replace Elements</a> operations and for cluster read, modify, and write operations. </td>
+</tr>
+</table>
+</div>
+</div><a name="subVIs_checklist"></a><h2>SubVIs Checklist</h2>
+<div id="subVIs">
+<p class="expanded"><span class="expandable-underline">Show/Hide Checklist</span></p>
+<div class="expandable-section-open">
+<table class="Bordered">
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Design each subVI with low coupling and high cohesion.  This helps ensure each subVI is easy to understand, maintain, and test. Organize related groups of subVIs into libraries.  Avoid using shared libraries (DLLs).</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="meaningful_icons"></a>(VI Analyzer) Create a meaningful icon for subVIs.<div id="meaningful_icons_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">Avoid using the default icon or a blank icon.  Design each new icon as distinct and different from each existing icon. The icon represents the VI on a palette and a block diagram. Well-designed icons give you a better understanding of the subVI without requiring excessive documentation.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Make good use of reusable, testable subVIs.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="error_clusters"></a>(VI Analyzer) Use <strong>error in</strong> and <strong>error out</strong> clusters in all subVIs.<div id="error_clusters_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">Include <strong>error in</strong> and <strong>error out</strong> clusters in all subVIs, even if the subVI does not process errors, because <strong>error in</strong> and <strong>error out</strong> clusters help control execution flow. If a subVI has an incoming error, you can use a Case structure to send the error through the VI without executing any of the subVI code.</p>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div><a name="API_deisgn_checklist"></a><h2>API Design Checklist</h2>
+<div id="API_design">
+<p class="expanded"><span class="expandable-underline">Show/Hide Checklist</span></p>
+<div class="expandable-section-open">
+<table class="Bordered">
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Use the same connector pane for related VIs.  Wire the connector pane <a href="../lvconcepts/Building_Connector_Pane.html">according to best practices</a> for LabVIEW programming.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="connector_pane_pattern"></a>(VI Analyzer) Use either the 5�2�2�2�5 (5x3x3x5) or the 4x2x2x4 connector pane pattern. <div id="connector_pane_pattern_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">Maintain a consistent connector pane pattern with a library, project, or development team. Avoid using connector panes with more than 16 terminals. Use the 4x2x2x4 pattern if you work frequently with core LabVIEW VIs.  Use the 5x2x2x2x5 pattern if you work frequently with libraries that use this style, such as NI-DAQmx or LabVIEW FPGA VIs.</p>
+<p class="Body">
+							<img style="display:inline" src="noloc_bd_conn_pane_pattern.gif">
+						</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Use the left terminals for controls and right terminals for indicators. You can also use the top and bottom terminals as long as you place all controls to the left of indicators.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Place related controls and indicators at the same relative position on the connector pane. For example, if you assign a data- in control to the middle left terminal, assign the data-out indicator to the middle right terminal.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">If a control or indicator serves the same function throughout an API, name the control or indicator consistently and place it in the same position throughout all API connector panes.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Place paths, references, and LabVIEW Classes in the top corners.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Assign <strong>error in</strong> and <strong>error out</strong> terminals to the corresponding bottom left and right terminals (terminals 8 and 11 on the 4x2x2x4 connector and terminals 11 and 15 on the 5x2x2x2x5 connector).</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Preserve empty terminals on the connector pane to allow for future expansion.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Set inputs terminals for parameters that must be wired for the VI to function as required.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Set input terminals with good default values as recommended. </td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Use optional terminals only when needed. </td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="connector_pane_settings"></a>Use <strong>Required</strong>, <strong>Recommended</strong>, and <strong>Optional</strong> settings on the connector pane.<div id="connector_pane_settings_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">The <strong>Required</strong>, <strong>Recommended</strong>, <strong>Optional</strong> setting for connector pane terminals affects the appearance of the inputs and outputs in the <strong>Context Help</strong> window and prevents users from neglecting to wire subVI connections. Use the <strong>Required</strong>  setting for inputs that users must wire for the subVI to run properly. Use the <strong>Optional</strong>  setting for inputs that have default values that work for the subVI most of the time. The VI stills functions you leave these inputs unwired.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a href="../lvhowto/Creating_VI_Icon.html">Use a consistent banner</a> or glyph for API icons.  An icon template will help with this. More details on icon style can be found <a href="javascript:WWW(WWW_ICONLIB)">here</a>. </td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Avoid using text in VI icons, especially for LabVIEW class public and dynamic dispatch VIs . Users who speak other languages may have difficulties understanding the text.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Place APIs in a library to improve organization.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Mark any VIs in a library as private if they are not  part of the API.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="icon_creation"></a>Use the following suggestions to create icons.<div id="icon_creation_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<ul>
+<li>Use the icons in the LabVIEW libraries as prototypes. When you do not include a picture for an icon, you can use text. If you localize the application, also localize the text on the icon. Select a user friendly font and font size, such as 8 point Small Font in all caps. </li>
+<li>Create a unified icon style for related VIs to help users visually understand which subVIs are associated with the top-level VI.</li>
+<li>Always create standard size (32 � 32 pixel) icons. VIs with smaller icons can be awkward to select and wire because of the variation in size.</li>
+<li>Avoid using colloquialisms in icons. Colloquialisms are difficult to translate. Also, consider cultural and language difference when you create icons. Certain pictures may not translate well. For example, avoid representing a data logging VI with a picture of a tree branch or a lumberjack.</li>
+</ul>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div><a name="organization_checklist"></a><h2>Organization Checklist</h2>
+<div id="organization">
+<p class="expanded"><span class="expandable-underline">Show/Hide Checklist</span></p>
+<div class="expandable-section-open">
+<table class="Bordered">
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="organize_files"></a>Organize all files <a href="../lvconcepts/Project_Libraries.html">logically</a>. Give VIs meaningful names without special characters, such as backslash (\), slash (/), colon (:), and tilde (~). Select a VI name that clearly and accurately represents the VI function. <div id="organize_files_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">When naming VIs, LLBs, and directories, avoid using characters not accepted by all file systems, such as backslash (\), slash (/), colon (:), and tilde (~). Most operating systems accept long descriptive filenames up to 255 characters.</p>
+<p class="Body">If you make backup copies of files, <a href="../lvconcepts/SavingVIs.html">save them</a> in a directory outside of where <a href="../lvdialog/Path_Options.html">LabVIEW typically searches</a> to prevent LabVIEW from loading these file copies into memory when you open development VIs.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Use full words with spaces for the names of all files for clarity. Use "Title" case for each word in file names.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Use virtual folders to delineate between public and private members of a library.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Save custom controls with the same name as the label. For example, Alarm Boolean.ctl has the default label Alarm Boolean.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Work within the maximum path length restrictions on Windows, which is 260 characters.</td>
+</tr>
+</table>
+</div>
+</div><a name="project_organization_checklist"></a><h2>Project Organization Checklist</h2>
+<div id="project_organization">
+<p class="expanded"><span class="expandable-underline">Show/Hide Checklist</span></p>
+<div class="expandable-section-open">
+<table class="Bordered">
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Place the top-level VIs for the project directly under appropriate targets. Because you cannot flag a VI as the top-level VI, placing the top-level VIs under the corresponding target helps clarify which VIs are top-level.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Organize VIs in a hierarchical directory with easily accessible top-level VIs and subVIs in subdirectories. Limit the number and level of directories in a project.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Place all VIs in libraries, classes, or virtual folders.  Avoid using auto-populating folders unless created code for a plug-in architecture that allows you to call other code. Auto-populating folders display code from the directory where plug-ins are installed.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="unused_files"></a>Remove all unused files.<div id="unused_files_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">Right-click the project root in the <strong>Project Explorer</strong> window and select <strong>Find Items with No Callers</strong> from the shortcut menu to display the <a href="../lvdialog/Find_No_Callers_DB.html">Find Items with No Callers</a> dialog box. This dialog box identifies all the items you can remove.</p>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div><a name="distributing_source_code_checklist"></a><h2>Distributing Source Code Checklist</h2>
+<div id="distributing_source_code">
+<p class="expanded"><span class="expandable-underline">Show/Hide Checklist</span></p>
+<div class="expandable-section-open">
+<table class="Bordered">
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Save all VIs and projects in the upper-left region of the primary monitor.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Save all VIs with the block diagram slightly lower than the front panel window bar and slightly to the right of the front panel scrollbar so that both windows are accessible from the window bar when open.  </td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Avoid saving a VI with a maximized front panel or block diagram to make sure the VI loads in a predictable place.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Save each VI with the most important frame of multi-frame structures, such as Case or Event structures, displayed. </td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Remove all breakpoints before distributing VIs to prevent unintended and unwanted halts in execution.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Remove the revision history of a VI to remove comments.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">(VI Analyzer) Disable debugging to improve performance.</td>
+</tr>
+</table>
+</div>
+</div><a name="RT_specific_checklist"></a><h2>RT-Specific Checklist</h2>
+<div id="RT_specific">
+<p class="expanded"><span class="expandable-underline">Show/Hide Checklist</span></p>
+<div class="expandable-section-open">
+<table class="Bordered">
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Whenever possible, use while loops, not timed loops, for non-deterministic tasks.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">In your documentation, use the term "deterministic" instead of "time critical" to describe code running in timed loops. The term �time critical� is commonly recognized as a VI priority you can use to schedule parallel tasks.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Whenever possible, use timed structures instead of a deterministic <a href="../lvrtbestpractices/RT_Priorities.html" class="checkLink lvrtbestpractices">priority</a> setting on SubVIs.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Serialize code within timed structures so that it executes in a defined, sequential order.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">To minimize subVI overhead, use the inline property for VIs in timed structures. </td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">When you use subVIs in timed loops that access a shared resource, consider using subroutine priority and right-clicking a subVI to select the <strong>Skip Subroutine Call If Busy</strong> option.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Avoid placing controls or indicators within timed loops because they execute slowly and non-deterministically.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">With timed loops, merge inner left ear error with error input to catch any configuration errors. Also merge outer right ear error with error outputs.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Make sure to properly handle errors in time-critical code. </td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">If possible, use the <a href="../glang/Select.html">Select</a> function instead of a Case structure in deterministic code. The Select function provides greater determinism.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Check all time-critical loops for <a href="../lvfpgahelp/Meas_While_Loop_Execution_Rate.html" class="checkLink lvfpgahelp">lateness.</a></td>
+</tr>
+</table>
+</div>
+</div><a name="handling_data_checklist"></a><h2>Handling Data Checklist- RT</h2>
+<div id="handling_data">
+<p class="expanded"><span class="expandable-underline">Show/Hide Checklist</span></p>
+<div class="expandable-section-open">
+<table class="Bordered">
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">If <a href="javascript:WWW(WWW_OPTFILEIO)">file IO performance</a> matters, establish the best chunk size for writing and reading.  Note that this may vary by target.  </td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Use RT FIFO functions instead of RT FIFO enabled <a href="../lvrtbestpractices/RT_BP_SVars.html" class="checkLink lvrtbestpractices">Shared Variables</a> for streaming data. However, you can use RT FIFO enabled shared variables for current value communication.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">For critical data, use the <a href="../glang/Flush_File.html">Flush File</a> function to flush the file frequently. Reliance and FAT only flush once per second.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Limit the size and quantity of log files to improve system reliability. A directory with a large and growing number of files can grow slow and demonstrate changes in system behavior. As a result, you may encounter unexpected behavior. </td>
+</tr>
+</table>
+</div>
+</div><a name="initialization_shutdown_checklist"></a><h2>Initialization and Shutdown Checklist- RT</h2>
+<div id="initialization_shutdown">
+<p class="expanded"><span class="expandable-underline">Show/Hide Checklist</span></p>
+<div class="expandable-section-open">
+<table class="Bordered">
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Implement shutdown code to stop anything initialized, even if the next step calls for a reboot.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Avoid writing to configuration files from within the application. Writing to configuration files can corrupt the file and prevent you from properly initializing the next reboot. If you must write to a configuration file, develop a strategy to recover from or limit the damage of corruption. </td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Place code that reboots a controller in a conditional disable structure so you can easily disable the reboot at the end of a program. If you place reboot code in a conditional disable structure, you can disable the code when debugging and enable the code when deploying the application.</td>
+</tr>
+</table>
+</div>
+</div><a name="miscellaneous_RT_checklist"></a><h2>Miscellaneous-RT</h2>
+<div id="miscellaneous_RT">
+<p class="expanded"><span class="expandable-underline">Show/Hide Checklist</span></p>
+<div class="expandable-section-open">
+<table class="Bordered">
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Use <a href="../lvrtconcepts/Timing_Control_Loops.html" class="checkLink lvrtconcepts">Timing VIs</a> on the RT palette.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="processor_memory_usage"></a>Monitor the processor and memory usage for the system from development through deployment.  <div id="processor_memory_usage_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">Ensure processor usage does not stay high long enough to cause unacceptable thread starvation when a thread does not get time to execute.  Verify that memory usage does not grow continually and that a plan exists to recover in case memory usage does grow continuously.</p>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div><a name="FPGA_specific_checklist"></a><h2>FPGA-Specific Checklist</h2>
+<div id="FPGA_specific">
+<p class="expanded"><span class="expandable-underline">Show/Hide Checklist</span></p>
+<div class="expandable-section-open">
+<table class="Bordered">
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">When you plan how to use FPGA resources, keep in mind that top-level VI controls and indicators are resource intensive. </td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="error_output_code"></a>If you use a node that has an error output, include code to handle the error immediately.<div id="error_output_code_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">Localized error handling in FPGAs typically results in lower FPGA resource utilization because the error cluster in FPGA consists of 33 bits, one bit for status and 32 for the error code. You can often reduce 33 bits down to one.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Avoid writing to hardware outputs inside of a Case structure, especially when inside of a <a href="../lvfpga/FPGA_Timed_Loop.html" class="checkLink lvfpga">single-cycle Timed Loop</a>.  Explicitly define hardware outputs for each case and write to hardware outputs outside of the Case structure.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="timeout_output_FIFOs"></a>Monitor the timeout output of DMA FIFO reads and writes and respond accordingly. <div id="timeout_output_FIFOs_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<p class="Body">Also monitor the timeout output of target-scoped FIFOs unless you either do not care if a timeout occurs or are certain a timeout will never occur. To handle the length of timeouts, either latch the output and notify the host that the FPGA should be restarted to ensure data integrity or use a handshaking protocol to handle resending data.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Use 4-Wire handshaking anywhere appropriate, and be sure to label the wires, such as "input valid," "ready for output," "output valid," and "ready for input". </td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Consider converting fractional data types to the single data type before passing them up to the host.</td>
+</tr>
+</table>
+</div>
+</div><a name="FPGA_host_interface_checklist"></a><h2>FPGA Host Interface</h2>
+<div id="FPGA_host_interface">
+<p class="expanded"><span class="expandable-underline">Show/Hide Checklist</span></p>
+<div class="expandable-section-open">
+<table class="Bordered">
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Consider calling the Reset and Run methods specifically instead of automatically running the VI from the <a href="../lvfpgahost/Open_FPGA_VI_Reference.html" class="checkLink lvfpgahost">Open FPGA Reference</a> function.  This ensures the FPGA is in a known state before it executes.</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered"><a name="DMA_FIFOs"></a>When reading from <a href="../lvfpgahosthelp/FPGA_Reading_DMA.html" class="checkLink lvfpgahosthelp">DMA FIFOs</a> do not reallocate memory or poll the CPU.<div id="DMA_FIFOs_details">
+<p class="expanded"><span class="expandable-underline">Details</span></p>
+<div class="expandable-section-open">
+<ul>
+<li>Consider using the Configure method to set an appropriate host-side buffer.  Avoid using large FPGA size buffers when possible to preserve block RAM.</li>
+<li>Set the DMA Read timeout to 0. </li>
+<li>Read a fixed-size number of elements (a multiple of the number of data channels). </li>
+<li>Wait until the buffer is full before reading elements.</li>
+</ul>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="Bordered" bgcolor="silver"><img src="checkbox.gif"></td>
+<td class="Bordered">Use the <a href="../lvfpgahost/fpga_dyn_refnum_constant.html" class="checkLink lvfpgahost">Dynamic reference</a> type when creating an API that communicates with an FPGA.</td>
+</tr>
+</table>
+</div>
+</div>
+</body>
+</html>

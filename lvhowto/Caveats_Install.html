@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4100Ebuildingexehlp -->
+
+<title>Caveats and Recommendations for Building Installers</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Caveats and Recommendations for Building Installers</h1>
+
+<p class="Body">The following list describes some of the caveats and recommendations to consider when you build an installer.</p>
+<ul>
+<li>When you select files to include in the installer build from the <strong>Source Files</strong> page of the <a href="../lvdialog/Installer_Tab_Windows.html">Installer Properties</a> dialog box, you cannot select part of a build specification. You must include build specifications as a whole. The entire specification appears in the <strong>Destination View</strong> tree.</li>
+<li>If you want to include a project library in the installer build, make sure the project library does not include files on a network or other files with links that will break if moved. You cannot copy a project library from the <strong>Project Files View</strong> directory to the <strong>Destination View</strong> directory if any of the files are on different drives, or if the files do not share a common path with the LabVIEW project file (<span class="Monospace">.lvproj</span>).</li>
+<li>Consider building a source distribution that contains the files you want to include in an installer build, to reduce the possibility of broken links for files on networks or different drives.</li>
+<li>When you <a href="Add_Installers_to_Build.html">add a National Instruments product installer</a> to the installer build, the drivers and components for NI products that you include in the installer contain only those features that are installed on the computer on which you build the installer. For example, if you have only 10 of a possible 20 features of an NI product installed on the build computer and then select to include the full version of that product in the installer, the installer will include only the 10 features installed on the build computer, not all 20 features available for that product.<br><br> 
+It is possible for an installer you create to uninstall components on the computer on which it is installed without reinstalling current versions of those components. This behavior depends on the NI products installed on the build computer and those installed on the computer on which you run the installer. If the computer on which you run the installer has an NI product installed that is not installed on the build computer, that product may be removed during the installation. The installer displays information to you that explains what features will be removed as part of the installation before uninstalling any components and gives you the option to stop the installation.
+</li>
+<li>You can include <a href="Def_Custom_Error_Text.html">custom error codes</a> in the installer. The <span class="Monospace">[LabVIEW <em>x</em> Run-Time]</span> folder in the <strong>Destination View</strong> directory corresponds to the <span class="Monospace">Shared\LabVIEW Run-Time\x.x</span> directory, where <em>xx</em> is the LabVIEW version currently in use. If you place a checkmark in the <strong>Install custom error code files</strong> checkbox on the <a href="../lvdialog/Adv_Installer_Settings_DB.html">Advanced</a> page, the installer build includes all error code files from <span class="Monospace">labview\project\errors</span> and <span class="Monospace">labview\user.lib\errors</span> and installs them in the <span class="Monospace">Shared\LabVIEW Run-Time\x.x\errors</span> directory.</li></ul>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;You must manually create an <span class="Monospace">errors</span> folder in the <span class="Monospace">labview\user.lib</span> directory to organize your error code files.</td>
+</tr>
+</table>
+<ul id="a6"><li>If you receive an out of memory error when building an application for an installer build, consider one of the following solutions:
+	<ul>
+		<li><a href="../lvhowto/enable_lrg_ad_aware.html">Enable LabVIEW to use up to 3 GB</a> of memory on 32-bit Windows.</li>
+		<li>If the application includes large or complex VIs, <a href="../lvdialog/Memory_Usage_Properties.html">lower the complexity threshold</a> at which LabVIEW prioritizes editor responsiveness over execution speed. This change allows LabVIEW to devote more memory to the build process.</li>
+		<li>Reduce the number of VIs in your application by dividing portions of the application into separate source distributions. The VIs in the application use the <a href="../glang/Call_By_Reference_Node.html">Call By Reference</a> node to call separate portions.</li>
+	</ul> 
+ 		</li>
+
+<li>When you test a stand-alone application, shared library, .NET assembly, or <a href="../lvhowto/Build_Web_Service.html">Web service</a> for an installer build, if the load time takes longer than you expect, remove portions of the VIs that other VIs call dynamically once or occasionally. For example, if an application has a configuration dialog box that consists of many VIs and the user has to choose to load the dialog box, use the <a href="../lvdialog/Call_Configuration.html">VI Call Configuration</a> dialog box to <a href="../lvhowto/ConfiguringCalls.html">configure when the subVI loads</a> by selecting the <strong>Reload for each call</strong> option. When you create applications, shared libraries, and .NET assemblies, modify the build so that it has additional destinations. To reduce load time, configure the VIs that you call dynamically to go into those additional destinations, rather than the main application or shared library.</li>
+
+
+<li>Use the <span class="Monospace">[LabVIEW <em>x</em>]</span> folder in the <strong>Destination View</strong> directory to add files to install in the directory of the latest version of LabVIEW that the user has installed.
+<ul>
+	<li>If you include the build specification for any type of application within an installer, ensure that the build output of the build specification is relative to the primary destination of the build specification. The primary destination is specified on the <strong>Destination</strong> page of the <strong>Properties</strong> dialog box for the application. If the build output includes any files that are not relative to its primary destination, the installer will reorganize the original file hierarchy of the application. In particular, the installer will move any files that are not relative into the primary destination.</li>
+</ul>
+</li>
+<li>You do not need additional license files when using LabVIEW distribution components with LabVIEW-built applications.</li>
+<li>When you add a build specification to a folder in the <strong>Destination View</strong> tree of the <a href="../lvdialog/File_Set_Install_Page.html">Source Files</a> page of the <a href="../lvdialog/Installer_Tab_Windows.html">Installer Properties</a> dialog box, the name of the build appears in the <strong>Destination View</strong> tree, even though a folder with the name of the build does not exist.</li>
+</ul>
+
+
+</body>
+</html>

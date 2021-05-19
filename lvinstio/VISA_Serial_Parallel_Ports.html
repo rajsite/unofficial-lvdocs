@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+	<!-- Original filename: scctools.txt -->
+	
+	
+<title>Configuring Serial and Parallel Ports with VISA</title>
+	<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+	
+
+
+</head>
+
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+	<H1>Configuring Serial and Parallel Ports with VISA</H1>
+
+<p class="Body">NI-VISA automatically detects ports. You can view the list of ports with a <a href="../lvinstio/VISA_Resource_Name_generic.html">VISA resource name</a> control on the front panel or with the <a href="VISA_Find_Resource.html">VISA Find Resource</a> function. The maximum number of serial ports that NI-VISA supports on any platform is 256. The default numbering of serial ports is system dependent.</p>
+
+<p class="Body"><span class="Platform">(Windows)</span> NI-VISA supports interaction with parallel ports as well as with serial ports on your computer. You can use the <a href="../lvvisaprop/VISA_object.html">VISA properties</a> to communicate with parallel ports in the same way you communicate with serial ports.</p>
+
+<table class="Borderless">
+<tr><td class="Icon"><img src="note.gif" alt=""></td>
+	<td><strong>Note</strong>&nbsp;&nbsp;You may receive unexpected errors while attempting to write to a parallel port if you leave floating pins. Unlike the serial ports, parallel ports have pins that, if left floating, cause the port driver to assume that the attached device is busy (pin 11) or out of paper (pin 12). Ground pins 11 and 12 on the port to ensure that you can write successfully to the port.
+</td></tr>
+</table>
+
+
+
+
+
+</body>
+</html>

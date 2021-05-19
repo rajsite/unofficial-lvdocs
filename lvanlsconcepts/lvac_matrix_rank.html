@@ -1,0 +1,90 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Matrix Rank</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-CCEC5893-D72C-432C-9996-0B2887BBEAC0" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Matrix Rank</h1> 
+      
+      <div> 
+         	 
+         <p> 
+            		 
+            		 
+            		 The rank of a matrix <em>A</em>, denoted by &#961;(<em>A</em>), is the maximum number of linearly independent columns in <em>A</em>. If you look at the example matrix <em>A</em>, you find that all the columns of <em>A</em> are linearly independent of each other. That is, none of the columns can be obtained by forming a linear combination of the
+            other columns. Hence, the rank of the matrix is 3. Consider one more example matrix, <em>B</em>, where 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./rkset2Ftemp2Flvac_matrix_rank.xml_d19093e47.png"></span></div>
+         </div> 
+         	 
+         <p>This matrix has only two linearly independent columns because the third column of <em>B</em> is linearly dependent on the first two columns. Hence, the rank of this matrix is 2. It can be shown that the number of linearly
+            independent columns of a matrix is equal to the number of independent rows. So the rank can never be greater than the smaller
+            dimension of the matrix. Consequently, if <em>A</em> is an <em>n</em> × <em>m</em> matrix, then 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./rkset2Ftemp2Flvac_matrix_rank.xml_d19093e107.png"></span></div>
+         </div> 
+         	 
+         <p>where min denotes the minimum of the two numbers. In matrix theory, the rank of a square matrix pertains to the highest order
+            nonsingular submatrix that can be formed from it. A matrix is singular if its determinant is zero. So the rank pertains to
+            the highest order matrix that you can obtain whose determinant is not zero. For example, consider a 4 × 4 matrix 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./rkset2Ftemp2Flvac_matrix_rank.xml_d19093e145.png"></span></div>
+         </div> 
+         	 
+         <p>For this matrix, det(<em>B</em>)=0, but 
+            	 
+         </p> 
+         <div class="fignone">
+            <div class="mathml-block"><span><img src="./rkset2Ftemp2Flvac_matrix_rank.xml_d19093e223.png"></span></div>
+         </div> 
+         	 
+         <p>Hence, the rank of <em>B</em> is 3. A square matrix has full rank only if its determinant is different from zero. Matrix <em>B</em> is not a full-rank matrix. 
+            	 
+         </p> 
+         	 
+         <p>The following list describes some useful properties of the rank of a matrix: 
+            	 
+         </p> 
+         	 <a name="GUID-CCEC5893-D72C-432C-9996-0B2887BBEAC0__UL_91733F8DE305451E904BC4302A3209D4" shape="rect">
+            <!-- --></a><ul id="GUID-CCEC5893-D72C-432C-9996-0B2887BBEAC0__UL_91733F8DE305451E904BC4302A3209D4">
+            <li><a name="GUID-CCEC5893-D72C-432C-9996-0B2887BBEAC0__LI_8F1F9B1A464C43F6973450B8F0CD2AEB" shape="rect">
+                  <!-- --></a>The rank is invariable to the transpose. In other words, rank(<em>A</em>) = rank(<em>A</em><sup><em>T</em></sup>). 
+               		
+            </li>
+            <li><a name="GUID-CCEC5893-D72C-432C-9996-0B2887BBEAC0__LI_609267F5282A44E0AA33677CBE335A50" shape="rect">
+                  <!-- --></a>If one or more solutions exist to the linear system <em>A</em><em>x</em> = <em>b</em>, then rank([<em>A</em>, <em>b</em>]) must equal rank(<em>A</em>), where the matrix [<em>A</em>, <em>b</em>] is the augmented matrix. 
+               		
+            </li>
+            <li><a name="GUID-CCEC5893-D72C-432C-9996-0B2887BBEAC0__LI_ED216800584F465DA7DD76C3BD5A65D3" shape="rect">
+                  <!-- --></a>Elementary operations do not change the rank of the matrix. 
+               		
+            </li>
+            <li><a name="GUID-CCEC5893-D72C-432C-9996-0B2887BBEAC0__LI_E914B906CE9843AB9CB02CE8939CB67D" shape="rect">
+                  <!-- --></a>For any two <em>m</em>-by-<em>n</em> matrices <em>A</em> and <em>B</em>, when there are two nonsingular square matrices <em>X</em> and <em>Y</em> that satisfy <em>B</em> = <em>X</em><em>A</em><em>Y</em>, the rank of matrix <em>A</em> equals the rank of matrix <em>B</em>. 
+               		
+            </li>
+         </ul> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Lin_Sys_and_Matrix_Anls.html" shape="rect">Matrix Analysis</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

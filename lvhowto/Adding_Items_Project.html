@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+<title>Adding Items to a Project</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Adding Items to a Project</h1>
+<p class="Body">Use the <a href="../lvconcepts/Using_LabVIEW_Projects.html">Project Explorer</a> window to add LabVIEW files, such as VIs and <a href="Adding_LLBs_Project.html">libraries</a>, as well as files not specific to LabVIEW, such as text files and spreadsheets, to a target in a <a href="../lvconcepts/Using_LabVIEW_Projects.html">LabVIEW project</a>. When you add files to a project, LabVIEW creates items in the <strong>Project Explorer</strong> window to represent the files on disk. You can create an <a href="Organizing_Items_Project.html">organizational structure</a> for items in a project.</p>
+
+<p class="Body">An item can appear only once under a target. For example, if you add a file from a directory on disk to the <strong>My Computer</strong> target and then add the entire directory to the <strong>My Computer</strong> target, LabVIEW does not include the file again.</p>
+
+<p class="Body">From the <strong>Items</strong> page in the <strong>Project Explorer</strong> window, you can add items under a target in a project in the following ways:</p>
+<ul>
+<li>Right-click a target and select <strong>New&#0187;VI</strong> from the shortcut menu to add a new, blank VI. You also can select <strong>File&#0187;New VI</strong> or <strong>Project&#0187;Add To Project&#0187;New VI</strong> to add a new, blank VI. You also can add a VI to the project by selecting the VI icon in the upper right corner of a front panel or block diagram window and dragging the icon to the target. When you add a VI to the project, LabVIEW automatically adds its entire hierarchy to the <strong>Project Explorer</strong> window under <strong>Dependencies</strong>.</li>
+
+<li>Right-click a target and select <strong>New</strong> from the shortcut menu. Then select the item you want to add to the project.</li>
+
+<li>Right-click a target and select <strong>New&#0187;Virtual Folder</strong> from the shortcut menu to add a virtual folder under a target. A virtual folder is a folder in the project that organizes project items and does not represent files on disk. You also can create subfolders by right-clicking a virtual folder and selecting <strong>New&#0187;Virtual Folder</strong> from the shortcut menu.</li>
+
+<li>Right-click a target or a folder under the target, select <strong>Add&#187;File</strong> from the shortcut menu, and select the file you want to add from the dialog box. You also can select the target, select <strong>Project&#0187;Add To Project&#0187;File</strong>, and select the file you want to add from the dialog box. </li>
+
+<li>Right-click a target or a folder under the target, select <strong>Add&#187;Folder (Snapshot)</strong> from the shortcut menu, and select the file(s) you want to add from the dialog box. You also can select the target, select <strong>Project&#0187;Add To Project&#0187;Folder (Snapshot)</strong>, and select the file(s) you want to add from the dialog box. </li>
+
+<li>Right-click a target or a folder under a target and select <strong>Add&#187;Folder (Auto-populating)</strong> from the shortcut menu to display a file dialog box. You also can select a target and then select <strong>Project&#0187;Add To Project&#0187;Folder (Auto-populating)</strong>.</li>
+
+<li><!-- begin parent: lvhowto.chm//Adding_Hyperlinks_Project.html-->Right-click a target, or a folder or library under a target, and select <strong>Add&#187;Hyperlink</strong> from the shortcut menu. The <a href="../lvdialog/Edit_Hyperlink_DB.html">Hyperlink Properties</a> dialog box appears. You also can select the target and select <strong>Project&#0187;Add to Project&#0187;Hyperlink</strong> to display the <strong>Hyperlink Properties</strong> dialog box.<!-- end parent: ../lvhowto//Adding_Hyperlinks_Project.html--></li>
+
+<li>Use the <a href="../lvprop/ProjectItem_Add_File.html">Add File</a>, <a href="../lvprop/ProjectItem_Add_Item.html">Add Item</a>, or <a href="../lvprop/ProjItm_AddItemMem.html">Add Item From Memory</a> method to add items to a project programmatically. Use the <a href="../lvprop/ProjectItem_HyperLink_Address.html">HyperLink Address</a> property to set the address of a hyperlink item.</li>
+
+<li><span class="Platform">(Windows and macOS)</span> Select an item or directory on disk and drag it to the target.</li>
+</ul>
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td><td><strong>Note</strong>&nbsp;&nbsp;You cannot drag and drop items in the <strong>Project Explorer</strong> window to the file system.</td></tr></table>	
+
+<p class="Body">You also can add new LabVIEW files to a project from the <a href="../lvdialog/New_Dialog_Box.html">New</a> dialog box. Select <strong>File&#0187;New</strong> or  <strong>Project&#0187;Add To Project&#0187;New</strong> to display the <strong>New</strong> dialog box. In the <strong>New</strong> dialog box, select the item you want to add and place a checkmark in the <strong>Add to project</strong> checkbox. If you have multiple projects open, select the project to which you want to add the item from the <strong>Projects</strong> list. </p>
+
+<p class="Body">Items you add to the <strong>Project Explorer</strong> window can include <a href="../glang/project_explorer_icons.html">icons</a>.</p>
+
+
+
+</body>
+</html>

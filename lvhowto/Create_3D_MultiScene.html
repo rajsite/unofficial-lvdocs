@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css"><link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+<title>Creating Relationships between 3D Objects</title>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Creating Relationships between 3D Objects</h1>
+<p class="Body">To <a href="../lvhowto/Create_3D_Scene.html">create a 3D scene</a> with more than one 3D object, you must set up a hierarchy of 3D object relationships. The 3D object that you use to wire the reference for all objects to the 3D picture control terminal or, if you <a href="../lvhowto/3D_Scene_Window.html">configure a scene window</a>, the <a href="../lvprop/SceneWindow_Scene.html">Scene</a> property, is the parent of all other objects in the 3D scene. 3D objects that you add to the scene by wiring a reference to the object to a higher object in the hierarchy are child 3D objects.</p> 
+<p class="Body">If a 3D object is the parent of another 3D object, any transformations you apply to the object also affect the children of that 3D object. Child 3D objects can also be parents of children beneath them in the relationship hierarchy. You can use object relationships in large 3D scenes to program more efficiently and for 3D scenes that involve related movement.</p>
+<p class="Body">Complete the following steps to create a 3D scene with multiple objects.</p>
+<ol><li><a href="Create_3D_Scene.html">Create a 3D scene</a>, or open a VI that contains a 3D scene.</li>
+<li>Remove the wire that connects the 3D object to the 3D picture control terminal.</li>
+<li>Right-click the reference output of the <a href="../lvprop/SceneObject_Set_Drawable.html">Set Drawable</a> method and select <strong>Create&#0187;Method for SceneObject Class&#0187;Object&#0187;Add Object</strong> from the shortcut menu to create the <a href="../lvprop/SceneObject_Add_Object.html">Object:Add Object</a> method.</li> <li>Add the Object:Add Object method to the right of the Set Drawable method and wire the reference output of the Set Drawable method to the reference input of the Object:Add Object method.</li>
+<li>Wire the reference output of the Object:Add Object method to the 3D picture control terminal. The 3D object becomes the parent 3D object.</li>
+<li>Add another <a href="../lvpict/Create_Object.html">Create Object</a> VI to the block diagram to the left of the Object:Add Object method.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object3705);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object3705);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN>
+</li>
+<li>Right-click the <strong>Scene:New Object</strong> output of the Create Object VI and select <strong>Create&#0187;Method for SceneObject Class&#0187;Set Drawable</strong> from the shortcut menu to create another Set Drawable method.</li>
+<li>Add the new Set Drawable method between the Create Object VI and the Object:Add Object method, and wire the <strong>Scene:New Object</strong> output of the Create Object VI to the reference input of the Set Drawable method.</li>
+<li>Select any VI from the <a href="../lvpict/GeometriesVIs.html">Geometries</a> palette and add it to the block diagram to the left of the Set Drawable method.</li>
+<li>Wire the <strong>New <em>xxx</em> Refnum</strong> output of the Geometries VI you selected to the <strong>Drawable</strong> input of the Set Drawable method.</li>
+<li>(Optional) Translate the new 3D object to another location in the 3D scene. Add the <a href="../lvpict/Translate_Object.html">Translate Object</a> VI to the block diagram.<br><br>
+<SPAN title=" Add to the block diagram "><a href="javascript:placeObject(object3716);"><img src="add.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Add</SPAN>
+<SPAN title=" Find on the palette "><a href="javascript:findObject(object3716);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find</SPAN></li>
+<li>Wire the reference output of the new Set Drawable method to the <strong>Scene.Object In</strong> input of the Translate Object VI</li>
+<li>Right-click the <strong>Translation</strong> input of the Translate Object VI, select <strong>Create&#0187;Constant</strong> from the shortcut menu, and change the values of the constant to the <em>x</em>, <em>y</em>, and <em>z</em> coordinates that you want to use to translate the child object.</li>
+<li>Wire the <strong>Scene.Object Out</strong> output of the Translate Object VI to the <strong>Object</strong> input of the Object:Add Object method.</li></ol>
+<table class="Borderless">
+<tr>
+<td class="Icon"><img src="note.gif" alt="Note"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If you do not translate additional objects that you add to a 3D scene, the 3D objects that you do not translate appear on top of each other, and may be difficult to see.</td>
+</tr>
+</table>
+<ol start="15">
+<li>If you did not complete step 11, wire the reference output of the new Set Drawable method to the <strong>Object</strong> input of the Object:Add Object method.
+<p class="Body">The following block diagram shows a 3D scene with two 3D objects.</p></li></ol>
+<p class="Anchor"><img src="loc_bd_multiobjscene.gif" /></p>
+<ol start="16">
+<li><a href="Setting_Up_Error_I_O_in_VI.html">Wire error in and error out terminals</a> on the block diagram.</li>
+<li>Run the VI to generate the 3D scene.</li></ol>
+
+
+<p class="Body">Refer to the 3D Model of Solar System VI in the <span class="monospace">labview\examples\Graphics and Sound\3D Picture Control</span> directory for an example of a 3D scene with multiple object relationships.</p>
+
+<p class="Body"><a href="javascript:openVI('examples%5C%5CGraphics%20and%20Sound%5C%5C3D%20Picture%20Control%5C%5C3D%20Model%20of%20Solar%20System.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(3763);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</p>
+
+
+
+
+</body>
+</html>

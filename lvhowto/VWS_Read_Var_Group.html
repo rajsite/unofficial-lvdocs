@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+
+<title>Reading a Variable Group</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<h1>Reading a Variable Group</h1>
+
+<p class="Body"><strong>Required permission: </strong><span class="DNL">VariableReadGroup</span></p>
+    <p class="Body">After you create the <span class="Monospace">VariableValueGroup</span>, you can use the group ID to read the group like any other resource. For example, <span class="Monospace">GET http://my_server:3580/nivariable/VariableValueGroups('1587dcd4a87d118ae3ddd0fce09246f6')?$format=json</span></p>
+
+    <p class="Body">To read the <span class="Monospace">VariableValues</span> contained in the group, you can request the deferred <span class="Monospace">VariableValues</span> URI:</p>
+
+    <p class="Body"><span class="Monospace">GET http://my_server:3580/nivariable/VariableValueGroups('1587dcd4a87d118ae3ddd0fce09246f6')/VariableValues?$format=json</span></p>
+
+    <p class="Body">You can use the <span class="Monospace">$expand</span> option to include the <span class="Monospace">VariableValues</span> in the group response. For example, <span class="Monospace">GET http://my_server:3580/nivariable/VariableValueGroups('1587dcd4a87d118ae3ddd0fce09246f6')?$expand=VariableValues&amp;$format=json</span></p>
+
+
+</body>
+</html>

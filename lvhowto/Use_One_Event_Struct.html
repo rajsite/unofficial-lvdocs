@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<!-- Unit name: 4201Eeventshlp -->
+
+<title>Use Only One Event Structure whenever Possible</title>
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+
+
+
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Use Only One Event Structure whenever Possible</h1>
+
+
+
+<p class="Body">You can use multiple Event structures in the same VI, especially if you <a href="../lvconcepts/Using_Events_in_LabVIEW.html#Dynamic_Event_Registration">register events dynamically</a>. However, events that you <a href="../lvconcepts/Using_Events_in_LabVIEW.html#Static_Event_Registration">register statically</a> rarely require multiple Event structures, so use one Event structure to handle events whenever possible.</p> 
+<p class="Body">When you use multiple Event structures in the same VI, observe the following guidelines:</p>
+<ul>
+	<li>Place each Event structure in its own While Loop.</li>
+	<li>Ensure that the Event structures execute simultaneously.</li>
+	<li>Ensure that the Event structures stop handling events simultaneously.</li>
+</ul>
+
+</body>
+</html>

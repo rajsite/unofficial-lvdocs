@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+ <title>FArrToPath (LabVIEW Manager Function)</title>
+ 
+</HEAD>
+<BODY bgcolor="#ffffff">
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+<H1>FArrToPath (LabVIEW Manager Function)</h1>
+<p class="Code">MgErr FArrToPath(arr, relative, path);</p>
+<h2>Purpose</h2>
+<p class="Body">Converts a one-dimensional LabVIEW array of strings to a path of the type specified by <strong>relative</strong>. Each string in the array is converted in order into a component name of the resulting <strong>path</strong>.</p>
+<p class="Body">If no error occurs, <strong>path</strong> is set to a path whose component names are the strings in <strong>arr</strong>. If an error occurs, <strong>path</strong> is set to the canonical invalid path.</p>
+<h2>Parameters</h2>
+<table class="Bordered">
+ <tr>
+ <th class="Bordered Left-Align">Name</th>
+ <th class="Bordered Left-Align">Type</th>
+ <th class="Bordered Left-Align">Description</th></tr>
+ <tr>
+ <td class="Bordered"><strong>arr</strong></td>
+<td class="Bordered"><span class="Monospace">UHandle</span></td>
+ <td class="Bordered"><span class="Monospace">DS</span> handle containing the array of strings you want to convert to a path.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>relative</strong></td>
+<td class="Bordered"><span class="Monospace">Bool32</span></td>
+ <td class="Bordered">If <span class="Monospace">TRUE</span>, the resulting <strong>path</strong> is relative. Otherwise, the resulting <strong>path</strong> is absolute.</td></tr>
+ <tr>
+ <td class="Bordered"><strong>path</strong></td>
+<td class="Bordered"><span class="Monospace">Path</span></td>
+ <td class="Bordered">Path where <span class="Monospace">FArrToPath</span> stores the resulting path. This path must already have been allocated.</td></tr>
+</table>
+<h2>Return Value</h2>
+<p class="Body"><span class="Monospace">MgErr</span>, which can contain the following errors. If you receive errors from <a href="LabVIEW_Manager_Functions.html">LabVIEW Manager functions</a>, most error names correspond to LabVIEW error codes.</p>
+<table class="Bordered">
+<tr><th class="Bordered Left-Align">Value</th>
+<th class="Bordered Left-Align">Corresponding Error Code or Description</th></tr>
+<tr><td class="Bordered"><span class="Monospace">noErr</span></td><td class="Bordered">No error.</td></tr>
+<tr><td class="Bordered"><span class="Monospace">mgArgErr</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">1</a></td></tr>
+<tr><td class="Bordered"><span class="Monospace">mFullErr</span></td><td class="Bordered"><a href="../lverror/Misc_LV_Error_Codes.html">2</a></td></tr></table>
+
+</body>
+</HTML>

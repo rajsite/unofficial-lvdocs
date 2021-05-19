@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<title>Considerations for Using the Resolve Project Conflicts Dialog Box</title>
+<link rel="stylesheet" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+</head>
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Considerations for Using the Resolve Project Conflicts Dialog Box</h1>
+
+
+<p class="Body">In the <a href="../lvdialog/Resolve_Project_Conflicts_DB.html">Resolve Project Conflicts</a> dialog box, LabVIEW disables the <strong>Use Selected Item</strong> button when you select an item LabVIEW cannot use to resolve the conflict. The following conditions cause LabVIEW to disable the <strong>Use Selected Item</strong> button for a particular item:</p>
+<ul>
+<li>A group of conflicting items contains <a href="../lvconcepts/Project_Libraries.html">project libraries</a> or members of project libraries. You must remove any conflicting library items manually.</li>
+<li>One or more items in a group of conflicting files is in an <a href="../lvconcepts/Using_Project_Folders.html">auto-populated folder</a>, which LabVIEW cannot modify. If there is a single file from an auto-populated folder in a group of conflicting items, LabVIEW disables the <strong>Use Selected Item</strong> button for all other items in the group. If there are multiple files from an auto-populated folder in a group of conflicting items, LabVIEW disables the button for the entire group.<br/><br/>
+To disable an auto-populating folder, right-click the folder and select <strong>Stop Auto-populating</strong> from the shortcut menu. </li>
+<li>One or more files in a group of conflicting items is in memory or running. LabVIEW disables the <strong>Use Selected Item</strong> button for other members of the group because LabVIEW cannot unload the file in memory to resolve the conflict. You must close files in memory manually before you can use other items in the group to resolve the conflict.</li>
+<li>LabVIEW cannot update one or more of the items in the <strong>Referencing Items</strong> table. Refer to the <strong>Referencing Items</strong> table in the <strong>Resolve Project Conflicts</strong> dialog box for more information about files that reference conflicting items.</li>
+</ul>
+<p class="Body">If any of the above conditions are true, you can use other methods to <a href="../lvconcepts/Resolving_Project_Conflicts.html">remove, rename, or redirect conflicting items</a>. You still can use the <strong>Resolve Project Conflicts</strong> dialog for information about which files you must update manually. </p>
+
+</body>
+</html>

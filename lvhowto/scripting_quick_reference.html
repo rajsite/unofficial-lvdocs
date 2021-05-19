@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<link rel="STYLESHEET" type="text/css" href="expandable_tree.css"><script src="common.js" type="text/javascript"></script><script src="dynamicjumps.js" type="text/javascript"></script><script src="expandable_tree.js" type="text/javascript"></script><title>Common VI Scripting Tasks</title>
+</head>
+<body>
+<h1>Common VI Scripting Tasks</h1>
+<p>When you use VI Scripting to inspect, edit, or create a target VI, you often combine multiple small VI Scripting tasks to accomplish a larger scripting goal. This topic lists some of the most common VI Scripting tasks and links to information and examples about the functions, properties, and methods that you can use to complete those tasks. Some of the more complex tasks link to separate topics.</p>
+
+
+<h2>Obtaining References to VIs and VI Objects</h2>
+<ul><li><a href="../lvhowto/scripting_obtaining_vi_reference.html">Obtaining a reference to a target VI</a></li>
+<li><a href="../lvhowto/scripting_obtaining_unknown_references.html">Obtaining references to objects in an unknown target VI</a></li>
+<li><a href="../lvhowto/scripting_obtaining_references_from_template.html">Obtaining references to objects in a known VI</a></li>
+<li><a href="../lvhowto/scripting_nav_node_to_wire.html">Navigating from a node to a wire</a></li>
+<li><a href="../lvhowto/scripting_nav_wire_to_node.html">Navigating from a wire to a node</a></li>
+<li><a href="../lvhowto/scripting_nav_structures.html">Navigating across a structure</a></li>
+<li><a href="../lvhowto/scripting_quick_reference.html#navFPtoBD">Navigating between the front panel and the block diagram of a VI</a></li>
+</ul>
+
+<h2>Creating VIs and VI Objects</h2>
+<ul><li><a href="../lvhowto/scripting_quick_reference.html#blankVI">Creating a new blank VI</a></li>
+<li><a href="../lvhowto/scripting_creating_vi_from_template.html">Creating a new VI from a template</a></li>
+<li><a href="../lvhowto/scripting_adding_objects.html">Adding objects to a front panel or block diagram</a></li>
+<li><a href="../lvhowto/scripting_quick_reference.html#move">Copying an object</a></li>
+<li><a href="../lvhowto/scripting_quick_reference.html#createFromWire">Creating a constant, control, or indicator from a terminal</a></li>
+<li><a href="../lvhowto/scripting_quick_reference.html#addFrame">Adding, duplicating, and removing frames of a structure with multiple diagrams</a></li>
+<li><a href="../lvhowto/scripting_quick_reference.html#wiring">Wiring objects to other objects</a></li>
+</ul>
+
+<h2>Inspecting and Editing VIs and VI Objects</h2>
+<ul><li><a href="../lvhowto/scripting_configuring_connector_panes.html">Configuring a connector pane</a></li>
+<li><a href="../lvhowto/scripting_quick_reference.html#move">Moving an object</a></li>
+<li><a href="../lvhowto/scripting_quick_reference.html#replace">Replacing an object</a></li>
+<li><a href="../lvhowto/scripting_quick_reference.html#delete">Deleting an object</a></li>
+<li><a href="../lvhowto/scripting_quick_reference.html#select">Selecting objects to cut, copy, and paste</a></li>
+<li><a href="../lvhowto/scripting_quick_reference.html#interact">Interacting with the label of a node</a></li>
+</ul>
+
+<h2>Miscellaneous</h2>
+<ul><li><a href="../lvhowto/scripting_quick_reference.html#undo">Undoing actions</a></li>
+<li><a href="../lvhowto/scripting_quick_reference.html#cleanup">Block diagram cleanup</a></li>
+<li><a href="../lvhowto/scripting_quick_reference.html#tags">Using object tags</a></li>
+<li><a href="../lvhowto/scripting_quick_reference.html#show">Showing the front panel or block diagram of a VI</a></li>
+<li><a href="../lvhowto/scripting_closing_references.html">Closing references</a></li>
+</ul>
+
+
+<h2><a name="navFPtoBD"></a>Navigating between the Front Panel and the Block Diagram of a VI</h2>
+<p>Use the following properties to navigate between the front panel and the block diagram of a VI programmatically:</p>
+<ul>
+<li><a href="../lvscript/Control_Terminal.html">Control:Terminal</a>&#8212;Allows you to navigate from a front panel control to its corresponding terminal on the block diagram</li>
+<li><a href="../lvscript/ControlTerminal_Control.html">ControlTerminal:Control</a>&#8212;Allows you navigate from a block diagram control terminal to its corresponding front panel control</li>
+</ul>
+
+<h2><a name="blankVI"></a>Creating a New Blank VI</h2>
+<p>Use the <a href="../glang/New_VI.html">New VI</a> function to create a new blank VI programmatically.</p>
+<p>Refer to the <a href="../lvhowto/opening_vi_using_scripting.html">VI Scripting</a> tutorial for detailed instructions about creating and opening a new blank VI programmatically.</p>
+
+<h2><a name="createFromWire"></a>Creating a Constant, Control, or Indicator from a Terminal</h2>
+<p>Use the following methods to create a constant, control, or indicator from a terminal programmatically:</p>
+<ul>
+<li><a href="../lvscript/Terminal_Create_Constant.html">Terminal:Create Constant</a></li>
+<li><a href="../lvscript/Terminal_Create_Control.html">Terminal:Create Control</a></li>
+<li><a href="../lvscript/Terminal_Create_Indicator.html">Terminal:Create Indicator</a></li>
+</ul>
+
+
+<h2><a name="addFrame"></a>Adding, Duplicating, and Removing Frames of a Structure with Multiple Diagrams</h2>
+<p>Use the following methods to interact with the frames of a structure with multiple diagrams programmatically:</p>
+<ul>
+<li><a href="../lvscript/MultiFrameStructure_Add_Frame.html">MultiFrameStructure:Add Frame</a></li>
+<li><a href="../lvscript/MultiFrameStructure_Duplicate_Frame.html">MultiFrameStructure:Duplicate Frame</a></li>
+<li><a href="../lvscript/MultiFrameStructure_Remove_Frame.html">MultiFrameStructure:Remove Frame</a></li>
+<li><a href="../lvscript/FlatSequence_Add_Frame.html">FlatSequence:Add Frame</a></li>
+<li><a href="../lvscript/FlatSequence_Remove_Frame.html">FlatSequence:Remove Frame</a></li>
+</ul>
+
+<h2><a name="wiring"></a>Wiring Objects to Other Objects</h2>
+<p>Use the following methods to wire objects to other objects programmatically:</p>
+<ul>
+<li><a href="../lvscript/Terminal_Connect_Wire.html">Terminal:Connect Wire</a></li>
+<li><a href="../lvscript/Node_Connect_Wires.html">Node:Connect Wires</a></li>
+</ul>
+
+<p class="Body">Refer to the Creating New VI From Scratch VI in the <span class="Monospace">labview\examples\Application Control\VI Scripting\Creating VIs</span> directory for an example of using the Terminal:Connect Wire method to wire two objects together.</p>
+<p class="Body"><a href="javascript:openVI('examples%5C%5CApplication%20Control%5C%5CVI%20Scripting%5C%5CCreating%20VIs%5C%5CCreating%20New%20VI%20From%20Scratch.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(1443);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</p>
+
+<p class="Body">Refer to the <a href="../lvhowto/wiring_scripting_objects.html">VI Scripting tutorial</a> for an example of using the Node:Connect Wires method to wire two objects together.</p>
+
+<h2><a name="move"></a>Moving or Copying an Object</h2>
+<p>Use the <a href="../lvscript/GObject_Move.html">GObject:Move</a> method to move an object programmatically:</p>
+
+
+
+
+<h2><a name="replace"></a>Replacing an Object</h2>
+<p>Use one of the following methods to replace an object programmatically:</p>
+<ul>
+<li><a href="../lvscript/GObject_Replace.html">GObject:Replace</a></li>
+<li><a href="../lvscript/GObject_Replace_No_Attributes.html">GObject:Replace No Attributes</a></li></ul>
+
+
+<p class="Body">Refer to the Creating New VI From Template VI in the <span class="Monospace">labview\examples\Application Control\VI Scripting\Creating VIs</span> directory for an example of using the Replace method to replace an object.</p>
+<p class="Body"><a href="javascript:openVI('examples%5C%5CApplication%20Control%5C%5CVI%20Scripting%5C%5CCreating%20VIs%5C%5CCreating%20New%20VI%20From%20Template.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open examples&nbsp;<a href="javascript:findExamples(1443);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</p>
+
+
+<h2><a name="delete"></a>Deleting an Object</h2>
+<p>Use the <a href="../lvscript/Generic_Delete.html">Generic:Delete</a> method to delete an object programmatically.</p>
+
+<p class="Body">Refer to the Closing References VI in the <span class="Monospace">labview\examples\Application Control\VI Scripting\Managing References</span> directory for an example of using the Delete method to delete a wire.</p>
+<p class="Body"><a href="javascript:openVI('examples%5C%5CApplication%20Control%5C%5CVI%20Scripting%5C%5CManaging%20References%5C%5CClosing%20References.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(1443);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</p>
+
+
+
+
+<h2><a name="select"></a>Selecting Objects to Cut, Copy, and Paste</h2>
+<p>Use the following properties to access selected objects programmatically:</p>
+<ul>
+	<li><a href="../lvscript/GObject_Selected.html">GObject:Selected</a></li>
+	<li><a href="../lvprop/Pnl_Selection_List.html">Panel:Selection List[]</a></li>
+	<li><a href="../lvscript/TopLevelDiagram_Selection_List091093.html">TopLevelDiagram:Selection List[]</a></li>
+	</ul>
+	<p>Use the following methods to edit selections programmatically:</p>
+<ul>
+	<li><a href="../lvprop/Panel_m.html">Panel Methods</a></li>
+	<li><a href="../lvscript/TopLevelDiagram_m.html">TopLevelDiagram Methods</a></li>
+</ul>
+
+
+
+<h2><a name="interact"></a>Interacting with the Label of a Node</h2>
+<p>Use the <a href="../lvscript/Node_Label.html">Node:Label</a> property to interact with the label of a node programmatically.</p>
+
+
+<h2><a name="undo"></a>Undoing Actions</h2>
+<p>Use the following methods to undo VI Scripting actions programmatically:</p>
+<ul>
+	<li><a href="../lvscript/VI_Transaction058Undo.html">VI:Transaction:Undo</a></li>
+	<li><a href="../lvscript/VI_Transaction058Redo.html">VI:Transaction:Redo</a></li>
+	<li><a href="../lvscript/VI_Transaction058Begin_Undo.html">VI:Transaction.Begin Undo</a></li>
+	<li><a href="../lvscript/VI_Transaction058End_Undo.html">VI:Transaction.End Undo</a></li>
+	<li><a href="../lvscript/VI_Transaction058Fail.html">VI:Transaction.Fail</a></li>
+</ul>
+
+<p class="Body">Refer to the Supporting Undo VI in the <span class="Monospace">labview\examples\Application Control\VI Scripting\Supporting Undo</span> directory for an example of using the Transaction methods to undo actions programmatically.</p>
+<p class="Body"><a href="javascript:openProj('examples%5C%5CApplication%20Control%5C%5CVI%20Scripting%5C%5CSupporting%20Undo%5C%5CSupporting%20Undo.lvproj');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(1443);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</p>
+
+<h2><a name="cleanup"></a>Block Diagram Cleanup</h2>
+<p>Use the <a href="../lvprop/VI_Block_Diagram_Clean_Up.html">VI:Block Diagram:Clean Up</a> method to clean up the block diagram of a target VI:</p>
+
+
+
+
+<h2><a name="tags"></a>Using Object Tags</h2>
+<p>Use the following methods to get and set object tags programmatically:</p>
+<ul>
+<li><a href="../lvscript/Generic_Tag058Get_Tag.html">Generic:Tag.Get Tag</a></li>
+<li><a href="../lvscript/Generic_Tag058Set_Tag.html">Generic:Tag.Set Tag</a></li>
+</ul>
+<p class="Body">Refer to the Tagging VI in the <span class="Monospace">labview\examples\Application Control\VI Scripting\Finding and Modifying Objects</span> directory for an example of using the Tag methods to add tags to objects and find the tagged objects.</p>
+<p class="Body"><a href="javascript:openVI('examples%5C%5CApplication%20Control%5C%5CVI%20Scripting%5C%5CFinding%20and%20Modifying%20Objects%5C%5CTagging.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(1443);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</p>
+
+<h2><a name="show"></a>Showing the Front Panel or Block Diagram of a VI</h2>
+<p>Use the following properties and methods to show or position the front panel or block diagram of a target VI programmatically:</p>
+<ul>
+<li><a href="../lvprop/VI_Open_Front_Panel.html">Front Panel:Open</a></li>
+<li><a href="../lvprop/VI_FP_Wndw_Bnds.html">Front Panel Window:Window Bounds</a></li>
+<li><a href="../lvscript/VI_Block_Diagram_Window058Open.html">Block Diagram Window:Open</a></li>
+<li><a href="../lvscript/VI_Block_Diagram_Window058Window_Bounds.html">Block Diagram Window:Window Bounds</a></li>
+<li><a href="../lvscript/VI_Block_Diagram_Window058Origin.html">Block Diagram Window:Origin</a></li>
+</ul>
+
+<p class="Body">Refer to the Creating New VI From Scratch VI in the <span class="Monospace">labview\examples\Application Control\VI Scripting\Creating VIs</span> directory for an example of opening and positioning the front panel and block diagram of a newly created VI.</p>
+<p class="Body"><a href="javascript:openVI('examples%5C%5CApplication%20Control%5C%5CVI%20Scripting%5C%5CCreating%20VIs%5C%5CCreating%20New%20VI%20From%20Scratch.vi');"><img src="open.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Open example&nbsp;<a href="javascript:findExamples(1443);"><img src="find.gif" border="0" style="padding-bottom: 4px; vertical-align: middle"></a>&nbsp;Find related examples</p>
+
+</body>
+</html>
+
+

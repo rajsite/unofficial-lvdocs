@@ -1,0 +1,103 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+      <link rel="stylesheet" type="text/css" href="htmlhelp_base.css">
+      <title>Windows for Spectral Analysis</title><script src="jQuery-1.7.2.min.js" type="text/javascript" xml:space="preserve"></script><script src="linking.js" type="text/javascript" xml:space="preserve"></script><script type="text/javascript" xml:space="preserve">
+		var fbProductDNA=2543;
+		var fbVersionName="2012";
+		</script><script src="feedbacklink1.0.js" type="text/javascript" xml:space="preserve"></script></head>
+   <body><a name="GUID-3FB8AE59-3555-47FD-86F6-809E7882E484" shape="rect">
+         <!-- --></a> 
+      
+      <h1 class="topictitle1">Windows for Spectral Analysis</h1> 
+      
+      
+      <div>
+         <p> 
+            
+         </p> 
+         	 
+         <p> 
+            		The smoothing windows designed for spectral analysis must be DFT-even. A smoothing window is DFT-even if its dot product,
+            or inner product, with integral cycles of sine sequences is identically zero. In other words, the DFT of a DFT-even sequence
+            has no imaginary component. 
+            	 
+         </p> 
+         	 
+         <p>The following two figures show the Hanning window for a sample size of 8 and one cycle of a sine pattern for a sample size
+            of 8. 
+            	 
+         </p> 
+         	 <br clear="none"><a name="GUID-3FB8AE59-3555-47FD-86F6-809E7882E484__IMAGE_C7229B057E2E4D48A7054DEFE5455B3D" shape="rect">
+            <!-- --></a><img id="GUID-3FB8AE59-3555-47FD-86F6-809E7882E484__IMAGE_C7229B057E2E4D48A7054DEFE5455B3D" src="GUID-C719266A-08D9-4DA4-906A-8072413E2506-help-web.png"><br clear="none"> 
+         	 <br clear="none"><a name="GUID-3FB8AE59-3555-47FD-86F6-809E7882E484__IMAGE_E392546C000E44478C3B0F25175D847D" shape="rect">
+            <!-- --></a><img id="GUID-3FB8AE59-3555-47FD-86F6-809E7882E484__IMAGE_E392546C000E44478C3B0F25175D847D" src="GUID-68B47CE8-273E-47DD-A830-97F54E4AD9F2-help-web.png"><br clear="none"> 
+         	 
+         <p>In the first figure, the DFT-even Hanning window is not symmetric about its midpoint. The last point of the window is not
+            equal to its first point, similar to one complete cycle of the sine pattern shown in the second figure. 
+            	 
+         </p> 
+         	 
+         <p>Smoothing windows for spectral analysis are spectral windows and include the following window types: 
+            	 
+         </p> 
+         	 <a name="GUID-3FB8AE59-3555-47FD-86F6-809E7882E484__UL_0E6A53226BE4466CA62A5215B69DC0D2" shape="rect">
+            <!-- --></a><ul id="GUID-3FB8AE59-3555-47FD-86F6-809E7882E484__UL_0E6A53226BE4466CA62A5215B69DC0D2">
+            <li><a name="GUID-3FB8AE59-3555-47FD-86F6-809E7882E484__LI_4C8647734C5D454CBEC355C81F27068E" shape="rect">
+                  <!-- --></a>Scaled Time Domain Window 
+               		
+            </li>
+            <li><a name="GUID-3FB8AE59-3555-47FD-86F6-809E7882E484__LI_A081EAF23D0D4C7DB0026B0D453306AB" shape="rect">
+                  <!-- --></a>Hanning Window 
+               		
+            </li>
+            <li><a name="GUID-3FB8AE59-3555-47FD-86F6-809E7882E484__LI_FE6A848903D8417CAE42D6E500BDBAF4" shape="rect">
+                  <!-- --></a>Hamming Window 
+               		
+            </li>
+            <li><a name="GUID-3FB8AE59-3555-47FD-86F6-809E7882E484__LI_545B6F7FBDE44381BFB1213A5CA8E338" shape="rect">
+                  <!-- --></a>Triangle Window 
+               		
+            </li>
+            <li><a name="GUID-3FB8AE59-3555-47FD-86F6-809E7882E484__LI_7788EEFB02FD4F79837911590BE0E932" shape="rect">
+                  <!-- --></a>Blackman Window 
+               		
+            </li>
+            <li><a name="GUID-3FB8AE59-3555-47FD-86F6-809E7882E484__LI_622BD6F4D2F1496090F3950885398473" shape="rect">
+                  <!-- --></a>Exact Blackman Window 
+               		
+            </li>
+            <li><a name="GUID-3FB8AE59-3555-47FD-86F6-809E7882E484__LI_B8FAC21AF75142818FFCA0AA4FB00F8E" shape="rect">
+                  <!-- --></a>Blackman-Harris Window 
+               		
+            </li>
+            <li><a name="GUID-3FB8AE59-3555-47FD-86F6-809E7882E484__LI_00DA7FD31783405D91E575B16A3C8F5A" shape="rect">
+                  <!-- --></a>Flat Top Window 
+               		
+            </li>
+            <li><a name="GUID-3FB8AE59-3555-47FD-86F6-809E7882E484__LI_1416D2FD41BF439D97332C3D02E98E4D" shape="rect">
+                  <!-- --></a>Kaiser-Bessel Window 
+               		
+            </li>
+            <li><a name="GUID-3FB8AE59-3555-47FD-86F6-809E7882E484__LI_61747EC13C40456E919CA8ECE5D9F2F9" shape="rect">
+                  <!-- --></a>General Cosine Window 
+               		
+            </li>
+            <li><a name="GUID-3FB8AE59-3555-47FD-86F6-809E7882E484__LI_43876F7934EC4AB2BDE6E61DDC0A652C" shape="rect">
+                  <!-- --></a>Cosine Tapered Window 
+               		
+            </li>
+         </ul> 
+         
+      </div> 
+      
+      <div>
+         <div class="familylinks">
+            <div class="parentlink"><strong>Parent topic:</strong> <a href="Windows_Spect_Anls_Coeff_Dsgn.html" shape="rect">Windows for Spectral Analysis versus Windows for Coefficient Design</a></div>
+         </div>
+      </div>
+      
+   </body>
+</html>

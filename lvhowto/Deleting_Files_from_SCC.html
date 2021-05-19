@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+	
+	<title>Removing Files from Source Control</title>
+	<link rel="STYLESHEET" type="text/css" href="minimal.css">
+<script src="common.js" type="text/javascript"></script>
+
+
+	
+
+
+</head>
+
+<body bgcolor="#ffffff">
+
+<noscript>
+<p class="Body">JavaScript is disabled. <a href="../lvhelp/JavaScript_Disabled.html">Details</a></p>
+<hr width="100%" noshade>
+</noscript>
+
+<h1>Removing Files from Source Control</h1>
+
+<p class="Body">Be careful when you remove files from source control. Some source control providers delete the local directory copy of the file, all previous versions of the file that the provider maintains, and the history log for the file. Refer to the source control provider documentation for more information about the effects of removing files from source control.
+</p>
+<p class="Body">Complete the following steps to remove a file from source control.
+</p>
+<ol>
+<li>If you are in a LabVIEW project, select the folder or files you want to remove from source control.
+</li>
+<li>Select <strong>Tools&#0187;Source Control&#0187;Remove from Source Control</strong>.
+</li>
+<li>A dialog box appears to remind you that removing a file from source control might cause the file to be deleted entirely. Click the <strong>Yes</strong> button to confirm that you want to continue and to display the <a href="../lvdialog/Source_Control_Ops_DB.html">Source Control Operations</a> dialog box.
+</li>
+<li>The <strong>Files</strong> tree contains the names and paths of all files to remove from source control. Remove the checkmark from the checkbox next to the name of any file you do not want to remove from source control.
+</li>
+<li>Click the <strong>OK</strong> button.
+</li></ol>
+<table class="Borderless"><tr><td class="Icon"><img src="note.gif"></td>
+<td><strong>Note</strong>&nbsp;&nbsp;If you are using Perforce, LabVIEW adds the file or files to a changelist. You must use Perforce to submit the changelist.</td></tr>
+</table>
+
+
+
+</body>
+</html>
